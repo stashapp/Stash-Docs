@@ -23,7 +23,7 @@ grand_parent: User Interface (UI)
 
 ### Screenshots
 
-![Stash Night Theme]({{ site.baseurl }}/docs/assets/night-1.png)
+![Stash Night Theme]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/night-1.png)
 
 ## CSS Code
 

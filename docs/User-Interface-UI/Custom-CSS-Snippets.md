@@ -134,7 +134,7 @@ Reduce left and right padding on Scene and Performer grid pages allowing for mor
 
 This will hide the large scene scrubber under the video player and max out the player's height.
 
-![Image]({{ site.baseurl }}/docs/Themes/assets/css-scrubber.png)
+![Image]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/css-scrubber.png)
 
 ```css
 /* [Scenes tab] Hide the scene scrubber and max out the player's height */
@@ -332,9 +332,9 @@ Use `order` values below 0 to move specific buttons to the left of the non-order
 and values above 1 to move them to the right of the non-ordered buttons.
 
 **Before:**  
-![Navigation before]({{ site.baseurl }}/docs/Themes/assets/navigation-before.png)
+![Navigation before]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/navigation-before.png)
 **After:**  
-![Navigation after]({{ site.baseurl }}/docs/Themes/assets/navigation-after.png)
+![Navigation after]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/navigation-after.png)
 
 ```css
 /* [Global changes] Change the order of navigation bar buttons */

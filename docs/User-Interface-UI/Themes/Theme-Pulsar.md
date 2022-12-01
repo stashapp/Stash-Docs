@@ -31,10 +31,10 @@ The Theme will only change the look&feel of the Stash interface. It **will not**
 
 ### Screenshots
 
-![Pulsar preview #1]({{ site.baseurl }}/docs/assets/pulsar-1.jpg)
-![Pulsar preview #2]({{ site.baseurl }}/docs/assets/pulsar-2.jpg)
-![Pulsar preview #3]({{ site.baseurl }}/docs/assets/pulsar-3.jpg)
-![Pulsar preview #4]({{ site.baseurl }}/docs/assets/pulsar-4.jpg)
+![Pulsar preview #1]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/pulsar-1.jpg)
+![Pulsar preview #2]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/pulsar-2.jpg)
+![Pulsar preview #3]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/pulsar-3.jpg)
+![Pulsar preview #4]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/pulsar-4.jpg)
 
 ---
 
@@ -45,7 +45,7 @@ The Theme will only change the look&feel of the Stash interface. It **will not**
 3. Copy&Paste [CSS Code](#css-code) to the Custom CSS text area. 
 4. Select one of the background images that you find at the top of the CSS code by removing the commentary ( _/*_ ) at the beginning of the line (_Aphonus_ is the standard background), or use your own wallpaper as _"background.jpg"_, and place the image in **`~/.stash/custom`** on macOS / Linux or **`C:\Users\YourUsername\.stash\custom`** on Windows.
 
-![Background Image Preview]({{ site.baseurl }}/docs/assets/pulsar-5.jpg)
+![Background Image Preview]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/pulsar-5.jpg)
 
 Enjoy!
 

@@ -31,9 +31,9 @@ The Theme will only change the look&feel of the Stash interface. It **will not**
 
 ### Screenshots
 
-![Light Pulsar preview #1]({{ site.baseurl }}/docs/assets/light-pulsar-1.jpg)
-![Light Pulsar preview #2]({{ site.baseurl }}/docs/assets/light-pulsar-2.jpg)
-![Light Pulsar preview #3]({{ site.baseurl }}/docs/assets/light-pulsar-3.jpg)
+![Light Pulsar preview #1]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/light-pulsar-1.jpg)
+![Light Pulsar preview #2]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/light-pulsar-2.jpg)
+![Light Pulsar preview #3]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/light-pulsar-3.jpg)
 
 ---
 

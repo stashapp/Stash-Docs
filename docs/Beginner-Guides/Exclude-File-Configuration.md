@@ -46,7 +46,7 @@ exclude:
 
 and thats how it looks if you use UI (notice the difference for the `\` character)
 
-![regexUI]({{ site.baseurl }}/docs/assets/regexui.png)
+![regexUI]({{ site.baseurl }}/docs/Beginner-Guides/assets/regexui.png)
 
 {: .note }
 Useful [link](https://regex101.com/?flavor=golang){:target="_blank"} to experiment with regexps (we use "Golang" as the regex flavour).
