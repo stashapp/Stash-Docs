@@ -39,7 +39,7 @@ div[data-rb-event-key="/scenes/markers"] {
 
 ### Screenshots
 
-![Modern Dark preview #1](assets/modern-dark-1.jpg)
+![Modern Dark preview #1]({{ site.baseurl }}/docs/assets/modern-dark-1.jpg)
 
 ## Install
 

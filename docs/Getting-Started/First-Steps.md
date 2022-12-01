@@ -25,7 +25,7 @@ parent: Getting Started
 1. Open your Stash.
 2. Go to `Settings` > `Library` and click `Add Directory`.
 3. To change the drive letter/volume, just type it in the field.
-![Drive location](assets/drive_location.png)
+![Drive location]({{ site.baseurl }}/docs/assets/drive_location.png)
 4. Select the folder containing the content you want to add. It will select the folder and all sub-folders.
 5. Click `Confirm`.
 
@@ -35,7 +35,7 @@ parent: Getting Started
 
 1. Open your Stash.
 2. Go to `Settings` > `Tasks`.
-![Scan options](assets/scan_options.png)
+![Scan options]({{ site.baseurl }}/docs/assets/scan_options.png)
 
 | Option                           | Description                                                                                                                             |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |

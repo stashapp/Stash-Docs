@@ -36,4 +36,4 @@ Safe for work demo video of how Stash looks and what functionality it has.
 {: .note }
 Video is a bit outdated and more functionality was added since it was created. 
 
-<span class="no-border">[![Stash 0.5.0 SFW demo (2021-02-23)](Home/assets/video.png)](https://player.vimeo.com/video/545323354 "Stash 0.5.0 SFW demo (2021-02-23)"){:target="_blank"}</span>
+<span class="no-border">[![Stash 0.5.0 SFW demo (2021-02-23)]({{ site.baseurl }}/docs/Home/assets/video.png)](https://player.vimeo.com/video/545323354 "Stash 0.5.0 SFW demo (2021-02-23)"){:target="_blank"}</span>

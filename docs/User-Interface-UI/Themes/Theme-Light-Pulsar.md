@@ -31,20 +31,17 @@ The Theme will only change the look&feel of the Stash interface. It **will not**
 
 ### Screenshots
 
-![Light Pulsar preview #1](assets/light-pulsar-1.jpg)
-![Light Pulsar preview #2](assets/light-pulsar-2.jpg)
-![Light Pulsar preview #3](assets/light-pulsar-3.jpg)
+![Light Pulsar preview #1]({{ site.baseurl }}/docs/assets/light-pulsar-1.jpg)
+![Light Pulsar preview #2]({{ site.baseurl }}/docs/assets/light-pulsar-2.jpg)
+![Light Pulsar preview #3]({{ site.baseurl }}/docs/assets/light-pulsar-3.jpg)
 
 ---
 
 ## Install
 
 1. Open User **Interface** Configuration panel in **settings**. (http://localhost:9999/settings?tab=interface) 
-
 2. Tick/Enable Custom CSS ✅  
-
 3. Copy&Paste [CSS Code](#css-code) to the Custom CSS text area. 
-
 4. Select one of the background images that you find at the top of the CSS code by removing the commentary ( _/*_ ) at the beginning of the line (_Flower_ is the standard background), or use your own wallpaper as _"background.jpg"_, and place the image in **`~/.stash/custom`** on macOS / Linux or **`C:\Users\YourUsername\.stash\custom`** on Windows.
 
 Enjoy!
