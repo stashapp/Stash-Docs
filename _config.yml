@@ -1,0 +1,65 @@
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
+
+title: Stash-Docs
+description: Documentation for Stash software
+domain: dogmadragon.github.io
+url: "https://dogmadragon.github.io/"
+baseurl: "/Stash-Docs"
+
+permalink: pretty
+
+# Set a path/url to a logo that will be displayed instead of the title
+logo: "/assets/logo_v2.png"
+#logo: https://stashapp.cc/images/stash.svg
+
+# Aux links for the upper right navigation
+aux_links:
+  "Donate @ Open Collective":
+    - "https://opencollective.com/stashapp"
+aux_links_new_tab: true
+
+# External navigation links
+nav_external_links:
+  - title: Community Discord
+    url: https://discord.gg/frQ7qBvB3S
+
+# Footer content
+# appears at the bottom of every page's main content
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/DogmaDragon/Stash-Docs" # the github URL for your repo
+gh_edit_branch: "master" # the branch that your docs is served from
+gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+footer_content: "Maintained by Stash community"
+
+# Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
+color_scheme: stashdb-dark
+
+callouts:
+  warning:
+    title: Warning
+    color: red
+  note:
+    title: Note
+    color: yellow 
+  new:
+    title: New
+    color: green
+  important:
+    title: Important
+    color: blue 
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false

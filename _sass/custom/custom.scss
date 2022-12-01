@@ -1,0 +1,19 @@
+@media (min-width: 50rem) { .site-title { padding-right: 0rem; padding-left: 2rem; } }
+
+@media (min-width: 66.5rem) { .side-bar {
+    width: calc((100% - 1064px) / 2 + 264px);
+    min-width: 264px;
+    max-width: fit-content;
+} }
+
+@media (min-width: 66.5rem) {
+.main {
+    margin-left: calc( (100% - 100% + 2px) / 2 + 264px );
+    max-width: -webkit-fill-available;
+	} }
+	
+@media (min-width: 50rem) {
+.main-content-wrap {
+    padding-right: 4rem;
+    padding-left: 4rem;
+	} }
