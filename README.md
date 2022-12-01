@@ -4,9 +4,9 @@ Website: https://stashapp.github.io/Stash-Docs
 # Running locally with Ruby
 
 ## Prerequsites
-- [Ruby](https://www.ruby-lang.org/en/downloads/){:target="_blank"} v2.5.0 or higher, including all development headers (check your Ruby version using `ruby -v`)
-- [RubyGems](https://rubygems.org/pages/download){:target="_blank"} (check your Gems version using `gem -v`)
-- [Bundler gem](https://rubygems.org/gems/bundler){:target="_blank"} run `gem install bundler`
+- [Ruby](https://www.ruby-lang.org/en/downloads/) v2.5.0 or higher, including all development headers (check your Ruby version using `ruby -v`)
+- [RubyGems](https://rubygems.org/pages/download) (check your Gems version using `gem -v`)
+- [Bundler gem](https://rubygems.org/gems/bundler) run `gem install bundler`
 - Clone/download the repository
 
 ## Building the site
