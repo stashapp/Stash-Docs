@@ -186,7 +186,9 @@ This will hide the truncated text that appears under the tile and date.
 
 ### Place performer image in the background on performer page
 
-```
+```css
+/* [Performers tab] Place performer image in the background on performer page */
+
 .performer-image-container.col-md-4.text-center {
     flex: 0 0 0%;
     max-width: 0%;
