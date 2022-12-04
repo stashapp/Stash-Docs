@@ -1,6 +1,12 @@
 # Stash-Docs
 Website: https://stashapp.github.io/Stash-Docs
 
+# Contributing
+
+Everyone is welcome to help with the documentation. All changes are managed through pull requests. 
+
+Read step-by-step guide on how to create a pull request [CONTRIBUTING.md](CONTRIBUTING.md).
+
 # Running locally with Ruby
 
 ## Prerequsites
