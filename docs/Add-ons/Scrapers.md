@@ -25,19 +25,22 @@ parent: Add-ons
 
 Scrapers are the way to retrieve information from websites for your movies/scenes/galleries/performers...etc. Using scrapers wisely, you can avoid typing information manually and repetitively. They can help you quickly establish links between movies/scenes and performers/studios, add relative tags, then download covers/posters for easy recognition. It's a great feature to organize your video or image collections.
 
-All scrapers are ".yml" files. Some scrapers like script scrapers also come with their own ".py", ".rb" files.
+{: .important }
+Scrapers are in **.yml** format. Some of them requires Python or Ruby if you use those, you need to install Python/Ruby on your machine, and don't forget to get the corresponding **.py** or **.rb** file as well.
 
 ### Installation
 
 To install a scraper:
 1. Make sure you have the `scrapers` folder in the same location of your Stash app. If you don't have it, create that folder/directory. You can also specify the name of this folder in the `config.yml`.
-2. Go to the [CommunityScrapers repository](https://github.com/stashapp/CommunityScrapers){:target="_blank"} and download the scraper you want. Read the [scrapers list](https://github.com/stashapp/CommunityScrapers/blob/master/SCRAPERS-LIST.md){:target="_blank"} and make sure which one to download. All scrapers are in .yml format. Some of them requires Python or Ruby if you use those, you need to install Python/Ruby in your machine, and don't forget to get the corresponding .py or .rb file as well.
+2. Go to the [CommunityScrapers repository](https://github.com/stashapp/CommunityScrapers){:target="_blank"}.
+  - Find the scraper you want from [scrapers list](https://github.com/stashapp/CommunityScrapers/blob/master/SCRAPERS-LIST.md){:target="_blank"} > go back to the [main repository](https://github.com/stashapp/CommunityScrapers){:target="_blank"} > go to scrapers folder > find the scraper, use `Ctrl+F` to open search > open the file > click `Raw` button > right click the page with your mouse and select `Save As...` or use `Ctrl+S`.
+  - Download the whole [CommunityScrapers repository](https://github.com/stashapp/CommunityScrapers){:target="_blank"} by clicking Code > Download ZIP. Copy the files from **scrapers** folder in your **.zip** to your `.stash/scrapers` directory. 
 
 {: .note }
-For Python scrapers, it's also helpful to read the .py file. Some of them require extra python components installed to work.
+For Python scrapers, it's also helpful to read the **.py** file. Some of them require extra Python modules installed to work.
 
 {:style="counter-reset:none"}
-3. Once the new scrapers are in position, you need to go to "Settings->Scraping" and click on "Reload Scrapers" button. You should see your scrapers listed in the list below that button.
+3. Once the new scrapers are in position, you need to go to `Settings` > `Metadata Providers` and click on `Reload Scrapers` button. You should see your scrapers listed in the list below that button.
 
 {:style="counter-reset:none"}
 4. Navigate to the scene/gallery/movie/performer you want to scrape.
