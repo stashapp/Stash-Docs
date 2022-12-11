@@ -47,4 +47,4 @@ If you would like to develop your own theme, we have a [reference guide of CSS s
 | [Night]({{ site.baseurl }}/docs/User-Interface-UI/Themes/Theme-Night)               | ![Screenshot of Night Theme]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/Night-preview.png)               |
 | [Plex]({{ site.baseurl }}/docs/User-Interface-UI/Themes/Theme-Plex)                 | ![Screenshot of Plex Theme]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/Plex-preview.png)                 |
 | [Black Hole]({{ site.baseurl }}/docs/User-Interface-UI/Themes/Theme-Black-Hole)     | ![Screenshot of Black Hole Theme]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/Black-Hole-preview.png)     |
-| [Modern Dark]({{ site.baseurl }}/docs/User-Interface-UI/Themes/Theme-Modern-Dark)   | ![Screenshot of Modern Dark]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/Modern-Dark-preview.jpg)         |
+| [Modern Dark]({{ site.baseurl }}/docs/User-Interface-UI/Themes/Modern-Dark)   | ![Screenshot of Modern Dark]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/Modern-Dark-preview.jpg)         |
