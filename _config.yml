@@ -25,6 +25,8 @@ aux_links_new_tab: true
 nav_external_links:
   - title: Community Discord
     url: https://discord.gg/frQ7qBvB3S
+  - title: Contributing to Stash-Docs
+    url: https://github.com/stashapp/Stash-Docs#contributing
 
 # Footer content
 # appears at the bottom of every page's main content
