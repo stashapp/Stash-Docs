@@ -5,9 +5,9 @@ exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "CONTRIBUTING.md", "README.md",]
 
 title: Stash-Docs
 description: Documentation for Stash software
-domain: stashapp.github.io
-url: "https://stashapp.github.io"
-baseurl: "/Stash-Docs"
+domain: docs.stashapp.cc
+url: "docs.stashapp.cc"
+baseurl: "/"
 
 permalink: pretty
 
