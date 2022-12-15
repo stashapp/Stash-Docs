@@ -112,6 +112,10 @@ If Stash is unable to find or download FFMPEG, then download and install it your
 The `ffmpeg.exe` and `ffprobe.exe` files should be placed in `C:\Users\YourUsername\.stash` on Windows.
 The `ffmpeg` and `ffprobe` files should be placed in `~/.stash` on macOS / Linux. 
 
+### I'm having problem with my Docker image
+
+Third-party Docker images are more likely to be misconfigured and makes it harder to get support from the core Stash team. For best experience you should stay with official Stash Docker image. [Stash repository](https://github.com/stashapp/stash/tree/master/docker/production){:target="_blank"} and [DockerHub](https://hub.docker.com/r/stashapp/stash){:target="_blank"}. 
+
 ---
 
 ## Other FAQs
