@@ -36,7 +36,7 @@ To install a scraper:
 1. Make sure you have the `scrapers` folder in the same location of your Stash app. If you don't have it, create that folder/directory. You can also specify the name of this folder in the `config.yml`.
 2. Go to the [CommunityScrapers repository](https://github.com/stashapp/CommunityScrapers){:target="_blank"}.
   - Find the scraper you want from [scrapers list](https://github.com/stashapp/CommunityScrapers/blob/master/SCRAPERS-LIST.md){:target="_blank"} > go back to the [main repository](https://github.com/stashapp/CommunityScrapers){:target="_blank"} > go to scrapers folder > find the scraper, use `Ctrl+F` to open search > open the file > click `Raw` button > right click the page with your mouse and select `Save As...` or use `Ctrl+S`.
-  - Download the whole [CommunityScrapers repository](https://github.com/stashapp/CommunityScrapers){:target="_blank"} by clicking Code > Download ZIP. Copy the files from **scrapers** folder in your **.zip** to your `.stash/scrapers` directory. 
+  - Download the whole [CommunityScrapers repository](https://github.com/stashapp/CommunityScrapers){:target="_blank"} by clicking `Code` > `Download ZIP`. Copy the files from **scrapers** folder in your **.zip** to your `.stash/scrapers` directory. 
 
 {: .note }
 For Python scrapers, it's also helpful to read the **.py** file. Some of them require extra Python modules installed to work.
