@@ -1,5 +1,5 @@
 # Stash-Docs
-Website: https://stashapp.github.io/Stash-Docs
+Website: https://docs.stashapp.cc
 
 # Contributing
 
