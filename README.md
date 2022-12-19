@@ -15,6 +15,12 @@ Read step-by-step guide on how to create a pull request [CONTRIBUTING.md](CONTRI
 - [Bundler gem](https://rubygems.org/gems/bundler) run `gem install bundler`
 - Clone/download the repository
 
+### Images
+You will need to update the baseurl in the `_config.yml` file. Find line 
+```baseurl: "/"```
+ and replce it with 
+ ```baseurl: "/Stash-Docs"```.
+
 ## Building the site
 1. Open Terminal/Command Prompt with Ruby and go to your directory where you saved the copy of the repository
 2. Run `bundle exec jekyll serve`
