@@ -73,6 +73,7 @@ Stash | [Stash Stats](https://github.com/7dJx1qP/stash-userscripts){:target="_bl
 Stash | [Stash Studio Image And Parent On Create](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"} | 7dJx1qP | In Scene Tagger, sets studio image and parent studio from StashDB when a studio is created
 Stash | [Stash Tag Image Cropper](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"} | 7dJx1qP | Adds ability to crop tag image from tag page
 Stash | [Visage](https://github.com/cc1234475/visage){:target="_blank"} | cc1234475 | Visage is a series of tools to do facial recognition on images (and create a searchable database)
+Stash | [Performer Suggestions](https://gist.github.com/QxxxGit/7d6e5759814b1ce84cb7535173415eff){:target="_blank"} | QxxxGit | Adds performer suggestions based on similar tags
 StashDB | [StashDB Copy StashID](https://github.com/7dJx1qP/stashdb-userscripts){:target="_blank"} | 7dJx1qP | Adds a button to copy StashID
 StashDB | [StashDB Backlog Userscript](https://gist.github.com/peolic/e4713081f7ad063cd0e91f2482ac39a7){:target="_blank"} | peolic | This userscript is used to be able to view pending changes from the StashDB Backlog spreadsheet directly on StashDB
 StashDB | [StashDB Images Userscript](https://gist.github.com/peolic/7368022947a28ef11bf44d0ae802df45){:target="_blank"} | peolic | This userscript adds image resolutions next to every performer image on StashDB
