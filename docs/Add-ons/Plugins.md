@@ -122,6 +122,26 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Stash version|v0.7 or higher|
 |Screenshots|![](../assets/fixed_table_width.png)|
 
+### DateParser
+
+|-|-|
+|Category|Scanning|
+|Plugin|[DateParser](https://github.com/stashapp/CommunityScripts/tree/main/plugins/DateParser){:target="_blank"}|
+|Description|Find date in path or filename and add it.|
+|Triggers|Task|
+|Stash version|v0.18 or higher|
+|Screenshots|![](../assets/fixed_table_width.png)|
+
+### phashDuplicateTagger
+
+|-|-|
+|Category|Scene|
+|Plugin|[phashDuplicateTagger](https://github.com/stashapp/CommunityScripts/tree/main/plugins/phashDuplicateTagger){:target="_blank"}|
+|Description|Will tag scenes based on duplicate PHashes for easier/safer removal.|
+|Triggers|Task|
+|Stash version|v0.16 or higher|
+|Screenshots|![](../assets/fixed_table_width.png)|
+
 ---
 
 ## Third-party
