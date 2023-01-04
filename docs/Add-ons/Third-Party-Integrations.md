@@ -25,6 +25,11 @@ Integrations are repositories developed to integrate Stash into other programs.
 {: .note }
 These third-party integrations are created by third parties and not officially affiliated or supported by the core Stash team. If you have issues, please reach out to the original creators.
 
-Category | Name | Author | Description
--|-|-|-
-Kodi | [plugin.video.stash](https://github.com/gitgiggety/plugin.video.stash){:target="_blank"} | gitgiggety | plugin.video.stash is an add-on for the Kodi home theater center software to incorporate Stash, an organizer for your porn
+### plugin.video.stash
+
+|-|-|
+|Category|Kodi|
+|Integration|[plugin.video.stash](https://github.com/gitgiggety/plugin.video.stash){:target="_blank"}|
+|Description|plugin.video.stash is an add-on for the Kodi home theater center software to incorporate Stash, an organizer for your porn.|
+|Author|[gitgiggety](https://github.com/gitgiggety){:target="_blank"}|
+|Screenshots|![](../assets/fixed_table_width.png)|
