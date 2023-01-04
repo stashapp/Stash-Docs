@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Third-Party Integrations
+title: Third-party Integrations
 nav_order: 6
 parent: Add-ons
 ---
-# Third-Party Integrations
+# Third-party Integrations
 {: .no_toc }
 
 ---
