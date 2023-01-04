@@ -48,4 +48,4 @@ sqlite> DELETE FROM scenes_tags;
 sqlite> DELETE FROM tags;
 ```
 
-Please note that this will not work if you have Scene market tags (TODO: What to do then?)
+Please note that this will not work if you have Scene marker tags (TODO: What to do then?)
