@@ -2,7 +2,7 @@
 name: Request for plugin to be added
 about: Template for plugins to added to the docs
 title: "[Plugin] Plugin name"
-labels: Plugin
+labels: plugin
 assignees: ''
 
 ---
