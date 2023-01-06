@@ -20,5 +20,5 @@ has_toc: false
 3. [Scripts]({{ site.baseurl }}/docs/Add-ons/Scripts/)
 4. [Userscripts]({{ site.baseurl }}/docs/Add-ons/Userscripts/)
 5. [Utilities]({{ site.baseurl }}/docs/Add-ons/Utilities/)
-6. [Third-Party Integrations]({{ site.baseurl }}/docs/Add-ons/Third-Party-Integrations/)
+6. [Third-party Integrations]({{ site.baseurl }}/docs/Add-ons/Third-Party-Integrations/)
 </details>
