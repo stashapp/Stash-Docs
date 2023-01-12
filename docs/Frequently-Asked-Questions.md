@@ -76,6 +76,12 @@ Stash uses 2 different methods to track your scenes: oshash and filename/path.  
 
 For gallery-related issues check the relevant Documentation [section]({{ site.baseurl }}/docs/In-app-Manual/Galleries/).
 
+### How to add performers in bulk?
+
+> You will need to have a stash-box attached as a source. 
+
+Go to `Performers` page > Tagger view > click `Batch Update Performers` > select your preferences > refresh the page.
+
 ---
 
 ## Scraping
