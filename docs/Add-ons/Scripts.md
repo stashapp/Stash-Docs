@@ -20,11 +20,11 @@ parent: Add-ons
 
 ---
 
-Scripts are standalone programs that can interact with stash either through graphql queries or by directly editing stash's database/files.
+Scripts are standalone programs that can interact with stash either through graphql queries, custom Javascript or by directly editing Stash database/files.
 
 To install a script follow the script's install instructions.
 
-Scripts are separated into 2 sections:
+Scripts are separated into 2 sections [Official](#official) and [Third-party](#third-party).
 
 ---
 
@@ -74,3 +74,12 @@ These scripts are created by third parties and not officially affiliated or supp
 |Description|Parse performer names from your media filenames into CSV files for batch import into Stash!|
 |Author|[ALonelyJuicebox](https://github.com/ALonelyJuicebox){:target="_blank"}|
 |Screenshots|![](../assets/fixed_table_width.png)![](../assets/FilenamePerformersToCSV.png)|
+
+### pwPlayer.js - Scene Card Quick Player
+
+|-|-|
+|Category|Metadata|
+|Script|[pwPlayer.js - Scene Card Quick Player](https://github.com/philpw99/StashCustomJavascripts){:target="_blank"}|
+|Description|This Javascript will create a "Play" button in each scene card. You can click on it and the video for that scene will be played right away. Click on the video again, then you are back to the scene list.|
+|Author|[philpw99](https://github.com/philpw99){:target="_blank"}|
+|Screenshots|![](../assets/fixed_table_width.png)![](../assets/pwPlayer_js_Scene_Card_Quick_Player.png)|
