@@ -78,7 +78,7 @@ These scripts are created by third parties and not officially affiliated or supp
 ### pwPlayer.js - Scene Card Quick Player
 
 |-|-|
-|Category|Metadata|
+|Category|Scene|
 |Script|[pwPlayer.js - Scene Card Quick Player](https://github.com/philpw99/StashCustomJavascripts){:target="_blank"}|
 |Description|This Javascript will create a "Play" button in each scene card. You can click on it and the video for that scene will be played right away. Click on the video again, then you are back to the scene list.|
 |Author|[philpw99](https://github.com/philpw99){:target="_blank"}|
