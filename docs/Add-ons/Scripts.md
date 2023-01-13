@@ -65,3 +65,12 @@ These scripts are created by third parties and not officially affiliated or supp
 |Description|Powershell script that can (batch) import OnlyFans metadata into a Stash database from a OnlyFans metadata database scraped using DIGITALCRIMINALS's OnlyFans Scraper.|
 |Author|[ALonelyJuicebox](https://github.com/ALonelyJuicebox){:target="_blank"}|
 |Screenshots|![](../assets/fixed_table_width.png)![](../assets/OnlyFans_Scraper.png)![](../assets/OnlyFans_Scraper2.png)|
+
+### FilenamePerformersToCSV
+
+|-|-|
+|Category|Metadata|
+|Script|[FilenamePerformersToCSV](https://github.com/ALonelyJuicebox/FilenamePerformersToCSV){:target="_blank"}|
+|Description|Parse performer names from your media filenames into CSV files for batch import into Stash!|
+|Author|[ALonelyJuicebox](https://github.com/ALonelyJuicebox){:target="_blank"}|
+|Screenshots|![](../assets/fixed_table_width.png)![](../assets/FilenamePerformersToCSV.png)|
