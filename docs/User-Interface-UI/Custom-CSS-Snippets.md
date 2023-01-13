@@ -32,7 +32,10 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 
 ### Fit more thumbnails on each row
 
-Reduce left and right padding on Scene and Performer grid pages allowing for more thumbnails on each row.
+|-|-|
+|Description|Reduce left and right padding on Scene and Performer grid pages allowing for more thumbnails on each row.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
 
 ```css
 /* [Scenes tab] Fit more thumbnails on each row */
@@ -41,6 +44,11 @@ Reduce left and right padding on Scene and Performer grid pages allowing for mor
 ```
 
 ### Allow for longer string when displaying "Studio as Text" on scene thumbnails
+
+|-|-|
+|Description|Allow for longer string when displaying "Studio as Text" on scene thumbnails.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
 
 ```css
 /* [Scenes tab] Allow for longer string when displaying "Studio as Text" on scene thumbnails */
@@ -55,6 +63,11 @@ Reduce left and right padding on Scene and Performer grid pages allowing for mor
 
 ### Hide scene specs (resolution, duration) from scene card
 
+|-|-|
+|Description|Hide scene specs (resolution, duration) from scene card.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
+
 ```css
 /* [Scenes tab] Hide scene specs (resolution, duration) from scene card */
 
@@ -65,6 +78,11 @@ Reduce left and right padding on Scene and Performer grid pages allowing for mor
 
 ### Hide studio logo/text from scene card
 
+|-|-|
+|Description|Hide studio logo/text from scene card.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
+
 ```css
 /* [Scenes tab] Hide studio logo/text from scene card */
 
@@ -73,6 +91,11 @@ Reduce left and right padding on Scene and Performer grid pages allowing for mor
 }
 ```
 ### Make the list of tags take up less width
+
+|-|-|
+|Description|Make the list of tags take up less width.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
 
 ```css
 /* [Scenes tab] Make the list of tags take up less width */
@@ -83,6 +106,11 @@ Reduce left and right padding on Scene and Performer grid pages allowing for mor
 ```
 
 ### Swap studio and resolution/duration positions
+
+|-|-|
+|Description|Swap studio and resolution/duration positions.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
 
 ```css
 /* [Scenes tab] Swap studio and resolution/duration positions */
@@ -103,6 +131,11 @@ Reduce left and right padding on Scene and Performer grid pages allowing for mor
 
 ### Adjust the mouse over behaviour in wall mode
 
+|-|-|
+|Description|Adjust the mouse over behaviour in wall mode.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
+
 ```css
 /* [Scenes tab] Adjust the mouse over behaviour in wall mode */
 
@@ -119,6 +152,11 @@ Reduce left and right padding on Scene and Performer grid pages allowing for mor
 
 ### Disable zoom on hover in wall mode
 
+|-|-|
+|Description|Disable zoom on hover in wall mode.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
+
 ```css
 /* [Scenes tab] Disable zoom on hover in wall mode */
 
@@ -132,13 +170,13 @@ Reduce left and right padding on Scene and Performer grid pages allowing for mor
 
 ### Hide the scene scrubber
 
-This will hide the large scene scrubber under the video player and max out the player's height.
-
-![Image]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/css-scrubber.png)
+|-|-|
+|Description|This will hide the large scene scrubber under the video player and max out the player's height.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)![Image](../assets/css-scrubber.png)|
 
 ```css
 /* [Scenes tab] Hide the scene scrubber and max out the player's height */
-
 .scrubber-wrapper {
   display: none;
 }
@@ -146,7 +184,10 @@ This will hide the large scene scrubber under the video player and max out the p
 
 ### Hide the truncated text
 
-This will hide the truncated text that appears under the tile and date.
+|-|-|
+|Description|This will hide the truncated text that appears under the tile and date.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
 
 ```css
 /* [Scenes Tab] - Hide the truncated text on scene card */
@@ -158,9 +199,129 @@ This will hide the truncated text that appears under the tile and date.
 
 ---
 
+## Images
+
+### Disable lightbox animation
+
+|-|-|
+|Description|Disable lightbox animation.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
+
+```css
+/* [Images tab] Disable lightbox animation */
+
+.Lightbox-carousel {
+  transition: none;
+}
+```
+
+### Don't crop preview thumbnails
+
+|-|-|
+|Description|Don't crop preview thumbnails.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
+
+```css
+/* [Images tab] Don't crop preview thumbnails */
+
+.flexbin > * > img {
+  object-fit: inherit;
+  max-width: none;
+  min-width: initial;
+}
+```
+
+---
+
+## Movies
+
+### Better Movie layout for desktops, regular size poster
+
+|-|-|
+|Description|Making the front and back image much bigger. Left panel uses 70% while the right uses 30%.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
+
+```css
+/* [Movies tab] Better Movie layout for desktops: Regular size poster */
+
+.movie-details.mb-3.col.col-xl-4.col-lg-6 {
+  flex-basis: 70%
+}
+.col-xl-8.col-lg-6{
+  flex-basis: 30% 
+}
+.movie-images{
+  flex-wrap: wrap
+}
+.movie-image-container {
+  flex: 0 0 500px
+}
+```
+### Better Movie layout for desktops, larger size poster
+
+|-|-|
+|Description|Making the front and back image much bigger. Left panel uses 70% while the right uses 30%.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
+
+```css
+/* [Movies tab] Better Movie layout for desktops: Larger size poster */
+
+.movie-details.mb-3.col.col-xl-4.col-lg-6 {
+  flex-basis: 70%
+}
+.col-xl-8.col-lg-6{
+  flex-basis: 30% 
+}
+.movie-images{
+  flex-direction: column;
+  flex-wrap: wrap
+}
+.movie-image-container {
+  flex: 1 1 700px
+}
+```
+
+---
+
+## Galleries
+
+### Grid view for galleries
+
+|-|-|
+|Description|Grid view for galleries.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
+
+```css
+/* [Galleries tab] Grid view for galleries */
+
+.col.col-sm-6.mx-auto.table .d-none.d-sm-block {
+    display: none !important;
+}
+.col.col-sm-6.mx-auto.table .w-100.w-sm-auto {
+    width: 175px !important;
+    background-color: rgba(0, 0, 0, .45);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .35);
+}
+.col.col-sm-6.mx-auto.table tr {
+    display: inline-table;
+}
+```
+
+---
+
 ## Performers
 
 ### Show entire performer image in performer card
+
+|-|-|
+|Description|Show entire performer image in performer card.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
 
 ```css
 /* [Performers tab] Show entire performer image in performer card */
@@ -172,7 +333,13 @@ This will hide the truncated text that appears under the tile and date.
 
 ### Show a larger image in performer's page for desktop
 
+|-|-|
+|Description|Show a larger image in performer's page for desktop.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
+
 ```css
+/* [Performers tab] Show a larger image in performer's page for desktop */
 .performer-image-container{
   flex: 0 0 50%;
   max-width: 50%;
@@ -185,6 +352,11 @@ This will hide the truncated text that appears under the tile and date.
 ```
 
 ### Place performer image in the background on performer page
+
+|-|-|
+|Description|Place performer image in the background on performer page.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
 
 ```css
 /* [Performers tab] Place performer image in the background on performer page */
@@ -222,7 +394,13 @@ This will hide the truncated text that appears under the tile and date.
 
 ### Show larger performer images in performers list
 
+|-|-|
+|Description|Show larger performer images in performers list.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
+
 ```css
+/* [Performers tab] Show larger performer images in performers list */
 /* original value: height: 30rem; min-width:13.25rem; */
 .performer-card-image{
   height: 45rem;
@@ -231,6 +409,11 @@ This will hide the truncated text that appears under the tile and date.
 ```
 
 ### Move the buttons in the Performer's edit panel to the top instead of bottom
+
+|-|-|
+|Description|Move the buttons in the Performer's edit panel to the top instead of bottom (in newer version of Stash, the buttons are already positioned both at top and bottom.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
 
 ```css
 /* [Performers tab] Move the buttons in the Performer's edit panel to the top instead of bottom (in newer version of Stash, the buttons are already positioned both at top and bottom.  */
@@ -250,6 +433,11 @@ form#performer-edit {
 
 ### Move the tags row in the Performer's edit panel to the second position (just after name)
 
+|-|-|
+|Description|Move the tags row in the Performer's edit panel to the second position (just after name).|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
+
 ```css
 /* [Performers tab] Move the tags row in the Performer's edit panel to the second position (just after name).  */
 
@@ -267,95 +455,110 @@ form#performer-edit {
 
 ---
 
-## Galleries
+## Studios
 
-### Grid view for galleries
+### Different studio cards layout
+
+|-|-|
+|Description|Changes the layout of studio cards.|
+|Author|Qx#1573|
+|Screenshots|![](../assets/fixed_table_width.png)![](../assets/studios_layout.png)|
 
 ```css
-/* [Galleries tab] Grid view for galleries */
-
-.col.col-sm-6.mx-auto.table .d-none.d-sm-block {
-    display: none !important;
+/* [Studios tab] Changes the layout of studio cards */
+.studio-card.grid-card.card div.card-section div.rating-banner { display: none; }
+.slick-slide .studio-card-image { height: 300px; }
+ 
+.studio-card, .recommendation-row .studio-card {
+    padding: 0;
+    width: 500px;
+    height: 300px;
 }
-.col.col-sm-6.mx-auto.table .w-100.w-sm-auto {
-    width: 175px !important;
-    background-color: rgba(0, 0, 0, .45);
-    box-shadow: 0 0 2px rgba(0, 0, 0, .35);
+ 
+.studio-card-image, .recommendation-row .studio-card .studio-card-image {
+    max-height: 300px;
+    width: 500px;
 }
-.col.col-sm-6.mx-auto.table tr {
-    display: inline-table;
+ 
+.studio-card.grid-card.card div.card-section {
+    position: absolute;
+    bottom: 0em;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    height: 2.5em;
+    transition: 0.5s ease-in-out;
+}
+ 
+.studio-card.grid-card.card div.card-section:hover {
+    height: 7em;
 }
 ```
 
 ---
 
-## Images
+## Tags
 
-### Disable lightbox animation
+### Different tag cards layout
 
-```css
-/* [Images tab] Disable lightbox animation */
-
-.Lightbox-carousel {
-  transition: none;
-}
-```
-
-### Don't crop preview thumbnails
+|-|-|
+|Description|Changes the layout of tag cards on tags tab and when hovering on tags in different content.|
+|Author|Qx#1573|
+|Screenshots|![](../assets/fixed_table_width.png)![](../assets/tags_layout.png)|
 
 ```css
-/* [Images tab] Don't crop preview thumbnails */
-
-.flexbin > * > img {
-  object-fit: inherit;
-  max-width: none;
-  min-width: initial;
+/* [Tags changes] changes the layout of tag cards on tags page and hover */
+.tag-parent-tags, .tag-sub-tags { display: none;}
+.tag-card.zoom-0.grid-card.card div.card-section div.card-popovers.btn-group { margin-top: 1em; }
+.tag-card.zoom-0.grid-card.card div.thumbnail-section a.tag-card-header img.tag-card-image { object-fit: cover; }
+.tag-card.zoom-0.grid-card.card div.card-section hr { display: none; }
+ 
+.tag-card.zoom-0.grid-card.card {
+    padding: 0;
+    width: 300px;
+    height: 180px;
 }
-```
-
----
-
-## Movies
-
-### Better Movie layout for desktops
-
-Making the front and back image much bigger. Left panel uses 70% while the right uses 30%.
-
-#### Layout 1, regular size poster.
-
-```css
-/* [Movies tab] Better Movie layout for desktops: Regular size poster */
-
-.movie-details.mb-3.col.col-xl-4.col-lg-6 {
-  flex-basis: 70%
+ 
+.tag-card.zoom-0.grid-card.card div.card-section {
+    position: absolute;
+    text-shadow: 2px 2px 2px #000;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 3em;
+    overflow: hidden;
+    transition: 0.8s ease-in-out;
 }
-.col-xl-8.col-lg-6{
-  flex-basis: 30% 
+ 
+.tag-card.zoom-0.grid-card.card div.card-section a {
+    text-decoration: none;
 }
-.movie-images{
-  flex-wrap: wrap
+ 
+.tag-card.zoom-0.grid-card.card div.card-section:hover {
+    height: 22em;
 }
-.movie-image-container {
-  flex: 0 0 500px
+ 
+.tag-card.zoom-0.grid-card.card 
+    div.card-section a 
+    h5.card-section-title.flex-aligned 
+    div.TruncatedText {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 300px;
+    overflow: hidden;
+    display: block;
 }
-```
-#### Layout 2, larger size poster.
-
-```css
-/* [Movies tab] Better Movie layout for desktops: Larger size poster */
-
-.movie-details.mb-3.col.col-xl-4.col-lg-6 {
-  flex-basis: 70%
+ 
+.tag-card.zoom-0.grid-card.card div.card-section div.TruncatedText.tag-description {
+    position: relative;
+    top: 0.5em;
+    -webkit-text-stroke-width: 1px;
+    font-size: 16px;
 }
-.col-xl-8.col-lg-6{
-  flex-basis: 30% 
-}
-.movie-images{
-  flex-direction: column;
-  flex-wrap: wrap
-}
-.movie-image-container {
-  flex: 1 1 700px
+ 
+.tag-card .card-popovers .btn {
+    text-shadow: 1px 1px 1px #000;
+    stroke: black;
+    stroke-width: 15;
 }
 ```
 
@@ -365,13 +568,10 @@ Making the front and back image much bigger. Left panel uses 70% while the right
 
 ### Change the order of navigation bar buttons
 
-Use `order` values below 0 to move specific buttons to the left of the non-ordered buttons,  
-and values above 1 to move them to the right of the non-ordered buttons.
-
-**Before:**  
-![Navigation before]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/navigation-before.png)
-**After:**  
-![Navigation after]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/navigation-after.png)
+|-|-|
+|Description|Use `order` values below 0 to move specific buttons to the left of the non-ordered buttons, and values above 1 to move them to the right of the non-ordered buttons.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)Before<br />![Navigation before](../assets/navigation-before.png)<br />After<br />![Navigation after](../assets/navigation-after.png)|
 
 ```css
 /* [Global changes] Change the order of navigation bar buttons */
@@ -393,6 +593,11 @@ div.nav-link[data-rb-event-key="/scenes"] {
 
 ### Hide the Donate button
 
+|-|-|
+|Description|Hide the Donate button.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
+
 ```css
 /* [Global changes] Hide the Donate button */
 
@@ -403,7 +608,10 @@ div.nav-link[data-rb-event-key="/scenes"] {
 
 ### Blur NSFW images
 
-Use for when working on stash but don't want to expose NSFW images and text. May not be exhaustive:
+|-|-|
+|Description|Use for when working on stash but don't want to expose NSFW images and text. May not be exhaustive.|
+|Author||
+|Screenshots|![](../assets/fixed_table_width.png)|
 
 ```css
 /* [Global changes] Blur NSFW images */
@@ -450,6 +658,11 @@ img.performer,
 ```
 
 ### Blur NSFW images and unblur on mouse over
+
+|-|-|
+|Description|Blur NSFW images and unblur on mouse over.|
+|Author|fl0w#9497|
+|Screenshots|![](../assets/fixed_table_width.png)![](../assets/blur2.png)|
 
 ```css
 /* [Global changes] Blur NSFW images and unblur on mouse over */
