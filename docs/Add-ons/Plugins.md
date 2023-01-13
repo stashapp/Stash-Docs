@@ -229,3 +229,12 @@ These plugins are created by third parties and not officially affiliated or supp
 |Description|Creates an index json file /deovr used by the vr player allowing you to use DeoVR to play 2d and 3d videos from stash.|
 |Author|[Tweeticoats](https://github.com/Tweeticoats){:target="_blank"}|
 |Screenshots|![](../assets/fixed_table_width.png)|
+
+### stash-plugin-performer-creator
+
+|-|-|
+|Category|Metadata|
+|Plugin|[stash-plugin-performer-creator](https://github.com/cc1234475/stash-plugin-performer-creator){:target="_blank"}|
+|Description|This is a plugin for Stash. It adds a Parse all scenes for performers task. This task processes all scenes and using Natural Language Processing tries to detect performer names and tries to find/add them.|
+|Author|[cc1234475](https://github.com/cc1234475){:target="_blank"}|
+|Screenshots|![](../assets/fixed_table_width.png)|
