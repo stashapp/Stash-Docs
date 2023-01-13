@@ -268,14 +268,14 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[QxxxGit](https://github.com/QxxxGit)|
 |Screenshots|![](../assets/fixed_table_width.png)|
 
-### Performer Suggestions
+### Performer Card Details
 
 |-|-|
 |Category|Stash|
 |Userscript|[Performer Card Details](https://gist.github.com/QxxxGit/5c25005ff1a918d3f1213134b2282609){:target="_blank"}|
 |Description|Adds details to performer cards.|
 |Author|[QxxxGit](https://github.com/QxxxGit)|
-|Screenshots|![](../assets/fixed_table_width.png)|
+|Screenshots|![](../assets/fixed_table_width.png)![](../assets/Performer_Card_Details.png)|
 
 ### StashDB Copy StashID
 
