@@ -212,24 +212,6 @@ These plugins are created by third parties and not officially affiliated or supp
 |Author|[niemands](https://github.com/niemands){:target="_blank"}|
 |Screenshots|![](../assets/fixed_table_width.png)|
 
-### Scrape with
-
-|-|-|
-|Category|Scraping|
-|Plugin|[Scrape with](https://github.com/Tweeticoats/stash-plugin-scrape_with){:target="_blank"}|
-|Description|Batch scrape scenes and performers. For example tag a scene with scrape_with_xbvr and run the task to run that scraper. Run artist scrapers on all performers missing a url. Run the performer image scraper on all performers.|
-|Author|[Tweeticoats](https://github.com/Tweeticoats){:target="_blank"}|
-|Screenshots|![](../assets/fixed_table_width.png)|
-
-### stash-deovr
-
-|-|-|
-|Category|VR|
-|Plugin|[stash-deovr](https://github.com/Tweeticoats/stash-deovr){:target="_blank"}|
-|Description|Creates an index json file /deovr used by the vr player allowing you to use DeoVR to play 2d and 3d videos from stash.|
-|Author|[Tweeticoats](https://github.com/Tweeticoats){:target="_blank"}|
-|Screenshots|![](../assets/fixed_table_width.png)|
-
 ### stash-plugin-performer-creator
 
 |-|-|
