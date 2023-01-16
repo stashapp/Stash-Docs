@@ -220,3 +220,12 @@ These plugins are created by third parties and not officially affiliated or supp
 |Description|This is a plugin for Stash. It adds a Parse all scenes for performers task. This task processes all scenes and using Natural Language Processing tries to detect performer names and tries to find/add them.|
 |Author|[cc1234475](https://github.com/cc1234475){:target="_blank"}|
 |Screenshots|![](../assets/fixed_table_width.png)|
+
+### Stash NFO Exporter for Kodi
+
+|-|-|
+|Category|Metadata|
+|Plugin|[StashNfoExporterKodi](https://github.com/scruffynerf/StashNfoExporterKodi){:target="_blank"}|
+|Description|Adds .nfo file and strm support to allow using Stash organized content with Kodi with no Kodi Addon needed.|
+|Author|[scruffynerf](https://github.com/scruffynerf){:target="_blank"}|
+|Screenshots|![](../assets/fixed_table_width.png)|
