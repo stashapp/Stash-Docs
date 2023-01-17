@@ -23,6 +23,6 @@ parent: In-app Manual
 
 Join our [Discord](https://discord.gg/2TsNFKt){:target="_blank"}.
 
-The [Github wiki](https://github.com/stashapp/stash/wiki){:target="_blank"} covers some areas not covered in the in-app help.
+The [Stash-Docs](https://docs.stashapp.cc) covers some areas not covered in the in-app help.
 
-Raise a [github issue](https://github.com/stashapp/stash/issues){:target="_blank"}.
+Raise a [GitHub issue](https://github.com/stashapp/stash/issues).
