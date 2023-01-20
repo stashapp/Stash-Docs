@@ -40,3 +40,5 @@ plugins path|plugins_path|-|-|The path to the stash plugins folder|Only use if y
 scrapers path|scrapers_path|-|-|The path to the scrapers folder|Only use if you need to override the default
 custom served folders|custom_served_folders|-|-|Allows configuration of mapped URLs to file system folders|[PR](https://github.com/stashapp/stash/pull/620){:target="_blank"}
 maximum upload size|max_upload_size|-|-|Change the maximum size (in MB) for partial imports| default: 1024 (1GB)
+proxy|proxy|-|-| The url of a HTTP(S) proxy to be used when stash makes calls to online services | Example: https://user:password@my.proxy:8080
+no proxy|no_proxy|-|-| A list of domains for which the proxy must not be used | default is all local LAN: localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
