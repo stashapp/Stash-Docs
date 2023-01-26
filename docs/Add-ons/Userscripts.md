@@ -464,4 +464,4 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Checker](https://gist.github.com/timo95/562b9363d491e3ee281cb46944445fcd){:target="_blank"}|
 |Description|Checks if a given scene/performer on one of the supported sites is present in your Stash. Shows a checkmark and tooltip for additional information. All supported websites are listed in the metadata `@match` section.|
 |Author|[timo95](https://github.com/timo95)|
-|Screenshots|![](../assets/fixed_table_width.png)|
+|Screenshots|![](../assets/fixed_table_width.png)![](../assets/Stash_Checker.png)|
