@@ -456,3 +456,12 @@ These userscripts are created by third parties and not officially affiliated or 
 |Description|This helps getting metadata from ATK Girlfriends. This runs on the model page as it solves this issues that a lot of scene pages on ATK Girlfriends will just return a blank white page. This script: extracts the scene link, adds a link, and a click to copy button, extracts the scene images, manipulates the url to be the larger version, adds a link, and a click to copy button, adds a click to copy button to the title, adds a click to copy button to the description.|
 |Author|[halorrr](https://github.com/halorrr)|
 |Screenshots|![](../assets/fixed_table_width.png)|
+
+### Stash Checker
+
+|-|-|
+|Category|Utility|
+|Userscript|[Stash Checker](https://gist.github.com/timo95/562b9363d491e3ee281cb46944445fcd){:target="_blank"}|
+|Description|Checks if a given scene/performer on one of the supported sites is present in your Stash. Shows a checkmark and tooltip for additional information. All supported websites are listed in the metadata `@match` section.|
+|Author|[timo95](https://github.com/timo95)|
+|Screenshots|![](../assets/fixed_table_width.png)|
