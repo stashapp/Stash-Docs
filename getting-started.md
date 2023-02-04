@@ -38,6 +38,6 @@ permalink: getting-started
 
 ## First Steps
 
-1. [Setting Up Content Libraries](getting-started/first-steps/#setting-up-content-libraries)
-2. [Configuring Scan Options](getting-started/first-steps/#configuring-scan-options)
-3. [Initiating Scan](getting-started/first-steps/#initiating-scan)
+1. [Setting Up Content Libraries](getting-started/first-steps#setting-up-content-libraries)
+2. [Configuring Scan Options](getting-started/first-steps#configuring-scan-options)
+3. [Initiating Scan](getting-started/first-steps#initiating-scan)

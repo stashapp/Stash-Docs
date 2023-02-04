@@ -52,7 +52,7 @@ See the [Auto Tagging](tasks/autotagging) page.
 
 ## Scene Filename Parser
 
-See the [Scene Filename Parser](tasks/scenefilenameParser) page.
+See the [Scene Filename Parser](tasks/scenefilenameparser) page.
 
 ----
 
