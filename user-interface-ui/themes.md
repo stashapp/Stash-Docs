@@ -40,9 +40,9 @@ If you would like to develop your own theme, we have a [reference guide of CSS s
 
 | Name                                                         | Preview                                                               |
 | ---------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| [Pulsar](themes/pulsar) | ![Screenshot of Pulsar Theme](assets/Pulsar-preview.jpg) |
-| [Light Pulsar](themes/light-pulsar) | ![Screenshot of Light Pulsar Theme](assets/Light-Pulsar-preview.jpg) |
-| [Night](themes/night) | ![Screenshot of Night Theme](assets/Night-preview.png) |
-| [Plex](themes/plex) | ![Screenshot of Plex Theme](assets/Plex-preview.png) |
-| [Black Hole](themes/Black-Hole) | ![Screenshot of Black Hole Theme](assets/Black-Hole-preview.png) |
-| [Modern Dark](themes/Modern-Dark) | ![Screenshot of Modern Dark](assets/Modern-Dark-preview.jpg) |
+| [Pulsar](themes/pulsar) | ![Screenshot of Pulsar Theme](../assets/Pulsar-preview.jpg) |
+| [Light Pulsar](themes/light-pulsar) | ![Screenshot of Light Pulsar Theme](../assets/Light-Pulsar-preview.jpg) |
+| [Night](themes/night) | ![Screenshot of Night Theme](../assets/Night-preview.png) |
+| [Plex](themes/plex) | ![Screenshot of Plex Theme](../assets/Plex-preview.png) |
+| [Black Hole](themes/Black-Hole) | ![Screenshot of Black Hole Theme](../assets/Black-Hole-preview.png) |
+| [Modern Dark](themes/Modern-Dark) | ![Screenshot of Modern Dark](../assets/Modern-Dark-preview.jpg) |

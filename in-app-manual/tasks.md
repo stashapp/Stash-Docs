@@ -46,13 +46,13 @@ The scan task accepts the following options:
 
 ## Auto Tagging
 
-See the [Auto Tagging](autotagging) page.
+See the [Auto Tagging](tasks/autotagging) page.
 
 ---
 
 ## Scene Filename Parser
 
-See the [Scene Filename Parser](scenefilenameParser) page.
+See the [Scene Filename Parser](tasks/scenefilenameParser) page.
 
 ----
 
@@ -106,6 +106,6 @@ The import and export tasks read and write JSON files to the configured metadata
 
 > **⚠️ Note:** The full import task wipes the current database completely before importing.
 
-See the [JSON Specification](jsonspec) page for details on the exported JSON format.
+See the [JSON Specification](tasks/jsonspec) page for details on the exported JSON format.
 
 ---

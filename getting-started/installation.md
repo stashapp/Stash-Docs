@@ -13,11 +13,11 @@ permalink: getting-started/installation
     Table of Contents
   </summary>
   {: .text-delta }
-1. [Installing on Windows](windows)
-2. [Installing on macOS](macos)
-3. [Installing on Linux](linux)
-4. [Installing on Synology NAS](synology)
-5. [Installing on FreeNAS/TrueNAS](freenas-truenas)
-6. [Unraid Support](unraid)
+1. [Installing on Windows](installation/windows)
+2. [Installing on macOS](installation/macos)
+3. [Installing on Linux](installation/linux)
+4. [Installing on Synology NAS](installation/synology)
+5. [Installing on FreeNAS/TrueNAS](installation/freenas-truenas)
+6. [Unraid Support](installation/unraid)
 </details>
 

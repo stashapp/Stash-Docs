@@ -28,7 +28,7 @@ Stash saves login credentials in the `config.yml` file. You must reset both logi
 
 Find the local IP address of your Stash Server (guides for [Windows](https://support.microsoft.com/en-us/windows/find-your-ip-address-in-windows-f21a9bbc-c582-55cd-35e0-73431160a1b9){:target="_blank"}, [MacOS](https://support.apple.com/guide/mac-help/find-your-computers-name-and-network-address-mchlp1177/11.0/mac/11.0){:target="_blank"}, [Linux](https://wiki.archlinux.org/title/Network_configuration#IP_addresses){:target="_blank"}). Then, on another device on your local network, open a browser to http://SERVER.IP.ADDRESS.HERE:9999/
 
-See [this article]({{ site.baseurl }}/docs/Network/Authentication-Required-When-Accessing-Stash-From-the-Internet#alternative-and-safe-methods-to-access-your-stash) for ideas on accessing your stash from outside your network.
+See [this article](networking/authentication-required-when-accessing-stash-from-the-internet#alternative-and-safe-methods-to-access-your-stash) for ideas on accessing your stash from outside your network.
 
 ### How do I serve Stash over SSL/TLS (HTTPS)?
 

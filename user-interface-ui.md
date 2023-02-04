@@ -12,12 +12,12 @@ permalink: user-interface-ui
     Table of Contents
   </summary>
   {: .text-delta }
-1. [Themes](themes)
-  - [Pulsar](themes/pulsar)
-  - [Light Pulsar](themes/light-pulsar)
-  - [Night](themes/night)
-  - [Plex](themes/plex)
-  - [Black Hole](themes/black-hole)
-  - [Modern Dark](themes/modern-dark)
-2. [Custom CSS Snippets](custom-css-snippets)
+1. [Themes](user-interface-ui/themes)
+  - [Pulsar](user-interface-ui/themes/pulsar)
+  - [Light Pulsar](user-interface-ui/themes/light-pulsar)
+  - [Night](user-interface-ui/themes/night)
+  - [Plex](user-interface-ui/themes/plex)
+  - [Black Hole](user-interface-ui/themes/black-hole)
+  - [Modern Dark](user-interface-ui/themes/modern-dark)
+2. [Custom CSS Snippets](user-interface-ui/custom-css-snippets)
 </details>

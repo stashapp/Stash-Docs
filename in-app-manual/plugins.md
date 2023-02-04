@@ -43,9 +43,9 @@ Plugins provide tasks which can be run from the Tasks page.
 
 ## Creating plugins
 
-See [External Plugins](externalplugins) for details for making external plugins.
+See [External Plugins](plugins/externalplugins) for details for making external plugins.
 
-See [Embedded Plugins](embeddedplugins) for details for making embedded plugins.
+See [Embedded Plugins](plugins/embeddedplugins) for details for making embedded plugins.
 
 ### Plugin input
 
