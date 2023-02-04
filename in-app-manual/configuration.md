@@ -99,7 +99,6 @@ Note: If this is set too high it will decrease overall performance and causes fa
 
 ---
 
-
 ## ffmpeg arguments
 
 Additional arguments can be injected into ffmpeg when generating previews and sprites, and when live-transcoding videos. 
