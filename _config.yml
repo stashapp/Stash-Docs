@@ -12,7 +12,7 @@ source: ./
 permalink: pretty
 
 # Set a path/url to a logo that will be displayed instead of the title
-logo: "/assets/logo_v2.png"
+logo: "/assets/logo_v4.png"
 #logo: https://stashapp.cc/images/stash.svg
 
 # Aux links for the upper right navigation
