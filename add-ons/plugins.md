@@ -137,6 +137,16 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Stash version|v0.16 or higher|
 |Screenshots|![](assets/fixed_table_width.png)|
 
+### timestampTrade
+
+|-|-|
+|Category|Scene|
+|Plugin|[timestampTrade](https://github.com/stashapp/CommunityScripts/tree/main/plugins/timestampTrade){:target="_blank"}|
+|Description|[timestamp.trade API](https://timestamp.trade) syncs markers between Stash instances and XBVR. This sits along side other metadata databases like StashDB while we wait for the feature to be added there.|
+|Triggers|Scene.Update<br />Task|
+|Stash version|v0.18 or higher|
+|Screenshots|![](assets/fixed_table_width.png)|
+
 ---
 
 ## Third-party
