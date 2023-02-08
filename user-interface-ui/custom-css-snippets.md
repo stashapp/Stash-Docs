@@ -772,3 +772,17 @@ img.performer:hover,
  filter: blur(0px);
 }
 ```
+
+### Hide 0 count badges
+
+|-|-|
+|Description|Hide 0 count badges.|
+|Author|echo6ix|
+|Screenshots|![](assets/fixed_table_width.png)![](assets/hide_0_count_badges.png)|
+
+```css
+/* [Global changes] Hide 0 count badges */
+span.badge[data-value="0"] {
+    display: none;
+}
+```
