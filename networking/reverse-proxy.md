@@ -17,7 +17,7 @@ parent: Networking
 
 The use of a reverse proxy for Stash is possible. 
 
-## General
+# General
 
 Generally, the following headers will need to be set (check your proxy's documentation for how to configure) .
 - Host (http host)
@@ -27,16 +27,16 @@ Generally, the following headers will need to be set (check your proxy's documen
 
 See [issue 134](https://github.com/stashapp/stash/pull/134){:target="_blank"} for more information.
 
-## Setting External URL
+# Setting External URL
 
 You can set the base URL that will be served by Stash by adding an `external_host:` setting in your Stash config.yml and assigning it the full publicly accessible url
 ```
 external_host: http://example.domain.com
 ```
 
-## Server Configuration Examples
+# Server Configuration Examples
 
-### NGinx
+## NGinx
 
 ```bash
 location / {
@@ -48,7 +48,7 @@ location / {
 }
 ```
 
-## NGinX + Docker (Linuxserver Letsencrypt)
+# NGinX + Docker (Linuxserver Letsencrypt)
 
 If you are using the linuxserver letencrypt docker you can use create a `stash.subdomain.conf` file in your `proxy-confs` folder and use this as the config:
 ```bash
@@ -90,7 +90,7 @@ server {
 }
 ```
 
-### Nginx with external_host
+## Nginx with external_host
 
 Another example for `nginx`:
 
@@ -120,7 +120,7 @@ server {
 }
 ```
 
-### Apache
+## Apache
 
 ```
 ProxyPass "/stash" "http://127.0.0.1:9999"
@@ -145,7 +145,7 @@ SSLCertificateFile /path/to/cert.pem
 SSLCertificateKeyFile /path/to/cert.key
 ```
 
-#### Prerequisites
+### Prerequisites
 
 ```
 sudo a2enmod proxy
@@ -160,7 +160,7 @@ sudo a2enmod headers
 sudo a2enmod ssl
 ```
 
-### Caddy
+## Caddy
 
 ```
 example.domain.com
@@ -176,13 +176,13 @@ reverse_proxy 127.0.0.1:9999 {
 }
 ```
 
-## Troubleshooting
+# Troubleshooting
 
-**504 Errors** 
+## 504 Errors
 
 - In some cases with big database files you might encounter `504` errors during stash db migration due to timeout. Adjusting the `proxy_read_timeout` value ( `proxy.conf` file in Letencrypt/Swag docker container)
 
-**422 Errors**
+## 422 Errors
 
 - In order for the websocket to work, you may need to also add these lines to your server block (`proxy.conf` file in the Letencrypt Unraid docker container for instance) as mentioned [here](https://github.com/stashapp/stash/issues/532){:target="_blank"} should fix the issue.
 

@@ -32,7 +32,7 @@ div[data-rb-event-key="/scenes/markers"] {
 }
 ```
 
-### Screenshots
+## Screenshots
 
 ![Modern Dark preview #1](/assets/user-interface-ui/themes/modern-dark-1.jpg)
 
