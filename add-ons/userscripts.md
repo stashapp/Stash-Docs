@@ -19,18 +19,18 @@ Userscripts are programs written in Javascript that modifies web pages to improv
 
 To install the userscript you will need a browser extension such as [Violentmonkey](https://violentmonkey.github.io){:target="_blank"} / [Tampermonkey](https://www.tampermonkey.net){:target="_blank"} / [Greasemonkey](https://www.greasespot.net){:target="_blank"}.
 
-## Categories
+# Categories
 - **Stash** - applies to Stash software.
 - **StashDB** - applies to StashDB.org stash-box instance (might work with other stash-box instances with some tweaking).
 - **Utility** - applies to sites not related to Stash.
 
 Userscripts are separated into 2 sections [Official](#official) and [Third-party](#third-party).
 
-## Official
+# Official
 
 Official userscripts are hosted on [CommunityScripts repository](https://github.com/stashapp/CommunityScripts){:target="_blank"}. All code is reviewed by core Stash team and any questions or issues you have regarding these userscripts can be raised in Discord or GitHub. 
 
-### StashDB Submission Helper
+## StashDB Submission Helper
 
 |-|-|
 |Category|StashDB|
@@ -38,12 +38,12 @@ Official userscripts are hosted on [CommunityScripts repository](https://github.
 |Description|Adds handy functions for StashDB submissions like buttons to add aliases in bulk to a performer.|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/StashDB_Submission_Helper.png)|
 
-## Third-party
+# Third-party
 
 {: .note }
 These userscripts are created by third parties and not officially affiliated or supported by the core Stash team. If you have issues, please reach out to the original creators.
 
-### Stash Batch Query Edit
+## Stash Batch Query Edit
 
 |-|-|
 |Category|Stash|
@@ -52,7 +52,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Batch_Query_Edit.png)![](/assets/add-ons/Stash_Batch_Query_Edit2.png)|
 
-### Stash Batch Result Toggle
+## Stash Batch Result Toggle
 
 |-|-|
 |Category|Stash|
@@ -61,7 +61,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Batch_Result_Toggle.png)![](/assets/add-ons/Stash_Batch_Result_Toggle2.png)|
 
-### Stash Batch Save
+## Stash Batch Save
 
 |-|-|
 |Category|Stash|
@@ -70,7 +70,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Batch_Save.png)|
 
-### Stash Batch Search
+## Stash Batch Search
 
 |-|-|
 |Category|Stash|
@@ -79,7 +79,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Batch_Search.png)|
 
-### Stash Markdown
+## Stash Markdown
 
 |-|-|
 |Category|Stash|
@@ -88,7 +88,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Markdown.png)|
 
-### Stash New Performer Filter Button
+## Stash New Performer Filter Button
 
 |-|-|
 |Category|Stash|
@@ -97,7 +97,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_New_Performer_Filter_Button.png)|
 
-### Stash Open Media Player
+## Stash Open Media Player
 
 |-|-|
 |Category|Stash|
@@ -106,7 +106,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Open_Media_Player.png)|
 
-### Stash Performer Audit Task Button
+## Stash Performer Audit Task Button
 
 |-|-|
 |Category|Stash|
@@ -115,7 +115,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_Audit_Task_Button.png)![](/assets/add-ons/Stash_Performer_Audit_Task_Button2.png)![](/assets/add-ons/Stash_Performer_Audit_Task_Button3.png)|
 
-### Stash Performer Image Cropper
+## Stash Performer Image Cropper
 
 |-|-|
 |Category|Stash|
@@ -124,7 +124,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_Image_Cropper.png)|
 
-### Stash Performer Markers Tab
+## Stash Performer Markers Tab
 
 |-|-|
 |Category|Stash|
@@ -133,7 +133,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_Markers_Tab.png)|
 
-### Stash Performer Tagger Additions
+## Stash Performer Tagger Additions
 
 |-|-|
 |Category|Stash|
@@ -142,7 +142,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_Tagger_Additions.png)|
 
-### Stash Performer URL Searchbox
+## Stash Performer URL Searchbox
 
 |-|-|
 |Category|Stash|
@@ -151,7 +151,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_URL_Searchbox.png)|
 
-### Stash Scene Tagger Additions
+## Stash Scene Tagger Additions
 
 |-|-|
 |Category|Stash|
@@ -160,7 +160,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Scene_Tagger_Additions.png)![](/assets/add-ons/Stash_Scene_Tagger_Additions2.png)|
 
-### Stash Scene Tagger Colorizer
+## Stash Scene Tagger Colorizer
 
 |-|-|
 |Category|Stash|
@@ -169,7 +169,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Scene_Tagger_Colorizer.png)![](/assets/add-ons/Stash_Scene_Tagger_Colorizer2.png)|
 
-### Stash Scene Tagger Draft Submit
+## Stash Scene Tagger Draft Submit
 
 |-|-|
 |Category|Stash|
@@ -178,7 +178,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Scene_Tagger_Draft_Submit.png)|
 
-### Stash Scene Tagger Linkify
+## Stash Scene Tagger Linkify
 
 |-|-|
 |Category|Stash|
@@ -187,7 +187,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Scene_Tagger_Linkify.png)![](/assets/add-ons/Stash_Scene_Tagger_Linkify2.png)|
 
-### Stash Set Stashbox Favorite Performers
+## Stash Set Stashbox Favorite Performers
 
 |-|-|
 |Category|Stash|
@@ -196,7 +196,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Set_Stashbox_Favorite_Performers.png)![](/assets/add-ons/Stash_Set_Stashbox_Favorite_Performers2.png)![](/assets/add-ons/Stash_Set_Stashbox_Favorite_Performers3.png)|
 
-### Stash StashID Icon
+## Stash StashID Icon
 
 |-|-|
 |Category|Stash|
@@ -205,7 +205,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_StashID_Icon.png)![](/assets/add-ons/Stash_StashID_Icon2.png)![](/assets/add-ons/Stash_StashID_Icon3.png)|
 
-### Stash StashID Input
+## Stash StashID Input
 
 |-|-|
 |Category|Stash|
@@ -214,7 +214,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_StashID_Input.png)![](/assets/add-ons/Stash_StashID_Input2.png)|
 
-### Stash Stats
+## Stash Stats
 
 |-|-|
 |Category|Stash|
@@ -223,7 +223,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Stats.png)|
 
-### Stash Studio Image And Parent On Create
+## Stash Studio Image And Parent On Create
 
 |-|-|
 |Category|Stash|
@@ -232,7 +232,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Studio_Image_And_Parent_On_Create.png)|
 
-### Stash Tag Image Cropper
+## Stash Tag Image Cropper
 
 |-|-|
 |Category|Stash|
@@ -241,7 +241,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Tag_Image_Cropper.png)|
 
-### Visage
+## Visage
 
 |-|-|
 |Category|Stash|
@@ -250,7 +250,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[cc1234475](https://github.com/cc1234475)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Visage.png)|
 
-### Performer Suggestions
+## Performer Suggestions
 
 |-|-|
 |Category|Stash|
@@ -259,7 +259,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[QxxxGit](https://github.com/QxxxGit)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Performer Card Details
+## Performer Card Details
 
 |-|-|
 |Category|Stash|
@@ -268,7 +268,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[QxxxGit](https://github.com/QxxxGit)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Performer_Card_Details.png)|
 
-### StashDB Copy StashID
+## StashDB Copy StashID
 
 |-|-|
 |Category|StashDB|
@@ -277,7 +277,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### StashDB Backlog Userscript
+## StashDB Backlog Userscript
 
 |-|-|
 |Category|StashDB|
@@ -286,7 +286,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/StashDB_Backlog_Userscript.png)![](/assets/add-ons/StashDB_Backlog_Userscript2.png)![](/assets/add-ons/StashDB_Backlog_Userscript3.png)|
 
-### StashDB Images Userscript
+## StashDB Images Userscript
 
 |-|-|
 |Category|StashDB|
@@ -295,7 +295,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/StashDB_Images_Userscript.png)|
 
-### StashDB ID Copy Buttons
+## StashDB ID Copy Buttons
 
 |-|-|
 |Category|StashDB|
@@ -304,7 +304,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/StashDB_ID_Copy_Buttons.png)|
 
-### Indexxx Helper Userscript
+## Indexxx Helper Userscript
 
 |-|-|
 |Category|Utility|
@@ -313,7 +313,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### IAFD Helper Userscript
+## IAFD Helper Userscript
 
 |-|-|
 |Category|Utility|
@@ -322,7 +322,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### ManyVids Release Year Userscript
+## ManyVids Release Year Userscript
 
 |-|-|
 |Category|Utility|
@@ -331,7 +331,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Brazzers Sub-Studio Userscript
+## Brazzers Sub-Studio Userscript
 
 |-|-|
 |Category|Utility|
@@ -340,7 +340,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### 1 Pass For All Sites - Better Episode Image
+## 1 Pass For All Sites - Better Episode Image
 
 |-|-|
 |Category|Utility|
@@ -349,7 +349,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### CumLouder
+## CumLouder
 
 |-|-|
 |Category|Utility|
@@ -358,7 +358,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### ExploitedX Sites - Release Codes
+## ExploitedX Sites - Release Codes
 
 |-|-|
 |Category|Utility|
@@ -367,7 +367,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### FTVCash - Better Image
+## FTVCash - Better Image
 
 |-|-|
 |Category|Utility|
@@ -376,7 +376,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Gamma Entertainment - Scene Length
+## Gamma Entertainment - Scene Length
 
 |-|-|
 |Category|Utility|
@@ -385,7 +385,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Kink - Find Duration
+## Kink - Find Duration
 
 |-|-|
 |Category|Utility|
@@ -394,7 +394,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### MindGeek Scene Trailer
+## MindGeek Scene Trailer
 
 |-|-|
 |Category|Utility|
@@ -403,7 +403,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Porn Pros
+## Porn Pros
 
 |-|-|
 |Category|Utility|
@@ -412,7 +412,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[peolic](https://github.com/peolic)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Vixen Media Group - Trailers, Studio Code, and Click to Copy
+## Vixen Media Group - Trailers, Studio Code, and Click to Copy
 
 |-|-|
 |Category|Utility|
@@ -421,7 +421,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[halorrr](https://github.com/halorrr)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Freeones Forum Link Corrector
+## Freeones Forum Link Corrector
 
 |-|-|
 |Category|Utility|
@@ -430,7 +430,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[halorrr](https://github.com/halorrr)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### ModelHub Exact Date
+## ModelHub Exact Date
 
 |-|-|
 |Category|Utility|
@@ -439,7 +439,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[halorrr](https://github.com/halorrr)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### ATK Girlfriends Scene and Image Links with Click to Copy
+## ATK Girlfriends Scene and Image Links with Click to Copy
 
 |-|-|
 |Category|Utility|
@@ -448,7 +448,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[halorrr](https://github.com/halorrr)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Stash Checker
+## Stash Checker
 
 |-|-|
 |Category|Utility|

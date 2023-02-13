@@ -19,7 +19,7 @@ The following is our recommended procedure for new Stash users who want to get i
 
 **The following sections are in this particular order for a reason, so please follow this guide from the beginning**.
 
-## Generate pHashes
+# Generate pHashes
 
 1. Navigate to the Settings page (⚙ icon in top right), make sure you're on "Tasks" in the sidebar to the left, then find the first heading "Library" in the middle of the page. Make sure "Generate perceptual hashes" is turned on so pHashes will be created automatically each time you run a scan to add new scenes. This will slow down the scanning process, but for most users [it's worth it](https://guidelines.stashdb.org/docs/getting-started-stashdb/#whats-a-phash){:target="_blank"}. pHashes are the main way to match your scenes with our data on StashDB.
 
@@ -31,11 +31,11 @@ The following is our recommended procedure for new Stash users who want to get i
 
     ![How to generate pHashes manually](/assets/beginner-guides/gen-phashes-manually.jpg)
 
-## Join StashDB
+# Join StashDB
 
 If you haven't set up StashDB in your Stash settings yet, now's the time to do it. Get an invite code in the **#stashdb-invites** channel on [Discord](https://discord.com/channels/559159668438728723){:target="_blank"}. Check the pinned messages (📌 icon in top right) there for details and up-to-date instructions on how to create an account and connect to it from Stash.
 
-### How to connect your account to Stash
+## How to connect your account to Stash
 
 1.  Go to [https://stashdb.org/register](https://stashdb.org/register){:target="_blank"} to create a new account using one of the invite codes pinned to **#stashdb-invites**.
   - If all of the codes are used/expired, you can ping **@Infinite** in **#stashdb-invites** and politely ask to refresh them. A few other elevated users can also generate an invite code for you.*
@@ -45,7 +45,7 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
 5.  Click **Add** and fill out the form that pops up: paste in your API key from step #3, enter `stashdb.org` (or anything else you'd like) for **Name**, and enter `https://stashdb.org/graphql` as the **GraphQL endpoint**
 6.  Click **Test Credentials** to make sure you've entered everything correctly, then click **Confirm**.
 
-## Use the Scene Tagger
+# Use the Scene Tagger
 
 1. Go to your Scenes page on Stash and click the double 🔖 icon to the far right of the search bar. This is your Scene Tagger view and should be your first choice for pulling data, not Identify / Autotag / Filename Parser / URL Scrapers / etc. Always use the Scene Tagger first, the rest are for users with more specific needs who understand the strengths and weaknesses of each tool.
 
@@ -67,7 +67,7 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
 {:style="counter-reset:none"}
 1. Be sure to double-check that each selected result matches your scene before clicking the "Save" button at the bottom of each card. **If you're confident that all of your saved matches are accurate**, you may click the "Submit fingerprints" button after you're done. This will add your files' hashes to StashDB to make them easier for other users to find. But again, **make sure your files were matched correctly first**. The button will appear right next to the "Scrape All" button.
 
-## Use ThePornDB Scraper
+# Use ThePornDB Scraper
 
 1. If you are absolutely sure a scene isn't on StashDB anywhere, the next easiest method is to scrape from ThePornDB. They have significantly more scenes than StashDB thanks to their automated scrapers, but their info isn't always as complete or accurate compared to StashDB's manually curated approach. They also don't host pHashes so matching scenes can be trickier as well.
 <br/><br/>
@@ -111,7 +111,7 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
 
 - **For those wanting to contribute to StashDB**: As noted before, ThePornDB leans heavily on automated scrapers to pull all of their info. Often that data is incomplete or inaccurate compared to what we'd want on StashDB. Before you [submit your scene to StashDB](https://guidelines.stashdb.org/docs/getting-started-stashdb/#submitting-drafts-to-stashdb){:target="_blank"}, you'll need to double-check your info, clean it up a bit first, and make sure you're following [these guidelines](https://guidelines.stashdb.org/docs/scenes/){:target="_blank"}. Submitting to StashDB is discussed further in the [last step](#submit-to-stashdb) of this guide.
 
-## Use Site-Specific Scrapers
+# Use Site-Specific Scrapers
 
 1. If you've already [tried StashDB](#use-the-scene-tagger), you've already [tried ThePornDB](#use-theporndb-scraper), and you still want to scrape a site directly, you can try using a site-specific scraper. However, every scraper is going to work differently. Some will need Python installed. Others will need you to set a user agent or a Chrome CDP path. A handful will need to be edited and configured first. Only a few can search a studio's website for the right scene. The entire process is much more advanced and is different for each scraper, which is why we recommend StashDB and TPDB first for new users. They can all be found in [the same repo](https://github.com/stashapp/CommunityScrapers){:target="_blank"} where we found ThePornDB's scraper. You can download them individually like we did with the TPDB scraper or you can download the entire repo as a zip archive.
 <br/><br/>
@@ -119,7 +119,7 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
 {:style="counter-reset:none"}
 1. First you'll want to search [this page](https://github.com/stashapp/CommunityScrapers/blob/master/SCRAPERS-LIST.md){:target="_blank"} for your website to see if we have a scraper for it and to get an idea of what its requirements are. For most of these scrapers, you'll need to find and save a studio URL to your scene first. If you've managed to set up a fragment scraper, you can click on the "Scrape with..." button in the scene's edit tab to select your scraper. Typically fragment scrapers are better than URL scrapers, such as the MindGeekAPI scraper. Otherwise, you'll need to click the button at the far right end of the URL field to run a URL scraper. It should light up when the field is filled with a URL that matches one of your installed scrapers. That's about as detailed as we can get in this guide for new users. If you've tried StashDB, tried TPDB, checked the relevant documentation, checked your logs, and still can't get one of these scrapers working, you can ask for help on [Discord](https://discord.com/channels/559159668438728723){:target="_blank"} in the **#help** channel or in **#scrapers**.
 
-## Submit to StashDB
+# Submit to StashDB
 
 1. If you're certain a scene isn't on StashDB and you've found the info using ThePornDB or some other scraper, please consider submitting it to StashDB yourself. That way nobody else will have to duplicate the same work you've done for that particular scene if they can match their [pHash](#generate-phashes) with yours. You'll need to ask for edit privileges in our [Discord](https://discord.com/channels/559159668438728723){:target="_blank"} and follow the guidelines on [this website](https://guidelines.stashdb.org/docs/scenes/){:target="_blank"}. In particular, please note that [not every scene can be added to StashDB](https://guidelines.stashdb.org/docs/scenes/adding-scenes/){:target="_blank"} at this time. Some [studios aren't allowed](https://guidelines.stashdb.org/docs/scenes/movies-dvds/){:target="_blank"} and [full movies likely won't be eligible](https://guidelines.stashdb.org/docs/scenes/movies-dvds/){:target="_blank"} either.
 <br/><br/>

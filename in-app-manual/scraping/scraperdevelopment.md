@@ -18,7 +18,7 @@ grand_parent: In-app Manual
 
 Scrapers can be contributed to the community by creating a PR in [this repository](https://github.com/stashapp/CommunityScrapers/pulls){:target="_blank"}.
 
-## Scraper configuration file format
+# Scraper configuration file format
 
 ```yaml
 name: <site>
@@ -64,9 +64,9 @@ The scraping types and their required fields are outlined in the following table
 
 URL-based scraping accepts multiple scrape configurations, and each configuration requires a `url` field. stash iterates through these configurations, attempting to match the entered URL against the `url` fields in the configuration. It executes the first scraping configuration where the entered URL contains the value of the `url` field. 
     
-## Actions
+# Actions
 
-### Script
+## Script
 
 Executes a script to perform the scrape. The `script` field is required for this action and accepts a list of string arguments. For example:
 
@@ -164,7 +164,7 @@ elif sys.argv[1] == "scrapeURL":
     print(json.dumps(ret))
 ```
 
-### scrapeXPath
+## scrapeXPath
 
 This action scrapes a web page using an xpath configuration to parse. This action is **not valid** for `performerByFragment`.
 
@@ -183,14 +183,14 @@ The above configuration requires that `sceneScraper` exists in the `xPathScraper
 XPath scraping configurations specify the mapping between object fields and an xpath selector. The xpath scraper scrapes the applicable URL and uses xpath to populate the object fields.
 >
 
-### scrapeJson
+## scrapeJson
 
 This action works in the same way as `scrapeXPath`, but uses a mapped json configuration to parse. It uses the top-level `jsonScrapers` configuration. This action is **not valid** for `performerByFragment`.
 
 JSON scraping configurations specify the mapping between object fields and a GJSON selector. The JSON scraper scrapes the applicable URL and uses [GJSON](https://github.com/tidwall/gjson/blob/master/SYNTAX.md){:target="_blank"} to parse the returned JSON object and populate the object fields.
 
 
-### scrapeXPath and scrapeJson use with `performerByName`
+## scrapeXPath and scrapeJson use with `performerByName`
 
 For `performerByName`, the `queryURL` field must be present also. This field is used to perform a search query URL for performer names. The placeholder string sequence `{}` is replaced with the performer name search string. For the subsequent performer scrape to work, the `URL` field must be filled in with the URL of the performer page that matches a URL given in a `performerByURL` scraping configuration. For example:
 
@@ -214,7 +214,7 @@ xPathScrapers:
     # ... performer scraper details ...
 ```
 
-### scrapeXPath and scrapeJson use with `sceneByFragment` and `sceneByQueryFragment`
+## scrapeXPath and scrapeJson use with `sceneByFragment` and `sceneByQueryFragment`
 
 For `sceneByFragment` and `sceneByQueryFragment`, the `queryURL` field must also be present. This field is used to build a query URL for scenes. For `sceneByFragment`, the `queryURL` field supports the following placeholder fields:
 * `{checksum}` - the MD5 checksum of the scene
@@ -240,7 +240,7 @@ sceneByFragment:
 
 The above configuration would scrape from the value of `queryURL`, replacing `{filename}` with the base filename of the scene, after it has been manipulated by the regex replacements.
 
-### scrapeXPath and scrapeJson use with `<scene|performer|gallery|movie>ByURL`
+## scrapeXPath and scrapeJson use with `<scene|performer|gallery|movie>ByURL`
 
 For `sceneByURL`, `performerByURL`, `galleryByURL` the `queryURL` can also be present if we want to use `queryURLReplace`. The functionality is the same as `sceneByFragment`, the only placeholder field available though is the `url`:
 * `{url}` - the url of the scene/performer/gallery
@@ -258,7 +258,7 @@ sceneByURL:
           with: https://www.$1.com/api/movie?name=$3&date=$2
 ```
 
-### Stash
+## Stash
 
 A different stash server can be configured as a scraping source. This action applies only to `performerByName`, `performerByFragment`, and `sceneByFragment` types. This action requires that the top-level `stashServer` field is configured.
 
@@ -278,7 +278,7 @@ stashServer:
   url: http://stashserver.com:9999
 ```
 
-## Xpath and JSON scrapers configuration
+# Xpath and JSON scrapers configuration
 
 The top-level `xPathScrapers` field contains xpath scraping configurations, freely named. These are referenced in the `scraper` field for `scrapeXPath` scrapers. 
 
@@ -316,7 +316,7 @@ performer:
       # post-processing config values
 ```
 
-### Fixed attribute values
+## Fixed attribute values
 
 Alternatively, an attribute value may be set to a fixed value, rather than scraping it from the webpage. This can be done by replacing `selector` with `fixed`. For example:
 
@@ -326,7 +326,7 @@ performer:
     fixed: Female
 ```
 
-### Common fragments
+## Common fragments
 
 The `common` field is used to configure selector fragments that can be referenced in the selector strings. These are key-value pairs where the key is the string to reference the fragment, and the value is the string that the fragment will be replaced with. For example:
 
@@ -353,7 +353,7 @@ scene:
     URL: $models/@href
 ```
 
-### Post-processing options
+## Post-processing options
 
 Post-processing operations are contained in the `postProcess` key. Post-processing operations are performed in the order they are specified. The following post-processing operations are available:
 * `feetToCm`: converts a string containing feet and inches numbers into centimeters. Looks for up to two separate integers and interprets the first as the number of feet, and the second as the number of inches. The numbers can be separated by any non-numeric character including the `.` character. It does not handle decimal numbers. For example `6.3` and `6ft3.3` would both be interpreted as 6 feet, 3 inches before converting into centimeters.
@@ -436,23 +436,23 @@ For backwards compatibility, `replace`, `subscraper` and `parseDate` are also al
 
 Post-processing on attribute post-process is done in the following order: `concat`, `replace`, `subscraper`, `parseDate` and then `split`.
 
-### XPath resources:
+## XPath resources:
 
 - Test XPaths in Firefox: [](https://addons.mozilla.org/en-US/firefox/addon/try-xpath/){:target="_blank"}
 - XPath cheatsheet: [](https://devhints.io/xpath){:target="_blank"}
 
-### GJSON resources:
+## GJSON resources:
 
 - GJSON Path Syntax: [](https://github.com/tidwall/gjson/blob/master/SYNTAX.md){:target="_blank"}
 
-### Debugging support
+## Debugging support
 To print the received html/json from a scraper request to the log file, add the following to your scraper yml file:
 ```yaml
 debug:
   printHTML: true
 ```
 
-### CDP support
+## CDP support
 
 Some websites deliver content that cannot be scraped using the raw html file alone. These websites use javascript to dynamically load the content. As such, direct xpath scraping will not work on these websites. There is an option to use Chrome DevTools Protocol to load the webpage using an instance of Chrome, then scrape the result.
 
@@ -468,7 +468,7 @@ When `useCDP` is set to true, stash will execute or connect to an instance of Ch
 
 `Chrome CDP path` can be set to a path to the chrome executable, or an http(s) address to remote chrome instance (for example: `http://localhost:9222/json/version`). As remote instance a docker container can also be used with the `chromedp/headless-shell` image being highly recommended.
 
-### CDP Click support
+## CDP Click support
 
 When using CDP you can use  the `clicks` part of the `driver` section to do Mouse Clicks on elements you need to collapse or toggle. Each click element has an `xpath` value that holds the XPath for the button/element you need to click and an optional `sleep` value that is the time in seconds to wait for after clicking.
 If the `sleep` value is not set it defaults to `2` seconds.
@@ -506,7 +506,7 @@ driver:
 
 > **⚠️ Note:** each `click` adds an extra delay of `clicks sleep` seconds, so the above adds `2+4+1+2+2=11` seconds to the loading time of the page.
 
-### Cookie support
+## Cookie support
 
 In some websites the use of cookies is needed to bypass a welcoming message or some other kind of protection. Stash supports the setting of cookies for the direct xpath scraper and the CDP based one. Due to implementation issues the usage varies a bit.
 
@@ -595,7 +595,7 @@ When developing a scraper you can have a look at the cookies set by a site by ad
 
 and having a look at the log / console in debug mode.
 
-### Headers
+## Headers
 
 Sending request headers is possible when using a scraper.
 Headers can be set in the `driver` section and are supported for plain, CDP enabled and JSON scrapers.
@@ -675,7 +675,7 @@ xPathScrapers:
 
 See also [#333](https://github.com/stashapp/stash/pull/333){:target="_blank"} for more examples.
 
-### JSON scraper example
+## JSON scraper example
 
 A performer and scene scraper for ThePornDB is shown below:
 
@@ -781,9 +781,9 @@ driver:
 # Last Updated April 7, 2021
 ```
 
-## Object fields
+# Object fields
 
-### Performer
+## Performer
 
 ```
 Name
@@ -812,7 +812,7 @@ Details
 
 *Note:*  - `Gender` must be one of `male`, `female`, `transgender_male`, `transgender_female`, `intersex`, `non_binary` (case insensitive).
 
-### Scene
+## Scene
 
 ```
 Title
@@ -828,20 +828,20 @@ Tags (see Tag fields)
 Performers (list of Performer fields)
 ```
 
-### Studio
+## Studio
 
 ```
 Name
 URL
 ```
 
-### Tag
+## Tag
 
 ```
 Name
 ```
 
-### Movie
+## Movie
 
 ```
 Name
@@ -857,7 +857,7 @@ FrontImage
 BackImage
 ```
 
-### Gallery
+## Gallery
 
 ```
 Title

@@ -20,7 +20,7 @@ Utilities are other external applications that utilise or interact with Stash in
 {: .note }
 These utilities are created by third parties and not officially affiliated or supported by the core Stash team. If you have issues, please reach out to the original creators.
 
-### Stash_helper
+## Stash_helper
 
 |-|-|
 |Category|Companion|
@@ -29,7 +29,7 @@ These utilities are created by third parties and not officially affiliated or su
 |Author|[philpw99](https://github.com/philpw99){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### stash-vr
+## stash-vr
 
 |-|-|
 |Category|VR|
@@ -38,7 +38,7 @@ These utilities are created by third parties and not officially affiliated or su
 |Author|[o-fl0w](https://github.com/o-fl0w){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### stash-vr-companion
+## stash-vr-companion
 
 |-|-|
 |Category|VR|
@@ -47,7 +47,7 @@ These utilities are created by third parties and not officially affiliated or su
 |Author|[Tweeticoats](https://github.com/Tweeticoats){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### stash-webvr
+## stash-webvr
 
 |-|-|
 |Category|VR|

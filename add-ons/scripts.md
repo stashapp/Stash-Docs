@@ -21,11 +21,11 @@ To install a script follow the script's install instructions.
 
 Scripts are separated into 2 sections [Official](#official) and [Third-party](#third-party).
 
-## Official
+# Official
 
 Official scripts are hosted on [CommunityScripts repository](https://github.com/stashapp/CommunityScripts){:target="_blank"}. All code is reviewed by core Stash team and any questions or issues you have regarding these scripts can be raised in Discord or GitHub. 
 
-### Kodi Helper
+## Kodi Helper
 
 |-|-|
 |Category|Kodi|
@@ -34,7 +34,7 @@ Official scripts are hosted on [CommunityScripts repository](https://github.com/
 |Stash version|v0.7 or higher|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Sqlite_Renamer
+## Sqlite_Renamer
 
 |-|-|
 |Category|Maintenance|
@@ -43,12 +43,12 @@ Official scripts are hosted on [CommunityScripts repository](https://github.com/
 |Stash version|v0.7 or higher|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-## Third-party
+# Third-party
 
 {: .note }
 These scripts are created by third parties and not officially affiliated or supported by the core Stash team. If you have issues, please reach out to the original creators.
 
-### OnlyFans Scraper
+## OnlyFans Scraper
 
 |-|-|
 |Category|Scraping|
@@ -57,7 +57,7 @@ These scripts are created by third parties and not officially affiliated or supp
 |Author|[ALonelyJuicebox](https://github.com/ALonelyJuicebox){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/OnlyFans_Scraper.png)![](/assets/add-ons/OnlyFans_Scraper2.png)|
 
-### FilenamePerformersToCSV
+## FilenamePerformersToCSV
 
 |-|-|
 |Category|Metadata|
@@ -66,7 +66,7 @@ These scripts are created by third parties and not officially affiliated or supp
 |Author|[ALonelyJuicebox](https://github.com/ALonelyJuicebox){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/FilenamePerformersToCSV.png)|
 
-### pwPlayer.js - Scene Card Quick Player
+## pwPlayer.js - Scene Card Quick Player
 
 |-|-|
 |Category|Scene|

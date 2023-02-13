@@ -19,18 +19,18 @@ parent: User Interface (UI)
 
 Stash supports Custom CSS themes to adjust the look-and-feel of the interface. There are several that have been created by the maintainers and users.
 
-## Installing a theme
+# Installing a theme
 
 1. Select a theme from the directory below, and copy the CSS code to your clipboard. You may also need to download image files, as per the instructions.
 2. In Stash, go to the `Settings` section, then select `Interface`.
 3. Make sure `Custom CSS` is checked, then paste the CSS code into the text box.
 4. You will need to force-reload (Shift+F5) in order to see the theme.
 
-## Creating Themes
+# Creating Themes
 
 If you would like to develop your own theme, we have a [reference guide of CSS snippets that may be useful](/user-interface-ui/custom-css-snippets).
 
-## Theme Directory
+# Theme Directory
 
 | Name                                                         | Preview                                                               |
 | ---------------------------------------------------------------- | ------------------------------------------------------------------------- |

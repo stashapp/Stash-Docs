@@ -16,7 +16,7 @@ grand_parent: User Interface (UI)
 {:toc}
 </details>
 
-## Light Pulsar Theme for Stash
+# Light Pulsar Theme for Stash
 
 A new custom theme for Stash. Installation is quick and easy so you should be ready to install it in just a few simple steps. 
 
@@ -24,13 +24,13 @@ Feel free to experiment with CSS and modify it to fit your needs. In case you ha
 
 The Theme will only change the look&feel of the Stash interface. It **will not** affect any other data, so you are all safe and sound! :heart:
 
-### Screenshots
+## Screenshots
 
 ![Light Pulsar preview #1](/assets/user-interface-ui/themes/light-pulsar-1.jpg)
 ![Light Pulsar preview #2](/assets/user-interface-ui/themes/light-pulsar-2.jpg)
 ![Light Pulsar preview #3](/assets/user-interface-ui/themes/light-pulsar-3.jpg)
 
-## Install
+# Install
 
 1. Open User **Interface** Configuration panel in **settings**. (http://localhost:9999/settings?tab=interface)
 2. Tick/Enable Custom CSS ✅  
@@ -39,7 +39,7 @@ The Theme will only change the look&feel of the Stash interface. It **will not**
 
 Enjoy!
 
-## CSS Code
+# CSS Code
 
 ```css
 /*		Light Pulsar Theme - Fonzie 2021 v0.3.1		 */

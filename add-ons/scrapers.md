@@ -21,7 +21,7 @@ Scrapers are the way to retrieve information from websites for your movies/scene
 {: .important }
 > Scrapers are in **.yml** format. Some of them requires Python or Ruby if you use those, you need to install Python/Ruby on your machine, and don't forget to get the corresponding **.py** or **.rb** file as well.
 
-## Installation
+# Installation
 
 To install a scraper:
 1. Make sure you have the `scrapers` folder in the same location of your Stash app. If you don't have it, create that folder/directory. You can also specify the name of this folder in the `config.yml`.
@@ -43,50 +43,50 @@ For Python scrapers, it's also helpful to read the **.py** file. Some of them re
 {:style="counter-reset:none"}
 5. You will preview the scrape result before you commit the change. Check on the left will keep the original value, check on the right will make the change.
 
-## Scraper Types
+# Scraper Types
 
-### By Searching Type
+## By Searching Type
 
-#### Fragment
+### Fragment
 
 This kind of scrapers will fetch the metadata from a website, by using existing data from Stash, like a scene's file name, performer's name...etc. Fragment scrapers will get all the data Stash knows about that scene/performer/gallery, so it's quite flexible when fetching information.
 
 Scrapers includes: AdultTimeAPI.yml, JavLibrary.yml, ThePornDB.yml
 
-#### Search By Name
+### Search By Name
 
 A Search-By-Name scraper will get only "name" input from a scene or performer, then it will search a website with that name, and return a list of results.
 
 Scrapers includes: Babepedia.yml, FreeonesCommunity.yml, IAFD.yml
 
-#### Search By URL
+### Search By URL
 
 Most scrapers fetch metadata from a given URL, either by using XPath, JSON, or scripts. For this kind of scrapers you need to know the URL for that scene/performer/gallery/movie so they can extract information from it.
 
 Scrapers includes: All other scrapers.
 
-### By Implementation
+## By Implementation
 
-#### XPath and JSON Scrapers
+### XPath and JSON Scrapers
 
 This is the most common type of scrapers, which use either XPath parser to pin-point the information and retrieve them, or send out JSON requests to get the information. xpathScraper and jsonScraper can be mixed in the same .yml file.
 
-#### CDP Scrapers
+### CDP Scrapers
 
 This type of scrapers is mostly the same as XPath/JSON scrapers, except it will launch a headless Chrome browser to retrieve the information from websites. It can also get cookies, simulate a mouse click and other actions. These scrapers have `useCDP: true` setting in them.
 
-#### Python / Ruby Scrapers
+### Python / Ruby Scrapers
 
 This type of scrapers will launch Python, Ruby to retrieve information from websites. Script scrapers are powerful, versatile and cross-platform. So they usually can do much more than regular scrapers. To install this kind of scrapers, you need to copy not only the .yml file, but also all the script files like .py, .rb that associated with it.
 
-## More details
+# More details
 
 You can view the [detailed information about scrapers here](/in-app-manual/scraping) or [CommunityScrapers README](https://github.com/stashapp/CommunityScrapers/blob/master/README.md){:target="_blank"}.
 
-## Create your own
+# Create your own
 
 To create your own scraper, there is [detailed information about that as well](/in-app-manual/scraping/scraperdevelopment). Best way to start is to read the simple ones and understand how xpath works. The [XPath Cheetsheet](https://devhints.io/xpath){:target="_blank"} is quite useful in creating a .yml file. In Firefox you can use xpath search in "Web Developer Tools (F12)". The "search HTML" bar actually accepts xpath searches. You can use it to verify your xpath queries.
 
-## Contribution
+# Contribution
 
 The Scraper community always welcome new members. If you create a nice scraper and find it stable and useful, you can share it via [the GitHub repository](https://github.com/stashapp/CommunityScrapers){:target="_blank"}. Create a pull request, and let the mod review your work. The mods are busy, so it will probably take a few days, or a couple of weeks, but it will be a great feeling once your contribution is accepted by the community.

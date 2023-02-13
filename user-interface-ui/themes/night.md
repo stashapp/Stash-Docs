@@ -16,11 +16,11 @@ grand_parent: User Interface (UI)
 {:toc}
 </details>
 
-### Screenshots
+## Screenshots
 
 ![Stash Night Theme](/assets/user-interface-ui/themes/night-1.png)
 
-## CSS Code
+# CSS Code
 
 ```css
 /*
