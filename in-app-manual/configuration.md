@@ -3,7 +3,6 @@ layout: clean
 title: Configuration
 nav_order: 2
 parent: In-app Manual
-
 ---
 
 <details markdown="block">

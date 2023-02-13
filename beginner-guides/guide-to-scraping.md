@@ -19,17 +19,17 @@ The following is our recommended procedure for new Stash users who want to get i
 
 **The following sections are in this particular order for a reason, so please follow this guide from the beginning**.
 
-## Generate PHashes
+## Generate pHashes
 
-1. Navigate to the Settings page (⚙ icon in top right), make sure you're on "Tasks" in the sidebar to the left, then find the first heading "Library" in the middle of the page. Make sure "Generate perceptual hashes" is turned on so PHashes will be created automatically each time you run a scan to add new scenes. This will slow down the scanning process, but for most users [it's worth it](https://guidelines.stashdb.org/docs/getting-started-stashdb/#whats-a-phash){:target="_blank"}. PHashes are the main way to match your scenes with our data on StashDB.
+1. Navigate to the Settings page (⚙ icon in top right), make sure you're on "Tasks" in the sidebar to the left, then find the first heading "Library" in the middle of the page. Make sure "Generate perceptual hashes" is turned on so pHashes will be created automatically each time you run a scan to add new scenes. This will slow down the scanning process, but for most users [it's worth it](https://guidelines.stashdb.org/docs/getting-started-stashdb/#whats-a-phash){:target="_blank"}. pHashes are the main way to match your scenes with our data on StashDB.
 
-    ![How to generate PHashes on scan](/assets/beginner-guides/gen-phashes-on-scan.jpg)
+    ![How to generate pHashes on scan](/assets/beginner-guides/gen-phashes-on-scan.jpg)
 <br/><br/>
 
 {:style="counter-reset:none"}
-1. PHash generation is not turned on by default, so you'll need to generate them manually if you haven't already. This can be done on your entire library on the same Settings --> Tasks page, scroll down to the "Generated Content" heading. Make sure "Perceptual hashes (for deduplication)" is turned on and click the "Generate" button at the top. As long as "Overwrite existing generated files" is turned off, this will only generate missing files and hashes.
+1. pHash generation is not turned on by default, so you'll need to generate them manually if you haven't already. This can be done on your entire library on the same Settings --> Tasks page, scroll down to the "Generated Content" heading. Make sure "Perceptual hashes (for deduplication)" is turned on and click the "Generate" button at the top. As long as "Overwrite existing generated files" is turned off, this will only generate missing files and hashes.
 
-    ![How to generate PHashes manually](/assets/beginner-guides/gen-phashes-manually.jpg)
+    ![How to generate pHashes manually](/assets/beginner-guides/gen-phashes-manually.jpg)
 
 ---
 
@@ -57,7 +57,7 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
 <br/><br/>
 
 {:style="counter-reset:none"}
-1.  First, click the "Scrape All" button. This will use your PHashes to find matching scenes on StashDB for every scene on the current page. The "Scrape by fragment" buttons will do the same thing but just for one scene at a time. Also, you may want to change your Scene Tagger settings with the ⚙ icon next to "Scrape All." You can tell it to Merge (keep all) tags, Overwrite (keep only new) tags, or ignore StashDB's tags entirely (leave box unchecked). If you plan on [contributing to StashDB](https://guidelines.stashdb.org/docs/getting-started-stashdb/#contributing-to-stashdb){:target="_blank"}, you should have "Show male performers" turned on to better follow [these guidelines](https://guidelines.stashdb.org/docs/scenes/scene-performers/#missing-scene-performers){:target="_blank"}.
+1.  First, click the "Scrape All" button. This will use your pHashes to find matching scenes on StashDB for every scene on the current page. The "Scrape by fragment" buttons will do the same thing but just for one scene at a time. Also, you may want to change your Scene Tagger settings with the ⚙ icon next to "Scrape All." You can tell it to Merge (keep all) tags, Overwrite (keep only new) tags, or ignore StashDB's tags entirely (leave box unchecked). If you plan on [contributing to StashDB](https://guidelines.stashdb.org/docs/getting-started-stashdb/#contributing-to-stashdb){:target="_blank"}, you should have "Show male performers" turned on to better follow [these guidelines](https://guidelines.stashdb.org/docs/scenes/scene-performers/#missing-scene-performers){:target="_blank"}.
 
     ![Running "Scrape All" and "Search"](/assets/beginner-guides/scrape-all-and-search.jpg)
 <br/><br/>
@@ -75,7 +75,7 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
 
 ## Use ThePornDB Scraper
 
-1. If you are absolutely sure a scene isn't on StashDB anywhere, the next easiest method is to scrape from ThePornDB. They have significantly more scenes than StashDB thanks to their automated scrapers, but their info isn't always as complete or accurate compared to StashDB's manually curated approach. They also don't host PHashes so matching scenes can be trickier as well.
+1. If you are absolutely sure a scene isn't on StashDB anywhere, the next easiest method is to scrape from ThePornDB. They have significantly more scenes than StashDB thanks to their automated scrapers, but their info isn't always as complete or accurate compared to StashDB's manually curated approach. They also don't host pHashes so matching scenes can be trickier as well.
 <br/><br/>
 
 {:style="counter-reset:none"}
@@ -131,7 +131,7 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
 
 ## Submit to StashDB
 
-1. If you're certain a scene isn't on StashDB and you've found the info using ThePornDB or some other scraper, please consider submitting it to StashDB yourself. That way nobody else will have to duplicate the same work you've done for that particular scene if they can match their [PHash](#generate-phashes) with yours. You'll need to ask for edit privileges in our [Discord](https://discord.com/channels/559159668438728723){:target="_blank"} and follow the guidelines on [this website](https://guidelines.stashdb.org/docs/scenes/){:target="_blank"}. In particular, please note that [not every scene can be added to StashDB](https://guidelines.stashdb.org/docs/scenes/adding-scenes/){:target="_blank"} at this time. Some [studios aren't allowed](https://guidelines.stashdb.org/docs/scenes/movies-dvds/){:target="_blank"} and [full movies likely won't be eligible](https://guidelines.stashdb.org/docs/scenes/movies-dvds/){:target="_blank"} either.
+1. If you're certain a scene isn't on StashDB and you've found the info using ThePornDB or some other scraper, please consider submitting it to StashDB yourself. That way nobody else will have to duplicate the same work you've done for that particular scene if they can match their [pHash](#generate-phashes) with yours. You'll need to ask for edit privileges in our [Discord](https://discord.com/channels/559159668438728723){:target="_blank"} and follow the guidelines on [this website](https://guidelines.stashdb.org/docs/scenes/){:target="_blank"}. In particular, please note that [not every scene can be added to StashDB](https://guidelines.stashdb.org/docs/scenes/adding-scenes/){:target="_blank"} at this time. Some [studios aren't allowed](https://guidelines.stashdb.org/docs/scenes/movies-dvds/){:target="_blank"} and [full movies likely won't be eligible](https://guidelines.stashdb.org/docs/scenes/movies-dvds/){:target="_blank"} either.
 <br/><br/>
 
 {:style="counter-reset:none"}

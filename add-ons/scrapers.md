@@ -95,7 +95,7 @@ You can view the [detailed information about scrapers here](/in-app-manual/scrap
 
 ## Create your own
 
-To create your own scraper, there is [detailed information about that as well](../in-app-manual/scraping/scraperdevelopment). Best way to start is to read the simple ones and understand how xpath works. The [XPath Cheetsheet](https://devhints.io/xpath){:target="_blank"} is quite useful in creating a .yml file. In Firefox you can use xpath search in "Web Developer Tools (F12)". The "search HTML" bar actually accepts xpath searches. You can use it to verify your xpath queries.
+To create your own scraper, there is [detailed information about that as well](/in-app-manual/scraping/scraperdevelopment). Best way to start is to read the simple ones and understand how xpath works. The [XPath Cheetsheet](https://devhints.io/xpath){:target="_blank"} is quite useful in creating a .yml file. In Firefox you can use xpath search in "Web Developer Tools (F12)". The "search HTML" bar actually accepts xpath searches. You can use it to verify your xpath queries.
 
 ---
 
