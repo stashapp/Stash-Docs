@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: default
 title: Getting Started
 nav_order: 2
 has_children: true
 has_toc: false
-permalink: /getting-started
+permalink: /getting-started/
 ---
 
 <details markdown="block">
