@@ -773,7 +773,7 @@ img.performer:hover,
 }
 ```
 
-### Hide 0 count badges
+## Hide 0 count badges
 
 |-|-|
 |Description|Hide 0 count badges.|
