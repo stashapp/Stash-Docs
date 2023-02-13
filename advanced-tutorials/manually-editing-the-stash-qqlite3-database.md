@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Manually Editing the Stash Sqlite3 Database
 nav_order: 3
 parent: Advanced Tutorials
-permalink: advanced-tutorials/manually-editing-the-stash-qqlite3-database
+
 ---
 
 <details markdown="block">
@@ -23,16 +23,12 @@ Before making changes to the Stash sqlite3 database - **please make a backup fir
 
 You can use the `sqlite3` client to directly edit this file.
 
----
-
 ## Opening the database file
 
 ```
 cd ~/.stash
 sqlite3 stash-go.sqlite
 ```
-
----
 
 ## Deleting all tags
 

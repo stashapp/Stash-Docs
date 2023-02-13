@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Troubleshooting Video Playback
 nav_order: 4
 parent: Beginner Guides
-permalink: beginner-guides/troubleshooting-video-playback
+
 ---
 
 <details markdown="block">
@@ -25,8 +25,6 @@ ffprobe -show_format -show_streams big_buck_bunny.mkv
 
 This can be useful for example, when filing bug reports, or discussing in chat.
 
----
-
 ## Remuxing files
 
 Another good test, is to see if remuxing the file into a new video file helps:
@@ -34,8 +32,6 @@ Another good test, is to see if remuxing the file into a new video file helps:
 ```
 ffmpeg -i big_buck_bunny.mkv -c:v copy -c:a copy remuxed_file.mkv
 ```
-
----
 
 ## Extracting a sample of a video
 

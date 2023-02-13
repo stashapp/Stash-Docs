@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Advanced Configuration Options
 nav_order: 1
 parent: Advanced Tutorials
-permalink: advanced-tutorials/advanced-configuration-options
+
 ---
 
 Some configuration options can not be edited through the UI and should only be used if needed.

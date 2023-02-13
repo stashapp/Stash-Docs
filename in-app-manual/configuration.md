@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: clean
 title: Configuration
 nav_order: 2
 parent: In-app Manual
-permalink: in-app-manual/configuration
 ---
 
 <details markdown="block">
@@ -20,8 +19,6 @@ permalink: in-app-manual/configuration
 This section allows you to add and remove directories from your library list. Files in these directories will be included when scanning. Files that are outside of these directories will be removed when running the Clean task.
 
 > **⚠️ Note:** Don't forget to click `Save` after updating these directories!
-
----
 
 ## Excluded Patterns
 
@@ -53,8 +50,6 @@ exclude:
 
 _a useful [link](https://regex101.com/){:target="_blank"} to experiment with regexps_
 
----
-
 ## Hashing algorithms
 
 Stash identifies video files by calculating a hash of the file. There are two algorithms available for hashing: `oshash` and `MD5`. `MD5` requires reading the entire file, and can therefore be slow, particularly when reading files over a network. `oshash` (which uses OpenSubtitle's hashing algorithm) only reads 64k from each end of the file.
@@ -81,8 +76,6 @@ These instructions are for existing users whose systems will be defaulted to use
 2. In Settings -> Configuration page, untick `Calculate MD5` and select `oshash` as file naming hash. Save the configuration.
 3. In Settings -> Tasks page, click on the `Rename generated files` migration button.
 
----
-
 ## Parallel Scan/Generation
 
 ### Number of parallel task for scan/generation
@@ -97,8 +90,6 @@ This setting can be used to increase/decrease overall CPU utilisation in two sce
 
 Note: If this is set too high it will decrease overall performance and causes failures (out of memory).
 
----
-
 ## ffmpeg arguments
 
 Additional arguments can be injected into ffmpeg when generating previews and sprites, and when live-transcoding videos. 
@@ -106,8 +97,6 @@ Additional arguments can be injected into ffmpeg when generating previews and sp
 The ffmpeg arguments configuration is split into `Input` and `Output` arguments. Input arguments are injected before the input file argument, and output arguments are injected before the output file argument.
 
 Arguments are accepted as a list of strings. Each string is a separate argument. For example, a single argument of `-foo bar` would be treated as a single argument `"-foo bar"`. The correct way to pass this argument would be to split it into two separate arguments: `"-foo", "bar"`.
-
----
 
 ## Scraping
 
@@ -121,13 +110,9 @@ Some scrapers require a Chrome instance to function correctly. If left empty, st
 
 `Chrome CDP path` can be set to a path to the chrome executable, or an http(s) address to remote chrome instance (for example: `http://localhost:9222/json/version`).
 
----
-
 ## Authentication
 
 By default, stash is not configured with any sort of password protection. To enable password protection, both `Username` and `Password` must be populated. Note that when entering a new username and password where none was set previously, the system will immediately request these credentials to log you in.
-
----
 
 ## API key
 
@@ -146,8 +131,6 @@ Stash saves login credentials in the config.yml file. You must reset both login 
 * Open the `config.yml` file found in your Stash directory with a text editor
 * Delete the `login` and `password` lines from the file and save
 Stash authentication should now be reset with no authentication credentials.
-
----
 
 ## Advanced configuration options
 

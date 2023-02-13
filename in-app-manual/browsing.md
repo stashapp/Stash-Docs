@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Browsing
 nav_order: 5
 parent: In-app Manual
-permalink: in-app-manual/browsing
+
 ---
 
 <details markdown="block">

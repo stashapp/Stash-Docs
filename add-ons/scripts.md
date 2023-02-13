@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Scripts
 nav_order: 3
 parent: Add-ons
-permalink: add-ons/scripts
+
 ---
 
 <details markdown="block">
@@ -21,8 +21,6 @@ To install a script follow the script's install instructions.
 
 Scripts are separated into 2 sections [Official](#official) and [Third-party](#third-party).
 
----
-
 ## Official
 
 Official scripts are hosted on [CommunityScripts repository](https://github.com/stashapp/CommunityScripts){:target="_blank"}. All code is reviewed by core Stash team and any questions or issues you have regarding these scripts can be raised in Discord or GitHub. 
@@ -34,7 +32,7 @@ Official scripts are hosted on [CommunityScripts repository](https://github.com/
 |Script|[Kodi Helper](https://github.com/stashapp/CommunityScripts/tree/main/scripts/kodi-helper){:target="_blank"}|
 |Description|Generates `nfo` and `strm` for use with Kodi.|
 |Stash version|v0.7 or higher|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### Sqlite_Renamer
 
@@ -43,9 +41,7 @@ Official scripts are hosted on [CommunityScripts repository](https://github.com/
 |Script|[Sqlite_Renamer](https://github.com/stashapp/CommunityScripts/tree/main/scripts/Sqlite_Renamer){:target="_blank"}|
 |Description|Renames your files using stash's metadata.|
 |Stash version|v0.7 or higher|
-|Screenshots|![](assets/fixed_table_width.png)|
-
----
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ## Third-party
 
@@ -59,7 +55,7 @@ These scripts are created by third parties and not officially affiliated or supp
 |Script|[OnlyFans Scraper](https://github.com/ALonelyJuicebox/OFMetadataToStash){:target="_blank"}|
 |Description|Powershell script that can (batch) import OnlyFans metadata into a Stash database from a OnlyFans metadata database scraped using DIGITALCRIMINALS's OnlyFans Scraper.|
 |Author|[ALonelyJuicebox](https://github.com/ALonelyJuicebox){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/OnlyFans_Scraper.png)![](assets/OnlyFans_Scraper2.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/OnlyFans_Scraper.png)![](/assets/add-ons/OnlyFans_Scraper2.png)|
 
 ### FilenamePerformersToCSV
 
@@ -68,7 +64,7 @@ These scripts are created by third parties and not officially affiliated or supp
 |Script|[FilenamePerformersToCSV](https://github.com/ALonelyJuicebox/FilenamePerformersToCSV){:target="_blank"}|
 |Description|Parse performer names from your media filenames into CSV files for batch import into Stash!|
 |Author|[ALonelyJuicebox](https://github.com/ALonelyJuicebox){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/FilenamePerformersToCSV.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/FilenamePerformersToCSV.png)|
 
 ### pwPlayer.js - Scene Card Quick Player
 
@@ -77,4 +73,4 @@ These scripts are created by third parties and not officially affiliated or supp
 |Script|[pwPlayer.js - Scene Card Quick Player](https://github.com/philpw99/StashCustomJavascripts){:target="_blank"}|
 |Description|This Javascript will create a "Play" button in each scene card. You can click on it and the video for that scene will be played right away. Click on the video again, then you are back to the scene list.|
 |Author|[philpw99](https://github.com/philpw99){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/pwPlayer_js_Scene_Card_Quick_Player.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/pwPlayer_js_Scene_Card_Quick_Player.png)|

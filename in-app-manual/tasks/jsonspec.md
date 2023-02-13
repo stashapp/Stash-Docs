@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Import/Export JSON Specification
 nav_order: 4
 parent: Tasks
 grand_parent: In-app Manual
-permalink: in-app-manual/tasks/jsonspec
+
 ---
 
 <details markdown="block">
@@ -15,8 +15,6 @@ permalink: in-app-manual/tasks/jsonspec
 1. TOC
 {:toc}
 </details>
-
----
 
 ## Import/Export JSON Specification
 
@@ -29,8 +27,6 @@ The metadata given to Stash can be exported into the JSON format. This structure
 * `scenes`
 * `studios`
 * `movies`
-
----
 
 ## File naming
 
@@ -47,8 +43,6 @@ When exported, files are named with different formats depending on the object ty
 | Movies | `<name>.json` |
 
 Note that the file naming is not significant when importing. All json files will be read from the subdirectories.
-  
----
 
 ## Content of the json files
 
@@ -171,8 +165,6 @@ created_at
 updated_at  
 ```
 
----
-
 ## Files
 
 ### Folder
@@ -244,8 +236,6 @@ created_at
 updated_at
 ```
 
----
-
 ## In JSON format
 
 For those preferring the json-format, defined [here](https://json-schema.org/){:target="_blank"}, the following format may be more interesting:
@@ -255,7 +245,7 @@ For those preferring the json-format, defined [here](https://json-schema.org/){:
 ``` json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://docs.stashapp.cc/docs/In-app-Manual/Tasks/JSONSpec/#performerjson",
+  "$id": "https://docs.stashapp.cc/in-app-manual/tasks/jsonspec/#performerjson",
   "title": "performer",
   "description": "A json file representing a performer. The file is named by a MD5 Code.",
   "type": "object",
@@ -355,7 +345,7 @@ For those preferring the json-format, defined [here](https://json-schema.org/){:
 ``` json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://docs.stashapp.cc/docs/In-app-Manual/Tasks/JSONSpec/#studiojson",
+  "$id": "https://docs.stashapp.cc/in-app-manual/tasks/jsonspec/#studiojson",
   "title": "studio",
   "description": "A json file representing a studio. The file is named by a MD5 Code.",
   "type": "object",
@@ -394,7 +384,7 @@ For those preferring the json-format, defined [here](https://json-schema.org/){:
 ```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://docs.stashapp.cc/docs/In-app-Manual/Tasks/JSONSpec/#scenejson",
+  "$id": "https://docs.stashapp.cc/in-app-manual/tasks/jsonspec/#scenejson",
   "title": "scene",
   "description": "A json file representing a scene. The file is named by the MD5 Code of the file its data is referring to.",
   "type": "object",

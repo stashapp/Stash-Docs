@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Embedded Plugins
 nav_order: 2
 parent: Plugins
 grand_parent: In-app Manual
-permalink: in-app-manual/plugins/embeddedplugins
+
 ---
 
 <details markdown="block">
@@ -18,23 +18,19 @@ permalink: in-app-manual/plugins/embeddedplugins
 
 Embedded plugins are executed within the stash process using a scripting system.
 
----
-
 ## Supported script languages
 
 Stash currently supports Javascript embedded plugins using [otto](https://github.com/robertkrimen/otto){:target="_blank"}.
-
----
 
 ## Javascript plugins
 
 ### Plugin input
 
-The input is provided to Javascript plugins using the `input` global variable, and is an object based on the structure provided in the `Plugin input` section of the [Plugins](../plugins) page. Note that the `server_connection` field should not be necessary in most embedded plugins.
+The input is provided to Javascript plugins using the `input` global variable, and is an object based on the structure provided in the `Plugin input` section of the [Plugins]/in-app-manual/plugins) page. Note that the `server_connection` field should not be necessary in most embedded plugins.
 
 ### Plugin output
 
-The output of a Javascript plugin is derived from the evaluated value of the script. The output should conform to the structure provided in the `Plugin output` section of the [Plugins](../plugins) page.
+The output of a Javascript plugin is derived from the evaluated value of the script. The output should conform to the structure provided in the `Plugin output` section of the [Plugins](/in-app-manual/plugins) page.
 
 There are a number of ways to return the plugin output:
 
@@ -74,8 +70,6 @@ output;
 
 See the `Javascript API` section below on how to log with Javascript plugins.
 
----
-
 ## Plugin configuration file format
 
 The basic structure of an embedded plugin configuration file is as follows:
@@ -102,8 +96,6 @@ For embedded plugins, the `exec` field is a list with the first element being th
 
 For embedded plugins, the `interface` field must be set to one of the following values:
 * `js`
-
----
 
 ## Javascript API
 

@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: clean
 title: Plugins
 nav_order: 8
 parent: In-app Manual
 has_children: true
 has_toc: false
-permalink: in-app-manual/plugins
+
 ---
 
 <details markdown="block">
@@ -23,8 +23,6 @@ Stash also supports triggering of plugin hooks from specific stash operations.
 
 > **⚠️ Note:** Plugin support is still experimental and is likely to change.
 
----
-
 ## Adding plugins
 
 By default, Stash looks for plugin configurations in the `plugins` sub-directory of the directory where the stash `config.yml` is read. This will either be the `$HOME/.stash` directory or the current working directory.
@@ -33,19 +31,15 @@ Plugins are added by adding configuration yaml files (format: `pluginName.yml`) 
 
 Loaded plugins can be viewed in the Plugins page of the Settings. After plugins are added, removed or edited while stash is running, they can be reloaded by clicking `Reload Plugins` button.
 
----
-
 ## Using plugins
 
 Plugins provide tasks which can be run from the Tasks page. 
 
----
-
 ## Creating plugins
 
-See [External Plugins](plugins/externalplugins) for details for making external plugins.
+See [External Plugins](/in-app-manual/plugins/externalplugins) for details for making external plugins.
 
-See [Embedded Plugins](plugins/embeddedplugins) for details for making embedded plugins.
+See [Embedded Plugins](/in-app-manual/plugins/embeddedplugins) for details for making embedded plugins.
 
 ### Plugin input
 

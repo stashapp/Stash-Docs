@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: External Plugins
 nav_order: 1
 parent: Plugins
 grand_parent: In-app Manual
-permalink: in-app-manual/plugins/externalplugins
+
 ---
 
 <details markdown="block">
@@ -19,8 +19,6 @@ permalink: in-app-manual/plugins/externalplugins
 External plugins are executed by running an external binary.
 
 ## Plugin interfaces
-
----
 
 Stash communicates with external plugins using an interface. Stash currently supports RPC and raw interface types.
 
@@ -45,8 +43,6 @@ When stopping a raw plugin task, the stash server kills the spawned process with
 External plugins may log to the stash server by writing to stderr. By default, data written to stderr will be logged by stash at the `error` level. This default behaviour can be changed by setting the `errLog` field in the plugin configuration file.
 
 Plugins can log for specific levels or log progress by prefixing the output string with special control characters. See `pkg/plugin/common/log` for how this is done in go.
-
----
 
 ## Plugin configuration file format
 
@@ -107,8 +103,6 @@ The `interface` field defaults to `raw` if not provided.
 ### errLog
 
 The `errLog` field tells stash what the default log level should be when the plugin outputs to stderr without encoding a log level. It defaults to the `error` level if no provided. This field is not necessary if the plugin outputs logging with the appropriate encoding. See the `Logging` section above for details.
-
----
 
 ## Task configuration
 

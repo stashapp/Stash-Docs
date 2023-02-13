@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Third-party Integrations
 nav_order: 6
 parent: Add-ons
-permalink: add-ons/third-party-integrations
+
 ---
 
 <details markdown="block">
@@ -27,7 +27,7 @@ These third-party integrations are created by third parties and not officially a
 |Integration|[plugin.video.stash](https://github.com/gitgiggety/plugin.video.stash){:target="_blank"}|
 |Description|plugin.video.stash is an add-on for the Kodi home theater center software to incorporate Stash, an organizer for your porn.|
 |Author|[gitgiggety](https://github.com/gitgiggety){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### StashPlexAgent.bundle
 
@@ -36,4 +36,4 @@ These third-party integrations are created by third parties and not officially a
 |Integration|[StashPlexAgent.bundle](https://github.com/stashapp/CommunityScripts/tree/main/3rd%20party/StashPlexAgent.bundle){:target="_blank"}|
 |Description|A very simplistic Plex agent to pull metadata from Stash.|
 |Author|[Darklyter](https://github.com/Darklyter){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|

@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: API
 nav_order: 1
 parent: Networking
-permalink: networking/api
+
 ---
 
 <details markdown="block">
@@ -24,7 +24,7 @@ In that case you can either visit our [Discord](https://discord.gg/2TsNFKt){:tar
 
 For up to date info you can check stash's playground `http://IP:PORT/playground` ( SCHEMA/DOCS section to the right).
 
-### Scan for new files
+## Scan for new files
 
 Request: `HTTP-POST`
 
@@ -37,7 +37,7 @@ _Example using curl_
 
 `curl -X POST -H "Content-Type: application/json" --data '{ "query": " mutation { metadataScan (input: {} ) }" }' localhost:9998/graphql`
 
-### Authentication
+## Authentication
 
 If you have configured a username/password you have to use cookies to authenticate
 ```
@@ -53,7 +53,7 @@ You just need to add the key you generated in stash ( for more info about the AP
 curl -X POST -H "ApiKey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJiaWxsIiwiaWF0IjoxNjE3MDkzMDYwLCJzdWIiOiJBUElLZXkifQ.WhUyvmnVeW8wGV5fkVyje3xLfz5A97HFwyZy-4i8Q-I" -H "Content-Type: application/json" --data '{ "query": "mutation { metadataScan (input:{})}" }' localhost:9998/graphql
 ```
 
-### Generate content
+## Generate content
 
 Request: `HTTP-POST`
 
@@ -67,7 +67,7 @@ _Example using curl_
 
 `curl -X POST -H "Content-Type: application/json" --data '{ "query": "mutation { metadataGenerate ( input : { sprites: false previews: true imagePreviews: false markers: false transcodes: false } ) }" }' localhost:9998/graphql`
 
-### Get Studios
+## Get Studios
 
 Request: `HTTP-POST`
 
@@ -81,7 +81,7 @@ _Example using curl_
 
 `curl -X POST -H "Content-Type: application/json" --data '{ "query": "{ allStudios { name url scene_count} }" }' localhost:9998/graphql`
 
-### Scrape perfomer attributes from Freeones
+## Scrape perfomer attributes from Freeones
 
 Request: `HTTP-POST`
 
@@ -103,7 +103,7 @@ _Example using curl_
 
 `curl -X POST -H "Content-Type: application/json" --data '{ "query": "{ scrapeFreeones ( performer_name : \"Abella Danger\" ) { name height birthdate} }" }' localhost:9998/graphql`
 
-### Get list of perfomer names that match a name or alias from Freeones
+## Get list of perfomer names that match a name or alias from Freeones
 
 Request: `HTTP-POST`
 
@@ -121,7 +121,7 @@ _Example using curl_
 
 `curl -X POST -H "Content-Type: application/json" --data '{ "query": "{ scrapeFreeonesPerformerList (query: \"bella\" ) }" }' localhost:9998/graphql`
 
-### Get System Status
+## Get System Status
 
 Request: `HTTP-POST`
 ```json

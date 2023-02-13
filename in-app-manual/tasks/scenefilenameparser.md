@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Scene Filename Parser
 nav_order: 3
 parent: Tasks
 grand_parent: In-app Manual
-permalink: in-app-manual/tasks/scenefilenameparser
+
 ---
 
 <details markdown="block">
@@ -17,8 +17,6 @@ permalink: in-app-manual/tasks/scenefilenameparser
 </details>
 
 [This tool](http://localhost:9999/sceneFilenameParser){:target="_blank"} parses the scene filenames in your library and allows setting the metadata from those filenames.
-
----
 
 ## Parser Options
 
@@ -69,8 +67,6 @@ Title generation also has the following options:
 |Capitalize title| capitalises the first letter of each word|
 
 The fields to display can be customised with the `Display Fields` drop-down section. By default, any field with new/different values will be displayed.
-
----
 
 ## Applying the results
 

@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Scrapers
 nav_order: 1
 has_children: false
 parent: Add-ons
-permalink: add-ons/scrapers
+
 ---
 
 <details markdown="block">
@@ -19,11 +19,7 @@ permalink: add-ons/scrapers
 Scrapers are the way to retrieve information from websites for your movies/scenes/galleries/performers...etc. Using scrapers wisely, you can avoid typing information manually and repetitively. They can help you quickly establish links between movies/scenes and performers/studios, add relative tags, then download covers/posters for easy recognition. It's a great feature to organize your video or image collections.
 
 {: .important }
->
->
 > Scrapers are in **.yml** format. Some of them requires Python or Ruby if you use those, you need to install Python/Ruby on your machine, and don't forget to get the corresponding **.py** or **.rb** file as well.
-
----
 
 ## Installation
 
@@ -46,8 +42,6 @@ For Python scrapers, it's also helpful to read the **.py** file. Some of them re
 
 {:style="counter-reset:none"}
 5. You will preview the scrape result before you commit the change. Check on the left will keep the original value, check on the right will make the change.
-
----
 
 ## Scraper Types
 
@@ -85,19 +79,13 @@ This type of scrapers is mostly the same as XPath/JSON scrapers, except it will 
 
 This type of scrapers will launch Python, Ruby to retrieve information from websites. Script scrapers are powerful, versatile and cross-platform. So they usually can do much more than regular scrapers. To install this kind of scrapers, you need to copy not only the .yml file, but also all the script files like .py, .rb that associated with it.
 
----
-
 ## More details
 
-You can view the [detailed information about scrapers here](../in-app-manual/scraping) or [CommunityScrapers README](https://github.com/stashapp/CommunityScrapers/blob/master/README.md){:target="_blank"}.
-
----
+You can view the [detailed information about scrapers here](/in-app-manual/scraping) or [CommunityScrapers README](https://github.com/stashapp/CommunityScrapers/blob/master/README.md){:target="_blank"}.
 
 ## Create your own
 
-To create your own scraper, there is [detailed information about that as well](../in-app-manual/scraping/scraperdevelopment). Best way to start is to read the simple ones and understand how xpath works. The [XPath Cheetsheet](https://devhints.io/xpath){:target="_blank"} is quite useful in creating a .yml file. In Firefox you can use xpath search in "Web Developer Tools (F12)". The "search HTML" bar actually accepts xpath searches. You can use it to verify your xpath queries.
-
----
+To create your own scraper, there is [detailed information about that as well](/in-app-manual/scraping/scraperdevelopment). Best way to start is to read the simple ones and understand how xpath works. The [XPath Cheetsheet](https://devhints.io/xpath){:target="_blank"} is quite useful in creating a .yml file. In Firefox you can use xpath search in "Web Developer Tools (F12)". The "search HTML" bar actually accepts xpath searches. You can use it to verify your xpath queries.
 
 ## Contribution
 
