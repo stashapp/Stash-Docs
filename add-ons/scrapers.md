@@ -89,7 +89,7 @@ This type of scrapers will launch Python, Ruby to retrieve information from webs
 
 ## More details
 
-You can view the [detailed information about scrapers here](../in-app-manual/scraping) or [CommunityScrapers README](https://github.com/stashapp/CommunityScrapers/blob/master/README.md){:target="_blank"}.
+You can view the [detailed information about scrapers here](/in-app-manual/scraping) or [CommunityScrapers README](https://github.com/stashapp/CommunityScrapers/blob/master/README.md){:target="_blank"}.
 
 ---
 
