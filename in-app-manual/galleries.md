@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Galleries
 nav_order: 6
 parent: In-app Manual
-permalink: in-app-manual/galleries
+
 ---
 
 **Note:** images are now included during the scan process and are loaded independently of galleries. It is _no longer necessary_ to have images in zip files to be scanned into your library.

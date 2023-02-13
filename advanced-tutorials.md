@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Advanced Tutorials
 nav_order: 8
 has_children: true
 has_toc: false
-permalink: /advanced-tutorials
+
 ---
 
 <details open markdown="block">

@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Troubleshooting Video Playback
 nav_order: 4
 parent: Beginner Guides
-permalink: beginner-guides/troubleshooting-video-playback
+
 ---
 
 <details markdown="block">

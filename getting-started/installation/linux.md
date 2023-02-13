@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Installing on Linux
 nav_order: 3
 parent: Installation
 grand_parent: Getting Started
-permalink: getting-started/installation/linux
+
 ---
 
 1. Run `./stash-linux` or `./stash-linux-arm32v6` or `./stash-linux-arm32v7` or `./stash-linux-arm64v8` from the terminal on Linux depending on your architecture.

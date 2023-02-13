@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Ways to Contribute
 nav_order: 14
 parent: In-app Manual
-permalink: in-app-manual/contributing
+
 ---
 
 <details markdown="block">

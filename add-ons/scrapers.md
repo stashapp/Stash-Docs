@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Scrapers
 nav_order: 1
 has_children: false
 parent: Add-ons
-permalink: add-ons/scrapers
+
 ---
 
 <details markdown="block">

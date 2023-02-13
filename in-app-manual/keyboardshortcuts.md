@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Keyboard Shortcuts
 nav_order: 13
 parent: In-app Manual
-permalink: in-app-manual/keyboardshortcuts
+
 ---
 
 <details markdown="block">

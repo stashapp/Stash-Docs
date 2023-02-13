@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: In-app Manual
 nav_order: 3
 has_children: true
 has_toc: false
-permalink: /in-app-manual
+
 ---
 Internal Stash documentation, mirrored from [Stash repository](https://github.com/stashapp/stash/tree/master/ui/v2.5/src/docs/en/Manual){:target="_blank"}.
 

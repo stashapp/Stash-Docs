@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Introduction
 nav_order: 1
 parent: In-app Manual
-permalink: in-app-manual/introduction
+
 ---
 
 Stash works by cataloging your media using the paths that you provide. Once you have [configured](http://localhost:9999/settings?tab=library){:target="_blank"} the locations where your media is stored, you can click the Scan button in [`Settings -> Tasks`](http://localhost:9999/settings?tab=tasks){:target="_blank"} and stash will begin scanning and importing your media into its library.

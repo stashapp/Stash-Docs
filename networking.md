@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Networking
 nav_order: 6
 has_children: true
 has_toc: false
-permalink: /networking
+
 ---
 
 <details open markdown="block">

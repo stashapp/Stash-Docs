@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Import/Export JSON Specification
 nav_order: 4
 parent: Tasks
 grand_parent: In-app Manual
-permalink: in-app-manual/tasks/jsonspec
+
 ---
 
 <details markdown="block">

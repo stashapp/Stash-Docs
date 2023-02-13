@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Identify
 nav_order: 1
 parent: Tasks
 grand_parent: In-app Manual
-permalink: in-app-manual/tasks/identify
+
 ---
 
 <details markdown="block">

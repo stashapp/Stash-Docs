@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: User Interface (UI)
 nav_order: 7
 has_children: true
 has_toc: false
-permalink: /user-interface-ui
+
 ---
 
 <details open markdown="block">

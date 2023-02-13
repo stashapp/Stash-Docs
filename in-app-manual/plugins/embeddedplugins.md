@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Embedded Plugins
 nav_order: 2
 parent: Plugins
 grand_parent: In-app Manual
-permalink: in-app-manual/plugins/embeddedplugins
+
 ---
 
 <details markdown="block">

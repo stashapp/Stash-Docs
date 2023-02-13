@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Scene Tagger
 nav_order: 9
 parent: In-app Manual
-permalink: in-app-manual/tagger
+
 ---
 
 <details markdown="block">

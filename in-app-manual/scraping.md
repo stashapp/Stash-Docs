@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: clean
 title: Metadata Scraping
 nav_order: 7
 parent: In-app Manual
 has_children: true
 has_toc: false
-permalink: in-app-manual/scraping
+
 ---
 
 <details markdown="block">

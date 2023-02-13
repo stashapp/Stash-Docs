@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: clean
 title: Frequently Asked Questions
 nav_order: 9
-permalink: /faq
+permalink: /faq/
 ---
 
 <details markdown="block">

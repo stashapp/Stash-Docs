@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Installing on FreeNAS/TrueNAS
 nav_order: 5
 parent: Installation
 grand_parent: Getting Started
-permalink: getting-started/installation/freenas-truenas
+
 ---
 
 <details markdown="block">

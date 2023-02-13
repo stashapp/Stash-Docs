@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Exclude File Configuration
 nav_order: 3
 parent: Beginner Guides
-permalink: beginner-guides/exclude-file-configuration
+
 ---
 
 Given a valid [regex](https://github.com/google/re2/wiki/Syntax){:target="_blank"}, files that match even partially are excluded during the Scan process and are not entered in the database.Also during the Clean task if these files exist in the DB they are removed from it and their generated files get deleted.
@@ -32,7 +32,7 @@ exclude:
 
 and thats how it looks if you use UI (notice the difference for the `\` character)
 
-![regexUI](assets/regexui.png)
+![regexUI](/assets/beginner-guides/regexui.png)
 
 {: .note }
 Useful [link](https://regex101.com/?flavor=golang){:target="_blank"} to experiment with regexps (we use "Golang" as the regex flavour).

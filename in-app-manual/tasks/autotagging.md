@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Auto Tagging
 nav_order: 2
 parent: Tasks
 grand_parent: In-app Manual
-permalink: in-app-manual/tasks/autotagging
+
 ---
 
 This task matches your Performers, Studios, and Tags against your media, based on names only. It finds Scenes, Images, and Galleries where the path or filename contains the Performer/Studio/Tag. 

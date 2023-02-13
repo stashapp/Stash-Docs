@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Unraid Support
 nav_order: 6
 parent: Installation
 grand_parent: Getting Started
-permalink: getting-started/installation/unraid
+
 ---
 
 Currently stash is supported in Unraid via the [Community Applications](https://forums.unraid.net/topic/38582-plug-in-community-applications/){:target="_blank"} plugin.

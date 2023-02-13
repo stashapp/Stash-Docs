@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Importing via CSV Using gql-iterate
 nav_order: 2
 parent: Advanced Tutorials
-permalink: advanced-tutorials/importing-via-csv-using-gql-iterate
+
 ---
 
 <details markdown="block">

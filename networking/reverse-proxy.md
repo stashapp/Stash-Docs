@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Reverse Proxy
 nav_order: 2
 parent: Networking
-permalink: networking/reverse-proxy
+
 ---
 
 <details markdown="block">

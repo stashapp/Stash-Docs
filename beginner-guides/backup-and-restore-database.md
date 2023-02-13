@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Backup & Restore Database
 nav_order: 2
 parent: Beginner Guides
-permalink: beginner-guides/backup-and-restore-database
+
 ---
 
 <details markdown="block">

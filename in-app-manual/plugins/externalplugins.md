@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: External Plugins
 nav_order: 1
 parent: Plugins
 grand_parent: In-app Manual
-permalink: in-app-manual/plugins/externalplugins
+
 ---
 
 <details markdown="block">

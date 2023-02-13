@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Interface Options
 nav_order: 3
 parent: In-app Manual
-permalink: in-app-manual/interface
+
 ---
 
 <details markdown="block">
