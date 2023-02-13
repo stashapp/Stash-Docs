@@ -18,13 +18,9 @@ grand_parent: In-app Manual
 
 Embedded plugin tasks are executed within the stash process using a scripting system.
 
----
-
 ## Supported script languages
 
 Stash currently supports Javascript embedded plugin tasks using [otto](https://github.com/robertkrimen/otto){:target="_blank"}.
-
----
 
 ## Javascript plugins
 
@@ -74,8 +70,6 @@ output;
 
 See the `Javascript API` section below on how to log with Javascript plugins.
 
----
-
 ## Plugin configuration file format
 
 ### exec
@@ -86,8 +80,6 @@ For embedded plugins, the `exec` field is a list with the first element being th
 
 For embedded plugins, the `interface` field must be set to one of the following values:
 * `js`
-
----
 
 ## Javascript API
 

@@ -27,8 +27,6 @@ Plugin tasks can be implemented using embedded Javascript, or by calling an exte
 
 > **⚠️ Note:** Plugin support is still experimental and is likely to change.
 
----
-
 ## Adding plugins
 
 By default, Stash looks for plugin configurations in the `plugins` sub-directory of the directory where the stash `config.yml` is read. This will either be the `$HOME/.stash` directory or the current working directory.
@@ -37,15 +35,13 @@ Plugins are added by adding configuration yaml files (format: `pluginName.yml`) 
 
 Loaded plugins can be viewed in the Plugins page of the Settings. After plugins are added, removed or edited while stash is running, they can be reloaded by clicking `Reload Plugins` button.
 
----
-
 ## Using plugins
 
 Plugins provide tasks which can be run from the Tasks page. 
 
----
+## Creating plugins
 
-## Creating plugins## Plugin configuration file format
+### Plugin configuration file format
 
 The basic structure of a plugin configuration file is as follows:
 

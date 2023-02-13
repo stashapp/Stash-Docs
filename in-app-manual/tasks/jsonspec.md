@@ -16,8 +16,6 @@ grand_parent: In-app Manual
 {:toc}
 </details>
 
----
-
 ## Import/Export JSON Specification
 
 The metadata given to Stash can be exported into the JSON format. This structure can be modified, or replicated by other means. The resulting data can then be imported again, giving the possibility for automatic scraping of all kinds. The format of this metadata bulk is a folder structure, containing the following folders:
@@ -29,8 +27,6 @@ The metadata given to Stash can be exported into the JSON format. This structure
 * `scenes`
 * `studios`
 * `movies`
-
----
 
 ## File naming
 
@@ -47,8 +43,6 @@ When exported, files are named with different formats depending on the object ty
 | Movies | `<name>.json` |
 
 Note that the file naming is not significant when importing. All json files will be read from the subdirectories.
-  
----
 
 ## Content of the json files
 
@@ -171,8 +165,6 @@ created_at
 updated_at  
 ```
 
----
-
 ## Files
 
 ### Folder
@@ -243,8 +235,6 @@ size
 created_at
 updated_at
 ```
-
----
 
 ## In JSON format
 

@@ -22,8 +22,6 @@ The `Backup` or `Download Backup` tasks are the proper way to create a backup fi
 
 Stash uses an sqlite database with `WAL` mode enabled. This practically means that along with the main db file `stash.go-sqlite` there can be a `-shm` and a `-wal` file present ([more info](https://sqlite.org/wal.html){:target="_blank"}). Even stopping Stash might leave some of these index files present so again **DO NOT** manually copy the database file.
 
----
-
 ## Restore
 
 Assuming you have properly created a backup file you can use it to restore your database if needed.
@@ -40,8 +38,6 @@ The following steps are recommended when restoring a database file.
 1. Start stash
 
 You should now have stash running with a working and restored database.
-
----
 
 ## Advanced Troubleshooting
 

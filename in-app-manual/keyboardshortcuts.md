@@ -15,8 +15,6 @@ parent: In-app Manual
 {:toc}
 </details>
 
----
-
 ## Global shortcuts
 
 | Keyboard sequence | Action |
@@ -36,8 +34,6 @@ parent: In-app Manual
 | `g u` | Studios |
 | `g t` | Tags |
 | `g z` | Settings |
-
----
 
 ## Query page shortcuts
 
@@ -62,15 +58,11 @@ parent: In-app Manual
 | `e` | Edit selected |
 | `d d` | Delete selected |
 
----
-
 ## Scenes page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `p r` | Play random scene |
-
----
 
 ## Scene page shortcuts
 
@@ -120,15 +112,11 @@ parent: In-app Manual
 [//]: # "(| `v` | Focus Movies selector |)"
 [//]: # "(| `t` | Focus Tags selector |)"
 
----
-
 ## Movies Page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `n` | New Movie |
-
----
 
 ## Movie Page shortcuts
 
@@ -144,15 +132,11 @@ parent: In-app Manual
 [//]: # "Commented until implementation is dealt with"
 [//]: # "(| `u` | Focus Studio selector (in edit mode) |)"
 
----
-
 ## Markers Page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `p r` | Play random marker |
-
----
 
 ## Performers Page shortcuts
 
@@ -160,8 +144,6 @@ parent: In-app Manual
 |-------------------|--------|
 | `n` | New Performer |
 | `p r` | Open random Performer |
-
----
 
 ## Performer Page shortcuts
 
@@ -181,15 +163,11 @@ parent: In-app Manual
 | `d d` | Delete Performer |
 | `Ctrl + v` | Paste Performer image |
 
----
-
 ## Studios Page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `n` | New Studio |
-
----
 
 ## Studio Page shortcuts
 
@@ -200,15 +178,11 @@ parent: In-app Manual
 | `d d` | Delete Studio |
 | `Ctrl + v` | Paste Studio image |
 
----
-
 ## Tags Page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `n` | New Tag |
-
----
 
 ## Tag Page shortcuts
 

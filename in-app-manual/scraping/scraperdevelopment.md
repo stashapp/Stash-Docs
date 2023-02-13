@@ -18,8 +18,6 @@ grand_parent: In-app Manual
 
 Scrapers can be contributed to the community by creating a PR in [this repository](https://github.com/stashapp/CommunityScrapers/pulls){:target="_blank"}.
 
----
-
 ## Scraper configuration file format
 
 ```yaml
@@ -65,8 +63,6 @@ The scraping types and their required fields are outlined in the following table
 | Scrape gallery from URL | Valid `galleryByURL` configuration with matching URL. |
 
 URL-based scraping accepts multiple scrape configurations, and each configuration requires a `url` field. stash iterates through these configurations, attempting to match the entered URL against the `url` fields in the configuration. It executes the first scraping configuration where the entered URL contains the value of the `url` field. 
-
----
     
 ## Actions
 
@@ -281,8 +277,6 @@ sceneByFragment:
 stashServer:
   url: http://stashserver.com:9999
 ```
-
----
 
 ## Xpath and JSON scrapers configuration
 
@@ -786,8 +780,6 @@ driver:
       Value: Bearer lPdwFdfY17p4qBkTVF03zscUU2glSjdf17bZyoe  # use an actual API Key here
 # Last Updated April 7, 2021
 ```
-
----
 
 ## Object fields
 

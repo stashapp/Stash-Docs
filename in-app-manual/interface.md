@@ -15,13 +15,9 @@ parent: In-app Manual
 {:toc}
 </details>
 
----
-
 ## Language
 
 Setting the language affects the formatting of numbers and dates.
-
----
 
 ## Scene/Marker Wall Preview Type
 
@@ -29,13 +25,9 @@ The Scene Wall and Marker pages display scene preview videos by default. This ca
 
 > **⚠️ Note:** scene/marker preview videos must be generated to see them in the applicable wall page if Video preview type is selected. Likewise, if Animated Image is selected, then Image Previews must be generated.
 
----
-
 ## Show Studios as text
 
 By default, a scene's studio will be shown as an image overlay. Checking this option changes this to display studios as a text name instead.
-
----
 
 ## Scene Player options
 
@@ -51,15 +43,11 @@ The "Minimum Play Percent" gives the minimum proportion of a video that must be 
 
 By default, when a scene has a resume point, the scene player will automatically seek to this point when the scene is played. Setting "Always start video from beginning" to true disables this behaviour.
 
----
-
 ## Custom CSS
 
 The stash UI can be customised using custom CSS. See [here](/user-interface-ui/custom-css-snippets) for a community-curated set of CSS snippets to customise your UI. 
 
 [Stash Plex Theme](/user-interface-ui/themes/plex) is a community created theme inspired by the popular Plex interface.
-
----
 
 ## Custom Locales
 
@@ -74,8 +62,6 @@ For example, to override the `actions.add_directory` label (which is `Add Direct
   }
 }
 ```
-
----
 
 ## Custom served folders
 

@@ -23,8 +23,6 @@ grand_parent: Getting Started
 2. It should open a browser tab http://localhost:9999 to get started.
 3. The program will show an icon in your notification area. You can access some quick links or quit the server from there.
 
----
-
 ## Intel
 
 1. Run `./stash-macos-intel` from the terminal on macOS.

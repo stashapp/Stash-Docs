@@ -20,8 +20,6 @@ has_toc: false
 
 This page allows you to direct the stash server to perform a variety of tasks.
 
----
-
 ## Scanning
 
 The scan function walks through the stash directories you have configured for new and moved files. 
@@ -40,19 +38,13 @@ The scan task accepts the following options:
 | Generate perceptual hashes | Generates perceptual hashes for scene deduplication and identification. |
 | Generate thumbnails for images | Generates thumbnails for image files. | 
 
----
-
 ## Auto Tagging
 
 See the [Auto Tagging](/in-app-manual/tasks/autotagging) page.
 
----
-
 ## Scene Filename Parser
 
 See the [Scene Filename Parser](/in-app-manual/tasks/scenefilenameparser) page.
-
-----
 
 ## Generated Content
 
@@ -88,15 +80,11 @@ Stash has since implemented live transcoding, so transcodes are essentially unne
 
 These are generated when the gallery is first viewed, so generating them beforehand is not necessary.
 
----
-
 ## Cleaning
 
 This task will walk through your configured media directories and remove any scene from the database that can no longer be found. It will also remove generated files for scenes that subsequently no longer exist.
 
 Care should be taken with this task, especially where the configured media directories may be inaccessible due to network issues.
-
----
 
 ## Exporting and Importing
 
@@ -105,5 +93,3 @@ The import and export tasks read and write JSON files to the configured metadata
 > **⚠️ Note:** The full import task wipes the current database completely before importing.
 
 See the [JSON Specification](/in-app-manual/tasks/jsonspec) page for details on the exported JSON format.
-
----
