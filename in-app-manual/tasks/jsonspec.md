@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Import/Export JSON Specification
 nav_order: 4
 parent: Tasks
 grand_parent: In-app Manual
-permalink: in-app-manual/tasks/jsonspec
+
 ---
 
 <details markdown="block">
@@ -255,7 +255,7 @@ For those preferring the json-format, defined [here](https://json-schema.org/){:
 ``` json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://docs.stashapp.cc/docs/In-app-Manual/Tasks/JSONSpec/#performerjson",
+  "$id": "https://docs.stashapp.cc/in-app-manual/tasks/jsonspec/#performerjson",
   "title": "performer",
   "description": "A json file representing a performer. The file is named by a MD5 Code.",
   "type": "object",
@@ -355,7 +355,7 @@ For those preferring the json-format, defined [here](https://json-schema.org/){:
 ``` json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://docs.stashapp.cc/docs/In-app-Manual/Tasks/JSONSpec/#studiojson",
+  "$id": "https://docs.stashapp.cc/in-app-manual/tasks/jsonspec/#studiojson",
   "title": "studio",
   "description": "A json file representing a studio. The file is named by a MD5 Code.",
   "type": "object",
@@ -394,7 +394,7 @@ For those preferring the json-format, defined [here](https://json-schema.org/){:
 ```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://docs.stashapp.cc/docs/In-app-Manual/Tasks/JSONSpec/#scenejson",
+  "$id": "https://docs.stashapp.cc/in-app-manual/tasks/jsonspec/#scenejson",
   "title": "scene",
   "description": "A json file representing a scene. The file is named by the MD5 Code of the file its data is referring to.",
   "type": "object",

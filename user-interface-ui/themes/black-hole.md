@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Black Hole
 nav_order: 5
 parent: Themes
 grand_parent: User Interface (UI)
-permalink: user-interface-ui/themes/black-hole
+
 ---
 
 <details markdown="block">

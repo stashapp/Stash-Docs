@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Custom CSS Snippets
 nav_order: 2
 parent: User Interface (UI)
-permalink: user-interface-ui/custom-css-snippets
+
 ---
 
 <details markdown="block">
@@ -30,7 +30,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Reduce left and right padding on Scene and Performer grid pages allowing for more thumbnails on each row.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Scenes tab] Fit more thumbnails on each row */
@@ -43,7 +43,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Allow for longer string when displaying "Studio as Text" on scene thumbnails.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Scenes tab] Allow for longer string when displaying "Studio as Text" on scene thumbnails */
@@ -61,7 +61,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Hide scene specs (resolution, duration) from scene card.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Scenes tab] Hide scene specs (resolution, duration) from scene card */
@@ -76,7 +76,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Hide studio logo/text from scene card.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Scenes tab] Hide studio logo/text from scene card */
@@ -90,7 +90,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Make the list of tags take up less width.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Scenes tab] Make the list of tags take up less width */
@@ -105,7 +105,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Swap studio and resolution/duration positions.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Scenes tab] Swap studio and resolution/duration positions */
@@ -129,7 +129,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Adjust the mouse over behaviour in wall mode.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Scenes tab] Adjust the mouse over behaviour in wall mode */
@@ -150,7 +150,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Disable zoom on hover in wall mode.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Scenes tab] Disable zoom on hover in wall mode */
@@ -168,7 +168,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|This will hide the large scene scrubber under the video player and max out the player's height.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)![Image](assets/css-scrubber.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)![Image](/assets/user-interface-ui/css-scrubber.png)|
 
 ```css
 /* [Scenes tab] Hide the scene scrubber and max out the player's height */
@@ -182,7 +182,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|This will hide the truncated text that appears under the tile and date.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Scenes Tab] - Hide the truncated text on scene card */
@@ -201,7 +201,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Disable lightbox animation.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Images tab] Disable lightbox animation */
@@ -216,7 +216,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Don't crop preview thumbnails.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Images tab] Don't crop preview thumbnails */
@@ -237,7 +237,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Making the front and back image much bigger. Left panel uses 70% while the right uses 30%.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Movies tab] Better Movie layout for desktops: Regular size poster */
@@ -260,7 +260,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Making the front and back image much bigger. Left panel uses 70% while the right uses 30%.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Movies tab] Better Movie layout for desktops: Larger size poster */
@@ -289,7 +289,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Grid view for galleries.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Galleries tab] Grid view for galleries */
@@ -316,7 +316,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Show entire performer image in performer card.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Performers tab] Show entire performer image in performer card */
@@ -331,7 +331,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Show a larger image in performer's page for desktop.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Performers tab] Show a larger image in performer's page for desktop */
@@ -351,7 +351,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Place performer image in the background on performer page.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Performers tab] Place performer image in the background on performer page */
@@ -392,7 +392,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Show larger performer images in performers list.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Performers tab] Show larger performer images in performers list */
@@ -408,7 +408,7 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 |-|-|
 |Description|Move the buttons in the Performer's edit panel to the top instead of bottom (in newer version of Stash, the buttons are already positioned both at top and bottom.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Performers tab] Move the buttons in the Performer's edit panel to the top instead of bottom (in newer version of Stash, the buttons are already positioned both at top and bottom.  */
@@ -431,7 +431,7 @@ form#performer-edit {
 |-|-|
 |Description|Move the tags row in the Performer's edit panel to the second position (just after name).|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Performers tab] Move the tags row in the Performer's edit panel to the second position (just after name).  */
@@ -457,7 +457,7 @@ form#performer-edit {
 |-|-|
 |Description|Changes the layout of studio cards.|
 |Author|Qx#1573|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/studios_layout.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)![](/assets/user-interface-ui/studios_layout.png)|
 
 ```css
 /* [Studios tab] Changes the layout of studio cards */
@@ -499,7 +499,7 @@ form#performer-edit {
 |-|-|
 |Description|Changes the layout of tag cards on tags tab and when hovering on tags in different content.|
 |Author|Qx#1573|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/tags_layout.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)![](/assets/user-interface-ui/tags_layout.png)|
 
 ```css
 /* [Tags changes] changes the layout of tag cards on tags page and hover */
@@ -566,7 +566,7 @@ form#performer-edit {
 |-|-|
 |Description|Use `order` values below 0 to move specific buttons to the left of the non-ordered buttons, and values above 1 to move them to the right of the non-ordered buttons.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)Before<br />![Navigation before](assets/navigation-before.png)<br />After<br />![Navigation after](assets/navigation-after.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)Before<br />![Navigation before](/assets/user-interface-ui/navigation-before.png)<br />After<br />![Navigation after](/assets/user-interface-ui/navigation-after.png)|
 
 ```css
 /* [Global changes] Change the order of navigation bar buttons */
@@ -591,7 +591,7 @@ div.nav-link[data-rb-event-key="/scenes"] {
 |-|-|
 |Description|Hide the Donate button.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Global changes] Hide the Donate button */
@@ -606,7 +606,7 @@ div.nav-link[data-rb-event-key="/scenes"] {
 |-|-|
 |Description|Use for when working on stash but don't want to expose NSFW images and text. May not be exhaustive.|
 |Author||
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
 
 ```css
 /* [Global changes] Blur NSFW images */
@@ -657,7 +657,7 @@ img.performer,
 |-|-|
 |Description|Blur NSFW images and unblur on mouse over.|
 |Author|fl0w#9497|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/blur2.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)![](/assets/user-interface-ui/blur2.png)|
 
 ```css
 /* [Global changes] Blur NSFW images and unblur on mouse over */

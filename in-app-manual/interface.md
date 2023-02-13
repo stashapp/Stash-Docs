@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Interface Options
 nav_order: 3
 parent: In-app Manual
-permalink: in-app-manual/interface
+
 ---
 
 <details markdown="block">
@@ -55,9 +55,9 @@ By default, when a scene has a resume point, the scene player will automatically
 
 ## Custom CSS
 
-The stash UI can be customised using custom CSS. See [here](../../user-interface-ui/custom-css-snippets) for a community-curated set of CSS snippets to customise your UI. 
+The stash UI can be customised using custom CSS. See [here](/user-interface-ui/custom-css-snippets) for a community-curated set of CSS snippets to customise your UI. 
 
-[Stash Plex Theme](../../user-interface-ui/themes/plex) is a community created theme inspired by the popular Plex interface.
+[Stash Plex Theme](/user-interface-ui/themes/plex) is a community created theme inspired by the popular Plex interface.
 
 ---
 

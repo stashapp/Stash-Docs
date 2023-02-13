@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Userscripts
 nav_order: 4
 parent: Add-ons
-permalink: add-ons/userscripts
+
 ---
 
 <details markdown="block">
@@ -38,7 +38,7 @@ Official userscripts are hosted on [CommunityScripts repository](https://github.
 |Category|StashDB|
 |Userscript|[StashDB Submission Helper](https://github.com/stashapp/CommunityScripts/tree/main/userscripts/StashDB_Submission_Helper){:target="_blank"}|
 |Description|Adds handy functions for StashDB submissions like buttons to add aliases in bulk to a performer.|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/StashDB_Submission_Helper.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/StashDB_Submission_Helper.png)|
 
 ---
 
@@ -54,7 +54,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Batch Query Edit](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|In Scene Tagger, adds button to batch update all query fields with a configurable combination of Date, Studio, Performers, and Title.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Batch_Query_Edit.png)![](assets/Stash_Batch_Query_Edit2.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Batch_Query_Edit.png)![](/assets/add-ons/Stash_Batch_Query_Edit2.png)|
 
 ### Stash Batch Result Toggle
 
@@ -63,7 +63,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Batch Result Toggle](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|In Scene Tagger, adds button to toggle all stashdb scene match result fields. Saves clicks when you only want to save a few metadata fields. Instead of turning off every field, you batch toggle them off, then toggle on the ones you want.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Batch_Result_Toggle.png)![](assets/Stash_Batch_Result_Toggle2.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Batch_Result_Toggle.png)![](/assets/add-ons/Stash_Batch_Result_Toggle2.png)|
 
 ### Stash Batch Save
 
@@ -72,7 +72,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Batch Save](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|In Scene Tagger, adds button to batch save all scenes. Opens a confirmation popup with clicked.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Batch_Save.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Batch_Save.png)|
 
 ### Stash Batch Search
 
@@ -81,7 +81,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Batch Search](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|In Scene Tagger, adds button to batch search all scenes.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Batch_Search.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Batch_Search.png)|
 
 ### Stash Markdown
 
@@ -90,7 +90,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Markdown](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Adds markdown parsing to tag description fields.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Markdown.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Markdown.png)|
 
 ### Stash New Performer Filter Button
 
@@ -99,7 +99,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash New Performer Filter Button](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Adds button to performers page to switch to a filter by new performers tagger view.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_New_Performer_Filter_Button.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_New_Performer_Filter_Button.png)|
 
 ### Stash Open Media Player
 
@@ -108,7 +108,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Open Media Player](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Open filepath link on scene page 'File Info' tab in an external media player when clicked.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Open_Media_Player.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Open_Media_Player.png)|
 
 ### Stash Performer Audit Task Button
 
@@ -117,7 +117,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Performer Audit Task Button](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Adds a button to the performers page to check for duplicate performer urls. Task output shown in stash logs.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Performer_Audit_Task_Button.png)![](assets/Stash_Performer_Audit_Task_Button2.png)![](assets/Stash_Performer_Audit_Task_Button3.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_Audit_Task_Button.png)![](/assets/add-ons/Stash_Performer_Audit_Task_Button2.png)![](/assets/add-ons/Stash_Performer_Audit_Task_Button3.png)|
 
 ### Stash Performer Image Cropper
 
@@ -126,7 +126,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Performer Image Cropper](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Adds ability to crop performer image from performer page.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Performer_Image_Cropper.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_Image_Cropper.png)|
 
 ### Stash Performer Markers Tab
 
@@ -135,7 +135,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Performer Markers Tab](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Adds a Markers link to performer pages.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Performer_Markers_Tab.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_Markers_Tab.png)|
 
 ### Stash Performer Tagger Additions
 
@@ -144,7 +144,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Performer Tagger Additions](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Adds performer birthdate and url to tagger view. Makes clicking performer name open stash profile in new tab instead of current tab.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Performer_Tagger_Additions.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_Tagger_Additions.png)|
 
 ### Stash Performer URL Searchbox
 
@@ -153,7 +153,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Performer URL Searchbox](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Adds a performer URL search textbox to performers page for quicker searching by performer URL.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Performer_URL_Searchbox.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_URL_Searchbox.png)|
 
 ### Stash Scene Tagger Additions
 
@@ -162,7 +162,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Scene Tagger Additions](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Adds scene duration, filepath, and url to tagger view in the collapsible scene details sections. Adds shift-click to collapsible scene details buttons to open/close all.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Scene_Tagger_Additions.png)![](assets/Stash_Scene_Tagger_Additions2.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Scene_Tagger_Additions.png)![](/assets/add-ons/Stash_Scene_Tagger_Additions2.png)|
 
 ### Stash Scene Tagger Colorizer
 
@@ -171,7 +171,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Scene Tagger Colorizer](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|In Scene Tagger, colorize scrape results. Matching fields are green, missing fields are yellow, and mismatching fields are red.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Scene_Tagger_Colorizer.png)![](assets/Stash_Scene_Tagger_Colorizer2.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Scene_Tagger_Colorizer.png)![](/assets/add-ons/Stash_Scene_Tagger_Colorizer2.png)|
 
 ### Stash Scene Tagger Draft Submit
 
@@ -180,7 +180,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Scene Tagger Draft Submit](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Adds button to Scene Tagger to submit draft to StashDB.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Scene_Tagger_Draft_Submit.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Scene_Tagger_Draft_Submit.png)|
 
 ### Stash Scene Tagger Linkify
 
@@ -189,7 +189,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Scene Tagger Linkify](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Turn all scene tagger result text referencing stash or stashbox studio and performer names into clickable links.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Scene_Tagger_Linkify.png)![](assets/Stash_Scene_Tagger_Linkify2.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Scene_Tagger_Linkify.png)![](/assets/add-ons/Stash_Scene_Tagger_Linkify2.png)|
 
 ### Stash Set Stashbox Favorite Performers
 
@@ -198,7 +198,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Set Stashbox Favorite Performers](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Sync Stashbox favorite performers whenever a stash performer is favorited or unfavorited. Also adds button to performers page to sync all.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Set_Stashbox_Favorite_Performers.png)![](assets/Stash_Set_Stashbox_Favorite_Performers2.png)![](assets/Stash_Set_Stashbox_Favorite_Performers3.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Set_Stashbox_Favorite_Performers.png)![](/assets/add-ons/Stash_Set_Stashbox_Favorite_Performers2.png)![](/assets/add-ons/Stash_Set_Stashbox_Favorite_Performers3.png)|
 
 ### Stash StashID Icon
 
@@ -207,7 +207,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash StashID Icon](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Adds checkmark icon to performer and studio cards that have a StashID.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_StashID_Icon.png)![](assets/Stash_StashID_Icon2.png)![](assets/Stash_StashID_Icon3.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_StashID_Icon.png)![](/assets/add-ons/Stash_StashID_Icon2.png)![](/assets/add-ons/Stash_StashID_Icon3.png)|
 
 ### Stash StashID Input
 
@@ -216,7 +216,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash StashID Input](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Adds input textboxes to performer detail and studio detail pages for StashID entry. Also displays studio StashIDs on studio page without having to click edit to view.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_StashID_Input.png)![](assets/Stash_StashID_Input2.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_StashID_Input.png)![](/assets/add-ons/Stash_StashID_Input2.png)|
 
 ### Stash Stats
 
@@ -225,7 +225,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Stats](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Adds new stats to the stats page: marker count, favorite performer count, studios with StashID %, performers with StashID %, scenes with StashID %.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Stats.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Stats.png)|
 
 ### Stash Studio Image And Parent On Create
 
@@ -234,7 +234,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Studio Image And Parent On Create](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|In Scene Tagger, sets studio image and parent studio from StashDB when a studio is created.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Studio_Image_And_Parent_On_Create.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Studio_Image_And_Parent_On_Create.png)|
 
 ### Stash Tag Image Cropper
 
@@ -243,7 +243,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Tag Image Cropper](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
 |Description|Adds ability to crop tag image from tag page.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Tag_Image_Cropper.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Tag_Image_Cropper.png)|
 
 ### Visage
 
@@ -252,7 +252,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Visage](https://github.com/cc1234475/visage){:target="_blank"}|
 |Description|Visage is a series of tools to do facial recognition on images (and create a searchable database).|
 |Author|[cc1234475](https://github.com/cc1234475)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Visage.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Visage.png)|
 
 ### Performer Suggestions
 
@@ -261,7 +261,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Performer Suggestions](https://gist.github.com/QxxxGit/7d6e5759814b1ce84cb7535173415eff){:target="_blank"}|
 |Description|Adds performer suggestions based on similar tags.|
 |Author|[QxxxGit](https://github.com/QxxxGit)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### Performer Card Details
 
@@ -270,7 +270,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Performer Card Details](https://gist.github.com/QxxxGit/5c25005ff1a918d3f1213134b2282609){:target="_blank"}|
 |Description|Adds details to performer cards.|
 |Author|[QxxxGit](https://github.com/QxxxGit)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Performer_Card_Details.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Performer_Card_Details.png)|
 
 ### StashDB Copy StashID
 
@@ -279,7 +279,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[StashDB Copy StashID](https://github.com/7dJx1qP/stashdb-userscripts){:target="_blank"}|
 |Description|Adds a button to copy StashID.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### StashDB Backlog Userscript
 
@@ -288,7 +288,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[StashDB Backlog Userscript](https://gist.github.com/peolic/e4713081f7ad063cd0e91f2482ac39a7){:target="_blank"}|
 |Description|This userscript is used to be able to view pending changes from the StashDB Backlog spreadsheet directly on StashDB.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/StashDB_Backlog_Userscript.png)![](assets/StashDB_Backlog_Userscript2.png)![](assets/StashDB_Backlog_Userscript3.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/StashDB_Backlog_Userscript.png)![](/assets/add-ons/StashDB_Backlog_Userscript2.png)![](/assets/add-ons/StashDB_Backlog_Userscript3.png)|
 
 ### StashDB Images Userscript
 
@@ -297,7 +297,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[StashDB Images Userscript](https://gist.github.com/peolic/7368022947a28ef11bf44d0ae802df45){:target="_blank"}|
 |Description|This userscript adds image resolutions next to every performer image on StashDB.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/StashDB_Images_Userscript.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/StashDB_Images_Userscript.png)|
 
 ### StashDB ID Copy Buttons
 
@@ -306,7 +306,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[StashDB ID Copy Buttons](https://github.com/peolic/userscripts){:target="_blank"}|
 |Description|Adds buttons to copy StashID.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/StashDB_ID_Copy_Buttons.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/StashDB_ID_Copy_Buttons.png)|
 
 ### Indexxx Helper Userscript
 
@@ -315,7 +315,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Indexxx Helper Userscript](https://github.com/peolic/userscripts){:target="_blank"}|
 |Description|This userscript adds useful tools to indexxx.com.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### IAFD Helper Userscript
 
@@ -324,7 +324,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[IAFD Helper Userscript](https://github.com/peolic/userscripts){:target="_blank"}|
 |Description|This userscript converts dates to YYYY-MM-DD and provides a filter for the studios search page on iafd.com.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### ManyVids Release Year Userscript
 
@@ -333,7 +333,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[ManyVids Release Year Userscript](https://github.com/peolic/userscripts){:target="_blank"}|
 |Description|This userscript adds the year to partial video release dates on manyvids.com.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### Brazzers Sub-Studio Userscript
 
@@ -342,7 +342,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Brazzers Sub-Studio Userscript](https://github.com/peolic/userscripts){:target="_blank"}|
 |Description|This userscript adds the sub-studio of a Brazzers scene to the video page.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### 1 Pass For All Sites - Better Episode Image
 
@@ -351,7 +351,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[1 Pass For All Sites - Better Episode Image](https://github.com/peolic/userscripts){:target="_blank"}|
 |Description|Attempts to grab a better episode image.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### CumLouder
 
@@ -360,7 +360,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[CumLouder](https://github.com/peolic/userscripts){:target="_blank"}|
 |Description|Adds site logo and name to video pages. May not work for all videos.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### ExploitedX Sites - Release Codes
 
@@ -369,7 +369,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[ExploitedX Sites - Release Codes](https://github.com/peolic/userscripts){:target="_blank"}|
 |Description|Shows episode numbers for ExploitedX sites.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### FTVCash - Better Image
 
@@ -378,7 +378,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[FTVCash - Better Image](https://github.com/peolic/userscripts){:target="_blank"}|
 |Description|Attempts to grab a better episode image.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### Gamma Entertainment - Scene Length
 
@@ -387,7 +387,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Gamma Entertainment - Scene Length](https://github.com/peolic/userscripts){:target="_blank"}|
 |Description|Adds scene length information on Gamma Entertainment sites.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### Kink - Find Duration
 
@@ -396,7 +396,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Kink - Find Duration](https://github.com/peolic/userscripts){:target="_blank"}|
 |Description|Add "find duration" link to shoot pages.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### MindGeek Scene Trailer
 
@@ -405,7 +405,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[MindGeek Scene Trailer](https://github.com/peolic/userscripts){:target="_blank"}|
 |Description|Shows trailers on MindGeek sites.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### Porn Pros
 
@@ -414,7 +414,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Porn Pros](https://github.com/peolic/userscripts){:target="_blank"}|
 |Description|Fixes duration on Porn Pros sites.|
 |Author|[peolic](https://github.com/peolic)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### Vixen Media Group - Trailers, Studio Code, and Click to Copy
 
@@ -423,7 +423,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Vixen Media Group - Trailers, Studio Code, and Click to Copy](https://github.com/halorrr/userscripts#vixen-media-group---trailers-studio-code-and-click-to-copy){:target="_blank"}|
 |Description|Displays Studio Code, displays trailer links in 320p, 480p, 720p, 1080p, and 2160p formats (links open in new tab), click to copy studio code, click to copy date in stash format (YYYY-MM-DD), click to copy duration, click to copy Director name.|
 |Author|[halorrr](https://github.com/halorrr)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### Freeones Forum Link Corrector
 
@@ -432,7 +432,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Freeones Forum Link Corrector](https://github.com/halorrr/userscripts#freeones-forum-link-corrector){:target="_blank"}|
 |Description|Converts old `board.freeones.showthread.php` style freeones links to the new format in order to avoid broken links. Currently runs on theNude, indexxx, and freeones. More can be added if there is a common need for them.|
 |Author|[halorrr](https://github.com/halorrr)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### ModelHub Exact Date
 
@@ -441,7 +441,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[ModelHub Exact Date](https://github.com/halorrr/userscripts#modelhub-exact-date){:target="_blank"}|
 |Description|Replaces the approximate date (ex. 3 years ago) for a scene with an exact one in YYYY-MM-DD format as long as the user is logged in to a PornHub account. Modelhub has a tracking script for user activity that only triggers when the user is logged into a Pornhub account. This script contains the video's upload date, this is why being logged in is required. You will also be able to click on the date to copy it.|
 |Author|[halorrr](https://github.com/halorrr)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### ATK Girlfriends Scene and Image Links with Click to Copy
 
@@ -450,7 +450,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[ATK Girlfriends Scene and Image Links with Click to Copy](https://github.com/halorrr/userscripts#atk-girlfriends-scene-and-image-links-with-click-to-copy){:target="_blank"}|
 |Description|This helps getting metadata from ATK Girlfriends. This runs on the model page as it solves this issues that a lot of scene pages on ATK Girlfriends will just return a blank white page. This script: extracts the scene link, adds a link, and a click to copy button, extracts the scene images, manipulates the url to be the larger version, adds a link, and a click to copy button, adds a click to copy button to the title, adds a click to copy button to the description.|
 |Author|[halorrr](https://github.com/halorrr)|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### Stash Checker
 
@@ -459,4 +459,4 @@ These userscripts are created by third parties and not officially affiliated or 
 |Userscript|[Stash Checker](https://gist.github.com/timo95/562b9363d491e3ee281cb46944445fcd){:target="_blank"}|
 |Description|Checks if a given scene/performer on one of the supported sites is present in your Stash. Shows a checkmark and tooltip for additional information. All supported websites are listed in the metadata `@match` section.|
 |Author|[timo95](https://github.com/timo95)|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/Stash_Checker.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Checker.png)|

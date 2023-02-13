@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: First Steps
 nav_order: 2
 parent: Getting Started
-permalink: getting-started/first-steps
+
 ---
 
 <details markdown="block">
@@ -19,8 +19,8 @@ permalink: getting-started/first-steps
 
 1. Open your Stash.
 2. Go to `Settings` > `Library` and click `Add Directory`.
-3. To change the drive letter/volume, just type it in the field.
-![Drive location](assets/drive_location.png)
+3. To change the drive letter/volume, just type it in the field.<br />
+![Drive location](/assets/getting-started/drive_location.png)
 4. Select the folder containing the content you want to add. It will select the folder and all sub-folders.
 5. Click `Confirm`.
 

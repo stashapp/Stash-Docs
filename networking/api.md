@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: API
 nav_order: 1
 parent: Networking
-permalink: networking/api
+
 ---
 
 <details markdown="block">

@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Scrapers
 nav_order: 1
 has_children: false
 parent: Add-ons
-permalink: add-ons/scrapers
+
 ---
 
 <details markdown="block">
@@ -89,13 +89,13 @@ This type of scrapers will launch Python, Ruby to retrieve information from webs
 
 ## More details
 
-You can view the [detailed information about scrapers here](../in-app-manual/scraping) or [CommunityScrapers README](https://github.com/stashapp/CommunityScrapers/blob/master/README.md){:target="_blank"}.
+You can view the [detailed information about scrapers here](/in-app-manual/scraping) or [CommunityScrapers README](https://github.com/stashapp/CommunityScrapers/blob/master/README.md){:target="_blank"}.
 
 ---
 
 ## Create your own
 
-To create your own scraper, there is [detailed information about that as well](../in-app-manual/scraping/scraperdevelopment). Best way to start is to read the simple ones and understand how xpath works. The [XPath Cheetsheet](https://devhints.io/xpath){:target="_blank"} is quite useful in creating a .yml file. In Firefox you can use xpath search in "Web Developer Tools (F12)". The "search HTML" bar actually accepts xpath searches. You can use it to verify your xpath queries.
+To create your own scraper, there is [detailed information about that as well](/in-app-manual/scraping/scraperdevelopment). Best way to start is to read the simple ones and understand how xpath works. The [XPath Cheetsheet](https://devhints.io/xpath){:target="_blank"} is quite useful in creating a .yml file. In Firefox you can use xpath search in "Web Developer Tools (F12)". The "search HTML" bar actually accepts xpath searches. You can use it to verify your xpath queries.
 
 ---
 

@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Manually Editing the Stash Sqlite3 Database
 nav_order: 3
 parent: Advanced Tutorials
-permalink: advanced-tutorials/manually-editing-the-stash-qqlite3-database
+
 ---
 
 <details markdown="block">

@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: clean
 title: Metadata Scraping
 nav_order: 7
 parent: In-app Manual
 has_children: true
 has_toc: false
-permalink: in-app-manual/scraping
+
 ---
 
 <details markdown="block">
@@ -89,4 +89,4 @@ When used in combination with stash-box, the user can optionally submit scene fi
 
 ### Identify Task
 
-This task iterates through your Scenes and attempts to identify the scene using a selection of scraping sources. This task can be found under `Settings -> Tasks -> "Identify..." (Button)`. For more information see the [Tasks > Identify](../in-app-manual/tasks/identify) page.
+This task iterates through your Scenes and attempts to identify the scene using a selection of scraping sources. This task can be found under `Settings -> Tasks -> "Identify..." (Button)`. For more information see the [Tasks > Identify](/in-app-manual/tasks/identify) page.

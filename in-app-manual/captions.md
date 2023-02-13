@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Captions
 nav_order: 12
 parent: In-app Manual
-permalink: in-app-manual/captions
+
 ---
 
 <details markdown="block">

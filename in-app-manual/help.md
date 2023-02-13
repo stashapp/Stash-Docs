@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Where to Get Further Help
 nav_order: 15
 parent: In-app Manual
-permalink: in-app-manual/help
+
 ---
 
 Join our [Discord](https://discord.gg/2TsNFKt){:target="_blank"}.

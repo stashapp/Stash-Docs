@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Modern Dark
 nav_order: 6
 parent: Themes
 grand_parent: User Interface (UI)
-permalink: user-interface-ui/themes/modern-dark
+
 ---
 
 <details markdown="block">
@@ -34,7 +34,7 @@ div[data-rb-event-key="/scenes/markers"] {
 
 ### Screenshots
 
-![Modern Dark preview #1](assets/modern-dark-1.jpg)
+![Modern Dark preview #1](/assets/user-interface-ui/themes/modern-dark-1.jpg)
 
 ## Install
 

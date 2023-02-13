@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Installing on Synology NAS
 nav_order: 4
 parent: Installation
 grand_parent: Getting Started
-permalink: getting-started/installation/synology
+
 ---
 
 <details markdown="block">

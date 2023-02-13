@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Light Pulsar
 nav_order: 2
 parent: Themes
 grand_parent: User Interface (UI)
-permalink: user-interface-ui/themes/light-pulsar
+
 ---
 
 <details markdown="block">
@@ -26,9 +26,9 @@ The Theme will only change the look&feel of the Stash interface. It **will not**
 
 ### Screenshots
 
-![Light Pulsar preview #1](assets/light-pulsar-1.jpg)
-![Light Pulsar preview #2](assets/light-pulsar-2.jpg)
-![Light Pulsar preview #3](assets/light-pulsar-3.jpg)
+![Light Pulsar preview #1](/assets/user-interface-ui/themes/light-pulsar-1.jpg)
+![Light Pulsar preview #2](/assets/user-interface-ui/themes/light-pulsar-2.jpg)
+![Light Pulsar preview #3](/assets/user-interface-ui/themes/light-pulsar-3.jpg)
 
 ---
 

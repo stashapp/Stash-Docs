@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Authentication Required When Accessing Stash From the Internet
 nav_order: 3
 parent: Networking
-permalink: networking/authentication-required-when-accessing-stash-from-the-internet
+
 ---
 
 <details markdown="block">

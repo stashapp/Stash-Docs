@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Scene Filename Parser
 nav_order: 3
 parent: Tasks
 grand_parent: In-app Manual
-permalink: in-app-manual/tasks/scenefilenameparser
+
 ---
 
 <details markdown="block">

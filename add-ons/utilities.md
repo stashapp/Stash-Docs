@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Utilities
 nav_order: 5
 parent: Add-ons
-permalink: add-ons/utilities
+
 ---
 
 <details markdown="block">
@@ -27,7 +27,7 @@ These utilities are created by third parties and not officially affiliated or su
 |Utility|[Stash_helper](https://github.com/philpw99/Stash_Helper){:target="_blank"}|
 |Description|Adds some windows-specific tools to Stash (navigate from icon, installation help, etc).|
 |Author|[philpw99](https://github.com/philpw99){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### stash-vr
 
@@ -36,7 +36,7 @@ These utilities are created by third parties and not officially affiliated or su
 |Utility|[stash-vr](https://github.com/o-fl0w/stash-vr){:target="_blank"}|
 |Description|Watch your stash library in VR.|
 |Author|[o-fl0w](https://github.com/o-fl0w){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### stash-vr-companion
 
@@ -45,7 +45,7 @@ These utilities are created by third parties and not officially affiliated or su
 |Utility|[stash-vr-companion](https://github.com/Tweeticoats/stash-vr-companion){:target="_blank"}|
 |Description|Similar to stash-deovr as above but designed as a web app that sits in a docker container next to stash to make it easier to use and add more functionality.|
 |Author|[Tweeticoats](https://github.com/Tweeticoats){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ### stash-webvr
 
@@ -54,4 +54,4 @@ These utilities are created by third parties and not officially affiliated or su
 |Utility|[stash-webvr](https://gitlab.com/stish/stash-webvr){:target="_blank"}|
 |Description|WebVR friendly Stash client that displays only videos tagged with "Virtual Reality" tag.|
 |Author|[stishadmin](https://gitlab.com/stishadmin){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|

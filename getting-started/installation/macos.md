@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Installing on macOS
 nav_order: 2
 parent: Installation
 grand_parent: Getting Started
-permalink: getting-started/installation/macos
+
 ---
 
 <details markdown="block">

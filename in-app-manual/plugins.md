@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: clean
 title: Plugins
 nav_order: 8
 parent: In-app Manual
 has_children: true
 has_toc: false
-permalink: in-app-manual/plugins
+
 ---
 
 <details markdown="block">
@@ -74,9 +74,9 @@ The `name`, `description`, `version` and `url` fields are displayed on the plugi
 
 The `exec`, `interface`, `errLog` and `tasks` fields are used only for plugins with tasks.
 
-See [External Plugins](/help/ExternalPlugins.md) for details for making plugins with external tasks.
+See [External Plugins](/in-app-manual/plugins/externalplugins) for details for making external plugins.
 
-See [Embedded Plugins](/help/EmbeddedPlugins.md) for details for making plugins with embedded tasks.
+See [Embedded Plugins](/in-app-manual/plugins/embeddedplugins) for details for making embedded plugins.
 
 ## Plugin task input
 

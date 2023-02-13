@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: clean
 title: Configuration
 nav_order: 2
 parent: In-app Manual
-permalink: in-app-manual/configuration
 ---
 
 <details markdown="block">

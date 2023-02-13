@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Contributing Scrapers
 nav_order: 1
 parent: Metadata Scraping
 grand_parent: In-app Manual
-permalink: in-app-manual/scraping/scraperdevelopment
+
 ---
 
 <details markdown="block">

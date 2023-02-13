@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: clean
 title: Themes
 nav_order: 1
 has_children: true
 has_toc: false
 parent: User Interface (UI)
-permalink: user-interface-ui/themes
+
 ---
 
 <details markdown="block">
@@ -32,7 +32,7 @@ Stash supports Custom CSS themes to adjust the look-and-feel of the interface. T
 
 ## Creating Themes
 
-If you would like to develop your own theme, we have a [reference guide of CSS snippets that may be useful](../custom-css-snippets).
+If you would like to develop your own theme, we have a [reference guide of CSS snippets that may be useful](/user-interface-ui/custom-css-snippets).
 
 ---
 
@@ -40,9 +40,9 @@ If you would like to develop your own theme, we have a [reference guide of CSS s
 
 | Name                                                         | Preview                                                               |
 | ---------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| [Pulsar](themes/pulsar) | ![Screenshot of Pulsar Theme](../assets/Pulsar-preview.jpg) |
-| [Light Pulsar](themes/light-pulsar) | ![Screenshot of Light Pulsar Theme](../assets/Light-Pulsar-preview.jpg) |
-| [Night](themes/night) | ![Screenshot of Night Theme](../assets/Night-preview.png) |
-| [Plex](themes/plex) | ![Screenshot of Plex Theme](../assets/Plex-preview.png) |
-| [Black Hole](themes/Black-Hole) | ![Screenshot of Black Hole Theme](../assets/Black-Hole-preview.png) |
-| [Modern Dark](themes/Modern-Dark) | ![Screenshot of Modern Dark](../assets/Modern-Dark-preview.jpg) |
+| [Pulsar](/user-interface-ui/themes/pulsar) | ![Screenshot of Pulsar Theme](/assets/user-interface-ui/Pulsar-preview.jpg) |
+| [Light Pulsar](/user-interface-ui/themes/light-pulsar) | ![Screenshot of Light Pulsar Theme](/assets/user-interface-ui/Light-Pulsar-preview.jpg) |
+| [Night](/user-interface-ui/themes/night) | ![Screenshot of Night Theme](/assets/user-interface-ui/Night-preview.png) |
+| [Plex](/user-interface-ui/themes/plex) | ![Screenshot of Plex Theme](/assets/user-interface-ui/Plex-preview.png) |
+| [Black Hole](/user-interface-ui/themes/Black-Hole) | ![Screenshot of Black Hole Theme](/assets/user-interface-ui/Black-Hole-preview.png) |
+| [Modern Dark](/user-interface-ui/themes/Modern-Dark) | ![Screenshot of Modern Dark](/assets/user-interface-ui/Modern-Dark-preview.jpg) |
