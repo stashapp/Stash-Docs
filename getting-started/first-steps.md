@@ -24,8 +24,6 @@ parent: Getting Started
 4. Select the folder containing the content you want to add. It will select the folder and all sub-folders.
 5. Click `Confirm`.
 
----
-
 ## Configuring Scan Options
 
 1. Open your Stash.
@@ -42,8 +40,6 @@ parent: Getting Started
 {:style="counter-reset:none"}
 3. Select options you want based on your preferences, but every option increases time the scan will take.
 4. You can stop and re-scan it will ignore the files that are already scanned and just scan new or missing files.
-
----
 
 ## Initiating Scan
 

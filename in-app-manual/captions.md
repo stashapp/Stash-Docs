@@ -19,8 +19,6 @@ Stash supports captioning with SRT and VTT files.
 
 These files need to be named as follows:
 
----
-
 ## Scene
 
 - {scene_name}.{language_code}.ext

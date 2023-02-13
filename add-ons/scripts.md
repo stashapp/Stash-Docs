@@ -21,8 +21,6 @@ To install a script follow the script's install instructions.
 
 Scripts are separated into 2 sections [Official](#official) and [Third-party](#third-party).
 
----
-
 ## Official
 
 Official scripts are hosted on [CommunityScripts repository](https://github.com/stashapp/CommunityScripts){:target="_blank"}. All code is reviewed by core Stash team and any questions or issues you have regarding these scripts can be raised in Discord or GitHub. 
@@ -44,8 +42,6 @@ Official scripts are hosted on [CommunityScripts repository](https://github.com/
 |Description|Renames your files using stash's metadata.|
 |Stash version|v0.7 or higher|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
-
----
 
 ## Third-party
 

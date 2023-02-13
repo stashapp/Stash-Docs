@@ -21,8 +21,6 @@ The following is a list of some useful CSS snippets. You may use them by copying
 
 Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not appear without flushing the Stash browser cache first on Chrome.
 
----
-
 ## Scenes
 
 ### Fit more thumbnails on each row
@@ -192,8 +190,6 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 }
 ```
 
----
-
 ## Images
 
 ### Disable lightbox animation
@@ -227,8 +223,6 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
   min-width: initial;
 }
 ```
-
----
 
 ## Movies
 
@@ -280,8 +274,6 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 }
 ```
 
----
-
 ## Galleries
 
 ### Grid view for galleries
@@ -306,8 +298,6 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
     display: inline-table;
 }
 ```
-
----
 
 ## Performers
 
@@ -448,8 +438,6 @@ form#performer-edit {
 }
 ```
 
----
-
 ## Studios
 
 ### Different studio cards layout
@@ -489,8 +477,6 @@ form#performer-edit {
     height: 7em;
 }
 ```
-
----
 
 ## Tags
 
@@ -556,8 +542,6 @@ form#performer-edit {
     stroke-width: 15;
 }
 ```
-
----
 
 ## Global
 

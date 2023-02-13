@@ -22,8 +22,6 @@ grand_parent: User Interface (UI)
 2. Tick/Enable Custom CSS ✅ 
 3. Copy&Paste [CSS Code](#css-code) to the Custom CSS text area. 
 
----
-
 ## Notes
 
 Just a simple all black theme.
@@ -33,8 +31,6 @@ Everything in this css is commented, so if you don't like something just remove 
 Don't like the color of the border, or the border at all, change it or remove it!
 
 If you're not sure how DM me on Discord.
-
----
 
 ## Important changes
 
@@ -46,8 +42,6 @@ If you're not sure how DM me on Discord.
 By default it's set to "contain" so if the image is extremely small, well you get the catch... shouldn't be a problem with bigger images.
 
 Have fun and if in doubt you should find me on Discord!
-
----
 
 ## Changelog
 
