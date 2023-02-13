@@ -17,7 +17,7 @@ parent: Advanced Tutorials
 
 If you want to add a collection of performers, tags, studios, etc, and you have a text/spreadsheet list of them, here's the walkthrough of how to do it via a simple CLI method.
 
-## Step 1: Install gql-iterate
+# Step 1: Install gql-iterate
 
 [gql-iterate repository](https://github.com/efstajas/gql-iterate){:target="_blank"}
 
@@ -31,14 +31,14 @@ For latest versions of NodeJS (14>) you need to  go where you globally install y
 
 `import { createRequire } from 'module'; const require = createRequire(import.meta.url);`
 
-## Step 2: Prepare your gql.file if needed
+# Step 2: Prepare your gql.file if needed
 
 See below for example versions of performers.gql and tags.gql samples that should work for you.
 Others can be figured out (with minor changes needeed) from stash/graphql/documents/mutations
 
 These are NOT identical to the original files found above.  Compare you'll see how they differ.  This is very specific to be used for gql-iterate.
 
-### tags.gql
+## tags.gql
 
     mutation TagCreate( 
       $name: String!,
@@ -51,7 +51,7 @@ These are NOT identical to the original files found above.  Compare you'll see h
       }
     }
 
-### performers.gql
+## performers.gql
 
     mutation PerformerCreate( 
       $name: String!, 
@@ -98,7 +98,7 @@ These are NOT identical to the original files found above.  Compare you'll see h
 
 If you have a suggested change, please add it below.
 
-## Step 3: Prepare your textfile or spreadsheet into a CSV
+# Step 3: Prepare your textfile or spreadsheet into a CSV
 
 let's say you have a textfile with these performers (just names and eyecolors for a simple example)
 If you have a spreadsheet, add a first line with the column headers, you HAVE to provide all fields listed above in the first line, but you don't have to actually have data in them. 
@@ -122,7 +122,7 @@ For tags, you only need the tag title, and if desired, a url to a image
 
 If you're unable to get this to work, then **omit** the **favorite** and **image** property from your CSV header, and from the **performers.gql** file.
 
-## Step 4
+# Step 4
 
 {: .note }
 Must use numerical IP instead of localhost.

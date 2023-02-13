@@ -20,7 +20,7 @@ Integrations are repositories developed to integrate Stash into other programs.
 {: .note }
 These third-party integrations are created by third parties and not officially affiliated or supported by the core Stash team. If you have issues, please reach out to the original creators.
 
-### plugin.video.stash
+## plugin.video.stash
 
 |-|-|
 |Category|Kodi|
@@ -29,7 +29,7 @@ These third-party integrations are created by third parties and not officially a
 |Author|[gitgiggety](https://github.com/gitgiggety){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### StashPlexAgent.bundle
+## StashPlexAgent.bundle
 
 |-|-|
 |Category|Plex|
