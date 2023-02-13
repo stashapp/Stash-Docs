@@ -30,8 +30,6 @@ The Theme will only change the look&feel of the Stash interface. It **will not**
 ![Light Pulsar preview #2](/assets/user-interface-ui/themes/light-pulsar-2.jpg)
 ![Light Pulsar preview #3](/assets/user-interface-ui/themes/light-pulsar-3.jpg)
 
----
-
 ## Install
 
 1. Open User **Interface** Configuration panel in **settings**. (http://localhost:9999/settings?tab=interface)

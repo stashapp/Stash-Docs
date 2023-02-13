@@ -21,8 +21,6 @@ To install a plugin, save them to `%USERPROFILE%\.stash\plugins` on Windows or `
 
 Plugins are separated into 2 sections [Official](#official) and [Third-party](#third-party).
 
----
-
 ## Official
 
 Official plugins are hosted on [CommunityScripts repository](https://github.com/stashapp/CommunityScripts){:target="_blank"}. All code is reviewed by core Stash team and any questions or issues you have regarding these plugins can be raised in Discord or GitHub. 
@@ -146,8 +144,6 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Triggers|Scene.Update<br />Task|
 |Stash version|v0.18 or higher|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
-
----
 
 ## Third-party
 

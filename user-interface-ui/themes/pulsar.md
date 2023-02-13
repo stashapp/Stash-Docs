@@ -31,8 +31,6 @@ The Theme will only change the look&feel of the Stash interface. It **will not**
 ![Pulsar preview #3](/assets/user-interface-ui/themes/pulsar-3.jpg)
 ![Pulsar preview #4](/assets/user-interface-ui/themes/pulsar-4.jpg)
 
----
-
 ## Install
 
 1. Open User **Interface** Configuration panel in **settings**. (http://localhost:9999/settings?tab=interface)
@@ -43,8 +41,6 @@ The Theme will only change the look&feel of the Stash interface. It **will not**
 ![Background Image Preview](/assets/user-interface-ui/themes/pulsar-5.jpg)
 
 Enjoy!
-
----
 
 ## CSS Code
 

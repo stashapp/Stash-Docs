@@ -23,8 +23,6 @@ grand_parent: Getting Started
 * if the jail is in NAT mode, ensure that port 9999 is forwarded to your TrueNAS host
 * the alternative to this method is to compile from source, which is a more involved process and not documented here
 
----
-
 ## Linux compatibility
 
 In order for the `stash-linux` binary to work in a FreeBSD system, Linux compatibility must be enabled both in the system and the jail. To enable Linux compatibility:
@@ -41,8 +39,6 @@ enable_linux="YES"
 ```
 5. Reboot the system.
 
----
-
 ## ffmpeg/ffprobe
 
 `ffmpeg` can be downloaded using `pkg install ffmpeg`. For some reason, stash is unable to find the `ffmpeg` and `ffprobe` binaries even after installing them. To work around this, create symbolic links to the binaries in `$HOME/.stash`:
@@ -51,8 +47,6 @@ enable_linux="YES"
 ln -s /usr/local/bin/ffmpeg ~/.stash/ffmpeg
 ln -s /usr/local/bin/ffprobe ~/.stash/ffprobe
 ```
-
----
 
 ## Downloading and running
 

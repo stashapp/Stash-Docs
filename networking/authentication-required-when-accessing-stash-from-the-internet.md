@@ -17,8 +17,6 @@ parent: Networking
 
 Support is always available on our [Discord](https://discord.gg/2TsNFKt){:target="_blank"}.
 
----
-
 ## Protecting against accidental exposure to the internet
 
 Stash data is considered private, and Stash is not designed to be publicly exposed, except to trusted confidants. Stash has a built-in protection against accidentally exposing itself publicly outside of your network. If Stash receives a request from the public internet, and you do not have a password enabled, Stash will reject the request and stop handling requests to protect your privacy.

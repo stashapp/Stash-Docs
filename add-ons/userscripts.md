@@ -26,8 +26,6 @@ To install the userscript you will need a browser extension such as [Violentmonk
 
 Userscripts are separated into 2 sections [Official](#official) and [Third-party](#third-party).
 
----
-
 ## Official
 
 Official userscripts are hosted on [CommunityScripts repository](https://github.com/stashapp/CommunityScripts){:target="_blank"}. All code is reviewed by core Stash team and any questions or issues you have regarding these userscripts can be raised in Discord or GitHub. 
@@ -39,8 +37,6 @@ Official userscripts are hosted on [CommunityScripts repository](https://github.
 |Userscript|[StashDB Submission Helper](https://github.com/stashapp/CommunityScripts/tree/main/userscripts/StashDB_Submission_Helper){:target="_blank"}|
 |Description|Adds handy functions for StashDB submissions like buttons to add aliases in bulk to a performer.|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/StashDB_Submission_Helper.png)|
-
----
 
 ## Third-party
 

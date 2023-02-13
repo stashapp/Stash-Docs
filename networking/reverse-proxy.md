@@ -17,8 +17,6 @@ parent: Networking
 
 The use of a reverse proxy for Stash is possible. 
 
----
-
 ## General
 
 Generally, the following headers will need to be set (check your proxy's documentation for how to configure) .
@@ -29,16 +27,12 @@ Generally, the following headers will need to be set (check your proxy's documen
 
 See [issue 134](https://github.com/stashapp/stash/pull/134){:target="_blank"} for more information.
 
----
-
 ## Setting External URL
 
 You can set the base URL that will be served by Stash by adding an `external_host:` setting in your Stash config.yml and assigning it the full publicly accessible url
 ```
 external_host: http://example.domain.com
 ```
-
----
 
 ## Server Configuration Examples
 
@@ -53,8 +47,6 @@ location / {
     proxy_set_header X-Forwarded-Proto $scheme;
 }
 ```
-
----
 
 ## NGinX + Docker (Linuxserver Letsencrypt)
 
@@ -183,8 +175,6 @@ reverse_proxy 127.0.0.1:9999 {
 }
 }
 ```
-
----
 
 ## Troubleshooting
 

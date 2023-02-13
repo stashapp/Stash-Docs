@@ -18,8 +18,6 @@ grand_parent: In-app Manual
 
 [This tool](http://localhost:9999/sceneFilenameParser){:target="_blank"} parses the scene filenames in your library and allows setting the metadata from those filenames.
 
----
-
 ## Parser Options
 
 To use this tool, a filename pattern must be entered. The pattern accepts the following fields:
@@ -69,8 +67,6 @@ Title generation also has the following options:
 |Capitalize title| capitalises the first letter of each word|
 
 The fields to display can be customised with the `Display Fields` drop-down section. By default, any field with new/different values will be displayed.
-
----
 
 ## Applying the results
 
