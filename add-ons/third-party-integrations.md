@@ -33,7 +33,7 @@ These third-party integrations are created by third parties and not officially a
 
 |-|-|
 |Category|Plex|
-|Integration|[StashPlexAgent.bundle](https://github.com/stashapp/CommunityScripts/tree/main/3rd%20party/StashPlexAgent.bundle){:target="_blank"}|
+|Integration|[StashPlexAgent.bundle](https://github.com/Darklyter/StashPlexAgent.bundle){:target="_blank"}|
 |Description|A very simplistic Plex agent to pull metadata from Stash.|
 |Author|[Darklyter](https://github.com/Darklyter){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
