@@ -41,7 +41,7 @@ Plugins provide tasks which can be run from the Tasks page.
 
 # Creating Plugins
 
-### Plugin Configuration File Format
+## Plugin Configuration File Format
 
 The basic structure of a plugin configuration file is as follows:
 
