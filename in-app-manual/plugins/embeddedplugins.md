@@ -16,21 +16,21 @@ grand_parent: In-app Manual
 {:toc}
 </details>
 
-Embedded plugins are executed within the stash process using a scripting system.
+Embedded plugin tasks are executed within the stash process using a scripting system.
 
 # Supported script languages
 
-Stash currently supports Javascript embedded plugins using [otto](https://github.com/robertkrimen/otto){:target="_blank"}.
+Stash currently supports Javascript embedded plugin tasks using [otto](https://github.com/robertkrimen/otto){:target="_blank"}.
 
 # Javascript plugins
 
 ## Plugin input
 
-The input is provided to Javascript plugins using the `input` global variable, and is an object based on the structure provided in the `Plugin input` section of the [Plugins]/in-app-manual/plugins) page. Note that the `server_connection` field should not be necessary in most embedded plugins.
+The input is provided to Javascript plugin tasks using the `input` global variable, and is an object based on the structure provided in the `Plugin input` section of the [Plugins](/in-app-manual/plugins) page. Note that the `server_connection` field should not be necessary in most embedded plugins.
 
 ## Plugin output
 
-The output of a Javascript plugin is derived from the evaluated value of the script. The output should conform to the structure provided in the `Plugin output` section of the [Plugins](/in-app-manual/plugins) page.
+The output of a Javascript plugin task is derived from the evaluated value of the script. The output should conform to the structure provided in the `Plugin output` section of the [Plugins](/in-app-manual/plugins) page.
 
 There are a number of ways to return the plugin output:
 
@@ -71,22 +71,6 @@ output;
 See the `Javascript API` section below on how to log with Javascript plugins.
 
 # Plugin configuration file format
-
-The basic structure of an embedded plugin configuration file is as follows:
-
-```
-name: <plugin name>
-description: <optional description of the plugin>
-version: <optional version tag>
-url: <optional url>
-exec:
-  - <path to script>
-interface: [interface type]
-tasks:
-  - ...
-```
-
-The `name`, `description`, `version` and `url` fields are displayed on the plugins page.
 
 ## exec
 
