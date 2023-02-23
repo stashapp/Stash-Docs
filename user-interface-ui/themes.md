@@ -38,5 +38,5 @@ If you would like to develop your own theme, we have a [reference guide of CSS s
 | [Light Pulsar](/user-interface-ui/themes/light-pulsar) | ![Screenshot of Light Pulsar Theme](/assets/user-interface-ui/Light-Pulsar-preview.jpg) |
 | [Night](/user-interface-ui/themes/night) | ![Screenshot of Night Theme](/assets/user-interface-ui/Night-preview.png) |
 | [Plex](/user-interface-ui/themes/plex) | ![Screenshot of Plex Theme](/assets/user-interface-ui/Plex-preview.png) |
-| [Black Hole](/user-interface-ui/themes/Black-Hole) | ![Screenshot of Black Hole Theme](/assets/user-interface-ui/Black-Hole-preview.png) |
-| [Modern Dark](/user-interface-ui/themes/Modern-Dark) | ![Screenshot of Modern Dark](/assets/user-interface-ui/Modern-Dark-preview.jpg) |
+| [Black Hole](/user-interface-ui/themes/black-hole) | ![Screenshot of Black Hole Theme](/assets/user-interface-ui/Black-Hole-preview.png) |
+| [Modern Dark](/user-interface-ui/themes/modern-dark) | ![Screenshot of Modern Dark](/assets/user-interface-ui/Modern-Dark-preview.jpg) |
