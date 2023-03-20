@@ -78,7 +78,7 @@ These scripts are created by third parties and not officially affiliated or supp
 ## stashapp-tag-importer
 
 |-|-|
-|Category|Scene|
+|Category|Tags|
 |Script|[stashapp-tag-importer](https://github.com/soundchaser128/stashapp-tag-importer){:target="_blank"}|
 |Description|Bulk imports all the tags on Stashbox (usually stashdb.org) into your Stash application.|
 |Author|[soundchaser128](https://github.com/soundchaser128){:target="_blank"}|
