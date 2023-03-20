@@ -113,7 +113,9 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
 
 # Use Site-Specific Scrapers
 
-1. If you've already [tried StashDB](#use-the-scene-tagger), you've already [tried ThePornDB](#use-theporndb-scraper), and you still want to scrape a site directly, you can try using a site-specific scraper. However, every scraper is going to work differently. Some will need Python installed. Others will need you to set a user agent or a Chrome CDP path. A handful will need to be edited and configured first. Only a few can search a studio's website for the right scene. The entire process is much more advanced and is different for each scraper, which is why we recommend StashDB and TPDB first for new users. They can all be found in [the same repo](https://github.com/stashapp/CommunityScrapers){:target="_blank"} where we found ThePornDB's scraper. You can download them individually like we did with the TPDB scraper or you can download the entire repo as a zip archive.
+1. If you've already [tried StashDB](#use-the-scene-tagger), you've already [tried ThePornDB](#use-theporndb-scraper), and you still want to scrape a site directly, you can try using a site-specific scraper. However, every scraper is going to work differently. Some will need Python installed. Others will need you to set a user agent or a Chrome CDP path. A handful will need to be edited and configured first. Only a few can search a studio's website for the right scene. The entire process is much more advanced and is different for each scraper, which is why we recommend StashDB and TPDB first for new users. They can all be found in [the same repo](https://github.com/stashapp/CommunityScrapers){:target="_blank"} where we found ThePornDB's scraper. You can download the entire repo as a zip archive and copy any scrapers you want from it.
+
+    ![Download zip archive from github](/assets/beginner-guides/download-github-zip.png)
 <br/><br/>
 
 {:style="counter-reset:none"}
