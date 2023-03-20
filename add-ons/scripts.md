@@ -74,3 +74,12 @@ These scripts are created by third parties and not officially affiliated or supp
 |Description|This Javascript will create a "Play" button in each scene card. You can click on it and the video for that scene will be played right away. Click on the video again, then you are back to the scene list.|
 |Author|[philpw99](https://github.com/philpw99){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/pwPlayer_js_Scene_Card_Quick_Player.png)|
+
+## stashapp-tag-importer
+
+|-|-|
+|Category|Scene|
+|Script|[stashapp-tag-importer](https://github.com/soundchaser128/stashapp-tag-importer){:target="_blank"}|
+|Description|Bulk imports all the tags on Stashbox (usually stashdb.org) into your Stash application.|
+|Author|[soundchaser128](https://github.com/soundchaser128){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
