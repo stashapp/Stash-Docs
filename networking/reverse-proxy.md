@@ -19,7 +19,7 @@ The use of a reverse proxy for Stash is possible.
 
 # General
 
-Generally, the following headers will need to be set (check your proxy's documentation for how to configure) .
+Generally, the following headers will need to be set (check your proxy's documentation for how to configure).
 - Host (http host)
 - X-Real-IP
 - X-Forwarded-For
@@ -27,28 +27,37 @@ Generally, the following headers will need to be set (check your proxy's documen
 
 See [issue 134](https://github.com/stashapp/stash/pull/134){:target="_blank"} for more information.
 
+# Using a URL prefix
+
+Stash also supports running under a URL prefix, in which case the the `X-Forwarded-Prefix` header must also be set. The proxy also needs to remove the prefix from the requested URLs. For example, if you want your homepage to be accessible at `http://example.domain.com/stash`, then you need to set `X-Forwarded-Prefix: /stash`. 
+
 # Setting External URL
 
-You can set the base URL that will be served by Stash by adding an `external_host:` setting in your Stash config.yml and assigning it the full publicly accessible url
+You can also set the host that will be served by Stash manually by adding an `external_host:` setting in your Stash config.yml and assigning it the publicly accessible hostname, including the `http://` or `https://`. `X-Forwarded-Prefix` will still need to be set if using a prefix.
 ```
 external_host: http://example.domain.com
 ```
 
 # Server Configuration Examples
 
-## NGinx
+## Nginx
 
 ```bash
 location / {
     proxy_pass http://127.0.0.1:9999;
+    
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
     proxy_set_header Host $http_host;
     proxy_set_header X-Real-IP $remote_addr;
-    proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_read_timeout 60000s;
 }
 ```
 
-# NGinX + Docker (Linuxserver Letsencrypt)
+## Nginx + Docker (Linuxserver Letsencrypt)
 
 If you are using the linuxserver letencrypt docker you can use create a `stash.subdomain.conf` file in your `proxy-confs` folder and use this as the config:
 ```bash
@@ -85,8 +94,30 @@ server {
         set $upstream_proto http;
         proxy_pass $upstream_proto://$upstream_app:$upstream_port;
         proxy_set_header Host $http_host;
+        proxy_read_timeout 60000s;
     }
+}
+```
 
+## Nginx with prefix
+
+An example for `nginx` using the prefix `/stash`:
+
+```bash
+location /stash/ {
+    # Notice the trailing slash - this causes nginx to remove the /stash prefix from requested URLs
+    proxy_pass http://192.168.0.1:9999/;
+
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "Upgrade";
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Port $server_port;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-Prefix /stash;
+    proxy_read_timeout 60000s;
 }
 ```
 
@@ -104,19 +135,20 @@ server {
     listen [::]:80;
 
     server_name stash.home;
-        client_max_body_size 0;
-        location / {
-           proxy_pass http://192.168.0.1:9999/;
-           proxy_http_version 1.1;
-           proxy_set_header Upgrade $http_upgrade;
-           proxy_set_header Connection "Upgrade";
-           proxy_set_header Host $http_host;
-           proxy_set_header X-Real-IP $remote_addr;
-           proxy_set_header X-Forwarded-For $remote_addr;
-           proxy_set_header X-Forwarded-Port $server_port;
-           proxy_set_header X-Forwarded-Proto $scheme;
-    }
+    client_max_body_size 0;
 
+    location / {
+        proxy_pass http://192.168.0.1:9999;
+
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Port $server_port;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
 }
 ```
 
