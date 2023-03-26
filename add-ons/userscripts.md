@@ -268,6 +268,15 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[QxxxGit](https://github.com/QxxxGit)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Performer_Card_Details.png)|
 
+## Stash Tag
+
+|-|-|
+|Category|Stash|
+|Userscript|[Stash Tag](https://github.com/cc1234475/stashtag){:target="_blank"}|
+|Description|Stash tag is userscript to uses the playbar sprite images to do image recognition and return a list of possible tags to apply to the video.|
+|Author|[cc1234475](https://github.com/cc1234475)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/stash_tag.png)|
+
 ## StashDB Copy StashID
 
 |-|-|
