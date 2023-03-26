@@ -236,6 +236,6 @@ These plugins are created by third parties and not officially affiliated or supp
 |-|-|
 |Category|Metadata|
 |Plugin|[performerBodyCalculator](https://github.com/stg-annon/performerBodyCalculator){:target="_blank"}|
-|Description|This plugin will tag performers based on existing metadata within stash the `measurements` attribute must be present for a performer to be tagged, additionally the `height` and `weight` attributes will be used if present but are not required|
+|Description|This plugin will tag performers based on existing metadata within stash the `measurements` attribute must be present for a performer to be tagged, additionally the `height` and `weight` attributes will be used if present but are not required.|
 |Author|[stg-annon](https://github.com/stg-annon){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
