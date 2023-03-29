@@ -239,3 +239,12 @@ These plugins are created by third parties and not officially affiliated or supp
 |Description|This plugin will tag performers based on existing metadata within stash the `measurements` attribute must be present for a performer to be tagged, additionally the `height` and `weight` attributes will be used if present but are not required.|
 |Author|[stg-annon](https://github.com/stg-annon){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## Stash Split Duplicate Merged Files
+
+|-|-|
+|Category|Maintenance|
+|Plugin|[Stash-Split-Duplicate-Merged-Files](https://github.com/elkorol/Stash-Split-Duplicate-Merged-Files){:target="_blank"}|
+|Description|This plugin will search for scenes that have duplicate files and are merged. It then itterates over the files skipping the first one and then using the next files to create new scenes.|
+|Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
