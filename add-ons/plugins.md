@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Plugins
 nav_order: 2
 parent: Add-ons
-permalink: add-ons/plugins
+
 ---
 
 <details markdown="block">
@@ -21,13 +21,11 @@ To install a plugin, save them to `%USERPROFILE%\.stash\plugins` on Windows or `
 
 Plugins are separated into 2 sections [Official](#official) and [Third-party](#third-party).
 
----
-
-## Official
+# Official
 
 Official plugins are hosted on [CommunityScripts repository](https://github.com/stashapp/CommunityScripts){:target="_blank"}. All code is reviewed by core Stash team and any questions or issues you have regarding these plugins can be raised in Discord or GitHub. 
 
-### GHScraper_Checker
+## GHScraper_Checker
 
 |-|-|
 |Category|Scraper|
@@ -35,9 +33,9 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Description|Compare local file against github file from the community scraper repo.|
 |Triggers|Task|
 |Stash version|v0.8 or higher|
-|Screenshots|![](assets/fixed_table_width.png)![GHScraper_Checker](assets/GHScraper_Checker.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![GHScraper_Checker](/assets/add-ons/GHScraper_Checker.png)|
 
-### renamerOnUpdate
+## renamerOnUpdate
 
 |-|-|
 |Category|Maintenance|
@@ -45,9 +43,9 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Description|Rename/Move your file based on Stash metadata.|
 |Triggers|Task<br />Scene.Update|
 |Stash version|v0.7 or higher|
-|Screenshots|![](assets/fixed_table_width.png)![renamerOnUpdate](assets/renamerOnUpdate.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![renamerOnUpdate](/assets/add-ons/renamerOnUpdate.png)|
 
-### setSceneCoverFromFile
+## setSceneCoverFromFile
 
 |-|-|
 |Category|Maintenance|
@@ -55,9 +53,9 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Description|Searchs Stash for Scenes with a cover image in the same folder and sets the cover image in stash to that image.|
 |Triggers|Task|
 |Stash version|v0.7 or higher|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### markerTagToScene
+## markerTagToScene
 
 |-|-|
 |Category|Scene|
@@ -65,9 +63,9 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Description|Adds primary tag of Scene Marker to the Scene on marker create/update.|
 |Triggers|SceneMarker.Create<br />SceneMarker.Update|
 |Stash version|v0.8 ([46bbede](https://github.com/stashapp/stash/commit/46bbede9a07144797d6f26cf414205b390ca88f9){:target="_blank"}) or higher|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### defaultDataForPath
+## defaultDataForPath
 
 |-|-|
 |Category|Scanning|
@@ -75,9 +73,9 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Description|Adds configured Tags, Performers and/or Studio to all newly scanned Scenes, Images and Galleries.|
 |Triggers|Scene.Create<br />Gallery.Create<br />Image.Create|
 |Stash version|v0.8 or higher|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### filenameParser
+## filenameParser
 
 |-|-|
 |Category|Scanning|
@@ -85,9 +83,9 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Description|Tries to parse filenames, primarily in {studio}.{year}.{month}.{day}.{performer1firstname}.{performer1lastname}.{performer2}.{title} format, into the respective fields.|
 |Triggers|Scene.Create<br />Gallery.Create|
 |Stash version|v0.10 or higher|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### pathParser
+## pathParser
 
 |-|-|
 |Category|Scanning|
@@ -95,9 +93,9 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Description|Updates scene info based on the file path.|
 |Triggers|Scene.Create|
 |Stash version|v0.17 or higher|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### titleFromFilename
+## titleFromFilename
 
 |-|-|
 |Category|Scanning|
@@ -105,9 +103,9 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Description|Sets the scene title to its filename.|
 |Triggers|Scene.Create|
 |Stash version|v0.17 or higher|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### tagGraph
+## tagGraph
 
 |-|-|
 |Category|Reporting|
@@ -115,9 +113,9 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Description|Creates a visual of the Tag relations.|
 |Triggers|Scene.Create|
 |Stash version|v0.7 or higher|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### DateParser
+## DateParser
 
 |-|-|
 |Category|Scanning|
@@ -125,9 +123,9 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Description|Find date in path or filename and add it.|
 |Triggers|Task|
 |Stash version|v0.18 or higher|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### phashDuplicateTagger
+## phashDuplicateTagger
 
 |-|-|
 |Category|Scene|
@@ -135,92 +133,118 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Description|Will tag scenes based on duplicate PHashes for easier/safer removal.|
 |Triggers|Task|
 |Stash version|v0.16 or higher|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
----
+## timestampTrade
 
-## Third-party
+|-|-|
+|Category|Scene|
+|Plugin|[timestampTrade](https://github.com/stashapp/CommunityScripts/tree/main/plugins/timestampTrade){:target="_blank"}|
+|Description|[timestamp.trade API](https://timestamp.trade) syncs markers between Stash instances and XBVR. This sits along side other metadata databases like StashDB while we wait for the feature to be added there.|
+|Triggers|Scene.Update<br />Task|
+|Stash version|v0.18 or higher|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+# Third-party
 
 {: .note }
 These plugins are created by third parties and not officially affiliated or supported by the core Stash team. If you have issues, please reach out to the original creators.
 
-### YT-DL Downloader
+## YT-DL Downloader
 
 |-|-|
 |Category|Downloader|
 |Plugin|[YT-DL Downloader](https://github.com/niemands/StashPlugins){:target="_blank"}|
 |Description|Download Videos automated with yt-dl and add the scrape tag for Bulk URL Scraper.|
 |Author|[niemands](https://github.com/niemands){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Gallery Tags
+## Gallery Tags
 
 |-|-|
 |Category|Images|
 |Plugin|[Gallery Tags](https://github.com/niemands/StashPlugins){:target="_blank"}|
 |Description|Copy information from attached scene to galleries.|
 |Author|[niemands](https://github.com/niemands){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Update Image Titles
+## Update Image Titles
 
 |-|-|
 |Category|Images|
 |Plugin|[Update Image Titles](https://github.com/niemands/StashPlugins){:target="_blank"}|
 |Description|Update all image titles (Fixes natural sort).|
 |Author|[niemands](https://github.com/niemands){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Duplicate Finder
+## Duplicate Finder
 
 |-|-|
 |Category|Maintenance|
 |Plugin|[Duplicate Finder](https://github.com/WithoutPants/stash-plugin-duplicate-finder){:target="_blank"}|
 |Description|Detects and marks duplicate scenes within Stash.|
 |Author|[WithoutPants](https://github.com/WithoutPants){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Performer Creator
+## Performer Creator
 
 |-|-|
 |Category|Metadata|
 |Plugin|[Performer Creator](https://github.com/com1234475/stash-plugin-performer-creator){:target="_blank"}|
 |Description|Creates performers from scenes based on filenames.|
 |Author|[com1234475](https://github.com/com1234475){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Set PH Urls
+## Set PH Urls
 
 |-|-|
 |Category|Metadata|
 |Plugin|[Set PH Urls](https://github.com/niemands/StashPlugins){:target="_blank"}|
 |Description|Add urls to Pornhub scenes downloaded by youtube-dl.|
 |Author|[niemands](https://github.com/niemands){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Bulk URL Scraper
+## Bulk URL Scraper
 
 |-|-|
 |Category|Scraping|
 |Plugin|[Bulk URL Scraper](https://github.com/niemands/StashPlugins){:target="_blank"}|
 |Description|Bulk scene url scraping.|
 |Author|[niemands](https://github.com/niemands){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### stash-plugin-performer-creator
+## stash-plugin-performer-creator
 
 |-|-|
 |Category|Metadata|
 |Plugin|[stash-plugin-performer-creator](https://github.com/cc1234475/stash-plugin-performer-creator){:target="_blank"}|
 |Description|This is a plugin for Stash. It adds a Parse all scenes for performers task. This task processes all scenes and using Natural Language Processing tries to detect performer names and tries to find/add them.|
 |Author|[cc1234475](https://github.com/cc1234475){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### Stash NFO Exporter for Kodi
+## Stash NFO Exporter for Kodi
 
 |-|-|
 |Category|Metadata|
 |Plugin|[StashNfoExporterKodi](https://github.com/scruffynerf/StashNfoExporterKodi){:target="_blank"}|
 |Description|Adds .nfo file and strm support to allow using Stash organized content with Kodi with no Kodi Addon needed.|
 |Author|[scruffynerf](https://github.com/scruffynerf){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## Performer Body Calculator
+
+|-|-|
+|Category|Metadata|
+|Plugin|[performerBodyCalculator](https://github.com/stg-annon/performerBodyCalculator){:target="_blank"}|
+|Description|This plugin will tag performers based on existing metadata within stash the `measurements` attribute must be present for a performer to be tagged, additionally the `height` and `weight` attributes will be used if present but are not required.|
+|Author|[stg-annon](https://github.com/stg-annon){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## Stash Split Duplicate Merged Files
+
+|-|-|
+|Category|Maintenance|
+|Plugin|[Stash-Split-Duplicate-Merged-Files](https://github.com/elkorol/Stash-Split-Duplicate-Merged-Files){:target="_blank"}|
+|Description|This plugin will search for scenes that have duplicate files and are merged. It then itterates over the files skipping the first one and then using the next files to create new scenes.|
+|Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|

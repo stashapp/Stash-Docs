@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Interactivity
 nav_order: 11
 parent: In-app Manual
-permalink: in-app-manual/interactive
+
 ---
 
 Stash currently supports syncing with Handy devices, using funscript files.

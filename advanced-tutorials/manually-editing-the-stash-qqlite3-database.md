@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Manually Editing the Stash Sqlite3 Database
 nav_order: 3
 parent: Advanced Tutorials
-permalink: advanced-tutorials/manually-editing-the-stash-qqlite3-database
+
 ---
 
 <details markdown="block">
@@ -15,7 +15,7 @@ permalink: advanced-tutorials/manually-editing-the-stash-qqlite3-database
 {:toc}
 </details>
 
-## Location
+# Location
 
 The Stash Sqlite3 database file is located at `~/.stash/stash-go.sqlite`.
 
@@ -23,18 +23,14 @@ Before making changes to the Stash sqlite3 database - **please make a backup fir
 
 You can use the `sqlite3` client to directly edit this file.
 
----
-
-## Opening the database file
+# Opening the database file
 
 ```
 cd ~/.stash
 sqlite3 stash-go.sqlite
 ```
 
----
-
-## Deleting all tags
+# Deleting all tags
 
 If you need to delete all tags, you can use the following commands:
 

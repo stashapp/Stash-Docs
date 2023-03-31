@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: clean
 title: Metadata Scraping
 nav_order: 7
 parent: In-app Manual
 has_children: true
 has_toc: false
-permalink: in-app-manual/scraping
+
 ---
 
 <details markdown="block">
@@ -19,7 +19,7 @@ permalink: in-app-manual/scraping
 
 Stash supports scraping of metadata from various external sources.
 
-### Scraper Types
+# Scraper Types
 
 | Type | Description |
 |---|:---|
@@ -27,7 +27,7 @@ Stash supports scraping of metadata from various external sources.
 | Search/By Name | Uses a provided query string to search a metadata source for a list of matches for the user to pick from. |
 | URL | Extracts metadata from a given URL. |
 
-### Supported Scrapers
+# Supported Scrapers
 
 |   | Fragment | Search | URL |
 |---|:---:|:---:|:---:|
@@ -36,11 +36,9 @@ Stash supports scraping of metadata from various external sources.
 | performer | | ✔️ | ✔️ |
 | scene | ✔️  | ✔️ | ✔️ |
 
----
+# Scraper Operation
 
-## Scraper Operation
-
-### Included Scrapers
+## Included Scrapers
 
 Stash provides the following built-in scrapers:
 
@@ -49,7 +47,7 @@ Stash provides the following built-in scrapers:
 | Freeones | `search` Performer scraper for freeones.xxx. |
 | Auto Tag | Scene `fragment` scraper that matches existing performers, studio and tags using the filename. |
 
-### Adding Scrapers
+## Adding Scrapers
 
 
 By default, Stash looks for scraper configurations in the `scrapers` sub-directory of the directory where the stash `config.yml` is read. This will either be the `$HOME/.stash` directory or the current working directory.
@@ -62,18 +60,18 @@ After the yaml files are added, removed or edited while stash is running, they c
 
 The stash community maintains a number of custom scraper configuration files that can be found [here](https://github.com/stashapp/CommunityScrapers){:target="_blank"}.
   
-### Using Scrapers
+## Using Scrapers
 
-#### Fragment Scraper
+### Fragment Scraper
 Click on the `Scrape With...` button in the `edit` tab of an item, then select the scraper you wish to use.
 
-#### Search Scraper
+### Search Scraper
 Click on the 🔍 button in the `edit` tab of an item. You will be presented with a search dialog with a pre-populated query to search for, after searching you will be presented with a list of results to pick from
 
-#### URL Scraper
+### URL Scraper
 Enter the URL in the `edit` tab of an Item. If a scraper is installed that supports that url, then a button will appear to scrape the metadata.
 
-### Tagger View
+## Tagger View
 
 The Tagger view is accessed from the scenes page. It allows the user to run scrapers on all items on the current page. The Tagger presents the user with potential matches for an item from a selected stash-box instance or metadata source if supported. The user needs to select the correct metadata information to save. 
 
@@ -87,6 +85,6 @@ When used in combination with stash-box, the user can optionally submit scene fi
 | scene | ✔️ | ✔️ |
 
 
-### Identify Task
+## Identify Task
 
-This task iterates through your Scenes and attempts to identify the scene using a selection of scraping sources. This task can be found under `Settings -> Tasks -> "Identify..." (Button)`. For more information see the [Tasks > Identify](../in-app-manual/tasks/identify) page.
+This task iterates through your Scenes and attempts to identify the scene using a selection of scraping sources. This task can be found under `Settings -> Tasks -> "Identify..." (Button)`. For more information see the [Tasks > Identify](/in-app-manual/tasks/identify) page.

@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: clean
 title: Tasks
 nav_order: 4
 parent: In-app Manual
 has_children: true
 has_toc: false
-permalink: in-app-manual/tasks
+
 ---
 
 <details markdown="block">
@@ -20,9 +20,7 @@ permalink: in-app-manual/tasks
 
 This page allows you to direct the stash server to perform a variety of tasks.
 
----
-
-## Scanning
+# Scanning
 
 The scan function walks through the stash directories you have configured for new and moved files. 
 
@@ -39,24 +37,16 @@ The scan task accepts the following options:
 | Generate sprites | Generates sprites for the scene scrubber. |
 | Generate perceptual hashes | Generates perceptual hashes for scene deduplication and identification. |
 | Generate thumbnails for images | Generates thumbnails for image files. | 
-| Don't include file extension in title | By default, scenes, images and galleries have their title created using the file basename. When the flag is enabled, the file extension is stripped when setting the title. |
-| Set name, date, details from embedded file metadata. | Parse the video file metadata (where supported) and set the scene attributes accordingly. It has previously been noted that this information is frequently incorrect, so only use this option where you are certain that the metadata is correct in the files. |
 
----
+# Auto Tagging
 
-## Auto Tagging
+See the [Auto Tagging](/in-app-manual/tasks/autotagging) page.
 
-See the [Auto Tagging](tasks/autotagging) page.
+# Scene Filename Parser
 
----
+See the [Scene Filename Parser](/in-app-manual/tasks/scenefilenameparser) page.
 
-## Scene Filename Parser
-
-See the [Scene Filename Parser](tasks/scenefilenameparser) page.
-
-----
-
-## Generated Content
+# Generated Content
 
 The scanning function automatically generates a screenshot of each scene. The generated content provides the following:
 * Video or image previews that are played when mousing over the scene card
@@ -80,32 +70,26 @@ The generate task accepts the following options:
 | Perceptual hashes | Generates perceptual hashes for scene deduplication and identification. |
 | Overwrite existing generated files | By default, where a generated file exists, it is not regenerated. When this flag is enabled, then the generated files are regenerated. |
 
-### Transcodes
+## Transcodes
 
 Web browsers support a limited number of video and audio codecs and containers. Stash will directly stream video files where the browser supports the codecs and container. Originally, stash did not support viewing scene videos where the browser did not support the codecs/container, and generating transcodes was a way of viewing these files.
 
 Stash has since implemented live transcoding, so transcodes are essentially unnecessary now. Further, transcodes use up a significant amount of disk space and are not guaranteed to be lossless.
 
-### Image gallery thumbnails
+## Image gallery thumbnails
 
 These are generated when the gallery is first viewed, so generating them beforehand is not necessary.
 
----
-
-## Cleaning
+# Cleaning
 
 This task will walk through your configured media directories and remove any scene from the database that can no longer be found. It will also remove generated files for scenes that subsequently no longer exist.
 
 Care should be taken with this task, especially where the configured media directories may be inaccessible due to network issues.
 
----
-
-## Exporting and Importing
+# Exporting and Importing
 
 The import and export tasks read and write JSON files to the configured metadata directory. Import from file will merge your database with a file.
 
 > **⚠️ Note:** The full import task wipes the current database completely before importing.
 
-See the [JSON Specification](tasks/jsonspec) page for details on the exported JSON format.
-
----
+See the [JSON Specification](/in-app-manual/tasks/jsonspec) page for details on the exported JSON format.

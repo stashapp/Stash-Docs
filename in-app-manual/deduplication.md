@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Dupe Checker
 nav_order: 10
 parent: In-app Manual
-permalink: in-app-manual/deduplication
+
 ---
 
 [The dupe checker](http://localhost:9999/sceneDuplicateChecker){:target="_blank"} searches your collection for scenes that are perceptually similar. This means that the files don't need to be identical, and will be identified even with different bitrates, resolutions, and intros/outros.

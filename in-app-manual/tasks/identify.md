@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Identify
 nav_order: 1
 parent: Tasks
 grand_parent: In-app Manual
-permalink: in-app-manual/tasks/identify
+
 ---
 
 <details markdown="block">
@@ -22,9 +22,7 @@ This task accepts one or more scraper sources. Valid scraper sources for the Ide
 
 For each Scene, the Identify task iterates through the scraper sources, in the order provided, and tries to identify the scene using each source. If a result is found in a source, then the Scene is updated, and no further sources are checked for that scene.
 
----
-
-## Options
+# Options
 
 The following options can be set:
 

@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Scene Filename Parser
 nav_order: 3
 parent: Tasks
 grand_parent: In-app Manual
-permalink: in-app-manual/tasks/scenefilenameparser
+
 ---
 
 <details markdown="block">
@@ -18,9 +18,7 @@ permalink: in-app-manual/tasks/scenefilenameparser
 
 [This tool](http://localhost:9999/sceneFilenameParser){:target="_blank"} parses the scene filenames in your library and allows setting the metadata from those filenames.
 
----
-
-## Parser Options
+# Parser Options
 
 To use this tool, a filename pattern must be entered. The pattern accepts the following fields:
 
@@ -70,9 +68,7 @@ Title generation also has the following options:
 
 The fields to display can be customised with the `Display Fields` drop-down section. By default, any field with new/different values will be displayed.
 
----
-
-## Applying the results
+# Applying the Results
 
 Once the options are correct, click on the `Find` button. The system will search for scenes that have filenames that match the given pattern.
 

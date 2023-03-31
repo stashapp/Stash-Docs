@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: clean
 title: Configuration
 nav_order: 2
 parent: In-app Manual
-permalink: in-app-manual/configuration
 ---
 
 <details markdown="block">
@@ -15,15 +14,13 @@ permalink: in-app-manual/configuration
 {:toc}
 </details>
 
-## Stashes
+# Stashes
 
 This section allows you to add and remove directories from your library list. Files in these directories will be included when scanning. Files that are outside of these directories will be removed when running the Clean task.
 
 > **⚠️ Note:** Don't forget to click `Save` after updating these directories!
 
----
-
-## Excluded Patterns
+# Excluded Patterns
 
 Given a valid [regex](https://github.com/google/re2/wiki/Syntax){:target="_blank"}, files that match even partially are excluded during the Scan process and are not entered in the database. Also during the Clean task if these files exist in the DB they are removed from it and their generated files get deleted.
 Prior to matching both the filenames and patterns are converted to lower case so the match is case insensitive.
@@ -53,9 +50,7 @@ exclude:
 
 _a useful [link](https://regex101.com/){:target="_blank"} to experiment with regexps_
 
----
-
-## Hashing algorithms
+# Hashing algorithms
 
 Stash identifies video files by calculating a hash of the file. There are two algorithms available for hashing: `oshash` and `MD5`. `MD5` requires reading the entire file, and can therefore be slow, particularly when reading files over a network. `oshash` (which uses OpenSubtitle's hashing algorithm) only reads 64k from each end of the file.
 
@@ -63,7 +58,7 @@ The hash is used to name the generated files such as preview images and videos, 
 
 By default, new systems have MD5 calculation disabled for optimal performance. Existing systems that are upgraded will have the oshash populated for each scene on the next scan.
 
-### Changing the hashing algorithm
+## Changing the hashing algorithm
 
 To change the file naming hash to oshash, all scenes must have their oshash values populated. oshash population is done automatically when scanning.
 
@@ -73,7 +68,7 @@ MD5 calculation may only be disabled if the file naming hash is set to `oshash`.
 
 After changing the file naming hash, any existing generated files will now be named incorrectly. This means that stash will not find them and may regenerate them if the `Generate task` is used. To remedy this, run the `Rename generated files` task, which will rename existing generated files to their correct names.
 
-#### Step-by-step instructions to migrate to oshash for existing users
+### Step-by-step instructions to migrate to oshash for existing users
 
 These instructions are for existing users whose systems will be defaulted to use and calculate MD5 checksums. Once completed, MD5 checksums will no longer be calculated when scanning, and oshash will be used for generated file naming. Existing calculated MD5 checksums will remain on scenes, but checksums will not be calculated for new scenes.
 
@@ -81,11 +76,9 @@ These instructions are for existing users whose systems will be defaulted to use
 2. In Settings -> Configuration page, untick `Calculate MD5` and select `oshash` as file naming hash. Save the configuration.
 3. In Settings -> Tasks page, click on the `Rename generated files` migration button.
 
----
+# Parallel Scan/Generation
 
-## Parallel Scan/Generation
-
-### Number of parallel task for scan/generation
+## Number of parallel task for scan/generation
 
 This setting controls how many sub-tasks will be run in parallel during scanning and generation tasks. (See Tasks)
 
@@ -97,39 +90,49 @@ This setting can be used to increase/decrease overall CPU utilisation in two sce
 
 Note: If this is set too high it will decrease overall performance and causes failures (out of memory).
 
----
+## Hardware Accelerated Live Transcoding
 
-## Scraping
+Hardware accelerated live transcoding can be enabled by setting the `FFmpeg hardware encoding` setting. Stash outputs the supported hardware encoders to the log file on startup at the Info log level. If a given hardware encoder is not supported, it's error message is logged to the Debug log level for debugging purposes.
 
-### User Agent string
+## HLS/DASH Streaming
+
+To stream using HLS (such as on Apple devices) or DASH, the Cache path must be set. This directory is used to store temporary files during the live-transcoding process. The Cache path can be set in the System settings page.
+
+## ffmpeg arguments
+
+Additional arguments can be injected into ffmpeg when generating previews and sprites, and when live-transcoding videos. 
+
+The ffmpeg arguments configuration is split into `Input` and `Output` arguments. Input arguments are injected before the input file argument, and output arguments are injected before the output file argument.
+
+Arguments are accepted as a list of strings. Each string is a separate argument. For example, a single argument of `-foo bar` would be treated as a single argument `"-foo bar"`. The correct way to pass this argument would be to split it into two separate arguments: `"-foo", "bar"`.
+
+# Scraping
+
+## User Agent string
 
 Some websites require a legitimate User-Agent string when receiving requests, or they will be rejected. If entered, this string will be applied as the `User-Agent` header value in http scrape requests.
 
-### Chrome CDP path
+## Chrome CDP path
 
 Some scrapers require a Chrome instance to function correctly. If left empty, stash will attempt to find the Chrome executable in the path environment, and will fail if it cannot find one.
 
 `Chrome CDP path` can be set to a path to the chrome executable, or an http(s) address to remote chrome instance (for example: `http://localhost:9222/json/version`).
 
----
-
-## Authentication
+# Authentication
 
 By default, stash is not configured with any sort of password protection. To enable password protection, both `Username` and `Password` must be populated. Note that when entering a new username and password where none was set previously, the system will immediately request these credentials to log you in.
 
----
-
-## API key
+# API key
 
 If password protection is enabled, you may also generate an API key. An API key is used by external systems to access your stash system without needing to login first.
 
 External systems using the API key must set the `ApiKey` header value to the configured API key in order to bypass the login requirement.
 
-### Logging out
+## Logging out
 
 The logout button is situated in the upper-right part of the screen when you are logged in.
 
-### Recovering from a forgotten username or password
+## Recovering from a forgotten username or password
 
 Stash saves login credentials in the config.yml file. You must reset both login and password if you have forgotten your password by doing the following:
 * Close your Stash process
@@ -137,9 +140,7 @@ Stash saves login credentials in the config.yml file. You must reset both login 
 * Delete the `login` and `password` lines from the file and save
 Stash authentication should now be reset with no authentication credentials.
 
----
-
-## Advanced configuration options
+# Advanced configuration options
 
 These options are typically not exposed in the UI and must be changed manually in the `config.yml` file.
 
@@ -150,8 +151,9 @@ These options are typically not exposed in the UI and must be changed manually i
 | `max_upload_size` | Maximum file upload size for import files. Defaults to 1GB. |
 | `theme_color` | Sets the `theme-color` property in the UI. |
 | `gallery_cover_regex` | The regex responsible for selecting images as gallery covers |
+| `sequential_scanning` | Modifies behaviour of the scanning functionality to generate support files (previews/sprites/phash) at the same time as fingerprinting/screenshotting. Useful when scanning cached remote files. |
 
-### Custom served folders
+## Custom served folders
 
 Custom served folders are served when the server handles a request with the `/custom` URL prefix. The following is an example configuration:
 

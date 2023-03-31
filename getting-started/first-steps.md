@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: First Steps
 nav_order: 2
 parent: Getting Started
-permalink: getting-started/first-steps
+
 ---
 
 <details markdown="block">
@@ -15,18 +15,16 @@ permalink: getting-started/first-steps
 {:toc}
 </details>
 
-## Setting Up Content Libraries
+# Setting Up Content Libraries
 
 1. Open your Stash.
 2. Go to `Settings` > `Library` and click `Add Directory`.
-3. To change the drive letter/volume, just type it in the field.
-![Drive location](assets/drive_location.png)
+3. To change the drive letter/volume, just type it in the field.<br />
+![Drive location](/assets/getting-started/drive_location.png)
 4. Select the folder containing the content you want to add. It will select the folder and all sub-folders.
 5. Click `Confirm`.
 
----
-
-## Configuring Scan Options
+# Configuring Scan Options
 
 1. Open your Stash.
 2. Go to `Settings` > `Tasks`.
@@ -43,9 +41,7 @@ permalink: getting-started/first-steps
 3. Select options you want based on your preferences, but every option increases time the scan will take.
 4. You can stop and re-scan it will ignore the files that are already scanned and just scan new or missing files.
 
----
-
-## Initiating Scan
+# Initiating Scan
 
 1. Open your Stash.
 2. Go to `Settings` > `Tasks`.

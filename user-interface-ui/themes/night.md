@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Night
 nav_order: 3
 parent: Themes
 grand_parent: User Interface (UI)
-permalink: user-interface-ui/themes/night
+
 ---
 
 <details markdown="block">
@@ -16,11 +16,11 @@ permalink: user-interface-ui/themes/night
 {:toc}
 </details>
 
-### Screenshots
+## Screenshots
 
-![Stash Night Theme](assets/night-1.png)
+![Stash Night Theme](/assets/user-interface-ui/themes/night-1.png)
 
-## CSS Code
+# CSS Code
 
 ```css
 /*

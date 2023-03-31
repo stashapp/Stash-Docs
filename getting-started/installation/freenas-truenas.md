@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Installing on FreeNAS/TrueNAS
 nav_order: 5
 parent: Installation
 grand_parent: Getting Started
-permalink: getting-started/installation/freenas-truenas
+
 ---
 
 <details markdown="block">
@@ -16,16 +16,14 @@ permalink: getting-started/installation/freenas-truenas
 {:toc}
 </details>
 
-## Caveats and assumptions
+# Caveats and assumptions
 
 * the method documented here has only been given cursory testing, so there may be compatibility problems
 * this method assumes that stash will be run within a previously created iocage jail - the process to create and configure the jail is not included here
 * if the jail is in NAT mode, ensure that port 9999 is forwarded to your TrueNAS host
 * the alternative to this method is to compile from source, which is a more involved process and not documented here
 
----
-
-## Linux compatibility
+# Linux compatibility
 
 In order for the `stash-linux` binary to work in a FreeBSD system, Linux compatibility must be enabled both in the system and the jail. To enable Linux compatibility:
 1. navigate to `System -> Tunables` in the TrueNAS Web UI
@@ -41,9 +39,7 @@ enable_linux="YES"
 ```
 5. Reboot the system.
 
----
-
-## ffmpeg/ffprobe
+# ffmpeg/ffprobe
 
 `ffmpeg` can be downloaded using `pkg install ffmpeg`. For some reason, stash is unable to find the `ffmpeg` and `ffprobe` binaries even after installing them. To work around this, create symbolic links to the binaries in `$HOME/.stash`:
 
@@ -52,9 +48,7 @@ ln -s /usr/local/bin/ffmpeg ~/.stash/ffmpeg
 ln -s /usr/local/bin/ffprobe ~/.stash/ffprobe
 ```
 
----
-
-## Downloading and running
+# Downloading and running
 
 Download `stash-linux` for your chosen release. Make sure to enable execution with: `chmod +x stash-linux`
 

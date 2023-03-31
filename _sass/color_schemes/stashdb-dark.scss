@@ -1,8 +1,8 @@
 $link-color: #48aff0;
 $btn-primary-color: #48aff0;
 $base-button-color: $grey-dk-250;
-$sidebar-color: #394B59;
-$body-background-color: #202B33;
+$sidebar-color: #394B59fa;
+$body-background-color: #202b33fa;
 $body-text-color: #FFFFFF;
 $body-heading-color: #F5F8FA;
 $nav-child-link-color: #E9ECEF;
@@ -11,11 +11,11 @@ $table-background-color: $grey-dk-250;
 $feedback-color: darken($sidebar-color, 3%);
 $search-result-preview-color: $grey-dk-000;
 $search-background-color: $grey-dk-250;
-@import "./vendor/OneDarkJekyll/syntax-one-dark-vivid";
-$code-background-color: #394B59;
+@import "./vendor/OneDarkJekyll/syntax"; // this is the one-dark-vivid atom syntax theme
+$code-background-color: #394B59fa;
 .highlight, pre.highlight {
-    background-color: #394B59 !important;
+    background-color: #394B59fa !important;
 }
 th, td {
-    background-color: #394B59 !important;
+    background-color: #394B59fa !important;
 }

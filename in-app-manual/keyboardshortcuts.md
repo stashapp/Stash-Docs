@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Keyboard Shortcuts
 nav_order: 13
 parent: In-app Manual
-permalink: in-app-manual/keyboardshortcuts
+
 ---
 
 <details markdown="block">
@@ -15,15 +15,13 @@ permalink: in-app-manual/keyboardshortcuts
 {:toc}
 </details>
 
----
-
-## Global shortcuts
+# Global shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `?` | Display manual |
 
-### Global Navigation
+## Global Navigation
 
 | Keyboard sequence | Target page |
 |-------------------|--------|
@@ -37,9 +35,7 @@ permalink: in-app-manual/keyboardshortcuts
 | `g t` | Tags |
 | `g z` | Settings |
 
----
-
-## Query page shortcuts
+# Query page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
@@ -62,17 +58,13 @@ permalink: in-app-manual/keyboardshortcuts
 | `e` | Edit selected |
 | `d d` | Delete selected |
 
----
-
-## Scenes page shortcuts
+# Scenes page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `p r` | Play random scene |
 
----
-
-## Scene page shortcuts
+# Scene page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
@@ -97,18 +89,20 @@ permalink: in-app-manual/keyboardshortcuts
 | `[` | Scrub backwards 10% duration |
 | `]` | Scrub forwards 10% duration |
 
-### Scene Markers tab shortcuts
+## Scene Markers tab shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `n` | Display Create Markers dialog |
 
-### Edit Scene tab shortcuts
+## Edit Scene tab shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
-| `r {1-5}` | Set rating |
-| `r 0` | Unset rating |
+| `r {1-5}` | Set rating (stars) |
+| `r 0` | Unset rating (stars) |
+| `r {0-9} {0-9}` | Set rating (decimal - `00` for `10.0`) |
+| ``r ` `` | Unset rating (decimal) |
 | `s s` | Save Scene |
 | `d d` | Delete Scene |
 | `Ctrl + v` | Paste Scene cover |
@@ -120,50 +114,42 @@ permalink: in-app-manual/keyboardshortcuts
 [//]: # "(| `v` | Focus Movies selector |)"
 [//]: # "(| `t` | Focus Tags selector |)"
 
----
-
-## Movies Page shortcuts
+# Movies Page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `n` | New Movie |
 
----
-
-## Movie Page shortcuts
+# Movie Page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `e` | Edit Movie |
 | `s s` | Save Movie |
 | `d d` | Delete Movie |
-| `r {1-5}` | Set rating (in edit mode) |
-| `r 0` | Unset rating (in edit mode) |
+| `r {1-5}` | [Edit mode] Set rating (stars) |
+| `r 0` | [Edit mode] Unset rating (stars) |
+| `r {0-9} {0-9}` | [Edit mode] Set rating (decimal - `r 0 0` for `10.0`) |
+| ``r ` `` | [Edit mode] Unset rating (decimal) |
 | `Ctrl + v` | Paste Movie image |
 
 [//]: # "Commented until implementation is dealt with"
 [//]: # "(| `u` | Focus Studio selector (in edit mode) |)"
 
----
-
-## Markers Page shortcuts
+# Markers Page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `p r` | Play random marker |
 
----
-
-## Performers Page shortcuts
+# Performers Page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `n` | New Performer |
 | `p r` | Open random Performer |
 
----
-
-## Performer Page shortcuts
+# Performer Page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
@@ -173,7 +159,7 @@ permalink: in-app-manual/keyboardshortcuts
 | `o` | Operations tab |
 | `f` | Toggle favourite |
 
-### Edit Performer tab shortcuts
+## Edit Performer tab shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
@@ -181,17 +167,13 @@ permalink: in-app-manual/keyboardshortcuts
 | `d d` | Delete Performer |
 | `Ctrl + v` | Paste Performer image |
 
----
-
-## Studios Page shortcuts
+# Studios Page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `n` | New Studio |
 
----
-
-## Studio Page shortcuts
+# Studio Page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
@@ -200,17 +182,13 @@ permalink: in-app-manual/keyboardshortcuts
 | `d d` | Delete Studio |
 | `Ctrl + v` | Paste Studio image |
 
----
-
-## Tags Page shortcuts
+# Tags Page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|
 | `n` | New Tag |
 
----
-
-## Tag Page shortcuts
+# Tag Page shortcuts
 
 | Keyboard sequence | Action |
 |-------------------|--------|

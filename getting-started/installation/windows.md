@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Installing on Windows
 nav_order: 1
 parent: Installation
 grand_parent: Getting Started
-permalink: getting-started/installation/windows
+
 ---
 
 1. Run the executable (typically `stash-win.exe`). 

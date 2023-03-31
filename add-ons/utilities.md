@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Utilities
 nav_order: 5
 parent: Add-ons
-permalink: add-ons/utilities
+
 ---
 
 <details markdown="block">
@@ -20,38 +20,47 @@ Utilities are other external applications that utilise or interact with Stash in
 {: .note }
 These utilities are created by third parties and not officially affiliated or supported by the core Stash team. If you have issues, please reach out to the original creators.
 
-### Stash_helper
+## Stash_helper
 
 |-|-|
 |Category|Companion|
 |Utility|[Stash_helper](https://github.com/philpw99/Stash_Helper){:target="_blank"}|
 |Description|Adds some windows-specific tools to Stash (navigate from icon, installation help, etc).|
 |Author|[philpw99](https://github.com/philpw99){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### stash-vr
+## stash-vr
 
 |-|-|
 |Category|VR|
 |Utility|[stash-vr](https://github.com/o-fl0w/stash-vr){:target="_blank"}|
 |Description|Watch your stash library in VR.|
 |Author|[o-fl0w](https://github.com/o-fl0w){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### stash-vr-companion
+## stash-vr-companion
 
 |-|-|
 |Category|VR|
 |Utility|[stash-vr-companion](https://github.com/Tweeticoats/stash-vr-companion){:target="_blank"}|
 |Description|Similar to stash-deovr as above but designed as a web app that sits in a docker container next to stash to make it easier to use and add more functionality.|
 |Author|[Tweeticoats](https://github.com/Tweeticoats){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
-### stash-webvr
+## stash-webvr
 
 |-|-|
 |Category|VR|
 |Utility|[stash-webvr](https://gitlab.com/stish/stash-webvr){:target="_blank"}|
 |Description|WebVR friendly Stash client that displays only videos tagged with "Virtual Reality" tag.|
 |Author|[stishadmin](https://gitlab.com/stishadmin){:target="_blank"}|
-|Screenshots|![](assets/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## stash-compilation-maker
+
+|-|-|
+|Category|Markers|
+|Utility|[stash-compilation-maker](https://github.com/soundchaser128/stash-compilation-maker){:target="_blank"}|
+|Description|Connects to your Stash instance and creates simple compilation videos from scene markers. You select one or more tags, or one or more performers and it will take (currently) the first 15 seconds of video after the marker start and compile all of the markers into one video.|
+|Author|[soundchaser128](https://github.com/soundchaser128){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|

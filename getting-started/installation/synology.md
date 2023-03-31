@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Installing on Synology NAS
 nav_order: 4
 parent: Installation
 grand_parent: Getting Started
-permalink: getting-started/installation/synology
+
 ---
 
 <details markdown="block">
@@ -16,21 +16,19 @@ permalink: getting-started/installation/synology
 {:toc}
 </details>
 
-## Foreword
+# Foreword
 
 Synology devices comes in two categories : those who support containerization through Docker, and those who don't. To see in which category you stand, refer to the "Applied Models" section of [the Docker Package page](https://www.synology.com/dsm/packages/Docker){:target="_blank"}.
 
 Now, follow the installation instructions based on whether you [can use Docker](#to-install-stash-with-docker) or [you cannot use Docker](#to-install-stash-without-docker).
 
----
-
-## To install Stash with Docker
+# To install Stash with Docker
 
 - Make sure [the Docker app is installed](https://blog.pavelsklenar.com/how-to-install-and-use-docker-on-synology/){:target="_blank"} and running correctly.
 - [Search the registry for stash](https://hub.docker.com/r/stashapp/stash){:target="_blank"} and install.
 - Create a stash image with the following set up in 'advanced options'
 
-### "Volume" Tab
+## "Volume" Tab
 
 |  File/Folder | Mount Path | Description  |
 |---|---|---|
@@ -40,7 +38,7 @@ Now, follow the installation instructions based on whether you [can use Docker](
 | docker/Stash/cache  | /cache  | Cache Files  |
 | (where your porn lives)  | /data  | Location of your porn  |
 
-### "Environment" Tab
+## "Environment" Tab
 
 (These will need to be the same as the Volumes you created in the "Volume" tab.
 
@@ -53,31 +51,29 @@ Now, follow the installation instructions based on whether you [can use Docker](
 | STASH_STASH  | /data  |
 |   |   |   |
 
-### "Port" Tab
+## "Port" Tab
 
 You will need to set a default port in the "Port" tab, otherwise Docker will assign a different port every time Stash is launched.  Leave the container port as-is.
 
-### "Network" Tab
+## "Network" Tab
 
 Make sure that "Use The Same Network As Docker Host" is checked.
 
 (thanks to backer Herelam80 for these instructions)
 
----
-
-## To install Stash without Docker
+# To install Stash without Docker
 
 Warning : this method uses SSH to run command lines on the NAS. If you are unfamiliar with SSH or linux command lines, I suggest you not to go further, as making a mistake in the SSH session can really screw your NAS.
 
 This is intended to work on DSM 7.0 and later. It will not work on any version prior to 7.0.
 
-### Enable SSH
+## Enable SSH
 
 In DSM, navigate to `Control Panel > Terminal & SNMP` and check the `enable SSH service` box.
 
 _Note : only members of the adminstrator group are able to use SSH, you'll need one of them to complete the installation._
 
-### Create a user that will run stash
+## Create a user that will run stash
 
 1. In DSM, navigate to `Control Panel > User & Group`
 2. Click on the `Create` button
@@ -88,7 +84,7 @@ _Note : only members of the adminstrator group are able to use SSH, you'll need 
 7. Check `Deny` for all applications
 6. Click `Next` until you can click on `Done`
 
-### Connect to your NAS
+## Connect to your NAS
 
 With your terminal, connect to your NAS using an account that is part of the _administrator_ group.
 
@@ -105,7 +101,7 @@ ssh admin@nas-hostname
 cd ../stash/
 ```
 
-### Download Stash
+## Download Stash
 
 {:style="counter-reset:none"}
 3. Download the lastest ARM64 version of stash and its checksum from github
@@ -133,7 +129,7 @@ rm CHECKSUMS_SHA1
 
 _Note : DO NOT run stash yet or it will generated a bunch of files/folders where we don't want them_
 
-### Download ffmpeg
+## Download ffmpeg
 
 {:style="counter-reset:none"}
 6. Donwload the ARM64 static build of ffmpeg and its checksum
@@ -188,7 +184,7 @@ pipreqs .
 sudo pip3 install -r requirements.txt
 ```
 
-### Configure your NAS to run Stash upon startup
+## Configure your NAS to run Stash upon startup
 
 {:style="counter-reset:none"}
 10. Create the service file by running `cat > /etc/systemd/system/stash.service`, copy/pasting the following, and hitting CTRL+D when it's done to save the file (hit again if you are not back to the prompt) :
@@ -219,6 +215,6 @@ sudo systemctl start stash.service
 sudo systemctl enable stash.service
 ```
 
-### Verify that it is working
+## Verify that it is working
 
 You can now access to stash by navigating to your NAS url on port 9999 : `http://nas-hostname:9999`

@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Import/Export JSON Specification
 nav_order: 4
 parent: Tasks
 grand_parent: In-app Manual
-permalink: in-app-manual/tasks/jsonspec
+
 ---
 
 <details markdown="block">
@@ -16,9 +16,7 @@ permalink: in-app-manual/tasks/jsonspec
 {:toc}
 </details>
 
----
-
-## Import/Export JSON Specification
+# Import/Export JSON Specification
 
 The metadata given to Stash can be exported into the JSON format. This structure can be modified, or replicated by other means. The resulting data can then be imported again, giving the possibility for automatic scraping of all kinds. The format of this metadata bulk is a folder structure, containing the following folders:
   
@@ -30,9 +28,7 @@ The metadata given to Stash can be exported into the JSON format. This structure
 * `studios`
 * `movies`
 
----
-
-## File naming
+# File naming
 
 When exported, files are named with different formats depending on the object type:
 
@@ -47,10 +43,8 @@ When exported, files are named with different formats depending on the object ty
 | Movies | `<name>.json` |
 
 Note that the file naming is not significant when importing. All json files will be read from the subdirectories.
-  
----
 
-## Content of the json files
+# Content of the json files
 
 In the following, the values of the according jsons will be shown. If the value should be a number, it is written with after comma values (like `29.98` or `50.0`), but still as a string. The meaning from most of them should be obvious due to the previous explanation or from the possible values stash offers when editing, otherwise a short comment will be added.
 
@@ -66,7 +60,7 @@ Example:
 "created_at": "2019-05-03T21:36:58+01:00"
 ```
 
-### Performer
+## Performer
 
 ```
 name  
@@ -93,7 +87,7 @@ rating (integer)
 details
 ```
 
-### Studio
+## Studio
 
 ```
 name  
@@ -105,7 +99,7 @@ rating (integer)
 details  
 ```
 
-### Scene
+## Scene
 
 ```
 title  
@@ -137,7 +131,7 @@ updated_at
 ```
 
 
-### Image
+## Image
 
 ```
 title  
@@ -154,7 +148,7 @@ created_at
 updated_at  
 ```
 
-### Gallery
+## Gallery
 
 ```
 title  
@@ -171,11 +165,9 @@ created_at
 updated_at  
 ```
 
----
+# Files
 
-## Files
-
-### Folder
+## Folder
 
 ```
 zip_file (path to containing zip file)
@@ -186,7 +178,7 @@ created_at
 updated_at
 ```
 
-### Video file
+## Video file
 
 ```
 zip_file (path to containing zip file)
@@ -211,7 +203,7 @@ created_at
 updated_at
 ```
 
-### Image file
+## Image file
 
 ```
 zip_file (path to containing zip file)
@@ -229,7 +221,7 @@ created_at
 updated_at
 ```
 
-### Other files
+## Other files
 
 ```
 zip_file (path to containing zip file)
@@ -244,18 +236,16 @@ created_at
 updated_at
 ```
 
----
-
-## In JSON format
+# In JSON format
 
 For those preferring the json-format, defined [here](https://json-schema.org/){:target="_blank"}, the following format may be more interesting:
 
-### performer.json
+## performer.json
 
 ``` json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://docs.stashapp.cc/docs/In-app-Manual/Tasks/JSONSpec/#performerjson",
+  "$id": "https://docs.stashapp.cc/in-app-manual/tasks/jsonspec/#performerjson",
   "title": "performer",
   "description": "A json file representing a performer. The file is named by a MD5 Code.",
   "type": "object",
@@ -350,12 +340,12 @@ For those preferring the json-format, defined [here](https://json-schema.org/){:
 
 ```
 
-### studio.json
+## studio.json
 
 ``` json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://docs.stashapp.cc/docs/In-app-Manual/Tasks/JSONSpec/#studiojson",
+  "$id": "https://docs.stashapp.cc/in-app-manual/tasks/jsonspec/#studiojson",
   "title": "studio",
   "description": "A json file representing a studio. The file is named by a MD5 Code.",
   "type": "object",
@@ -389,12 +379,12 @@ For those preferring the json-format, defined [here](https://json-schema.org/){:
 }
 ```
 
-### scene.json
+## scene.json
 
 ```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://docs.stashapp.cc/docs/In-app-Manual/Tasks/JSONSpec/#scenejson",
+  "$id": "https://docs.stashapp.cc/in-app-manual/tasks/jsonspec/#scenejson",
   "title": "scene",
   "description": "A json file representing a scene. The file is named by the MD5 Code of the file its data is referring to.",
   "type": "object",

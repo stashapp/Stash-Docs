@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: clean
 title: Interface Options
 nav_order: 3
 parent: In-app Manual
-permalink: in-app-manual/interface
+
 ---
 
 <details markdown="block">
@@ -15,35 +15,27 @@ permalink: in-app-manual/interface
 {:toc}
 </details>
 
----
-
-## Language
+# Language
 
 Setting the language affects the formatting of numbers and dates.
 
----
-
-## Scene/Marker Wall Preview Type
+# Scene/Marker Wall Preview Type
 
 The Scene Wall and Marker pages display scene preview videos by default. This can be changed to animated image (webp) or static image. 
 
 > **⚠️ Note:** scene/marker preview videos must be generated to see them in the applicable wall page if Video preview type is selected. Likewise, if Animated Image is selected, then Image Previews must be generated.
 
----
-
-## Show Studios as text
+# Show Studios as text
 
 By default, a scene's studio will be shown as an image overlay. Checking this option changes this to display studios as a text name instead.
 
----
-
-## Scene Player options
+# Scene Player options
 
 By default, scene videos do not automatically start when navigating to the scenes page. Checking the "Auto-start video" option changes this to auto play scene videos.
 
 The maximum loop duration option allows looping of shorter videos. Set this value to the maximum scene duration that scene videos should loop. Setting this to 0 disables this functionality.
 
-### Activity tracking
+## Activity tracking
 
 The "Track Activity" option allows tracking of scene play count and duration, and sets the resume point when a scene video is not finished.
 
@@ -51,17 +43,13 @@ The "Minimum Play Percent" gives the minimum proportion of a video that must be 
 
 By default, when a scene has a resume point, the scene player will automatically seek to this point when the scene is played. Setting "Always start video from beginning" to true disables this behaviour.
 
----
+# Custom CSS
 
-## Custom CSS
+The stash UI can be customised using custom CSS. See [here](/user-interface-ui/custom-css-snippets) for a community-curated set of CSS snippets to customise your UI. 
 
-The stash UI can be customised using custom CSS. See [here](../../user-interface-ui/custom-css-snippets) for a community-curated set of CSS snippets to customise your UI. 
+[Stash Plex Theme](/user-interface-ui/themes/plex) is a community created theme inspired by the popular Plex interface.
 
-[Stash Plex Theme](../../user-interface-ui/themes/plex) is a community created theme inspired by the popular Plex interface.
-
----
-
-## Custom Locales
+# Custom Locales
 
 The localisation strings can be customised. The master list of default (en-GB) locale strings can be found [here](https://github.com/stashapp/stash/blob/develop/ui/v2.5/src/locales/en-GB.json){:target="_blank"}. The custom locale format is the same as this json file.
 
@@ -75,9 +63,7 @@ For example, to override the `actions.add_directory` label (which is `Add Direct
 }
 ```
 
----
-
-## Custom served folders
+# Custom served folders
 
 It is possible to expose specific folders to the UI. This configuration is performed manually in the `config.yml` file only.
 

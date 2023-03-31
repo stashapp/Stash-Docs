@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: clean
 title: Plex
 nav_order: 4
 parent: Themes
 grand_parent: User Interface (UI)
-permalink: user-interface-ui/themes/plex
+
 ---
 
 <details markdown="block">
@@ -16,7 +16,7 @@ permalink: user-interface-ui/themes/plex
 {:toc}
 </details>
 
-![plex theme logo](assets/plex-logo.png)
+![plex theme logo](/assets/user-interface-ui/themes/plex-logo.png)
 
 This is a community created theme for Stash inspired by the popular Plex Interface. Installation is quick and easy so you should be ready to install it in just a few simple steps.
 
@@ -24,27 +24,27 @@ Feel free to experiment with CSS and modify it to fit your needs. In case you ha
 
 The Plex Theme will only change the look and feel of the Stash interface. It will not affect any other data, so you are all safe and sound! :heart:
 
-### Screenshots
+## Screenshots
 
-![plex theme preview](assets/plex-1.png)
+![plex theme preview](/assets/user-interface-ui/themes/plex-1.png)
 
-## Install
+# Install
 
 1. Open User Interface Configuration panel in settings. (http://localhost:9999/settings?tab=interface)
 2. Tick/Enable Custom CSS ✅
 3. Copy & Paste [CSS Code](#css-code) to the Custom CSS text area.
 
-### Optional - Host Backgrounds Locally
+## Optional - Host Backgrounds Locally
 
 _These steps are optional, by default this theme uses the Github hosted image links._
 
-1. Download [plex-background.png]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/plex-background.png) and [plex-noise.png]({{ site.baseurl }}/docs/User-Interface-UI/Themes/assets/plex-noise.png)
+1. Download [plex-background.png](/assets/user-interface-ui/themes/plex-background.png) and [plex-noise.png](/assets/user-interface-ui/themes/plex-noise.png)
 
 2. Place `plex-background.png` and `plex-noise.png` in `~/.stash` on macOS / Linux or `C:\Users\YourUsername\.stash` on Windows. Then edit the `background-image: url("")` attributes like below:  
   - Replace line `background-image: url("https://user-images.githubusercontent.com/63812189/79506691-4af78900-7feb-11ea-883e-87b8e05ceb1c.png");` with `background-image: url("./plex-background.png");`
   - Replace line `background: rgba(0, 0, 0, 0) url("https://user-images.githubusercontent.com/63812189/79506696-4c28b600-7feb-11ea-8176-12a46454d87a.png") repeat scroll 0% 0%;` with `background: rgba(0, 0, 0, 0) url("./plex-noise.png") repeat scroll 0% 0%;`
 
-## CSS Code
+# CSS Code
 
 ```css
 /*
