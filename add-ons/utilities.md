@@ -55,3 +55,12 @@ These utilities are created by third parties and not officially affiliated or su
 |Description|WebVR friendly Stash client that displays only videos tagged with "Virtual Reality" tag.|
 |Author|[stishadmin](https://gitlab.com/stishadmin){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## stash-compilation-maker
+
+|-|-|
+|Category|Markers|
+|Utility|[stash-compilation-maker](https://github.com/soundchaser128/stash-compilation-maker){:target="_blank"}|
+|Description|Connects to your Stash instance and creates simple compilation videos from scene markers. You select one or more tags, or one or more performers and it will take (currently) the first 15 seconds of video after the marker start and compile all of the markers into one video.|
+|Author|[soundchaser128](https://github.com/soundchaser128){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|

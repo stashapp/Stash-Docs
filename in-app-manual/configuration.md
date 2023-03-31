@@ -90,6 +90,10 @@ This setting can be used to increase/decrease overall CPU utilisation in two sce
 
 Note: If this is set too high it will decrease overall performance and causes failures (out of memory).
 
+## Hardware Accelerated Live Transcoding
+
+Hardware accelerated live transcoding can be enabled by setting the `FFmpeg hardware encoding` setting. Stash outputs the supported hardware encoders to the log file on startup at the Info log level. If a given hardware encoder is not supported, it's error message is logged to the Debug log level for debugging purposes.
+
 ## HLS/DASH Streaming
 
 To stream using HLS (such as on Apple devices) or DASH, the Cache path must be set. This directory is used to store temporary files during the live-transcoding process. The Cache path can be set in the System settings page.
@@ -146,6 +150,7 @@ These options are typically not exposed in the UI and must be changed manually i
 | `custom_ui_location` | The file system folder where the UI files will be served from, instead of using the embedded UI. Empty to disable. Stash must be restarted to take effect. |
 | `max_upload_size` | Maximum file upload size for import files. Defaults to 1GB. |
 | `theme_color` | Sets the `theme-color` property in the UI. |
+| `sequential_scanning` | Modifies behaviour of the scanning functionality to generate support files (previews/sprites/phash) at the same time as fingerprinting/screenshotting. Useful when scanning cached remote files. |
 
 ## Custom served folders
 
