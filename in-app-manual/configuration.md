@@ -94,6 +94,10 @@ Note: If this is set too high it will decrease overall performance and causes fa
 
 Hardware accelerated live transcoding can be enabled by setting the `FFmpeg hardware encoding` setting. Stash outputs the supported hardware encoders to the log file on startup at the Info log level. If a given hardware encoder is not supported, it's error message is logged to the Debug log level for debugging purposes.
 
+## HLS/DASH Streaming
+
+To stream using HLS (such as on Apple devices) or DASH, the Cache path must be set. This directory is used to store temporary files during the live-transcoding process. The Cache path can be set in the System settings page.
+
 ## ffmpeg arguments
 
 Additional arguments can be injected into ffmpeg when generating previews and sprites, and when live-transcoding videos. 
