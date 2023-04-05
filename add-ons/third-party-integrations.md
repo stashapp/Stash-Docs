@@ -37,3 +37,12 @@ These third-party integrations are created by third parties and not officially a
 |Description|A very simplistic Plex agent to pull metadata from Stash.|
 |Author|[Darklyter](https://github.com/Darklyter){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## Jellyfin.Plugin.Stash
+
+|-|-|
+|Category|Jellyfin|
+|Integration|[Jellyfin.Plugin.Stash](https://github.com/DirtyRacer1337/Jellyfin.Plugin.Stash){:target="_blank"}|
+|Description|Pulls data from your Stash using the filename to query on.|
+|Author|[DirtyRacer1337](https://github.com/DirtyRacer1337){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
