@@ -100,7 +100,7 @@ and click save.
 Where `GPU-xxxx-xxxx-xxx-xxxx-xxxx-xxx-xxxxxxxxxxxx` you must enter your own GPUID. To find it do the folowing:
   - On a new Unraid page click on settings.
   - Go down to the bottom and click Nvidia Driver plugin.
-  - Copy the key and under under `Variable` called `Value`.
+  - Copy the key and paste it under `Variable` called `Value`.
 
 ![](/assets/beginner-guides/unraid-gpuid.jpg)
 
