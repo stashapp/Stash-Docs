@@ -277,6 +277,15 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[cc1234475](https://github.com/cc1234475)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/stash_tag.png)|
 
+## Stash Toggle Sprite
+
+|-|-|
+|Category|Stash|
+|Userscript|[Stash Toggle Sprite](https://gist.github.com/DogmaDragon/66d8f81aa2a30cfbe1cea81e9a98ca49){:target="_blank"}|
+|Description|Toggle Sprites on Scene page in place of the cover.|
+|Author|iix63500#0330, Flashy#9094|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
 ## StashDB Copy StashID
 
 |-|-|
