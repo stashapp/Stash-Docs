@@ -9,8 +9,8 @@ $nav-child-link-color: #E9ECEF;
 $border-color: #808080;
 $table-background-color: $grey-dk-250;
 $feedback-color: darken($sidebar-color, 3%);
-$search-result-preview-color: $grey-dk-000;
-$search-background-color: $grey-dk-250;
+$search-result-preview-color: darken($body-heading-color, 10%);
+$search-background-color: #394B59fa;
 @import "./vendor/OneDarkJekyll/syntax"; // this is the one-dark-vivid atom syntax theme
 $code-background-color: #394B59fa;
 .highlight, pre.highlight {
