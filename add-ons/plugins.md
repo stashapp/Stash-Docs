@@ -248,3 +248,21 @@ These plugins are created by third parties and not officially affiliated or supp
 |Description|This plugin will search for scenes that have duplicate files and are merged. It then itterates over the files skipping the first one and then using the next files to create new scenes.|
 |Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## Stash Topaz Gigapixel AI, Performer Image Upscaler
+
+|-|-|
+|Category|Images|
+|Plugin|[Stash Topaz Gigapixel AI, Performer Image Upscaler](https://github.com/elkorol/Stash-Performer-Image-Gigapixel){:target="_blank"}|
+|Description|Uses the program Topaz Gigapixel AI, to upscale or downscale performer images that are tagged with the relavent tags.|
+|Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## Stash Theme / CSS Switcher
+
+|-|-|
+|Category|Interface|
+|Plugin|[Stash Theme / CSS Switcher](https://github.com/elkorol/Stash-App-Theme-Switch-Plugin){:target="_blank"}|
+|Description|Adds a button that shows a menu, allowing you to change CSS Themes and apply various CSS snippets for Stash App.|
+|Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash-App-Theme-Switch-Plugin-1.png)![](/assets/add-ons/Stash-App-Theme-Switch-Plugin-2.png)|

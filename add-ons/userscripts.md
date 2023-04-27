@@ -286,6 +286,33 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|iix63500#0330, Flashy#9094|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
+## Stash Userscript Tagger View Scene Element DIV Removal Button
+
+|-|-|
+|Category|Stash|
+|Userscript|[Stash Userscript Tagger View Scene Element DIV Removal Button](https://github.com/elkorol/Stash-App-Userscript-Tagger-View-Div-Remover){:target="_blank"}|
+|Description|Adds a button on each scene element div in tagger view and is made to compliment 7dJx1qP's userscript Stash Batch Save, because currently, when hitting scrape all, if a particular scene gets missmatched to a wrong scene that is scraped, whilst all other scenes match up, ready for saving.|
+|Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash-App-Userscript-Tagger-View-Div-Remover-1.png)|
+
+## Stash Userscript VideoJS Player Copy/Save
+
+|-|-|
+|Category|Stash|
+|Userscript|[Stash Userscript VideoJS Player Copy/Save](https://github.com/elkorol/Stash-App-Script-Video-JS-CopySave){:target="_blank"}|
+|Description|Adds a button to the scene player control bar, which on click will allow you to either save the current frame of the playing video to disk or copy the image as base64 to clipboard.|
+|Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash-App-Script-Video-JS-CopySave-1.png)|
+
+## Stash Userscript Alphabet Selector
+
+|-|-|
+|Category|Stash|
+|Userscript|[Stash Userscript Alphabet Selector](https://github.com/elkorol/Stash-App-Script-Alphabet-Selector){:target="_blank"}|
+|Description|Adds a button to the toolbar for an Alphabet keyboard, on Scenes, Movies, Performers, Studios and Tags page that when clicked adds a visible keyboard, allowing you to select letters or numerical value, that can either limit, aliases, name or both to whichever letter selected or number. .|
+|Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash-App-Script-Alphabet-Selector-1.png)[](/assets/add-ons/Stash-App-Script-Alphabet-Selector-2.png)|
+
 ## StashDB Copy StashID
 
 |-|-|
