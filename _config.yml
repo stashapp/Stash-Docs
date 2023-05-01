@@ -31,16 +31,16 @@ nav_external_links:
 # Footer content
 # appears at the bottom of every page's main content
 
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub"
 gh_edit_repository: "https://github.com/stashapp/Stash-Docs" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into the editor immediately
-
-# Back to top link
-back_to_top: true
-back_to_top_text: "Back to top"
 
 search_enabled: true
 
