@@ -31,7 +31,7 @@ They may not Look correct on your phone depending on its resolution/aspect ratio
 
 ## Screenshots
 
-![Modern Dark preview #1](/assets/user-interface-ui/themes/neon-dark-1.jpg)
+![Neon Dark preview #1](/assets/user-interface-ui/themes/neon-dark-1.jpg)
 
 ## Install
 
