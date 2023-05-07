@@ -40,3 +40,5 @@ If you would like to develop your own theme, we have a [reference guide of CSS s
 | [Plex](/user-interface-ui/themes/plex) | ![Screenshot of Plex Theme](/assets/user-interface-ui/Plex-preview.png) |
 | [Black Hole](/user-interface-ui/themes/black-hole) | ![Screenshot of Black Hole Theme](/assets/user-interface-ui/Black-Hole-preview.png) |
 | [Modern Dark](/user-interface-ui/themes/modern-dark) | ![Screenshot of Modern Dark](/assets/user-interface-ui/Modern-Dark-preview.jpg) |
+| [Neon Dark](/user-interface-ui/themes/neon-dark) | ![Screenshot of Neon Dark](/assets/user-interface-ui/Neon-Dark-preview.jpg) |
+
