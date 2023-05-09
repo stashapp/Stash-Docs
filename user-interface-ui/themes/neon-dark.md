@@ -44,12 +44,12 @@ All colors are defined in the :Root section and referenced using var() so you on
 
 ## Screenshots
 
-![neon-dark-1](https://user-images.githubusercontent.com/117317087/236985839-33a0adfc-402e-4395-b807-1959ec30a8b7.png)
-![neon-dark-2](https://user-images.githubusercontent.com/117317087/236985835-48920959-e3dd-4989-b3c2-649a355815d0.png)
-![neon-dark-3](https://user-images.githubusercontent.com/117317087/236985831-d07ce239-5f59-4a59-b885-83f94133e2f8.png)
-![neon-dark-4](https://user-images.githubusercontent.com/117317087/236985829-1763722c-02f5-441d-9f57-2cc62a809c5f.png)
-![neon-dark-5](https://user-images.githubusercontent.com/117317087/236985826-60df6da4-989b-47e6-91b1-95da156e1f5d.png)
-![neon-dark-6](https://user-images.githubusercontent.com/117317087/236985838-d1167927-2fa2-4bad-adbb-66e3eb22111c.png)
+![neon-dark-1](/assets/user-interface-ui/themes/neon-dark-1.png)
+![neon-dark-2](/assets/user-interface-ui/themes/neon-dark-2.png)
+![neon-dark-3](/assets/user-interface-ui/themes/neon-dark-3.png)
+![neon-dark-4](/assets/user-interface-ui/themes/neon-dark-4.png)
+![neon-dark-5](/assets/user-interface-ui/themes/neon-dark-5.png)
+![neon-dark-6](/assets/user-interface-ui/themes/neon-dark-6.png)
 
 
 ## Install
