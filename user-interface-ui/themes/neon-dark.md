@@ -18,20 +18,39 @@ grand_parent: User Interface (UI)
 
 Made by [@Dankonite](https://github.com/Dankonite)
 
-A darker custom theme I made. I dont know if nsfw screenshots are allowed here so Im not risking it. If I get the thumbs up ill add preview images.
-Almost all the colors that are the same are linked together and you only have to change one hex color to change them all. I think the only exception is the blue accent color is applied in a few locations. Use Ctrl + F to find all of them.
+A darker custom theme I made. Inspired in part by jellyfin.
+All colors are defined in the :Root section and referenced using var() so you only have to change the root value. 
 
-Ive never uploaded to here before so the notes and the code may be a bit ugly, but I did my best to annotate most of the changes
-Let me know what you think :)
+# Important Changes
 
-{: .note }
-There are some changes to the css that are tailored to improve the appearance of the ui on my phone, a galaxy s20.
-They may not Look correct on your phone depending on its resolution/aspect ratio. Most of the changes that are phone related are under the @media(max-width) section. there are some others aswell but the others look good on mobile and desktop imo.
+1. Color scheme (duh), 1px blue accent border for most elements. Three shades of black for the main UI 
+2. Replaced the stash button with a button with the text 'home' (Text Replaceble In button.brand-link:after).
+3. Most padding in cards reduced or removed. Many Elements closer to corners now.
+4. Donate button hidden by default.
+5. Massive Mobile UI overhaul See Mobile UI Notes
+6. Home screen cards now are a fixed height and a variable width so they fit to the content of the thumbnail of the card (look at the tags section for example). If a card is missing a description/tags their areas are collapsed but only on the home screen.
+7. Rounding On Cards and some UI elements
+8. Gender Icons, and Rating Banner are hidden
 
+# Mobile UI Changes
+
+1. Nav bar returned to the top of the screen.
+2. Two scene scrolling for portrait mode. No more massive scene cards taking up the whole screen one at a time. Gallery and Tag Cards are fixed height and variable width. so 2 or 3 may be in a row at a time depending on their aspect ratio. 
+3. There are definitely more changes that I cant think of. Mostly subtle changes to make it look nicer/more like the desktop ui's level of polish.
+
+# Changelog
+
+5/8/2023: Rewritten from scrath to be less of a jumbled mess (hopefully). (+ minor changes for my ocd)
 
 ## Screenshots
 
-![Neon Dark preview #1](/assets/user-interface-ui/themes/neon-dark-1.jpg)
+![neon-dark-1](https://user-images.githubusercontent.com/117317087/236985839-33a0adfc-402e-4395-b807-1959ec30a8b7.png)
+![neon-dark-2](https://user-images.githubusercontent.com/117317087/236985835-48920959-e3dd-4989-b3c2-649a355815d0.png)
+![neon-dark-3](https://user-images.githubusercontent.com/117317087/236985831-d07ce239-5f59-4a59-b885-83f94133e2f8.png)
+![neon-dark-4](https://user-images.githubusercontent.com/117317087/236985829-1763722c-02f5-441d-9f57-2cc62a809c5f.png)
+![neon-dark-5](https://user-images.githubusercontent.com/117317087/236985826-60df6da4-989b-47e6-91b1-95da156e1f5d.png)
+![neon-dark-6](https://user-images.githubusercontent.com/117317087/236985838-d1167927-2fa2-4bad-adbb-66e3eb22111c.png)
+
 
 ## Install
 
@@ -45,200 +64,1084 @@ Enjoy!
 
 ```css
 /* Neon Dark Theme by Dankonite */
-.job-table.card, .bg-dark, .bg-secondary, .card, .popover, .tag-item, .text-input, div.react-select__menu, div.dropdown-menu, div.react-select__control, button.btn, .btn-secondary, .btn-secondary.disabled, .btn-secondary:disabled, .nav-pills .nav-link.active, .nav-pills .show>.nav-link, .recommendations-container-edit .recommendation-row, div.react-select__control, div.react-select__control .react-select__multi-value, .btn.active:not(.disabled), .btn.active.minimal:not(.disabled), body ::-webkit-scrollbar-thumb, .input-control, .search-item, .markdown table tr:nth-child(2n), .markdown blockquote, .markdown pre {
-	background-color: #202020!important; /* Grey Accent*/
-}
-body, #tasks-panel .tasks-panel-queue, #scene-edit-details .edit-buttons-container {
-	background-color:#101010!important; /* Black Background */
-}
-.modal-header, .modal-body, .modal-footer, .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show>.btn-secondary.dropdown-toggle, .btn-secondary:focus, .btn-secondary.focus, .input-group-text, .input-group-append>.btn, .markdown code {
-    background-color: #303030!important; /* Slightly Lighter Gray Accent */
-}
-.tag-item, div.react-select__control .react-select__multi-value, .react-select__multi-value__label, .react-select__multi-value__remove, .btn.active:not(.disabled), .btn.active.minimal:not(.disabled), .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show>.btn-secondary.dropdown-toggle, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary, .btn-secondary.disabled, .btn-secondary:disabled, .tag-item .btn, span.filter-container.text-muted.paginationIndex.center-text, span.input-group-text {
-	color: #fff!important /* Text Color */
-}
-.scene-specs-overlay, .scene-interactive-speed-overlay, .scene-studio-overlay, span.scene-card__date {
-	font-weight: 900; /* font Weight, not applied to everything*/
-}
-.card, .popover, .tag-item, .text-input, div.react-select__menu, div.dropdown-menu, div.react-select__control, .query-text-field, button.minimal, button.nav-menu-toggle, .btn.active:not(.disabled), .btn.active.minimal:not(.disabled), .pagination .btn:first-child, .pagination .btn:last-child, div.react-select__control, div.react-select__control .react-select__multi-value, .pagination .btn, .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show>.btn-secondary.dropdown-toggle, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary, .btn-secondary.disabled, .btn-secondary:disabled, .nav-pills .nav-link.active, .nav-pills .show>.nav-link, .dropdown-menu, input.border-secondary, .input-control, .input-group-text, .markdown table td, .markdown table th {
-	border: 1px solid #137cbd!important; /* Blue Border Accent */
-}
-nav.top-nav.navbar.navbar-expand-xl.navbar-dark.bg-dark.fixed-top {
-    border-bottom: 1px solid #137cbd!important; /* Blue Border Accent for the bottom of the navbar */
-}
-.card {
-	border-radius: 1rem;
-    /*card Corner Radius Rounding*/
-}
-.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show>.btn-secondary.dropdown-toggle:focus, .form-control:focus, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary:not(:disabled):not(.disabled).active, .scene-card:hover, .btn:hover, .active.btn.btn-primary, .active.btn.btn-primary:focus, .btn.brand-link:focus, input.query-text-field:hover, .btn-secondary:hover, .gallery-card:hover, .performer-card:hover, a.nav-link:hover, .tag-card:hover, span.tag-item:hover, .studio-card:hover, button:focus {
-	box-shadow: 0 0 .3rem 0.3rem #137cbd!important; /* Blue Glow Accent For Active/Focused/hovered UI Elements */
-}
-/* Phone UI Tweaks Only Tested With My phone in mind May need to adjust some settings if your phone has a different resolution and or aspect ratio. Not The Only Ones But These Are The Only Ones That Are Screen Width Dependant, Remove If You Want I think Nothing Else Is Dependant On Them... probably */
-@media(max-width: 575.98px){
-	.tag-card-image{
-        max-height:120px
-        }
-        .scene-card-preview-image, .scene-card-preview-video{
-            max-height:105px;
-            width:187px;
-            height: auto;  
-        }
-    .top-nav {
-	    bottom:unset;
-	    top:unset;
-	}
-    body{
-        padding:0
-    }
-    .container, .container-fluid, .container-xl, .container-lg, .container-nd, .container-sm{
-        padding-top:4em
-    }
-    .scene-card.zoom-1.grid-card.card{
-        width: min-content;
-    }
-    .slick-list .movie-card, .slick-list .performer-card {
-        width: 12rem;
-    }
-    .slick-list .scene-card, .slick-list .studio-card, .slick-list .gallery-card {
-        width: 12rem;
-    }
-    .card.performer-card {
-        max-width:min-content
-    }
-    .performer-card-image {
-        height: 12rem!important;
-        min-width: 8rem;
-    }
-    .overlay-resolution {
-        display: none;
-    }
-}
-div[role='group'].ml-auto.btn-group>div {
-    margin-right: .5rem;
-    margin-top: .5rem;
-    /*spacing for the details screen o-counter, organize, and the three dot menu buttons*/
-}
-.criterion-list.accordion, .saved-filter-list-menu {
-    padding: 1rem; /*adds a little bit of padding to the pop-up menus*/
-}
-.edit-buttons>button {
-    margin-left: 1px; /* without this the 1px border on the save button on the edit scene page gets cut off on the left*/
-}
-.modal-header {
-    border-radius: 1rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    /*rounding for the edit filters pop up menu top*/
-}
-.modal-footer {
-    border-radius: 1rem;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    /*rounding for the edit filters pup menu bottom*/
+:root
+{
+	--background-color:#101010;
+	--blue-accent:#137cbd;
+	--card-radius:.75rem;
+	--disabled-color:#181818;
+	--font-color:#fff;
+	--lighter-gray:#303030;
+	--menu-gray:#202020;
+	--menu-rounding:1rem;
+	--not-card-radius:.25rem;
+	--red-delete:#DB3737
 }
 
-div.mb-2 {
-    height: 100%; /* fixes the heights of the filters bar being mismatched*/
+.btn
+{
+	border-radius:var(--not-card-radius)
 }
-.btn-primary.btn.donate.minimal, .TruncatedText.scene-card__description, span.scenes-stats, .rating-banner, .gender-icon, .tag-sub-tags, a[target='_blank'], .ml-2.mb-2.d-none.d-sm-inline-flex, .studio-child-studios, a.marker-count {
-	display: none!important; /* Hide These UI Elements*/
+
+.btn-primary:not(:disabled):not(.disabled):not(.brand-link):active,.btn-primary:not(:disabled):not(.disabled).active,.show>.btn-primary.dropdown-toggle
+{
+	background-color:var(--lighter-gray);
+	border-color:var(--blue-accent);
+	color:var(--font-color)
 }
-a.nav-utility, button[title='Help'], .nav-menu-toggle {
-    margin-left: .5rem;
+
+.dropdown-item
+{
+	border-radius:var(--menu-rounding)
 }
-.navbar-buttons>.mr-2, .card hr {
-    margin: 0!important; /* eliminates some ugly margins */
+
+.edit-buttons-container>*
+{
+	margin-bottom:1rem
 }
-.card, .modal-body, .card-section {
-	padding:0!important; /* tightens up some padding */
+
+.fa-chevron-up,.fa-chevron-down
+{
+	color:var(--blue-accent)
 }
-button.brand-link, .top-nav .navbar-buttons .btn {
-	height: 40px; /* sets the navbar buttons to be the same height */
+
+.form-control
+{
+	border-radius:var(--not-card-radius);
+	padding-right:1.3rem
 }
-.top-nav {
-	padding: 0 2rem!important; /* sets the padding of the navbar to look better on main ui and phone ui */
+
+.input-group-text
+{
+	background-color:var(--menu-gray);
+	border:1px solid var(--blue-accent);
+	color:var(--font-color)
 }
-.scene-studio-overlay {
-	top:.2rem;
-	line-height: .8rem;
-	max-width: 50%;
-    /*moves the studio text to the corner, and compresses it a bit*/
+
+.input-group.has-validation>.input-group-append>div>div>button
+{
+	border-bottom-left-radius:0!important;
+	border-top-left-radius:0!important
 }
-hr, .setting-section .setting:not(:first-child) {
-	border-top: 1px solid #137cbd;
+
+.nav-pills .nav-link
+{
+	border-radius:var(--not-card-radius)
+}
+
+.row
+{
+	margin-left:0;
+	margin-right:0
+}
+
+.saved-filter-list-menu>div>div
+{
+	margin-bottom:1rem
+}
+
+.search-item
+{
+	background-color:var(--menu-gray);
+	border-radius:.25rem;
+	padding:1rem
+}
+
+.set-as-default-button
+{
+	margin-top:1rem
+}
+
+.setting-section .setting:not(:last-child)
+{
+	border-bottom:1px solid var(--blue-accent)
+}
+
+a.bg-secondary:hover,a.bg-secondary:focus,button.bg-secondary:hover,button.bg-secondary:focus
+{
+	background-color:var(--lighter-gray)!important
+}
+
+button.brand-link
+{
+	font-size:0;
+	visibility:hidden!important
+}
+
+button.brand-link:after
+{
+	align-items:center;
+	border:1px solid var(--blue-accent)!important;
+	border-radius:var(--not-card-radius);
+	content:"Home";
+	display:inline-block;
+	font-size:1rem;
+	height:40px;
+	padding:7px 12px;
+	position:relative;
+	top:-1px;
+	vertical-align:middle;
+	visibility:visible
+}
+
+button.brand-link:hover:after
+{
+	background-color:var(--lighter-gray)
+}
+
+div.row>h4
+{
 	margin:0;
-    /* fixes some borders */
-}
-.card-popovers {
-	margin-bottom: 3px;
-	margin-top: 3px;
-    /*centers The Popover Tags/Performer/Scene/Movie Buttons*/
-}
-.card-popovers>.tag-count>.btn, .card-popovers>.o-count>.btn, .card-popovers>.performer-count>.btn, .card-popovers>.image-count>.btn, .card-popovers>.scene-count>.btn, .card-popovers>.gallery-count>.btn, .card-popovers>.marker-count>.btn, .card-popovers>.movie-count>.btn, span.tag-item>.btn, .modal-header, .modal-footer, .setting-section .setting:not(:last-child) {
-	border: unset!important; /* disables some borders that clash with the color shceme*/
-}
-.scene-card__details, .gallery-card__details, h5.card-section-title {
-	margin-bottom:0; /* gets rid of some of the padding around text in cards*/
-}
-span.scene-card__date {
-	display:flex;
-	justify-content: flex-end;
-	font-size: .8em;
-    margin-right: .2rem;
-    /*for moving date to bottom right and making it smaller*/
-}
-.scene-specs-overlay, .scene-studio-overlay {
-    right:.2rem;
-    /*slightly moves text away from right edge of card*/
-}
-.scene-specs-overlay {
-	bottom: .2rem; 
-    /*slightly moves res/duration text */
-}
-.slick-track {
-	margin-bottom: 1rem;
-    /*some of the 1px borders were getting cut off. if this is too much for your tastes set to 1px to fix with minimal margins*/
-}
-.gallery-card {
-	height: min-content!important;
-    /*sets the gallery cards to shrink their height to 'shrink wrap' the card around the image. gallery cards look dumb with and without this, this is the lesser of the two evils imo, open to suggestions for replacements*/
-}
-.TruncatedText>div>span {
-	display:flex;
-	min-height: 3rem;
-	justify-content: center;
-	align-items: center;
-    /*centers and justifies some text*/
-}
-.grid-card a .card-section-title {
-	display: flex;
-	justify-content: center;
-    /* centers some text*/
+	padding:1rem
 }
 
-.gallery-card-image, .gallery-card.card {
-	min-width: 12rem;
-    max-width: min-content;
-    /*Sets The width of gallery cards to 12rem, allows for two gallerys to be side by side on phone ui*/
+div.row>hr.w-100
+{
+	padding-bottom:1rem
 }
-.TruncatedText, .performer-card__age {
-    text-align: center; /* Centers title/age Text */
+
+input.bg-secondary.text-white.border-secondary.form-control,.date-input.form-control,.text-input.form-control
+{
+	height:33.5px
 }
-.TruncatedText{
-	word-break:break-word; /* Adds Word Wrap To Text On Cards */
-    margin-bottom:3px; 
-    min-height: 3rem; /* makes it so if a title with 1 row of text next to a 2 row title, they dont look stupid next to each other. doesnt fix 3 row titles but I dont have alot of those. */
+
+@media (max-width: 1199.98px) {
+	.brand-link:after
+	{
+		margin-left:-16px
+	}
+
+	.top-nav .btn
+	{
+		padding:0 12px
+	}
 }
-.custom-control.custom-switch, .setting-section .setting>div:last-child {
-    justify-content: center;
-    display: flex;
-    /* centers the settings panel switches */
+
+@media (min-width: 1199.98px) {
+	.navbar-collapse>.navbar-nav>div>a
+	{
+		height:40px
+	}
 }
-.grid-card .progress-bar {
-    bottom: 0px!important;
-    /*moves the progress bar down off the preview img and onto the title section */
+
+@media (min-width: 576px) {
+#settings-menu-container
+{
+	padding:1rem;
+	position:fixed
+}    
 }
-.zoom-0 {
-    width:auto;
+
+.bs-popover-bottom>.arrow:after,.bs-popover-auto[x-placement^=bottom]>.arrow:after
+{
+	border-bottom-color:var(--blue-accent);
+	border-width:0 .5rem .5rem;
+	top:1px
 }
+
+.btn-toolbar>.btn-group>.dropdown>button,.query-text-field,.form-control,.dropdown,.dropdown-toggle
+{
+	height:100%
+}
+
+.navbar-brand
+{
+	display:inline-block;
+	font-size:1.25rem;
+	line-height:inherit;
+	margin-right:0;
+	padding-bottom:.3125rem;
+	padding-top:.3125rem;
+	white-space:nowrap
+}
+
+.navbar-collapse>.navbar-nav>div>a
+{
+	border:1px solid var(--blue-accent)
+}
+
+.navbar-expand-xl .navbar-nav .nav-link
+{
+	padding-left:.5rem;
+	padding-right:0
+}
+
+.setting-section .setting-group:not(:last-child)
+{
+	border-bottom:1px solid var(--blue-accent)
+}
+
+a
+{
+	color:var(--font-color)
+}
+
+h6.col-md-2.col-4
+{
+	display:flex;
+	justify-content:center
+}
+
+img
+{
+	border-bottom:1px solid var(--blue-accent)!important
+}
+
+@media(min-width: 576px) {
+	.offset-sm-3
+	{
+		border-left:1px solid var(--blue-accent)
+	}
+}
+
+.TruncatedText.scene-card__description
+{
+	font-size:.9rem
+}
+
+.brand-link
+{
+	padding:0
+}
+
+.btn-primary
+{
+	background-color:var(--menu-gray);
+	border-color:var(--blue-accent);
+	color:var(--font-color)
+}
+
+.btn-secondary
+{
+	background-color:var(--menu-gray);
+	border-color:var(--blue-accent);
+	color:var(--font-color)
+}
+
+.btn-secondary.disabled,.btn-secondary:disabled
+{
+	background-color:var(--disabled-color);
+	border-color:var(--blue-accent);
+	color:var(--font-color)
+}
+
+.btn-secondary:focus,.btn-secondary.focus
+{
+	background-color:var(--lighter-gray);
+	border-color:var(--blue-accent);
+	box-shadow:0 0 .3rem .3rem var(--blue-accent);
+	color:var(--font-color)
+}
+
+.btn-secondary:hover
+{
+	background-color:var(--lighter-gray);
+	border-color:var(--blue-accent);
+	color:var(--font-color)
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,.btn-secondary:not(:disabled):not(.disabled).active,.show>.btn-secondary.dropdown-toggle
+{
+	background-color:var(--lighter-gray);
+	border-color:var(--blue-accent);
+	color:var(--font-color)
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus,.btn-secondary:not(:disabled):not(.disabled).active:focus,.show>.btn-secondary.dropdown-toggle:focus
+{
+	box-shadow:var(--blue-accent)
+}
+
+.btn-toolbar
+{
+	justify-content:flex-start;
+	padding-top:.5rem
+}
+
+.btn:focus,.btn.focus
+{
+	box-shadow:var(--blue-accent)!important
+}
+
+.dropdown-item.disabled,.dropdown-item:disabled
+{
+	color:#adb5bd
+}
+
+.dropdown-menu.show
+{
+	display:block;
+	padding:1rem
+}
+
+.form-control::placeholder
+{
+	color:var(--font-color)
+}
+
+.form-control:focus
+{
+	box-shadow:var(--blue-accent)
+}
+
+.nav-menu-toggle
+{
+	border:1px solid var(--blue-accent)!important
+}
+
+.query-text-field:active,.query-text-field:focus
+{
+	box-shadow:0 0 .3rem .3rem var(--blue-accent)!important
+}
+
+.scene-card a,.gallery-card a
+{
+	color:var(--font-color)
+}
+
+body
+{
+	background-color:var(--background-color);
+	color:var(--font-color);
+	text-align:left
+}
+
+div.navbar-buttons>:not(.mr-2)
+{
+	border:1px solid var(--blue-accent)!important;
+	border-radius:var(--not-card-radius)
+}
+
+h5,.h5
+{
+	font-size:1.1rem
+}
+
+hr
+{
+	border-top:1px solid var(--blue-accent)
+}
+
+@media (min-width:576px) {
+	.gallery-card
+	{
+		width:unset!important
+	}
+
+	.performer-card
+	{
+		width:unset!important
+	}
+
+	.tag-card-image
+	{
+		height:180px
+	}
+}
+
+@media (max-width:576px) {
+	.gallery-card
+	{
+		width:unset!important
+	}
+
+	.performer-card
+	{
+		width:unset!important
+	}
+
+	.tag-card-image
+	{
+		height:120px
+	}
+}
+
+#scrubber-current-position
+{
+	background-color:var(--blue-accent);
+	height:30px;
+	left:50%;
+	position:absolute;
+	width:2px;
+	z-index:1
+}
+
+#scrubber-position-indicator
+{
+	background-color:var(--lighter-gray);
+	border-right:2px solid var(--blue-accent);
+	height:20px;
+	left:-100%;
+	position:absolute;
+	width:100%;
+	z-index:0
+}
+
+.badge-info
+{
+	background-color:var(--menu-gray);
+	border:1px solid var(--blue-accent);
+	color:var(--font-color)
+}
+
+.badge-secondary
+{
+	background-color:var(--lighter-gray);
+	border:1px solid var(--blue-accent);
+	border-radius:.25rem;
+	color:var(--font-color)
+}
+
+.bg-dark
+{
+	background-color:var(--menu-gray)!important
+}
+
+.bg-secondary
+{
+	background-color:var(--menu-gray)!important
+}
+
+.border-secondary
+{
+	border-color:var(--blue-accent)!important
+}
+
+.brand-link
+{
+	border:1px solid var(--blue-accent)!important
+}
+
+.card
+{
+	background-color:var(--menu-gray);
+	border-radius:var(--card-radius)!important;
+	box-shadow:var(--blue-accent)
+}
+
+.card
+{
+	border:1px solid var(--blue-accent)
+}
+
+.filter-button .badge
+{
+	border-radius:999px;
+	right:-7px;
+	top:-6px;
+	z-index:3!important
+}
+
+.gallery-card
+{
+	height:min-content!important
+}
+
+.gallery-card.card
+{
+	padding-bottom:0
+}
+
+.modal-footer
+{
+	border-radius:1rem;
+	border-top:1px solid var(--blue-accent);
+	border-top-left-radius:0;
+	border-top-right-radius:0
+}
+
+.modal-header
+{
+	border-bottom:1px solid var(--blue-accent);
+	border-bottom-left-radius:0!important;
+	border-bottom-right-radius:0!important;
+	border-radius:1rem
+}
+
+.modal-header,.modal-body,.modal-footer
+{
+	background-color:var(--menu-gray);
+	color:var(--font-color)
+}
+
+.nav-pills .nav-link.active,.nav-pills .show>.nav-link
+{
+	background-color:var(--menu-gray);
+	border:1px solid var(--blue-accent);
+	color:var(--font-color)
+}
+
+.nav-tabs .nav-link.active,.nav-tabs .nav-item.show .nav-link
+{
+	background-color:var(--menu-gray);
+	border-color:var(--blue-accent);
+	color:var(--font-color)
+}
+
+.nav-tabs .nav-link:hover
+{
+	border-bottom:2px solid var(--blue-accent)
+}
+
+.pagination .btn
+{
+	border-left:1px solid var(--blue-accent);
+	border-right:1px solid var(--blue-accent)
+}
+
+.pagination .btn:first-child
+{
+	border-left:1px solid var(--blue-accent)
+}
+
+.pagination .btn:last-child
+{
+	border-right:1px solid var(--blue-accent)
+}
+
+.performer-card .fi
+{
+	bottom:.3rem;
+	filter:drop-shadow(0 0 2px rgba(0,0,0,.9));
+	height:2rem;
+	position:absolute;
+	right:.2rem;
+	width:3rem
+}
+
+.popover
+{
+	background-color:var(--menu-gray);
+	border:1px solid var(--blue-accent)!important;
+	border-radius:var(--card-radius)
+}
+
+.popover-header
+{
+	background-color:var(--lighter-gray);
+	border-bottom:1px solid var(--blue-accent)
+}
+
+.query-text-field
+{
+	border:1px solid var(--blue-accent)!important
+}
+
+.scene-header>h3>.TruncatedText
+{
+	text-align:left
+}
+
+.scene-specs-overlay,.scene-interactive-speed-overlay,.scene-studio-overlay,span.scene-card__date
+{
+	font-weight:900!important
+}
+
+.scrubber-tags-background
+{
+	background-color:var(--menu-gray);
+	height:20px;
+	left:0;
+	position:absolute;
+	right:0
+}
+
+::selection
+{
+	background-color:var(--lighter-gray)!important;
+	color:var(--font-color)!important
+}
+
+a.minimal,button.minimal
+{
+	color:var(--font-color)
+}
+
+body ::-webkit-scrollbar-thumb
+{
+	background:var(--blue-accent)
+}
+
+body ::-webkit-scrollbar-thumb:hover
+{
+	background:var(--blue-accent)
+}
+
+body ::-webkit-scrollbar-thumb:window-inactive
+{
+	background:var(--blue-accent)
+}
+
+body ::-webkit-scrollbar-track
+{
+	background:var(--menu-gray)
+}
+
+hr
+{
+	margin:0
+}
+
+@media(orientation:portrait) {
+	.performer-card-image
+	{
+		height:25vh
+	}
+}
+
+.card.performer-card
+{
+	padding:0
+}
+
+.fa-mars
+{
+	display:none
+}
+
+.fa-transgender-alt
+{
+	display:none
+}
+
+.fa-venus
+{
+	display:none
+}
+
+.performer-card__age
+{
+	color:var(--font-color);
+	text-align:center
+}
+
+.slick-list .gallery-card
+{
+	width:min-content
+}
+
+.slick-slide .card
+{
+	height:min-content
+}
+
+.slick-track
+{
+	margin-bottom:1rem;
+	top:0
+}
+
+.tag-sub-tags,.studio-child-studios
+{
+	display:none
+}
+
+@media (max-width: 576px) {
+	.slick-list .scene-card,.slick-list .studio-card
+	{
+		width:44vw!important
+	}
+}
+
+.card-popovers
+{
+	justify-content:space-around;
+	margin-bottom:2px;
+	margin-top:2px
+}
+
+.card-section
+{
+	height:100%;
+	padding:0 .2rem
+}
+
+.scene-specs-overlay
+{
+	bottom:.2rem;
+	right:.2rem
+}
+
+.scene-studio-overlay
+{
+	line-height:.8rem;
+	max-width:50%;
+	right:.2rem;
+	top:.2rem
+}
+
+@media (min-width: 1200px),(max-width: 575px) {
+	.scene-performers .performer-card
+	{
+		width:47vw
+	}
+
+	.scene-performers .performer-card-image
+	{
+		height:22.5rem
+	}
+}
+
+#queue-viewer .current
+{
+	background-color:var(--menu-gray)
+}
+
+#scene-edit-details .edit-buttons-container
+{
+	background-color:var(--background-color)
+}
+
+.edit-buttons>button
+{
+	margin-left:1px
+}
+
+.scene-card__details,.gallery-card__details
+{
+	margin-bottom:0!important
+}
+
+.setting-section .setting>div:last-child
+{
+	display:flex;
+	justify-content:center;
+	text-align:right
+}
+
+span.scene-card__date
+{
+	display:flex;
+	font-size:.8em;
+	justify-content:flex-end;
+	margin-right:.2rem
+}
+
+@media (min-width: 576px) and (min-height: 600px) {
+	#tasks-panel .tasks-panel-queue
+	{
+		background-color:var(--background-color)
+	}
+}
+
+.gender-icon
+{
+	display:none
+}
+
+.job-table.card
+{
+	background-color:var(--menu-gray)
+}
+
+.scraper-table tr:nth-child(2n)
+{
+	background-color:var(--lighter-gray)
+}
+
+a.marker-count
+{
+	display:none
+}
+
+a[target='_blank']
+{
+	display:none
+}
+
+button.collapse-button.btn-primary:not(:disabled):not(.disabled):hover,button.collapse-button.btn-primary:not(:disabled):not(.disabled):focus,button.collapse-button.btn-primary:not(:disabled):not(.disabled):active
+{
+	color:var(--font-color)
+}
+
+@media(max-width: 576px) {
+	.grid-card
+	{
+		width:47vw
+	}
+}
+
+.TruncatedText
+{
+	text-align:center;
+	white-space:pre-line;
+	word-break:break-word
+}
+
+.gallery-card
+{
+	width:min-content!important
+}
+
+.gallery-card-image
+{
+	max-height:240px!important;
+	width:auto!important
+}
+
+.grid-card .progress-bar
+{
+	background-color:var(--lighter-gray);
+	bottom:0
+}
+
+.grid-card a .card-section-title
+{
+	color:var(--font-color);
+	display:flex;
+	justify-content:center
+}
+
+.ml-2.mb-2.d-none.d-sm-inline-flex
+{
+	display:none!important
+}
+
+.tag-card
+{
+	padding:0;
+	width:auto!important
+}
+
+body
+{
+	color:var(--font-color);
+	padding:3.6rem 0 0
+}
+
+div.mb-2
+{
+	height:auto
+}
+
+@media (max-width: 575.98px) and (orientation: portrait) {
+	body
+	{
+		padding:0
+	}
+}
+
+@media (min-width: 768px) {
+	.offset-md-3
+	{
+		border-left:1px solid var(--blue-accent)
+	}
+}
+
+.card
+{
+	background-color:var(--menu-gray);
+	padding:0
+}
+
+.container,.container-fluid,.container-xl,.container-lg,.container-md,.container-sm
+{
+	padding-left:0;
+	padding-right:0
+}
+
+.d-flex.justify-content-center.mb-2.wrap-tags.filter-tags
+{
+	margin:0!important
+}
+
+.input-control,.input-control:focus,.input-control:disabled
+{
+	background-color:var(--lighter-gray)
+}
+
+.input-control,.text-input
+{
+	border:1px solid var(--blue-accent);
+	color:var(--font-color)
+}
+
+.navbar-buttons>.mr-2,.card hr
+{
+	margin:0!important
+}
+
+.preview-button .fa-icon
+{
+	color:var(--font-color)
+}
+
+.rating-banner
+{
+	display:none!important
+}
+
+.scene-card-preview,.gallery-card-image,.tag-card-image,.image-card-preview
+{
+	width:100%
+}
+
+.slick-dots li button:before
+{
+	content:"."
+}
+
+.slick-dots li.slick-active button:before
+{
+	color:var(--blue-accent);
+	opacity:.75
+}
+
+.tag-item
+{
+	background-color:var(--lighter-gray);
+	border:1px solid var(--blue-accent);
+	color:var(--font-color)
+}
+
+.tag-item .btn
+{
+	color:var(--font-color)
+}
+
+.text-input,.text-input:focus,.text-input[readonly],.text-input:disabled
+{
+	background-color:var(--lighter-gray)
+}
+
+.top-nav
+{
+	border-bottom:1px solid var(--blue-accent);
+	padding:0 2rem!important
+}
+
+a.nav-utility,button[title='Help'],.nav-menu-toggle
+{
+	margin-left:.5rem
+}
+
+button.brand-link,.top-nav .navbar-buttons .btn
+{
+	height:40px
+}
+
+div.react-select__control
+{
+	background-color:var(--lighter-gray);
+	border-color:var(--blue-accent)!important;
+	color:var(--font-color)
+}
+
+div.react-select__control .react-select__multi-value,div.react-select__multi-value__label,div.react-select__multi-value__remove
+{
+	background-color:var(--menu-gray);
+	color:var(--font-color)!important
+}
+
+div.react-select__menu,div.dropdown-menu
+{
+	background-color:var(--menu-gray);
+	border:1px solid var(--blue-accent);
+	color:var(--font-color)
+}
+
+div.react-select__multi-value
+{
+	border:1px solid var(--blue-accent);
+	border-radius:999px
+}
+
+div.react-select__multi-value__label
+{
+	border-bottom-left-radius:999px;
+	border-top-left-radius:999px;
+	padding-right:8px
+}
+
+div.react-select__multi-value__remove
+{
+	border-bottom-right-radius:999px;
+	border-top-right-radius:999px;
+	padding-left:0
+}
+
+div.react-select__multi-value__remove:hover
+{
+	background-color:var(--red-delete)
+}
+
+div.react-select__placeholder
+{
+	color:var(--font-color)
+}
+
+div[id='settings-menu-container']
+{
+	padding-top:.5rem
+}
+
+div[role='group'].ml-auto.btn-group>div
+{
+	margin-right:.5rem;
+	margin-top:.5rem
+}
+
+@media (max-width: 575.98px) and (orientation: portrait) {
+	.container,.container-fluid,.container-xl,.container-lg,.container-nd,.container-sm
+	{
+		padding-top:3.5rem!important
+	}
+
+	.top-nav
+	{
+		bottom:unset;
+		top:auto
+	}
+}
+
+.grid-card a .card-section-title
+{
+	display:flex;
+	justify-content:center
+}
+
+.markdown blockquote,.markdown pre
+{
+	background-color:var(--lighter-gray)
+}
+
+.markdown code
+{
+	background-color:transparent;
+	color:var(--font-color)
+}
+
+.markdown table tr:nth-child(2n)
+{
+	background-color:var(--lighter-gray)
+}
+
+.details-list>*:nth-child(4n), .details-list>*:nth-child(4n - 1) {
+    background-color: var(--menu-gray);
+}
+dl.details-list {
+    grid-column-gap:0;
+}
+dt {
+    padding-right: .5rem;
+}
+dd {
+    margin-bottom: 0;
+    padding-left: .5rem;
+    border-left: 1px solid var(--blue-accent);
+}
+#performer-page .performer-image-container .performer {
+    border-radius:var(--menu-rounding);
+    border: 0!important;
+}
+.recommendations-container-edit .recommendation-row {
+    background-color: var(--menu-gray);
+    border-radius: 1rem;
+    border:1px solid var(--blue-accent);
+    margin-bottom: 10px;
+}
+.recommendations-container-edit.recommendations-container>div>div:first-of-type {
+    margin-top: calc(1rem + 10px);
+}
+
 ```
