@@ -1,10 +1,9 @@
 ---
 layout: clean
-title: Default Stash Mobile Overhaul
+title: Mobile Layout Overhaul
 nav_order: 8
 parent: Themes
 grand_parent: User Interface (UI)
-
 ---
 
 <details markdown="block">
@@ -22,7 +21,7 @@ Took some of the mobile ui overhauls I made for my other theme (Neon Dark) and r
 
 ## Screenshots
 
-![Stash Scenes](https://github.com/Dankonite/Stash-Docs/assets/117317087/f7fd3eec-46b8-439b-83a8-255259730645)
+![Stash Scenes](/assets/user-interface-ui/themes/mobile-layout-overhaul-1.png)
 
 ## Install
 
@@ -35,7 +34,7 @@ Enjoy!
 ## CSS Code
 
 ```css
-/* Neon Dark Theme by Dankonite */
+/* Mobile Layout Overhaul by Dankonite */
 :root
 {
 	--card-radius:.75rem;
