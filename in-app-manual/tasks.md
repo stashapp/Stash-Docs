@@ -37,7 +37,8 @@ The scan task accepts the following options:
 | Generate animated image previews | Generates animated webp previews. Only required if the Preview Type is set to Animated Image. Requires Generate previews to be enabled. |
 | Generate scrubber sprites | Generates sprites for the scene scrubber. |
 | Generate perceptual hashes | Generates perceptual hashes for scene deduplication and identification. |
-| Generate thumbnails for images | Generates thumbnails for image files. | 
+| Generate thumbnails for images | Generates thumbnails for image files. |
+| Generate previews for image clips | Generates a gif/looping video as thumbnail for image clips/gifs. |
 
 # Auto Tagging
 
@@ -57,6 +58,7 @@ The generated content provides the following:
 * Marker video previews that are shown in the markers page
 * Transcoded versions of scenes. See below
 * Image thumbnails of galleries
+* Image clip previews
 
 The generate task accepts the following options:
 
@@ -72,6 +74,7 @@ The generate task accepts the following options:
 | Transcodes | MP4 conversions of unsupported video formats. Allows direct streaming instead of live transcoding. |
 | Perceptual hashes (for deduplication) | Generates perceptual hashes for scene deduplication and identification. |
 | Generate heatmaps and speeds for interactive scenes | Generates heatmaps and speeds for interactive scenes. |
+| Image Clip Previews | Generates a gif/looping video as thumbnail for image clips/gifs. |
 | Overwrite existing generated files | By default, where a generated file exists, it is not regenerated. When this flag is enabled, then the generated files are regenerated. |
 
 ## Transcodes
