@@ -64,3 +64,12 @@ These utilities are created by third parties and not officially affiliated or su
 |Description|Connects to your Stash instance and creates simple compilation videos from scene markers. You select one or more tags, or one or more performers and it will take (currently) the first 15 seconds of video after the marker start and compile all of the markers into one video.|
 |Author|[soundchaser128](https://github.com/soundchaser128){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## ClipMash
+
+|-|-|
+|Category|Compilations|
+|Utility|[clip-mash](https://github.com/soundchaser128/clip-mash){:target="_blank"}|
+|Description|Video editing app that allows you to automate creating compilations from multiple videos. It runs in your browser. It's mostly made for, ahem, adult content, which is why it can connect to Stash and fetch videos and scene markers from there to guide the video creation process. You can also use local files and set the markers in ClipMash itself and then generate a compilation based on that.|
+|Author|[soundchaser128](https://github.com/soundchaser128){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
