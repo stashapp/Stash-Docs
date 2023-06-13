@@ -92,3 +92,12 @@ These scripts are created by third parties and not officially affiliated or supp
 |Description|Add blurry background to scene/movie/gallery/image/studio.|
 |Author|[philpw99](https://github.com/philpw99){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/blurryCardBackground.jpg)|
+
+## plex-to-stash-ratings
+
+|-|-|
+|Category|Metadata|
+|Script|[plex-to-stash-ratings](https://github.com/oikmeg/plex-to-stash-ratings){:target="_blank"}|
+|Description|Transfers scene ratings and view counts from Plex to Stash.|
+|Author|[oikmeg](https://github.com/oikmeg){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
