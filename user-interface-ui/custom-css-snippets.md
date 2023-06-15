@@ -430,7 +430,7 @@ form#performer-edit {
     display: flex;
     flex-direction: column;
 }
-#performer-edit > .row:nth-child(21) {
+#performer-edit > .row:nth-child(24) {
     order: -1;
 }
 #performer-edit > .row:first-child {
