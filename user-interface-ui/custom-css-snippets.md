@@ -1063,7 +1063,7 @@ img.performer:hover,
 |-|-|
 |Description|Hide 0 count badges.|
 |Author|echo6ix|
-|Screenshots|![](assets/fixed_table_width.png)![](assets/hide_0_count_badges.png)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)![](/assets/user-interface-ui/hide_0_count_badges.png)|
 
 ```css
 /* [Global changes] Hide 0 count badges */
