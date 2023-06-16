@@ -439,7 +439,6 @@ form#performer-edit {
 ```
 
 # Studios
-
 ## Different studio cards layout
 
 |-|-|
@@ -475,6 +474,27 @@ form#performer-edit {
  
 .studio-card.grid-card.card div.card-section:hover {
     height: 7em;
+}
+```
+
+## More studio per row
+
+|-|-|
+|Description|Display more studio per row|
+|Author|hijack_hornet|
+|Screenshots|![](/assets/user-interface-ui/more_studio_item_before.png)![](/assets/user-interface-ui/more_studio_item_after.png)|
+
+```css
+/* [Studios tab] Show more item per row */
+:not(.recommendation-row .studio-card).studio-card {
+    width: 15%
+}
+:not(.recommendation-row .studio-card-image).studio-card-image {
+    width: 100%
+}
+.studio-card h5 {
+    text-align: center !important;
+    display: block;
 }
 ```
 
