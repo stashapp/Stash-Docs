@@ -900,6 +900,7 @@ div.nav-link[data-rb-event-key="/scenes"] {
 .image-thumbnail,
 .gallery-card-image,
 .performer-card-image,
+.tag-card-image,
 img.performer,
 .movie-card-image,
 .gallery .flexbin img,
@@ -913,7 +914,7 @@ img.performer,
 #scene-tabs-tabpane-scene-file-info-panel span.col-8.text-truncate > a,
 .gallery .flexbin img,
 .movie-details .logo {
- filter: blur(8px);
+ filter: blur(12px);
 }
 
 .scene-card-video {
