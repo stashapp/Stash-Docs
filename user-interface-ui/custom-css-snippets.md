@@ -439,6 +439,7 @@ form#performer-edit {
 ```
 
 # Studios
+
 ## Different studio cards layout
 
 |-|-|
@@ -481,8 +482,8 @@ form#performer-edit {
 
 |-|-|
 |Description|Display more studio per row|
-|Author|hijack_hornet|
-|Screenshots|![](/assets/user-interface-ui/more_studio_item_before.jpg)![](/assets/user-interface-ui/more_studio_item_after.jpg)|
+|Author|[hijack_hornet](https://github.com/HijackHornet)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)![](/assets/user-interface-ui/more_studio_item_before.jpg)![](/assets/user-interface-ui/more_studio_item_after.jpg)|
 
 ```css
 /* [Studios tab] Show more item per row */
@@ -566,8 +567,8 @@ form#performer-edit {
 
 |-|-|
 |Description|Changes the tags layout to show more images, and details on hover|
-|Author|hijack_hornet|
-|Screenshots|![](/assets/user-interface-ui/more_tag_before.jpg)![](/assets/user-interface-ui/more_tag_after_1.jpg)![](/assets/user-interface-ui/more_tag_after_2.jpg)|
+|Author|[hijack_hornet](https://github.com/HijackHornet)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)![](/assets/user-interface-ui/more_tag_before.jpg)![](/assets/user-interface-ui/more_tag_after_1.jpg)![](/assets/user-interface-ui/more_tag_after_2.jpg)|
 
 ```css
 /*Tag layout changes*/
@@ -683,8 +684,8 @@ h6,
 
 |-|-|
 |Description|This snipset includes the above tag layout snipset with a twist. Its meant to be used for people who use subtags as a hierachy. For example Watermelon is a subtag of Fruits, so when i click Fruits i want to see both oranges and watermelons, but i might want to get into the list of fruits subtags more easily. That what this snipset is used for. Any tag that has a subtag will show a (...) icon. When clicking its name you will show all subtags of this tag. if you click its image, it will instead open the tag itself normaly. You can change '137cbd' in the icon url to any color you want to match you theme|
-|Author|hijack_hornet|
-|Screenshots|![](/assets/user-interface-ui/more_tag_before.jpg)![](/assets/user-interface-ui/more_tag_after_1.jpg)![](/assets/user-interface-ui/more_tag_after_2.jpg)|
+|Author|[hijack_hornet](https://github.com/HijackHornet)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)![](/assets/user-interface-ui/more_tag_before.jpg)![](/assets/user-interface-ui/more_tag_after_1.jpg)![](/assets/user-interface-ui/more_tag_after_2.jpg)|
 
 ```css
 /*Tag layout changes*/
