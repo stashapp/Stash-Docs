@@ -67,6 +67,8 @@ _Example using curl_
 
 `curl -X POST -H "Content-Type: application/json" --data '{ "query": "mutation {backupDatabase(input: {download: false})}" }' localhost:9999/graphql`
 
+If `download:` is `true` the created backup is returned and not stored locally.
+
 # Generate content
 
 Request: `HTTP-POST`
