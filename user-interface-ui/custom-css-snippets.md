@@ -482,7 +482,7 @@ form#performer-edit {
 |-|-|
 |Description|Display more studio per row|
 |Author|hijack_hornet|
-|Screenshots|![](/assets/user-interface-ui/more_studio_item_before.png)![](/assets/user-interface-ui/more_studio_item_after.png)|
+|Screenshots|![](/assets/user-interface-ui/more_studio_item_before.jpg)![](/assets/user-interface-ui/more_studio_item_after.jpg)|
 
 ```css
 /* [Studios tab] Show more item per row */
