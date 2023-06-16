@@ -818,7 +818,7 @@ h6,
 .tag-sub-tags::before {
 	content: "";
 	display: block;
-	background: url("https://img.icons8.com/material-outlined/24/e5a00d/connection-status-off.png")
+	background: url("https://img.icons8.com/material-outlined/24/137cbd/connection-status-off.png")
 		no-repeat;
 	background-size: 1.5rem 1.5rem;
 	width: 1.5rem;
