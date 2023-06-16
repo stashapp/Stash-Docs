@@ -562,7 +562,286 @@ form#performer-edit {
     stroke-width: 15;
 }
 ```
+## Alternative tag layout
 
+|-|-|
+|Description|Changes the tags layout to show more images, and details on hover|
+|Author|hijack_hornet|
+|Screenshots|![](/assets/user-interface-ui/more_tag_before.jpg)![](/assets/user-interface-ui/more_tag_after_1.jpg)![](/assets/user-interface-ui/more_tag_after_2.jpg)|
+
+```css
+/*Tag layout changes*/
+.tag-card {
+	width: 16rem;
+	padding: 0;
+}
+
+.tag-card .card-section {
+	height: 2.5rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #0000007a;
+	line-height: none;
+}
+.tag-card .card-section .TruncatedText {
+	-webkit-line-clamp: 1 !important;
+}
+.tag-card h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	line-height: normal;
+}
+.tag-card hr,
+.tag-description {
+	display: none;
+}
+.tag-card .btn-group {
+	position: absolute;
+	width: 100%;
+	bottom: 2.5rem;
+	margin-bottom: 0;
+	opacity: 0;
+	transition: ease 0.2s;
+}
+.tag-card .btn-group:hover {
+	opacity: 1;
+	transition: ease 0.2s;
+	background: #0000007a;
+}
+
+.tag-card-image {
+	object-fit: cover;
+	object-position: center;
+}
+
+.zoom-0 .tag-card-image {
+	max-height: none;
+	height: 16rem;
+	width: 12rem;
+}
+
+.zoom-1 .tag-card-image {
+	max-height: none;
+	height: 20rem;
+	width: 15rem;
+}
+
+.zoom-2 .tag-card-image {
+	max-height: none;
+	height: 24rem;
+	width: 18rem;
+}
+
+.zoom-3 .tag-card-image {
+	max-height: none;
+	height: 28rem;
+	width: 21rem;
+}
+
+.zoom-0.tag-card,
+.zoom-1.tag-card,
+.zoom-2.tag-card,
+.zoom-3.tag-card {
+	width: initial;
+}
+
+.tag-card .card-section > a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 7px 14px 0px 14px;
+}
+.tag-card .card-section .tag-sub-tags {
+	position: relative;
+	margin-top: 2rem;
+	z-index: 1;
+}
+.tag-sub-tags {
+	font-size: 0;
+}
+.tag-parent-tags {
+	display: none;
+}
+```
+## Subtag explorer
+
+|-|-|
+|Description|This snipset includes the above tag layout snipset with a twist. Its meant to be used for people who use subtags as a hierachy. For example Watermelon is a subtag of Fruits, so when i click Fruits i want to see both oranges and watermelons, but i might want to get into the list of fruits subtags more easily. That what this snipset is used for. Any tag that has a subtag will show a (...) icon. When clicking its name you will show all subtags of this tag. if you click its image, it will instead open the tag itself normaly. You can change '137cbd' in the icon url to any color you want to match you theme|
+|Author|hijack_hornet|
+|Screenshots|![](/assets/user-interface-ui/more_tag_before.jpg)![](/assets/user-interface-ui/more_tag_after_1.jpg)![](/assets/user-interface-ui/more_tag_after_2.jpg)|
+
+```css
+/*Tag layout changes*/
+.tag-card {
+	width: 16rem;
+	padding: 0;
+}
+
+.tag-card .card-section {
+	height: 2.5rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #0000007a;
+	line-height: none;
+}
+.tag-card .card-section .TruncatedText {
+	-webkit-line-clamp: 1 !important;
+}
+.tag-card h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	line-height: normal;
+}
+.tag-card hr,
+.tag-description {
+	display: none;
+}
+.tag-card .btn-group {
+	position: absolute;
+	width: 100%;
+	bottom: 2.5rem;
+	margin-bottom: 0;
+	opacity: 0;
+	transition: ease 0.2s;
+}
+.tag-card .btn-group:hover {
+	opacity: 1;
+	transition: ease 0.2s;
+	background: #0000007a;
+}
+
+.tag-card-image {
+	object-fit: cover;
+	object-position: center;
+}
+
+.zoom-0 .tag-card-image {
+	max-height: none;
+	height: 16rem;
+	width: 12rem;
+}
+
+.zoom-1 .tag-card-image {
+	max-height: none;
+	height: 20rem;
+	width: 15rem;
+}
+
+.zoom-2 .tag-card-image {
+	max-height: none;
+	height: 24rem;
+	width: 18rem;
+}
+
+.zoom-3 .tag-card-image {
+	max-height: none;
+	height: 28rem;
+	width: 21rem;
+}
+
+.zoom-0.tag-card,
+.zoom-1.tag-card,
+.zoom-2.tag-card,
+.zoom-3.tag-card {
+	width: initial;
+}
+
+.tag-card .card-section > a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 7px 14px 0px 14px;
+}
+.tag-card .card-section .tag-sub-tags {
+	position: relative;
+	margin-top: 2rem;
+	z-index: 1;
+}
+.tag-sub-tags {
+	font-size: 0;
+}
+.tag-parent-tags {
+	display: none;
+}
+/*Tag subtag exploration snipset*/
+.tag-card .card-section > a {
+	cursor: default;
+	pointer-events: none;
+}
+.tag-card .card-section > hr {
+	margin-top: 2rem;
+}
+.tag-card .card-section .tag-sub-tags {
+	position: absolute !important;
+	margin-top: 0 !important;
+	width: 100%;
+	height: 100%;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 0;
+}
+.tag-sub-tags::before {
+	content: "";
+	display: block;
+	background: url("https://img.icons8.com/material-outlined/24/e5a00d/connection-status-off.png")
+		no-repeat;
+	background-size: 1.5rem 1.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	float: right;
+	margin: 0.5rem 0.5rem 0 0;
+}
+.tag-sub-tags > a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.tag-card .btn-group a {
+	z-index: 10;
+}
+.tag-sub-tags {
+	font-size: 0;
+}
+.tag-parent-tags {
+	display: none;
+}
+```
 # Global
 
 ## Change the order of navigation bar buttons
