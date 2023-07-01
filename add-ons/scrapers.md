@@ -2,7 +2,7 @@
 layout: clean
 title: Scrapers
 nav_order: 1
-has_children: false
+has_children: true
 parent: Add-ons
 
 ---
@@ -20,6 +20,10 @@ Scrapers are the way to retrieve information from websites for your movies/scene
 
 {: .important }
 > Scrapers are in **.yml** format. Some of them requires Python or Ruby if you use those, you need to install Python/Ruby on your machine, and don't forget to get the corresponding **.py** or **.rb** file as well.
+
+# Scrapers List
+
+Full list of scrapers from CommunityScrapers repository can be found [here](/add-ons/scrapers/list). 
 
 # Installation
 

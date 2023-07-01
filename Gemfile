@@ -5,4 +5,5 @@ gem "just-the-docs"
 
 group :jekyll_plugins do
     gem "jekyll-remote-theme", "~> 0.4.2"
+    gem 'jemoji'
   end
