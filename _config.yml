@@ -1,6 +1,8 @@
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
+  - jemoji
+  - jekyll-remote-include
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "CONTRIBUTING.md", "README.md",]
 
 title: Stash-Docs
