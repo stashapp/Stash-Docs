@@ -15,4 +15,4 @@ grand_parent: Add-ons
 {:toc}
 </details>
 
-{% remote_markdown https://raw.githubusercontent.com/stashapp/CommunityScrapers/master/SCRAPERS-LIST.md %}
+{% remote_include https://raw.githubusercontent.com/stashapp/CommunityScrapers/master/SCRAPERS-LIST.md %}

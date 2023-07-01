@@ -38,6 +38,7 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
+    jekyll-remote-include (1.0.2)
     jekyll-remote-theme (0.4.3)
       addressable (~> 2.0)
       jekyll (>= 3.5, < 5.0)
@@ -94,6 +95,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  jekyll-remote-include (~> 1.0, >= 1.0.2)
   jekyll-remote-theme (~> 0.4.2)
   jemoji
   just-the-docs
