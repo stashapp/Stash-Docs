@@ -33,7 +33,7 @@ The following is our recommended procedure for new Stash users who want to get i
 
 # Join StashDB
 
-If you haven't set up StashDB in your Stash settings yet, now's the time to do it. Get an invite code in the **#stashdb-invites** channel on [Discord](https://discord.com/channels/559159668438728723){:target="_blank"}. Check the pinned messages (📌 icon in top right) there for details and up-to-date instructions on how to create an account and connect to it from Stash.
+If you haven't set up StashDB in your Stash settings yet, now's the time to do it. Get an invite code in the **#stashdb-invites** channel on [Discord](https://discord.gg/gHwFj8neaa){:target="_blank"}. Check the pinned messages (📌 icon in top right) there for details and up-to-date instructions on how to create an account and connect to it from Stash.
 
 ## How to connect your account to Stash
 
