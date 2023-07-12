@@ -88,6 +88,7 @@ parent: In-app Manual
 | `{1-9}` | Seek to 10-90% duration |
 | `[` | Scrub backwards 10% duration |
 | `]` | Scrub forwards 10% duration |
+| `l` | A/B looping toggle. Press once to set start point. Press again to set end point. Press again to disable loop. |
 
 ## Scene Markers tab shortcuts
 
