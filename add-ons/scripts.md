@@ -91,7 +91,7 @@ These scripts are created by third parties and not officially affiliated or supp
 |Script|[blurryCardBackground](https://github.com/philpw99/StashCustomJavascripts){:target="_blank"}|
 |Description|Add blurry background to scene/movie/gallery/image/studio.|
 |Author|[philpw99](https://github.com/philpw99){:target="_blank"}|
-|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/blurryCardBackground.jpg)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/blurryCardBackground.png)
 
 ## plex-to-stash-ratings
 
