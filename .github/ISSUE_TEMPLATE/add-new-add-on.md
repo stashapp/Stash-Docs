@@ -2,8 +2,7 @@
 name: Add new add-on
 about: Template for new add-ons
 title: ""
-labels: add-ons
-assignees: ''
+labels: ["add-ons"]
 body:
   - type: markdown
     attributes:
