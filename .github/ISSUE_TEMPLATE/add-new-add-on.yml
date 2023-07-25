@@ -1,7 +1,6 @@
 ---
 name: Add new add-on
-about: Template for new add-ons
-title: ""
+description: Template for new add-ons
 labels: ["add-ons"]
 body:
   - type: markdown
