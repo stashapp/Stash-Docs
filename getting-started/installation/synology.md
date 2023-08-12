@@ -36,6 +36,7 @@ Now, follow the installation instructions based on whether you [can use Docker](
 | docker/Stash/metadata  | /metadata  | Database  |
 | docker/Stash/config  | /root/.stash  | Configuration Files  |
 | docker/Stash/cache  | /cache  | Cache Files  |
+| docker/Stash/blobs  | /blobs  | Binary data for scene covers, performer images, etc  |
 | (where your porn lives)  | /data  | Location of your porn  |
 
 ## "Environment" Tab

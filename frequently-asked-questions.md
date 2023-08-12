@@ -67,7 +67,7 @@ Stash uses 2 different methods to track your scenes: oshash and filename/path.  
 
 ## How do I add galleries?
 
-For gallery-related issues check the relevant Documentation [section](/in-app-manual/galleries).
+For gallery-related issues check the relevant Documentation [section](/in-app-manual/images).
 
 ## How to add performers in bulk?
 
@@ -111,8 +111,19 @@ The `ffmpeg` and `ffprobe` files should be placed in `~/.stash` on macOS / Linux
 
 Third-party Docker images are more likely to be misconfigured and makes it harder to get support from the core Stash team. For best experience you should stay with official Stash Docker image. [Stash repository](https://github.com/stashapp/stash/tree/master/docker/production){:target="_blank"} and [DockerHub](https://hub.docker.com/r/stashapp/stash){:target="_blank"}. 
 
-# Other FAQs
+## I'm getting "Migration failed"
 
-## I have a question not answered here.
+It can mean that you database got corrupted. You can verify that by running a few SQL statements. The easiest way to do so is to install a simple program called [DB Browser for SQLite](https://sqlitebrowser.org){:target="_blank"}. Start the program and in the menu select `File` > `Open Database...` and select your Stash .sqlite database file. Then navigate to the `Execute SQL` tab and run:
+- `PRAGMA integrity_check;` - it should return `ok`.
+- `PRAGMA foreign_key_check;` - it should return nothing.
 
-Join the Stash [Discord server](https://discord.gg/2TsNFKt){:target="_blank"}.
+If you get something different it means there is an issue with your database. It's still possible that it can be recovered. You can ask for more help in one of the [support channels](#support).  
+Another option would be to try using an older backup if you have one. 
+
+# Support
+
+## I have a question not answered here
+
+- Join our [Matrix space](https://matrix.to/#/#stashapp:unredacted.org){:target="_blank"}
+- Join our [Discord server](https://discord.gg/2TsNFKt){:target="_blank"}
+- Start a [discussion on GitHub](https://github.com/stashapp/stash/discussions){:target="_blank"}

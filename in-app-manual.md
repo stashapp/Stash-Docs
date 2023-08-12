@@ -22,7 +22,7 @@ Internal Stash documentation, mirrored from [Stash repository](https://github.co
   - [Scene Filename Parser](/in-app-manual/tasks/scenefilenameparser)
   - [JSON Specification](/in-app-manual/tasks/jsonspec)
 5. [Browsing](/in-app-manual/browsing)
-6. [Image Galleries](/in-app-manual/galleries)
+6. [Images and Galleries](/in-app-manual/images)
 7. [Metadata Scraping](/in-app-manual/scraping)
   - [Scraper Development](/in-app-manual/scraping/scraperdevelopment)
 8. [Plugins](/in-app-manual/plugins)

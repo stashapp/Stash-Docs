@@ -309,9 +309,18 @@ These userscripts are created by third parties and not officially affiliated or 
 |-|-|
 |Category|Stash|
 |Userscript|[Stash Userscript Alphabet Selector](https://github.com/elkorol/Stash-App-Script-Alphabet-Selector){:target="_blank"}|
-|Description|Adds a button to the toolbar for an Alphabet keyboard, on Scenes, Movies, Performers, Studios and Tags page that when clicked adds a visible keyboard, allowing you to select letters or numerical value, that can either limit, aliases, name or both to whichever letter selected or number. .|
+|Description|Adds a button to the toolbar for an Alphabet keyboard, on Scenes, Movies, Performers, Studios and Tags page that when clicked adds a visible keyboard, allowing you to select letters or numerical value, that can either limit, aliases, name or both to whichever letter selected or number.|
 |Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
-|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash-App-Script-Alphabet-Selector-1.png)[](/assets/add-ons/Stash-App-Script-Alphabet-Selector-2.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash-App-Script-Alphabet-Selector-1.png)![](/assets/add-ons/Stash-App-Script-Alphabet-Selector-2.png)|
+
+## Stash Userscript Performer Image Upscaler
+
+|-|-|
+|Category|Stash|
+|Userscript|[Stash Userscript Performer Image Upscaler](https://github.com/elkorol/Stash-Userscript-Upscaler){:target="_blank"}|
+|Description|Adds an upscale button on the performer page, that upon clicking allows you to select an appriate upcaling model then upscale and update the image.|
+|Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash-Userscript-Upscaler-1.png)![](/assets/add-ons/Stash-Userscript-Upscaler-2.png)![](/assets/add-ons/Stash-Userscript-Upscaler-3.png)|
 
 ## StashDB Copy StashID
 

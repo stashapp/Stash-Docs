@@ -53,6 +53,22 @@ You just need to add the key you generated in stash ( for more info about the AP
 curl -X POST -H "ApiKey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJiaWxsIiwiaWF0IjoxNjE3MDkzMDYwLCJzdWIiOiJBUElLZXkifQ.WhUyvmnVeW8wGV5fkVyje3xLfz5A97HFwyZy-4i8Q-I" -H "Content-Type: application/json" --data '{ "query": "mutation { metadataScan (input:{})}" }' localhost:9998/graphql
 ```
 
+# Create Backup
+
+Request: `HTTP-POST`
+
+```json
+{
+  "query": "mutation { backupDatabase(input: {download: false})}"
+}
+```
+
+_Example using curl_
+
+`curl -X POST -H "Content-Type: application/json" --data '{ "query": "mutation {backupDatabase(input: {download: false})}" }' localhost:9999/graphql`
+
+If `download:` is `true` the created backup is returned and not stored locally.
+
 # Generate content
 
 Request: `HTTP-POST`
