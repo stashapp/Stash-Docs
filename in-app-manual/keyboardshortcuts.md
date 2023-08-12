@@ -93,6 +93,7 @@ parent: In-app Manual
 | `↑` | Increase volume 10% |
 | `↓` | Decrease volume 10% |
 | `m` | Toggle mute |
+| `Shift + l` | Toggle player looping |
 
 ## Scene Markers tab shortcuts
 
