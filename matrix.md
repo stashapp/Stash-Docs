@@ -82,7 +82,9 @@ We are using a bridge bot that relays Discord and Matrix messages both ways in s
 ## NSFW explicit rooms
 
 - [#stash-general-nsfw:unredacted.org](https://matrix.to/#/#stash-general-nsfw:unredacted.org){:target="_blank"} (bridged) - Discussions about anything related to NSFW
-- [#stash-favorites-nsfw:unredacted.org](https://matrix.to/#/#stash-favorites-nsfw:unredacted.org){:target="_blank"} (bridged) - Showcase your favorites
+- [#stash-favorites-female-nsfw:unredacted.org](https://matrix.to/#/#stash-favorites-female-nsfw:unredacted.org){:target="_blank"} (bridged) - Showcase your favorite female performers
+- [#stash-favorites-male-nsfw:unredacted.org](https://matrix.to/#/#stash-favorites-male-nsfw:unredacted.org){:target="_blank"} (bridged) - Showcase your favorite male performers
+- [#stash-favorites-everyone-nsfw:unredacted.org](https://matrix.to/#/#stash-favorites-everyone-nsfw:unredacted.org){:target="_blank"} (bridged) - Showcase your favorite performers
 - [#stash-x-ray:unredacted.org](https://matrix.to/#/#stash-x-ray:unredacted.org){:target="_blank"} (bridged) - Scene or performer identification
 - [#stash-performer-facial-recognition:unredacted.org](https://matrix.to/#/#stash-performer-facial-recognition:unredacted.org){:target="_blank"} (bridged) - Facial recognition based tagginer of performers in scenes
 - [#stash-ai-tagging:unredacted.org](https://matrix.to/#/#stash-ai-tagging:unredacted.org){:target="_blank"} (bridged) - AI in metadata tagging
