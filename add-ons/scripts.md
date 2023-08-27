@@ -88,15 +88,10 @@ These scripts are created by third parties and not officially affiliated or supp
 
 |-|-|
 |Category|Tags|
-|Script|[StashTagSkins](https://github.com/soundchaser128/stashapp-tag-importer){:target="_blank"}|
+|Script|[StashTagSkins](https://github.com/Stash-KennyG/StashTagSkins){:target="_blank"}|
 |Description|Bulk imports tags including Aliases from popular libraries - includes multiple themes in the repository including Icons and Images|
-|Author|[Stash-KennyG](https://github.com/soundchaser128](https://github.com/Stash-KennyG){:target="_blank"}|
-|Screenshots|![](https://github.com/Stash-KennyG/StashTagSkins/blob/main/HowToResources/StashTagSkins_Sample.png)
-
-![](https://github.com/Stash-KennyG/StashTagSkins/blob/main/HowToResources/StashTagSkins_Icons.png)
-
-![](https://github.com/Stash-KennyG/StashTagSkins/blob/main/HowToResources/StashTagSkins_Hamster.png)|
-
+|Author|[Stash-KennyG](https://github.com/Stash-KennyG){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/StashTagSkins_Sample.png)![](/assets/add-ons/StashTagSkins_Icons.png)![](/assets/add-ons/StashTagSkins_Hamster.png)|
 
 ## blurryCardBackground
 
