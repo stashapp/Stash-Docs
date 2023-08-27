@@ -84,6 +84,15 @@ These scripts are created by third parties and not officially affiliated or supp
 |Author|[soundchaser128](https://github.com/soundchaser128){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
+## StashTagSkins
+
+|-|-|
+|Category|Tags|
+|Script|[StashTagSkins](https://github.com/Stash-KennyG/StashTagSkins){:target="_blank"}|
+|Description|Bulk imports tags including Aliases from popular libraries - includes multiple themes in the repository including Icons and Images|
+|Author|[Stash-KennyG](https://github.com/Stash-KennyG){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/StashTagSkins_Sample.png)![](/assets/add-ons/StashTagSkins_Icons.png)![](/assets/add-ons/StashTagSkins_Hamster.png)|
+
 ## blurryCardBackground
 
 |-|-|
