@@ -56,7 +56,7 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
 1.  First, click the "Scrape All" button. This will use your pHashes to find matching scenes on StashDB for every scene on the current page. The "Scrape by fragment" buttons will do the same thing but just for one scene at a time. Also, you may want to change your Scene Tagger settings with the ⚙ icon next to "Scrape All." You can tell it to Merge (keep all) tags, Overwrite (keep only new) tags, or ignore StashDB's tags entirely (leave box unchecked). If you plan on [contributing to StashDB](https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/contributing-to-stashdb){:target="_blank"}, you should have "Show male performers" turned on to better follow [these guidelines](https://guidelines.stashdb.org/docs/scenes/edit/scene-performers/missing-performers){:target="_blank"}.
 
 {: .important }
-Tags are not created automatically. You need to click `+` icon near the tag name to create it for you locally and attach it to the scene. Once it's created, it will match automatically in the future. 
+Tags are not created automatically. You need to click `+` icon near the tag name to create it for you locally and attach it to the scene. Once it's created, it will match automatically in the future.  
 
     ![Running "Scrape All" and "Search"](/assets/beginner-guides/scrape-all-and-search.jpg)
 <br/><br/>
