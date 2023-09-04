@@ -110,3 +110,12 @@ These scripts are created by third parties and not officially affiliated or supp
 |Description|Transfers scene ratings and view counts from Plex to Stash.|
 |Author|[oikmeg](https://github.com/oikmeg){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## StashGalleryUpdate
+
+|-|-|
+|Category|Gallery|
+|Script|[StashGalleryUpdate](https://github.com/Darklyter/StashGalleryUpdate){:target="_blank"}|
+|Description|A little script to match and update Stash galleries from scenes.|
+|Author|[Darklyter](https://github.com/Darklyter){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
