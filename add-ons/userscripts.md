@@ -322,6 +322,15 @@ These userscripts are created by third parties and not officially affiliated or 
 |Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash-Userscript-Upscaler-1.png)![](/assets/add-ons/Stash-Userscript-Upscaler-2.png)![](/assets/add-ons/Stash-Userscript-Upscaler-3.png)|
 
+## Batch Create All
+
+|-|-|
+|Category|Stash|
+|Userscript|[Batch Create All](https://github.com/Serechoo/stash-userscripts){:target="_blank"}|
+|Description|Allow batch create jobs for your stash. The idea behind it is this: Once you have the userscripts for 'Search All' installed and click it, you can then look to click the 'Create All' button that is installed via this javascript.|
+|Author|[Serechoo](https://github.com/Serechoo){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
 ## StashDB Copy StashID
 
 |-|-|
