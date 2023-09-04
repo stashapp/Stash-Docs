@@ -119,3 +119,12 @@ These scripts are created by third parties and not officially affiliated or supp
 |Description|A little script to match and update Stash galleries from scenes.|
 |Author|[Darklyter](https://github.com/Darklyter){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## StashStudioSync
+
+|-|-|
+|Category|Database|
+|Script|[StashStudioSync](https://github.com/Stash-KennyG/StashStudioSync){:target="_blank"}|
+|Description|An easy way to query a stashbox GQL endpoint and import any unknown studio IDs.|
+|Author|[Stash-KennyG](https://github.com/Stash-KennyG){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
