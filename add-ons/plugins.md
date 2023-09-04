@@ -266,3 +266,12 @@ These plugins are created by third parties and not officially affiliated or supp
 |Description|Adds a button that shows a menu, allowing you to change CSS Themes and apply various CSS snippets for Stash App.|
 |Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash-App-Theme-Switch-Plugin-1.png)![](/assets/add-ons/Stash-App-Theme-Switch-Plugin-2.png)|
+
+## aspectratio
+
+|-|-|
+|Category|Metadata|
+|Plugin|[aspectratio](https://github.com/scruffynerf/aspectratio){:target="_blank"}|
+|Description|Adds Ratio tags on Scene Create.|
+|Author|[scruffynerf](https://github.com/scruffynerf){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
