@@ -275,3 +275,21 @@ These plugins are created by third parties and not officially affiliated or supp
 |Description|Adds Ratio tags on Scene Create.|
 |Author|[scruffynerf](https://github.com/scruffynerf){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## Duplicate Title/ID/URL tagger
+
+|-|-|
+|Category|Metadata|
+|Plugin|[Duplicate Title/ID/URL tagger](https://github.com/scruffynerf/stashstuff/tree/main/plugins/DuplicateTitle){:target="_blank"}|
+|Description|Adds Duplicate Title/ID/URL tag.|
+|Author|[scruffynerf](https://github.com/scruffynerf){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## Prescreening tagger
+
+|-|-|
+|Category|Metadata|
+|Plugin|[Prescreening tagger](https://github.com/scruffynerf/stashstuff/tree/main/plugins/prescreen){:target="_blank"}|
+|Description|Adds prescreen tags on Scene Create or Demand.|
+|Author|[scruffynerf](https://github.com/scruffynerf){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
