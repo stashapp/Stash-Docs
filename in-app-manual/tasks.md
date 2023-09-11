@@ -26,7 +26,7 @@ The scan function walks through the stash directories you have configured for ne
 
 Stash currently identifies files by performing a quick file hash. This means that if the file is renamed for moved elsewhere within your configured stash directories, then the scan will detect this and update its database accordingly.
 
-Stash currently ignores duplicate files. If two files contain identical content, only the first one it comes across is used.
+Stash will merge duplicate files. If two files contain identical content they will merged into one scene and both files displayed under `File Info` tab.
 
 The scan task accepts the following options:
 
