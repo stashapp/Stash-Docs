@@ -1071,3 +1071,17 @@ span.badge[data-value="0"] {
     display: none;
 }
 ```
+
+## Border around cards activated with checkbox selection
+
+|-|-|
+|Description|Add a noticeable border around any cards that have been selected using the checkbox selection. Border color uses Stash's `--primary` color variable to maintain consistency with any theme that uses Stash's color variables.|
+|Author|echo6ix|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)![](/assets/user-interface-ui/Border-around-cards.png)|
+
+```css
+/* [Global changes] Modify card when checkbox is selected */
+.grid-card.card:has(input:checked) {
+   box-shadow: 0 0 0 1px var(--primary,rgba(255, 255, 255, 0.30));
+}
+```
