@@ -224,6 +224,22 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 }
 ```
 
+# Gallery
+
+## Disable lightbox image transition
+
+|-|-|
+|Description|Disable lightbox image transition.|
+|Author|echo6ix|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
+
+```css
+/* [Gallery tab] Disable lightbox image transition */
+.Lightbox-carousel {
+  transition: unset;
+}
+```
+
 # Movies
 
 ## Better Movie layout for desktops, regular size poster
