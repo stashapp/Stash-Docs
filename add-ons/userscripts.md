@@ -337,7 +337,7 @@ These userscripts are created by third parties and not officially affiliated or 
 |Category|Stash|
 |Userscript|[Stash Video Compare Userscript](https://gist.github.com/DogmaDragon/fb3ed033c0d1f0a6811137dfea0c4ce8){:target="_blank"}|
 |Description|Allow to compare videos side by side.|
-|Author|[scruffy_nerf]|
+|Author|scruffy_nerf|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ## StashDB Copy StashID
