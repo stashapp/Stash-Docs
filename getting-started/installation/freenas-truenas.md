@@ -39,17 +39,109 @@ enable_linux="YES"
 ```
 5. Reboot the system.
 
-# ffmpeg/ffprobe
+# Install ffmpeg/ffprobe
 
-`ffmpeg` can be downloaded using `pkg install ffmpeg`. For some reason, stash is unable to find the `ffmpeg` and `ffprobe` binaries even after installing them. To work around this, create symbolic links to the binaries in `$HOME/.stash`:
+Go into your iocage jail and install `ffmpeg`
+```
+pkg install ffmpeg
+``` 
+
+# Create user and group
+
+It is recommended to not run services as root. Adjust this step to your system. in this example the user `stash` will be created and set to run the service.
 
 ```
-ln -s /usr/local/bin/ffmpeg ~/.stash/ffmpeg
-ln -s /usr/local/bin/ffprobe ~/.stash/ffprobe
+pw useradd -n stash -u 1069 -d /nonexistent -s /usr/sbin/nologin
 ```
 
-# Downloading and running
+# Download stash-linux 
 
-Download `stash-linux` for your chosen release. Make sure to enable execution with: `chmod +x stash-linux`
+Choose where you would like to store the binary, in this example `/usr/local/bin` is selected as this is where the ffmpeg binaries also reside. Check github for latest release. Also remember to fix permissions and ownership
+```
+cd /usr/local/bin
+fetch https://github.com/stashapp/stash/releases/download/v0.22.1/stash-linux
+chown stash:stash stash-linux
+chmod +x stash-linux
+```
 
-Run with: `./stash-linux` (assuming the binary is in the current directory)
+# Create configuration directory
+
+stash needs a directory for its config file, database and more. Remember to change ownership and permission for the folder you select. The script we will look at in the next step has this path as the default:
+```
+mkdir /usr/local/etc/stash
+chown stash:stash /usr/local/etc/stash
+```
+
+# rc.d startup script
+
+In order for stash to run as a daemon in the background, and also start at boot, you need a rc.d script.  
+```
+mkdir /usr/local/etc/rc.d
+ee /usr/local/etc/rc.d/stash
+```
+Enter the following in the editor:
+```
+#!/bin/sh
+
+# PROVIDE: stash
+# REQUIRE: DAEMON
+# KEYWORD: shutdown
+
+
+. /etc/rc.subr
+
+name=stash
+rcvar=stash_enable
+
+load_rc_config $name
+
+: ${stash_enable:="NO"}
+: ${stash_user:="stash"}
+: ${stash_group:="stash"}
+: ${stash_config_dir:="/usr/local/etc/stash/config.yml"}
+: ${stash_exec_bin:="/usr/local/bin/stash-linux"}
+
+#daemon
+pidfile="/var/run/${name}.pid"
+command="/usr/sbin/daemon"
+command_args="-f -P ${pidfile} ${stash_exec_bin} --config ${stash_config_dir}"
+start_precmd="stash_precmd"
+
+stash_precmd() {
+    install -o ${stash_user} -g ${stash_group} /dev/null ${pidfile}
+}
+
+run_rc_command $1
+```
+To save, press `ESC + Enter` and confirm with `a` and make it executable with `chmod +x /usr/local/etc/rc.d/stash`
+
+# Enable the service at boot
+
+If you want Stash to run when you start the jail, run the following command:
+```
+sysrc "stash_enable=YES"
+```
+And to start the service, reboot the jail or run this command:
+```
+service stash start
+```
+Stash is now available at http://jail-IP:9999/ 
+
+During setup you can leave all the paths for config, database and etc empty to use the default. They will then be stored in the config-folder we created earlier so you can easily backup the folder. Only add your media content. 
+
+# Optional steps
+
+You can change the location where stash stores the configuration files and database. Please note that the path needs to end with `config.yml` even if it does not exist yet. Stash will create it for you. Remember to fix ownership and permissions of the location you choose.
+```
+sysrc "stash_config_dir=path/to/location/config.yml"
+```
+
+You can change the user and group that Stash runs as. Remember that the config_dir needs to be owned by the user that Stash runs as, aswell as the stash-linux binary
+```
+sysrc "stash_user=usernamegoeshere"
+sysrc "stash_group=groupnamegoeshere"
+```
+
+Its also possible to change the location of the stash-linux binary
+```
+sysrc "stash_exec_bin=/path/to/stash-linux"
