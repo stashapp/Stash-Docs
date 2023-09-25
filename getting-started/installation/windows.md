@@ -6,6 +6,15 @@ parent: Installation
 grand_parent: Getting Started
 ---
 
+<details markdown="block">
+  <summary>
+    Table of Contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 {: .note }
 Some Windows 11 versions might open Stash via Terminal instead of going to notification area. You can bypass that by running the program as administrator or [use a shortcut to run it via conhost.exe](https://github.com/stashapp/stash/issues/2598){:target="_blank"}
 

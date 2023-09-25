@@ -6,6 +6,15 @@ parent: Installation
 grand_parent: Getting Started
 ---
 
+<details markdown="block">
+  <summary>
+    Table of Contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 {: .important }
 Before starting make sure your system has Docker installed. You can follow the instructions on how to install Docker from [Docker Docs](https://docs.docker.com/engine/install/){:target="_blank"}.
 

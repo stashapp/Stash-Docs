@@ -6,6 +6,15 @@ parent: Installation
 grand_parent: Getting Started
 ---
 
+<details markdown="block">
+  <summary>
+    Table of Contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 {: .important }
 It is recommended that you install `ffmpeg` from your distribution's package manager. In case you don't, Stash will download a copy for you. 
 
