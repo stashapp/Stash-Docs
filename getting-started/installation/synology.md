@@ -1,10 +1,9 @@
 ---
 layout: clean
-title: Installing on Synology NAS
-nav_order: 4
+title: Synology
+nav_order: 5
 parent: Installation
 grand_parent: Getting Started
-
 ---
 
 <details markdown="block">

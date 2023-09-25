@@ -1,10 +1,9 @@
 ---
 layout: clean
-title: Installing on FreeNAS/TrueNAS
-nav_order: 5
+title: FreeNAS/TrueNAS
+nav_order: 6
 parent: Installation
 grand_parent: Getting Started
-
 ---
 
 <details markdown="block">

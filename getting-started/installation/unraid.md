@@ -1,7 +1,7 @@
 ---
 layout: clean
-title: Unraid Support
-nav_order: 6
+title: Unraid
+nav_order: 7
 parent: Installation
 grand_parent: Getting Started
 ---
@@ -15,16 +15,20 @@ grand_parent: Getting Started
 {:toc}
 </details>
 
-Currently Stash is supported in Unraid via the [Community Applications](https://forums.unraid.net/topic/38582-plug-in-community-applications/){:target="_blank"} plugin.
+{: .important }
+Unraid app is maintained by a 3rd party. For Unraid specific support you can go to [support thread](https://forums.unraid.net/topic/90861-support-stash-corneliousjd-repo){:target="_blank"} by CorneliousJD.
 
-As of April 6, 2020 the Stash app is now published to the container directory as well. 
-Please install and use StashApp with that template. 
+{: .note }
+For users that want to try the development branch of Stash you can change the repository to `stashapp/stash:development`.
 
-Unraid specific support can be found [here](https://forums.unraid.net/topic/90861-support-stash-corneliousjd-repo/){:target="_blank"}.
+# Install
 
-For users that want to try the development branch of stash you can change the repo to this one `stashapp/stash:development`.
+1. Open Unraid and go to the `Apps` tab.
+2. Enable apps (if disabled) and search for `Stash`.
+  - You can modify paths to your preference.
+3. Go to Docker tab and enable autostart for `Stash`.
 
-# Nvidia runtime
+# Optional Nvidia Runtime
 
 {: .important }
 `binarygeek119/stash-cuda:latest` repository is not maintained by Stash core team. 
