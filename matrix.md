@@ -65,6 +65,7 @@ We are using a bridge bot that relays Discord and Matrix messages both ways in s
 - [#stash-announcements:unredacted.org](https://matrix.to/#/#stash-announcements:unredacted.org){:target="_blank"} (bridged) -  Stash software updates
 - [#stash-help:unredacted.org](https://matrix.to/#/#stash-help:unredacted.org){:target="_blank"} (bridged) - Help with anything related to Stash software
 - [#stash-docker-help:unredacted.org](https://matrix.to/#/#stash-docker-help:unredacted.org){:target="_blank"} (bridged) - Help with anything related to Docker
+ [#stash-images-and-galleries:unredacted.org](https://matrix.to/#/#stash-images-and-galleries:unredacted.org){:target="_blank"} (bridged) - Help with anything related to images and/or galleries
 - [#stash-general:unredacted.org](https://matrix.to/#/#stash-general:unredacted.org){:target="_blank"} (bridged) - Discussions loosely connected to Stash software
 - [#stash-movie-scraping:unredacted.org](https://matrix.to/#/#stash-movie-scraping:unredacted.org){:target="_blank"} (bridged) - For anything related to Stash movie feature
 - [#stash-bugs:unredacted.org](https://matrix.to/#/#stash-bugs:unredacted.org){:target="_blank"} (bridged) - Reporting bugs about Stash software
