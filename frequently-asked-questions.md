@@ -96,6 +96,13 @@ driver:
 
 # Troubleshooting
 
+## Error: Panic: error initializing configuration: missing the following mandatory settings: generated
+
+1. Find your `config.yml` file. Usually located at `%userprofile%/.stash` or `$HOME/.stash`.
+2. Open it and find `generated:` line. 
+3. Replace with or add `generated: absolute_path_to_your_generated_folder`.
+4. Save and try to start Stash. 
+
 ## Known Issues
 
 - Performer images uploaded in WebP format will not display on versions of Safari prior to version 13 or on anything earlier than MacOS Big Sur. This is a [limitation of Safari](https://caniuse.com/webp){:target="_blank"}. As a workaround, ensure you are uploading performer images in jpg or png format.
