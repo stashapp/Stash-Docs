@@ -245,7 +245,7 @@ These plugins are created by third parties and not officially affiliated or supp
 |-|-|
 |Category|Maintenance|
 |Plugin|[Stash-Split-Duplicate-Merged-Files](https://github.com/elkorol/Stash-Split-Duplicate-Merged-Files){:target="_blank"}|
-|Description|This plugin will search for scenes that have duplicate files and are merged. It then itterates over the files skipping the first one and then using the next files to create new scenes.|
+|Description|This plugin will search for scenes that have duplicate files and are merged. It then iterates over the files skipping the first one and then using the next files to create new scenes.|
 |Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
@@ -254,7 +254,7 @@ These plugins are created by third parties and not officially affiliated or supp
 |-|-|
 |Category|Images|
 |Plugin|[Stash Topaz Gigapixel AI, Performer Image Upscaler](https://github.com/elkorol/Stash-Performer-Image-Gigapixel){:target="_blank"}|
-|Description|Uses the program Topaz Gigapixel AI, to upscale or downscale performer images that are tagged with the relavent tags.|
+|Description|Uses the program Topaz Gigapixel AI, to upscale or downscale performer images that are tagged with the relevant tags.|
 |Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
