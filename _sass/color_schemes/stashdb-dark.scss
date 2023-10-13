@@ -19,3 +19,6 @@ $code-background-color: #394B59fa;
 th, td {
     background-color: #394B59fa !important;
 }
+:not(pre, figure) > code {
+    border-radius: unset !important;
+}

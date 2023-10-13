@@ -84,6 +84,15 @@ These scripts are created by third parties and not officially affiliated or supp
 |Author|[soundchaser128](https://github.com/soundchaser128){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
+## StashTagSkins
+
+|-|-|
+|Category|Tags|
+|Script|[StashTagSkins](https://github.com/Stash-KennyG/StashTagSkins){:target="_blank"}|
+|Description|Bulk imports tags including Aliases from popular libraries - includes multiple themes in the repository including Icons and Images|
+|Author|[Stash-KennyG](https://github.com/Stash-KennyG){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/StashTagSkins_Sample.png)![](/assets/add-ons/StashTagSkins_Icons.png)![](/assets/add-ons/StashTagSkins_Hamster.png)|
+
 ## blurryCardBackground
 
 |-|-|
@@ -91,7 +100,7 @@ These scripts are created by third parties and not officially affiliated or supp
 |Script|[blurryCardBackground](https://github.com/philpw99/StashCustomJavascripts){:target="_blank"}|
 |Description|Add blurry background to scene/movie/gallery/image/studio.|
 |Author|[philpw99](https://github.com/philpw99){:target="_blank"}|
-|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/blurryCardBackground.jpg)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/blurryCardBackground.png)
 
 ## plex-to-stash-ratings
 
@@ -100,4 +109,22 @@ These scripts are created by third parties and not officially affiliated or supp
 |Script|[plex-to-stash-ratings](https://github.com/oikmeg/plex-to-stash-ratings){:target="_blank"}|
 |Description|Transfers scene ratings and view counts from Plex to Stash.|
 |Author|[oikmeg](https://github.com/oikmeg){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## StashGalleryUpdate
+
+|-|-|
+|Category|Gallery|
+|Script|[StashGalleryUpdate](https://github.com/Darklyter/StashGalleryUpdate){:target="_blank"}|
+|Description|A little script to match and update Stash galleries from scenes.|
+|Author|[Darklyter](https://github.com/Darklyter){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## StashStudioSync
+
+|-|-|
+|Category|Database|
+|Script|[StashStudioSync](https://github.com/Stash-KennyG/StashStudioSync){:target="_blank"}|
+|Description|An easy way to query a stashbox GQL endpoint and import any unknown studio IDs.|
+|Author|[Stash-KennyG](https://github.com/Stash-KennyG){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|

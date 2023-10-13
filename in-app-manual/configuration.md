@@ -94,11 +94,12 @@ These instructions are for existing users whose systems will be defaulted to use
 
 This setting controls how many sub-tasks will be run in parallel during scanning and generation tasks. (See Tasks)
 
-Auto-detection can be enabled by setting this to zero. This will calculate the number of parallel tasks to be cpu_cores/4 + 1.
+Auto-detection can be enabled by setting this to zero. This will calculate the number of parallel tasks to be `logical cores/4 + 1`.  
+Logical cores are multiplication of the number of physical cores with the number of threads each core can handle.
 
 This setting can be used to increase/decrease overall CPU utilisation in two scenarios:
-1) High performance 4+ core cpus.
-2) Media files stored on remote/cloud filesystem.
+1. High performance 4+ CPU cores.
+2. Media files stored on remote/cloud filesystem.
 
 Note: If this is set too high it will decrease overall performance and causes failures (out of memory).
 

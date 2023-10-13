@@ -47,7 +47,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Batch Query Edit](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Batch Query Edit](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|In Scene Tagger, adds button to batch update all query fields with a configurable combination of Date, Studio, Performers, and Title.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Batch_Query_Edit.png)![](/assets/add-ons/Stash_Batch_Query_Edit2.png)|
@@ -56,7 +56,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Batch Result Toggle](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Batch Result Toggle](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|In Scene Tagger, adds button to toggle all stashdb scene match result fields. Saves clicks when you only want to save a few metadata fields. Instead of turning off every field, you batch toggle them off, then toggle on the ones you want.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Batch_Result_Toggle.png)![](/assets/add-ons/Stash_Batch_Result_Toggle2.png)|
@@ -65,7 +65,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Batch Save](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Batch Save](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|In Scene Tagger, adds button to batch save all scenes. Opens a confirmation popup with clicked.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Batch_Save.png)|
@@ -74,7 +74,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Batch Search](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Batch Search](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|In Scene Tagger, adds button to batch search all scenes.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Batch_Search.png)|
@@ -83,7 +83,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Markdown](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Markdown](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Adds markdown parsing to tag description fields.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Markdown.png)|
@@ -92,7 +92,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash New Performer Filter Button](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash New Performer Filter Button](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Adds button to performers page to switch to a filter by new performers tagger view.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_New_Performer_Filter_Button.png)|
@@ -101,7 +101,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Open Media Player](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Open Media Player](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Open filepath link on scene page 'File Info' tab in an external media player when clicked.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Open_Media_Player.png)|
@@ -110,7 +110,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Performer Audit Task Button](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Performer Audit Task Button](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Adds a button to the performers page to check for duplicate performer urls. Task output shown in stash logs.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_Audit_Task_Button.png)![](/assets/add-ons/Stash_Performer_Audit_Task_Button2.png)![](/assets/add-ons/Stash_Performer_Audit_Task_Button3.png)|
@@ -119,7 +119,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Performer Image Cropper](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Performer Image Cropper](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Adds ability to crop performer image from performer page.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_Image_Cropper.png)|
@@ -128,7 +128,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Performer Markers Tab](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Performer Markers Tab](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Adds a Markers link to performer pages.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_Markers_Tab.png)|
@@ -137,7 +137,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Performer Tagger Additions](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Performer Tagger Additions](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Adds performer birthdate and url to tagger view. Makes clicking performer name open stash profile in new tab instead of current tab.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_Tagger_Additions.png)|
@@ -146,7 +146,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Performer URL Searchbox](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Performer URL Searchbox](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Adds a performer URL search textbox to performers page for quicker searching by performer URL.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Performer_URL_Searchbox.png)|
@@ -155,7 +155,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Scene Tagger Additions](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Scene Tagger Additions](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Adds scene duration, filepath, and url to tagger view in the collapsible scene details sections. Adds shift-click to collapsible scene details buttons to open/close all.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Scene_Tagger_Additions.png)![](/assets/add-ons/Stash_Scene_Tagger_Additions2.png)|
@@ -164,7 +164,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Scene Tagger Colorizer](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Scene Tagger Colorizer](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|In Scene Tagger, colorize scrape results. Matching fields are green, missing fields are yellow, and mismatching fields are red.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Scene_Tagger_Colorizer.png)![](/assets/add-ons/Stash_Scene_Tagger_Colorizer2.png)|
@@ -173,7 +173,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Scene Tagger Draft Submit](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Scene Tagger Draft Submit](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Adds button to Scene Tagger to submit draft to StashDB.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Scene_Tagger_Draft_Submit.png)|
@@ -182,7 +182,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Scene Tagger Linkify](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Scene Tagger Linkify](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Turn all scene tagger result text referencing stash or stashbox studio and performer names into clickable links.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Scene_Tagger_Linkify.png)![](/assets/add-ons/Stash_Scene_Tagger_Linkify2.png)|
@@ -191,7 +191,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Set Stashbox Favorite Performers](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Set Stashbox Favorite Performers](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Sync Stashbox favorite performers whenever a stash performer is favorited or unfavorited. Also adds button to performers page to sync all.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Set_Stashbox_Favorite_Performers.png)![](/assets/add-ons/Stash_Set_Stashbox_Favorite_Performers2.png)![](/assets/add-ons/Stash_Set_Stashbox_Favorite_Performers3.png)|
@@ -200,7 +200,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash StashID Icon](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash StashID Icon](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Adds checkmark icon to performer and studio cards that have a StashID.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_StashID_Icon.png)![](/assets/add-ons/Stash_StashID_Icon2.png)![](/assets/add-ons/Stash_StashID_Icon3.png)|
@@ -209,7 +209,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash StashID Input](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash StashID Input](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Adds input textboxes to performer detail and studio detail pages for StashID entry. Also displays studio StashIDs on studio page without having to click edit to view.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_StashID_Input.png)![](/assets/add-ons/Stash_StashID_Input2.png)|
@@ -218,7 +218,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Stats](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Stats](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Adds new stats to the stats page: marker count, favorite performer count, studios with StashID %, performers with StashID %, scenes with StashID %.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Stats.png)|
@@ -227,7 +227,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Studio Image And Parent On Create](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Studio Image And Parent On Create](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|In Scene Tagger, sets studio image and parent studio from StashDB when a studio is created.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Studio_Image_And_Parent_On_Create.png)|
@@ -236,7 +236,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Stash|
-|Userscript|[Stash Tag Image Cropper](https://github.com/7dJx1qP/stash-userscripts){:target="_blank"}|
+|Userscript|[Stash Tag Image Cropper](https://github.com/stg-annon/stash-userscripts){:target="_blank"}|
 |Description|Adds ability to crop tag image from tag page.|
 |Author|[7dJx1qP](https://github.com/7dJx1qP)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Tag_Image_Cropper.png)|
@@ -321,6 +321,24 @@ These userscripts are created by third parties and not officially affiliated or 
 |Description|Adds an upscale button on the performer page, that upon clicking allows you to select an appriate upcaling model then upscale and update the image.|
 |Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash-Userscript-Upscaler-1.png)![](/assets/add-ons/Stash-Userscript-Upscaler-2.png)![](/assets/add-ons/Stash-Userscript-Upscaler-3.png)|
+
+## Batch Create All
+
+|-|-|
+|Category|Stash|
+|Userscript|[Batch Create All](https://github.com/Serechoo/stash-userscripts){:target="_blank"}|
+|Description|Allow batch create jobs for your stash. The idea behind it is this: Once you have the userscripts for 'Search All' installed and click it, you can then look to click the 'Create All' button that is installed via this javascript.|
+|Author|[Serechoo](https://github.com/Serechoo){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## Stash Video Compare Userscript
+
+|-|-|
+|Category|Stash|
+|Userscript|[Stash Video Compare Userscript](https://gist.github.com/DogmaDragon/fb3ed033c0d1f0a6811137dfea0c4ce8){:target="_blank"}|
+|Description|Allow to compare videos side by side.|
+|Author|scruffy_nerf|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ## StashDB Copy StashID
 

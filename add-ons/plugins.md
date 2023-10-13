@@ -245,7 +245,7 @@ These plugins are created by third parties and not officially affiliated or supp
 |-|-|
 |Category|Maintenance|
 |Plugin|[Stash-Split-Duplicate-Merged-Files](https://github.com/elkorol/Stash-Split-Duplicate-Merged-Files){:target="_blank"}|
-|Description|This plugin will search for scenes that have duplicate files and are merged. It then itterates over the files skipping the first one and then using the next files to create new scenes.|
+|Description|This plugin will search for scenes that have duplicate files and are merged. It then iterates over the files skipping the first one and then using the next files to create new scenes.|
 |Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
@@ -254,7 +254,7 @@ These plugins are created by third parties and not officially affiliated or supp
 |-|-|
 |Category|Images|
 |Plugin|[Stash Topaz Gigapixel AI, Performer Image Upscaler](https://github.com/elkorol/Stash-Performer-Image-Gigapixel){:target="_blank"}|
-|Description|Uses the program Topaz Gigapixel AI, to upscale or downscale performer images that are tagged with the relavent tags.|
+|Description|Uses the program Topaz Gigapixel AI, to upscale or downscale performer images that are tagged with the relevant tags.|
 |Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
@@ -266,3 +266,39 @@ These plugins are created by third parties and not officially affiliated or supp
 |Description|Adds a button that shows a menu, allowing you to change CSS Themes and apply various CSS snippets for Stash App.|
 |Author|[elkorol](https://github.com/elkorol){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash-App-Theme-Switch-Plugin-1.png)![](/assets/add-ons/Stash-App-Theme-Switch-Plugin-2.png)|
+
+## aspectratio
+
+|-|-|
+|Category|Metadata|
+|Plugin|[aspectratio](https://github.com/scruffynerf/aspectratio){:target="_blank"}|
+|Description|Adds Ratio tags on Scene Create.|
+|Author|[scruffynerf](https://github.com/scruffynerf){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## Duplicate Title/ID/URL tagger
+
+|-|-|
+|Category|Metadata|
+|Plugin|[Duplicate Title/ID/URL tagger](https://github.com/scruffynerf/stashstuff/tree/main/plugins/DuplicateTitle){:target="_blank"}|
+|Description|Adds Duplicate Title/ID/URL tag.|
+|Author|[scruffynerf](https://github.com/scruffynerf){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## Prescreening tagger
+
+|-|-|
+|Category|Metadata|
+|Plugin|[Prescreening tagger](https://github.com/scruffynerf/stashstuff/tree/main/plugins/prescreen){:target="_blank"}|
+|Description|Adds prescreen tags on Scene Create or Demand.|
+|Author|[scruffynerf](https://github.com/scruffynerf){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## performerBodyCalculator
+
+|-|-|
+|Category|Metadata|
+|Plugin|[performerBodyCalculator](https://github.com/stg-annon/performerBodyCalculator){:target="_blank"}|
+|Description|This plugin will tag performers based on existing metadata within stash the measurements attribute must be present for a performer to be tagged, additionally the height and weight attributes will be used if present but are not required.|
+|Author|[stg-annon](https://github.com/stg-annon){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|

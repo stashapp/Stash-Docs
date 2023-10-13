@@ -52,7 +52,8 @@ Matrix supports a variety of clients on web, desktop (Windows, Linux, and macOS)
 {: .important }
 Rooms can be joined from inside the space. You can join one, or more rooms, or all rooms from the space. They are not directly tied to each other.
 
-Our official space is located at [#stashapp:unredacted.org](https://matrix.to/#/#stashapp:unredacted.org){:target="_blank"}.
+Our official space is located at [#stashapp:unredacted.org](https://matrix.to/#/#stashapp:unredacted.org){:target="_blank"}.  
+Alternative addresses are on matrix.im: [#stashapp:matrix.im](https://matrix.to/#/#stashapp:matrix.im){:target="_blank"}.
 
 # Stash rooms
 
@@ -63,13 +64,16 @@ We are using a bridge bot that relays Discord and Matrix messages both ways in s
 
 - [#stash-announcements:unredacted.org](https://matrix.to/#/#stash-announcements:unredacted.org){:target="_blank"} (bridged) -  Stash software updates
 - [#stash-help:unredacted.org](https://matrix.to/#/#stash-help:unredacted.org){:target="_blank"} (bridged) - Help with anything related to Stash software
+- [#stash-docker-help:unredacted.org](https://matrix.to/#/#stash-docker-help:unredacted.org){:target="_blank"} (bridged) - Help with anything related to Docker
+ [#stash-images-and-galleries:unredacted.org](https://matrix.to/#/#stash-images-and-galleries:unredacted.org){:target="_blank"} (bridged) - Help with anything related to images and/or galleries
 - [#stash-general:unredacted.org](https://matrix.to/#/#stash-general:unredacted.org){:target="_blank"} (bridged) - Discussions loosely connected to Stash software
+- [#stash-movie-scraping:unredacted.org](https://matrix.to/#/#stash-movie-scraping:unredacted.org){:target="_blank"} (bridged) - For anything related to Stash movie feature
 - [#stash-bugs:unredacted.org](https://matrix.to/#/#stash-bugs:unredacted.org){:target="_blank"} (bridged) - Reporting bugs about Stash software
 - [#stash-requests:unredacted.org](https://matrix.to/#/#stash-requests:unredacted.org){:target="_blank"} (bridged) - Requesting features for Stash software
-- [#stash-community-meta:unredacted.org](https://matrix.to/#/#stash-community-meta:unredacted.org){:target="_blank"} (bridged) - Discussions about exsiting issues related to stash software
+- [#stash-community-meta:unredacted.org](https://matrix.to/#/#stash-community-meta:unredacted.org){:target="_blank"} (bridged) - Discussions about existing issues related to stash software
 - [#stash-data-hoarding:unredacted.org](https://matrix.to/#/#stash-data-hoarding:unredacted.org){:target="_blank"} (bridged) - Discussions about data hoarding
 - [#stash-off-topic:unredacted.org](https://matrix.to/#/#stash-off-topic:unredacted.org){:target="_blank"} (bridged) -  Discussions outside of general Stash software focus
-- [#stash-discord-free-zone:unredacted.org](https://matrix.to/#/#stash-discord-free-zone:unredacted.org){:target="_blank"} - Dicsussions outside of Discord sphere
+- [#stash-discord-free-zone:unredacted.org](https://matrix.to/#/#stash-discord-free-zone:unredacted.org){:target="_blank"} - Discussions outside of Discord sphere
 - [#stash-github-feed:unredacted.org](https://matrix.to/#/#stash-discord-free-zone:unredacted.org){:target="_blank"} - GitHub feed from various stashapp repositories
 
 ## StashDB-focused rooms
@@ -82,8 +86,11 @@ We are using a bridge bot that relays Discord and Matrix messages both ways in s
 ## NSFW explicit rooms
 
 - [#stash-general-nsfw:unredacted.org](https://matrix.to/#/#stash-general-nsfw:unredacted.org){:target="_blank"} (bridged) - Discussions about anything related to NSFW
-- [#stash-favorites-nsfw:unredacted.org](https://matrix.to/#/#stash-favorites-nsfw:unredacted.org){:target="_blank"} (bridged) - Showcase your favorites
+- [#stash-favorites-female-nsfw:unredacted.org](https://matrix.to/#/#stash-favorites-female-nsfw:unredacted.org){:target="_blank"} (bridged) - Showcase your favorite female performers
+- [#stash-favorites-male-nsfw:unredacted.org](https://matrix.to/#/#stash-favorites-male-nsfw:unredacted.org){:target="_blank"} (bridged) - Showcase your favorite male performers
+- [#stash-favorites-everyone-nsfw:unredacted.org](https://matrix.to/#/#stash-favorites-everyone-nsfw:unredacted.org){:target="_blank"} (bridged) - Showcase your favorite performers
 - [#stash-x-ray:unredacted.org](https://matrix.to/#/#stash-x-ray:unredacted.org){:target="_blank"} (bridged) - Scene or performer identification
+- [#stash-x-ray-2:unredacted.org](https://matrix.to/#/#stash-x-ray-2:unredacted.org){:target="_blank"} - Scene or performer identification where it's not appropriate for Discord
 - [#stash-performer-facial-recognition:unredacted.org](https://matrix.to/#/#stash-performer-facial-recognition:unredacted.org){:target="_blank"} (bridged) - Facial recognition based tagginer of performers in scenes
 - [#stash-ai-tagging:unredacted.org](https://matrix.to/#/#stash-ai-tagging:unredacted.org){:target="_blank"} (bridged) - AI in metadata tagging
 - [#stash-feed-the-machine:unredacted.org](https://matrix.to/#/#stash-feed-the-machine:unredacted.org){:target="_blank"} (bridged) - Discussions loosely connected to AI
@@ -99,18 +106,19 @@ We are using a bridge bot that relays Discord and Matrix messages both ways in s
 ## Developer-focused rooms
 
 - [#stash-stash-box:unredacted.org](https://matrix.to/#/#stash-stash-box:unredacted.org){:target="_blank"} (bridged) - Discussions related to stash-box API
+- [#stash-stashbox-admins:unredacted.org](https://matrix.to/#/#stash-stashbox-admins:unredacted.org){:target="_blank"} (bridged) - Discussions about stash-box from admins perspective
 - [#stash-programming:unredacted.org](https://matrix.to/#/#stash-programming:unredacted.org){:target="_blank"} (bridged) - Discussions loosely related to Stash programming 
 - [#stash-code-review:unredacted.org](https://matrix.to/#/#stash-code-review:unredacted.org){:target="_blank"} (bridged) -  Code Validation and Testing for Windows, Mac and Linux PR's
 - [#stash-sustainability:unredacted.org](https://matrix.to/#/#stash-sustainability:unredacted.org){:target="_blank"} (bridged) - Discussion about the sustainability of the Stash ecosystem
 - [#stash-scrapers:unredacted.org](https://matrix.to/#/#stash-scrapers:unredacted.org){:target="_blank"} (bridged) - Metadata scraping, curation and automation techniques
 - [#stash-plugins-and-scripts:unredacted.org](https://matrix.to/#/#stash-plugins-and-scripts:unredacted.org){:target="_blank"} (bridged) - Discussions loosely related to Stash add-ons
-- [#stash-website:unredacted.org](https://matrix.to/#/#stash-website:unredacted.org){:target="_blank"} (bridged) - Disucssions about Stash website
+- [#stash-website:unredacted.org](https://matrix.to/#/#stash-website:unredacted.org){:target="_blank"} (bridged) - Discussions about Stash website
 - [#stash-rfc-discussion:unredacted.org](https://matrix.to/#/#stash-rfc-discussion:unredacted.org){:target="_blank"} (bridged) - Request for comments on interesting ideas
 
 ## Different stash-box rooms
 
-- [#stash-pmvbox:unredacted.org](https://matrix.to/#/#stash-pmvbox:unredacted.org){:target="_blank"} (bridged) - discussions related to PMV Stash
-- [#stash-fansdb:unredacted.org](https://matrix.to/#/#stash-fansdb:unredacted.org){:target="_blank"} (bridged) - discussions related to FansDB
+- [#stash-pmvbox:unredacted.org](https://matrix.to/#/#stash-pmvbox:unredacted.org){:target="_blank"} (bridged) - Discussions related to PMV Stash
+- [#stash-fansdb:unredacted.org](https://matrix.to/#/#stash-fansdb:unredacted.org){:target="_blank"} (bridged) - Discussions related to FansDB
 
 # Tips and Tricks
 

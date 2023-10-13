@@ -21,7 +21,7 @@ The following is our recommended procedure for new Stash users who want to get i
 
 # Generate pHashes
 
-1. Navigate to the Settings page (⚙ icon in top right), make sure you're on "Tasks" in the sidebar to the left, then find the first heading "Library" in the middle of the page. Make sure "Generate perceptual hashes" is turned on so pHashes will be created automatically each time you run a scan to add new scenes. This will slow down the scanning process, but for most users [it's worth it](https://guidelines.stashdb.org/docs/getting-started-stashdb/#whats-a-phash){:target="_blank"}. pHashes are the main way to match your scenes with our data on StashDB.
+1. Navigate to the Settings page (⚙ icon in top right), make sure you're on "Tasks" in the sidebar to the left, then find the first heading "Library" in the middle of the page. Make sure "Generate perceptual hashes" is turned on so pHashes will be created automatically each time you run a scan to add new scenes. This will slow down the scanning process, but for most users [it's worth it](https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/whats-a-phash){:target="_blank"}. pHashes are the main way to match your scenes with our data on StashDB.
 
     ![How to generate pHashes on scan](/assets/beginner-guides/gen-phashes-on-scan.jpg)
 <br/><br/>
@@ -38,7 +38,7 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
 ## How to connect your account to Stash
 
 1.  Go to [https://stashdb.org/register](https://stashdb.org/register){:target="_blank"} to create a new account using one of the invite codes pinned to **#stashdb-invites**.
-  - If all of the codes are used/expired, you can ping **@Infinite** in **#stashdb-invites** and politely ask to refresh them. A few other elevated users can also generate an invite code for you.*
+  - If all of the codes are used/expired politely ask them to be refreshed in **#stashdb-invites**. A few other elevated users can also generate an invite code for you.
 2.  Once you're logged in to StashDB, click on your username at the top next to **Logged in as**.
 3.  Copy your unique **API key**.
 4.  Go to the **Settings** page in Stash ([http://localhost:9999/settings](http://localhost:9999/settings){:target="_blank"} by default), click **Metadata Providers** on the left side and find **Stash-box Endpoints** at the top.
@@ -52,14 +52,17 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
     ![How to find the Scene Tagger](/assets/beginner-guides/find-scene-tagger.jpg)
 <br/><br/>
 
+{: .important }
+Tags are not created automatically. You need to click `+` icon near the tag name to create it for you locally and attach it to the scene. Once it's created, it will match automatically in the future.  
+
 {:style="counter-reset:none"}
-1.  First, click the "Scrape All" button. This will use your pHashes to find matching scenes on StashDB for every scene on the current page. The "Scrape by fragment" buttons will do the same thing but just for one scene at a time. Also, you may want to change your Scene Tagger settings with the ⚙ icon next to "Scrape All." You can tell it to Merge (keep all) tags, Overwrite (keep only new) tags, or ignore StashDB's tags entirely (leave box unchecked). If you plan on [contributing to StashDB](https://guidelines.stashdb.org/docs/getting-started-stashdb/#contributing-to-stashdb){:target="_blank"}, you should have "Show male performers" turned on to better follow [these guidelines](https://guidelines.stashdb.org/docs/scenes/scene-performers/#missing-scene-performers){:target="_blank"}.
+1.  First, click the "Scrape All" button. This will use your pHashes to find matching scenes on StashDB for every scene on the current page. The "Scrape by fragment" buttons will do the same thing but just for one scene at a time. Also, you may want to change your Scene Tagger settings with the ⚙ icon next to "Scrape All." You can tell it to Merge (keep all) tags, Overwrite (keep only new) tags, or ignore StashDB's tags entirely (leave box unchecked). If you plan on [contributing to StashDB](https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/contributing-to-stashdb){:target="_blank"}, you should have "Show male performers" turned on to better follow [these guidelines](https://guidelines.stashdb.org/docs/scenes/edit/scene-performers/missing-performers){:target="_blank"}.
 
     ![Running "Scrape All" and "Search"](/assets/beginner-guides/scrape-all-and-search.jpg)
 <br/><br/>
 
 {:style="counter-reset:none"}
-1. If your fingerprint search doesn't return a correct result for your scene, you can try searching with the "Query" field using title, performer, release date, or studio. Try to use as little text as possible to find your scene. Otherwise, unnecessary words that do not match StashDB's info may block correct results. If you can find the matching scene on StashDB.org but can't find it using the Scene Tagger, you can use the scene's [StashID](https://guidelines.stashdb.org/docs/getting-started-stashdb/#whats-a-stashid){:target="_blank"} as your Tagger query.
+1. If your fingerprint search doesn't return a correct result for your scene, you can try searching with the "Query" field using title, performer, release date, or studio. Try to use as little text as possible to find your scene. Otherwise, unnecessary words that do not match StashDB's info may block correct results. If you can find the matching scene on StashDB.org but can't find it using the Scene Tagger, you can use the scene's [StashID](https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/whats-a-stashid){:target="_blank"} as your Tagger query.
 
     ![How to find a StashID](/assets/beginner-guides/find-stashid.jpg)
 <br/><br/>
@@ -109,7 +112,7 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
     ![Tagger source set to ThePornDB](/assets/beginner-guides/tagger-source-tpdb.png)
 <br/><br/>
 
-- **For those wanting to contribute to StashDB**: As noted before, ThePornDB leans heavily on automated scrapers to pull all of their info. Often that data is incomplete or inaccurate compared to what we'd want on StashDB. Before you [submit your scene to StashDB](https://guidelines.stashdb.org/docs/getting-started-stashdb/#submitting-drafts-to-stashdb){:target="_blank"}, you'll need to double-check your info, clean it up a bit first, and make sure you're following [these guidelines](https://guidelines.stashdb.org/docs/scenes/){:target="_blank"}. Submitting to StashDB is discussed further in the [last step](#submit-to-stashdb) of this guide.
+- **For those wanting to contribute to StashDB**: As noted before, ThePornDB leans heavily on automated scrapers to pull all of their info. Often that data is incomplete or inaccurate compared to what we'd want on StashDB. Before you [submit your scene to StashDB](https://guidelines.stashdb.org/docs/faq_getting-started/drafts/submit-from-stash){:target="_blank"}, you'll need to double-check your info, clean it up a bit first, and make sure you're following [these guidelines](https://guidelines.stashdb.org/docs/scenes){:target="_blank"}. Submitting to StashDB is discussed further in the [last step](#submit-to-stashdb) of this guide.
 
 # Use Site-Specific Scrapers
 
@@ -121,8 +124,8 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
 
 # Submit to StashDB
 
-1. If you're certain a scene isn't on StashDB and you've found the info using ThePornDB or some other scraper, please consider submitting it to StashDB yourself. That way nobody else will have to duplicate the same work you've done for that particular scene if they can match their [pHash](#generate-phashes) with yours. You'll need to ask for edit privileges in our [Discord](https://discord.com/channels/559159668438728723){:target="_blank"} and follow the guidelines on [this website](https://guidelines.stashdb.org/docs/scenes/){:target="_blank"}. In particular, please note that [not every scene can be added to StashDB](https://guidelines.stashdb.org/docs/scenes/adding-scenes/){:target="_blank"} at this time. Some [studios aren't allowed](https://guidelines.stashdb.org/docs/scenes/movies-dvds/){:target="_blank"} and [full movies likely won't be eligible](https://guidelines.stashdb.org/docs/scenes/movies-dvds/){:target="_blank"} either.
+1. If you're certain a scene isn't on StashDB and you've found the info using ThePornDB or some other scraper, please consider submitting it to StashDB yourself. That way nobody else will have to duplicate the same work you've done for that particular scene if they can match their [pHash](#generate-phashes) with yours. You'll need to ask for edit privileges in our [Discord](https://discord.com/channels/559159668438728723){:target="_blank"} and follow the guidelines on [this website](https://guidelines.stashdb.org/docs/scenes){:target="_blank"}. In particular, please note that [not every scene can be added to StashDB](https://guidelines.stashdb.org/docs/scenes/create){:target="_blank"} at this time. Some [studios aren't allowed](https://guidelines.stashdb.org/docs/studios/create){:target="_blank"} and [full movies likely won't be eligible](https://guidelines.stashdb.org/docs/scenes/create/full-movie-entries){:target="_blank"} either.
 <br/><br/>
 
 {:style="counter-reset:none"}
-1. Also, please don't blindly submit data from ThePornDB. You should verify the data is correct and complete first, make sure the URL is right, check for any [missing performers](https://guidelines.stashdb.org/docs/scenes/scene-performers/#missing-scene-performers){:target="_blank"}, and look up any relevant [guidelines](https://guidelines.stashdb.org/docs/scenes/){:target="_blank"} if something else seems funky to you. You can update your data within Stash before submitting a draft or you can edit the draft on StashDB itself before creating the edit. You should also have the studio URL now, so you should also compare with that page manually or even scrape again with a site-specific scraper as explained in the [previous step](#use-site-specific-scrapers) of this guide. Also please note in your [edit comment](https://guidelines.stashdb.org/docs/scenes/getting-started-scenes/#scene-edit-comments){:target="_blank"} where your data is coming from.
+1. Also, please don't blindly submit data from ThePornDB. You should verify the data is correct and complete first, make sure the URL is right, check for any [missing performers](https://guidelines.stashdb.org/docs/scenes/edit/scene-performers/missing-performers){:target="_blank"}, and look up any relevant [guidelines](https://guidelines.stashdb.org/docs/scenes){:target="_blank"} if something else seems funky to you. You can update your data within Stash before submitting a draft or you can edit the draft on StashDB itself before creating the edit. You should also have the studio URL now, so you should also compare with that page manually or even scrape again with a site-specific scraper as explained in the [previous step](#use-site-specific-scrapers) of this guide. Also please note in your [edit comment](https://guidelines.stashdb.org/docs/faq_getting-started/scenes/scene-edit-comments){:target="_blank"} where your data is coming from.

@@ -224,6 +224,22 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 }
 ```
 
+# Gallery
+
+## Disable lightbox image transition
+
+|-|-|
+|Description|Disable lightbox image transition.|
+|Author|echo6ix|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
+
+```css
+/* [Gallery tab] Disable lightbox image transition */
+.Lightbox-carousel {
+  transition: unset;
+}
+```
+
 # Movies
 
 ## Better Movie layout for desktops, regular size poster
@@ -685,7 +701,7 @@ h6,
 |-|-|
 |Description|This snipset includes the above tag layout snipset with a twist. Its meant to be used for people who use subtags as a hierachy. For example Watermelon is a subtag of Fruits, so when i click Fruits i want to see both oranges and watermelons, but i might want to get into the list of fruits subtags more easily. That what this snipset is used for. Any tag that has a subtag will show a (...) icon. When clicking its name you will show all subtags of this tag. if you click its image, it will instead open the tag itself normaly. You can change '137cbd' in the icon url to any color you want to match you theme|
 |Author|[hijack_hornet](https://github.com/HijackHornet)|
-|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)![](/assets/user-interface-ui/more_tag_before.jpg)![](/assets/user-interface-ui/more_tag_after_1.jpg)![](/assets/user-interface-ui/more_tag_after_2.jpg)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)![](/assets/user-interface-ui/more_tag_subtag.jpg)|
 
 ```css
 /*Tag layout changes*/
@@ -1069,5 +1085,19 @@ img.performer:hover,
 /* [Global changes] Hide 0 count badges */
 span.badge[data-value="0"] {
     display: none;
+}
+```
+
+## Border around cards activated with checkbox selection
+
+|-|-|
+|Description|Add a noticeable border around any cards that have been selected using the checkbox selection. Border color uses Stash's `--primary` color variable to maintain consistency with any theme that uses Stash's color variables.|
+|Author|echo6ix|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)![](/assets/user-interface-ui/Border-around-cards.png)|
+
+```css
+/* [Global changes] Modify card when checkbox is selected */
+.grid-card.card:has(input:checked) {
+   box-shadow: 0 0 0 1px var(--primary,rgba(255, 255, 255, 0.30));
 }
 ```

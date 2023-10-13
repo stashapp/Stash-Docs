@@ -96,6 +96,13 @@ driver:
 
 # Troubleshooting
 
+## Error: Panic: error initializing configuration: missing the following mandatory settings: generated
+
+1. Find your `config.yml` file. Usually located at `%userprofile%/.stash` or `$HOME/.stash`.
+2. Open it and find `generated:` line. 
+3. Replace with or add `generated: absolute_path_to_your_generated_folder`.
+4. Save and try to start Stash. 
+
 ## Known Issues
 
 - Performer images uploaded in WebP format will not display on versions of Safari prior to version 13 or on anything earlier than MacOS Big Sur. This is a [limitation of Safari](https://caniuse.com/webp){:target="_blank"}. As a workaround, ensure you are uploading performer images in jpg or png format.
@@ -111,8 +118,19 @@ The `ffmpeg` and `ffprobe` files should be placed in `~/.stash` on macOS / Linux
 
 Third-party Docker images are more likely to be misconfigured and makes it harder to get support from the core Stash team. For best experience you should stay with official Stash Docker image. [Stash repository](https://github.com/stashapp/stash/tree/master/docker/production){:target="_blank"} and [DockerHub](https://hub.docker.com/r/stashapp/stash){:target="_blank"}. 
 
-# Other FAQs
+## I'm getting "Migration failed"
 
-## I have a question not answered here.
+It can mean that you database got corrupted. You can verify that by running a few SQL statements. The easiest way to do so is to install a simple program called [DB Browser for SQLite](https://sqlitebrowser.org){:target="_blank"}. Start the program and in the menu select `File` > `Open Database...` and select your Stash .sqlite database file. Then navigate to the `Execute SQL` tab and run:
+- `PRAGMA integrity_check;` - it should return `ok`.
+- `PRAGMA foreign_key_check;` - it should return nothing.
 
-Join the Stash [Discord server](https://discord.gg/2TsNFKt){:target="_blank"}.
+If you get something different it means there is an issue with your database. It's still possible that it can be recovered. You can ask for more help in one of the [support channels](#support).  
+Another option would be to try using an older backup if you have one. 
+
+# Support
+
+## I have a question not answered here
+
+- Join our [Matrix space](https://matrix.to/#/#stashapp:unredacted.org){:target="_blank"}
+- Join our [Discord server](https://discord.gg/2TsNFKt){:target="_blank"}
+- Start a [discussion on GitHub](https://github.com/stashapp/stash/discussions){:target="_blank"}
