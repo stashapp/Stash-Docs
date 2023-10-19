@@ -72,7 +72,7 @@ Tags are not created automatically. You need to click `+` icon near the tag name
 
 # Use ThePornDB Endpoint
 
-If you are absolutely sure a scene isn't on StashDB anywhere, the next easiest method is to try ThePornDB. They have significantly more scenes than StashDB thanks to their automated scrapers, but their info isn't always as complete or accurate compared to StashDB's manually curated approach. They also don't have as many pHashes so matching scenes can be trickier as well.  By using their Endpoint and submitting fingerprints to them when you have a good match via searching, you make life easier for everyone else scraping there.
+1. If you are absolutely sure a scene isn't on StashDB anywhere, the next easiest method is to try ThePornDB. They have significantly more scenes than StashDB thanks to their automated scrapers, but their info isn't always as complete or accurate compared to StashDB's manually curated approach. They also don't have as many pHashes so matching scenes can be trickier as well.  By using their Endpoint and submitting fingerprints to them when you have a good match via searching, you make life easier for everyone else scraping there.
 <br/><br/>
 
 {:style="counter-reset:none"}
@@ -81,12 +81,16 @@ If you are absolutely sure a scene isn't on StashDB anywhere, the next easiest m
     ![How to create an API token on ThePornDB](/assets/beginner-guides/create-tpdb-token.jpg)
 <br/><br/>
 
+{:style="counter-reset:none"}
 1. Go to the **Settings** page in Stash ([http://localhost:9999/settings](http://localhost:9999/settings){:target="_blank"} by default), click **Metadata Providers** on the left side and find **Stash-box Endpoints** at the top.
 
+{:style="counter-reset:none"}
 1. Click **Add** and fill out the form that pops up: paste in your API key from step #1, enter `ThePornDB` (or anything else you'd like, like TPDB or Metadataapi.net) for **Name**, and enter `https://metadataapi.net/graphql` as the **GraphQL endpoint**
 
+{:style="counter-reset:none"}
 1.  Click **Test Credentials** to make sure you've entered everything correctly, then click **Confirm**.
 
+{:style="counter-reset:none"}
 1. Finally, we can use the Scene Tagger to scrape from ThePornDB. First you'll need to switch to "ThePornDB" as the Tagger's source. It will always default to the first Stash-Box source, so you'll need to switch it every time you need something else. Use the same process here as [we used with StashDB and the Scene Tagger](#use-the-scene-tagger). The "Scrape All" and "Scrape by fragment" buttons will search using your filename and your OSHash. If these don't give you the right results, you can try the "Search" button and customize your search terms as needed. Remember to use as few terms as possible in your search because unneccessary words that don't match ThePornDB's info may block correct results. You can also copy-paste additional terms from TPDB's page if you need to narrow down the Tagger's results more.
 
     ![Tagger source set to ThePornDB](/assets/beginner-guides/tagger-source-tpdb.png)
