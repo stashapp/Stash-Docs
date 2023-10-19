@@ -76,7 +76,7 @@ Tags are not created automatically. You need to click `+` icon near the tag name
 <br/><br/>
 
 {:style="counter-reset:none"}
-1. First step is to make an account at [metadataapi.net](https://metadataapi.net/register){:target="_blank"} which is ThePornDB's website. With your account created, navigate to your [API Tokens](https://metadataapi.net/user/api-tokens){:target="_blank"} page. Type "stash" as your token's name (or whatever you'd prefer), make sure the "read" permission is checked (you don't need the others), and click the "Create" button. A pop-up will display your newly created token. **Save your API token somewhere so you can find it later!** It will not be visible on ThePornDB's website after you close the pop-up. If you lose it, you may need to create a new one and repeat this entire setup process. This can be done in a password manager, notes app, or a well-placed text file.
+1. First step is to make an account at [metadataapi.net](https://metadataapi.net/register){:target="_blank"} which is ThePornDB's website. With your account created, navigate to your [API Tokens](https://metadataapi.net/user/api-tokens){:target="_blank"} page. Type "stash" as your token's name (or whatever you'd prefer), make sure the "read" permission is checked (you don't need the others), and click the "Create" button. A pop-up will display your newly created token. **Save your API token somewhere so you can find it later!**. It will not be visible on ThePornDB's website after you close the pop-up. If you lose it, you may need to create a new one and repeat this entire setup process. This can be done in a password manager, notes app, or a well-placed text file.
 
     ![How to create an API token on ThePornDB](/assets/beginner-guides/create-tpdb-token.jpg)
 <br/><br/>
@@ -85,7 +85,7 @@ Tags are not created automatically. You need to click `+` icon near the tag name
 1. Go to the **Settings** page in Stash ([http://localhost:9999/settings](http://localhost:9999/settings){:target="_blank"} by default), click **Metadata Providers** on the left side and find **Stash-box Endpoints** at the top.
 
 {:style="counter-reset:none"}
-1. Click **Add** and fill out the form that pops up: paste in your API key from step #1, enter `ThePornDB` (or anything else you'd like, like TPDB or Metadataapi.net) for **Name**, and enter `https://metadataapi.net/graphql` as the **GraphQL endpoint**
+1. Click **Add** and fill out the form that pops up: paste in your API key you created earlier amd enter `ThePornDB` (or anything else you'd like, like TPDB or Metadataapi.net) for **Name**, and enter `https://metadataapi.net/graphql` as the **GraphQL endpoint**.
 
 {:style="counter-reset:none"}
 1.  Click **Test Credentials** to make sure you've entered everything correctly, then click **Confirm**.
