@@ -23,6 +23,9 @@ Plugins are separated into 2 sections [Official](#official) and [Third-party](#t
 
 # Official
 
+{: .warning }
+List is outdated at the moment as there is a big overhaul of the repository happening. [Check the repository](https://github.com/stashapp/CommunityScripts/tree/main/plugins){:target="_blank"} for the up to date list. 
+
 Official plugins are hosted on [CommunityScripts repository](https://github.com/stashapp/CommunityScripts){:target="_blank"}. All code is reviewed by core Stash team and any questions or issues you have regarding these plugins can be raised in Discord or GitHub. 
 
 ## GHScraper_Checker
