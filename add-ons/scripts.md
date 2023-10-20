@@ -31,7 +31,6 @@ Official scripts are hosted on [CommunityScripts repository](https://github.com/
 |Category|Kodi|
 |Script|[Kodi Helper](https://github.com/stashapp/CommunityScripts/tree/main/scripts/kodi-helper){:target="_blank"}|
 |Description|Generates `nfo` and `strm` for use with Kodi.|
-|Stash version|v0.7 or higher|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ## Sqlite_Renamer
@@ -40,7 +39,14 @@ Official scripts are hosted on [CommunityScripts repository](https://github.com/
 |Category|Maintenance|
 |Script|[Sqlite_Renamer](https://github.com/stashapp/CommunityScripts/tree/main/scripts/Sqlite_Renamer){:target="_blank"}|
 |Description|Renames your files using stash's metadata.|
-|Stash version|v0.7 or higher|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
+## Stash Watcher
+
+|-|-|
+|Category|Scanning|
+|Script|[Stash Watcher](https://github.com/stashapp/CommunityScripts/tree/main/scripts/stash-watcher){:target="_blank"}|
+|Description|Stash Watcher is a service that watches your Stash library directories for changes and then triggers a Metadata Scan when new files are added to those directories.|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 # Third-party
