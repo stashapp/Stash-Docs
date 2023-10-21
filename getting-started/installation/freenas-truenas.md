@@ -1,6 +1,6 @@
 ---
 layout: clean
-title: FreeNAS/TrueNAS
+title: FreeNAS/TrueNAS CORE
 nav_order: 6
 parent: Installation
 grand_parent: Getting Started
