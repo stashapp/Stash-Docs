@@ -17,7 +17,7 @@ parent: Getting Started
 3. [Linux](/getting-started/installation/linux)
 4. [Docker](/getting-started/installation/docker)
 5. [Synology](/getting-started/installation/synology)
-6. [FreeNAS/TrueNAS](/getting-started/installation/freenas-truenas)
+6. [FreeNAS/TrueNAS CORE](/getting-started/installation/freenas-truenas)
 7. [Unraid](/getting-started/installation/unraid)
 </details>
 
