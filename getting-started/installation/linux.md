@@ -19,9 +19,9 @@ grand_parent: Getting Started
 It is recommended that you install `ffmpeg` from your distribution's package manager. In case you don't, Stash will download a copy for you. 
 
 {: .note }
->Stash offers different binaries for different architectures. You can find your processor architecture by running a simple command `uname -p` in a terminal.
+>Stash offers different binaries for different architectures. You can find your processor architecture by running a simple command `uname -p` in a terminal. Replace `<binary-name>` in the following tutorial accordingly.
 >
->`stash-linux` = amd64  
+>`stash-linux` = amd64  (x86_64)
 >`stash-linux-arm32v6` = arm32v6 (armel)  
 >`stash-linux-arm32v7` = arm32v7 (armhf)  
 >`stash-linux-arm64v8` = arm64v8 (arm64)  
