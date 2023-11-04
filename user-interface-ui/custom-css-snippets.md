@@ -315,6 +315,11 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 
 ## Hide the lightbox header and footer
 
+|-|-|
+|Description|Hides the lightbox header and footer to make the image area larger. Mouse reveals them as an overlay to the image.|
+|Author|[peresabcod](https://github.com/peresabcod)|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
+
 ```css
 /* [Gallery tab] Hides the lightbox header and footer to make the image area larger. Mouse reveals them as an overlay to the image*/
 
