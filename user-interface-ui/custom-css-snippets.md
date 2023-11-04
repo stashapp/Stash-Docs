@@ -224,22 +224,6 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 }
 ```
 
-# Gallery
-
-## Disable lightbox image transition
-
-|-|-|
-|Description|Disable lightbox image transition.|
-|Author|echo6ix|
-|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
-
-```css
-/* [Gallery tab] Disable lightbox image transition */
-.Lightbox-carousel {
-  transition: unset;
-}
-```
-
 # Movies
 
 ## Better Movie layout for desktops, regular size poster
@@ -312,6 +296,51 @@ Note: Future releases of Stash may break these CSS tweaks. CSS tweaks may not ap
 }
 .col.col-sm-6.mx-auto.table tr {
     display: inline-table;
+}
+```
+
+## Disable lightbox image transition
+
+|-|-|
+|Description|Disable lightbox image transition.|
+|Author|echo6ix|
+|Screenshots|![](/assets/user-interface-ui/fixed_table_width.png)|
+
+```css
+/* [Gallery tab] Disable lightbox image transition */
+.Lightbox-carousel {
+  transition: unset;
+}
+```
+
+## Hide the lightbox header and footer
+
+```css
+/* [Gallery tab] Hides the lightbox header and footer to make the image area larger. Mouse reveals them as an overlay to the image*/
+
+.Lightbox-header,
+.Lightbox-footer{
+z-index:9999;
+ position:absolute;
+ width:100%;
+ opacity:0;
+background-color:#0008;
+ transition: opacity 0.5s ease;
+}
+
+.Lightbox-footer{
+bottom:0;}
+
+.Lightbox-navbutton{
+opacity:0;
+transition: opacity 0.5s ease;
+}
+
+
+.Lightbox-navbutton:hover,
+.Lightbox-header:hover,
+.Lightbox-footer:hover{
+opacity:1;
 }
 ```
 
