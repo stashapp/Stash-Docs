@@ -45,22 +45,12 @@ Enjoy!
 # CSS Code
 
 ```css
-/*	StashApp Pulsar Theme - Fonzie 2020-21 v1.8.1  	 */
+/*	StashApp Pulsar Theme - Fonzie 2020-21 v1.8.2  	 */
 /* ---------------------------------------------------- */
 /* --------- Updated to Stash version 0.12.0 ---------- */
 
 /* 
-	Bug Fixes: Overlap of Help & Ssettings" buttons in the navbar, as well 
-	as the Identify task
-
-	Complete overhaul of the Settings page
-	
-	Bug Fix: Background-color in the navigation bar
-   
-	Adjustments to version 0.10.0 which includes moving the movie-, image- 
-	and gallery-counter to the bottom of the performer image when you hover 
-	over the card, and increasing the size of the star rating in the highest 
-	zoom level.   	
+	Bug Fixes: Overlap of Synopsis on movie cards   	
    
    
 */
@@ -1017,7 +1007,7 @@ margin-left: -1%;
 
 /* --- Changes the width of the items so only the front cover is displayed. Also replaces the ratings banner with a star rating --- */
 
-.movie-card .text-truncate, div.card.movie-card .TruncatedText {
+.movie-card .text-truncate {
 	font-size: 17px !important;
 	font-family: var(--HeaderFont);
 	text-shadow: var(--std-txt-shadow);
@@ -1039,7 +1029,7 @@ div.movie-card.grid-card.card .card-popovers {
 	float:right;
 }
 
-div.movie-card .card-section span {position:absolute;margin-top:-3px;margin-bottom:6px}
+#div.movie-card .card-section span {position:absolute;margin-top:-3px;margin-bottom:6px}
 
 
 
