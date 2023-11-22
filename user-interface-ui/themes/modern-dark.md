@@ -277,10 +277,10 @@ Enjoy!
      background-attachment: fixed;
      background-position: center;
 }
- @media (max-width: 575.98px) and (orientation: portrait) {
-     .scene-card-preview-image {
-         height: calc(100vw * (9 / 16));
-    }
+// @media (max-width: 575.98px) and (orientation: portrait) {
+//     .scene-card-preview-image {
+//         height: calc(100vw * (9 / 16));
+//    }
      .gallery-tabs .mr-auto.nav.nav-tabs {
          display: grid;
          grid-auto-flow: column;
