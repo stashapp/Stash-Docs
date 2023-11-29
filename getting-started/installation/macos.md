@@ -15,7 +15,7 @@ grand_parent: Getting Started
 {:toc}
 </details>
 
-# Packed App
+# Packaged App
 
 ## Install
 
