@@ -192,21 +192,19 @@ sudo a2enmod headers
 sudo a2enmod ssl
 ```
 
-## Caddy
+## Caddy v2
 
-```
-example.domain.com
-
-reverse_proxy 127.0.0.1:9999 {
-	header_up X-Forwarded-Host {host}
-	header_up Host {upstream_hostport}
-	header_up X-Real-IP {remote_host}
-	header_up X-Forwarded-For {remote_host}
-	header_up X-Forwarded-Port {server_port}
-	header_up X-Forwarded-Proto {scheme}
-}
+```caddy
+stash.example.com {
+    reverse_proxy 127.0.0.1:9999 {
+        header_up Host {host}
+        header_up X-Real-IP {remote_host}
+        header_up X-Forwarded-Port {server_port}
+    }
 }
 ```
+
+Also make sure to set [external_host](#nginx-with-external_host)
 
 # Troubleshooting
 
