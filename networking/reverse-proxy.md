@@ -127,7 +127,7 @@ Another example for `nginx`:
 
 In this case we are using `stash.home` as our domain and `192.168.0.1` is stash's ip so edit acccordingly.
 
-The `external_host` configuration option should also be set, in this case `external_host: http://stash.home`. Refer to [external_host](https://github.com/stashapp/stash/pull/369){:target="_blank"} for more details
+The `external_host` configuration option should also be set, in this case `external_host: http://stash.home`. Refer to [external_host](https://github.com/stashapp/stash/pull/369){:target="_blank"} for more details.
 
 ```bash
 server {
@@ -194,7 +194,7 @@ sudo a2enmod ssl
 
 ## Caddy v2
 
-```caddy
+```
 stash.example.com {
     reverse_proxy 127.0.0.1:9999 {
         header_up Host {host}
@@ -204,7 +204,7 @@ stash.example.com {
 }
 ```
 
-Also make sure to set [external_host](#nginx-with-external_host)
+The `external_host` configuration option should also be set, in this case `external_host: http://stash.home`. Refer to [external_host](https://github.com/stashapp/stash/pull/369){:target="_blank"} for more details.
 
 # Troubleshooting
 
