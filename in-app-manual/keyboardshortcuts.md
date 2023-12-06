@@ -51,8 +51,8 @@ parent: In-app Manual
 | <kbd>→</kbd> | Next page of results |
 | <kbd>⇧ Shift</kbd> + <kbd>←</kbd> | Go to current results page -10 |
 | <kbd>⇧ Shift</kbd> + <kbd>→</kbd> | Go to current results page +10 |
-| <kbd>Ctrl</kbd> + <kbd>Home</kbd> | Go to first page of results |
-| <kbd>Ctrl</kbd> + <kbd>End</kbd> | Go to last page of results |
+| <kbd>Ctrl</kbd> + <kbd>Home ⤒</kbd> | Go to first page of results |
+| <kbd>Ctrl</kbd> + <kbd>End ⤓</kbd> | Go to last page of results |
 | <kbd>s</kbd> <kbd>a</kbd> | Select all on page |
 | <kbd>s</kbd> <kbd>n</kbd> | Unselect all |
 | <kbd>e</kbd> | Edit selected |
