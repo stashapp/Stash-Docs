@@ -206,6 +206,3 @@ parent: In-app Manual
 | <kbd>d</kbd> <kbd>d</kbd> | Delete Tag |
 | <kbd>,</kbd> | Expand/Collapse Details |
 | <kbd>Ctrl</kbd> + <kbd>v</kbd> | Paste Tag image |
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM4MDAzNjQ0XX0=
--->
