@@ -101,6 +101,7 @@ Some rooms are designated as [NSFW]. Adult focused media is allowed to be posted
 
 - [#stash-scrapers:unredacted.org](https://matrix.to/#/#stash-scrapers:unredacted.org){:target="_blank"} - (bridged) - Metadata scraping, curation and automation techniques
 - [#stash-plugins:unredacted.org](https://matrix.to/#/#stash-plugins:unredacted.org){:target="_blank"} - (bridged) - Discussions loosely related to Stash plugins and plugin API
+- [#stash-theming:unredacted.org](https://matrix.to/#/#stash-plugins:unredacted.org){:target="_blank"} - (bridged) - Discussions related to Stash theming and custom CSS
 - [#stash-ai-projects-feed-the-machine:unredacted.org](https://matrix.to/#/#stash-ai-projects-feed-the-machine:unredacted.org){:target="_blank"} - [NSFW] - (bridged) - Discussions loosely connected to AI
 - [#stash-ai-tagging:unredacted.org](https://matrix.to/#/#stash-ai-tagging:unredacted.org){:target="_blank"} - [NSFW] - (bridged) - AI in metadata tagging
 - [#stash-funscripts:unredacted.org](https://matrix.to/#/#stash-funscripts:unredacted.org){:target="_blank"} - (bridged) - Discussions and development related to funcscrips and interactivity
@@ -114,7 +115,7 @@ Some rooms are designated as [NSFW]. Adult focused media is allowed to be posted
 - [#stash-project-management:unredacted.org](https://matrix.to/#/#stash-project-management:unredacted.org){:target="_blank"} - (bridged) - Discussions about ongoing projects, roadmaps, updates and release scope
 - [#stash-programming:unredacted.org](https://matrix.to/#/#stash-programming:unredacted.org){:target="_blank"} - (bridged) - Discussions loosely related to Stash programming 
 - [#stash-code-review:unredacted.org](https://matrix.to/#/#stash-code-review:unredacted.org){:target="_blank"} - (bridged) - Code validation and testing for pull requests
-- [#stash-ui-ux:unredacted.org](https://matrix.to/#/#stash-ui-ux:unredacted.org){:target="_blank"} - [NSFW] - (bridged) - Stash UI and custom CSS discussions, validation and testing
+- [#stash-ui-ux:unredacted.org](https://matrix.to/#/#stash-ui-ux:unredacted.org){:target="_blank"} - [NSFW] - (bridged) - Discussions related to User Interface (UI) and User Experience (UX)
 
 ## stash-box focused rooms
 
