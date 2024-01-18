@@ -82,3 +82,12 @@ These utilities are created by third parties and not officially affiliated or su
 |Description|stash-qmt (quick manual tagger) is a simple GUI tool designed to help with cases of manually tagging multiple similar scenes (manually, as in, with having to actually watch them) in Stash.|
 |Author|[PokerFacowaty](https://github.com/PokerFacowaty){:target="_blank"}|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/stash-qmt-1.png)![](/assets/add-ons/stash-qmt-2.png)|
+
+## Stash App for Android TV
+
+|-|-|
+|Category|TV|
+|Utility|[StashAppAndroidTV](https://github.com/damontecres/StashAppAndroidTV){:target="_blank"}|
+|Description|A basic Android TV app for browsing and playing videos from a Stash server. Not all features of Stash are supported, but the basics for browsing, searching, and playing scenes should work. The app is not intended to perform administrative functions such as scanning, scraping, or editing details.|
+|Author|[damontecres](https://github.com/damontecres){:target="_blank"}|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/StashAppAndroidTV-1.png)![](/assets/add-ons/StashAppAndroidTV-2.png)![](/assets/add-ons/StashAppAndroidTV-3.png)|
