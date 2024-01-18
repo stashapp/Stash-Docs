@@ -70,7 +70,7 @@ Some rooms are designated as [NSFW]. Adult focused media is allowed to be posted
 ## Stashapp Org rooms
 
 - [#stash-announcements:unredacted.org](https://matrix.to/#/#stash-announcements:unredacted.org){:target="_blank"} - (bridged) - Stashapp announcements, news and status updates
-- [#stash-sustainability:unredacted.org](https://matrix.to/#/#stash-sustainability:unredacted.org){:target="_blank"} - (bridged) - Discussion about the sustainability of the Stash ecosystem
+- [#stash-finances:unredacted.org](https://matrix.to/#/#stash-sustainability:unredacted.org){:target="_blank"} - (bridged) - Financial status, bounty viability and long term sustainability of the Stash project
 
 ## Support rooms
 
