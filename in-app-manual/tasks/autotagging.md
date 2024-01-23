@@ -20,3 +20,6 @@ For example, auto tagging for performer `Jane Doe` will match the following file
 Matching is case insensitive, and should only match exact wording within word boundaries. For example, the tag `Jane Doe` will not match `Maryjane-Doe` or `Jane-Doen`, but will match `Mary-Jane-Doe`, `Jane-Doe_n`, and `[OF]jane doe`.
 
 Auto tagging for specific Performers, Studios, and Tags can be performed from the individual Performer/Studio/Tag page.
+
+{: .note }
+Performer autotagging does not currently match on performer aliases.
