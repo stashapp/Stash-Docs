@@ -20,7 +20,7 @@ Financial contributions are welcomed and are accepted using [Open Collective](ht
 
 # Development-related
 
-The Stash backend is written in Go, using a SQLite database. The UI is written in Typescript, using React. Bug fixes, improvements and new features are welcomed. Please see the [DEVELOPMENT.md](https://github.com/stashapp/stash/blob/develop/docs/DEVELOPMENT.md){:target="_blank"} file for details on how to get started. Assistance is available via our [Discord](https://discord.gg/2TsNFKt){:target="_blank"}.
+The Stash backend is written in Go, using a SQLite database. The UI is written in Typescript, using React. Bug fixes, improvements and new features are welcomed. Please see the [DEVELOPMENT.md](https://github.com/stashapp/stash/blob/develop/docs/DEVELOPMENT.md){:target="_blank"} file for details on how to get started. Assistance is available via our [Discord server](https://discord.gg/2TsNFKt){:target="_blank"}.
 
 # Documentation
 

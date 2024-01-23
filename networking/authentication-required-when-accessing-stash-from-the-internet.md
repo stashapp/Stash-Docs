@@ -15,7 +15,7 @@ parent: Networking
 {:toc}
 </details>
 
-Support is always available on our [Discord](https://discord.gg/2TsNFKt){:target="_blank"}.
+Support is always available on our [Discord server](https://discord.gg/2TsNFKt){:target="_blank"}.
 
 # Protecting against accidental exposure to the internet
 

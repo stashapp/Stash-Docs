@@ -17,10 +17,10 @@ parent: Networking
 
 There is a GraphQL API which allows to do things automatically.
 
-All http requests have to go to ``http://IP:PORT/graphql``
+All http requests have to go to `http://IP:PORT/graphql`
 
 Data from the API can be outdated from time to time.
-In that case you can either visit our [Discord](https://discord.gg/2TsNFKt){:target="_blank"} for more help or make an issue.
+In that case you can either visit our [Discord server](https://discord.gg/2TsNFKt){:target="_blank"} for more help or make an issue.
 
 For up to date info you can check stash's playground `http://IP:PORT/playground` ( SCHEMA/DOCS section to the right).
 
