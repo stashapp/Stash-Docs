@@ -1,6 +1,6 @@
 ---
 layout: clean
-title: FreeNAS/TrueNAS CORE
+title: FreeNAS/TrueNAS
 nav_order: 6
 parent: Installation
 grand_parent: Getting Started
@@ -14,6 +14,38 @@ grand_parent: Getting Started
 1. TOC
 {:toc}
 </details>
+
+# TrueNAS Scale
+
+* The following step by step was tested using TrueNAS Scale Cobia (23.10.1.3).
+
+## Instalation
+
+To install the stashapp, we will use the TrueCharts app database. To install, we'll follow the official documentation at https://truecharts.org/manual/SCALE/guides/getting-started/
+
+1. Go to Apps page from the top level SCALE menu
+2. Click Discover Apps button on the Apps page
+3. Click Manage Catalogs link on the Discover Apps page
+4. Click Add Catalog
+5. After reading the iXsystems notice, click Continue and enter the required information: Name: truecharts Repository: https://github.com/truecharts/catalog Preferred Trains: enterprise, stable and operators (type each one manually) Branch: main
+6. Click Save and allow SCALE to refresh its catalog with TrueCharts (this may take a few minutes)
+
+After the update is complete, use the search bar to search for "stash". When found, click Install.
+
+## Options
+
+The installation window will contain several customizable options, but the most important one is the storage option. Search for "Additional App Storage" on the page and click "Add".
+
+In "Type of Storage", select "Host Path" if the desired folder is a Dataset.
+"Host Path" should be where your content will be.
+"Mount Path" is the name that appears in the stash for the selection. You can put anything here, like /stash-content for example.
+After that, click Install.
+
+Installation will take a few minutes. After the stash appears as "Running", click "Open" on the right and continue with the stash configuration.
+When entering the folder that contains its contents, remember to search for the same name you entered previously. In the case of this guide, the name was /stash-content.
+
+
+# TrueNAS Core
 
 # Caveats and assumptions
 
