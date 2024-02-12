@@ -44,17 +44,16 @@ After that, click Install.
 Installation will take a few minutes. After the stash appears as "Running", click "Open" on the right and continue with the stash configuration.
 When entering the folder that contains its contents, remember to search for the same name you entered previously. In the case of this guide, the name was /stash-content.
 
-
 # TrueNAS Core
 
-# Caveats and assumptions
+## Caveats and assumptions
 
 * the method documented here has only been given cursory testing, so there may be compatibility problems
 * this method assumes that stash will be run within a previously created iocage jail - the process to create and configure the jail is not included here
 * if the jail is in NAT mode, ensure that port 9999 is forwarded to your TrueNAS host
 * the alternative to this method is to compile from source, which is a more involved process and not documented here
 
-# Linux compatibility
+## Linux compatibility
 
 In order for the `stash-linux` binary to work in a FreeBSD system, Linux compatibility must be enabled both in the system and the jail. To enable Linux compatibility:
 1. navigate to `System -> Tunables` in the TrueNAS Web UI
@@ -70,14 +69,14 @@ enable_linux="YES"
 ```
 5. Reboot the system.
 
-# Install ffmpeg/ffprobe
+## Install ffmpeg/ffprobe
 
 Go into your iocage jail and install `ffmpeg`
 ```
 pkg install ffmpeg
 ``` 
 
-# Create user and group
+## Create user and group
 
 It is recommended to not run services as root. Adjust this step to your system. in this example the user `stash` will be created and set to run the service.
 
@@ -85,7 +84,7 @@ It is recommended to not run services as root. Adjust this step to your system. 
 pw useradd -n stash -u 1069 -d /nonexistent -s /usr/sbin/nologin
 ```
 
-# Download stash-linux 
+## Download stash-linux 
 
 Choose where you would like to store the binary, in this example `/usr/local/bin` is selected as this is where the ffmpeg binaries also reside. Check github for latest release. Also remember to fix permissions and ownership
 ```
@@ -95,7 +94,7 @@ chown stash:stash stash-linux
 chmod +x stash-linux
 ```
 
-# Create configuration directory
+## Create configuration directory
 
 stash needs a directory for its config file, database and more. Remember to change ownership and permission for the folder you select. The script we will look at in the next step has this path as the default:
 ```
@@ -103,7 +102,7 @@ mkdir /usr/local/etc/stash
 chown stash:stash /usr/local/etc/stash
 ```
 
-# rc.d startup script
+## rc.d startup script
 
 In order for stash to run as a daemon in the background, and also start at boot, you need a rc.d script.  
 ```
@@ -146,7 +145,7 @@ run_rc_command $1
 ```
 To save, press `ESC + Enter` and confirm with `a` and make it executable with `chmod +x /usr/local/etc/rc.d/stash`
 
-# Enable the service at boot
+## Enable the service at boot
 
 If you want Stash to run when you start the jail, run the following command:
 ```
@@ -160,7 +159,7 @@ Stash is now available at http://jail-IP:9999/
 
 During setup you can leave all the paths for config, database and etc empty to use the default. They will then be stored in the config-folder we created earlier so you can easily backup the folder. Only add your media content. 
 
-# Optional steps
+## Optional steps
 
 You can change the location where stash stores the configuration files and database. Please note that the path needs to end with `config.yml` even if it does not exist yet. Stash will create it for you. Remember to fix ownership and permissions of the location you choose.
 ```
