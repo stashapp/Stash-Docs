@@ -525,7 +525,7 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Utility|
-|Userscript|[Stash Checker](https://gist.github.com/timo95/562b9363d491e3ee281cb46944445fcd){:target="_blank"}|
-|Description|Checks if a given scene/performer on one of the supported sites is present in your Stash. Shows a checkmark and tooltip for additional information. All supported websites are listed in the metadata `@match` section.|
+|Userscript|[Stash Checker](https://github.com/timo95/stash-checker){:target="_blank"}|
+|Description|Checks if a Scene/Performer is in your Stash instance. It shows a checkmark if an item was found in your Stash. Supported websites include StashDB, TPDB, IAFD, JabLibrary and many more. Other features: A tooltip with the items metadata, multiple Stash endpoints, support for movies, galleries, etc.|
 |Author|[timo95](https://github.com/timo95)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Checker.png)|
