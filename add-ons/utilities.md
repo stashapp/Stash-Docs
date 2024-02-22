@@ -25,9 +25,9 @@ These utilities are created by third parties and not officially affiliated or su
 |-|-|
 |Category|Companion|
 |Utility|[Stash_helper](https://github.com/philpw99/Stash_Helper){:target="_blank"}|
-|Description|Adds some windows-specific tools to Stash (navigate from icon, installation help, etc).|
+|Description|Adds some helping features to Stash (Bookmarks, playlist, external player... etc).|
 |Author|[philpw99](https://github.com/philpw99){:target="_blank"}|
-|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_helper-1.png)|
 
 ## stash-vr
 
