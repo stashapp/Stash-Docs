@@ -15,11 +15,12 @@ parent: Add-ons
 {:toc}
 </details>
 
-Userscripts are programs written in Javascript that modifies web pages to improve browsing with new features, formatting and more. 
+Userscripts are programs written in Javascript that modifies web pages to improve browsing with new features, formatting and more.
 
 To install the userscript you will need a browser extension such as [Violentmonkey](https://violentmonkey.github.io){:target="_blank"} / [Tampermonkey](https://www.tampermonkey.net){:target="_blank"} / [Greasemonkey](https://www.greasespot.net){:target="_blank"}.
 
 # Categories
+
 - **Stash** - applies to Stash software.
 - **StashDB** - applies to StashDB.org stash-box instance (might work with other stash-box instances with some tweaking).
 - **Utility** - applies to sites not related to Stash.
@@ -28,7 +29,7 @@ Userscripts are separated into 2 sections [Official](#official) and [Third-party
 
 # Official
 
-Official userscripts are hosted on [CommunityScripts repository](https://github.com/stashapp/CommunityScripts){:target="_blank"}. All code is reviewed by core Stash team and any questions or issues you have regarding these userscripts can be raised in Discord or GitHub. 
+Official userscripts are hosted on [CommunityScripts repository](https://github.com/stashapp/CommunityScripts){:target="_blank"}. All code is reviewed by core Stash team and any questions or issues you have regarding these userscripts can be raised in Discord or GitHub.
 
 ## StashDB Submission Helper
 
@@ -488,43 +489,43 @@ These userscripts are created by third parties and not officially affiliated or 
 
 |-|-|
 |Category|Utility|
-|Userscript|[Vixen Media Group - Trailers, Studio Code, and Click to Copy](https://github.com/halorrr/userscripts#vixen-media-group---trailers-studio-code-and-click-to-copy){:target="_blank"}|
+|Userscript|[Vixen Media Group - Trailers, Studio Code, and Click to Copy](https://github.com/mmenanno/userscripts#vixen-media-group---trailers-studio-code-and-click-to-copy){:target="_blank"}|
 |Description|Displays Studio Code, displays trailer links in 320p, 480p, 720p, 1080p, and 2160p formats (links open in new tab), click to copy studio code, click to copy date in stash format (YYYY-MM-DD), click to copy duration, click to copy Director name.|
-|Author|[halorrr](https://github.com/halorrr)|
+|Author|[mmenanno](https://github.com/mmenanno)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ## Freeones Forum Link Corrector
 
 |-|-|
 |Category|Utility|
-|Userscript|[Freeones Forum Link Corrector](https://github.com/halorrr/userscripts#freeones-forum-link-corrector){:target="_blank"}|
+|Userscript|[Freeones Forum Link Corrector](https://github.com/mmenanno/userscripts#freeones-forum-link-corrector){:target="_blank"}|
 |Description|Converts old `board.freeones.showthread.php` style freeones links to the new format in order to avoid broken links. Currently runs on theNude, indexxx, and freeones. More can be added if there is a common need for them.|
-|Author|[halorrr](https://github.com/halorrr)|
+|Author|[mmenanno](https://github.com/mmenanno)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ## ModelHub Exact Date
 
 |-|-|
 |Category|Utility|
-|Userscript|[ModelHub Exact Date](https://github.com/halorrr/userscripts#modelhub-exact-date){:target="_blank"}|
+|Userscript|[ModelHub Exact Date](https://github.com/mmenanno/userscripts#modelhub-exact-date){:target="_blank"}|
 |Description|Replaces the approximate date (ex. 3 years ago) for a scene with an exact one in YYYY-MM-DD format as long as the user is logged in to a PornHub account. Modelhub has a tracking script for user activity that only triggers when the user is logged into a Pornhub account. This script contains the video's upload date, this is why being logged in is required. You will also be able to click on the date to copy it.|
-|Author|[halorrr](https://github.com/halorrr)|
+|Author|[mmenanno](https://github.com/mmenanno)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ## ATK Girlfriends Scene and Image Links with Click to Copy
 
 |-|-|
 |Category|Utility|
-|Userscript|[ATK Girlfriends Scene and Image Links with Click to Copy](https://github.com/halorrr/userscripts#atk-girlfriends-scene-and-image-links-with-click-to-copy){:target="_blank"}|
+|Userscript|[ATK Girlfriends Scene and Image Links with Click to Copy](https://github.com/mmenanno/userscripts#atk-girlfriends-scene-and-image-links-with-click-to-copy){:target="_blank"}|
 |Description|This helps getting metadata from ATK Girlfriends. This runs on the model page as it solves this issues that a lot of scene pages on ATK Girlfriends will just return a blank white page. This script: extracts the scene link, adds a link, and a click to copy button, extracts the scene images, manipulates the url to be the larger version, adds a link, and a click to copy button, adds a click to copy button to the title, adds a click to copy button to the description.|
-|Author|[halorrr](https://github.com/halorrr)|
+|Author|[mmenanno](https://github.com/mmenanno)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
 ## Stash Checker
 
 |-|-|
 |Category|Utility|
-|Userscript|[Stash Checker](https://gist.github.com/timo95/562b9363d491e3ee281cb46944445fcd){:target="_blank"}|
-|Description|Checks if a given scene/performer on one of the supported sites is present in your Stash. Shows a checkmark and tooltip for additional information. All supported websites are listed in the metadata `@match` section.|
+|Userscript|[Stash Checker](https://github.com/timo95/stash-checker){:target="_blank"}|
+|Description|Checks if a Scene/Performer is in your Stash instance. It shows a checkmark if an item was found in your Stash. Supported websites include StashDB, TPDB, IAFD, JabLibrary and many more. Other features: A tooltip with the items metadata, multiple Stash endpoints, support for movies, galleries, etc.|
 |Author|[timo95](https://github.com/timo95)|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)![](/assets/add-ons/Stash_Checker.png)|
