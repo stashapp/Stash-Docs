@@ -33,17 +33,7 @@ The following is our recommended procedure for new Stash users who want to get i
 
 # Join StashDB
 
-If you haven't set up StashDB in your Stash settings yet, now's the time to do it. Get an invite code in the **#stashdb-invites** channel on [Discord](https://discord.gg/gHwFj8neaa){:target="_blank"}. Check the pinned messages (📌 icon in top right) there for details and up-to-date instructions on how to create an account and connect to it from Stash.
-
-## How to connect your account to Stash
-
-1.  Go to [https://stashdb.org/register](https://stashdb.org/register){:target="_blank"} to create a new account using one of the invite codes pinned to **#stashdb-invites**.
-  - If all of the codes are used/expired politely ask them to be refreshed in **#stashdb-invites**. A few other elevated users can also generate an invite code for you.
-2.  Once you're logged in to StashDB, click on your username at the top next to **Logged in as**.
-3.  Copy your unique **API key**.
-4.  Go to the **Settings** page in Stash ([http://localhost:9999/settings](http://localhost:9999/settings){:target="_blank"} by default), click **Metadata Providers** on the left side and find **Stash-box Endpoints** at the top.
-5.  Click **Add** and fill out the form that pops up: paste in your API key from step #3, enter `stashdb.org` (or anything else you'd like) for **Name**, and enter `https://stashdb.org/graphql` as the **GraphQL endpoint**
-6.  Click **Test Credentials** to make sure you've entered everything correctly, then click **Confirm**.
+If you haven't set up StashDB in your Stash settings yet, now's the time to do it. The best way to do that is to follow this guide to [Accessing StashDB](https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/accessing-stashdb/). It includes step-by-step instructions for both signing up to StashDB and connecting your new account to Stash.
 
 # Use the Scene Tagger
 
