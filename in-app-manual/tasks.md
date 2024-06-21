@@ -76,6 +76,7 @@ The generate task accepts the following options:
 | Generate heatmaps and speeds for interactive scenes | Generates heatmaps and speeds for interactive scenes. |
 | Image Clip Previews | Generates a gif/looping video as thumbnail for image clips/gifs. |
 | Overwrite existing generated files | By default, where a generated file exists, it is not regenerated. When this flag is enabled, then the generated files are regenerated. |
+| Force rescan | By default, Stash will only rescan existing files if the file's modified date has been updated since its previous scan. Stash will scan files in the path when this option is enabled, regardless of the mod time changed. Only enable this option if Stash is not picking up changes recently made to files. This option is mainly relevant to users using gallery zips. |
 
 ## Transcodes
 
