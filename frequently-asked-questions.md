@@ -42,6 +42,8 @@ This command would need customizing for your environment.  [This link](https://s
 
 Once you have a certificate and key file name them `stash.crt` and `stash.key` and place them in the same directory as the `config.yml` file, or the `~/.stash` directory.  Stash detects these and starts up using HTTPS rather than HTTP.
 
+Alternatively you can add values to `config.yml` for `ssl_cert_path: /ssl-certs/my-fullchain.cer` and `ssl_key_path: C:\ssl-certs\my-private.key`, which contain the full paths to your files.
+
 ## How do I serve Stash in a Subpath?
 
 The basepath defaults to `/`. When running stash via a reverse proxy in a subpath, the basepath can be changed by having the reverse proxy pass `X-Forwarded-Prefix` (and optionally `X-Forwarded-Port`) headers. When detects these headers, it alters the basepath URL of the UI.
