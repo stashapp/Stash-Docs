@@ -21,10 +21,7 @@ Stash supports Custom CSS themes to adjust the look-and-feel of the interface. T
 
 # Installing a theme
 
-1. Select a theme from the directory below, and copy the CSS code to your clipboard. You may also need to download image files, as per the instructions.
-2. In Stash, go to the `Settings` section, then select `Interface`.
-3. Make sure `Custom CSS` is checked, then paste the CSS code into the text box.
-4. You will need to force-reload (Shift+F5) in order to see the theme.
+Themes are installed the same way as plugins, and the themes below can all be installed under `Settings > Plugins` via the Community plugins source. For further instructions, see: [Managing Plugins](https://docs.stashapp.cc/in-app-manual/plugins/#managing-plugins).
 
 # Creating Themes
 
