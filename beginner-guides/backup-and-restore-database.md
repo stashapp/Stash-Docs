@@ -42,7 +42,7 @@ You should now have stash running with a working and restored database.
 # Advanced Troubleshooting
 
 If you get a database malformed message during upgrade or backup that probably means that the database is already corrupt. One way to get past that is to do a full export and check the error log. If there are not a lot of errors you can then try to do a full import and get a working db with minimal losses. As the full import is destructive proceed with caution. 
-For cases like this it is better to visit the [discord channel](https://discord.gg/frQ7qBvB3S).
+For cases like this it is better to visit the [Discord server](https://discord.gg/frQ7qBvB3S).
 
 
 
