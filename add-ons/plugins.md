@@ -148,6 +148,16 @@ Official plugins are hosted on [CommunityScripts repository](https://github.com/
 |Stash version|v0.18 or higher|
 |Screenshots|![](/assets/add-ons/fixed_table_width.png)|
 
+## AI Tagger
+
+|-|-|
+|Category|Scene|
+|Plugin|[AI Tagger](https://github.com/stashapp/CommunityScripts/tree/main/plugins/AITagger){:target="_blank"}|
+|Description|Tag videos and Images with Locally hosted AI using Skier's Patreon AI models.|
+|Triggers|Task|
+|Stash version|v0.18 or higher|
+|Screenshots|![](/assets/add-ons/fixed_table_width.png)|
+
 # Third-party
 
 {: .note }
