@@ -221,3 +221,8 @@ proxy_http_version 1.1;
 proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection "upgrade";
 ```
+
+## Cloudflare Tunnel
+Cloudflare Tunnels are not recommended since they throttle non-HTML traffic (which video falls under)
+
+[Cloudflare Blog Post](https://blog.cloudflare.com/updated-tos/)
