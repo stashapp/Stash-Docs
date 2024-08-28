@@ -226,4 +226,4 @@ proxy_set_header Connection "upgrade";
 
 Cloudflare Tunnels are not recommended since they throttle non-HTML traffic (which video falls under).
 
-See [Cloudflare blog post](https://blog.cloudflare.com/updated-tos/){target="_blank"} for more details.
+See [Cloudflare blog post](https://blog.cloudflare.com/updated-tos/){:target="_blank"} for more details.
