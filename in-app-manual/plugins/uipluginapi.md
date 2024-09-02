@@ -27,6 +27,10 @@ An example using various aspects of `PluginApi` may be found in the source code 
 
 An instance of the React library.
 
+### `ReactDOM`
+
+An instance of the ReactDOM library.
+
 ## `GQL`
 
 This namespace contains the generated graphql client interface. This is a low-level interface. In many cases, `StashService` should be used instead.
@@ -40,6 +44,8 @@ This namespace contains the generated graphql client interface. This is a low-le
 - `Intl`
 - `FontAwesomeRegular`
 - `FontAwesomeSolid`
+- `Mousetrap`
+- `MousetrapPause`
 
 ## `register`
 
@@ -91,6 +97,7 @@ Returns a `Promise<void>` that resolves when all of the components have been loa
 
 This namespace provides access to the following core utility hooks:
 - `useSpriteInfo`
+- `useToast`
 
 It also provides plugin-specific hooks.
 
@@ -144,3 +151,11 @@ Registers an after function. An after function is called after the render functi
 | `fn` | `Function` | The after function. It accepts the same arguments as the original render function, plus the result of the original render function, and is expected to return the rendered component. |
 
 Returns `void`.
+
+#### `PluginApi.Event`
+
+Allows plugins to listen for Stash's events.
+
+```js
+PluginApi.Event.addEventListener("stash:location", (e) => console.log("Page Changed", e.detail.data.location.pathname))
+```

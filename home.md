@@ -7,7 +7,7 @@ permalink: /
 
 # Stash
 
-[![Weblate project translated](https://img.shields.io/weblate/progress/stashapp?server=https%3A%2F%2Fhosted.weblate.org&style=for-the-badge&logo=weblate)](https://hosted.weblate.org/engage/stashapp/){:target="_blank"}
+[![Weblate project translated](https://img.shields.io/weblate/progress/stash?server=https%3A%2F%2Ftranslate.codeberg.org&style=for-the-badge&logo=weblate)](https://translate.codeberg.org/engage/stash/){:target="_blank"}
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/stashapp?logo=github&style=for-the-badge)](https://github.com/sponsors/stashapp){:target="_blank"}
 [![Open Collective backers](https://img.shields.io/opencollective/backers/stashapp?logo=opencollective&style=for-the-badge)](https://opencollective.com/stashapp){:target="_blank"}
 [![Matrix](https://img.shields.io/matrix/stashapp:unredacted.org?logo=matrix&server_fqdn=matrix.org&style=for-the-badge)](https://matrix.to/#/#stashapp:unredacted.org){:target="_blank"}

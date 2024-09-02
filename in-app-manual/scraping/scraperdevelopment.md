@@ -231,7 +231,7 @@ For example:
 sceneByFragment:
   action: scrapeJson
   scraper: sceneQueryScraper
-  queryURL: https://metadataapi.net/api/scenes?parse={filename}&limit=1
+  queryURL: https://theporndb.net/api/scenes?parse={filename}&limit=1
   queryURLReplace:
     filename:
       - regex: <some regex>
@@ -697,21 +697,21 @@ A performer and scene scraper for ThePornDB is shown below:
 name: ThePornDB
 performerByName:
   action: scrapeJson
-  queryURL: https://api.metadataapi.net/performers?q={}
+  queryURL: https://api.theporndb.net/performers?q={}
   scraper: performerSearch
 performerByURL:
   - action: scrapeJson
     url:
-      - https://api.metadataapi.net/performers/
+      - https://api.theporndb.net/performers/
     scraper: performerScraper
 sceneByURL:
   - action: scrapeJson
     url:
-      - https://api.metadataapi.net/scenes/
+      - https://api.theporndb.net/scenes/
     scraper: sceneScraper
 sceneByFragment:
   action: scrapeJson
-  queryURL: https://api.metadataapi.net/scenes?parse={filename}&hash={oshash}&limit=1
+  queryURL: https://api.theporndb.net/scenes?parse={filename}&hash={oshash}&limit=1
   scraper: sceneQueryScraper
   queryURLReplace:
     filename:
@@ -732,7 +732,7 @@ jsonScrapers:
         postProcess:
           - replace:
               - regex: ^
-                with: https://api.metadataapi.net/performers/
+                with: https://api.theporndb.net/performers/
 
   performerScraper:
     common:
