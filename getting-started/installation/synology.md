@@ -21,7 +21,8 @@ Synology devices comes in two categories : those who support containerization th
 
 Now, follow the installation instructions based on whether you [can use Docker](#to-install-stash-with-docker) or [you cannot use Docker](#to-install-stash-without-docker).
 
-Note : running stash without docker is possible even if your NAS is docker ready. It offers more control on your stash instance startup. As an example, it allows you to store your porn collection in an Encrypted Shared Folder, and only run stash when the Encrypted folder is Mounted (Decrypted).
+{: .note }
+Running stash without docker is possible even if your NAS is docker ready. It offers more control on your stash instance startup. As an example, it allows you to store your porn collection in an Encrypted Shared Folder, and only run stash when the Encrypted folder is Mounted (Decrypted).
 
 ## To install Stash with Docker
 
@@ -71,7 +72,7 @@ This is intended to work on DSM 7.0 and later. It will not work on any version p
 
 ### Install Prerequisites
 
-In DSM, navigate to `Package Center > Settings`. In the `Package Sources` tab, click `Add`, type _SynoCommunity_ as Name and [https://packages.synocommunity.com/](https://packages.synocommunity.com/) as Location and then press `OK` to validate.
+In DSM, navigate to `Package Center > Settings`. In the `Package Sources` tab, click `Add`, type _SynoCommunity_ as Name and [https://packages.synocommunity.com/](https://packages.synocommunity.com/){:target="_blank"} as Location and then press `OK` to validate.
 
 Go back to the Package Center and look for `Python 3.11` in the Community tab. Click on `Ìnstall` and agree to the _Third-Party Package_ warning.
 
@@ -143,7 +144,8 @@ sha1sum -c --ignore-missing CHECKSUMS_SHA1
 rm CHECKSUMS_SHA1
 ```
 
-_Note : DO NOT run stash yet or it will generate a bunch of files/folders where we don't want them_
+{: .note }
+DO NOT run stash yet or it will generate a bunch of files/folders where we don't want them_
 
 ### Python
 
@@ -184,7 +186,8 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
-Note : change the `ExecStart` line by providing the exact name of the stash executable that you downloaded previously.
+{: .note }
+Change the `ExecStart` line by providing the exact name of the stash executable that you downloaded previously.
 
 Start and activate the service
 
@@ -206,7 +209,8 @@ pipreqs .stash/.
 pip3 install -r .stash/requirements.txt
 ```
 
-Note : using pipreqs allows to scan all scrapers and plugins installed and find dependencies that they require. You can do the same thing without pipreqs by going into each individual directory and run `pip3 install -r requirements.txt`
+{: .note }
+Using pipreqs allows to scan all scrapers and plugins installed and find dependencies that they require. You can do the same thing without pipreqs by going into each individual directory and run `pip3 install -r requirements.txt`
 
 ### Remove stash user from administrator group
 
