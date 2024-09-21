@@ -127,6 +127,19 @@ It can mean that you database got corrupted. You can verify that by running a fe
 If you get something different it means there is an issue with your database. It's still possible that it can be recovered. You can ask for more help in one of the [support channels](#support).  
 Another option would be to try using an older backup if you have one. 
 
+## How do I run multiple instances of Stash?
+
+Running multiple instances of Stash can be done by specifying both the `-c` switch to denote an alternate `config.yml` filepath, and the `--p` switch to denote a unique port number.
+
+Step-by-step Linux guide to running mutiple instances of Stash:
+
+1. Create a new directory for the alternate Stash configuration, referred to here as `NEW_DIRECTORY_LOCATION`.
+2. Choose a unique port number that does not conflict with other local Stash instances, referred to here as `NEW_PORT_NUMBER`.
+3. Initiate Stash to assume a fresh installation by running `./stash-linux --port NEW_PORT_NUMBER -c NEW_DIRECTORY_LOCATION/config.yml`.
+4. Complete the Stash Setup Wizard.
+5. Using a text editor, manually update `config.yml` to use `NEW_PORT_NUMBER`. Find the line `port: 9999` and replace with `port: NEW_PORT_NUMBER`.
+6. This instance of Stash can now be accessed by running `./stash-linux -c NEW_DIRECTORY_LOCATION/config.yml`
+
 # Support
 
 ## I have a question not answered here
