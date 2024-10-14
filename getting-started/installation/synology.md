@@ -74,9 +74,9 @@ This is intended to work on DSM 7.0 and later. It will not work on any version p
 
 In DSM, navigate to `Package Center > Settings`. In the `Package Sources` tab, click `Add`, type _SynoCommunity_ as Name and [https://packages.synocommunity.com/](https://packages.synocommunity.com/){:target="_blank"} as Location and then press `OK` to validate.
 
-Go back to the Package Center and look for `Python 3.11` in the Community tab. Click on `Ìnstall` and agree to the _Third-Party Package_ warning.
+Go back to the Package Center and look for `Python 3.11` in the Community tab. Click on `Install` and agree to the _Third-Party Package_ warning.
 
-Then look for `Ffmpeg 6` in the Community tab. Click on `Ìnstall` and agree to the _Third-Party Package_ warning.
+Then look for `Ffmpeg 6` in the Community tab. Click on `Install` and agree to the _Third-Party Package_ warning.
 
 ### Enable SSH
 
