@@ -155,7 +155,8 @@ server {
 ## Apache
 
 ```
-ProxyPass "/stash" "http://127.0.0.1:9999"
+# if using apache < 2.4.47, remove upgrade=websocket
+ProxyPass "/stash" "http://127.0.0.1:9999" upgrade=websocket
 ProxyPassReverse "/stash" "http://127.0.0.1:9999"
 RequestHeader setIfEmpty X-Forwarded-Prefix "/stash"
 ProxyPreserveHost on
@@ -165,11 +166,11 @@ ServerAdmin admin@example.com
 ServerName example.com
 ServerAlias stash.example.com
 
-# to enable websockets
-RewriteEngine on
-RewriteCond %{HTTP:Upgrade} websocket [NC]
-RewriteCond %{HTTP:Connection} upgrade [NC]
-RewriteRule ^/?stash/(.*) "ws://127.0.0.1:9999/$1" [P,L]
+# to enable websockets for apache < 2.4.47
+#RewriteEngine on
+#RewriteCond %{HTTP:Upgrade} websocket [NC]
+#RewriteCond %{HTTP:Connection} upgrade [NC]
+#RewriteRule ^/?stash/(.*) "ws://127.0.0.1:9999/$1" [P,L]
 
 # to add SSL
 SSLEngine on
