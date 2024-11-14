@@ -22,17 +22,7 @@ The following is our recommended procedure for new Stash users who want to get i
 
 ## Join StashDB
 
-If you haven't set up StashDB in your Stash settings yet, now's the time to do it. Get an invite code in the **#stashdb-invites** channel on [Discord](https://discord.gg/gHwFj8neaa){:target="_blank"}. Check the pinned messages (📌 icon in top right) there for details and up-to-date instructions on how to create an account and connect to it from Stash.
-
-### How to connect your account to Stash
-
-1.  Go to [https://stashdb.org/register](https://stashdb.org/register){:target="_blank"} to create a new account using one of the invite codes pinned to **#stashdb-invites**.
-  - If all of the codes are used/expired politely ask them to be refreshed in **#stashdb-invites**. A few other elevated users can also generate an invite code for you.
-2.  Once you're logged in to StashDB, click on your username at the top next to **Logged in as**.
-3.  Copy your unique **API key**.
-4.  Go to the **Settings** page in Stash ([http://localhost:9999/settings](http://localhost:9999/settings){:target="_blank"} by default), click **Metadata Providers** on the left side and find **Stash-box Endpoints** at the top.
-5.  Click **Add** and fill out the form that pops up: paste in your API key from step #3, enter `stashdb.org` (or anything else you'd like) for **Name**, and enter `https://stashdb.org/graphql` as the **GraphQL endpoint**
-6.  Click **Test Credentials** to make sure you've entered everything correctly, then click **Confirm**.
+If you haven't set up StashDB in your Stash settings yet, now's the time to do it. The best way to do that is to follow this guide to [Accessing StashDB](https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/accessing-stashdb/). It includes step-by-step instructions for both signing up to StashDB and connecting your new account to Stash.
 
 ## Use the Scene Tagger
 
@@ -63,8 +53,8 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
 1. If you are absolutely sure a scene isn't on StashDB anywhere, the next easiest method is to try ThePornDB. They have significantly more scenes than StashDB thanks to their automated scrapers, but their info isn't always as complete or accurate compared to StashDB's manually curated approach. They also don't have as many pHashes so matching scenes can be trickier as well.  By using their Endpoint and submitting fingerprints to them when you have a good match via searching, you make life easier for everyone else scraping there.
 <br/><br/>
 
-
-1. First step is to make an account at [metadataapi.net](https://metadataapi.net/register){:target="_blank"} which is ThePornDB's website. With your account created, navigate to your [API Tokens](https://metadataapi.net/user/api-tokens){:target="_blank"} page. Type "stash" as your token's name (or whatever you'd prefer), make sure the "read" permission is checked (you don't need the others), and click the "Create" button. A pop-up will display your newly created token. **Save your API token somewhere so you can find it later!**. It will not be visible on ThePornDB's website after you close the pop-up. If you lose it, you may need to create a new one and repeat this entire setup process. This can be done in a password manager, notes app, or a well-placed text file.
+{:style="counter-reset:none"}
+1. First step is to make an account at [theporndb.net](https://theporndb.net/register){:target="_blank"}. With your account created, navigate to your [API Tokens](https://theporndb.net/user/api-tokens){:target="_blank"} page. Type "stash" as your token's name (or whatever you'd prefer), make sure the "read" permission is checked (you don't need the others), and click the "Create" button. A pop-up will display your newly created token. **Save your API token somewhere so you can find it later!**. It will not be visible on ThePornDB's website after you close the pop-up. If you lose it, you may need to create a new one and repeat this entire setup process. This can be done in a password manager, notes app, or a well-placed text file.
 
     ![How to create an API token on ThePornDB](/assets/beginner-guides/create-tpdb-token.jpg)
 <br/><br/>
@@ -72,7 +62,8 @@ If you haven't set up StashDB in your Stash settings yet, now's the time to do i
 
 1. Go to the **Settings** page in Stash ([http://localhost:9999/settings](http://localhost:9999/settings){:target="_blank"} by default), click **Metadata Providers** on the left side and find **Stash-box Endpoints** at the top.
 
-1. Click **Add** and fill out the form that pops up: paste in your API key you created earlier amd enter `ThePornDB` (or anything else you'd like, like TPDB or Metadataapi.net) for **Name**, and enter `https://metadataapi.net/graphql` as the **GraphQL endpoint**.
+{:style="counter-reset:none"}
+1. Click **Add** and fill out the form that pops up: paste in your API key you created earlier amd enter `ThePornDB` (or anything else you'd like, like TPDB) for **Name**, and enter `https://theporndb.net/graphql` as the **GraphQL endpoint**.
 
 1.  Click **Test Credentials** to make sure you've entered everything correctly, then click **Confirm**.
 
