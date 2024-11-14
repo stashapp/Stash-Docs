@@ -1,5 +1,6 @@
 import * as utils from './utils'
 import { LocalCollection, LocalSidecar, RemotePlugin } from './types'
+import axios from 'axios'
 
 export class Plugin {
     id: string // internal id of plugin
@@ -31,6 +32,14 @@ export class Plugin {
         this.readme = sidecar?.readme ?? true // readme file
         this.base_path = defaults.base_path ?? "main/plugins"
         this.repo_path = `${this.base_path}/${this.path}`
+    }
+
+    async checkReadme(): Promise<void> {
+        // test readme if undefined
+        if (this.readme === undefined) {
+            this.readme = await axios.head(`https://github.com/${this.repo}/blob/${this.repo_path}/README.md`)
+                .then(res => res.status == 200)
+        }
     }
 
     printMD() {

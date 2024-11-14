@@ -18,6 +18,8 @@ async function searchRepository(pathName: string = "plugins"): Promise<Plugin[]>
         if (file.endsWith(".yml")) {
             const fileData = fs.readFileSync(`${repoPath}/${file}`, 'utf8')
             const localRepo: LocalRepository = YAML.parse(fileData)
+            // set name to filename if not defined
+            if (!localRepo.name) localRepo.name = file.replace(".yml", "")
             repositories.push(localRepo)
         }
     })
@@ -34,6 +36,9 @@ async function searchRepository(pathName: string = "plugins"): Promise<Plugin[]>
 }
 
 function printPlugins(outputName: string, sortedPlugins: Plugin[]) {
+    // create folder if not exists
+    if (!fs.existsSync(`./dist`)) fs.mkdirSync(`./dist`)
+    if (!fs.existsSync(`./dist/${outputName}`)) fs.mkdirSync(`./dist/${outputName}`)
     // print to file
     const outputPath = `./dist/${outputName}/list.md`
     const stream = fs.createWriteStream(outputPath)
@@ -57,6 +62,7 @@ async function parseRepository(localRepository: LocalRepository): Promise<Plugin
     const indexPlugins: Plugin[] = []
     for (const index of indexData) {
         const sidecarMatch = repoSidecars.find(sidecar => sidecar.id == index.id)
+        if (sidecarMatch?.id == "example") continue // skip example
         if (sidecarMatch?.hide) {
             // skip if hidden, but warn
             infoLog(`Skipping hidden plugin: ${index.name}`)
@@ -64,10 +70,14 @@ async function parseRepository(localRepository: LocalRepository): Promise<Plugin
         }
         if (repoDefaults.exclusive && !sidecarMatch) continue // if exclusive, skip if no sidecar
         const plugin = new Plugin(repoDefaults, sidecarMatch, index)
+        // check readme if undefined
+        await plugin.checkReadme()
         indexPlugins.push(plugin)
     }
     // check if there are leftover sidecars
-    const extraSidecars = repoSidecars.filter(sidecar => !indexPlugins.find(plugin => plugin.id == sidecar.id && !sidecar.hide))
+    // not named example
+    // not in indexPlugins and not hidden
+    const extraSidecars = repoSidecars.filter(sidecar => sidecar.id != "example" && !indexPlugins.find(plugin => plugin.id == sidecar.id && !sidecar.hide))
     if (extraSidecars.length > 0) {
         warnLog(`Found ${extraSidecars.length} extra sidecars in ${localRepository.name}`)
         extraSidecars.forEach(sidecar => warnLog(`    ${sidecar.id}`))
