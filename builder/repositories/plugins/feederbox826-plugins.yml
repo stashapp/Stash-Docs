@@ -26,6 +26,9 @@ scripts:
   - id: edit-unorganized
     readme: https://github.com/feederbox826/plugins/blob/main/plugins/edit-unorganized/README.md
 
+  - id: filepath-copy
+    readme: false  
+
   - id: fontawesome-js
     readme: false  
 
