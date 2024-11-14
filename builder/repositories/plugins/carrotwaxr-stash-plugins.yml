@@ -1,0 +1,17 @@
+collection:
+  index: https://carrotwaxr.github.io/stash-plugins/stable/index.yml
+  global_repo: carrotwaxr/stash-plugins
+  global_author: "[carrotwaxr](https://github.com/carrotwaxr)"
+  base_path: main/plugins
+
+scripts:
+  - id: example
+    path: PluginName
+    description: "New description"
+    readme: https://github.com/ghost/PluginName/blob/main/README.md
+    author: Deleted User
+    screenshots:
+      - https://avatars.githubusercontent.com/u/10137
+
+  - id: mcMetadata
+    readme: https://github.com/carrotwaxr/stash-plugins/blob/main/plugins/mcMetadata/README.md

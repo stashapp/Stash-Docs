@@ -1,0 +1,35 @@
+collection:
+  index: https://feederbox826.github.io/themes/main/index.yml
+  global_repo: feederbox826/themes
+  global_author: "[feederbox826](https://github.com/feederbox826)"
+  base_path: main/themes
+
+scripts:
+  - id: example
+    path: ThemeName
+    description: "New description"
+    readme: https://github.com/ghost/ThemeName/blob/main/README.md
+    author: Deleted User
+    screenshots:
+      - https://avatars.githubusercontent.com/u/10137
+
+  - id: alternative-tag-layout
+    readme: https://github.com/feederbox826/themes/blob/main/themes/alternative-tag-layout/README.md
+
+  - id: direct-stream
+    readme: https://github.com/feederbox826/themes/blob/main/themes/direct-stream/README.md
+
+  - id: hide-donate
+    readme: https://github.com/feederbox826/themes/blob/main/themes/hide-donate/README.md
+
+  - id: hide-ocount
+    readme: false
+
+  - id: more-studio-row
+    readme: https://github.com/feederbox826/themes/blob/main/themes/more-studio-row/README.md
+
+  - id: performer-grid
+    readme: https://github.com/feederbox826/themes/blob/main/themes/performer-grid/README.md
+
+  - id: wrap-subtag
+    readme: false

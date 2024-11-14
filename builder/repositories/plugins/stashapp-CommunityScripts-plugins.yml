@@ -1,0 +1,165 @@
+name: stashapp/CommunityScripts Plugins
+collection:
+  index: https://stashapp.github.io/CommunityScripts/stable/index.yml
+  global_repo: stashapp/CommunityScripts
+  base_path: main/plugins
+
+scripts:
+  - id: example
+    path: PluginName
+    description: "New description"
+    readme: https://github.com/ghost/PluginName/blob/main/README.md
+    author: Deleted User
+    screenshots:
+      - https://avatars.githubusercontent.com/u/10137
+
+  - id: ai_tagger
+    path: AITagger
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/AITagger/README.md
+    author: "[skier233](https://github.com/skier233)"
+
+  - id: AdulttimeInteractiveDL
+    author: "[tooliload](https://github.com/tooliload)"
+
+  - id: CommunityScriptsUILibrary
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/CommunityScriptsUILibrary/README.md
+
+  - id: date_parser
+    path: DateParser
+    readme: false
+    author: HijackHornet
+
+  - id: filemonitor
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/FileMonitor/README.md
+    author: "[David-Maisonave](https://github.com/David-Maisonave)"
+    screenshots:
+      - /assets/plugins/filemonitor/1.png
+
+  - id: PythonToolsInstaller
+    author: "[tooliload](https://github.com/tooliload)"
+
+  - id: renamefile
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/RenameFile/README.md
+    author: "[David-Maisonave](https://github.com/David-Maisonave)"
+
+  - id: TPDBMarkers
+    readme: false
+    author: "[Tweeticoats](https://github.com/Tweeticoats)"
+
+  - id: VideoScrollWheel
+    readme: false
+    author: "[WeedLordVegeta420](https://github.com/WeedLordVegeta420)"
+
+  - id: cjCardTweaks
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/cjCardTweaks/README.md
+    screenshots:
+      - /assets/plugins/cjCardTweaks/1.png
+      - /assets/plugins/cjCardTweaks/2.png
+      - /assets/plugins/cjCardTweaks/3.png
+
+  - id: comicInfoExtractor
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/comicInfoExtractor/README.md
+    author: "[yoshnopa](https://github.com/yoshnopa)"
+
+  - id: defaultDataForPath
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/defaultDataForPath/README.md
+    author: "[TheSinfulKing](https://github.com/TheSinfulKing)"
+
+  - id: discordPresence
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/discordPresence/README.md
+    author: NotForMyCV
+
+  - id: dupeMarker
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/dupeMarker/README.md
+    author: "[feederbox826](https://github.com/feederbox826)"
+
+  - id: filenameParser
+    readme: false
+    author: "[gitgiggety](https://github.com/gitgiggety)"
+
+  - id: hotCards
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/hotCards/README.md
+    author: "[HandyRandyx](https://github.com/HandyRandyx)"
+
+  - id: markerDeleteButton
+    readme: false
+    author: "[WeedLordVegeta420](https://github.com/WeedLordVegeta420]"
+
+  - id: markerTagToScene
+    author: "[WithoutPants](https://github.com/WithoutPants)"
+    readme: false
+
+  - id: miscTags
+    readme: false
+    author: "[Tweeticoats](https://github.com/Tweeticoats)"
+
+  - id: pathParser
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/pathParser/README.md
+    author: "[ImJustMatt](https://github.com/ImJustMatt)"
+
+  - id: qxSceneCard
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/qxSceneCard/README.md
+    author: "[Qx](https://github.com/QxxxGit)"
+
+  - id: renamerOnUpdate
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/renamerOnUpdate/README.md
+    author: "[Belleyy](https://github.com/Belleyy)"
+    screenshots:
+      - /assets/plugins/renamerOnUpdate/1.png
+
+  - id: sceneCoverCropper
+    author: "[feederbox826](https://github.com/feederbox826)"
+    readme: false
+
+  - id: set_scene_cover
+    path: setSceneCoverFromFile
+    author: "[stg-annon](https://github.com/stg-annon)"
+    readme: false
+
+  - id: stashAppAndroidTvCompanion
+    readme: false
+    author: "[damontecres](https://github.com/damontecres)"
+
+  - id: stashai
+    author: "[cc1234475](https://github.com/cc1234475)"
+    readme: false
+
+  - id: stashNotes
+    readme: false
+    author: "[QxxxGit](https://github.com/QxxxGit)"
+
+  - id: stash-realbooru
+    path: stashRealbooru
+    readme: false
+    author: "[cc1234475](https://github.com/cc1234475)"
+
+  - id: stashdb-performer-gallery
+    readme: false
+    author: "[Tweeticoats](https://github.com/Tweeticoats)"
+
+  - id: stats
+    readme: false
+    author: "[7dJx1qP](https://github.com/7dJx1qP)"
+
+  - id: tagScenesWithPerfTags
+    readme: false
+    author: "[Dankonite](https://github.com/Dankonite)"
+
+  - id: themeSwitch
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/themeSwitch/README.MD
+    author: "[elkorol](https://github.com/elkorol)"
+    screenshots:
+      - /assets/plugins/themeSwitch/1.png
+      - /assets/plugins/themeSwitch/2.png
+
+  - id: timestampTrade
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/timestampTrade/README.md
+    author: "[Tweeticoats](https://github.com/Tweeticoats)"
+
+  - id: titleFromFilename
+    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/titleFromFilename/README.md
+    author: "[bnkai](https://github.com/bnkai)"
+
+  - id: visage
+    readme: false
+    author: "[cc1234475](https://github.com/cc1234475)"

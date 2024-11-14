@@ -1,0 +1,19 @@
+name: d0t-d0t-d0t plugins
+collection:
+  index: https://raw.githubusercontent.com/d0t-d0t-d0t/stash-repo/refs/heads/dist/index.yml
+  global_repo: d0t-d0t-d0t/stash-repo
+  global_author: "[d0t-d0t-d0t](https://github.com/d0t-d0t-d0t)"
+  base_path: main/Plugins
+
+scripts:
+  - id: example
+    path: PluginName
+    description: "New description"
+    readme: https://github.com/ghost/PluginName/blob/main/README.md
+    author: Deleted User
+    screenshots:
+      - https://avatars.githubusercontent.com/u/10137
+
+  - id: stashAudioPlayer
+    readme: https://github.com/d0t-d0t-d0t/stash-repo/blob/main/Plugins/stashaudioplayer/about.md
+    path: stashaudioplayer

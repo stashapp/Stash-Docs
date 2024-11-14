@@ -1,0 +1,48 @@
+name: stashapp/CommunityScripts Themes
+collection:
+  index: https://stashapp.github.io/CommunityScripts/stable/index.yml
+  global_repo: stashapp/CommunityScripts
+  base_path: main/themes
+  exclusive: true
+
+scripts:
+  - id: example
+    path: ThemeName
+    description: "New description"
+    readme: https://github.com/ghost/ThemeName/blob/main/README.md
+    author: Deleted User
+    screenshots:
+      - https://avatars.githubusercontent.com/u/10137
+    
+  - id: Theme-BlackHole
+    readme: false
+    author: BViking78
+  
+  - id: Theme-ModernDark
+    readme: false
+    author: "[cj13](https://github.com/cj12312021)"
+
+  - id: Theme-NeonDark
+    readme: false
+    author: Dankonite
+  
+  - id: Theme-Night
+    readme: false
+
+  - id: Theme-Plex
+    author: Fidelio
+  
+  - id: Theme-PornHub
+    readme: false
+    author: ronilaukkarinen
+
+  - id: Theme-Pulsar
+    readme: false
+    author: Fonzie
+
+  - id: Theme-PulsarLight
+    readme: false
+    author: Fonzie
+  
+  - id: Theme-RoundedYellow
+    author: Fonzie

@@ -1,0 +1,26 @@
+collection:
+  index: https://tetrax-10.github.io/stash-stuffs/index.yml
+  global_repo: tetrax-10/stash-stuffs
+  global_author: "[tetrax-10](https://github.com/Tetrax-10)"
+  base_path: main/themes
+  exclusive: true
+
+scripts:
+  - id: example
+    path: ThemeName
+    description: "New description"
+    readme: https://github.com/ghost/ThemeName/blob/main/README.md
+    author: Deleted User
+    screenshots:
+      - https://avatars.githubusercontent.com/u/10137
+
+  - id: PlexBetterStyles
+    readme: https://github.com/Tetrax-10/stash-stuffs/tree/main#1-plex-better-styles
+    screenshots:
+      - https://raw.githubusercontent.com/Tetrax-10/stash-stuffs/main/assets/plex-better-styles/galleries.png
+      - https://raw.githubusercontent.com/Tetrax-10/stash-stuffs/main/assets/plex-better-styles/performers.png
+      - https://raw.githubusercontent.com/Tetrax-10/stash-stuffs/main/assets/plex-better-styles/images.png
+      - https://raw.githubusercontent.com/Tetrax-10/stash-stuffs/main/assets/plex-better-styles/scenes.png
+      - https://raw.githubusercontent.com/Tetrax-10/stash-stuffs/main/assets/plex-better-styles/settings.png
+      - https://raw.githubusercontent.com/Tetrax-10/stash-stuffs/main/assets/plex-better-styles/help.png
+      - https://raw.githubusercontent.com/Tetrax-10/stash-stuffs/main/assets/plex-better-styles/tags.png

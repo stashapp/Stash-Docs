@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/announce.css' | url }}">
+{% endblock %}
+{% block announce %}
+<span class="twemoji heart"> {% include ".icons/fontawesome/solid/heart.svg" %}</span>
+Support continued development via 
+<a href="https://opencollective.com/stashapp">
+<span class="twemoji mastodon">
+  {% include ".icons/simple/opencollective.svg" %}
+</span>
+OpenCollective donation</a> 
+or 
+<a href="https://github.com/sponsors/stashapp">
+  <span class="twemoji mastodon">
+    {% include ".icons/simple/github.svg" %}
+  </span>
+GitHub sponsorship</a>
+{% endblock %}

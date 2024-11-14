@@ -1,0 +1,246 @@
+site_name: Stash-Docs
+site_url: https://docs.stashapp.cc
+site_description: >-
+  Stash documentation, guides, plugins and support.
+
+repo_name: stashapp/Stash-Docs
+repo_url: https://github.com/stashapp/Stash-Docs
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2017 - 2024 stashapp contributors
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - header.autohide
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - search.highlight
+    - search.share
+    - navigation.instant
+    - navigation.instant.progress
+#    - content.code.copy
+#    - content.code.annotate 
+#    - navigation.tracking
+    - navigation.tabs
+#    - navigation.tabs.sticky
+    - navigation.sections
+    - toc.follow
+    - navigation.top
+#    - navigation.footer
+    - navigation.indexes
+    - content.tooltips
+#    - content.tabs.link
+    - content.code.copy
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      #primary: indigo
+      #accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      #primary: red
+      #accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  favicon: assets/images/favicon.ico
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: stashapp/Stash-Docs
+      branch: main
+      enabled: !ENV [CI, false]
+  - glightbox
+  - social:
+      enabled: !ENV [CI, false]
+  - redirects:
+      redirect_maps:
+        'metadata-sources/list.md': 'https://stashapp.github.io/CommunityScrapers'
+
+watch:
+  - includes
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - abbr
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - tables
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+      url_download: true
+  - toc:
+      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.saneheaders
+  - pymdownx.keys
+  #- pymdownx.magiclink:
+      #repo_url_shortener: true
+      #repo_url_shorthand: false
+      #user: stashapp
+      #repo: Stash-Docs
+
+nav:
+  - Home: index.md
+  - Installation:
+    - installation/index.md
+    - Windows: installation/windows.md
+    - macOS: installation/macos.md
+    - Linux: installation/linux.md
+    - Docker: installation/docker.md
+    - Synology: installation/synology.md
+    - FreeNAS/TrueNAS: installation/freenas-truenas.md
+    - Unraid: installation/unraid.md
+    - Getting started: 
+      - First steps: getting-started/first-steps.md
+  - In-app manual:
+    - in-app-manual/index.md
+    - Introduction: in-app-manual/introduction.md
+    - Configuration: in-app-manual/configuration.md
+    - Interface options: in-app-manual/interface.md
+    - Tasks:
+      - in-app-manual/tasks/index.md
+      - Identify: in-app-manual/tasks/identify.md
+      - Auto tagging: in-app-manual/tasks/autotagging.md
+      - Scene filename parser: in-app-manual/tasks/scenefilenameparser.md
+      - Import/export JSON specification: in-app-manual/tasks/jsonspec.md
+    - Browsing: in-app-manual/browsing.md
+    - Images and galleries: in-app-manual/images.md
+    - Metadata scraping:
+      - in-app-manual/scraping/index.md
+      - Contributing scrapers: in-app-manual/scraping/scraperdevelopment.md
+    - Plugins:
+      - in-app-manual/plugins/index.md
+      - External plugins: in-app-manual/plugins/externalplugins.md
+      - Embedded plugins: in-app-manual/plugins/embeddedplugins.md
+      - UI plugin API: in-app-manual/plugins/uipluginapi.md
+    - Scene tagger: in-app-manual/tagger.md
+    - Dupe checker: in-app-manual/deduplication.md
+    - Interactivity: in-app-manual/interactive.md
+    - Captions: in-app-manual/captions.md
+    - Keyboard shortcuts: in-app-manual/keyboardshortcuts.md
+    - Ways to contribute: in-app-manual/contributing.md
+  - Guides: 
+    - guides/index.md
+    - Scraping scenes via stash-box: guides/scraping-scenes-via-stash-box.md
+    - Backup and restore database: guides/backup-and-restore-database.md
+    - Reverse proxy: guides/reverse-proxy.md
+    - Troubleshooting video playback: guides/troubleshooting-video-playback.md
+    - Run CDP on TrueNAS Scale: guides/run-cdp-on-truenas-scale.md
+    - Advanced configuration options: guides/advanced-configuration-options.md
+    - Bulk importing via CSV using gql-iterate: guides/importing-via-csv-using-gql-iterate.md
+    - Manually editing the Stash sqlite3 database: guides/manually-editing-the-stash-sqlite3-database.md
+    - Scraping metadata behind login: guides/scraping-metadata-behind-login.md
+  - Metadata sources: 
+    - metadata-sources/index.md
+    - stash-box instances: metadata-sources/stash-box-instances.md
+    - Scrapers: metadata-sources/scrapers.md
+    - List of scrapers: metadata-sources/list.md
+  - Plugins: 
+    - plugins/index.md
+    - List of plugins: plugins/list.md
+    - Themes:
+      - themes/index.md
+      - List of themes: themes/list.md
+    - Userscripts:
+      - userscripts/index.md
+      - List of userscripts: userscripts/list.md
+    - Scripts:
+      - scripts/index.md
+      - List of scripts: scripts/list.md
+    - Utilities:
+      - utilities/index.md
+      - List of utilities: utilities/list.md
+    - Integrations:
+      - integrations/index.md
+      - List of integrations: integrations/list.md
+  - API: api.md
+  - FAQ: 
+    - faq/index.md
+    - Setup: faq/setup.md
+    - Settings: faq/settings.md
+    - Scenes: faq/scenes.md
+    - Images: faq/images.md
+    - Groups: faq/groups.md
+    - Markers: faq/markers.md
+    - Galleries: faq/galleries.md
+    - Performers: faq/performers.md
+    - Studios: faq/studios.md
+    - Tags: faq/tags.md
+  - Matrix: matrix.md
+  - Code of conduct: code-of-conduct.md
+  - Changelog: 
+    - v0.27.2 - 2024-10-16: changelog/v0270.md
+    - v0.26.2 - 2024-06-27: changelog/v0260.md
+    - v0.25.1 - 2024-03-13: changelog/v0250.md
+    - v0.24.3 - 2024-01-15: changelog/v0240.md
+    - v0.23.1 - 2023-10-14: changelog/v0230.md
+    - v0.22.1 - 2023-08-21: changelog/v0220.md
+    - v0.21.0 - 2023-06-13: changelog/v0210.md
+    - v0.20.2 - 2023-04-08: changelog/v0200.md
+    - v0.19.1 - 2023-02-21: changelog/v0190.md
+    - v0.18.0 - 2022-11-30: changelog/v0180.md
+    - v0.17.2 - 2022-10-25: changelog/v0170.md
+    - v0.16.1 - 2022-07-26: changelog/v0161.md
+    - v0.16.0 - 2022-07-05: changelog/v0160.md
+    - v0.15.0 - 2022-05-18: changelog/v0150.md
+    - v0.14.0 - 2022-04-11: changelog/v0140.md
+    - v0.13.1 - 2022-03-16: changelog/v0131.md
+    - v0.13.0 - 2022-03-08: changelog/v0130.md
+    - v0.12.0 - 2021-12-29: changelog/v0120.md
+    - v0.11.0 - 2021-11-16: changelog/v0110.md
+    - v0.10.0 - 2021-10-11: changelog/v0100.md
+    - v0.9.0 - 2021-09-06: changelog/v090.md
+    - v0.8.0 - 2021-07-02: changelog/v080.md
+    - v0.7.0 - 2021-05-15: changelog/v070.md
+    - v0.6.0 - 2021-03-29: changelog/v060.md
+    - v0.5.0 - 2021-02-23: changelog/v050.md
+    - v0.4.0 - 2020-11-24: changelog/v040.md
+    - v0.3.0 - 2020-09-02: changelog/v030.md
+    - v0.2.1 - 2020-06-10: changelog/v020.md
+    - v0.2.0 - 2020-06-06: changelog/v021.md
+    - v0.1.1 - 2020-02-25: changelog/v011.md
+    - v0.1.0 - 2020-02-24: changelog/v010.md
+
+extra:
+  social:
+    - icon: simple/opencollective
+      link: https://opencollective.com/stashapp
+    - icon: simple/github
+      link: https://github.com/stashapp
+    - icon: simple/docker
+      link: https://hub.docker.com/r/stashapp/stash
+    - icon: simple/discord
+      link: https://discord.gg/frQ7qBvB3S
+    - icon: simple/matrix
+      link: https://matrix.to/#/#stashapp:unredacted.org      
+    - icon: simple/lemmy
+      link: https://discuss.online/c/stashapp
+
+extra_css:
+  - stylesheets/extra.css
