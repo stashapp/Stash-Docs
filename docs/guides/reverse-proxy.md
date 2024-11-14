@@ -154,11 +154,11 @@ ServerAdmin admin@example.com
 ServerName example.com
 ServerAlias stash.example.com
 
-# to enable websockets
-RewriteEngine on
-RewriteCond %{HTTP:Upgrade} websocket [NC]
-RewriteCond %{HTTP:Connection} upgrade [NC]
-RewriteRule ^/?stash/(.*) "ws://127.0.0.1:9999/$1" [P,L]
+# to enable websockets for apache < 2.4.47
+#RewriteEngine on
+#RewriteCond %{HTTP:Upgrade} websocket [NC]
+#RewriteCond %{HTTP:Connection} upgrade [NC]
+#RewriteRule ^/?stash/(.*) "ws://127.0.0.1:9999/$1" [P,L]
 
 # to add SSL
 SSLEngine on
@@ -216,9 +216,3 @@ proxy_set_header Connection "upgrade";
 Cloudflare Tunnels are not recommended since they throttle non-HTML traffic (which video falls under).
 
 See [Cloudflare blog post](https://blog.cloudflare.com/updated-tos/){:target="_blank"} for more details.
-
-## Cloudflare Tunnel
-
-Cloudflare Tunnels are not recommended since they throttle non-HTML traffic (which video falls under).
-
-See [Cloudflare blog post](https://blog.cloudflare.com/updated-tos/){target="_blank"} for more details.
