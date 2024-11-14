@@ -1,0 +1,21 @@
+@keyframes heart {
+  0%, 40%, 80%, 100% {
+    transform: scale(1);
+  }
+  20%, 60% {
+    transform: scale(1.15);
+  }
+}
+.heart {
+  animation: heart 1000ms infinite;
+  color: #EE0F0F;
+}
+.md-nav__item svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+/*
+.md-grid {
+    max-width: 81rem;
+}
+*/

@@ -1,8 +1,10 @@
 # Contributing
 
-## Contributing from the site via `Edit this page on GitHub`
+Pull requests are welcome. If you are unfamilair with MkDocs/Material for MkDocs sctructure, look through [their documentation](https://squidfunk.github.io/mkdocs-material) for general idea for how it's structured and handy references.
 
-1. On the bottom of every page you will find a link `Edit this page on GitHub`.
+## Contributing from the site via edit button
+
+1. At the top of every page you will find an edit button
 2. Cliking on it will open GitHub where you will be met with a message about not being able to edit directly.
 3. Click `Fork this repository`.
 4. You should see the text editor now.

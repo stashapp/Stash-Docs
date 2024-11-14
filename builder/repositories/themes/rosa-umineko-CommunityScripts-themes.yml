@@ -1,0 +1,18 @@
+collection:
+  index: https://rosa-umineko.github.io/CommunityScripts/stable/index.yml
+  global_repo: rosa-umineko/CommunityScripts
+  global_author: "[rosa-umineko](https://github.com/rosa-umineko)"
+  base_path: rosa-umineko/themes
+  exclusive: true
+
+scripts:
+  - id: example
+    path: ThemeName
+    description: "New description"
+    readme: https://github.com/ghost/ThemeName/blob/main/README.md
+    author: Deleted User
+    screenshots:
+      - https://avatars.githubusercontent.com/u/10137
+    
+  - id: Theme-Shadcn
+    readme: false

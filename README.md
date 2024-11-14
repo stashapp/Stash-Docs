@@ -1,21 +1,31 @@
 # Stash-Docs
 Website: https://docs.stashapp.cc
 
-# Contributing
+## Contributing
 
 Everyone is welcome to help with the documentation. All changes are managed through pull requests. 
 
 Read step-by-step guide on how to create a pull request [CONTRIBUTING.md](CONTRIBUTING.md).
 
-# Running locally with Ruby
+## Running locally with pip
 
-## Prerequsites
-- [Ruby](https://www.ruby-lang.org/en/downloads/) v2.5.0 or higher, including all development headers (check your Ruby version using `ruby -v`)
-- [RubyGems](https://rubygems.org/pages/download) (check your Gems version using `gem -v`)
-- [Bundler gem](https://rubygems.org/gems/bundler) run `gem install bundler`
+### Prerequsites
+
+- Python modules (intall with `pip install mkdocs-material=="9.*" mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin-2 mkdocs-glightbox mkdocs-material[imaging] mkdocs-redirects`)
+    - [mkdocs-material=="9.*"]
+    - [mkdocs-git-revision-date-localized-plugin]
+    - [mkdocs-git-committers-plugin-2]
+    - [mkdocs-glightbox]
+    - [mkdocs-material[imaging]]
+    - [mkdocs-redirects]
 - Clone/download the repository
 
-## Building the site
+### Building the site
 1. Open Terminal/Command Prompt with Ruby and go to your directory where you saved the copy of the repository
-2. Run `bundle exec jekyll serve`
-> You can add `--livereload` option to automatically refresh the page after changes. 
+2. Run `mkdocs serve`
+
+## License
+
+The documentation site is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. 
+
+[builder](/builder/) is licensed under MIT License. 

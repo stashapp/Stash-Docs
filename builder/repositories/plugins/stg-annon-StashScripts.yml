@@ -1,0 +1,27 @@
+collection:
+  index: https://stg-annon.github.io/StashScripts/stable/index.yml
+  global_repo: stg-annon/StashScripts
+  global_author: "[stg-annon](https://github.com/stg-annon)"
+  base_path: main/plugins
+
+scripts:
+  - id: example
+    path: PluginName
+    description: "New description"
+    readme: https://github.com/ghost/PluginName/blob/main/README.md
+    author: Deleted User
+    screenshots:
+      - https://avatars.githubusercontent.com/u/10137
+
+  - id: findFileErrors
+    readme: false
+
+  - id: performer_body_calculator
+    path: performerBodyCalculator
+    readme: https://github.com/stg-annon/StashScripts/blob/main/plugins/performerBodyCalculator/README.md
+  
+  - id: phashDuplicateTagger
+    readme: https://github.com/stg-annon/StashScripts/blob/main/plugins/phashDuplicateTagger/README.md
+
+  - id: tagGraph
+    readme: https://github.com/stg-annon/StashScripts/blob/main/plugins/tagGraph/README.md

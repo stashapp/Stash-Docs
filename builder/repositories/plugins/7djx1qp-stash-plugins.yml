@@ -1,0 +1,146 @@
+collection:
+  index: https://7djx1qp.github.io/stash-plugins/main/index.yml
+  global_repo: 7dJx1qP/stash-plugins
+  global_author: "[7dJx1qP](https://github.com/7dJx1qP)"
+  base_path: main/plugins
+
+scripts:
+  - id: example
+    path: PluginName
+    description: "New description"
+    readme: https://github.com/ghost/PluginName/blob/main/README.md
+    author: Deleted User
+    screenshots:
+      - https://avatars.githubusercontent.com/u/10137
+
+  - id: stashBatchQueryEdit
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Batch%20Query%20Edit/config.png
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Batch%20Query%20Edit/scenes-tagger.png
+
+  - id: stashBatchResultToggle
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Batch%20Result%20Toggle/config.png
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Batch%20Result%20Toggle/scenes-tagger.png
+
+  - id: stashBatchSave
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Batch%20Save/scenes-tagger.png
+
+  - id: stashBatchSearch
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Batch%20Search/scenes-tagger.png
+
+  - id: stashMarkdown
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Markdown/tag-description.png
+
+  - id: stashMarkersAutoscroll
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Markers%20Autoscroll/scroll-settings.png
+
+  - id: stashNewPerformerFilterButton
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20New%20Performer%20Filter%20Button/performers-page.png
+
+  - id: stashOpenMediaPlayer
+    readme: false
+
+  - id: stashPerformerAuditTaskButton
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20Audit%20Task%20Button/performers-page.png
+
+  - id: stashPerformerCustomFields
+    readme: https://github.com/7dJx1qP/stash-plugins/blob/main/plugins/stashPerformerCustomFields/README.md
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20Custom%20Fields/custom-fields-view.png
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20Custom%20Fields/custom-fields-view-compact.png
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20Custom%20Fields/custom-fields-edit.png
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20Custom%20Fields/performer-details-edit.png
+
+  - id: stashPerformerImageCropper
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20Image%20Cropper/performer-image-cropper.png
+
+  - id: stashPerformerMarkersTab
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20Markers%20Tab/performer-page.png
+
+  - id: stashPerformerTaggerAdditions
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20Tagger%20Additions/performer-tagger.png
+
+  - id: stashPerformerURLSearchbox
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20URL%20Searchbox/performers-page.png
+
+  - id: stashSceneTaggerAdditions
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Scene%20Tagger%20Additions/config.png
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Scene%20Tagger%20Additions/scenes-tagger.png
+
+  - id: stashSceneTaggerColorizer
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Scene%20Tagger%20Colorizer/config.png
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Scene%20Tagger%20Colorizer/scenes-tagger.png
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Scene%20Tagger%20Colorizer/tag-colors.png
+
+  - id: stashSceneTaggerDraftSubmit
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Scene%20Tagger%20Draft%20Submit/scenes-tagger.png
+
+  - id: stashSetStashboxFavoritePerformers
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Set%20Stashbox%20Favorite%20Performers/performers-page.png
+
+  - id: stashStashIDIcon
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20StashID%20Icon/performer-page.png
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20StashID%20Icon/studio-page.png
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20StashID%20Icon/scene-page.png
+
+  - id: stashStashIDInput
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20StashID%20Input/performer-page.png
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20StashID%20Input/studio-page.png
+
+  - id: stashStashboxSceneCount
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Stashbox%20Scene%20Count/performer.png
+
+  - id: stashStats
+    readme: https://github.com/7dJx1qP/stash-plugins/blob/main/plugins/stashStats/README.md
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Stats/stats-page.png
+
+  - id: stashTagImageCropper
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Tag%20Image%20Cropper/tag-image-cropper.png
+
+  - id: stashUserscriptLibrary7dJx1qP
+    readme: false
+
+  - id: stashVideoPlayerABLoopTimeInput
+    readme: false
+    screenshots:
+      - https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Video%20Player%20AB%20Loop%20Time%20Input/ab-loop-time-input.png

@@ -1,0 +1,149 @@
+collection:
+  index: https://serechops.github.io/Serechops-Stash/index.yml
+  global_repo: serechops/Serechops-Stash
+  global_author: "[serechops](https://github.com/serechops)"
+  base_path: main/plugins
+
+scripts:
+  - id: example
+    path: PluginName
+    description: "New description"
+    readme: https://github.com/ghost/PluginName/blob/main/README.md
+    author: Deleted User
+    screenshots:
+      - https://avatars.githubusercontent.com/u/10137
+
+  - id: Movie-Fy
+    path: Movie-Fy/Movie-Fy
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/Movie-Fy/README.md
+
+  - id: Movie-Fy Bulk Movie URL Scrape
+    path: Movie-Fy/Movie-Fy%20Bulk%20Movie%20URL%20Scrape
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/Movie-Fy/README.md
+
+  - id: Movie-Fy Check and Update Scene Titles
+    path: Movie-Fy/Movie-Fy%20Check%20and%20Update%20Scene%20Titles
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/Movie-Fy/README.md
+
+  - id: Movie-Fy Create Movie Studio
+    path: Movie-Fy/Movie-Fy%20Create%20Movie%20Studio
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/Movie-Fy/README.md
+
+  - id: Movie-Fy Scene Studio Bulk Update
+    path: Movie-Fy/Movie-Fy%20Scene%20Studio%20Bulk%20Update
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/Movie-Fy/README.md
+
+  - id: Movie-Fy Update Movie Scene Covers
+    path: Movie-Fy/Movie-Fy%20Update%20Movie%20Scene%20Covers
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/Movie-Fy/README.md
+  
+  - id: performer_image_export
+    path: PerformerImageExport
+    readme: false
+
+  - id: renamer-dev
+    path: Renamer-Dev
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/Renamer-Dev/README.md
+
+  - id: renamer
+    path: Renamer
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/Renamer/README.md
+
+  - id: SceneHub
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/SceneHub/README.md
+
+  - id: bulkImportPerformers
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/bulkImportPerformers/README.md
+
+  - id: findMarkerTagImages
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/findMarkerTagImages/README.md
+
+  - id: image2Scene
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/image2Scene/README.md
+
+  - id: markerDupes 
+    readme: false
+
+  - id: performerGallery
+    readme: false
+
+  - id: performerSceneCompare
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/performerSceneCompare/README.md
+
+  - id: pluginsBackup
+    readme: false
+  
+  - id: sceneSpecsOverlay
+    readme: false
+
+  - id: scenesMovieDuration
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/scenesMovieDuration/README.md
+
+  - id: stashBatchCreateAll
+    readme: false
+
+  - id: stashDBTagImport
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashDBTagImport/README.md
+
+  - id: stashDisable
+    path: stashDisableAll/stashDisable
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashDisableAll/README.md
+
+  - id: stashDisableAll
+    path: stashDisableAll/stashDisableAll
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashDisableAll/README.md
+
+  - id: stashDynamicGroups
+    readme: false
+
+  - id: stashFPSOverlay
+    readme: false
+
+  - id: stashEnableFromSave
+    path: stashDisableAll/stashEnableFromSave
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashDisableAll/README.md
+
+  - id: stashJellyfinExport
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashJellyfinExporter/README.md
+
+  - id: stashPerformerMatchScrape
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashPerformerMatchScrape/README.md
+
+  - id: stashPluginYAMLGUI
+    readme: false
+
+  - id: stashRIghtClickGalleries
+    readme: false
+
+  - id: stashRightClickImages
+    readme: false
+
+  - id: stashRightClickPerformerMerge
+    readme: false
+
+  - id: stashRightClickPerformers
+    readme: false
+
+  - id: stashRightClickScenes
+    readme: false
+
+  - id: stashRightClickSettings
+    readme: false
+
+  - id: stashRightClickTags
+    readme: false
+
+  - id: stashSceneFileSize
+    readme: false
+
+  - id: stashStudioLogoWallView
+    readme: false
+
+  - id: stashTagPerformerImage
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashTagPerformerImage/README.md
+
+  - id: stashTimestamps
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashTimestamps/README.md
+
+  - id: studioTopPerformer
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/studioTopPerformer/README.md
