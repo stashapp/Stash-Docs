@@ -13,14 +13,12 @@ scripts:
     screenshots:
       - https://avatars.githubusercontent.com/u/10137
 
+# id only
   - id: PerformerDetailsExtended
-    readme: https://github.com/Valkyr-JS/PerformerDetailsExtended/blob/main/README.md
-
   - id: StashReels
-    readme: https://github.com/Valkyr-JS/StashReels/blob/main/README.md
 
+# screenshots
   - id: ValkyrSceneCards
-    readme: https://github.com/Valkyr-JS/ValkyrSceneCards/blob/main/README.md
     screenshots:
      - /assets/plugins/ValkyrSceneCards/1.png
-     - /assets/plugins/ValkyrSceneCards/2.png   
+     - /assets/plugins/ValkyrSceneCards/2.png

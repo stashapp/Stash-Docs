@@ -14,8 +14,6 @@ scripts:
     screenshots:
       - https://avatars.githubusercontent.com/u/10137
 
+# id only
   - id: CompleteTheStash
-    readme: https://github.com/MinasukiHikimuna/MidnightRider-Stash/blob/main/plugins/CompleteTheStash/README.md
-
   - id: HashTheStash
-    readme: false

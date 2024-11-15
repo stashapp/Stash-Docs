@@ -1,0 +1,33 @@
+name: Serechops Glassy
+collection:
+  index: https://serechops.github.io/Serechops-Stash/index.yml
+  global_repo: serechops/Serechops-Stash
+  global_author: "[serechops](https://github.com/serechops)"
+  global_readme: https://github.com/Serechops/Serechops-Stash/blob/main/themes/Glassy/README.md
+  base_path: main/themes/Glassy
+  exclusive: true
+
+scripts:
+  - id: example
+    path: ThemeName
+    description: "New description"
+    readme: https://github.com/ghost/ThemeName/blob/main/README.md
+    author: Deleted User
+    screenshots:
+      - https://avatars.githubusercontent.com/u/10137
+
+  - id: Glassy - A Window to Your Collection
+  - id: Glassy - Font Overhaul
+  - id: Glassy - Front Page Animations and Blur
+  - id: Glassy - Images
+  - id: Glassy - Installer
+  - id: Glassy - Marker Wall Redesign
+  - id: Glassy - Performer Scene Card Details Redesign
+  - id: Glassy - Scene Player-Details 60-40
+  - id: Glassy - Scene Player-Details Reversed 60-40
+  - id: Glassy - Scene Player-Details Reversed
+  - id: Glassy - Scene and Movie Card Redesign - No Animated Titles
+  - id: Glassy - Scene and Movie Card Redesign
+  - id: Glassy - Smaller Performer Cards on Main Page
+  - id: Glassy - Smaller Performer Image Cards
+  - id: Glassy - Video-Res Icons

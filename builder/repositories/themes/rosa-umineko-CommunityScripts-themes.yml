@@ -13,6 +13,7 @@ scripts:
     author: Deleted User
     screenshots:
       - https://avatars.githubusercontent.com/u/10137
-    
-  - id: Theme-Shadcn
-    readme: false
+
+# inexplicably removed
+# https://github.com/rosa-umineko/CommunityScripts/commit/864dc5ea74828f5d2f43c71f88a6bbabff5644f6#diff-a468b993b48658ed25dec629d015eadd634219704cd8ac47e50a879cc5230b90
+#  - id: Theme-Shadcn

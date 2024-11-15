@@ -13,15 +13,11 @@ scripts:
     screenshots:
       - https://avatars.githubusercontent.com/u/10137
 
-  - id: findFileErrors
-    readme: false
-
+# path override
   - id: performer_body_calculator
     path: performerBodyCalculator
-    readme: https://github.com/stg-annon/StashScripts/blob/main/plugins/performerBodyCalculator/README.md
-  
-  - id: phashDuplicateTagger
-    readme: https://github.com/stg-annon/StashScripts/blob/main/plugins/phashDuplicateTagger/README.md
 
+# id only
+  - id: findFileErrors
+  - id: phashDuplicateTagger
   - id: tagGraph
-    readme: https://github.com/stg-annon/StashScripts/blob/main/plugins/tagGraph/README.md

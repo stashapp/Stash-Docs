@@ -15,5 +15,4 @@ scripts:
       - https://avatars.githubusercontent.com/u/10137
 
   - id: stashAudioPlayer
-    readme: https://github.com/d0t-d0t-d0t/stash-repo/blob/main/Plugins/stashaudioplayer/about.md
     path: stashaudioplayer

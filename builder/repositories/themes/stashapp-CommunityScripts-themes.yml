@@ -13,36 +13,32 @@ scripts:
     author: Deleted User
     screenshots:
       - https://avatars.githubusercontent.com/u/10137
-    
+
   - id: Theme-BlackHole
-    readme: false
     author: BViking78
-  
+
   - id: Theme-ModernDark
-    readme: false
     author: "[cj13](https://github.com/cj12312021)"
 
   - id: Theme-NeonDark
-    readme: false
     author: Dankonite
-  
-  - id: Theme-Night
-    readme: false
 
   - id: Theme-Plex
     author: Fidelio
-  
+    screenshots:
+      - https://user-images.githubusercontent.com/1358708/178891502-c71e4278-0378-4154-91a6-07e1a8eaa1df.png
+
   - id: Theme-PornHub
-    readme: false
     author: ronilaukkarinen
 
   - id: Theme-Pulsar
-    readme: false
     author: Fonzie
 
   - id: Theme-PulsarLight
-    readme: false
     author: Fonzie
   
   - id: Theme-RoundedYellow
     author: Fonzie
+
+# no author
+  - id: Theme-Night

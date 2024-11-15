@@ -14,8 +14,6 @@ scripts:
     screenshots:
       - https://avatars.githubusercontent.com/u/10137
 
+# id only
   - id: addImagesToTags
-    readme: false
-
   - id: setSceneCover
-    readme: false

@@ -78,7 +78,6 @@ scripts:
     author: "[gitgiggety](https://github.com/gitgiggety)"
 
   - id: hotCards
-    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/hotCards/README.md
     author: "[HandyRandyx](https://github.com/HandyRandyx)"
 
   - id: markerDeleteButton
