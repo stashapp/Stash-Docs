@@ -12,7 +12,7 @@ export interface RemotePlugin {
 export type RemoteIndex = RemotePlugin[]
 
 export interface LocalRepository {
-    name: string // name of repository
+    name?: string // name of repository
     collection: LocalCollection
     scripts: LocalSidecar[]
 }
@@ -22,6 +22,7 @@ export interface LocalCollection {
     global_repo: string // repository of collection
     global_author?: string // author of collection if it is just owner
     base_path?: string // base path to plugins
+    global_readme?: string // global readme file
     exclusive: boolean // exclude any entires not in sidecar
 }
 

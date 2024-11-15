@@ -29,7 +29,7 @@ export class Plugin {
         this.path = sidecar?.path
             ?? index.id // default to ID
         this.screenshots = sidecar?.screenshots ?? []
-        this.readme = sidecar?.readme ?? true // readme file
+        this.readme = defaults?.global_readme ?? sidecar?.readme ?? true // readme file
         this.base_path = defaults.base_path ?? "main/plugins"
         this.repo_path = `${this.base_path}/${this.path}`
     }
