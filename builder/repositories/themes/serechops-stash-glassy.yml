@@ -1,8 +1,8 @@
 name: Serechops Glassy
 collection:
   index: https://serechops.github.io/Serechops-Stash/index.yml
-  global_repo: serechops/Serechops-Stash
-  global_author: "[serechops](https://github.com/serechops)"
+  global_repo: Serechops/Serechops-Stash
+  global_author: "[serechops](https://github.com/Serechops)"
   global_readme: https://github.com/Serechops/Serechops-Stash/blob/main/themes/Glassy/README.md
   base_path: main/themes/Glassy
   exclusive: true

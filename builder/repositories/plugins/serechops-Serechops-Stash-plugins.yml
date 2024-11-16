@@ -1,7 +1,7 @@
 collection:
   index: https://serechops.github.io/Serechops-Stash/index.yml
-  global_repo: serechops/Serechops-Stash
-  global_author: "[serechops](https://github.com/serechops)"
+  global_repo: Serechops/Serechops-Stash
+  global_author: "[serechops](https://github.com/Serechops)"
   base_path: main/plugins
 
 scripts:
