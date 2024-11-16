@@ -30,6 +30,9 @@ async function searchRepository(pathName: string = "plugins"): Promise<Plugin[]>
         const plugin = await parseRepository(repo)
         plugins.push(...plugin)
     }
+    // fetch all readmes of plugins
+    const readmePromises = plugins.map(plugin => plugin.checkReadme())
+    await Promise.all(readmePromises)
     // sort plugins and print to md
     const sortedPlugins = plugins
         .sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()))
@@ -76,8 +79,6 @@ async function parseRepository(localRepository: LocalRepository): Promise<Plugin
             idxMissingScar.add(index) // add to missing
         }
         const plugin = new Plugin(repoDefaults, sidecarMatch, index)
-        // check readme if undefined
-        await plugin.checkReadme()
         indexPlugins.push(plugin)
     }
     // check if there are leftover sidecars

@@ -57,6 +57,8 @@ scripts:
     path: Renamer-Dev
   - id: renamer
     path: Renamer
+  - id: stashJellyfinExport
+    path: stashJellyfinExporter
 
 # id only
   - id: SceneHub
@@ -73,7 +75,6 @@ scripts:
   - id: stashDBTagImport
   - id: stashDynamicGroups
   - id: stashFPSOverlay
-  - id: stashJellyfinExport
   - id: stashPerformerMatchScrape
   - id: stashRightClickGalleries
   - id: stashRightClickImages
