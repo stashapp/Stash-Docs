@@ -168,6 +168,7 @@ nav:
     - Themes:
       - themes/index.md
       - List of themes: themes/list.md
+      - Custom CSS snippets: themes/custom-css-snippets.md
     - Userscripts:
       - userscripts/index.md
       - List of userscripts: userscripts/list.md
