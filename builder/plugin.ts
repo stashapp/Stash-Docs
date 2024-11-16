@@ -29,7 +29,7 @@ export class Plugin {
         this.path = sidecar?.path
             ?? index.id // default to ID
         this.screenshots = sidecar?.screenshots ?? []
-        this.readme = defaults?.global_readme ?? sidecar?.readme ?? true // readme file
+        this.readme = defaults?.global_readme ?? sidecar?.readme // readme file
         this.base_path = defaults.base_path ?? "main/plugins"
         this.repo_path = `${this.base_path}/${this.path}`
     }
@@ -37,7 +37,9 @@ export class Plugin {
     async checkReadme(): Promise<void> {
         // test readme if undefined
         if (this.readme === undefined) {
-            this.readme = await axios.head(`https://github.com/${this.repo}/blob/${this.repo_path}/README.md`)
+            this.readme = await axios.head(`https://github.com/${this.repo}/blob/${this.repo_path}/README.md`, {
+                validateStatus: status => status == 200 || status == 404
+            })
                 .then(res => res.status == 200)
         }
     }

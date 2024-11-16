@@ -18,7 +18,7 @@ scripts:
 
 # dependencies
   - id: stashUserscriptLibrary7dJx1qP
-    hidden: true
+    hide: true
 
 # screenshots
   - id: stashBatchQueryEdit
