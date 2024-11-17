@@ -67,7 +67,7 @@ Another option would be to try using an older backup if you have one.
 - Make sure your Python version is added to environment variable PATH. This is a common issue with Python installed from Microsoft Store on Windows. 
 
     ??? tip "How to add Python to PATH"
-        A handy guide how you set a PATH on diferent operating systems: [https://realpython.com/add-python-to-path/](https://realpython.com/add-python-to-path/){target="_blank"}.
+        A handy guide how you set a PATH on different operating systems: [https://realpython.com/add-python-to-path/](https://realpython.com/add-python-to-path/){target="_blank"}.
 
 - If you use multiple versions or have non standard configuration you can specify which version to use in :fontawesome-solid-gear: **Settings** > **System** and under Applications Paths header set **Python Executable Path**.
 
@@ -97,3 +97,21 @@ You may use several methods to safely access Stash from outside of your home net
 ### Using an external authentication provider
 
 If you are an advanced user, and have secured your Stash instance behind an authwall provided by a reverse proxy or hosting solution, you may continue to use that. You simply have to edit `.stash/config/config.yml` and set `dangerous_allow_public_without_auth` to `true`. If you have already tripped the security feature, you will also have to remove the `security_tripwire_accessed_from_public_internet` key in order to allow Stash to serve requests.
+
+### Migrating from Windows to Unix or vice verse
+
+    !!! info
+        Migrating between filesystems with different path separators (`/` and `\`) is currently unsupported.
+
+    !!! danger
+        Use at your own risk. If you do this, make sure [backup](/guides/backup-and-restore-database) your database before starting.
+
+It's possible to manually migrate the `folders` table using SQL. 
+
+The following example query would replace `\` with `/` and `D:/` with `/mnt/`.
+
+=== "Example SQL query"
+    ```sql
+    UPDATE folders SET path = REPLACE(path, '\', '/');
+    UPDATE folders SET path = REPLACE(path, 'D:/', '/mnt/');
+    ```
