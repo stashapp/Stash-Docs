@@ -2789,17 +2789,17 @@ GitHub sponsorship</a>
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#migrating-from-windows-to-unix-or-vice-verse" class="md-nav__link">
     <span class="md-ellipsis">
       Migrating from Windows to Unix or vice verse
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -3961,17 +3961,17 @@ GitHub sponsorship</a>
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#migrating-from-windows-to-unix-or-vice-verse" class="md-nav__link">
     <span class="md-ellipsis">
       Migrating from Windows to Unix or vice verse
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -4088,13 +4088,15 @@ Another option would be to try using an older backup if you have one. </p>
 <p>You may use several methods to safely access Stash from outside of your home network. In the most basic, you can enable authentication in Stash, and re-enable port forwarding. You can also use a VPN solution that allows you to securely access your home network, such as <a href="https://tailscale.com" target="_blank">Tailscale</a>, <a href="https://zerotier.com" target="_blank">Zerotier</a>, <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-20-04" target="_blank">Wireguard</a>, or others.</p>
 <h3 id="using-an-external-authentication-provider">Using an external authentication provider<a class="headerlink" href="#using-an-external-authentication-provider" title="Permanent link">&para;</a></h3>
 <p>If you are an advanced user, and have secured your Stash instance behind an authwall provided by a reverse proxy or hosting solution, you may continue to use that. You simply have to edit <code>.stash/config/config.yml</code> and set <code>dangerous_allow_public_without_auth</code> to <code>true</code>. If you have already tripped the security feature, you will also have to remove the <code>security_tripwire_accessed_from_public_internet</code> key in order to allow Stash to serve requests.</p>
-<h3 id="migrating-from-windows-to-unix-or-vice-verse">Migrating from Windows to Unix or vice verse<a class="headerlink" href="#migrating-from-windows-to-unix-or-vice-verse" title="Permanent link">&para;</a></h3>
-<pre><code>!!! info
-    Migrating between filesystems with different path separators (`/` and `\`) is currently unsupported.
-
-!!! danger
-    Use at your own risk. If you do this, make sure [backup](/guides/backup-and-restore-database) your database before starting.
-</code></pre>
+<h2 id="migrating-from-windows-to-unix-or-vice-verse">Migrating from Windows to Unix or vice verse<a class="headerlink" href="#migrating-from-windows-to-unix-or-vice-verse" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Migrating between filesystems with different path separators (<code>/</code> and <code>\</code>) is currently unsupported.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Use at your own risk. If you do this, make sure <a href="/guides/backup-and-restore-database">backup</a> your database before starting.</p>
+</div>
 <p>It's possible to manually migrate the <code>folders</code> table using SQL. </p>
 <p>The following example query would replace <code>\</code> with <code>/</code> and <code>D:/</code> with <code>/mnt/</code>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="example-sql-query" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="example-sql-query">Example SQL query</label></div>
