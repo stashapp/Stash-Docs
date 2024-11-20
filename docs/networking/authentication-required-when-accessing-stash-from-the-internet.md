@@ -1,5 +1,7 @@
 ---
 title: Protecting against accidental exposure to the internet
+hide:
+  - navigation
 ---
 
 ## Protecting against accidental exposure to the internet
