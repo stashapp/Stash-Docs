@@ -145,5 +145,8 @@ scripts:
   - id: stashTimestamps
     readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashTimestamps/README.md
 
+  - id: stashToggleSceneSprites
+    readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashToggleSceneSprites/README.md
+
   - id: studioTopPerformer
     readme: https://github.com/Serechops/Serechops-Stash/blob/main/plugins/studioTopPerformer/README.md
