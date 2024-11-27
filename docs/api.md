@@ -8,10 +8,10 @@ There is a GraphQL API which allows to do things automatically. GraphQL is also 
 
 Stash has integrated playground where you run interact with the API and view the documentation. 
 
-1. Go to `http(s)://IP:PORT/playground` (default is `http://localhost:9999/playground`). 
+1. Go to `<server>:<port>/playground` (default is `http://localhost:9999/playground`). 
 1. Expand **Docs** on the right to open Documentation Explorer.
 
-All HTTP requests have to go to `http(s)://IP:PORT/graphql` (default is `http://localhost:9999/graphql`).
+All HTTP requests have to go to `<server>:<port>/graphql` (default is `http://localhost:9999/graphql`).
 
 ## Authentication
 

@@ -11,13 +11,14 @@ Read step-by-step guide on how to create a pull request [CONTRIBUTING.md](CONTRI
 
 ### Prerequsites
 
-- Python modules (intall with `pip install mkdocs-material=="9.*" mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin-2 mkdocs-glightbox mkdocs-material[imaging] mkdocs-redirects`)
-    - [mkdocs-material=="9.*"]
-    - [mkdocs-git-revision-date-localized-plugin]
-    - [mkdocs-git-committers-plugin-2]
-    - [mkdocs-glightbox]
-    - [mkdocs-material[imaging]]
-    - [mkdocs-redirects]
+- Python modules
+    - `mkdocs-material=="9.*"`
+    - `mkdocs-git-revision-date-localized-plugin`
+    - `mkdocs-git-committers-plugin-2`
+    - `mkdocs-glightbox`
+    - `mkdocs-material[imaging]`
+    - `mkdocs-redirects`
+    - Install all with `pip install mkdocs-material=="9.*" mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin-2 mkdocs-glightbox mkdocs-material[imaging] mkdocs-redirects`
 - Clone/download the repository
 
 ### Building the site

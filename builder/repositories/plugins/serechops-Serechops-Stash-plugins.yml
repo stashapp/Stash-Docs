@@ -87,6 +87,8 @@ scripts:
   - id: stashStudioLogoWallView
   - id: stashTagPerformerImage
   - id: stashTimestamps
+  - id: stashToggleSceneSprites
+
   - id: studioTopPerformer
 
 # not a plugin

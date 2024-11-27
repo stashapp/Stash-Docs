@@ -21,9 +21,7 @@ JAVStash is a community-driven metadata database focused on Japanese Adult Video
 
 PMV Stash is a community-driven metadata database focused on remixed pornographic art such as Porn Music Videos, Cock Hero, Hypno Vids, Compilations.
 
-[:octicons-link-16: Website](https://pmvstash.org){:target="_blank"} | [:fontawesome-regular-file-lines: Guidelines](https://blog.pmvstash.org/guidelines){:target="_blank"} | [:simple-discord: Discord](https://discord.gg/qGbs8kvpVk){:target="_blank"} | [:material-api: Endpoint `https://pmvstash.org/graphql`]() | [:fontawesome-solid-unlock-keyhole: Join](https://discord.com/channels/1032261936726933524/1080803277140144128){:target="_blank"}[^3]
-
-[^3]: Link leads to a private Discord server.
+[:octicons-link-16: Website](https://pmvstash.org){:target="_blank"} | [:fontawesome-regular-file-lines: Guidelines](https://blog.pmvstash.org/guidelines){:target="_blank"} | [:simple-discord: Discord](https://discord.gg/qGbs8kvpVk){:target="_blank"} | [:material-api: Endpoint `https://pmvstash.org/graphql`]() | [:fontawesome-solid-unlock-keyhole: Join](https://blog.pmvstash.org){:target="_blank"}
 
 ### StashDB
 
