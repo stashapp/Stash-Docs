@@ -106,6 +106,9 @@ scripts:
     screenshots:
       - /assets/plugins/renamerOnUpdate/1.png
 
+  - id: scenePageRememberStates
+    readme: false
+
   - id: sceneCoverCropper
     author: "[feederbox826](https://github.com/feederbox826)"
     readme: false
