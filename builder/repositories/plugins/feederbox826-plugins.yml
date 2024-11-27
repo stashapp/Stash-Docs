@@ -14,85 +14,52 @@ scripts:
     screenshots:
       - https://avatars.githubusercontent.com/u/10137
 
+# dependencies
   - id: 0gql-intercept
-    readme: false
-
-  - id: avg-rating
-    readme: false
-  
-  - id: deletefp
-    readme: false
-
-  - id: edit-unorganized
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/edit-unorganized/README.md
-
-  - id: filepath-copy
-    readme: false  
-
-  - id: fontawesome-js
-    readme: false  
-
+    hide: true
   - id: forbiddenConfig
-    readme: false
-
-  - id: log-console
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/log-console/README.md
-
-  - id: markergen
-    readme: false
-
-  - id: rebrand
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/rebrand/README.md
-
-  - id: s6-helper
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/s6-helper/README.md
-
-  - id: skip-intro
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/skip-intro/README.md
-
-  - id: stash-omnisearch
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/stash-omnisearch/README.md
-
-  - id: stash-open
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/stash-open/README.md
-
+    hide: true
   - id: stashdb-api
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/stashdb-api/README.md
+    hide: true
+  - id: wfke
+    hide: true
+  - id: fontawesome-js
 
+# deprecated
+  - id: tag-graph-js
+    hide: true
+
+# id only
+  - id: avg-rating
+  - id: deletefp
+  - id: edit-unorganized
+  - id: filepath-copy
+  - id: log-console
+  - id: markergen
+  - id: rebrand
+  - id: s6-helper
+  - id: skip-intro
+  - id: stash-omnisearch
+  - id: stash-open
   - id: stashdb-fullimg
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/stashdb-fullimg/README.md
+  - id: tag-import
+  - id: tag-video
+  - id: tagger-img-res
+  - id: titleobserver
+  - id: vjs-mmb-fullscreen
+  - id: vjs-shortcut
 
+# screenshots
   - id: studio-img-bg
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/studio-img-bg/README.md
     screenshots:
       - "https://raw.githubusercontent.com/feederbox826/plugins/main/docs/studio-image-bg_after.png"
-
+  - id: log-toast
+    screenshots:
+      - "https://github.com/feederbox826/plugins/blob/main/docs/log-toast.png"
   - id: tag-filter
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/tag-filter/README.md
-
-  - id: tag-graph-js
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/tag-graph-js/README.md
-
-  - id: tag-import
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/tag-import/README.md
-
-  - id: tag-video
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/tag-video/README.md
-
-  - id: tagger-img-res
-    readme: false
-
-  - id: titleobserver
-    readme: false
-
-  - id: vjs-mmb-fullscreen
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/vjs-mmb-fullscreen/README.md
-
-  - id: vjs-shortcut
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/vjs-shortcut/README.md
-  
+    screenshots:
+      - "https://github.com/feederbox826/plugins/blob/main/docs/tag-filter-toggle.png"
+      - "https://github.com/feederbox826/plugins/blob/main/docs/tag-filter-demo.png"
   - id: watched-video
-    readme: https://github.com/feederbox826/plugins/blob/main/plugins/watched-video/README.md
-  
-  - id: wfke
-    readme: false
+    screenshots:
+      - "https://github.com/feederbox826/plugins/blob/main/docs/watched-video.png"

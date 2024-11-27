@@ -15,4 +15,3 @@ scripts:
 
   - id: dracula-theme
     path: dracula
-    readme: false

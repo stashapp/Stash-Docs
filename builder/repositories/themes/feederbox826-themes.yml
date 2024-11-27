@@ -13,23 +13,11 @@ scripts:
     screenshots:
       - https://avatars.githubusercontent.com/u/10137
 
+# id only
   - id: alternative-tag-layout
-    readme: https://github.com/feederbox826/themes/blob/main/themes/alternative-tag-layout/README.md
-
   - id: direct-stream
-    readme: https://github.com/feederbox826/themes/blob/main/themes/direct-stream/README.md
-
   - id: hide-donate
-    readme: https://github.com/feederbox826/themes/blob/main/themes/hide-donate/README.md
-
   - id: hide-ocount
-    readme: false
-
   - id: more-studio-row
-    readme: https://github.com/feederbox826/themes/blob/main/themes/more-studio-row/README.md
-
   - id: performer-grid
-    readme: https://github.com/feederbox826/themes/blob/main/themes/performer-grid/README.md
-
   - id: wrap-subtag
-    readme: false

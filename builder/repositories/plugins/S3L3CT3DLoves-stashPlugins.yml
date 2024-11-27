@@ -13,14 +13,12 @@ scripts:
     screenshots:
       - https://avatars.githubusercontent.com/u/10137
 
+# path override
   - id: cleanupUI
-    readme: https://github.com/S3L3CT3DLoves/stashPlugins/blob/main/plugins/CleanupUI/README.md
-
+    path: CleanupUI
   - id: easytag
-    readme: https://github.com/S3L3CT3DLoves/stashPlugins/blob/main/plugins/QuickEdit/README.md
-  
-  - id: folderSort
-    readme: https://github.com/S3L3CT3DLoves/stashPlugins/blob/main/plugins/folderSort/README.md
+    path: QuickEdit
 
+# id only
   - id: myIp
-    readme: false
+  - id: folderSort

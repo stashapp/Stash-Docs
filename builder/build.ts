@@ -1,11 +1,12 @@
 import axios from 'axios'
 import YAML from 'yaml'
-import fs from 'fs'
-import path from 'path'
+import * as fs from 'fs';
+import * as path from 'path';
 
-import { LocalCollection, LocalRepository, LocalSidecar, RemoteIndex } from './types'
+import { LocalCollection, LocalRepository, LocalSidecar, RemoteIndex, RemotePlugin } from './types'
 import { Plugin } from './plugin'
 import { infoLog, warnLog } from './utils'
+import { debuglog } from 'util';
 
 // iterate over folder
 async function searchRepository(pathName: string = "plugins"): Promise<Plugin[]> {
@@ -18,6 +19,8 @@ async function searchRepository(pathName: string = "plugins"): Promise<Plugin[]>
         if (file.endsWith(".yml")) {
             const fileData = fs.readFileSync(`${repoPath}/${file}`, 'utf8')
             const localRepo: LocalRepository = YAML.parse(fileData)
+            // set name to filename if not defined
+            if (!localRepo.name) localRepo.name = file.replace(".yml", "")
             repositories.push(localRepo)
         }
     })
@@ -27,6 +30,9 @@ async function searchRepository(pathName: string = "plugins"): Promise<Plugin[]>
         const plugin = await parseRepository(repo)
         plugins.push(...plugin)
     }
+    // fetch all readmes of plugins
+    const readmePromises = plugins.map(plugin => plugin.checkReadme())
+    await Promise.all(readmePromises)
     // sort plugins and print to md
     const sortedPlugins = plugins
         .sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()))
@@ -34,6 +40,9 @@ async function searchRepository(pathName: string = "plugins"): Promise<Plugin[]>
 }
 
 function printPlugins(outputName: string, sortedPlugins: Plugin[]) {
+    // create folder if not exists
+    if (!fs.existsSync(`./dist`)) fs.mkdirSync(`./dist`)
+    if (!fs.existsSync(`./dist/${outputName}`)) fs.mkdirSync(`./dist/${outputName}`)
     // print to file
     const outputPath = `./dist/${outputName}/list.md`
     const stream = fs.createWriteStream(outputPath)
@@ -55,22 +64,36 @@ async function parseRepository(localRepository: LocalRepository): Promise<Plugin
         .then(res => YAML.parse(res.data))
     // iterate over remote index and match with sidecars
     const indexPlugins: Plugin[] = []
+    const idxMissingScar: Set<RemotePlugin> = new Set()
+    const allIdx: Set<RemotePlugin> = new Set()
     for (const index of indexData) {
         const sidecarMatch = repoSidecars.find(sidecar => sidecar.id == index.id)
-        if (sidecarMatch?.hide) {
-            // skip if hidden, but warn
-            infoLog(`Skipping hidden plugin: ${index.name}`)
-            continue
+        if (sidecarMatch) {
+            if (sidecarMatch.id == "example") continue // if example, skip
+            else if (sidecarMatch.hide) { // skip but warn if hidden
+                debuglog(`Skipping hidden plugin: ${index.name}`)
+                continue
+            } else allIdx.add(index) // add to sidecars
+        } else { // sidecar not found
+            if (repoDefaults.exclusive) continue // if exclusive, skip
+            idxMissingScar.add(index) // add to missing
         }
-        if (repoDefaults.exclusive && !sidecarMatch) continue // if exclusive, skip if no sidecar
         const plugin = new Plugin(repoDefaults, sidecarMatch, index)
         indexPlugins.push(plugin)
     }
     // check if there are leftover sidecars
-    const extraSidecars = repoSidecars.filter(sidecar => !indexPlugins.find(plugin => plugin.id == sidecar.id && !sidecar.hide))
+    // not named example
+    // not in indexPlugins and not hidden
+    const extraSidecars = repoSidecars.filter(sidecar => sidecar.id != "example" && !sidecar.hide && !indexPlugins.find(plugin => plugin.id == sidecar.id))
     if (extraSidecars.length > 0) {
         warnLog(`Found ${extraSidecars.length} extra sidecars in ${localRepository.name}`)
         extraSidecars.forEach(sidecar => warnLog(`    ${sidecar.id}`))
+    }
+    // check for plugins without sidecars
+    const missingSCars = Array.from(idxMissingScar).filter(plugin => allIdx.has(plugin))
+    if (missingSCars.length > 0) {
+        infoLog(`Found ${missingSCars.length} missing sidecars in ${localRepository.name}`)
+        missingSCars.forEach(sidecar => infoLog(`    ${sidecar.name}`))
     }
     return indexPlugins
 }
@@ -84,6 +107,7 @@ async function run() {
     // remove themes from plugins
     const filteredPlugins = plugins.filter(plugin => !themes.some(theme => theme.id == plugin.id))
     printPlugins("plugins", filteredPlugins)
+    console.log("finished building plugin index")
 }
 
 run()
