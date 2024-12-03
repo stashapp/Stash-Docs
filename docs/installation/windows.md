@@ -4,7 +4,8 @@ icon: fontawesome/brands/windows
 ---
 
 !!! note
-    Some Windows 11 versions might open Stash via Terminal instead of going to notification area. You can bypass that by running the program as administrator or [use a shortcut to run it via conhost.exe](https://github.com/stashapp/stash/issues/2598){:target="_blank"}.
+    Some Windows 11 versions might open Stash via Terminal instead of going to notification area. You can bypass that by running the program as administrator or [use a shortcut to run it via conhost.exe](https://github.com/stashapp/stash/issues/2598){:target="_blank"}.  
+    As a result of running as administrator Stash might fail to detect your Python installtion in PATH, so you need point it the correct way yourself after installation. In :fontawesome-solid-gear: **Settings** > **System** and under **Applications Paths** header set **Python Executable Path**.
 
 ## Install
 
