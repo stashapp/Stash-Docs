@@ -4797,7 +4797,7 @@ If the <code>sleep</code> value is not set it defaults to <code>2</code> seconds
 <span class="w">  </span><span class="nt">sceneScraper</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">scene</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">Title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">//head/title</span>
-<span class="w">      </span><span class="nt">Details</span><span class="p">:</span><span class="w"> </span><span class="c1"># shows the id/s of the the visible div/s for the Multiple targets example of the page</span>
+<span class="w">      </span><span class="nt">Details</span><span class="p">:</span><span class="w"> </span><span class="c1"># shows the id/s of the visible div/s for the Multiple targets example of the page</span>
 <span class="w">        </span><span class="nt">selector</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">//div[@class=&quot;bd-example&quot;]//div[@class=&quot;multi-collapse collapse show&quot;]/@id</span>
 <span class="w">        </span><span class="nt">concat</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;\n\n&quot;</span>
 
@@ -4901,7 +4901,7 @@ to randomly generate a value with a length of 6 characters and the <code>_warn</
 <h3 id="headers">Headers<a class="headerlink" href="#headers" title="Permanent link">&para;</a></h3>
 <p>Sending request headers is possible when using a scraper.
 Headers can be set in the <code>driver</code> section and are supported for plain, CDP enabled and JSON scrapers.
-They consist of a Key and a Value. If the the Key is empty or not defined then the header is ignored.</p>
+They consist of a Key and a Value. If the Key is empty or not defined then the header is ignored.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">driver</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">headers</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">User-Agent</span>
