@@ -71,6 +71,7 @@ scripts:
   - id: pluginsBackup
   - id: sceneSpecsOverlay
   - id: scenesMovieDuration
+  - id: stashAccessibility
   - id: stashBatchCreateAll
   - id: stashDBTagImport
   - id: stashDynamicGroups
@@ -82,9 +83,11 @@ scripts:
   - id: stashRightClickPerformers
   - id: stashRightClickScenes
   - id: stashRightClickSettings
+  - id: stashRightClickSuite
   - id: stashRightClickTags
   - id: stashSceneFileSize
   - id: stashStudioLogoWallView
+  - id: stashTagCustomColors
   - id: stashTagPerformerImage
   - id: stashTimestamps
   - id: stashToggleSceneSprites
