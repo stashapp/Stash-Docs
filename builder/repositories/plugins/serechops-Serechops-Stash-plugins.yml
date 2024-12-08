@@ -76,6 +76,7 @@ scripts:
   - id: stashDBTagImport
   - id: stashDynamicGroups
   - id: stashFPSOverlay
+  - id: stashPerformerFavicons
   - id: stashPerformerMatchScrape
   - id: stashRightClickGalleries
   - id: stashRightClickImages
