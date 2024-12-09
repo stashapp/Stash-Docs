@@ -1657,7 +1657,7 @@
 === "Screenshots"
     
 
-### [Stash AI](https://github.com/stashapp/CommunityScripts/tree/main/plugins/stashai){target=_blank}
+### [Stash AI](https://github.com/stashapp/CommunityScripts/tree/main/plugins/stashAI){target=_blank}
 
 === "Description"
 
