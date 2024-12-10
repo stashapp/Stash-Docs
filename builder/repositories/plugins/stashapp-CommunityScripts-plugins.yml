@@ -124,6 +124,7 @@ scripts:
 
   - id: stashai
     author: "[cc1234475](https://github.com/cc1234475)"
+    path: stashAI
     readme: false
 
   - id: stashNotes
