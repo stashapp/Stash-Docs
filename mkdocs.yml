@@ -69,7 +69,7 @@ plugins:
   - redirects:
       redirect_maps:
         'metadata-sources/list.md': 'https://stashapp.github.io/CommunityScrapers'
-        'beginner-guides/exclude-file-configuration.md': `in-app-manual/configuration.md`
+        'beginner-guides/exclude-file-configuration.md': 'in-app-manual/configuration.md'
 
 watch:
   - includes
