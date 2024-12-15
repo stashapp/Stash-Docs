@@ -71,11 +71,13 @@ scripts:
   - id: pluginsBackup
   - id: sceneSpecsOverlay
   - id: scenesMovieDuration
+  - id: serechopsSceneCard
   - id: stashAccessibility
   - id: stashBatchCreateAll
   - id: stashDBTagImport
   - id: stashDynamicGroups
   - id: stashFPSOverlay
+  - id: stashNewPerformerScenes
   - id: stashPerformerFavicons
   - id: stashPerformerMatchScrape
   - id: stashRightClickGalleries
@@ -92,8 +94,8 @@ scripts:
   - id: stashTagPerformerImage
   - id: stashTimestamps
   - id: stashToggleSceneSprites
-
   - id: studioTopPerformer
 
 # not a plugin
 #  - id: stashPluginYAMLGUI
+#  - id: stashUIPluginExample
