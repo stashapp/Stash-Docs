@@ -48,7 +48,7 @@ Scrapers includes: All other scrapers.
 
 ### By implementation
 
-#### XPath and JSON ccrapers
+#### XPath and JSON scrapers
 
 This is the most common type of scrapers, which use either XPath parser to pin-point the information and retrieve them, or send out JSON requests to get the information. xpathScraper and jsonScraper can be mixed in the same .yml file.
 
