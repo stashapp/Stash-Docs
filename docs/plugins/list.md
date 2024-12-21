@@ -1,52 +1,6 @@
 # List of plugins 
 
 
-### [0gql-intercept](https://github.com/feederbox826/plugins/tree/main/plugins/0gql-intercept){target=_blank}
-
-=== "Description"
-
-    graphQL intercept helper library
-
-=== "Source URL"
-
-    ```
-    https://feederbox826.github.io/plugins/main/index.yml
-    ```
-
-=== "README"
-
-    No README available
-
-=== "Author"
-
-    [feederbox826](https://feederbox.cc)
-
-=== "Screenshots"
-    
-
-### [7dJx1qP's Stash Userscript Library](https://github.com/7dJx1qP/stash-plugins/tree/main/plugins/stashUserscriptLibrary7dJx1qP){target=_blank}
-
-=== "Description"
-
-    Exports utility functions and a Stash class that emits events whenever a GQL response is received and whenenever a page navigation change is detected
-
-=== "Source URL"
-
-    ```
-    https://7djx1qp.github.io/stash-plugins/main/index.yml
-    ```
-
-=== "README"
-
-    No README available
-
-=== "Author"
-
-    [7dJx1qP](https://github.com/7dJx1qP)
-
-=== "Screenshots"
-    
-
 ### [Add Images to Tags](https://github.com/rosa-umineko/CommunityScripts/tree/main/plugins/addImagesToTags){target=_blank}
 
 === "Description"
@@ -84,7 +38,7 @@
 
 === "README"
 
-    View [README](https://github.com/stashapp/CommunityScripts/blob/main/plugins/AdulttimeInteractiveDL/README.md){target=_blank}
+    No README available
 
 === "Author"
 
@@ -97,7 +51,7 @@
 
 === "Description"
 
-    Tag videos and Images with Locally hosted AI using Skier's Patreon AI models
+    Tag videos and Images with Locally hosted AI using Skier's Free and Patreon AI models
 
 === "Source URL"
 
@@ -130,7 +84,7 @@
 
 === "README"
 
-    View [README](https://github.com/stashapp/CommunityScripts/blob/main/plugins/audio-transcodes/README.md){target=_blank}
+    No README available
 
 === "Author"
 
@@ -185,6 +139,29 @@
 === "Screenshots"
     
 
+### [autovr](https://github.com/feederbox826/plugins/tree/main/plugins/autovr){target=_blank}
+
+=== "Description"
+
+    automatically toggle VR mode
+
+=== "Source URL"
+
+    ```
+    https://feederbox826.github.io/plugins/main/index.yml
+    ```
+
+=== "README"
+
+    View [README](https://github.com/feederbox826/plugins/blob/main/plugins/autovr/README.md){target=_blank}
+
+=== "Author"
+
+    [feederbox826](https://feederbox.cc)
+
+=== "Screenshots"
+    
+
 ### [Average Rating](https://github.com/feederbox826/plugins/tree/main/plugins/avg-rating){target=_blank}
 
 === "Description"
@@ -199,7 +176,7 @@
 
 === "README"
 
-    No README available
+    View [README](https://github.com/feederbox826/plugins/blob/main/plugins/avg-rating/README.md){target=_blank}
 
 === "Author"
 
@@ -208,7 +185,7 @@
 === "Screenshots"
     
 
-### [Backup Plugins](https://github.com/serechops/Serechops-Stash/tree/main/plugins/pluginsBackup){target=_blank}
+### [Backup Plugins](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/pluginsBackup){target=_blank}
 
 === "Description"
 
@@ -226,12 +203,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Bulk Import Performers](https://github.com/serechops/Serechops-Stash/tree/main/plugins/bulkImportPerformers){target=_blank}
+### [Bulk Import Performers](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/bulkImportPerformers){target=_blank}
 
 === "Description"
 
@@ -249,7 +226,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -277,7 +254,7 @@
 === "Screenshots"
     ![CJ's Card Tweaks. screenshot](/assets/plugins/cjCardTweaks/1.png){ loading=lazy }  ![CJ's Card Tweaks. screenshot](/assets/plugins/cjCardTweaks/2.png){ loading=lazy }  ![CJ's Card Tweaks. screenshot](/assets/plugins/cjCardTweaks/3.png){ loading=lazy }  
 
-### [CleanupUI](https://github.com/S3L3CT3DLoves/stashPlugins/tree/main/plugins/cleanupUI){target=_blank}
+### [CleanupUI](https://github.com/S3L3CT3DLoves/stashPlugins/tree/main/plugins/CleanupUI){target=_blank}
 
 === "Description"
 
@@ -369,6 +346,29 @@
 === "Screenshots"
     
 
+### [cuptag](https://github.com/feederbox826/plugins/tree/main/plugins/cuptag){target=_blank}
+
+=== "Description"
+
+    Tag performers with cup sizes
+
+=== "Source URL"
+
+    ```
+    https://feederbox826.github.io/plugins/main/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [feederbox826](https://feederbox.cc)
+
+=== "Screenshots"
+    
+
 ### [Date Parser](https://github.com/stashapp/CommunityScripts/tree/main/plugins/DateParser){target=_blank}
 
 === "Description"
@@ -429,7 +429,7 @@
 
 === "README"
 
-    No README available
+    View [README](https://github.com/feederbox826/plugins/blob/main/plugins/deletefp/README.md){target=_blank}
 
 === "Author"
 
@@ -507,7 +507,7 @@
 === "Screenshots"
     
 
-### [Duplicate Scene Marker Cleaner](https://github.com/serechops/Serechops-Stash/tree/main/plugins/markerDupes){target=_blank}
+### [Duplicate Scene Marker Cleaner](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/markerDupes){target=_blank}
 
 === "Description"
 
@@ -525,12 +525,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [EasyTag](https://github.com/S3L3CT3DLoves/stashPlugins/tree/main/plugins/easytag){target=_blank}
+### [EasyTag](https://github.com/S3L3CT3DLoves/stashPlugins/tree/main/plugins/QuickEdit){target=_blank}
 
 === "Description"
 
@@ -645,6 +645,29 @@
 === "Screenshots"
     
 
+### [filepath-copy](https://github.com/feederbox826/plugins/tree/main/plugins/filepath-copy){target=_blank}
+
+=== "Description"
+
+    Copy file path to clipboard when selected
+
+=== "Source URL"
+
+    ```
+    https://feederbox826.github.io/plugins/main/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [feederbox826](https://feederbox.cc)
+
+=== "Screenshots"
+    
+
 ### [Find File Errors](https://github.com/stg-annon/StashScripts/tree/main/plugins/findFileErrors){target=_blank}
 
 === "Description"
@@ -668,7 +691,7 @@
 === "Screenshots"
     
 
-### [Find Marker Tag Images](https://github.com/serechops/Serechops-Stash/tree/main/plugins/findMarkerTagImages){target=_blank}
+### [Find Marker Tag Images](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/findMarkerTagImages){target=_blank}
 
 === "Description"
 
@@ -686,7 +709,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -728,30 +751,7 @@
 
 === "README"
 
-    No README available
-
-=== "Author"
-
-    [feederbox826](https://feederbox.cc)
-
-=== "Screenshots"
-    
-
-### [Forbidden Config](https://github.com/feederbox826/plugins/tree/main/plugins/forbiddenConfig){target=_blank}
-
-=== "Description"
-
-    Expose config store to UI plugins
-
-=== "Source URL"
-
-    ```
-    https://feederbox826.github.io/plugins/main/index.yml
-    ```
-
-=== "README"
-
-    No README available
+    View [README](https://github.com/feederbox826/plugins/blob/main/plugins/fontawesome-js/README.md){target=_blank}
 
 === "Author"
 
@@ -774,7 +774,7 @@
 
 === "README"
 
-    View [README](https://github.com/stashapp/CommunityScripts/blob/main/plugins/funscriptMarkers/README.md){target=_blank}
+    No README available
 
 === "Author"
 
@@ -783,7 +783,7 @@
 === "Screenshots"
     
 
-### [Glassy - Branding](https://github.com/serechops/Serechops-Stash/tree/main/plugins/Glassy - Branding){target=_blank}
+### [Glassy - Branding](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/Glassy - Branding){target=_blank}
 
 === "Description"
 
@@ -797,11 +797,11 @@
 
 === "README"
 
-    View [README](https://github.com/serechops/Serechops-Stash/blob/main/plugins/Glassy - Branding/README.md){target=_blank}
+    No README available
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -852,7 +852,7 @@
 === "Screenshots"
     
 
-### [image2Scene](https://github.com/serechops/Serechops-Stash/tree/main/plugins/image2Scene){target=_blank}
+### [image2Scene](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/image2Scene){target=_blank}
 
 === "Description"
 
@@ -870,7 +870,53 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
+
+=== "Screenshots"
+    
+
+### [Lightbox Visual Novel](https://github.com/W0lfieW0lf/StashApp-Tools/tree/main/Plugins/LightBox-VisualNovel){target=_blank}
+
+=== "Description"
+
+    Display the image description with Typewriter effect on the footer.
+
+=== "Source URL"
+
+    ```
+    https://w0lfiew0lf.github.io/StashApp-Tools/index.yml
+    ```
+
+=== "README"
+
+    View [README](https://github.com/W0lfieW0lf/StashApp-Tools/blob/main/Plugins/LightBox-VisualNovel/README.md){target=_blank}
+
+=== "Author"
+
+    [W0lfieW0lf](https://github.com/W0lfieW0lf)
+
+=== "Screenshots"
+    ![Lightbox Visual Novel screenshot](https://raw.githubusercontent.com/W0lfieW0lf/StashApp-Tools/refs/heads/main/docs/images/LightBox-VisualNovel/LightBox-VisualNovel.gif){ loading=lazy }  
+
+### [log-console](https://github.com/feederbox826/plugins/tree/main/plugins/log-console){target=_blank}
+
+=== "Description"
+
+    display log messages in console
+
+=== "Source URL"
+
+    ```
+    https://feederbox826.github.io/plugins/main/index.yml
+    ```
+
+=== "README"
+
+    View [README](https://github.com/feederbox826/plugins/blob/main/plugins/log-console/README.md){target=_blank}
+
+=== "Author"
+
+    [feederbox826](https://feederbox.cc)
 
 === "Screenshots"
     
@@ -896,7 +942,7 @@
     [feederbox826](https://feederbox.cc)
 
 === "Screenshots"
-    
+    ![log-toast screenshot](https://github.com/feederbox826/plugins/blob/main/docs/log-toast.png){ loading=lazy }  
 
 ### [Marker Delete Button](https://github.com/stashapp/CommunityScripts/tree/main/plugins/markerDeleteButton){target=_blank}
 
@@ -935,7 +981,7 @@
 
 === "README"
 
-    No README available
+    View [README](https://github.com/feederbox826/plugins/blob/main/plugins/markergen/README.md){target=_blank}
 
 === "Author"
 
@@ -990,7 +1036,7 @@
 === "Screenshots"
     
 
-### [Movie Duration from Scenes](https://github.com/serechops/Serechops-Stash/tree/main/plugins/scenesMovieDuration){target=_blank}
+### [Movie Duration from Scenes](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/scenesMovieDuration){target=_blank}
 
 === "Description"
 
@@ -1008,12 +1054,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Movie-Fy](https://github.com/serechops/Serechops-Stash/tree/main/plugins/Movie-Fy/Movie-Fy){target=_blank}
+### [Movie-Fy](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/Movie-Fy/Movie-Fy){target=_blank}
 
 === "Description"
 
@@ -1031,12 +1077,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Movie-Fy Bulk Movie Scraper](https://github.com/serechops/Serechops-Stash/tree/main/plugins/Movie-Fy/Movie-Fy%20Bulk%20Movie%20URL%20Scrape){target=_blank}
+### [Movie-Fy Bulk Movie Scraper](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/Movie-Fy/Movie-Fy%20Bulk%20Movie%20URL%20Scrape){target=_blank}
 
 === "Description"
 
@@ -1054,12 +1100,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Movie-Fy Check and Update Scene Titles](https://github.com/serechops/Serechops-Stash/tree/main/plugins/Movie-Fy/Movie-Fy%20Check%20and%20Update%20Scene%20Titles){target=_blank}
+### [Movie-Fy Check and Update Scene Titles](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/Movie-Fy/Movie-Fy%20Check%20and%20Update%20Scene%20Titles){target=_blank}
 
 === "Description"
 
@@ -1077,12 +1123,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Movie-Fy Create Movie Studio](https://github.com/serechops/Serechops-Stash/tree/main/plugins/Movie-Fy/Movie-Fy%20Create%20Movie%20Studio){target=_blank}
+### [Movie-Fy Create Movie Studio](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/Movie-Fy/Movie-Fy%20Create%20Movie%20Studio){target=_blank}
 
 === "Description"
 
@@ -1100,12 +1146,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Movie-Fy Scene Studio Bulk Update](https://github.com/serechops/Serechops-Stash/tree/main/plugins/Movie-Fy/Movie-Fy%20Scene%20Studio%20Bulk%20Update){target=_blank}
+### [Movie-Fy Scene Studio Bulk Update](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/Movie-Fy/Movie-Fy%20Scene%20Studio%20Bulk%20Update){target=_blank}
 
 === "Description"
 
@@ -1123,12 +1169,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Movie-Fy Update Movie Scene Covers](https://github.com/serechops/Serechops-Stash/tree/main/plugins/Movie-Fy/Movie-Fy%20Update%20Movie%20Scene%20Covers){target=_blank}
+### [Movie-Fy Update Movie Scene Covers](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/Movie-Fy/Movie-Fy%20Update%20Movie%20Scene%20Covers){target=_blank}
 
 === "Description"
 
@@ -1146,7 +1192,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -1201,7 +1247,7 @@
 
 === "Description"
 
-    Displays metadata about frequent scene partners, most prominent tags, etc. in your library, on performer pages.
+    Displays additional metadata on performer pages, such as their most regular scene partners, top studio, and total play duration. Requires Stash v0.27.0 or higher.
 
 === "Source URL"
 
@@ -1220,7 +1266,7 @@
 === "Screenshots"
     
 
-### [Performer Gallery Scraper Plugin](https://github.com/serechops/Serechops-Stash/tree/main/plugins/performerGallery){target=_blank}
+### [Performer Gallery Scraper Plugin](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/performerGallery){target=_blank}
 
 === "Description"
 
@@ -1238,12 +1284,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Performer Scene Compare](https://github.com/serechops/Serechops-Stash/tree/main/plugins/performerSceneCompare){target=_blank}
+### [Performer Scene Compare](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/performerSceneCompare){target=_blank}
 
 === "Description"
 
@@ -1261,7 +1307,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -1303,7 +1349,7 @@
 
 === "README"
 
-    View [README](https://github.com/stashapp/CommunityScripts/blob/main/plugins/PythonToolsInstaller/README.md){target=_blank}
+    No README available
 
 === "Author"
 
@@ -1340,6 +1386,29 @@
 === "Description"
 
     Query ident.me to check my current IP (ensure VPN is working)
+
+=== "Source URL"
+
+    ```
+    https://s3l3ct3dloves.github.io/stashPlugins/stable/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [S3L3CT3DLoves](https://github.com/S3L3CT3DLoves)
+
+=== "Screenshots"
+    
+
+### [QuickRating](https://github.com/S3L3CT3DLoves/stashPlugins/tree/main/plugins/quickRating){target=_blank}
+
+=== "Description"
+
+    More rating UI options (only enable one)
 
 === "Source URL"
 
@@ -1427,7 +1496,7 @@
 === "Screenshots"
     
 
-### [Renamer](https://github.com/serechops/Serechops-Stash/tree/main/plugins/Renamer){target=_blank}
+### [Renamer](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/Renamer){target=_blank}
 
 === "Description"
 
@@ -1445,12 +1514,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Renamer-Dev](https://github.com/serechops/Serechops-Stash/tree/main/plugins/Renamer-Dev){target=_blank}
+### [Renamer-Dev](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/Renamer-Dev){target=_blank}
 
 === "Description"
 
@@ -1468,7 +1537,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -1565,7 +1634,30 @@
 === "Screenshots"
     
 
-### [SceneHub](https://github.com/serechops/Serechops-Stash/tree/main/plugins/SceneHub){target=_blank}
+### [Scene Page Remember States](https://github.com/stashapp/CommunityScripts/tree/main/plugins/scenePageRememberStates){target=_blank}
+
+=== "Description"
+
+    Uses local storage to remember the state of the scene page detail panel nav bar and activate it on page load. Remembers collapse state of the divider.
+
+=== "Source URL"
+
+    ```
+    https://stashapp.github.io/CommunityScripts/stable/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    No Author
+
+=== "Screenshots"
+    
+
+### [SceneHub](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/SceneHub){target=_blank}
 
 === "Description"
 
@@ -1583,7 +1675,30 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
+
+=== "Screenshots"
+    
+
+### [SerechopsSceneCard](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/serechopsSceneCard){target=_blank}
+
+=== "Description"
+
+    Adds a custom scene card via the Plugin API.
+
+=== "Source URL"
+
+    ```
+    https://serechops.github.io/Serechops-Stash/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -1657,7 +1772,30 @@
 === "Screenshots"
     
 
-### [Stash AI](https://github.com/stashapp/CommunityScripts/tree/main/plugins/stashai){target=_blank}
+### [Stash Accessibility](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashAccessibility){target=_blank}
+
+=== "Description"
+
+    Adds an Accessibility button in the top right navbar that offers various accessibility features.
+
+=== "Source URL"
+
+    ```
+    https://serechops.github.io/Serechops-Stash/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [serechops](https://github.com/Serechops)
+
+=== "Screenshots"
+    
+
+### [Stash AI](https://github.com/stashapp/CommunityScripts/tree/main/plugins/stashAI){target=_blank}
 
 === "Description"
 
@@ -1680,30 +1818,7 @@
 === "Screenshots"
     
 
-### [Stash Audio Player](https://github.com/d0t-d0t-d0t/stash-repo/tree/main/Plugins/stashaudioplayer){target=_blank}
-
-=== "Description"
-
-    Add an audio-only toggle button and support for audio files in the Stash player through hls transcoder.
-
-=== "Source URL"
-
-    ```
-    https://raw.githubusercontent.com/d0t-d0t-d0t/stash-repo/refs/heads/dist/index.yml
-    ```
-
-=== "README"
-
-    View [README](https://github.com/d0t-d0t-d0t/stash-repo/blob/main/Plugins/stashaudioplayer/about.md){target=_blank}
-
-=== "Author"
-
-    [d0t-d0t-d0t](https://github.com/d0t-d0t-d0t)
-
-=== "Screenshots"
-    
-
-### [Stash Batch Create All](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashBatchCreateAll){target=_blank}
+### [Stash Batch Create All](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashBatchCreateAll){target=_blank}
 
 === "Description"
 
@@ -1721,7 +1836,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -1818,7 +1933,30 @@
 === "Screenshots"
     ![Stash Batch Search screenshot](https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Batch%20Search/scenes-tagger.png){ loading=lazy }  
 
-### [Stash Disable All](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashDisableAll/stashDisableAll){target=_blank}
+### [Stash Dynamic Groups](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashDynamicGroups){target=_blank}
+
+=== "Description"
+
+    Designate dynamic groups that can be populated simply by assigning a tag.
+
+=== "Source URL"
+
+    ```
+    https://serechops.github.io/Serechops-Stash/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [serechops](https://github.com/Serechops)
+
+=== "Screenshots"
+    
+
+### [Stash Disable All](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashDisableAll/stashDisableAll){target=_blank}
 
 === "Description"
 
@@ -1836,12 +1974,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Stash Enable All](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashDisableAll/stashEnableFromSave){target=_blank}
+### [Stash Enable All](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashDisableAll/stashEnableFromSave){target=_blank}
 
 === "Description"
 
@@ -1859,12 +1997,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Stash FPS Overlay](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashFPSOverlay){target=_blank}
+### [Stash FPS Overlay](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashFPSOverlay){target=_blank}
 
 === "Description"
 
@@ -1882,12 +2020,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Stash Jellyfin Exporter](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashJellyfinExport){target=_blank}
+### [Stash Jellyfin Exporter](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashJellyfinExporter){target=_blank}
 
 === "Description"
 
@@ -1905,7 +2043,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -1956,7 +2094,7 @@
 === "Screenshots"
     ![Stash Markers Autoscroll screenshot](https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Markers%20Autoscroll/scroll-settings.png){ loading=lazy }  
 
-### [Stash Matched Performer Scrape](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashPerformerMatchScrape){target=_blank}
+### [Stash Matched Performer Scrape](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashPerformerMatchScrape){target=_blank}
 
 === "Description"
 
@@ -1974,10 +2112,33 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
+
+### [Stash Mergers](https://github.com/Valkyr-JS/stash-plugins/tree/main/plugins/StashMergers){target=_blank}
+
+=== "Description"
+
+    A plugin for selectively merging data between performers in Stash.
+
+=== "Source URL"
+
+    ```
+    https://valkyr-js.github.io/stash-plugins/index.yml
+    ```
+
+=== "README"
+
+    View [README](https://github.com/Valkyr-JS/StashMergers/blob/main/README.md){target=_blank}
+
+=== "Author"
+
+    [Valkyr-JS](https://github.com/Valkyr-JS)
+
+=== "Screenshots"
+    ![Stash Mergers screenshot](/assets/plugins/StashMergers/1.JPG){ loading=lazy }  ![Stash Mergers screenshot](/assets/plugins/StashMergers/2.JPG){ loading=lazy }  ![Stash Mergers screenshot](/assets/plugins/StashMergers/3.JPG){ loading=lazy }  ![Stash Mergers screenshot](/assets/plugins/StashMergers/4.JPG){ loading=lazy }  ![Stash Mergers screenshot](/assets/plugins/StashMergers/5.JPG){ loading=lazy }  ![Stash Mergers screenshot](/assets/plugins/StashMergers/6.JPG){ loading=lazy }  
 
 ### [Stash New Performer Filter Button](https://github.com/7dJx1qP/stash-plugins/tree/main/plugins/stashNewPerformerFilterButton){target=_blank}
 
@@ -2094,6 +2255,29 @@
 === "Screenshots"
     ![Stash Performer Custom Fields screenshot](https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20Custom%20Fields/custom-fields-view.png){ loading=lazy }  ![Stash Performer Custom Fields screenshot](https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20Custom%20Fields/custom-fields-view-compact.png){ loading=lazy }  ![Stash Performer Custom Fields screenshot](https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20Custom%20Fields/custom-fields-edit.png){ loading=lazy }  ![Stash Performer Custom Fields screenshot](https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20Custom%20Fields/performer-details-edit.png){ loading=lazy }  
 
+### [Stash Performer Favicons](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashPerformerFavicons){target=_blank}
+
+=== "Description"
+
+    Adds the performer URL favicons as a new line item in the performer details.
+
+=== "Source URL"
+
+    ```
+    https://serechops.github.io/Serechops-Stash/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [serechops](https://github.com/Serechops)
+
+=== "Screenshots"
+    
+
 ### [Stash Performer Image Cropper](https://github.com/7dJx1qP/stash-plugins/tree/main/plugins/stashPerformerImageCropper){target=_blank}
 
 === "Description"
@@ -2117,7 +2301,7 @@
 === "Screenshots"
     ![Stash Performer Image Cropper screenshot](https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Performer%20Image%20Cropper/performer-image-cropper.png){ loading=lazy }  
 
-### [Stash Performer Image Extractor](https://github.com/serechops/Serechops-Stash/tree/main/plugins/PerformerImageExport){target=_blank}
+### [Stash Performer Image Extractor](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/PerformerImageExport){target=_blank}
 
 === "Description"
 
@@ -2135,7 +2319,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -2255,7 +2439,7 @@
 === "Screenshots"
     
 
-### [Stash Right Click Galleries](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashRightClickGalleries){target=_blank}
+### [Stash Right Click Galleries](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashRightClickGalleries){target=_blank}
 
 === "Description"
 
@@ -2269,16 +2453,16 @@
 
 === "README"
 
-    View [README](https://github.com/serechops/Serechops-Stash/blob/main/plugins/stashRightClickGalleries/README.md){target=_blank}
+    No README available
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Stash Right Click Images](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashRightClickImages){target=_blank}
+### [Stash Right Click Images](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashRightClickImages){target=_blank}
 
 === "Description"
 
@@ -2296,12 +2480,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Stash Right Click Performer Merge](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashRightClickPerformerMerge){target=_blank}
+### [Stash Right Click Performer Merge](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashRightClickPerformerMerge){target=_blank}
 
 === "Description"
 
@@ -2319,12 +2503,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Stash Right Click Performers](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashRightClickPerformers){target=_blank}
+### [Stash Right Click Performers](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashRightClickPerformers){target=_blank}
 
 === "Description"
 
@@ -2342,12 +2526,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Stash Right Click Scenes](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashRightClickScenes){target=_blank}
+### [Stash Right Click Scenes](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashRightClickScenes){target=_blank}
 
 === "Description"
 
@@ -2365,12 +2549,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Stash Right Click Settings](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashRightClickSettings){target=_blank}
+### [Stash Right Click Settings](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashRightClickSettings){target=_blank}
 
 === "Description"
 
@@ -2388,12 +2572,35 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Stash Right Click Tags](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashRightClickTags){target=_blank}
+### [Stash Right Click Suite](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashRightClickSuite){target=_blank}
+
+=== "Description"
+
+    Meta-package installer for the Stash Right-Click Suite tools.
+
+=== "Source URL"
+
+    ```
+    https://serechops.github.io/Serechops-Stash/index.yml
+    ```
+
+=== "README"
+
+    View [README](https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashRightClickSuite/README.md){target=_blank}
+
+=== "Author"
+
+    [serechops](https://github.com/Serechops)
+
+=== "Screenshots"
+    
+
+### [Stash Right Click Tags](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashRightClickTags){target=_blank}
 
 === "Description"
 
@@ -2411,12 +2618,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Stash Scene File Size](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashSceneFileSize){target=_blank}
+### [Stash Scene File Size](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashSceneFileSize){target=_blank}
 
 === "Description"
 
@@ -2430,16 +2637,16 @@
 
 === "README"
 
-    No README available
+    View [README](https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashSceneFileSize/README.md){target=_blank}
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Stash Scene Specs Overlay](https://github.com/serechops/Serechops-Stash/tree/main/plugins/sceneSpecsOverlay){target=_blank}
+### [Stash Scene Specs Overlay](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/sceneSpecsOverlay){target=_blank}
 
 === "Description"
 
@@ -2457,7 +2664,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -2646,7 +2853,7 @@
 === "Screenshots"
     ![Stash Stats screenshot](https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Stats/stats-page.png){ loading=lazy }  
 
-### [Stash Studio Logo Wall View](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashStudioLogoWallView){target=_blank}
+### [Stash Studio Logo Wall View](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashStudioLogoWallView){target=_blank}
 
 === "Description"
 
@@ -2664,7 +2871,30 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
+
+=== "Screenshots"
+    
+
+### [Stash Tag Custom Colors](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashTagCustomColors){target=_blank}
+
+=== "Description"
+
+    Adds a custom button in the navbar to stylize tag chips based on CSS snippets, regex patterns, or basic color-coding.
+
+=== "Source URL"
+
+    ```
+    https://serechops.github.io/Serechops-Stash/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -2692,7 +2922,7 @@
 === "Screenshots"
     ![Stash Tag Image Cropper screenshot](https://raw.githubusercontent.com/7dJx1qP/stash-plugins/main/images/Stash%20Tag%20Image%20Cropper/tag-image-cropper.png){ loading=lazy }  
 
-### [Stash TimeStamps](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashTimestamps){target=_blank}
+### [Stash TimeStamps](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashTimestamps){target=_blank}
 
 === "Description"
 
@@ -2710,7 +2940,53 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
+
+=== "Screenshots"
+    
+
+### [Stash Toggle Scene Sprites](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashToggleSceneSprites){target=_blank}
+
+=== "Description"
+
+    Toggles scene sprites to replace static preview image of all scenes on the current index page.
+
+=== "Source URL"
+
+    ```
+    https://serechops.github.io/Serechops-Stash/index.yml
+    ```
+
+=== "README"
+
+    View [README](https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashToggleSceneSprites/README.md){target=_blank}
+
+=== "Author"
+
+    [serechops](https://github.com/Serechops)
+
+=== "Screenshots"
+    
+
+### [Stash UI Plugin Example](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashUIPluginExample){target=_blank}
+
+=== "Description"
+
+    An attempt to simplify the process of building UI plugins.
+
+=== "Source URL"
+
+    ```
+    https://serechops.github.io/Serechops-Stash/index.yml
+    ```
+
+=== "README"
+
+    View [README](https://github.com/Serechops/Serechops-Stash/blob/main/plugins/stashUIPluginExample/README.md){target=_blank}
+
+=== "Author"
+
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -2784,6 +3060,29 @@
 === "Screenshots"
     
 
+### [stash-s6 helper](https://github.com/feederbox826/plugins/tree/main/plugins/s6-helper){target=_blank}
+
+=== "Description"
+
+    stash-s6 helper plugin
+
+=== "Source URL"
+
+    ```
+    https://feederbox826.github.io/plugins/main/index.yml
+    ```
+
+=== "README"
+
+    View [README](https://github.com/feederbox826/plugins/blob/main/plugins/s6-helper/README.md){target=_blank}
+
+=== "Author"
+
+    [feederbox826](https://feederbox.cc)
+
+=== "Screenshots"
+    
+
 ### [StashAppAndroidTV Companion](https://github.com/stashapp/CommunityScripts/tree/main/plugins/stashAppAndroidTvCompanion){target=_blank}
 
 === "Description"
@@ -2803,6 +3102,29 @@
 === "Author"
 
     [damontecres](https://github.com/damontecres)
+
+=== "Screenshots"
+    
+
+### [StashAudioPlayer](https://github.com/d0t-d0t-d0t/stash-repo/tree/main/Plugins/stashaudioplayer){target=_blank}
+
+=== "Description"
+
+    Add an audio-only toggle button and support for audio files in the Stash player through hls transcoder.
+
+=== "Source URL"
+
+    ```
+    https://raw.githubusercontent.com/d0t-d0t-d0t/stash-repo/refs/heads/dist/index.yml
+    ```
+
+=== "README"
+
+    View [README](https://github.com/d0t-d0t-d0t/stash-repo/blob/main/Plugins/stashaudioplayer/about.md){target=_blank}
+
+=== "Author"
+
+    [d0t-d0t-d0t](https://github.com/d0t-d0t-d0t)
 
 === "Screenshots"
     
@@ -2830,7 +3152,7 @@
 === "Screenshots"
     
 
-### [StashDB Tag Import](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashDBTagImport){target=_blank}
+### [StashDB Tag Import](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashDBTagImport){target=_blank}
 
 === "Description"
 
@@ -2848,30 +3170,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
-
-=== "Screenshots"
-    
-
-### [stashdb-api](https://github.com/feederbox826/plugins/tree/main/plugins/stashdb-api){target=_blank}
-
-=== "Description"
-
-    StashDB API client
-
-=== "Source URL"
-
-    ```
-    https://feederbox826.github.io/plugins/main/index.yml
-    ```
-
-=== "README"
-
-    View [README](https://github.com/feederbox826/plugins/blob/main/plugins/stashdb-api/README.md){target=_blank}
-
-=== "Author"
-
-    [feederbox826](https://feederbox.cc)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -2899,7 +3198,7 @@
 === "Screenshots"
     
 
-### [stashDisable](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashDisableAll/stashDisable){target=_blank}
+### [stashDisable](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashDisableAll/stashDisable){target=_blank}
 
 === "Description"
 
@@ -2917,7 +3216,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -2945,7 +3244,30 @@
 === "Screenshots"
     
 
-### [stashTagPerformerImage](https://github.com/serechops/Serechops-Stash/tree/main/plugins/stashTagPerformerImage){target=_blank}
+### [stashNewPerformerScenes](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashNewPerformerScenes){target=_blank}
+
+=== "Description"
+
+    Adds a custom icon in the performer card should they have a new scene released within the specified date range from the navbar button.
+
+=== "Source URL"
+
+    ```
+    https://serechops.github.io/Serechops-Stash/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [serechops](https://github.com/Serechops)
+
+=== "Screenshots"
+    
+
+### [stashTagPerformerImage](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashTagPerformerImage){target=_blank}
 
 === "Description"
 
@@ -2963,7 +3285,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -2991,7 +3313,7 @@
 === "Screenshots"
     ![Studio background shadow screenshot](https://raw.githubusercontent.com/feederbox826/plugins/main/docs/studio-image-bg_after.png){ loading=lazy }  
 
-### [Studio Top Performer](https://github.com/serechops/Serechops-Stash/tree/main/plugins/studioTopPerformer){target=_blank}
+### [Studio Top Performer](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/studioTopPerformer){target=_blank}
 
 === "Description"
 
@@ -3009,7 +3331,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -3081,13 +3403,13 @@
     [feederbox826](https://feederbox.cc)
 
 === "Screenshots"
-    
+    ![tag-filter screenshot](https://github.com/feederbox826/plugins/blob/main/docs/tag-filter-toggle.png){ loading=lazy }  ![tag-filter screenshot](https://github.com/feederbox826/plugins/blob/main/docs/tag-filter-demo.png){ loading=lazy }  
 
-### [tag-graph-js](https://github.com/feederbox826/plugins/tree/main/plugins/tag-graph-js){target=_blank}
+### [tag-import](https://github.com/feederbox826/plugins/tree/main/plugins/tag-import){target=_blank}
 
 === "Description"
 
-    Interactive tag graph with d3.js
+    feederbox opinionated tag import
 
 === "Source URL"
 
@@ -3097,7 +3419,7 @@
 
 === "README"
 
-    View [README](https://github.com/feederbox826/plugins/blob/main/plugins/tag-graph-js/README.md){target=_blank}
+    View [README](https://github.com/feederbox826/plugins/blob/main/plugins/tag-import/README.md){target=_blank}
 
 === "Author"
 
@@ -3120,7 +3442,7 @@
 
 === "README"
 
-    No README available
+    View [README](https://github.com/feederbox826/plugins/blob/main/plugins/tag-video/README.md){target=_blank}
 
 === "Author"
 
@@ -3212,7 +3534,7 @@
 
 === "README"
 
-    View [README](https://github.com/stashapp/CommunityScripts/blob/main/plugins/Theme-ColorPalette/README.md){target=_blank}
+    No README available
 
 === "Author"
 
@@ -3317,7 +3639,7 @@
 
 === "Description"
 
-    A rework of the scene card component for Stash.
+    A customisable rework of the scene card component for Stash.
 
 === "Source URL"
 
@@ -3428,6 +3750,29 @@
 === "Screenshots"
     
 
+### [vjs-vr-zoom](https://github.com/feederbox826/plugins/tree/main/plugins/vjs-vr-zoom){target=_blank}
+
+=== "Description"
+
+    VideoJS VR zoom controls
+
+=== "Source URL"
+
+    ```
+    https://feederbox826.github.io/plugins/main/index.yml
+    ```
+
+=== "README"
+
+    View [README](https://github.com/feederbox826/plugins/blob/main/plugins/vjs-vr-zoom/README.md){target=_blank}
+
+=== "Author"
+
+    [feederbox826](https://feederbox.cc)
+
+=== "Screenshots"
+    
+
 ### [Watched Video Icon](https://github.com/feederbox826/plugins/tree/main/plugins/watched-video){target=_blank}
 
 === "Description"
@@ -3449,27 +3794,4 @@
     [feederbox826](https://feederbox.cc)
 
 === "Screenshots"
-    
-
-### [wfke](https://github.com/feederbox826/plugins/tree/main/plugins/wfke){target=_blank}
-
-=== "Description"
-
-    wait for key elements
-
-=== "Source URL"
-
-    ```
-    https://feederbox826.github.io/plugins/main/index.yml
-    ```
-
-=== "README"
-
-    No README available
-
-=== "Author"
-
-    [feederbox826](https://feederbox.cc)
-
-=== "Screenshots"
-    
+    ![Watched Video Icon screenshot](https://github.com/feederbox826/plugins/blob/main/docs/watched-video.png){ loading=lazy }  

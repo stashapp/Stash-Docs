@@ -70,7 +70,7 @@
 === "Screenshots"
     
 
-### [Glassy - A Window to Your Collection](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - A Window to Your Collection){target=_blank}
+### [Glassy - A Window to Your Collection](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - A Window to Your Collection){target=_blank}
 
 === "Description"
 
@@ -88,12 +88,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy - Font Overhaul](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Font Overhaul){target=_blank}
+### [Glassy - Font Overhaul](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Font Overhaul){target=_blank}
 
 === "Description"
 
@@ -111,12 +111,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy - Front Page Animations and Blur](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Front Page Animations and Blur){target=_blank}
+### [Glassy - Front Page Animations and Blur](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Front Page Animations and Blur){target=_blank}
 
 === "Description"
 
@@ -134,12 +134,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy - Marker Wall Redesign](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Marker Wall Redesign){target=_blank}
+### [Glassy - Marker Wall Redesign](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Marker Wall Redesign){target=_blank}
 
 === "Description"
 
@@ -157,12 +157,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy - Performer Scene Card Details Redesign](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Performer Scene Card Details Redesign){target=_blank}
+### [Glassy - Performer Scene Card Details Redesign](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Performer Scene Card Details Redesign){target=_blank}
 
 === "Description"
 
@@ -180,12 +180,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy - Scene and Movie Card Redesign](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Scene and Movie Card Redesign){target=_blank}
+### [Glassy - Scene and Movie Card Redesign](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Scene and Movie Card Redesign){target=_blank}
 
 === "Description"
 
@@ -203,12 +203,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy - Scene and Movie Card Redesign - No Animated Titles](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Scene and Movie Card Redesign - No Animated Titles){target=_blank}
+### [Glassy - Scene and Movie Card Redesign - No Animated Titles](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Scene and Movie Card Redesign - No Animated Titles){target=_blank}
 
 === "Description"
 
@@ -226,12 +226,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy - Scene Player-Details 60/40](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Scene Player-Details 60-40){target=_blank}
+### [Glassy - Scene Player-Details 60/40](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Scene Player-Details 60-40){target=_blank}
 
 === "Description"
 
@@ -249,12 +249,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy - Scene Player-Details Reversed](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Scene Player-Details Reversed){target=_blank}
+### [Glassy - Scene Player-Details Reversed](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Scene Player-Details Reversed){target=_blank}
 
 === "Description"
 
@@ -272,12 +272,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy - Scene Player-Details Reversed 60/40](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Scene Player-Details Reversed 60-40){target=_blank}
+### [Glassy - Scene Player-Details Reversed 60/40](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Scene Player-Details Reversed 60-40){target=_blank}
 
 === "Description"
 
@@ -295,12 +295,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy - Smaller Performer Cards on Main Page](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Smaller Performer Cards on Main Page){target=_blank}
+### [Glassy - Smaller Performer Cards on Main Page](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Smaller Performer Cards on Main Page){target=_blank}
 
 === "Description"
 
@@ -318,12 +318,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy - Smaller Performer Image Cards](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Smaller Performer Image Cards){target=_blank}
+### [Glassy - Smaller Performer Image Cards](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Smaller Performer Image Cards){target=_blank}
 
 === "Description"
 
@@ -341,12 +341,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy - Video-Res Icons](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Video-Res Icons){target=_blank}
+### [Glassy - Video-Res Icons](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Video-Res Icons){target=_blank}
 
 === "Description"
 
@@ -364,12 +364,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy Images](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Images){target=_blank}
+### [Glassy Images](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Images){target=_blank}
 
 === "Description"
 
@@ -387,12 +387,12 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
 
-### [Glassy Installer](https://github.com/serechops/Serechops-Stash/tree/main/themes/Glassy - Installer){target=_blank}
+### [Glassy Installer](https://github.com/Serechops/Serechops-Stash/tree/main/themes/Glassy/Glassy - Installer){target=_blank}
 
 === "Description"
 
@@ -410,7 +410,7 @@
 
 === "Author"
 
-    [serechops](https://github.com/serechops)
+    [serechops](https://github.com/Serechops)
 
 === "Screenshots"
     
@@ -620,7 +620,7 @@
     Fidelio
 
 === "Screenshots"
-    
+    ![Theme - Plex screenshot](https://user-images.githubusercontent.com/1358708/178891502-c71e4278-0378-4154-91a6-07e1a8eaa1df.png){ loading=lazy }  
 
 ### [Theme - Plex Better Styles](https://github.com/tetrax-10/stash-stuffs/tree/main/themes/PlexBetterStyles){target=_blank}
 

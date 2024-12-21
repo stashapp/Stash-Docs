@@ -59,6 +59,8 @@ scripts:
     path: Renamer
   - id: stashJellyfinExport
     path: stashJellyfinExporter
+  - id: SerechopsSceneCard
+    path: serechopsSceneCard
 
 # id only
   - id: SceneHub
@@ -71,7 +73,6 @@ scripts:
   - id: pluginsBackup
   - id: sceneSpecsOverlay
   - id: scenesMovieDuration
-  - id: serechopsSceneCard
   - id: stashAccessibility
   - id: stashBatchCreateAll
   - id: stashDBTagImport
