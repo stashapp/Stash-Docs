@@ -9,7 +9,7 @@ Read step-by-step guide on how to create a pull request [CONTRIBUTING.md](CONTRI
 
 ## Running locally with pip
 
-### Prerequsites
+### Prerequisites
 
 - Python modules
     - `mkdocs-material=="9.*"`
