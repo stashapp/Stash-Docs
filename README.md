@@ -28,5 +28,3 @@ Read step-by-step guide on how to create a pull request [CONTRIBUTING.md](CONTRI
 ## License
 
 The documentation site is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. 
-
-[builder](/builder/) is licensed under MIT License. 
