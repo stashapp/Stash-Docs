@@ -4476,16 +4476,16 @@ GitHub sponsorship</a>
 </table>
 <p>For <code>performerByName</code>, only <code>name</code> is required in the returned performer fragments. One entire object is sent back to <code>performerByFragment</code> to scrape a specific performer, so the other fields may be included to assist in scraping a performer. For example, the <code>url</code> field may be filled in for the specific performer page, then <code>performerByFragment</code> can extract by using its value.</p>
 <p>Python example of a performer Scraper:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="kn">import</span> <span class="nn">string</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">string</span>
 
-<span class="k">def</span> <span class="nf">readJSONInput</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">readJSONInput</span><span class="p">():</span>
     <span class="nb">input</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">searchPerformer</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">searchPerformer</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="c1"># perform scraping here - using name for the query</span>
 
     <span class="c1"># fill in the output</span>
@@ -4499,16 +4499,16 @@ GitHub sponsorship</a>
 
     <span class="k">return</span> <span class="n">ret</span>
 
-<span class="k">def</span> <span class="nf">scrapePerformer</span><span class="p">(</span><span class="nb">input</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">scrapePerformer</span><span class="p">(</span><span class="nb">input</span><span class="p">):</span>
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="c1"># get the url from the input</span>
     <span class="n">url</span> <span class="o">=</span> <span class="nb">input</span><span class="p">[</span><span class="s1">&#39;url&#39;</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">scrapePerformerURL</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">debugPrint</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">debugPrint</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">t</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">scrapePerformerURL</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">scrapePerformerURL</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="n">debugPrint</span><span class="p">(</span><span class="s2">&quot;Reading url...&quot;</span><span class="p">)</span>
     <span class="n">debugPrint</span><span class="p">(</span><span class="s2">&quot;Parsing html...&quot;</span><span class="p">)</span>
 
