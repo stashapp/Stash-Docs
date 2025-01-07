@@ -29,11 +29,12 @@ StashDB is a community-driven metadata database focused on digital scenes of all
 
 [:octicons-link-16: Website](https://stashdb.org){:target="_blank"} | [:fontawesome-regular-file-lines: Guidelines](https://guidelines.stashdb.org){:target="_blank"} | [:simple-discord: Discord](https://discord.com/invite/2TsNFKt){:target="_blank"} | [:simple-matrix: Matrix](https://matrix.to/#/#stashapp:unredacted.org){:target="_blank"} | [:material-api: Endpoint `https://stashdb.org/graphql`]() | [:fontawesome-solid-unlock-keyhole: Join](https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/accessing-stashdb){:target="_blank"}
 
-### ThePornDB
+### ThePornDB[^3]
 
 ThePornDB is a metadata database focused on digital scenes and movies, relying on automated scrapers.
 
 [:octicons-link-16: Website](https://theporndb.net){:target="_blank"} | [:simple-discord: Discord](https://discord.com/invite/XpSGpaB){:target="_blank"} | [:material-api: Endpoint `https://theporndb.net/graphql`]()[^3] | [:fontawesome-solid-unlock-keyhole: Join](https://theporndb.net/tools){:target="_blank"}[^4]
 
-[^3]: Has a different endpoint for movies and JAV. For movies use `https://theporndb.net/graphql?type=Movie`, for JAV use `https://theporndb.net/graphql?type=JAV`.
-[^4]: Requires registration to access the site.
+[^3]: Uses proprietary implemetation of stash-box.
+[^4]: Has a different endpoint for movies and JAV. For movies use `https://theporndb.net/graphql?type=Movie`, for JAV use `https://theporndb.net/graphql?type=JAV`.
+[^5]: Requires registration to access the site.
