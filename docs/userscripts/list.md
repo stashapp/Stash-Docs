@@ -146,6 +146,18 @@ title: List of userscripts
 
 === "Screenshots"
 
+### [Studio Image Blur for StashDB](https://github.com/Serechops/Serechops-Stash/blob/main/StashDB%20Userscript/Studio%20Image%20Blur%20for%20StashDB-0.1.user.js){target=_blank}
+
+=== "Description"
+
+    Blurs images from specific studios on StashDB scene cards, based on studio name and img src
+    
+=== "Author"
+
+    [Serechops](https://github.com/Serechops){target=_blank}
+    
+=== "Screenshots"
+
 ## Utility userscripts
 
 There are some userscripts that might be useful to Stash users, but does not directly involve Stash or stash-box instances.
