@@ -21,11 +21,11 @@ hide:
 - You can tag videos and find them later.
 - Stash provides statistics about performers, tags, studios and more.
 
-You can learn more about the software generally via the [README](https://github.com/stashapp/stash/blob/master/README.md){:target="_blank"} on the official repository or via [official website](https://stashapp.cc){:target="_blank"}.
+You can learn more about the software generally via the [README](https://github.com/stashapp/stash/blob/master/README.md){:target="_blank"} on the official repository or via the [Stash official website](https://stashapp.cc){:target="_blank"}.
 
 ## Get started
 
-To get started go to [Installation](/installation) and grab the latest version for your operating system.
+To get started go to [Installation](/installation) and download the latest version for your operating system.
 
 ## Support
 
@@ -40,7 +40,7 @@ To get started go to [Installation](/installation) and grab the latest version f
 - **Help other users:** we got new users coming in all the time that need assistance. Stopping in help channels/rooms now and again to assist can save developers some time.
 - **Write documentation**: help to improve the Stash documentation.
 - **Contribute to the website**: the website could definitely use some attention.
-- **Finds bugs**: test the software for bugs and create GitHub issues for them to help developers confirm and fix them faster.
+- **Find bugs**: test the software for bugs and create GitHub issues for them to help developers confirm and fix them faster.
 - **Write scrapers**: if there is a site that isn't being scraped properly or at all, head on over to scrapers channel/room and see if you can't help scrape some metadata from a site.
 - **Populate StashDB**: StashDB is our canonical database where we store metadata and hashes. You can submit info from your Stash instance to the database or just help to improve the already existing information.
 - **Support financially**: Stash development runs on donations. Donations are collected through [OpenCollective](https://opencollective.com/stashapp){:target="_blank"}. You can do anonymous one-time donations or recurring donations.
