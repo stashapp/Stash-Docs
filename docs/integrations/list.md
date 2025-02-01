@@ -1,5 +1,5 @@
 ---
-title: List of integrations
+title: Browse integrations
 ---
 
 ??? tip "stash-git-index"

@@ -46,13 +46,24 @@ function printPlugins(outputName: string, sortedPlugins: Plugin[]) {
     // print to file
     const outputPath = `./dist/${outputName}/list.md`
     const stream = fs.createWriteStream(outputPath)
-    stream.write(`# List of ${outputName} \n\n`)
+    stream.write(`# Browse ${outputName} \n\n`)
+    stream.write(getSourceIndexes(sortedPlugins))
+    stream.write(`## All ${outputName} \n\n`)
     // iterate over plugins
     for (const plugin of sortedPlugins) {
         stream.write(plugin.printMD())
         stream.write("\n")
     }
     stream.end()
+}
+
+function getSourceIndexes(plugins: Plugin[]): string {
+    const indexes = Array.from(new Set(plugins.map(plugin => plugin.index))).sort((a, b) => a.localeCompare(b));
+    return `
+## Sources
+
+${indexes.map(index => `1. [${index}](${index})`).join('\n')}
+`;
 }
 
 async function parseRepository(localRepository: LocalRepository): Promise<Plugin[]> {

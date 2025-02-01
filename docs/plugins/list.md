@@ -1,4 +1,24 @@
-# List of plugins 
+# Browse plugins 
+
+
+## Sources
+
+1. [https://7djx1qp.github.io/stash-plugins/main/index.yml](https://7djx1qp.github.io/stash-plugins/main/index.yml)
+1. [https://carrotwaxr.github.io/stash-plugins/stable/index.yml](https://carrotwaxr.github.io/stash-plugins/stable/index.yml)
+1. [https://feederbox826.github.io/plugins/main/index.yml](https://feederbox826.github.io/plugins/main/index.yml)
+1. [https://feederbox826.github.io/stashlist/main/index.yml](https://feederbox826.github.io/stashlist/main/index.yml)
+1. [https://minasukihikimuna.github.io/MidnightRider-Stash/index.yml](https://minasukihikimuna.github.io/MidnightRider-Stash/index.yml)
+1. [https://raw.githubusercontent.com/d0t-d0t-d0t/stash-repo/refs/heads/dist/index.yml](https://raw.githubusercontent.com/d0t-d0t-d0t/stash-repo/refs/heads/dist/index.yml)
+1. [https://rosa-umineko.github.io/CommunityScripts/stable/index.yml](https://rosa-umineko.github.io/CommunityScripts/stable/index.yml)
+1. [https://s3l3ct3dloves.github.io/stashPlugins/stable/index.yml](https://s3l3ct3dloves.github.io/stashPlugins/stable/index.yml)
+1. [https://serechops.github.io/Serechops-Stash/index.yml](https://serechops.github.io/Serechops-Stash/index.yml)
+1. [https://stashapp.github.io/CommunityScripts/stable/index.yml](https://stashapp.github.io/CommunityScripts/stable/index.yml)
+1. [https://stg-annon.github.io/StashScripts/stable/index.yml](https://stg-annon.github.io/StashScripts/stable/index.yml)
+1. [https://tetrax-10.github.io/stash-stuffs/index.yml](https://tetrax-10.github.io/stash-stuffs/index.yml)
+1. [https://valkyr-js.github.io/stash-plugins/index.yml](https://valkyr-js.github.io/stash-plugins/index.yml)
+1. [https://w0lfiew0lf.github.io/StashApp-Tools/index.yml](https://w0lfiew0lf.github.io/StashApp-Tools/index.yml)
+1. [https://xiosensei.github.io/Xio-Stash/index.yml](https://xiosensei.github.io/Xio-Stash/index.yml)
+## All plugins 
 
 
 ### [Add Images to Tags](https://github.com/rosa-umineko/CommunityScripts/tree/main/plugins/addImagesToTags){target=_blank}
@@ -88,7 +108,7 @@
 
 === "Author"
 
-    No Author
+    [Tweeticoats](https://github.com/Tweeticoats)
 
 === "Screenshots"
     
@@ -231,6 +251,52 @@
 === "Screenshots"
     
 
+### [Categorize Tags Based On Parent](https://github.com/xiosensei/Xio-Stash/tree/main/plugins/categorize_tags_based_on_parent){target=_blank}
+
+=== "Description"
+
+    colors the tag background image based on the heighest parent and sorts tag with the same heighest parent together
+
+=== "Source URL"
+
+    ```
+    https://xiosensei.github.io/Xio-Stash/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [xiosensei](https://github.com/xiosensei)
+
+=== "Screenshots"
+    
+
+### [Choose Your Own Adventure Player (Backer)](https://github.com/stashapp/CommunityScripts/tree/main/plugins/chooseYourAdventurePlayer){target=_blank}
+
+=== "Description"
+
+    Plugin to adapt Choose Your Own Adventure Games to the VideoJS player.
+
+=== "Source URL"
+
+    ```
+    https://stashapp.github.io/CommunityScripts/stable/index.yml
+    ```
+
+=== "README"
+
+    View [README](https://github.com/stashapp/CommunityScripts/blob/main/plugins/chooseYourAdventurePlayer/README.md){target=_blank}
+
+=== "Author"
+
+    [cj12312021](https://github.com/cj12312021)
+
+=== "Screenshots"
+    
+
 ### [CJ's Card Tweaks.](https://github.com/stashapp/CommunityScripts/tree/main/plugins/cjCardTweaks){target=_blank}
 
 === "Description"
@@ -249,7 +315,7 @@
 
 === "Author"
 
-    No Author
+    [cj12312021](https://github.com/cj12312021)
 
 === "Screenshots"
     ![CJ's Card Tweaks. screenshot](/assets/plugins/cjCardTweaks/1.png){ loading=lazy }  ![CJ's Card Tweaks. screenshot](/assets/plugins/cjCardTweaks/2.png){ loading=lazy }  ![CJ's Card Tweaks. screenshot](/assets/plugins/cjCardTweaks/3.png){ loading=lazy }  
@@ -461,6 +527,29 @@
 === "Screenshots"
     
 
+### [Display Tag Image With Tag](https://github.com/xiosensei/Xio-Stash/tree/main/plugins/display-tag-image-with-tag){target=_blank}
+
+=== "Description"
+
+    any page in stash that has clickable tag, instead of showing the tag name only, show the image of the tag above it.
+
+=== "Source URL"
+
+    ```
+    https://xiosensei.github.io/Xio-Stash/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [xiosensei](https://github.com/xiosensei)
+
+=== "Screenshots"
+    
+
 ### [Dupe Marker Detector](https://github.com/stashapp/CommunityScripts/tree/main/plugins/dupeMarker){target=_blank}
 
 === "Description"
@@ -502,7 +591,7 @@
 
 === "Author"
 
-    No Author
+    [David-Maisonave](https://github.com/David-Maisonave)
 
 === "Screenshots"
     
@@ -595,6 +684,29 @@
 === "Author"
 
     [7dJx1qP](https://github.com/7dJx1qP)
+
+=== "Screenshots"
+    
+
+### [Extra Performer Info](https://github.com/stashapp/CommunityScripts/tree/main/plugins/ExtraPerformerInfo){target=_blank}
+
+=== "Description"
+
+    Add extra tags for VR and other ues
+
+=== "Source URL"
+
+    ```
+    https://stashapp.github.io/CommunityScripts/stable/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [Tweeticoats](https://github.com/Tweeticoats)
 
 === "Screenshots"
     
@@ -778,7 +890,7 @@
 
 === "Author"
 
-    No Author
+    [Tweeticoats](https://github.com/Tweeticoats)
 
 === "Screenshots"
     
@@ -1450,6 +1562,52 @@
 === "Screenshots"
     
 
+### [Randomize Performer Images](https://github.com/xiosensei/Xio-Stash/tree/main/plugins/randomize-performer-images){target=_blank}
+
+=== "Description"
+
+    display random images of performer when visiting a performer page. check README.md for set up.
+
+=== "Source URL"
+
+    ```
+    https://xiosensei.github.io/Xio-Stash/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [xiosensei](https://github.com/xiosensei)
+
+=== "Screenshots"
+    
+
+### [Randomize Performer Images Using Gallery](https://github.com/xiosensei/Xio-Stash/tree/main/plugins/randomize-performer-images-using-gallery){target=_blank}
+
+=== "Description"
+
+    display random images of performer when visiting a performer page. check README.md for set up.
+
+=== "Source URL"
+
+    ```
+    https://xiosensei.github.io/Xio-Stash/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [xiosensei](https://github.com/xiosensei)
+
+=== "Screenshots"
+    
+
 ### [Rebrand](https://github.com/feederbox826/plugins/tree/main/plugins/rebrand){target=_blank}
 
 === "Description"
@@ -1541,29 +1699,6 @@
 
 === "Screenshots"
     
-
-### [renamerOnUpdate](https://github.com/stashapp/CommunityScripts/tree/main/plugins/renamerOnUpdate){target=_blank}
-
-=== "Description"
-
-    Rename/move filename based on a template.
-
-=== "Source URL"
-
-    ```
-    https://stashapp.github.io/CommunityScripts/stable/index.yml
-    ```
-
-=== "README"
-
-    View [README](https://github.com/stashapp/CommunityScripts/blob/main/plugins/renamerOnUpdate/README.md){target=_blank}
-
-=== "Author"
-
-    [Belleyy](https://github.com/Belleyy)
-
-=== "Screenshots"
-    ![renamerOnUpdate screenshot](/assets/plugins/renamerOnUpdate/1.png){ loading=lazy }  
 
 ### [Replace Thumbnails With High-Res Images](https://github.com/tetrax-10/stash-stuffs/tree/main/Plugins/ReplaceThumbnailsWithImages){target=_blank}
 
@@ -3378,6 +3513,29 @@
 === "Author"
 
     [Dankonite](https://github.com/Dankonite)
+
+=== "Screenshots"
+    
+
+### [Tag Text to Emoji](https://github.com/xiosensei/Xio-Stash/tree/main/plugins/tag-text-to-emoji){target=_blank}
+
+=== "Description"
+
+    changes text to emoji if you are using common tags from stashdb
+
+=== "Source URL"
+
+    ```
+    https://xiosensei.github.io/Xio-Stash/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [xiosensei](https://github.com/xiosensei)
 
 === "Screenshots"
     

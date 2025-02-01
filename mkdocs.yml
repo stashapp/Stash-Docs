@@ -162,26 +162,26 @@ nav:
     - metadata-sources/index.md
     - stash-box instances: metadata-sources/stash-box-instances.md
     - Scrapers: metadata-sources/scrapers.md
-    - List of scrapers: metadata-sources/list.md
+    - Browse scrapers: metadata-sources/list.md
   - Plugins: 
     - plugins/index.md
-    - List of plugins: plugins/list.md
+    - Browse plugins: plugins/list.md
     - Themes:
       - themes/index.md
-      - List of themes: themes/list.md
+      - Browse themes: themes/list.md
       - Custom CSS snippets: themes/custom-css-snippets.md
     - Userscripts:
       - userscripts/index.md
-      - List of userscripts: userscripts/list.md
+      - Browse userscripts: userscripts/list.md
     - Scripts:
       - scripts/index.md
-      - List of scripts: scripts/list.md
+      - Browse scripts: scripts/list.md
     - Utilities:
       - utilities/index.md
-      - List of utilities: utilities/list.md
+      - Browse utilities: utilities/list.md
     - Integrations:
       - integrations/index.md
-      - List of integrations: integrations/list.md
+      - Browse integrations: integrations/list.md
   - API: api.md
   - FAQ: 
     - faq/index.md

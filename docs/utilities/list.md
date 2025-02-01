@@ -1,5 +1,5 @@
 ---
-title: List of utilities
+title: Browse utilities
 ---
 
 ??? tip "stash-git-index"

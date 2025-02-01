@@ -1,5 +1,5 @@
 ---
-title: List of userscripts
+title: Browse userscripts
 ---
 
 ??? tip "stash-git-index"
