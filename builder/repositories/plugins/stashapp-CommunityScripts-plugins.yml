@@ -29,6 +29,14 @@ scripts:
     readme: false
     author: HijackHornet
 
+  - id: DupFileManager
+    author: "[David-Maisonave](https://github.com/David-Maisonave)"
+
+  - id: extraPerformerInfo
+    path: ExtraPerformerInfo
+    author: "[Tweeticoats](https://github.com/Tweeticoats)"
+    readme: false
+
   - id: filemonitor
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/FileMonitor/README.md
     author: "[David-Maisonave](https://github.com/David-Maisonave)"
@@ -50,8 +58,16 @@ scripts:
     readme: false
     author: "[WeedLordVegeta420](https://github.com/WeedLordVegeta420)"
 
+  - id: audio-transcodes
+    readme: false
+    author: "[Tweeticoats](https://github.com/Tweeticoats)"
+
+  - id: chooseYourAdventurePlayer
+    author: "[cj12312021](https://github.com/cj12312021)"
+
   - id: cjCardTweaks
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/cjCardTweaks/README.md
+    author: "[cj12312021](https://github.com/cj12312021)"
     screenshots:
       - /assets/plugins/cjCardTweaks/1.png
       - /assets/plugins/cjCardTweaks/2.png
@@ -77,6 +93,10 @@ scripts:
     readme: false
     author: "[gitgiggety](https://github.com/gitgiggety)"
 
+  - id: funscriptMarkers
+    readme: false
+    author: "[Tweeticoats](https://github.com/Tweeticoats)"
+
   - id: hotCards
     author: "[HandyRandyx](https://github.com/HandyRandyx)"
 
@@ -100,17 +120,11 @@ scripts:
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/qxSceneCard/README.md
     author: "[Qx](https://github.com/QxxxGit)"
 
-  - id: renamerOnUpdate
-    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/renamerOnUpdate/README.md
-    author: "[Belleyy](https://github.com/Belleyy)"
-    screenshots:
-      - /assets/plugins/renamerOnUpdate/1.png
-
-  - id: scenePageRememberStates
-    readme: false
-
   - id: sceneCoverCropper
     author: "[feederbox826](https://github.com/feederbox826)"
+    readme: false
+
+  - id: scenePageRememberStates
     readme: false
 
   - id: set_scene_cover
@@ -118,14 +132,14 @@ scripts:
     author: "[stg-annon](https://github.com/stg-annon)"
     readme: false
 
-  - id: stashAppAndroidTvCompanion
-    readme: false
-    author: "[damontecres](https://github.com/damontecres)"
-
   - id: stashai
     author: "[cc1234475](https://github.com/cc1234475)"
     path: stashAI
     readme: false
+
+  - id: stashAppAndroidTvCompanion
+    readme: false
+    author: "[damontecres](https://github.com/damontecres)"
 
   - id: stashNotes
     readme: false
