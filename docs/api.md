@@ -4,168 +4,43 @@ hide:
   - navigation
 ---
 
-There is a GraphQL API which allows to do things automatically. GraphQL is also self-documenting.
+# Stash API
 
-Stash has integrated playground where you run interact with the API and view the documentation. 
+The Stash GraphQL API facilitates automated operations through a type-based schema that is both introspective and self-documenting.
 
-1. Go to `<server>:<port>/playground` (default is `http://localhost:9999/playground`). 
-1. Expand **Docs** on the right to open Documentation Explorer.
+Stash includes an integrated playground where users can execute queries and retrieve schema structures and documentation via a special introspection query.
 
-All HTTP requests have to go to `<server>:<port>/graphql` (default is `http://localhost:9999/graphql`).
+1. You can access the playground by navigating to `<server>:<port>/playground` (default: [http://localhost:9999/playground](http://localhost:9999/playground){target="_blank"}).
+2. Click <svg height="1em" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.75 3C0.75 4.24264 1.75736 5.25 3 5.25H17.25M0.75 3C0.75 1.75736 1.75736 0.75 3 0.75H16.25C16.8023 0.75 17.25 1.19772 17.25 1.75V5.25M0.75 3V21C0.75 22.2426 1.75736 23.25 3 23.25H18.25C18.8023 23.25 19.25 22.8023 19.25 22.25V6.25C19.25 5.69771 18.8023 5.25 18.25 5.25H17.25" stroke="currentColor" stroke-width="1.5"></path><line x1="13" y1="11.75" x2="6" y2="11.75" stroke="currentColor" stroke-width="1.5"></line></svg> on the left to access the Documentation Explorer.
+
+All HTTP requests should be directed to `<server>:<port>/graphql` (default: `http://localhost:9999/graphql`).
+
+!!! tip
+    For further information, visit the [official GraphQL site](https://graphql.org/learn/){target="_blank"}.
 
 ## Authentication
 
-You just need to add the key you generated in Stash (for more info about the API Key check stash's help section) in a header for every request you make.
+Include the API key generated in Stash in the header of every request. For details on obtaining the API Key, refer to Stash's in-app manual.
 
 === "Example using curl"
 
-    ```shell
-    curl -X POST -H "ApiKey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJiaWxsIiwiaWF0IjoxNjE3MDkzMDYwLCJzdWIiOiJBUElLZXkifQ.WhUyvmnVeW8wGV5fkVyje3xLfz5A97HFwyZy-4i8Q-I" -H "Content-Type: application/json" --data '{ "query": "mutation { metadataScan (input:{})}" }' localhost:9999/graphql
-    ```
+Replace `<your_api_key>` with your **API Key** found under :fontawesome-solid-gear: **Settings** > **Security** > **Authentication**.
+
+Replace `<graphql_query>` with the raw query, which can be formatted using the playground.
+
+```shell
+curl -X POST -H "ApiKey: <your_api_key>" -H "Content-Type: application/json" --data '{ "query": "<graphql_query>" }' localhost:9999/graphql
+```
 
 ### Legacy cookie authentication
 
-If you have configured a username/password you have to use cookies to authenticate.
+For configurations using a username/password, cookies must be used for authentication.
 
 === "Example using curl"
 
-    ```shell
-    curl --verbose --cookie-jar cookie.txt  --data 'username=stash&password=**' localhost:9998/login
-    curl --cookie cookie.txt -H "Content-Type: application/json"  --data '{  "query": "mutation { metadataScan ( input: {} ) } "}' localhost:9999/graphql
-    ```
+```shell
+curl --verbose --cookie-jar cookie.txt --data 'username=stash&password=**' localhost:9999/login
+curl --cookie cookie.txt -H "Content-Type: application/json" --data '{ "query": "<graphql_query>" }' localhost:9999/graphql
+```
 
-Using the `API Key` is recommended instead of the above cookie method.
-
-## Scan for new files
-
-=== "`HTTP-POST`"
-
-    ```json
-    {
-      "query": "mutation { metadataScan ( input: {} ) }"
-    }
-    ```
-
-=== "Example using curl"
-
-    ```shell
-    curl -X POST -H "Content-Type: application/json" --data '{ "query": " mutation { metadataScan (input: {} ) }" }' localhost:9999/graphql
-    ```
-
-
-
-## Create backup
-
-=== "`HTTP-POST`"
-
-    ```json
-    {
-      "query": "mutation { backupDatabase(input: {download: false})}"
-    }
-    ```
-
-=== "Example using curl"
-
-    ```shell
-    curl -X POST -H "Content-Type: application/json" --data '{ "query": "mutation {backupDatabase(input: {download: false})}" }' localhost:9999/graphql
-    ```
-
-If `download:` is `true` the created backup is returned and not stored locally.
-
-## Generate content
-
-=== "`HTTP-POST`"
-
-    Payload (set desired content to generate **covers**, **sprites**, **previews**, **imagePreviews**, **markers**, **transcodes**, **phashes**, **interactiveHeatmapsSpeeds**, **imageThumbnails**, **clipPreviews** to `true` or `false`.
-
-    ```json
-    {
-      "query": "mutation { metadataGenerate ( input : { sprites: true previews: false imagePreviews: false markers: false transcodes: false } ) }" 
-    }
-    ```
-
-=== "Example using curl"
-
-    ```shell
-    curl -X POST -H "Content-Type: application/json" --data '{ "query": "mutation { metadataGenerate ( input : { sprites: false previews: true imagePreviews: false markers: false transcodes: false } ) }" }' localhost:9999/graphql
-    ```
-
-## Get studios
-
-=== "`HTTP-POST`"
-
-    Payload (must be at least one of `id` `checksum` `url` `name` `image_path` `scene_count`).
-
-    ```json
-    {
-      "query": "{ allStudios { id checksum url name image_path scene_count } }" 
-    }
-    ```
-
-=== "Example using curl"
-
-    ```shell
-    curl -X POST -H "Content-Type: application/json" --data '{ "query": "{ allStudios { name url scene_count} }" }' localhost:9999/graphql
-    ```
-
-## Scrape perfomer attributes from Freeones
-
-=== "`HTTP-POST`"
-
-    Payload
-
-    - `$performer name` is the name of the Performer you are scraping for
-    - return values must be at least one of `name` `url` `twitter` `instagram` `birthdate` `ethnicity` `country` `eye_color` `height` `measurements` `fake_tits` `career_length` `tattoos` `piercings` `aliases`
-
-    ```json
-    {
-      "query": "{ scrapeFreeones(performer_name: $performer_name) { name url twitter instagram birthdate ethnicity country eye_color height measurements fake_tits career_length tattoos piercings aliases } }" 
-    }
-    ```
-
-    1. Caution is needed when used in a script. Always set a waiting/sleep period between calls to avoid getting blacklisted by Freeones.
-    1. Due to way it's used in Stash and to work reliably it requires the prior use of **scrapeFreeonesPerfomerList** (described beneath) to make sure the name of the performer exists in the list returned and thus in the Freeones db.
-
-
-=== "Example using curl"
-
-    ```shell
-    curl -X POST -H "Content-Type: application/json" --data '{ "query": "{ scrapeFreeones ( performer_name : \"Abella Danger\" ) { name height birthdate} }" }' localhost:9999/graphql
-    ```
-
-## Get list of perfomer names that match a name or alias from Freeones
-
-=== "`HTTP-POST`"
-
-    Payload (`$q` is the name or alias (or partial name , alias) of the performer you are looking for).
-
-    ```json
-    {
-      "query": "{ scrapeFreeonesPerformerList(query: $q) }" 
-    }
-    ```
-
-    1. Caution is needed when used in a script.Always set a waiting/sleep period between calls to avoid getting blacklisted by Freeones
-
-=== "Example using curl"
-
-
-    ```shell
-    curl -X POST -H "Content-Type: application/json" --data '{ "query": "{ scrapeFreeonesPerformerList (query: \"bella\" ) }" }' localhost:9999/graphql
-    ```
-
-## Get system status
-
-=== "`HTTP-POST`"
-
-    ```json
-    {
-      "query": "{ systemStatus { databaseSchema databasePath configPath appSchema status } }" 
-    }
-    ```
-
-=== "Example using curl"
-
-    ```shell
-    curl -X POST -H "Content-Type: application/json" --data '{ "query": "{ systemStatus { appSchema status } }" }' localhost:9999/graphql
-    ```
+It is recommended to use the `API Key` method over the legacy cookie method.
