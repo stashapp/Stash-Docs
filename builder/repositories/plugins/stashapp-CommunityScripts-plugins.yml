@@ -102,7 +102,7 @@ scripts:
 
   - id: markerDeleteButton
     readme: false
-    author: "[WeedLordVegeta420](https://github.com/WeedLordVegeta420]"
+    author: "[WeedLordVegeta420](https://github.com/WeedLordVegeta420)"
 
   - id: markerTagToScene
     author: "[WithoutPants](https://github.com/WithoutPants)"
