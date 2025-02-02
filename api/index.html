@@ -115,7 +115,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#authentication" class="md-skip">
+        <a href="#stash-api" class="md-skip">
           Skip to content
         </a>
       
@@ -2603,6 +2603,8 @@ GitHub sponsorship</a>
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -2633,6 +2635,8 @@ GitHub sponsorship</a>
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2661,69 +2665,6 @@ GitHub sponsorship</a>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scan-for-new-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scan for new files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-backup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create backup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#generate-content" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate content
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-studios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Get studios
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scrape-perfomer-attributes-from-freeones" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scrape perfomer attributes from Freeones
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-list-of-perfomer-names-that-match-a-name-or-alias-from-freeones" class="md-nav__link">
-    <span class="md-ellipsis">
-      Get list of perfomer names that match a name or alias from Freeones
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-system-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      Get system status
-    </span>
-  </a>
   
 </li>
       
@@ -3914,6 +3855,8 @@ GitHub sponsorship</a>
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -3942,69 +3885,6 @@ GitHub sponsorship</a>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scan-for-new-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scan for new files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-backup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create backup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#generate-content" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate content
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-studios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Get studios
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scrape-perfomer-attributes-from-freeones" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scrape perfomer attributes from Freeones
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-list-of-perfomer-names-that-match-a-name-or-alias-from-freeones" class="md-nav__link">
-    <span class="md-ellipsis">
-      Get list of perfomer names that match a name or alias from Freeones
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-system-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      Get system status
-    </span>
-  </a>
   
 </li>
       
@@ -4042,158 +3922,40 @@ GitHub sponsorship</a>
   
 
 
-  <h1>API</h1>
-
-<p>There is a GraphQL API which allows to do things automatically. GraphQL is also self-documenting.</p>
-<p>Stash has integrated playground where you run interact with the API and view the documentation. </p>
+<h1 id="stash-api">Stash API<a class="headerlink" href="#stash-api" title="Permanent link">&para;</a></h1>
+<p>The Stash GraphQL API facilitates automated operations through a type-based schema that is both introspective and self-documenting.</p>
+<p>Stash includes an integrated playground where users can execute queries and retrieve schema structures and documentation via a special introspection query.</p>
 <ol>
-<li>Go to <code>&lt;server&gt;:&lt;port&gt;/playground</code> (default is <code>http://localhost:9999/playground</code>). </li>
-<li>Expand <strong>Docs</strong> on the right to open Documentation Explorer.</li>
+<li>You can access the playground by navigating to <code>&lt;server&gt;:&lt;port&gt;/playground</code> (default: <a href="http://localhost:9999/playground" target="_blank">http://localhost:9999/playground</a>).</li>
+<li>Click <svg height="1em" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.75 3C0.75 4.24264 1.75736 5.25 3 5.25H17.25M0.75 3C0.75 1.75736 1.75736 0.75 3 0.75H16.25C16.8023 0.75 17.25 1.19772 17.25 1.75V5.25M0.75 3V21C0.75 22.2426 1.75736 23.25 3 23.25H18.25C18.8023 23.25 19.25 22.8023 19.25 22.25V6.25C19.25 5.69771 18.8023 5.25 18.25 5.25H17.25" stroke="currentColor" stroke-width="1.5"></path><line x1="13" y1="11.75" x2="6" y2="11.75" stroke="currentColor" stroke-width="1.5"></line></svg> on the left to access the Documentation Explorer.</li>
 </ol>
-<p>All HTTP requests have to go to <code>&lt;server&gt;:&lt;port&gt;/graphql</code> (default is <code>http://localhost:9999/graphql</code>).</p>
+<p>All HTTP requests should be directed to <code>&lt;server&gt;:&lt;port&gt;/graphql</code> (default: <code>http://localhost:9999/graphql</code>).</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For further information, visit the <a href="https://graphql.org/learn/" target="_blank">official GraphQL site</a>.</p>
+</div>
 <h2 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permanent link">&para;</a></h2>
-<p>You just need to add the key you generated in Stash (for more info about the API Key check stash's help section) in a header for every request you make.</p>
+<p>Include the API key generated in Stash in the header of every request. For details on obtaining the API Key, refer to Stash's in-app manual.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="example-using-curl" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="example-using-curl">Example using curl</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;ApiKey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJiaWxsIiwiaWF0IjoxNjE3MDkzMDYwLCJzdWIiOiJBUElLZXkifQ.WhUyvmnVeW8wGV5fkVyje3xLfz5A97HFwyZy-4i8Q-I&quot;</span><span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>--data<span class="w"> </span><span class="s1">&#39;{ &quot;query&quot;: &quot;mutation { metadataScan (input:{})}&quot; }&#39;</span><span class="w"> </span>localhost:9999/graphql
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p>Replace <code>&lt;your_api_key&gt;</code> with your <strong>API Key</strong> found under <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M495.9 166.6c3.2 8.7.5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4l-55.6 17.8c-8.8 2.8-18.6.3-24.5-6.8-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4c-1.1-8.4-1.7-16.9-1.7-25.5s.6-17.1 1.7-25.4l-43.3-39.4c-6.9-6.2-9.6-15.9-6.4-24.6 4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2 5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8 8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160"/></svg></span> <strong>Settings</strong> &gt; <strong>Security</strong> &gt; <strong>Authentication</strong>.</p>
+<p>Replace <code>&lt;graphql_query&gt;</code> with the raw query, which can be formatted using the playground.</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;ApiKey: &lt;your_api_key&gt;&quot;</span><span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>--data<span class="w"> </span><span class="s1">&#39;{ &quot;query&quot;: &quot;&lt;graphql_query&gt;&quot; }&#39;</span><span class="w"> </span>localhost:9999/graphql
 </code></pre></div>
-</div>
-</div>
-</div>
 <h3 id="legacy-cookie-authentication">Legacy cookie authentication<a class="headerlink" href="#legacy-cookie-authentication" title="Permanent link">&para;</a></h3>
-<p>If you have configured a username/password you have to use cookies to authenticate.</p>
+<p>For configurations using a username/password, cookies must be used for authentication.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="example-using-curl_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="example-using-curl_1">Example using curl</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>--verbose<span class="w"> </span>--cookie-jar<span class="w"> </span>cookie.txt<span class="w">  </span>--data<span class="w"> </span><span class="s1">&#39;username=stash&amp;password=**&#39;</span><span class="w"> </span>localhost:9998/login
-curl<span class="w"> </span>--cookie<span class="w"> </span>cookie.txt<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w">  </span>--data<span class="w"> </span><span class="s1">&#39;{  &quot;query&quot;: &quot;mutation { metadataScan ( input: {} ) } &quot;}&#39;</span><span class="w"> </span>localhost:9999/graphql
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>--verbose<span class="w"> </span>--cookie-jar<span class="w"> </span>cookie.txt<span class="w"> </span>--data<span class="w"> </span><span class="s1">&#39;username=stash&amp;password=**&#39;</span><span class="w"> </span>localhost:9999/login
+curl<span class="w"> </span>--cookie<span class="w"> </span>cookie.txt<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>--data<span class="w"> </span><span class="s1">&#39;{ &quot;query&quot;: &quot;&lt;graphql_query&gt;&quot; }&#39;</span><span class="w"> </span>localhost:9999/graphql
 </code></pre></div>
-</div>
-</div>
-</div>
-<p>Using the <code>API Key</code> is recommended instead of the above cookie method.</p>
-<h2 id="scan-for-new-files">Scan for new files<a class="headerlink" href="#scan-for-new-files" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="http-post" name="__tabbed_3" type="radio" /><input id="example-using-curl_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="http-post"><code>HTTP-POST</code></label><label for="example-using-curl_2">Example using curl</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mutation { metadataScan ( input: {} ) }&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>--data<span class="w"> </span><span class="s1">&#39;{ &quot;query&quot;: &quot; mutation { metadataScan (input: {} ) }&quot; }&#39;</span><span class="w"> </span>localhost:9999/graphql
-</code></pre></div>
-</div>
-</div>
-</div>
-<h2 id="create-backup">Create backup<a class="headerlink" href="#create-backup" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="http-post_1" name="__tabbed_4" type="radio" /><input id="example-using-curl_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="http-post_1"><code>HTTP-POST</code></label><label for="example-using-curl_3">Example using curl</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mutation { backupDatabase(input: {download: false})}&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>--data<span class="w"> </span><span class="s1">&#39;{ &quot;query&quot;: &quot;mutation {backupDatabase(input: {download: false})}&quot; }&#39;</span><span class="w"> </span>localhost:9999/graphql
-</code></pre></div>
-</div>
-</div>
-</div>
-<p>If <code>download:</code> is <code>true</code> the created backup is returned and not stored locally.</p>
-<h2 id="generate-content">Generate content<a class="headerlink" href="#generate-content" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="http-post_2" name="__tabbed_5" type="radio" /><input id="example-using-curl_4" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="http-post_2"><code>HTTP-POST</code></label><label for="example-using-curl_4">Example using curl</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Payload (set desired content to generate <strong>covers</strong>, <strong>sprites</strong>, <strong>previews</strong>, <strong>imagePreviews</strong>, <strong>markers</strong>, <strong>transcodes</strong>, <strong>phashes</strong>, <strong>interactiveHeatmapsSpeeds</strong>, <strong>imageThumbnails</strong>, <strong>clipPreviews</strong> to <code>true</code> or <code>false</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mutation { metadataGenerate ( input : { sprites: true previews: false imagePreviews: false markers: false transcodes: false } ) }&quot;</span><span class="w"> </span>
-<span class="p">}</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>--data<span class="w"> </span><span class="s1">&#39;{ &quot;query&quot;: &quot;mutation { metadataGenerate ( input : { sprites: false previews: true imagePreviews: false markers: false transcodes: false } ) }&quot; }&#39;</span><span class="w"> </span>localhost:9999/graphql
-</code></pre></div>
-</div>
-</div>
-</div>
-<h2 id="get-studios">Get studios<a class="headerlink" href="#get-studios" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="http-post_3" name="__tabbed_6" type="radio" /><input id="example-using-curl_5" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="http-post_3"><code>HTTP-POST</code></label><label for="example-using-curl_5">Example using curl</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Payload (must be at least one of <code>id</code> <code>checksum</code> <code>url</code> <code>name</code> <code>image_path</code> <code>scene_count</code>).</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{ allStudios { id checksum url name image_path scene_count } }&quot;</span><span class="w"> </span>
-<span class="p">}</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>--data<span class="w"> </span><span class="s1">&#39;{ &quot;query&quot;: &quot;{ allStudios { name url scene_count} }&quot; }&#39;</span><span class="w"> </span>localhost:9999/graphql
-</code></pre></div>
-</div>
-</div>
-</div>
-<h2 id="scrape-perfomer-attributes-from-freeones">Scrape perfomer attributes from Freeones<a class="headerlink" href="#scrape-perfomer-attributes-from-freeones" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="http-post_4" name="__tabbed_7" type="radio" /><input id="example-using-curl_6" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="http-post_4"><code>HTTP-POST</code></label><label for="example-using-curl_6">Example using curl</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Payload</p>
-<ul>
-<li><code>$performer name</code> is the name of the Performer you are scraping for</li>
-<li>return values must be at least one of <code>name</code> <code>url</code> <code>twitter</code> <code>instagram</code> <code>birthdate</code> <code>ethnicity</code> <code>country</code> <code>eye_color</code> <code>height</code> <code>measurements</code> <code>fake_tits</code> <code>career_length</code> <code>tattoos</code> <code>piercings</code> <code>aliases</code></li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{ scrapeFreeones(performer_name: $performer_name) { name url twitter instagram birthdate ethnicity country eye_color height measurements fake_tits career_length tattoos piercings aliases } }&quot;</span><span class="w"> </span>
-<span class="p">}</span>
-</code></pre></div>
-<ol>
-<li>Caution is needed when used in a script. Always set a waiting/sleep period between calls to avoid getting blacklisted by Freeones.</li>
-<li>Due to way it's used in Stash and to work reliably it requires the prior use of <strong>scrapeFreeonesPerfomerList</strong> (described beneath) to make sure the name of the performer exists in the list returned and thus in the Freeones db.</li>
-</ol>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>--data<span class="w"> </span><span class="s1">&#39;{ &quot;query&quot;: &quot;{ scrapeFreeones ( performer_name : \&quot;Abella Danger\&quot; ) { name height birthdate} }&quot; }&#39;</span><span class="w"> </span>localhost:9999/graphql
-</code></pre></div>
-</div>
-</div>
-</div>
-<h2 id="get-list-of-perfomer-names-that-match-a-name-or-alias-from-freeones">Get list of perfomer names that match a name or alias from Freeones<a class="headerlink" href="#get-list-of-perfomer-names-that-match-a-name-or-alias-from-freeones" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="http-post_5" name="__tabbed_8" type="radio" /><input id="example-using-curl_7" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="http-post_5"><code>HTTP-POST</code></label><label for="example-using-curl_7">Example using curl</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Payload (<code>$q</code> is the name or alias (or partial name , alias) of the performer you are looking for).</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{ scrapeFreeonesPerformerList(query: $q) }&quot;</span><span class="w"> </span>
-<span class="p">}</span>
-</code></pre></div>
-<ol>
-<li>Caution is needed when used in a script.Always set a waiting/sleep period between calls to avoid getting blacklisted by Freeones</li>
-</ol>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>--data<span class="w"> </span><span class="s1">&#39;{ &quot;query&quot;: &quot;{ scrapeFreeonesPerformerList (query: \&quot;bella\&quot; ) }&quot; }&#39;</span><span class="w"> </span>localhost:9999/graphql
-</code></pre></div>
-</div>
-</div>
-</div>
-<h2 id="get-system-status">Get system status<a class="headerlink" href="#get-system-status" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="http-post_6" name="__tabbed_9" type="radio" /><input id="example-using-curl_8" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="http-post_6"><code>HTTP-POST</code></label><label for="example-using-curl_8">Example using curl</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{ systemStatus { databaseSchema databasePath configPath appSchema status } }&quot;</span><span class="w"> </span>
-<span class="p">}</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>--data<span class="w"> </span><span class="s1">&#39;{ &quot;query&quot;: &quot;{ systemStatus { appSchema status } }&quot; }&#39;</span><span class="w"> </span>localhost:9999/graphql
-</code></pre></div>
-</div>
-</div>
-</div>
+<p>It is recommended to use the <code>API Key</code> method over the legacy cookie method.</p>
 
 
 
@@ -4216,7 +3978,7 @@ curl<span class="w"> </span>--cookie<span class="w"> </span>cookie.txt<span clas
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 23, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 2, 2025</span>
   </span>
 
     
