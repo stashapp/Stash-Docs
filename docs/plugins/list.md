@@ -1014,7 +1014,7 @@
 
 === "Description"
 
-    display log messages in console
+    Display log messages in the web browser console
 
 === "Source URL"
 
@@ -1074,7 +1074,7 @@
 
 === "Author"
 
-    [WeedLordVegeta420](https://github.com/WeedLordVegeta420]
+    [WeedLordVegeta420](https://github.com/WeedLordVegeta420)
 
 === "Screenshots"
     
@@ -3674,29 +3674,6 @@
 === "Author"
 
     [Tweeticoats](https://github.com/Tweeticoats)
-
-=== "Screenshots"
-    
-
-### [Theme - colorPalette](https://github.com/stashapp/CommunityScripts/tree/main/plugins/Theme-ColorPalette){target=_blank}
-
-=== "Description"
-
-    Based on the default theme, change the overall color of the page by setting the hue value. Make minor changes to the remaining styles.
-
-=== "Source URL"
-
-    ```
-    https://stashapp.github.io/CommunityScripts/stable/index.yml
-    ```
-
-=== "README"
-
-    No README available
-
-=== "Author"
-
-    No Author
 
 === "Screenshots"
     

@@ -17,6 +17,17 @@ scripts:
   - id: Theme-BlackHole
     author: BViking78
 
+  - id: Theme-ColorPalette
+    author: "[wql219](https://github.com/wql219)"
+
+  - id: Theme-Minimal
+    author: "[deuulc](https://github.com/deuulc)"
+    screenshots:
+      - /assets/themes/Theme-Minimal/1.png
+      - /assets/themes/Theme-Minimal/2.png
+      - /assets/themes/Theme-Minimal/3.png
+      - /assets/themes/Theme-Minimal/4.png
+
   - id: Theme-ModernDark
     author: "[cj13](https://github.com/cj12312021)"
 

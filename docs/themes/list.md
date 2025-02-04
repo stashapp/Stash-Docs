@@ -540,6 +540,52 @@
 === "Screenshots"
     
 
+### [Theme - colorPalette](https://github.com/stashapp/CommunityScripts/tree/main/themes/Theme-ColorPalette){target=_blank}
+
+=== "Description"
+
+    Based on the default theme, change the overall color of the page by setting the hue value. Make minor changes to the remaining styles.
+
+=== "Source URL"
+
+    ```
+    https://stashapp.github.io/CommunityScripts/stable/index.yml
+    ```
+
+=== "README"
+
+    No README available
+
+=== "Author"
+
+    [wql219](https://github.com/wql219)
+
+=== "Screenshots"
+    
+
+### [Theme - Minimal](https://github.com/stashapp/CommunityScripts/tree/main/themes/Theme-Minimal){target=_blank}
+
+=== "Description"
+
+    Minimal Theme for Stash
+
+=== "Source URL"
+
+    ```
+    https://stashapp.github.io/CommunityScripts/stable/index.yml
+    ```
+
+=== "README"
+
+    View [README](https://github.com/stashapp/CommunityScripts/blob/main/themes/Theme-Minimal/README.md){target=_blank}
+
+=== "Author"
+
+    [deuulc](https://github.com/deuulc)
+
+=== "Screenshots"
+    ![Theme - Minimal screenshot](/assets/themes/Theme-Minimal/1.png){ loading=lazy }  ![Theme - Minimal screenshot](/assets/themes/Theme-Minimal/2.png){ loading=lazy }  ![Theme - Minimal screenshot](/assets/themes/Theme-Minimal/3.png){ loading=lazy }  ![Theme - Minimal screenshot](/assets/themes/Theme-Minimal/4.png){ loading=lazy }  
+
 ### [Theme - ModernDark](https://github.com/stashapp/CommunityScripts/tree/main/themes/Theme-ModernDark){target=_blank}
 
 === "Description"
