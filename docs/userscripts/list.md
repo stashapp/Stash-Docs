@@ -13,11 +13,11 @@ title: Browse userscripts
 ??? tip "Compatability"
     Make sure your instance URL is declared in `@match`.
 
-### [stashCreateAll](https://github.com/Serechops/Serechops-Stash/blob/main/Stash_Userscripts/stashCreateAll.user.js){target=_blank}
+### [Performer Image Carousel](https://github.com/Serechops/Serechops-Stash/blob/main/Stash_Userscripts/performerImageCarousel.user.js){target=_blank}
 
 === "Description"
 
-    Automate batch creation and tagging
+    Displays a carousel of performer images in the header.
 
 === "Author"
 
@@ -25,11 +25,27 @@ title: Browse userscripts
 
 === "Screenshots"
 
-### [Performer Image Carousel](https://github.com/Serechops/Serechops-Stash/blob/main/Stash_Userscripts/performerImageCarousel.user.js){target=_blank}
+### [stash-checker](https://github.com/timo95/stash-checker/releases/latest){target=_blank}
 
 === "Description"
 
-    Displays a carousel of performer images in the header.
+    Stash Checker is an userscript for porn websites to check if a Scene/Performer is in your Stash instance. It shows a checkmark if an item was found in your Stash. Hovering over the checkmark gives you a tooltip with information about the item in your Stash.
+
+=== "Author"
+
+    [Serechops](https://github.com/timo95){target=_blank}
+
+=== "Screenshots"
+
+    ![](https://raw.githubusercontent.com/timo95/stash-checker/refs/tags/1.0.0/docs/assets/tooltip-javlibrary.png){ loading=lazy }
+    ![](https://raw.githubusercontent.com/timo95/stash-checker/refs/tags/1.0.0/docs/assets/tooltip-stashdb.png){ loading=lazy }
+
+
+### [stashCreateAll](https://github.com/Serechops/Serechops-Stash/blob/main/Stash_Userscripts/stashCreateAll.user.js){target=_blank}
+
+=== "Description"
+
+    Automate batch creation and tagging
 
 === "Author"
 
