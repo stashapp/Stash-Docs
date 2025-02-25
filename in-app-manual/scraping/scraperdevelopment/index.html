@@ -4466,6 +4466,10 @@ GitHub sponsorship</a>
 <span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">&lt;single scraper config&gt;</span>
 <span class="nt">galleryByURL</span><span class="p">:</span>
 <span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">&lt;multiple scraper URL configs&gt;</span>
+<span class="nt">imageByFragment</span><span class="p">:</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">&lt;single scraper config&gt;</span>
+<span class="nt">imageByURL</span><span class="p">:</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">&lt;multiple scraper URL configs&gt;</span>
 <span class="l l-Scalar l-Scalar-Plain">&lt;other configurations&gt;</span>
 </code></pre></div>
 <p><code>name</code> is mandatory, all other top-level fields are optional. The inclusion of each top-level field determines what capabilities the scraper has.</p>
@@ -4580,6 +4584,16 @@ GitHub sponsorship</a>
 <td><code>galleryByURL</code></td>
 <td><code>{"url": "&lt;url&gt;"}</code></td>
 <td>JSON-encoded gallery fragment</td>
+</tr>
+<tr>
+<td><code>imageByFragment</code></td>
+<td>JSON-encoded image fragment</td>
+<td>JSON-encoded image fragment</td>
+</tr>
+<tr>
+<td><code>imageByURL</code></td>
+<td><code>{"url": "&lt;url&gt;"}</code></td>
+<td>JSON-encoded image fragment</td>
 </tr>
 </tbody>
 </table>
