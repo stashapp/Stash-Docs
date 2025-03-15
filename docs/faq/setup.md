@@ -104,7 +104,7 @@ If you are an advanced user, and have secured your Stash instance behind an auth
     Migrating between filesystems with different path separators (`/` and `\`) is currently unsupported.
         
 !!! danger
-    Use at your own risk. If you do this, make sure [backup](/guides/backup-and-restore-database) your database before starting.
+    Use at your own risk. If you do this, make sure to [backup](/guides/backup-and-restore-database) your database before starting.
 
 It's possible to manually migrate the `folders` table using SQL. 
 
