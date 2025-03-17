@@ -4730,7 +4730,7 @@ GitHub sponsorship</a>
 <span class="w">          </span><span class="nt">with</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://www.$1.com/api/movie?name=$3&amp;date=$2</span>
 </code></pre></div>
 <h3 id="stash">Stash<a class="headerlink" href="#stash" title="Permanent link">&para;</a></h3>
-<p>A different stash server can be configured as a scraping source. This action applies only to <code>performerByName</code>, <code>performerByFragment</code>, and <code>sceneByFragment</code> types. This action requires that the top-level <code>stashServer</code> field is configured.</p>
+<p>A different stash server can be configured as a scraping source. This action applies only to <code>performerByName</code>, <code>performerByFragment</code>, <code>sceneByName</code>, <code>sceneByQueryFragment</code> and <code>sceneByFragment</code>, types. This action requires that the top-level <code>stashServer</code> field is configured.</p>
 <p><code>stashServer</code> contains a single <code>url</code> field for the remote stash server. The username and password can be embedded in this string using <code>username:password@host</code>. Alternatively, the <code>apiKey</code> field can be used to authenticate with the remote stash server.</p>
 <p>An example stash scrape configuration is below:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stash</span>
@@ -4739,6 +4739,10 @@ GitHub sponsorship</a>
 <span class="nt">performerByFragment</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stash</span>
 <span class="nt">sceneByFragment</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stash</span>
+<span class="nt">sceneByName</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stash</span>
+<span class="nt">sceneByQueryFragment</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stash</span>
 <span class="nt">stashServer</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">apiKey</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;api key&gt;</span>
