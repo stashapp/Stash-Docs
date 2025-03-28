@@ -4417,11 +4417,13 @@ When added through the config file directly special care must be given to double
 <h3 id="logging-out">Logging out<a class="headerlink" href="#logging-out" title="Permanent link">&para;</a></h3>
 <p>The logout button is situated in the upper-right part of the screen when you are logged in.</p>
 <h3 id="recovering-from-a-forgotten-username-or-password">Recovering from a forgotten username or password<a class="headerlink" href="#recovering-from-a-forgotten-username-or-password" title="Permanent link">&para;</a></h3>
-<p>Stash saves login credentials in the config.yml file. You must reset both login and password if you have forgotten your password by doing the following:
-* Close your Stash process
-* Open the <code>config.yml</code> file found in your Stash directory with a text editor
-* Delete the <code>login</code> and <code>password</code> lines from the file and save
-Stash authentication should now be reset with no authentication credentials.</p>
+<p>Stash saves login credentials in the config.yml file. You must reset both login and password if you have forgotten your password by doing the following:</p>
+<ul>
+<li>Close your Stash process</li>
+<li>Open the <code>config.yml</code> file found in your Stash directory with a text editor</li>
+<li>Delete the <code>username</code> and <code>password</code> lines from the file and save</li>
+</ul>
+<p>Stash authentication should now be reset with no authentication credentials.</p>
 <h2 id="advanced-configuration-options">Advanced configuration options<a class="headerlink" href="#advanced-configuration-options" title="Permanent link">&para;</a></h2>
 <p>These options are typically not exposed in the UI and must be changed manually in the <code>config.yml</code> file.</p>
 <table>
