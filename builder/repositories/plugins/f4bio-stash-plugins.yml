@@ -3,7 +3,7 @@ collection:
   index: https://f4bio.github.io/stash-plugins/main/index.yml
   global_repo: f4bio/stash-plugins
   global_author: "[f4bio](https://github.com/f4bio)"
-  base_path: main/Plugins
+  base_path: main/plugins
 
 scripts:
   - id: example
@@ -15,3 +15,4 @@ scripts:
       - https://avatars.githubusercontent.com/u/10137
 
   - id: renamerOnUpdate
+  - id: renamerOnUpdateDevelop
