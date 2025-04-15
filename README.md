@@ -22,7 +22,7 @@ Read step-by-step guide on how to create a pull request [CONTRIBUTING.md](CONTRI
 - Clone/download the repository
 
 ### Building the site
-1. Open Terminal/Command Prompt with Ruby and go to your directory where you saved the copy of the repository
+1. Open Terminal/Command Prompt and go to your directory where you saved the copy of the repository
 2. Run `mkdocs serve`
 
 ## License
