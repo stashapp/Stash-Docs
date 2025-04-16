@@ -4876,8 +4876,10 @@ GitHub sponsorship</a>
 </code></pre></div>
 <p>The above configuration would scrape from the value of <code>queryURL</code>, replacing <code>{filename}</code> with the base filename of the scene, after it has been manipulated by the regex replacements.</p>
 <h3 id="scrapexpath-and-scrapejson-use-with-sceneperformergallerygroupbyurl">scrapeXPath and scrapeJson use with <code>&lt;scene|performer|gallery|group&gt;ByURL</code><a class="headerlink" href="#scrapexpath-and-scrapejson-use-with-sceneperformergallerygroupbyurl" title="Permanent link">&para;</a></h3>
-<p>For <code>sceneByURL</code>, <code>performerByURL</code>, <code>galleryByURL</code> the <code>queryURL</code> can also be present if we want to use <code>queryURLReplace</code>. The functionality is the same as <code>sceneByFragment</code>, the only placeholder field available though is the <code>url</code>:
-* <code>{url}</code> - the url of the scene/performer/gallery</p>
+<p>For <code>sceneByURL</code>, <code>performerByURL</code>, <code>galleryByURL</code> the <code>queryURL</code> can also be present if we want to use <code>queryURLReplace</code>. The functionality is the same as <code>sceneByFragment</code>, the only placeholder field available though is the <code>url</code>:</p>
+<ul>
+<li><code>{url}</code> - the url of the scene/performer/gallery</li>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="nt">sceneByURL</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scrapeJson</span>
 <span class="w">    </span><span class="nt">url</span><span class="p">:</span>
@@ -4891,7 +4893,11 @@ GitHub sponsorship</a>
 </code></pre></div>
 <h3 id="stash">Stash<a class="headerlink" href="#stash" title="Permanent link">&para;</a></h3>
 <p>A different stash server can be configured as a scraping source. This action applies only to <code>performerByName</code>, <code>performerByFragment</code>, <code>sceneByName</code>, <code>sceneByQueryFragment</code> and <code>sceneByFragment</code>, types. This action requires that the top-level <code>stashServer</code> field is configured.</p>
-<p><code>stashServer</code> contains a single <code>url</code> field for the remote stash server. The username and password can be embedded in this string using <code>username:password@host</code>. Alternatively, the <code>apiKey</code> field can be used to authenticate with the remote stash server.</p>
+<ul>
+<li><code>stashServer</code> contains a single <code>url</code> field for the remote stash server. </li>
+<li>The username and password can be embedded in this string using <code>username:password@host</code>. </li>
+<li>Alternatively, the <code>apiKey</code> field can be used to authenticate with the remote stash server.</li>
+</ul>
 <p>An example stash scrape configuration is below:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stash</span>
 <span class="nt">performerByName</span><span class="p">:</span>
@@ -4959,8 +4965,9 @@ Referencing a common fragment within another common fragment will cause an error
 </code></pre></div></p>
 </blockquote>
 <h3 id="post-processing-options">Post-processing options<a class="headerlink" href="#post-processing-options" title="Permanent link">&para;</a></h3>
-<p>Post-processing operations are contained in the <code>postProcess</code> key. Post-processing operations are performed in the order they are specified. The following post-processing operations are available:
-* <code>javascript</code>: accepts a javascript code block, that must return a string value. The input string is declared in the <code>value</code> variable. If an error occurs while compiling or running the script, then the original value is returned.
+<p>Post-processing operations are contained in the <code>postProcess</code> key. Post-processing operations are performed in the order they are specified. The following post-processing operations are available:</p>
+<ul>
+<li><code>javascript</code>: accepts a javascript code block, that must return a string value. The input string is declared in the <code>value</code> variable. If an error occurs while compiling or running the script, then the original value is returned.
 Example:
 <div class="highlight"><pre><span></span><code><span class="nt">performer</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">Name</span><span class="p">:</span>
@@ -4971,12 +4978,15 @@ Example:
 <span class="w">          </span><span class="no">if (value &amp;&amp; value.length) {</span>
 <span class="w">            </span><span class="no">return value[0].toUpperCase() + value.substring(1)</span>
 <span class="w">          </span><span class="no">}</span>
-</code></pre></div>
-Note that the <code>otto</code> javascript engine is missing a few built-in methods and may not be consistent with other modern javascript implementations.
-* <code>feetToCm</code>: converts a string containing feet and inches numbers into centimeters. Looks for up to two separate integers and interprets the first as the number of feet, and the second as the number of inches. The numbers can be separated by any non-numeric character including the <code>.</code> character. It does not handle decimal numbers. For example <code>6.3</code> and <code>6ft3.3</code> would both be interpreted as 6 feet, 3 inches before converting into centimeters.
-* <code>lbToKg</code>: converts a string containing lbs to kg.
-* <code>map</code>: contains a map of input values to output values. Where a value matches one of the input values, it is replaced with the matching output value. If no value is matched, then value is unmodified.</p>
-<p>Example:
+</code></pre></div></li>
+</ul>
+<p>We use <a href="https://github.com/dop251/goja"><code>goja</code> javascript engine</a> which is missing a few built-in methods and may not be consistent with other modern javascript implementations.</p>
+<ul>
+<li><code>feetToCm</code>: converts a string containing feet and inches numbers into centimeters. Looks for up to two separate integers and interprets the first as the number of feet, and the second as the number of inches. The numbers can be separated by any non-numeric character including the <code>.</code> character. It does not handle decimal numbers. For example <code>6.3</code> and <code>6ft3.3</code> would both be interpreted as 6 feet, 3 inches before converting into centimeters.</li>
+<li><code>lbToKg</code>: converts a string containing lbs to kg.</li>
+<li>
+<p><code>map</code>: contains a map of input values to output values. Where a value matches one of the input values, it is replaced with the matching output value. If no value is matched, then value is unmodified.
+Example:
 <div class="highlight"><pre><span></span><code><span class="nt">performer</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">Gender</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">selector</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">//div[@class=&quot;example element&quot;]</span>
@@ -4993,9 +5003,13 @@ Note that the <code>otto</code> javascript engine is missing a few built-in meth
 <span class="w">    </span><span class="nt">postProcess</span><span class="p">:</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">lbToKg</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
-Gets the contents of the selected div element, and sets the returned value to <code>Female</code> if the scraped value is <code>F</code>; <code>Male</code> if the scraped value is <code>M</code>.
-Height and weight are extracted from the selected spans and converted to <code>cm</code> and <code>kg</code>.</p>
+Gets the contents of the selected div element, and sets the returned value to:</p>
 <ul>
+<li><code>Female</code> if the scraped value is <code>F</code>;</li>
+<li><code>Male</code> if the scraped value is <code>M</code>.</li>
+</ul>
+<p>Height and weight are extracted from the selected spans and converted to <code>cm</code> and <code>kg</code>.</p>
+</li>
 <li>
 <p><code>parseDate</code>: if present, the value is the date format using go's reference date (2006-01-02). For example, if an example date was <code>14-Mar-2003</code>, then the date format would be <code>02-Jan-2006</code>. See the <a href="https://golang.org/pkg/time/#Parse">time.Parse documentation</a> for details. When present, the scraper will convert the input string into a date, then convert it to the string format used by stash (<code>YYYY-MM-DD</code>). Strings "Today", "Yesterday" are matched (case insensitive) and converted by the scraper so you don't need to edit/replace them. 
 Unix timestamps (example: 1660169451) can also be parsed by selecting <code>unix</code> as the date format.
@@ -5019,10 +5033,8 @@ Example:
 </code></pre></div></p>
 </li>
 <li>
-<p><code>replace</code>: contains an array of sub-objects. Each sub-object must have a <code>regex</code> and <code>with</code> field. The <code>regex</code> field is the regex pattern to replace, and <code>with</code> is the string to replace it with. <code>$</code> is used to reference capture groups - <code>$1</code> is the first capture group, <code>$2</code> the second and so on. Replacements are performed in order of the array.</p>
-</li>
-</ul>
-<p>Example:
+<p><code>replace</code>: contains an array of sub-objects. Each sub-object must have a <code>regex</code> and <code>with</code> field. The <code>regex</code> field is the regex pattern to replace, and <code>with</code> is the string to replace it with. <code>$</code> is used to reference capture groups - <code>$1</code> is the first capture group, <code>$2</code> the second and so on. Replacements are performed in order of the array.
+Example:
 <div class="highlight"><pre><span></span><code><span class="nt">CareerLength</span><span class="p">:</span><span class="w"> </span>
 <span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$infoPiece[text() = &#39;Career Start and End:&#39;]/../span[@class=&quot;smallInfo&quot;]</span>
 <span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">postProcess</span><span class="p p-Indicator">:</span>
@@ -5031,19 +5043,23 @@ Example:
 <span class="w">            </span><span class="nt">with</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;-&quot;</span>
 </code></pre></div>
 Replaces <code>2001 to 2003</code> with <code>2001-2003</code>.</p>
-<ul>
-<li><code>subScraper</code>: if present, the sub-scraper will be executed after all other post-processes are complete and before parseDate. It then takes the value and performs an http request, using the value as the URL. Within the <code>subScraper</code> config is a nested scraping configuration. This allows you to traverse to other webpages to get the attribute value you are after. For more info and examples have a look at <a href="https://github.com/stashapp/stash/pull/370">#370</a>, <a href="https://github.com/stashapp/stash/pull/606">#606</a></li>
+</li>
+<li>
+<p><code>subScraper</code>: if present, the sub-scraper will be executed after all other post-processes are complete and before parseDate. It then takes the value and performs an http request, using the value as the URL. Within the <code>subScraper</code> config is a nested scraping configuration. This allows you to traverse to other webpages to get the attribute value you are after. For more info and examples have a look at <a href="https://github.com/stashapp/stash/pull/370">#370</a>, <a href="https://github.com/stashapp/stash/pull/606">#606</a></p>
+</li>
 </ul>
-<p>Additionally, there are a number of fixed post-processing fields that are specified at the attribute level (not in <code>postProcess</code>) that are performed after the <code>postProcess</code> operations:
-* <code>concat</code>: if an xpath matches multiple elements, and <code>concat</code> is present, then all of the elements will be concatenated together
-* <code>split</code>: the inverse of <code>concat</code>. Splits a string to more elements using the separator given. For more info and examples have a look at PR <a href="https://github.com/stashapp/stash/pull/579">#579</a></p>
-<p>Example:
+<p>Additionally, there are a number of fixed post-processing fields that are specified at the attribute level (not in <code>postProcess</code>) that are performed after the <code>postProcess</code> operations:</p>
+<ul>
+<li><code>concat</code>: if an xpath matches multiple elements, and <code>concat</code> is present, then all of the elements will be concatenated together</li>
+<li><code>split</code>: the inverse of <code>concat</code>. Splits a string to more elements using the separator given. For more info and examples have a look at PR <a href="https://github.com/stashapp/stash/pull/579">#579</a>
+Example:
 <div class="highlight"><pre><span></span><code><span class="nt">Tags</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">Name</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">selector</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">//span[@class=&quot;list_attributes&quot;]</span>
 <span class="w">    </span><span class="nt">split</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;,&quot;</span>
 </code></pre></div>
-Splits a comma separated list of tags located in the span and returns the tags.</p>
+Splits a comma separated list of tags located in the span and returns the tags.</li>
+</ul>
 <p>For backwards compatibility, <code>replace</code>, <code>subscraper</code> and <code>parseDate</code> are also allowed as keys for the attribute.</p>
 <p>Post-processing on attribute post-process is done in the following order: <code>concat</code>, <code>replace</code>, <code>subscraper</code>, <code>parseDate</code> and then <code>split</code>.</p>
 <h3 id="xpath-resources">XPath resources:<a class="headerlink" href="#xpath-resources" title="Permanent link">&para;</a></h3>
