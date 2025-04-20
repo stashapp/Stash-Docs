@@ -14,6 +14,10 @@ hide:
 
 [Stash](https://stashapp.cc){:target="_blank"} is a web application written in Go for serving and organizing your porn collection. It is self-hosted and released under AGPL-3.0 license. Stash currently supports Windows, macOS, Linux, FreeBSD and Docker.
 
+## Join Our Community
+
+We are excited to announce that we have a new home for support, feature requests, and discussions related to Stash and its associated projects. Join our community on the [Discourse forum](https://discourse.stashapp.cc) to connect with other users, share your ideas, and get help from fellow enthusiasts.
+
 ## About Stash
 
 - Stash gathers information about videos in your collection from the internet, and is extensible through the use of community-built plugins for a large number of content producers and sites.
