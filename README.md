@@ -1,6 +1,10 @@
 # Stash-Docs
 Website: https://docs.stashapp.cc
 
+## Join Our Community
+
+We are excited to announce that we have a new home for support, feature requests, and discussions related to Stash and its associated projects. Join our community on the [Discourse forum](https://discourse.stashapp.cc) to connect with other users, share your ideas, and get help from fellow enthusiasts.
+
 ## Contributing
 
 Everyone is welcome to help with the documentation. All changes are managed through pull requests. 
