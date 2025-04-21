@@ -14,7 +14,7 @@ hide:
 
 [Stash](https://stashapp.cc){:target="_blank"} is a web application written in Go for serving and organizing your porn collection. It is self-hosted and released under AGPL-3.0 license. Stash currently supports Windows, macOS, Linux, FreeBSD and Docker.
 
-## Join Our Community
+## Join our community
 
 We are excited to announce that we have a new home for support, feature requests, and discussions related to Stash and its associated projects. Join our community on the [Discourse forum](https://discourse.stashapp.cc){:target="_blank"} to connect with other users, share your ideas, and get help from fellow enthusiasts.
 
@@ -33,10 +33,35 @@ To get started go to [Installation](/installation) and download the latest versi
 
 ## Support
 
-- Look through the [Frequently Asked Questions (FAQ)](/faq) section
-- Join our community [Matrix space](https://matrix.to/#/#stashapp:unredacted.org){:target="_blank"}
-- Join our community [Discord server](https://discord.gg/2TsNFKt){:target="_blank"}
-- Start a discussion [on GitHub](https://github.com/stashapp/stash/discussions){:target="_blank"}
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-brands-discourse: __Community forum__ _(recommended)_
+
+    ---
+
+     Primary place for community support, feature requests and discussions.
+
+    [:octicons-arrow-right-24: Browse forum](https://discourse.stashapp.cc){:target="_blank"}
+
+-   :fontawesome-brands-discord: __Discord__
+
+    ---
+
+    Real-time chat and community support.
+
+    [:octicons-arrow-right-24: Join Discord](https://discord.gg/2TsNFKt){:target="_blank"}
+
+-   :simple-lemmy: __Lemmy__
+
+    ---
+
+     Community discussions.
+
+    [:octicons-arrow-right-24: Visit Lemmy](https://discuss.online/c/stashapp){:target="_blank"}
+
+
+</div>
 
 ## Contribute
 
