@@ -89,6 +89,9 @@ scripts:
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/dupeMarker/README.md
     author: "[feederbox826](https://github.com/feederbox826)"
 
+  - id: externalLinksEnhanced
+    author: "[QxxxGit](https://github.com/QxxxGit)"
+
   - id: filenameParser
     readme: false
     author: "[gitgiggety](https://github.com/gitgiggety)"
@@ -116,10 +119,6 @@ scripts:
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/pathParser/README.md
     author: "[ImJustMatt](https://github.com/ImJustMatt)"
 
-  - id: qxSceneCard
-    readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/qxSceneCard/README.md
-    author: "[Qx](https://github.com/QxxxGit)"
-
   - id: sceneCoverCropper
     author: "[feederbox826](https://github.com/feederbox826)"
     readme: false
@@ -143,6 +142,9 @@ scripts:
 
   - id: stashNotes
     readme: false
+    author: "[QxxxGit](https://github.com/QxxxGit)"
+
+  - id: stashNotifications
     author: "[QxxxGit](https://github.com/QxxxGit)"
 
   - id: stash-realbooru
