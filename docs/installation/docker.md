@@ -19,7 +19,7 @@ icon: fontawesome/brands/docker
 1. Download and save `docker-compose.yml` file from [our GitHub](https://raw.githubusercontent.com/stashapp/stash/master/docker/production/docker-compose.yml){:target="_blank"}.
   - Modify the `docker-compose.yml` file to your preferences. 
 2. Open terminal in the same directory as saved `docker-compose.yml` or `cd` to that directory.
-3. Run `docker-compose up -d`
+3. Run `docker-compose up -d`.
 4. Installing this way will bound Stash to port 9999. 
 5. If everything went well Stash will be available at [http://localhost:9999](http://localhost:9999){:target="_blank"} locally or on your network [http://YOUR-LOCAL-IP:9999](http://YOUR-LOCAL-IP:9999){:target="_blank"}.
 
