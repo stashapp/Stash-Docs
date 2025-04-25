@@ -8,7 +8,7 @@ icon: simple/synology
 
 ## Foreword
 
-Synology devices comes in two categories : those who support containerization through Docker, and those who don't. To see in which category you stand, refer to the "Applied Models" section of [the Docker Package page](https://www.synology.com/dsm/packages/Docker){:target="_blank"}.
+Synology devices comes in two categories: those who support containerization through Docker, and those who don't. To see in which category you stand, refer to the "Applied Models" section of [the Docker Package page](https://www.synology.com/dsm/packages/Docker){:target="_blank"}.
 
 Now, follow the installation instructions based on whether you [can use Docker](#to-install-stash-with-docker) or [you cannot use Docker](#to-install-stash-without-docker).
 
@@ -19,9 +19,9 @@ Now, follow the installation instructions based on whether you [can use Docker](
 
 - Make sure [the Docker app is installed](https://blog.pavelsklenar.com/how-to-install-and-use-docker-on-synology/){:target="_blank"} and running correctly.
 - [Search the registry for stash](https://hub.docker.com/r/stashapp/stash){:target="_blank"} and install.
-- Create a stash image with the following set up in 'advanced options'
+- Create a stash image with the following set up in 'Advanced Settings':
 
-### "Volume" tab
+### "Volume Settings" section
 
 | File/Folder             | Mount Path   | Description                                         |
 |-------------------------|--------------|-----------------------------------------------------|
@@ -32,7 +32,7 @@ Now, follow the installation instructions based on whether you [can use Docker](
 | docker/Stash/blobs      | /blobs       | Binary data for scene covers, performer images, etc |
 | (where your porn lives) | /data        | Location of your porn                               |
 
-### "Environment" tab
+### "Environment" section
 
 (These will need to be the same as the Volumes you created in the "Volume" tab.)
 
@@ -43,17 +43,16 @@ Now, follow the installation instructions based on whether you [can use Docker](
 | STASH_METADATA  | /metadata    |
 | STASH_GENERATED | /generated   |
 | STASH_STASH     | /data        |
-|   |   |   |
 
-### "Port" tab
+### "Port Settings" section
 
-You will need to set a default port in the "Port" tab, otherwise Docker will assign a different port every time Stash is launched.  Leave the container port as-is.
+You will need to set a default port in the "Port" section, otherwise Docker will assign a different port every time Stash is launched. Leave the container port as-is.
 
-### "Network" tab
+### "Network" section
 
-Make sure that "Use The Same Network As Docker Host" is checked.
+Select the "host" network rather than "bridge".
 
-(thanks to backer Herelam80 for these instructions)
+(Thanks to backer Herelam80 for these instructions)
 
 ## To install Stash without Docker
 
@@ -66,9 +65,9 @@ This is intended to work on DSM 7.0 and later. It will not work on any version p
 
 In DSM, navigate to `Package Center > Settings`. In the `Package Sources` tab, click `Add`, type _SynoCommunity_ as Name and [https://packages.synocommunity.com/](https://packages.synocommunity.com/){:target="_blank"} as Location and then press `OK` to validate.
 
-Go back to the Package Center and look for `Python 3.11` in the Community tab. Click on `Ìnstall` and agree to the _Third-Party Package_ warning.
+Go back to the Package Center and look for `Python 3.11` in the Community tab. Click on `Install` and agree to the _Third-Party Package_ warning.
 
-Then look for `Ffmpeg 6` in the Community tab. Click on `Ìnstall` and agree to the _Third-Party Package_ warning.
+Then look for `Ffmpeg 6` in the Community tab. Click on `Install` and agree to the _Third-Party Package_ warning.
 
 ### Enable SSH
 
@@ -80,7 +79,7 @@ In DSM, navigate to `Control Panel > Connectivity > Terminal & SNMP` and check t
 1. Click on the `Create` button
 1. Give it a name (eg _stash_) and a Password (you will need it later)
 1. Click `Next` until you are on the "Join groups" screen
-1. Assign the user to the "administrators" group (this will be removed later but is required by synology to be able to use SSH (I know, it's stupid) and complete the installation properly)
+1. Assign the user to the "administrators" group (this will be removed later, but is required by Synology to be able to use SSH (I know, it's stupid) and complete the installation properly)
 1. Click `Next` until you are on the "Assign shared folders permissions" screen
 1. Assign the Read/Write permission to your porn folder (the write permission is needed to allow the deletion of clips from the stash app)
 1. Click `Next` until you are on the "Assign application permissions" screen
@@ -89,7 +88,7 @@ In DSM, navigate to `Control Panel > Connectivity > Terminal & SNMP` and check t
 
 ### Connect to your NAS
 
-With your terminal, connect to your NAS using the newly created account that is part of the _administrators_ group.
+In your terminal, connect to your NAS using the newly created account that is part of the _administrators_ group.
 
 ```bash
 ssh stash@your_nas_hostname
@@ -103,12 +102,13 @@ ffmpeg has been installed earlier, but is missing a link to ffprobe (also instal
 sudo ln -s /var/packages/ffmpeg6/target/bin/ffprobe /usr/local/bin/ffprobe
 sudo ln -s /var/packages/ffmpeg6/target/bin/ffmpeg /usr/local/bin/ffmpeg
 ```
+
 ### Download Stash
 
 Download the lastest version of Stash and its checksum from GitHub
 
 ```bash
-# find what architecture your synology is running on
+# find what architecture your Synology is running on
 uname -m
 
 # depending on the architecture, you'll have to download the right version of stash
@@ -140,7 +140,7 @@ rm CHECKSUMS_SHA1
 
 ### Python
 
-Prepare a python environment (for scrapers and plugins)
+Prepare a Python environment (for scrapers and plugins)
 
 ```bash
 python3.11 -m ensurepip --Update
@@ -158,7 +158,7 @@ echo 'PATH=/usr/local/bin:$PATH' > .profile
 echo 'source stash-env/bin/activate' >> .profile
 ```
 
-Create the service file by running `cat > stash.service`, copy/pasting the following, and hitting CTRL+D when it's done to save the file (hit again if you are not back to the prompt) :
+Create the service file by running `cat > stash.service`, copy/pasting the following, and hitting CTRL+D when it's done to save the file (hit again if you are not back to the prompt):
 
 ```ini
 [Unit]
@@ -189,11 +189,11 @@ sudo systemctl start stash.service
 
 ### Verify that it is working
 
-You can now access to stash by navigating to your NAS url on port 9999 : `http://nas-hostname:9999`
+You can now access to stash by navigating to your NAS url on port 9999: `http://nas-hostname:9999`
 
 ### Installing Scrapers and Plugins
 
-Whenever you install a new python scraper or plugin, do the following from the _stash_ user home directory
+Whenever you install a new Python scraper or plugin, do the following from the _stash_ user home directory:
 
 ```bash
 pipreqs .stash/.
@@ -201,7 +201,7 @@ pip3 install -r .stash/requirements.txt
 ```
 
 !!! note
-    Using pipreqs allows to scan all scrapers and plugins installed and find dependencies that they require. You can do the same thing without pipreqs by going into each individual directory and run `pip3 install -r requirements.txt`
+    Using pipreqs allows to scan all scrapers and plugins installed and find dependencies that they require. You can do the same thing without `pipreqs` by going into each individual directory and run `pip3 install -r requirements.txt`
 
 ### Remove stash user from administrator group
 
