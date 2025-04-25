@@ -66,68 +66,47 @@ ${indexes.map(index => `1. [${index}](${index})`).join('\n')}
 `;
 }
 
-// Add the fetchWithRetry function
-async function fetchWithRetry(url: string, options: any = {}, retries = 3, delay = 1000): Promise<any> {
-    for (let i = 0; i < retries; i++) {
-        try {
-            return await axios(url, options);
-        } catch (error: any) {
-            if (error.response && error.response.status === 429 && i < retries - 1) {
-                console.warn(`Rate limit hit. Retrying in ${delay}ms...`);
-                await new Promise(resolve => setTimeout(resolve, delay));
-                delay *= 2; // Exponential backoff
-            } else {
-                throw error;
-            }
-        }
-    }
-}
-
-// Update the parseRepository function
 async function parseRepository(localRepository: LocalRepository): Promise<Plugin[]> {
     // load from parsed
-    const repoDefaults: LocalCollection = localRepository.collection;
-    const repoSidecars: LocalSidecar[] = localRepository.scripts;
-
-    // grab from index.yml with retry logic
-    const indexData: RemoteIndex = await fetchWithRetry(repoDefaults.index)
-        .then(res => YAML.parse(res.data));
-
+    const repoDefaults: LocalCollection = localRepository.collection
+    const repoSidecars: LocalSidecar[] = localRepository.scripts
+    // grab from index.yml
+    const indexData: RemoteIndex = await axios.get(repoDefaults.index)
+        .then(res => YAML.parse(res.data))
     // iterate over remote index and match with sidecars
-    const indexPlugins: Plugin[] = [];
-    const idxMissingScar: Set<RemotePlugin> = new Set();
-    const allIdx: Set<RemotePlugin> = new Set();
+    const indexPlugins: Plugin[] = []
+    const idxMissingScar: Set<RemotePlugin> = new Set()
+    const allIdx: Set<RemotePlugin> = new Set()
     for (const index of indexData) {
-        const sidecarMatch = repoSidecars.find(sidecar => sidecar.id == index.id);
+        const sidecarMatch = repoSidecars.find(sidecar => sidecar.id == index.id)
         if (sidecarMatch) {
-            if (sidecarMatch.id == "example") continue; // if example, skip
+            if (sidecarMatch.id == "example") continue // if example, skip
             else if (sidecarMatch.hide) { // skip but warn if hidden
-                debuglog(`Skipping hidden plugin: ${index.name}`);
-                continue;
-            } else allIdx.add(index); // add to sidecars
+                debuglog(`Skipping hidden plugin: ${index.name}`)
+                continue
+            } else allIdx.add(index) // add to sidecars
         } else { // sidecar not found
-            if (repoDefaults.exclusive) continue; // if exclusive, skip
-            idxMissingScar.add(index); // add to missing
+            if (repoDefaults.exclusive) continue // if exclusive, skip
+            idxMissingScar.add(index) // add to missing
         }
-        const plugin = new Plugin(repoDefaults, sidecarMatch, index);
-        indexPlugins.push(plugin);
+        const plugin = new Plugin(repoDefaults, sidecarMatch, index)
+        indexPlugins.push(plugin)
     }
-
     // check if there are leftover sidecars
-    const extraSidecars = repoSidecars.filter(sidecar => 
-        sidecar.id != "example" && !sidecar.hide && !indexPlugins.find(plugin => plugin.id == sidecar.id));
+    // not named example
+    // not in indexPlugins and not hidden
+    const extraSidecars = repoSidecars.filter(sidecar => sidecar.id != "example" && !sidecar.hide && !indexPlugins.find(plugin => plugin.id == sidecar.id))
     if (extraSidecars.length > 0) {
-        warnLog(`Found ${extraSidecars.length} extra sidecars in ${localRepository.name}`);
-        extraSidecars.forEach(sidecar => warnLog(`    ${sidecar.id}`));
+        warnLog(`Found ${extraSidecars.length} extra sidecars in ${localRepository.name}`)
+        extraSidecars.forEach(sidecar => warnLog(`    ${sidecar.id}`))
     }
-
     // check for plugins without sidecars
-    const missingSCars = Array.from(idxMissingScar).filter(plugin => allIdx.has(plugin));
+    const missingSCars = Array.from(idxMissingScar).filter(plugin => allIdx.has(plugin))
     if (missingSCars.length > 0) {
-        infoLog(`Found ${missingSCars.length} missing sidecars in ${localRepository.name}`);
-        missingSCars.forEach(sidecar => infoLog(`    ${sidecar.name}`));
+        infoLog(`Found ${missingSCars.length} missing sidecars in ${localRepository.name}`)
+        missingSCars.forEach(sidecar => infoLog(`    ${sidecar.name}`))
     }
-    return indexPlugins;
+    return indexPlugins
 }
 
 async function run() {
