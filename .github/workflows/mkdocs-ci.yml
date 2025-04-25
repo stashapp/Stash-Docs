@@ -33,6 +33,8 @@ jobs:
       - run: |
           npm ci || npm ci --retry=3 --delay=5
       - run: |
+          npm install -g ts-node
+      - run: |
           cd builder
           mkdir -p dist dist/plugins dist/themes
           ts-node build.ts
