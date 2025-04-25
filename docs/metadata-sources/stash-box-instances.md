@@ -27,7 +27,7 @@ PMV Stash is a community-driven metadata database focused on remixed pornographi
 
 StashDB is a community-driven metadata database focused on digital scenes of all orientations.
 
-[:octicons-link-16: Website](https://stashdb.org){:target="_blank"} | [:fontawesome-regular-file-lines: Guidelines](https://guidelines.stashdb.org){:target="_blank"} | [:simple-discord: Discord](https://discord.com/invite/2TsNFKt){:target="_blank"} | [:simple-matrix: Matrix](https://matrix.to/#/#stashapp:unredacted.org){:target="_blank"} | [:material-api: Endpoint `https://stashdb.org/graphql`]() | [:fontawesome-solid-unlock-keyhole: Join](https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/accessing-stashdb){:target="_blank"}
+[:octicons-link-16: Website](https://stashdb.org){:target="_blank"} | [:fontawesome-regular-file-lines: Guidelines](https://guidelines.stashdb.org){:target="_blank"} | [:fontawesome-brands-discourse: Community forum](https://discourse.stahapp.cc){:target="_blank"} | [:simple-discord: Discord](https://discord.com/invite/2TsNFKt){:target="_blank"} | [:material-api: Endpoint `https://stashdb.org/graphql`]() | [:fontawesome-solid-unlock-keyhole: Join](https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/accessing-stashdb){:target="_blank"}
 
 ### ThePornDB[^3]
 
