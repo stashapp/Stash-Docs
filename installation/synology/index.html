@@ -815,36 +815,36 @@ GitHub sponsorship</a>
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#volume-tab" class="md-nav__link">
+  <a href="#volume-settings-section" class="md-nav__link">
     <span class="md-ellipsis">
-      "Volume" tab
+      "Volume Settings" section
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#environment-tab" class="md-nav__link">
+  <a href="#environment-section" class="md-nav__link">
     <span class="md-ellipsis">
-      "Environment" tab
+      "Environment" section
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#port-tab" class="md-nav__link">
+  <a href="#port-settings-section" class="md-nav__link">
     <span class="md-ellipsis">
-      "Port" tab
+      "Port Settings" section
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#network-tab" class="md-nav__link">
+  <a href="#network-section" class="md-nav__link">
     <span class="md-ellipsis">
-      "Network" tab
+      "Network" section
     </span>
   </a>
   
@@ -3004,36 +3004,36 @@ GitHub sponsorship</a>
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#volume-tab" class="md-nav__link">
+  <a href="#volume-settings-section" class="md-nav__link">
     <span class="md-ellipsis">
-      "Volume" tab
+      "Volume Settings" section
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#environment-tab" class="md-nav__link">
+  <a href="#environment-section" class="md-nav__link">
     <span class="md-ellipsis">
-      "Environment" tab
+      "Environment" section
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#port-tab" class="md-nav__link">
+  <a href="#port-settings-section" class="md-nav__link">
     <span class="md-ellipsis">
-      "Port" tab
+      "Port Settings" section
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#network-tab" class="md-nav__link">
+  <a href="#network-section" class="md-nav__link">
     <span class="md-ellipsis">
-      "Network" tab
+      "Network" section
     </span>
   </a>
   
@@ -3197,7 +3197,7 @@ GitHub sponsorship</a>
 <p>Written by <a href="https://github.com/Muldec" target="_blank">Muldec</a>.</p>
 </div>
 <h2 id="foreword">Foreword<a class="headerlink" href="#foreword" title="Permanent link">&para;</a></h2>
-<p>Synology devices comes in two categories : those who support containerization through Docker, and those who don't. To see in which category you stand, refer to the "Applied Models" section of <a href="https://www.synology.com/dsm/packages/Docker" target="_blank">the Docker Package page</a>.</p>
+<p>Synology devices comes in two categories: those who support containerization through Docker, and those who don't. To see in which category you stand, refer to the "Applied Models" section of <a href="https://www.synology.com/dsm/packages/Docker" target="_blank">the Docker Package page</a>.</p>
 <p>Now, follow the installation instructions based on whether you <a href="#to-install-stash-with-docker">can use Docker</a> or <a href="#to-install-stash-without-docker">you cannot use Docker</a>.</p>
 <h2 id="to-install-stash-with-docker">To install Stash with Docker<a class="headerlink" href="#to-install-stash-with-docker" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
@@ -3207,9 +3207,9 @@ GitHub sponsorship</a>
 <ul>
 <li>Make sure <a href="https://blog.pavelsklenar.com/how-to-install-and-use-docker-on-synology/" target="_blank">the Docker app is installed</a> and running correctly.</li>
 <li><a href="https://hub.docker.com/r/stashapp/stash" target="_blank">Search the registry for stash</a> and install.</li>
-<li>Create a stash image with the following set up in 'advanced options'</li>
+<li>Create a stash image with the following set up in 'Advanced Settings':</li>
 </ul>
-<h3 id="volume-tab">"Volume" tab<a class="headerlink" href="#volume-tab" title="Permanent link">&para;</a></h3>
+<h3 id="volume-settings-section">"Volume Settings" section<a class="headerlink" href="#volume-settings-section" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -3251,7 +3251,7 @@ GitHub sponsorship</a>
 </tr>
 </tbody>
 </table>
-<h3 id="environment-tab">"Environment" tab<a class="headerlink" href="#environment-tab" title="Permanent link">&para;</a></h3>
+<h3 id="environment-section">"Environment" section<a class="headerlink" href="#environment-section" title="Permanent link">&para;</a></h3>
 <p>(These will need to be the same as the Volumes you created in the "Volume" tab.)</p>
 <table>
 <thead>
@@ -3281,17 +3281,13 @@ GitHub sponsorship</a>
 <td>STASH_STASH</td>
 <td>/data</td>
 </tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
 </tbody>
 </table>
-<h3 id="port-tab">"Port" tab<a class="headerlink" href="#port-tab" title="Permanent link">&para;</a></h3>
-<p>You will need to set a default port in the "Port" tab, otherwise Docker will assign a different port every time Stash is launched.  Leave the container port as-is.</p>
-<h3 id="network-tab">"Network" tab<a class="headerlink" href="#network-tab" title="Permanent link">&para;</a></h3>
-<p>Make sure that "Use The Same Network As Docker Host" is checked.</p>
-<p>(thanks to backer Herelam80 for these instructions)</p>
+<h3 id="port-settings-section">"Port Settings" section<a class="headerlink" href="#port-settings-section" title="Permanent link">&para;</a></h3>
+<p>You will need to set a default port in the "Port" section, otherwise Docker will assign a different port every time Stash is launched. Leave the container port as-is.</p>
+<h3 id="network-section">"Network" section<a class="headerlink" href="#network-section" title="Permanent link">&para;</a></h3>
+<p>Select the "host" network rather than "bridge".</p>
+<p>(Thanks to backer Herelam80 for these instructions)</p>
 <h2 id="to-install-stash-without-docker">To install Stash without Docker<a class="headerlink" href="#to-install-stash-without-docker" title="Permanent link">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -3300,8 +3296,8 @@ GitHub sponsorship</a>
 <p>This is intended to work on DSM 7.0 and later. It will not work on any version prior to 7.0.</p>
 <h3 id="install-prerequisites">Install Prerequisites<a class="headerlink" href="#install-prerequisites" title="Permanent link">&para;</a></h3>
 <p>In DSM, navigate to <code>Package Center &gt; Settings</code>. In the <code>Package Sources</code> tab, click <code>Add</code>, type <em>SynoCommunity</em> as Name and <a href="https://packages.synocommunity.com/" target="_blank">https://packages.synocommunity.com/</a> as Location and then press <code>OK</code> to validate.</p>
-<p>Go back to the Package Center and look for <code>Python 3.11</code> in the Community tab. Click on <code>Ìnstall</code> and agree to the <em>Third-Party Package</em> warning.</p>
-<p>Then look for <code>Ffmpeg 6</code> in the Community tab. Click on <code>Ìnstall</code> and agree to the <em>Third-Party Package</em> warning.</p>
+<p>Go back to the Package Center and look for <code>Python 3.11</code> in the Community tab. Click on <code>Install</code> and agree to the <em>Third-Party Package</em> warning.</p>
+<p>Then look for <code>Ffmpeg 6</code> in the Community tab. Click on <code>Install</code> and agree to the <em>Third-Party Package</em> warning.</p>
 <h3 id="enable-ssh">Enable SSH<a class="headerlink" href="#enable-ssh" title="Permanent link">&para;</a></h3>
 <p>In DSM, navigate to <code>Control Panel &gt; Connectivity &gt; Terminal &amp; SNMP</code> and check the <code>Enable SSH service</code> box.</p>
 <h3 id="create-a-user-that-will-run-stash">Create a user that will run stash<a class="headerlink" href="#create-a-user-that-will-run-stash" title="Permanent link">&para;</a></h3>
@@ -3310,7 +3306,7 @@ GitHub sponsorship</a>
 <li>Click on the <code>Create</code> button</li>
 <li>Give it a name (eg <em>stash</em>) and a Password (you will need it later)</li>
 <li>Click <code>Next</code> until you are on the "Join groups" screen</li>
-<li>Assign the user to the "administrators" group (this will be removed later but is required by synology to be able to use SSH (I know, it's stupid) and complete the installation properly)</li>
+<li>Assign the user to the "administrators" group (this will be removed later, but is required by Synology to be able to use SSH (I know, it's stupid) and complete the installation properly)</li>
 <li>Click <code>Next</code> until you are on the "Assign shared folders permissions" screen</li>
 <li>Assign the Read/Write permission to your porn folder (the write permission is needed to allow the deletion of clips from the stash app)</li>
 <li>Click <code>Next</code> until you are on the "Assign application permissions" screen</li>
@@ -3318,7 +3314,7 @@ GitHub sponsorship</a>
 <li>Click <code>Next</code> until you can click on <code>Done</code></li>
 </ol>
 <h3 id="connect-to-your-nas">Connect to your NAS<a class="headerlink" href="#connect-to-your-nas" title="Permanent link">&para;</a></h3>
-<p>With your terminal, connect to your NAS using the newly created account that is part of the <em>administrators</em> group.</p>
+<p>In your terminal, connect to your NAS using the newly created account that is part of the <em>administrators</em> group.</p>
 <div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>stash@your_nas_hostname
 </code></pre></div>
 <h3 id="link-ffprobe-ffmpeg">Link ffprobe &amp; ffmpeg<a class="headerlink" href="#link-ffprobe-ffmpeg" title="Permanent link">&para;</a></h3>
@@ -3328,7 +3324,7 @@ sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>
 </code></pre></div>
 <h3 id="download-stash">Download Stash<a class="headerlink" href="#download-stash" title="Permanent link">&para;</a></h3>
 <p>Download the lastest version of Stash and its checksum from GitHub</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># find what architecture your synology is running on</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># find what architecture your Synology is running on</span>
 uname<span class="w"> </span>-m
 
 <span class="c1"># depending on the architecture, you&#39;ll have to download the right version of stash</span>
@@ -3359,7 +3355,7 @@ rm<span class="w"> </span>CHECKSUMS_SHA1
 <p>DO NOT run stash yet or it will generate a bunch of files/folders where we don't want them.</p>
 </div>
 <h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
-<p>Prepare a python environment (for scrapers and plugins)</p>
+<p>Prepare a Python environment (for scrapers and plugins)</p>
 <div class="highlight"><pre><span></span><code>python3.11<span class="w"> </span>-m<span class="w"> </span>ensurepip<span class="w"> </span>--Update
 python3.11<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>stash-env
 <span class="nb">source</span><span class="w"> </span>stash-env/bin/activate
@@ -3370,7 +3366,7 @@ pip3<span class="w"> </span>install<span class="w"> </span>pipreqs
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;PATH=/usr/local/bin:$PATH&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>.profile
 <span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;source stash-env/bin/activate&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>.profile
 </code></pre></div>
-<p>Create the service file by running <code>cat &gt; stash.service</code>, copy/pasting the following, and hitting CTRL+D when it's done to save the file (hit again if you are not back to the prompt) :</p>
+<p>Create the service file by running <code>cat &gt; stash.service</code>, copy/pasting the following, and hitting CTRL+D when it's done to save the file (hit again if you are not back to the prompt):</p>
 <div class="highlight"><pre><span></span><code><span class="k">[Unit]</span>
 <span class="na">Description</span><span class="o">=</span><span class="s">Run Stash at startup</span>
 <span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
@@ -3395,15 +3391,15 @@ pip3<span class="w"> </span>install<span class="w"> </span>pipreqs
 sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>stash.service
 </code></pre></div>
 <h3 id="verify-that-it-is-working">Verify that it is working<a class="headerlink" href="#verify-that-it-is-working" title="Permanent link">&para;</a></h3>
-<p>You can now access to stash by navigating to your NAS url on port 9999 : <code>http://nas-hostname:9999</code></p>
+<p>You can now access to stash by navigating to your NAS url on port 9999: <code>http://nas-hostname:9999</code></p>
 <h3 id="installing-scrapers-and-plugins">Installing Scrapers and Plugins<a class="headerlink" href="#installing-scrapers-and-plugins" title="Permanent link">&para;</a></h3>
-<p>Whenever you install a new python scraper or plugin, do the following from the <em>stash</em> user home directory</p>
+<p>Whenever you install a new Python scraper or plugin, do the following from the <em>stash</em> user home directory:</p>
 <div class="highlight"><pre><span></span><code>pipreqs<span class="w"> </span>.stash/.
 pip3<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>.stash/requirements.txt
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Using pipreqs allows to scan all scrapers and plugins installed and find dependencies that they require. You can do the same thing without pipreqs by going into each individual directory and run <code>pip3 install -r requirements.txt</code></p>
+<p>Using pipreqs allows to scan all scrapers and plugins installed and find dependencies that they require. You can do the same thing without <code>pipreqs</code> by going into each individual directory and run <code>pip3 install -r requirements.txt</code></p>
 </div>
 <h3 id="remove-stash-user-from-administrator-group">Remove stash user from administrator group<a class="headerlink" href="#remove-stash-user-from-administrator-group" title="Permanent link">&para;</a></h3>
 <ol>
@@ -3433,7 +3429,7 @@ pip3<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 14, 2024 11:27:50">November 14, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 25, 2025 17:52:26">April 25, 2025</span>
   </span>
 
     
