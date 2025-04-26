@@ -2,6 +2,17 @@ import * as utils from './utils'
 import { LocalCollection, LocalSidecar, RemotePlugin } from './types'
 import axios from 'axios'
 
+const authClient = axios.create({
+    baseURL: 'https://api.github.com',
+    headers: {
+        'User-Agent': "feederbox826/stash-docs-builder v1.0.0",
+        'Accept': 'application/vnd.github.object+json',
+        'Authorization': `Bearer ${process.env.BUILDER_GH_TOKEN}`
+    }
+})
+
+const statusIsOK = (status: number): boolean => status == 200 || status == 302 || status == 304
+
 export class Plugin {
     id: string // internal id of plugin
     name: string // display name of plugin
@@ -37,10 +48,10 @@ export class Plugin {
     async checkReadme(): Promise<void> {
         // test readme if undefined
         if (this.readme === undefined) {
-            this.readme = await axios.head(`https://github.com/${this.repo}/blob/${this.repo_path}/README.md`, {
-                validateStatus: status => status == 200 || status == 404
+            this.readme = await authClient.get(`/repos/${this.repo}/contents/${this.repo_path}/README.md`, {
+                validateStatus: status => statusIsOK(status) || status == 404
             })
-                .then(res => res.status == 200)
+                .then(res => statusIsOK(res.status))
         }
     }
 
