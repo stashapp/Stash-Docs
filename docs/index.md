@@ -8,7 +8,6 @@ hide:
 [![Weblate project translated](https://img.shields.io/weblate/progress/stash?server=https://translate.codeberg.org&style=for-the-badge&logo=weblate)](https://translate.codeberg.org/projects/stash/stash){:target="_blank"}
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/stashapp?logo=github&style=for-the-badge)](https://github.com/sponsors/stashapp){:target="_blank"}
 [![Open Collective backers](https://img.shields.io/opencollective/backers/stashapp?logo=opencollective&style=for-the-badge)](https://opencollective.com/stashapp){:target="_blank"}
-[![Matrix](https://img.shields.io/matrix/stashapp:unredacted.org?logo=matrix&server_fqdn=matrix.org&style=for-the-badge)](https://matrix.to/#/#stashapp:unredacted.org){:target="_blank"}
 [![Discord](https://img.shields.io/discord/559159668438728723.svg?logo=discord&style=for-the-badge)](https://discord.gg/2TsNFKt){:target="_blank"}
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/stashapp/stash?logo=github&style=for-the-badge)](https://github.com/stashapp/stash/releases/latest){:target="_blank"}
 

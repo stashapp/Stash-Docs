@@ -10,6 +10,5 @@ FAQ section is split into multiple categories for easier browsing, but if you ha
 
 If you can't find an answer to your question here, you can always ask for help from the community.
 
-- Join our [Matrix space](https://matrix.to/#/#stashapp:unredacted.org){:target="_blank"}
 - Join our [Discord server](https://discord.gg/2TsNFKt){:target="_blank"}
 - Start a [discussion on GitHub](https://github.com/stashapp/stash/discussions){:target="_blank"}

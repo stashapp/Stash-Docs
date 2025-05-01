@@ -185,7 +185,6 @@ nav:
       - Browse integrations: integrations/list.md
   - API: api.md
   - Community forum: https://discourse.stashapp.cc
-  - Matrix: matrix.md
   - Code of conduct: code-of-conduct.md
 
 extra:
@@ -198,8 +197,8 @@ extra:
       link: https://hub.docker.com/r/stashapp/stash
     - icon: simple/discord
       link: https://discord.gg/frQ7qBvB3S
-    - icon: simple/matrix
-      link: https://matrix.to/#/#stashapp:unredacted.org      
+    - icon: simple/discourse
+      link: https://discourse.stashapp.cc
     - icon: simple/lemmy
       link: https://discuss.online/c/stashapp
 
