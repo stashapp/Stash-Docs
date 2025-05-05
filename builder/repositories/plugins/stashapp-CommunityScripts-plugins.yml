@@ -62,6 +62,11 @@ scripts:
     readme: false
     author: "[Tweeticoats](https://github.com/Tweeticoats)"
 
+  - id: BulkImageScrape
+    readme: false
+    author: "[NotMyMainUser](https://github.com/NotMyMainUser)"
+    path: bulkImageScrape
+
   - id: chooseYourAdventurePlayer
     author: "[cj12312021](https://github.com/cj12312021)"
 
