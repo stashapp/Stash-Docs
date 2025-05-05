@@ -33,7 +33,7 @@ scripts:
   - id: date_parser
     path: DateParser
     readme: false
-    author: [HijackHornet](https://github.com/HijackHornet)
+    author: "[HijackHornet](https://github.com/HijackHornet)"
 
   - id: DupFileManager
     readme: "https://github.com/stashapp/CommunityScripts/blob/main/plugins/DupFileManager/README.md"
@@ -102,7 +102,7 @@ scripts:
 
   - id: discordPresence
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/discordPresence/README.md
-    author: [NotForMyCV](https://github.com/NotForMyCV)
+    author: "[NotForMyCV](https://github.com/NotForMyCV)"
 
   - id: dupeMarker
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/dupeMarker/README.md
