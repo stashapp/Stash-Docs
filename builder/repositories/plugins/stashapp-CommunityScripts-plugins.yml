@@ -63,7 +63,6 @@ scripts:
     author: "[Tweeticoats](https://github.com/Tweeticoats)"
 
   - id: BulkImageScrape
-    readme: false
     author: "[NotMyMainUser](https://github.com/NotMyMainUser)"
     path: bulkImageScrape
 
