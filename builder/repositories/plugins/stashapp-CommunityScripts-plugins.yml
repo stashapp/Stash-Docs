@@ -21,15 +21,22 @@ scripts:
   - id: AdulttimeInteractiveDL
     author: "[tooliload](https://github.com/tooliload)"
 
+  - id: AudioPlayer
+    author: "[d0t-d0t-d0t](https://github.com/d0t-d0t-d0t)"
+
+  - id: AudioPlayerLite
+    author: "[d0t-d0t-d0t](https://github.com/d0t-d0t-d0t)"
+
   - id: CommunityScriptsUILibrary
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/CommunityScriptsUILibrary/README.md
 
   - id: date_parser
     path: DateParser
     readme: false
-    author: HijackHornet
+    author: [HijackHornet](https://github.com/HijackHornet)
 
   - id: DupFileManager
+    readme: "https://github.com/stashapp/CommunityScripts/blob/main/plugins/DupFileManager/README.md"
     author: "[David-Maisonave](https://github.com/David-Maisonave)"
 
   - id: extraPerformerInfo
@@ -49,6 +56,7 @@ scripts:
   - id: renamefile
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/RenameFile/README.md
     author: "[David-Maisonave](https://github.com/David-Maisonave)"
+    path: RenameFile
 
   - id: TPDBMarkers
     readme: false
@@ -58,6 +66,11 @@ scripts:
     readme: false
     author: "[WeedLordVegeta420](https://github.com/WeedLordVegeta420)"
 
+  - id: deleter
+    readme: "https://github.com/stashapp/CommunityScripts/blob/main/plugins/additionalFilesDeleter/README.md"
+    author: "[elkorol](https://github.com/elkorol)"
+    path: additionalFilesDeleter
+
   - id: audio-transcodes
     readme: false
     author: "[Tweeticoats](https://github.com/Tweeticoats)"
@@ -65,9 +78,11 @@ scripts:
   - id: BulkImageScrape
     author: "[NotMyMainUser](https://github.com/NotMyMainUser)"
     path: bulkImageScrape
+    readme: "https://github.com/stashapp/CommunityScripts/blob/main/plugins/bulkImageScrape/README.md"
 
   - id: chooseYourAdventurePlayer
     author: "[cj12312021](https://github.com/cj12312021)"
+    readme: "https://github.com/stashapp/CommunityScripts/blob/main/plugins/chooseYourAdventurePlayer/README.md"
 
   - id: cjCardTweaks
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/cjCardTweaks/README.md
@@ -87,7 +102,7 @@ scripts:
 
   - id: discordPresence
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/discordPresence/README.md
-    author: NotForMyCV
+    author: [NotForMyCV](https://github.com/NotForMyCV)
 
   - id: dupeMarker
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/dupeMarker/README.md
@@ -95,6 +110,7 @@ scripts:
 
   - id: externalLinksEnhanced
     author: "[QxxxGit](https://github.com/QxxxGit)"
+    readme: "https://github.com/stashapp/CommunityScripts/blob/main/plugins/externalLinksEnhanced/README.md"
 
   - id: filenameParser
     readme: false
@@ -106,6 +122,7 @@ scripts:
 
   - id: hotCards
     author: "[HandyRandyx](https://github.com/HandyRandyx)"
+    readme: "https://github.com/stashapp/CommunityScripts/blob/main/plugins/hotCards/README.md"
 
   - id: markerDeleteButton
     readme: false
@@ -119,6 +136,10 @@ scripts:
     readme: false
     author: "[Tweeticoats](https://github.com/Tweeticoats)"
 
+  - id: nfoSceneParser
+    author: "[Gykes](https://github.com/Gykes)"
+    redame: "https://github.com/stashapp/CommunityScripts/blob/main/plugins/nfoSceneParser/README.md"
+
   - id: pathParser
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/pathParser/README.md
     author: "[ImJustMatt](https://github.com/ImJustMatt)"
@@ -128,7 +149,12 @@ scripts:
     readme: false
 
   - id: scenePageRememberStates
-    readme: false
+    author: "[elkorol](https://github.com/elkorol)"
+    readme: "https://github.com/stashapp/CommunityScripts/blob/main/plugins/scenePageRememberStates/README.md"
+
+  - id: setPerformersFromTags
+    author: "[Torrafox](https://github.com/Torrafox)"
+    readme: "https://github.com/stashapp/CommunityScripts/blob/main/plugins/setPerformersFromTags/README.md"
 
   - id: set_scene_cover
     path: setSceneCoverFromFile
@@ -150,6 +176,7 @@ scripts:
 
   - id: stashNotifications
     author: "[QxxxGit](https://github.com/QxxxGit)"
+    readme: "https://github.com/stashapp/CommunityScripts/blob/main/plugins/stashNotifications/README.md"
 
   - id: stash-realbooru
     path: stashRealbooru
@@ -183,6 +210,6 @@ scripts:
     readme: https://github.com/stashapp/CommunityScripts/blob/main/plugins/titleFromFilename/README.md
     author: "[bnkai](https://github.com/bnkai)"
 
-  - id: visage
-    readme: false
-    author: "[cc1234475](https://github.com/cc1234475)"
+  - id: videoChapterMarkers
+    readme: "https://github.com/stashapp/CommunityScripts/blob/main/plugins/videoChapterMarkers/README.md"
+    author: "[qxzg](https://github.com/qxzg)"
