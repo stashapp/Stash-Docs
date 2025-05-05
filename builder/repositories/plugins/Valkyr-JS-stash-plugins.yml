@@ -33,5 +33,5 @@ scripts:
   - id: ValkyrSceneCards
     readme: https://github.com/Valkyr-JS/ValkyrSceneCards/blob/main/README.md
     screenshots:
-     - /assets/plugins/ValkyrSceneCards/1.png
-     - /assets/plugins/ValkyrSceneCards/2.png
+     - /assets/plugins/ValkyrSceneCards/1.jpg
+     - /assets/plugins/ValkyrSceneCards/2.jpg

@@ -55,11 +55,11 @@ scripts:
       - "https://raw.githubusercontent.com/feederbox826/plugins/main/docs/studio-image-bg_after.png"
   - id: log-toast
     screenshots:
-      - "https://github.com/feederbox826/plugins/blob/main/docs/log-toast.png"
+      - "https://raw.githubusercontent.com/feederbox826/plugins/refs/heads/main/docs/log-toast.png"
   - id: tag-filter
     screenshots:
-      - "https://github.com/feederbox826/plugins/blob/main/docs/tag-filter-toggle.png"
-      - "https://github.com/feederbox826/plugins/blob/main/docs/tag-filter-demo.png"
+      - "https://raw.githubusercontent.com/feederbox826/plugins/refs/heads/main/docs/tag-filter-toggle.png"
+      - "https://raw.githubusercontent.com/feederbox826/plugins/refs/heads/main/docs/tag-filter-demo.png"
   - id: watched-video
     screenshots:
-      - "https://github.com/feederbox826/plugins/blob/main/docs/watched-video.png"
+      - "https://raw.githubusercontent.com/feederbox826/plugins/refs/heads/main/docs/watched-video.png"
