@@ -64,8 +64,8 @@ plugins:
       branch: main
       enabled: !ENV [CI, false]
   - glightbox
-  - social:
-      enabled: !ENV [CI, false]
+#  - social:
+#      enabled: !ENV [CI, false]
   - redirects:
       redirect_maps:
         'metadata-sources/list.md': 'https://stashapp.github.io/CommunityScrapers'
