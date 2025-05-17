@@ -33,7 +33,7 @@ title: Browse userscripts
 
 === "Author"
 
-    [Serechops](https://github.com/timo95){target=_blank}
+    [timo95](https://github.com/timo95){target=_blank}
 
 === "Screenshots"
 
