@@ -98,6 +98,8 @@ You may use several methods to safely access Stash from outside of your home net
 
 If you are an advanced user, and have secured your Stash instance behind an authwall provided by a reverse proxy or hosting solution, you may continue to use that. You simply have to edit `.stash/config/config.yml` and set `dangerous_allow_public_without_auth` to `true`. If you have already tripped the security feature, you will also have to remove the `security_tripwire_accessed_from_public_internet` key in order to allow Stash to serve requests.
 
+You will also have to disable login authentication by clearing the username/password values in **Security > Authentication > Credentials**.
+
 ## Migrating from Windows to Unix or vice verse
 
 !!! info
