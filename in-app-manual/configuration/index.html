@@ -3314,6 +3314,9 @@ When added through the config file directly special care must be given to double
 <h3 id="chrome-cdp-path">Chrome CDP path<a class="headerlink" href="#chrome-cdp-path" title="Permanent link">&para;</a></h3>
 <p>Some scrapers require a Chrome instance to function correctly. If left empty, stash will attempt to find the Chrome executable in the path environment, and will fail if it cannot find one.</p>
 <p><code>Chrome CDP path</code> can be set to a path to the chrome executable, or an http(s) address to remote chrome instance (for example: <code>http://localhost:9222/json/version</code>).</p>
+<blockquote>
+<p><strong>Important</strong>: As of Chrome 136 you need to specify <code>--user-data-dir</code> alongside <code>--remote-debugging-port</code>. Read more on their <a href="https://developer.chrome.com/blog/remote-debugging-port">official post</a>. </p>
+</blockquote>
 <h2 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permanent link">&para;</a></h2>
 <p>By default, stash is not configured with any sort of password protection. To enable password protection, both <code>Username</code> and <code>Password</code> must be populated. Note that when entering a new username and password where none was set previously, the system will immediately request these credentials to log you in.</p>
 <h2 id="api-key">API key<a class="headerlink" href="#api-key" title="Permanent link">&para;</a></h2>
