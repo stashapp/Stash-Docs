@@ -1372,6 +1372,15 @@ GitHub sponsorship</a>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#xpath-scraper-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      XPath scraper templates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#scraper-configuration-file-format" class="md-nav__link">
     <span class="md-ellipsis">
       Scraper configuration file format
@@ -1592,6 +1601,33 @@ GitHub sponsorship</a>
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gallery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#performer" class="md-nav__link">
     <span class="md-ellipsis">
       Performer
@@ -1622,24 +1658,6 @@ GitHub sponsorship</a>
   <a href="#tag" class="md-nav__link">
     <span class="md-ellipsis">
       Tag
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#group" class="md-nav__link">
-    <span class="md-ellipsis">
-      Group
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gallery" class="md-nav__link">
-    <span class="md-ellipsis">
-      Gallery
     </span>
   </a>
   
@@ -3061,6 +3079,15 @@ GitHub sponsorship</a>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#xpath-scraper-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      XPath scraper templates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#scraper-configuration-file-format" class="md-nav__link">
     <span class="md-ellipsis">
       Scraper configuration file format
@@ -3281,6 +3308,33 @@ GitHub sponsorship</a>
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gallery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#performer" class="md-nav__link">
     <span class="md-ellipsis">
       Performer
@@ -3311,24 +3365,6 @@ GitHub sponsorship</a>
   <a href="#tag" class="md-nav__link">
     <span class="md-ellipsis">
       Tag
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#group" class="md-nav__link">
-    <span class="md-ellipsis">
-      Group
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gallery" class="md-nav__link">
-    <span class="md-ellipsis">
-      Gallery
     </span>
   </a>
   
@@ -3373,6 +3409,8 @@ GitHub sponsorship</a>
 
 <h1 id="contributing-scrapers">Contributing Scrapers<a class="headerlink" href="#contributing-scrapers" title="Permanent link">&para;</a></h1>
 <p>Scrapers can be contributed to the community by creating a PR in <a href="https://github.com/stashapp/CommunityScrapers/pulls">this repository</a>.</p>
+<h2 id="xpath-scraper-templates">XPath scraper templates<a class="headerlink" href="#xpath-scraper-templates" title="Permanent link">&para;</a></h2>
+<p>The most basic XPath scraper templates are available on <a href="https://github.com/stashapp/CommunityScrapers/tree/master/templates">CommunityScrapers repository</a>.</p>
 <h2 id="scraper-configuration-file-format">Scraper configuration file format<a class="headerlink" href="#scraper-configuration-file-format" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;site&gt;</span>
 <span class="nt">performerByName</span><span class="p">:</span>
@@ -4145,74 +4183,107 @@ This means setting a <code>User-Agent</code> header from the scraper overrides t
 <span class="c1"># Last Updated April 7, 2021</span>
 </code></pre></div>
 <h2 id="object-fields">Object fields<a class="headerlink" href="#object-fields" title="Permanent link">&para;</a></h2>
-<h3 id="performer">Performer<a class="headerlink" href="#performer" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>Name
-Gender
-URL
-Twitter
-Instagram
-Birthdate
-DeathDate
-Ethnicity
-Country
-HairColor
-EyeColor
-Height
-Weight
-Measurements
-FakeTits
-CareerLength
-Tattoos
-Piercings
-Aliases
-Tags (see Tag fields)
-Image
-Details
-</code></pre></div>
-<p><em>Note:</em>  - <code>Gender</code> must be one of <code>male</code>, <code>female</code>, <code>transgender_male</code>, <code>transgender_female</code>, <code>intersex</code>, <code>non_binary</code> (case insensitive).</p>
-<h3 id="scene">Scene<a class="headerlink" href="#scene" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>Title
-Details
-Code
-Director
-URL
+<h3 id="gallery">Gallery<a class="headerlink" href="#gallery" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Code
 Date
-Image
+Details
+Performers (see Performer fields)
+Photographer
+Rating
 Studio (see Studio Fields)
-Groups (see Group Fields)
 Tags (see Tag fields)
-Performers (list of Performer fields)
+Title
+URLs
 </code></pre></div>
+<blockquote>
+<p><strong>Important</strong>: <code>Title</code> field is required. </p>
+</blockquote>
+<h3 id="group">Group<a class="headerlink" href="#group" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Aliases
+BackImage
+Date
+Director
+Duration
+FrontImage
+Name
+Rating
+Studio (see Studio Fields)
+Synopsis
+Tags (see Tag fields)
+URLs
+</code></pre></div>
+<blockquote>
+<p><strong>Important</strong>: <code>Name</code> field is required. </p>
+</blockquote>
+<h3 id="image">Image<a class="headerlink" href="#image" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Code
+Date
+Details
+Performers (see Performer fields)
+Photographer
+Rating
+Studio (see Studio Fields)
+Tags (see Tag fields)
+Title
+URLs
+</code></pre></div>
+<h3 id="performer">Performer<a class="headerlink" href="#performer" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Aliases
+Birthdate
+CareerLength
+Circumcised
+Country
+DeathDate
+Details
+Disambiguation
+Ethnicity
+EyeColor
+FakeTits
+Gender
+HairColor
+Height
+Measurements
+Name
+PenisLength
+Piercings
+Tags (see Tag fields)
+Tattoos
+URLs
+Weight
+</code></pre></div>
+<blockquote>
+<p><strong>Important</strong>: <code>Name</code> field is required. </p>
+<p><strong>Note:</strong>  - <code>Gender</code> must be one of <code>male</code>, <code>female</code>, <code>transgender_male</code>, <code>transgender_female</code>, <code>intersex</code>, <code>non_binary</code> (case insensitive).</p>
+</blockquote>
+<h3 id="scene">Scene<a class="headerlink" href="#scene" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Code
+Date
+Details
+Director
+Groups (see Group Fields)
+Image
+Performers (see Performer fields)
+Studio (see Studio Fields)
+Tags (see Tag fields)
+Title
+URLs
+</code></pre></div>
+<blockquote>
+<p><strong>Important</strong>: <code>Title</code> field is required only if fileless.</p>
+</blockquote>
 <h3 id="studio">Studio<a class="headerlink" href="#studio" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>Name
 URL
 </code></pre></div>
+<blockquote>
+<p><strong>Important</strong>: <code>Name</code> field is required. </p>
+</blockquote>
 <h3 id="tag">Tag<a class="headerlink" href="#tag" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>Name
 </code></pre></div>
-<h3 id="group">Group<a class="headerlink" href="#group" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>Name
-Aliases
-Duration
-Date
-Rating
-Director
-Studio
-Synopsis
-URL
-FrontImage
-BackImage
-</code></pre></div>
-<h3 id="gallery">Gallery<a class="headerlink" href="#gallery" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>Title
-Details
-URL
-Date
-Rating
-Studio (see Studio Fields)
-Tags (see Tag fields)
-Performers (list of Performer fields)
-</code></pre></div>
+<blockquote>
+<p><strong>Important</strong>: <code>Name</code> field is required. </p>
+</blockquote>
 
 
 
