@@ -2831,15 +2831,16 @@ GitHub sponsorship</a>
 
 <h1 id="captions">Captions<a class="headerlink" href="#captions" title="Permanent link">&para;</a></h1>
 <p>Stash supports captioning with SRT and VTT files.</p>
-<p>These files need to be named as follows:</p>
+<p>Captions will only be detected if they are located in the same folder as the corresponding scene file.</p>
+<p>Ensure the caption files follow these naming conventions:</p>
 <h2 id="scene">Scene<a class="headerlink" href="#scene" title="Permanent link">&para;</a></h2>
 <ul>
-<li>{scene_name}.{language_code}.ext</li>
-<li>{scene_name}.ext</li>
+<li>{scene_file_name}.{language_code}.ext</li>
+<li>{scene_file_name}.ext</li>
 </ul>
 <p>Where <code>{language_code}</code> is defined by the <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO-6399-1</a> (2 letters) standard and <code>ext</code> is the file extension. Captions files without a language code will be labeled as Unknown in the video player but will work fine.</p>
 <p>Scenes with captions can be filtered with the <code>captions</code> criterion.</p>
-<p><strong>Note:</strong> If the caption file was added after the scene was initially added during scan you will need to run a Selective Scan task for it to show up. </p>
+<p><strong>Note:</strong> If the caption file was added after the scene was initially added during scan, you will need to run a Selective Scan task for it to show up.</p>
 
 
 
