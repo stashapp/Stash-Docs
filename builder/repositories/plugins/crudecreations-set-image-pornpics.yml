@@ -1,0 +1,11 @@
+name: CrudeCreations/set-image-pornpics
+collection:
+  index: https://crudecreations.github.io/set-image-pornpics/stable/plugin.yaml
+  global_repo: CrudeCreations/set-image-pornpics
+  global_author: "[CrudeCreations](https://github.com/CrudeCreations)"
+  # exclusive since it's manually generated
+  exclusive: true
+
+scripts:
+  id: set-image-pornpics
+  readme: "https://github.com/CrudeCreations/set-image-pornpics/blob/main/README.md"
