@@ -6,5 +6,5 @@ collection:
   global_readme: "https://github.com/jsmthy/stash-plugins/blob/main/readme.md"
 
 scripts:
-  id: stashIngest
-  description: Moves identified scenes from the ".StashIngest" folder to the root "Scenes" folder.
+  - id: stashIngest
+    description: Moves identified scenes from the ".StashIngest" folder to the root "Scenes" folder.

@@ -5,4 +5,4 @@ collection:
   global_author: "[blackstar3000](https://github.com/blackstar3000)"
 
 scripts:
-  - id: StashNewScenesFilterButton
+  - id: stashNewScenesFilterButton
