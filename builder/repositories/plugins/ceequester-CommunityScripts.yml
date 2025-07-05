@@ -7,4 +7,4 @@ collection:
   exclusive: true
 
 scripts:
-  id: pathParser
+  - id: pathParser

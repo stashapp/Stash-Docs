@@ -7,5 +7,5 @@ collection:
   exclusive: true
 
 scripts:
-  id: set-image-pornpics
-  readme: "https://github.com/CrudeCreations/set-image-pornpics/blob/main/README.md"
+  - id: set-image-pornpics
+    readme: "https://github.com/CrudeCreations/set-image-pornpics/blob/main/README.md"
