@@ -1,0 +1,8 @@
+name: blackstar3000 plugins
+collection:
+  index: https://blackstar3000.github.io/stash-plugins-blackstar/main/index.yml
+  global_repo: blackstar3000/stash-plugins-blackstar
+  global_author: "[blackstar3000](https://github.com/blackstar3000)"
+
+scripts:
+  - id: StashNewScenesFilterButton

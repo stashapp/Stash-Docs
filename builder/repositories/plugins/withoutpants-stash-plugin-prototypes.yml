@@ -1,0 +1,20 @@
+name: WithoutPants stash plugin prototypes
+collection:
+  index: https://withoutpants.github.io/stash-plugin-prototypes/main/index.yml
+  global_repo: WithoutPants/stash-plugin-prototypes
+  global_author: "[WithoutPants](https://github.com/WithoutPants)"
+  global_readme: https://github.com/WithoutPants/stash-plugin-prototypes/blob/main/README.md
+
+scripts:
+  - id: embeddedScenePlayer
+    screenshots:
+      - https://raw.githubusercontent.com/WithoutPants/stash-plugin-prototypes/refs/heads/main/images/embed-scene-player.png
+      - https://raw.githubusercontent.com/WithoutPants/stash-plugin-prototypes/refs/heads/main/images/embed-scene-player-settings.png
+  - id: quickSentiment
+    screenshots:
+      - https://raw.githubusercontent.com/WithoutPants/stash-plugin-prototypes/refs/heads/main/images/quick-sentiment.png
+  - id: shelve
+  - id: shelveUI
+    screenshots:
+      - https://raw.githubusercontent.com/WithoutPants/stash-plugin-prototypes/refs/heads/main/images/shelve-ui.png
+
