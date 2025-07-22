@@ -1,0 +1,9 @@
+collection:
+  index: https://stash-of-awesomeness.github.io/stash-plugins/main/index.yml
+  global_repo: stash-of-awesomeness/stash-plugins
+  global_author: "[stash-of-awesomeness](https://github.com/stash-of-awesomeness)"
+  base_path: main/plugins
+
+scripts:
+# id only
+  - id: rename-file-on-update
