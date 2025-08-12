@@ -12,10 +12,9 @@ FansDB is a community-driven metadata database focused on adult content platform
 
 JAVStash is a community-driven metadata database focused on Japanese Adult Video content and their original metadata in Japanese.
 
-[:octicons-link-16: Website](https://javstash.org){:target="_blank"} | [:fontawesome-regular-file-lines: Guidelines](https://discord.com/channels/1270524250213842975/1270531937785872504){:target="_blank"}[^1] | [:simple-discord: Discord](https://discord.gg/jq2anJbxDb){:target="_blank"} | [:material-api: Endpoint `https://javstash.org/graphql`]() | [:fontawesome-solid-unlock-keyhole: Join](https://discord.com/channels/1270524250213842975/1271147030496018472){:target="_blank"}[^2]
+[:octicons-link-16: Website](https://javstash.org){:target="_blank"} | [:simple-discord: Discord](https://discord.gg/jq2anJbxDb){:target="_blank"} | [:material-api: Endpoint `https://javstash.org/graphql`]() | [:fontawesome-solid-unlock-keyhole: Join](https://discord.com/channels/1270524250213842975/1271147030496018472){:target="_blank"}[^1]
 
 [^1]: Link leads to a private Discord server. If you are getting that the link is invalid, make sure to join the private Discord server first!
-[^2]: Link leads to a private Discord server. If you are getting that the link is invalid, make sure to join the private Discord server first!
 
 ### PMV Stash
 
