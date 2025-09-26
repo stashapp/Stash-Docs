@@ -1620,6 +1620,30 @@ GitHub sponsorship</a>
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pluginapiutilsinteractiveutils" class="md-nav__link">
+    <span class="md-ellipsis">
+      PluginApi.utils.InteractiveUtils
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PluginApi.utils.InteractiveUtils">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3096,6 +3120,30 @@ GitHub sponsorship</a>
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pluginapiutilsinteractiveutils" class="md-nav__link">
+    <span class="md-ellipsis">
+      PluginApi.utils.InteractiveUtils
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PluginApi.utils.InteractiveUtils">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3307,7 +3355,7 @@ GitHub sponsorship</a>
 <h3 id="components"><code>components</code><a class="headerlink" href="#components" title="Permanent link">¶</a></h3>
 <p>This namespace contains all of the components available to plugins. These include a selection of core components and components registered using <code>PluginApi.register.component</code>.</p>
 <h3 id="utils"><code>utils</code><a class="headerlink" href="#utils" title="Permanent link">¶</a></h3>
-<p>This namespace provides access to the <code>NavUtils</code> and <code>StashService</code> namespaces. It also provides access to the <code>loadComponents</code> method.</p>
+<p>This namespace provides access to the <code>NavUtils</code> , <code>StashService</code> and <code>InteractiveUtils</code> namespaces. It also provides access to the <code>loadComponents</code> method.</p>
 <h4 id="pluginapiutilsloadcomponents"><code>PluginApi.utils.loadComponents</code><a class="headerlink" href="#pluginapiutilsloadcomponents" title="Permanent link">¶</a></h4>
 <p>Due to code splitting, some components may not be loaded and available when a plugin page is rendered. <code>loadComponents</code> loads all of the components that a plugin page may require.</p>
 <p>In general, <code>PluginApi.hooks.useLoadComponents</code> hook should be used instead.</p>
@@ -3328,6 +3376,65 @@ GitHub sponsorship</a>
 </tbody>
 </table>
 <p>Returns a <code>Promise&lt;void&gt;</code> that resolves when all of the components have been loaded.</p>
+<h4 id="pluginapiutilsinteractiveutils"><code>PluginApi.utils.InteractiveUtils</code><a class="headerlink" href="#pluginapiutilsinteractiveutils" title="Permanent link">¶</a></h4>
+<p>This namespace provides access to <code>interactiveClientProvider</code> and <code>getPlayer</code>
+ - <code>getPlayer</code> returns the current <code>videojs</code> player object
+ - <code>interactiveClientProvider</code> takes <code>IInteractiveClientProvider</code> which allows a developer to hook into the lifecycle of funscripts.
+</p><div class="highlight"><pre><span></span><code><span class="w">  </span><span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">IDeviceSettings</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">connectionKey</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">scriptOffset</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">estimatedServerTimeOffset?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">useStashHostedFunscript?</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+<span class="w">  </span><span class="p">[</span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">unknown</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">IInteractiveClientProviderOptions</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">handyKey</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">scriptOffset</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">defaultClientProvider?</span><span class="o">:</span><span class="w"> </span><span class="kt">IInteractiveClientProvider</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">stashConfig?</span><span class="o">:</span><span class="w"> </span><span class="kt">GQL.ConfigDataFragment</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">IInteractiveClientProvider</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="p">(</span><span class="nx">options</span><span class="o">:</span><span class="w"> </span><span class="kt">IInteractiveClientProviderOptions</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">IInteractiveClient</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Interface that is used for InteractiveProvider</span>
+<span class="cm"> */</span>
+<span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">IInteractiveClient</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">connect</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">handyKey</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">uploadScript</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">funscriptPath</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">apiKey?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">sync</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">configure</span><span class="p">(</span><span class="nx">config</span><span class="o">:</span><span class="w"> </span><span class="kt">Partial</span><span class="o">&lt;</span><span class="nx">IDeviceSettings</span><span class="o">&gt;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">play</span><span class="p">(</span><span class="nx">position</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">pause</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">ensurePlaying</span><span class="p">(</span><span class="nx">position</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">setLooping</span><span class="p">(</span><span class="nx">looping</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="w">  </span><span class="k">readonly</span><span class="w"> </span><span class="nx">connected</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+<span class="w">  </span><span class="k">readonly</span><span class="w"> </span><span class="nx">playing</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p></p>
+<h5 id="example">Example<a class="headerlink" href="#example" title="Permanent link">¶</a></h5>
+<p>For instance say I wanted to add extra logging when <code>IInteractiveClient.connect()</code> is called.
+In my plugin you would install your own client provider as seen below</p>
+<div class="highlight"><pre><span></span><code><span class="nx">InteractiveUtils</span><span class="p">.</span><span class="nx">interactiveClientProvider</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="nx">opts</span>
+<span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">opts</span><span class="p">.</span><span class="nx">defaultClientProvider</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s1">'invalid setup'</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">opts</span><span class="p">.</span><span class="nx">defaultClientProvider</span><span class="p">(</span><span class="nx">opts</span><span class="p">);</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">connect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'patching connect method'</span><span class="p">);</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nx">connect</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">client</span><span class="p">);</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">client</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
 <h3 id="hooks"><code>hooks</code><a class="headerlink" href="#hooks" title="Permanent link">¶</a></h3>
 <p>This namespace provides access to the following core utility hooks:
 - <code>useGalleryLightbox</code>
