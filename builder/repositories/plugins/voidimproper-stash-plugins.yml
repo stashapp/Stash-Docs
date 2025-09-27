@@ -1,0 +1,8 @@
+name: Voidimproper stash plugins
+collection:
+  index: https://voidimproper.github.io/stash-plugins/main/index.yml
+  global_repo: Voidimproper/stash-plugins
+
+scripts:
+  id: gallery_linker
+  path: GalleryLinker
