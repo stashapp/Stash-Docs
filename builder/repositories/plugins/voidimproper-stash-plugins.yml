@@ -4,5 +4,5 @@ collection:
   global_repo: Voidimproper/stash-plugins
 
 scripts:
-  id: gallery_linker
-  path: GalleryLinker
+  - id: gallery_linker
+    path: GalleryLinker

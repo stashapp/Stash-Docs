@@ -4,4 +4,4 @@ collection:
   global_repo: Lurking987/stash-plugins
 
 scripts:
-  id: Find Marker For Tag Images
+  - id: Find Marker For Tag Images

@@ -5,5 +5,5 @@ collection:
   base_path: master/plugins
 
 scripts:
-  id: FastTagger
-  readme: "https://github.com/spaceyuck/stash-fasttagger/blob/master/README.md"
+  - id: FastTagger
+    readme: "https://github.com/spaceyuck/stash-fasttagger/blob/master/README.md"
