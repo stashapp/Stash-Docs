@@ -31,7 +31,6 @@ scripts:
 
 # id only
   - id: avg-rating
-  - id: deletefp
   - id: edit-unorganized
   - id: filepath-copy
   - id: log-console
