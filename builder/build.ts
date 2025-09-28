@@ -41,8 +41,8 @@ async function searchRepository(pathName: string = "plugins"): Promise<Plugin[]>
 
 function printPlugins(outputName: string, sortedPlugins: Plugin[]) {
     // create folder if not exists
-    if (!fs.existsSync(`./dist`)) fs.mkdirSync(`./dist`)
-    if (!fs.existsSync(`./dist/${outputName}`)) fs.mkdirSync(`./dist/${outputName}`)
+    if (!fs.existsSync(`./dist`)) fs.mkdirSync(`./dist`, { recursive: true })
+    if (!fs.existsSync(`./dist/${outputName}`)) fs.mkdirSync(`./dist/${outputName}`, { recursive: true })
     // print to file
     const outputPath = `./dist/${outputName}/list.md`
     const stream = fs.createWriteStream(outputPath)
