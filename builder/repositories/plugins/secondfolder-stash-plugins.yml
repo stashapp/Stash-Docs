@@ -1,0 +1,15 @@
+name: secondfolder plugins
+collection:
+  index: https://secondfolder.github.io/stash-plugins/stable/index.yml
+  global_repo: secondfolder/stash-plugins
+  global_author: "[secondfolder](https://github.com/secondfolder)"
+  base_path: main/plugins
+
+scripts:
+  - id: stash-tv
+    path: stash-tv
+    description: "A TikTok-like interface for Stash. Forked from Stash Reels."
+    readme: https://github.com/secondfolder/stash-tv/blob/main/README.md
+    author: Second Folder
+    screenshots:
+      - https://raw.githubusercontent.com/secondfolder/stash-tv/main/docs/stash-tv-screenshot.png
