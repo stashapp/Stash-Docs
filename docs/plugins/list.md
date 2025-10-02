@@ -11,6 +11,7 @@
 1. [https://raw.githubusercontent.com/d0t-d0t-d0t/stash-repo/refs/heads/dist/index.yml](https://raw.githubusercontent.com/d0t-d0t-d0t/stash-repo/refs/heads/dist/index.yml)
 1. [https://rosa-umineko.github.io/CommunityScripts/stable/index.yml](https://rosa-umineko.github.io/CommunityScripts/stable/index.yml)
 1. [https://s3l3ct3dloves.github.io/stashPlugins/stable/index.yml](https://s3l3ct3dloves.github.io/stashPlugins/stable/index.yml)
+1. [https://secondfolder.github.io/stash-plugins/stable/index.yml](https://secondfolder.github.io/stash-plugins/stable/index.yml)
 1. [https://serechops.github.io/Serechops-Stash/index.yml](https://serechops.github.io/Serechops-Stash/index.yml)
 1. [https://stashapp.github.io/CommunityScripts/stable/index.yml](https://stashapp.github.io/CommunityScripts/stable/index.yml)
 1. [https://stg-annon.github.io/StashScripts/stable/index.yml](https://stg-annon.github.io/StashScripts/stable/index.yml)
@@ -3102,6 +3103,29 @@
 
 === "Screenshots"
     
+
+### [Stash TV](https://github.com/secondfolder/stash-plugins/tree/main/plugins/stash-tv){target=_blank}
+
+=== "Description"
+
+    A TikTok-like interface for Stash. Forked from Stash Reels.
+
+=== "Source URL"
+
+    ```
+    https://secondfolder.github.io/stash-plugins/stable/index.yml
+    ```
+
+=== "README"
+
+    View [README](https://github.com/secondfolder/stash-tv/blob/main/README.md){target=_blank}
+
+=== "Author"
+
+    Second Folder
+
+=== "Screenshots"
+    ![Stash TV screenshot](https://raw.githubusercontent.com/secondfolder/stash-tv/main/docs/stash-tv-screenshot.png){ loading=lazy }  
 
 ### [Stash UI Plugin Example](https://github.com/Serechops/Serechops-Stash/tree/main/plugins/stashUIPluginExample){target=_blank}
 
