@@ -1,4 +1,5 @@
 name: ci 
+
 on:
   push:
     branches:
@@ -6,25 +7,33 @@ on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
+
 permissions:
   contents: write
+
 jobs:
   deploy:
+    if: github.repository == 'stashapp/Stash-Docs'  # Replace with your repository details
     runs-on: ubuntu-latest
     env:
       BUILDER_GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
+
       - uses: actions/setup-node@v4
+
       - name: "Builder setup"
         run: |
           npm i
@@ -34,6 +43,7 @@ jobs:
           ts-node build.ts
           cp dist/plugins/* ../docs/plugins/list.md
           cp dist/themes/* ../docs/themes/list.md
+
       - run: pip install \ 
                mkdocs-material=="9.*" \
                mkdocs-rss-plugin \
@@ -42,4 +52,5 @@ jobs:
                mkdocs-glightbox \
                mkdocs-material[imaging] \
                mkdocs-redirects
+
       - run: mkdocs gh-deploy --force
