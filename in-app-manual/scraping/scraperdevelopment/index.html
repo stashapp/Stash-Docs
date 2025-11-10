@@ -17,7 +17,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
@@ -1481,6 +1481,39 @@ GitHub sponsorship</a>
       Fixed attribute values
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-url-placeholders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input URL placeholders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Input URL placeholders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inputurl" class="md-nav__link">
+    <span class="md-ellipsis">
+      {inputURL}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputhostname" class="md-nav__link">
+    <span class="md-ellipsis">
+      {inputHostname}
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -3192,6 +3225,39 @@ GitHub sponsorship</a>
 </li>
         
           <li class="md-nav__item">
+  <a href="#input-url-placeholders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input URL placeholders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Input URL placeholders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inputurl" class="md-nav__link">
+    <span class="md-ellipsis">
+      {inputURL}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputhostname" class="md-nav__link">
+    <span class="md-ellipsis">
+      {inputHostname}
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#common-fragments" class="md-nav__link">
     <span class="md-ellipsis">
       Common fragments
@@ -3744,9 +3810,41 @@ GitHub sponsorship</a>
 <h3 id="fixed-attribute-values">Fixed attribute values<a class="headerlink" href="#fixed-attribute-values" title="Permanent link">¶</a></h3>
 <p>Alternatively, an attribute value may be set to a fixed value, rather than scraping it from the webpage. This can be done by replacing <code>selector</code> with <code>fixed</code>. For example:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">performer</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">Gender</span><span class="p">:</span><span class="w"> </span>
+<span class="w">  </span><span class="nt">Gender</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">fixed</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Female</span>
 </code></pre></div>
+<h3 id="input-url-placeholders">Input URL placeholders<a class="headerlink" href="#input-url-placeholders" title="Permanent link">¶</a></h3>
+<p>The <code>{inputURL}</code> and <code>{inputHostname}</code> placeholders can be used in both <code>fixed</code> values and <code>selector</code> expressions to access information about the original URL that was used to scrape the content.</p>
+<h4 id="inputurl">{inputURL}<a class="headerlink" href="#inputurl" title="Permanent link">¶</a></h4>
+<p>The <code>{inputURL}</code> placeholder provides access to the full URL. This is useful when you want to return or reference the source URL as part of the scraped data.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">scene</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">URL</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fixed</span><span class="p">:</span><span class="w"> </span><span class="s">"{inputURL}"</span>
+<span class="w">  </span><span class="nt">Title</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">selector</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">//h1[@class="title"]</span>
+</code></pre></div>
+<p>When scraping from <code>https://example.com/scene/12345</code>, the <code>{inputURL}</code> placeholder will be replaced with <code>https://example.com/scene/12345</code>.</p>
+<h4 id="inputhostname">{inputHostname}<a class="headerlink" href="#inputhostname" title="Permanent link">¶</a></h4>
+<p>The <code>{inputHostname}</code> placeholder extracts just the hostname from the URL. This is useful when you need to reference the domain without manually parsing the URL.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">scene</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">Studio</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fixed</span><span class="p">:</span><span class="w"> </span><span class="s">"{inputHostname}"</span>
+<span class="w">  </span><span class="nt">Details</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">selector</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">//div[@data-domain="{inputHostname}"]//p[@class="description"]</span>
+</code></pre></div>
+<p>When scraping from <code>https://example.com/scene/12345</code>, the <code>{inputHostname}</code> placeholder will be replaced with <code>example.com</code>.</p>
+<p>These placeholders can also be used within selectors for more advanced use cases:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">scene</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">Details</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">selector</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">//div[@data-url="{inputURL}"]//p[@class="description"]</span>
+<span class="w">  </span><span class="nt">Site</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">selector</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">//div[@data-host="{inputHostname}"]//span[@class="site-name"]</span>
+</code></pre></div>
+<blockquote>
+<p><strong>Note:</strong> These placeholders represent the actual URL used to fetch the content, after any URL replacements have been applied.</p>
+</blockquote>
 <h3 id="common-fragments">Common fragments<a class="headerlink" href="#common-fragments" title="Permanent link">¶</a></h3>
 <p>The <code>common</code> field is used to configure selector fragments that can be referenced in the selector strings. These are key-value pairs where the key is the string to reference the fragment, and the value is the string that the fragment will be replaced with. For example:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">common</span><span class="p">:</span>
