@@ -4680,7 +4680,11 @@ This means setting a <code>User-Agent</code> header from the scraper overrides t
 <span class="w">        </span><span class="nt">URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$performer/@href</span>
 <span class="w">      </span><span class="nt">Studio</span><span class="p">:</span>
 <span class="w">        </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$studio</span>
-<span class="w">        </span><span class="nt">URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$studio/@href</span><span class="w">    </span>
+<span class="w">        </span><span class="nt">URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$studio/@href</span>
+<span class="w">        </span><span class="nt">Details</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">//div[@class="studioDescription"]</span>
+<span class="w">        </span><span class="nt">Aliases</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">//div[@class="studioAliases"]/span</span>
+<span class="w">        </span><span class="nt">Tags</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">//div[@class="studioTags"]/a</span><span class="w">    </span>
 </code></pre></div>
 <p>See also <a href="https://github.com/stashapp/stash/pull/333">#333</a> for more examples.</p>
 <h3 id="json-scraper-example">JSON scraper example<a class="headerlink" href="#json-scraper-example" title="Permanent link">¶</a></h3>
@@ -4758,6 +4762,11 @@ This means setting a <code>User-Agent</code> header from the scraper overrides t
 <span class="w">        </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data.performers.#.name</span>
 <span class="w">      </span><span class="nt">Studio</span><span class="p">:</span>
 <span class="w">        </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data.site.name</span>
+<span class="w">        </span><span class="nt">URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data.site.url</span>
+<span class="w">        </span><span class="nt">Details</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data.site.description</span>
+<span class="w">        </span><span class="nt">Aliases</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data.site.aliases</span>
+<span class="w">        </span><span class="nt">Tags</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data.site.tags.#.name</span>
 <span class="w">      </span><span class="nt">Tags</span><span class="p">:</span>
 <span class="w">        </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data.tags.#.tag</span>
 
@@ -4775,6 +4784,11 @@ This means setting a <code>User-Agent</code> header from the scraper overrides t
 <span class="w">        </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$data.performers.#.name</span>
 <span class="w">      </span><span class="nt">Studio</span><span class="p">:</span>
 <span class="w">        </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$data.site.name</span>
+<span class="w">        </span><span class="nt">URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$data.site.url</span>
+<span class="w">        </span><span class="nt">Details</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$data.site.description</span>
+<span class="w">        </span><span class="nt">Aliases</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$data.site.aliases</span>
+<span class="w">        </span><span class="nt">Tags</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$data.site.tags.#.name</span>
 <span class="w">      </span><span class="nt">Tags</span><span class="p">:</span>
 <span class="w">        </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$data.tags.#.tag</span>
 <span class="nt">driver</span><span class="p">:</span>
@@ -4875,7 +4889,10 @@ URLs
 <p><strong>Important</strong>: <code>Title</code> field is required only if fileless.</p>
 </blockquote>
 <h3 id="studio">Studio<a class="headerlink" href="#studio" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code>Name
+<div class="highlight"><pre><span></span><code>Aliases
+Details
+Name
+Tags (see Tag fields)
 URL
 </code></pre></div>
 <blockquote>
