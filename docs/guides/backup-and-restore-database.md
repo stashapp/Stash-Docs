@@ -6,7 +6,7 @@ title: Backup and restore database
 
 Always use the UI to create a backup of the database. As with all live databases **DO NOT** copy manually the database file as a means of backup.
 
-Stash uses an sqlite database with `WAL` mode enabled. This practically means that along with the main db file `stash.go-sqlite` there can be a `-shm` and a `-wal` file present ([more info](https://sqlite.org/wal.html){:target="_blank"}). Even stopping Stash might leave some of these index files present so again **DO NOT** manually copy the database file.
+Stash uses an sqlite database with `WAL` mode enabled. This practically means that along with the main db file `stash-go.sqlite` there can be a `-shm` and a `-wal` file present ([more info](https://sqlite.org/wal.html){:target="_blank"}). Even stopping Stash might leave some of these index files present so again **DO NOT** manually copy the database file.
 
 The **Backup** or **Download Backup** tasks are the proper way to create a backup file.
 
