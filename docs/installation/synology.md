@@ -3,8 +3,7 @@ title: Synology
 icon: simple/synology
 ---
 
-!!! info
-    Written by [Muldec](https://github.com/Muldec){:target="_blank"}.
+!!! info "Writen by [Muldec](https://github.com/Muldec){:target="_blank"}."
 
 ## Foreword
 

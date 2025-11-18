@@ -39,3 +39,15 @@ icon: fontawesome/brands/windows
 1. Stop Stash server.
 2. Delete the `stash-win.exe` binary file.
 3. Delete `%userprofile%/.stash` folder.
+
+## Install via Scoop
+
+!!! important "Disclaimer"
+    The package is not managed by stashapp team. 
+
+[Scoop](https://scoop.sh/){:target="_blank"} is command-line package manager for Windows. 
+
+Stash is available via [Scoop Extras](https://github.com/ScoopInstaller/Extras){:target="_blank"} bucket. 
+
+1. Add extras bucket `scoop bucket add extras`.
+2. Run `scoop install stash`.

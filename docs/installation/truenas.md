@@ -1,12 +1,23 @@
 ---
-title: FreeNAS/TrueNAS
+title: TrueNAS
 icon: simple/truenas
 ---
 
-## TrueNAS Scale
+## TrueNAS Community Edition
 
 !!! info 
-    The following step by step was tested using TrueNAS Scale Cobia (23.10.1.3).
+    No dedicated installation guide is available at the moment. Sorry!
+
+Follow TrueNAS official documentation: [https://www.truenas.com/docs/](https://www.truenas.com/docs/){:target="_blank"}
+
+## TrueNAS Scale (via TrueCharts)
+
+!!! important
+    TrueCharts last supported version is Dragonfish (24.04.2.3).  
+    Deprecation of TrueNAS SCALE Apps: [https://trueforge.org/news/scale-deprecation/](https://trueforge.org/news/scale-deprecation/){:target="_blank"}
+
+!!! info 
+    The following step by step was tested using TrueNAS Scale Cobia (23.10.1.3). 
 
 ### Installation
 
@@ -33,13 +44,12 @@ After that, click Install.
 Installation will take a few minutes. After the stash appears as "Running", click "Open" on the right and continue with the stash configuration.
 When entering the folder that contains its contents, remember to search for the same name you entered previously. In the case of this guide, the name was /stash-content.
 
-## TrueNAS Core
+## TrueNAS Legacy (CORE)
 
-!!! info
-    We are now offering pre-compiled FreeBSD binary. You can grab it from [release page](https://github.com/stashapp/stash/releases/latest){target="_blank"}.
+!!! warning "Maintenance mode"
+    TrueNAS CORE has transitioned to maintenance mode and will receive security patches only moving forward. No new features or functionality enhancements will be developed.
 
-!!! warning
-    The install guide below was reported as outdated.
+    Migration Guide From TrueNAS CORE to TrueNAS Community Edition: [https://www.truenas.com/docs/scale/25.04/gettingstarted/migrate/](https://www.truenas.com/docs/scale/25.04/gettingstarted/migrate/){:target="_blank"}
 
 ### Caveats and assumptions
 

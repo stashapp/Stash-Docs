@@ -118,7 +118,7 @@ nav:
     - Linux: installation/linux.md
     - Docker: installation/docker.md
     - Synology: installation/synology.md
-    - FreeNAS/TrueNAS: installation/freenas-truenas.md
+    - TrueNAS: installation/truenas.md
     - Unraid: installation/unraid.md
     - Getting started: 
       - First steps: getting-started/first-steps.md
