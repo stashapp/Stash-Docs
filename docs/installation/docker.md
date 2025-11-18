@@ -202,7 +202,7 @@ ENTRYPOINT ["docker-entrypoint.sh", "stash"]
 !!! important "Disclaimer"
     The images are not managed by stashapp team.
 
-### feederbox826/stash-s6
+### feederbox826
 
 - :fontawesome-brands-github: Source repository: [https://github.com/feederbox826/stash-s6](https://github.com/feederbox826/stash-s6){:target="_blank"}
 - :fontawesome-brands-docker: DockerHub image: [https://hub.docker.com/r/feederbox826/stash-s6](https://hub.docker.com/r/feederbox826/stash-s6){:target="_blank"}
@@ -213,7 +213,7 @@ ENTRYPOINT ["docker-entrypoint.sh", "stash"]
 - Hardware acceleration support
 - [uv](https://pypi.org/project/uv/){:target="_blank"} Python manager
 
-### nerethos/stash
+### nerethos
 
 - :fontawesome-brands-github: Source repository: [https://github.com/nerethos/docker-stash](https://github.com/nerethos/docker-stash)
 {:target="_blank"}
