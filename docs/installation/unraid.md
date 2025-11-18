@@ -16,7 +16,7 @@ icon: simple/unraid
 
     Stash is a Go app which organizes and serves your NSFW adult media content.
 
-    [:octicons-link-16: Source](https://github.com/stashapp/stash){:target="_blank"} ⋅ [:fontawesome-brands-docker: DockerHub](https://hub.docker.com/r/stashapp/stash/){:target="_blank"} ⋅ [:fontawesome-solid-file-code: Template](https://github.com/CorneliousJD/Docker-Templates/blob/master/stash.xml) ⋅ [:material-help-circle: Support](https://forums.unraid.net/topic/90861-support-stash-corneliousjd-repo/){:target="_blank"}
+    [:octicons-link-16: Source](https://github.com/stashapp/stash){:target="_blank"} ⋅ [:fontawesome-brands-docker: DockerHub](https://hub.docker.com/r/stashapp/stash/){:target="_blank"} ⋅ [:fontawesome-solid-file-code: Template](https://github.com/CorneliousJD/Docker-Templates/blob/master/stash.xml){:target="_blank"} ⋅ [:material-help-circle: Support](https://forums.unraid.net/topic/90861-support-stash-corneliousjd-repo/){:target="_blank"}
 
 </div>
 
@@ -30,7 +30,7 @@ icon: simple/unraid
 
     Modification of the stashapp/stash porn organizer with Hardware Acceleration and python dependency intallation 
 
-    [:octicons-link-16: Source](https://github.com/stashapp/stash){:target="_blank"} ⋅ [:octicons-container-16: GitHub](https://github.com/feederbox826/stash-s6/pkgs/container/stash-s6){:target="_blank"} ⋅ [:fontawesome-solid-file-code: Template](https://github.com/feederbox826/unraid-templates/blob/main/feederbox826/stash-s6.xml) ⋅ [:material-help-circle: Support](https://forums.unraid.net/topic/177317-s6){:target="_blank"}
+    [:octicons-link-16: Source](https://github.com/stashapp/stash){:target="_blank"} ⋅ [:octicons-container-16: GitHub](https://github.com/feederbox826/stash-s6/pkgs/container/stash-s6){:target="_blank"} ⋅ [:fontawesome-solid-file-code: Template](https://github.com/feederbox826/unraid-templates/blob/main/feederbox826/stash-s6.xml){:target="_blank"} ⋅ [:material-help-circle: Support](https://forums.unraid.net/topic/177317-s6){:target="_blank"}
 
 </div>
 
