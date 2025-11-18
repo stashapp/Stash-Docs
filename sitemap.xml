@@ -173,10 +173,6 @@
          <lastmod>2025-11-18</lastmod>
     </url>
     <url>
-         <loc>https://docs.stashapp.cc/installation/freenas-truenas/</loc>
-         <lastmod>2025-11-18</lastmod>
-    </url>
-    <url>
          <loc>https://docs.stashapp.cc/installation/linux/</loc>
          <lastmod>2025-11-18</lastmod>
     </url>
@@ -186,6 +182,10 @@
     </url>
     <url>
          <loc>https://docs.stashapp.cc/installation/synology/</loc>
+         <lastmod>2025-11-18</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.stashapp.cc/installation/truenas/</loc>
          <lastmod>2025-11-18</lastmod>
     </url>
     <url>
