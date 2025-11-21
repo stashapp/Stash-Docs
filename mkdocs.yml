@@ -59,10 +59,6 @@ plugins:
   - search
   - git-revision-date-localized:
       enable_creation_date: true
-  - git-committers:
-      repository: stashapp/Stash-Docs
-      branch: main
-      enabled: !ENV [CI, false]
   - glightbox
   - social:
       enabled: !ENV [CI, false]
