@@ -101,6 +101,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#types" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -2200,8 +2205,6 @@ GitHub sponsorship</a>
       
         
       
-        
-      
     
     
     
@@ -2273,7 +2276,7 @@ GitHub sponsorship</a>
   <span class="md-ellipsis">
     
   
-    stash-box instances
+    Stash-box instances
   
 
     
@@ -2302,36 +2305,6 @@ GitHub sponsorship</a>
     
   
     Scrapers
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="list/" class="md-nav__link">
-        
-  
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"></path></svg>
-  
-  <span class="md-ellipsis">
-    
-  
-    Browse scrapers
   
 
     
@@ -3120,6 +3093,64 @@ GitHub sponsorship</a>
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stash-box-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stash-box instances
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrapers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scrapers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scraper-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scraper sources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3153,11 +3184,21 @@ GitHub sponsorship</a>
 
   <h1>Metadata sources</h1>
 
-<p>There are several ways to get metadata into Stash.</p>
+<p>There are several ways to get metadata into Stash. Choose a type based on how much automation, coverage, and control you need.</p>
 <p>You can configure your metadata sources under <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M195.1 9.5c3-14.8 16.1-25.5 31.3-25.5h59.8c15.2 0 28.3 10.7 31.3 25.5l14.5 70c14.1 6 27.3 13.7 39.3 22.8l67.8-22.5c14.4-4.8 30.2 1.2 37.8 14.4l29.9 51.8c7.6 13.2 4.9 29.8-6.5 39.9L447 233.3c.9 7.4 1.3 15 1.3 22.7s-.5 15.3-1.3 22.7l53.4 47.5c11.4 10.1 14 26.8 6.5 39.9L477 417.9c-7.6 13.1-23.4 19.2-37.8 14.4l-67.8-22.5c-12.1 9.1-25.3 16.7-39.3 22.8l-14.4 69.9c-3.1 14.9-16.2 25.5-31.3 25.5h-59.8c-15.2 0-28.3-10.7-31.3-25.5l-14.4-69.9c-14.1-6-27.2-13.7-39.3-22.8l-68.1 22.5c-14.4 4.8-30.2-1.2-37.8-14.4L5.8 366.1c-7.6-13.2-4.9-29.8 6.5-39.9l53.4-47.5c-.9-7.4-1.3-15-1.3-22.7s.5-15.3 1.3-22.7l-53.4-47.5C.9 175.7-1.7 159 5.8 145.9l29.9-51.8c7.6-13.2 23.4-19.2 37.8-14.4l67.8 22.5c12.1-9.1 25.3-16.7 39.3-22.8zM256.3 336a80 80 0 1 0-.6-160 80 80 0 1 0 .6 160"></path></svg></span> <strong>Settings</strong> &gt; <strong>Metadata Providers</strong>. See sections below for more details. </p>
+<h2 id="types">Types<a class="headerlink" href="#types" title="Permanent link">¶</a></h2>
+<h3 id="stash-box-instances"><a href="/metadata-sources/stash-box-instances">Stash-box instances</a><a class="headerlink" href="#stash-box-instances" title="Permanent link">¶</a></h3>
+<p>Stash-box instances provides automated or semi-automated tagging of scenes, performers and studios by matching fingerprints, StashIDs or names. The endpoint and API key are available on your stash-box account page.</p>
+<p>Good for broad coverage and community-maintained tags. </p>
+<h3 id="scrapers"><a href="/metadata-sources/scrapers">Scrapers</a><a class="headerlink" href="#scrapers" title="Permanent link">¶</a></h3>
+<p>Scrapers are built-in method to fetch metadata from wide-ranging external sources (databases, studio websites or any other website).</p>
+<p>Best when you need source-specific accuracy or official studio metadata.</p>
+<h2 id="scraper-sources">Scraper sources<a class="headerlink" href="#scraper-sources" title="Permanent link">¶</a></h2>
+<p>Stash comes preconfigured with <a href="https://github.com/stashapp/CommunityScrapers" target="_blank">stashapp/CommunityScrapers</a> source maintained by stashapp community. </p>
 <ul>
-<li><a href="/metadata-sources/stash-box-instances">stash-box instances</a> - more automatic, crowdsourced metadata</li>
-<li><a href="/metadata-sources/scrapers">Scrapers</a> - more individual, can be used for different databases, official studios</li>
+<li><a href="https://discourse.stashapp.cc/t/list-of-scraper-sources/834" target="_blank">List of known scraper sources</a></li>
+<li><a href="https://stashapp.github.io/CommunityScrapers/" target="_blank">Browsable CommunityScrapers list</a></li>
+<li><a href="https://discourse.stashapp.cc/c/plugins/scrapers/27" target="_blank">Community scraper index</a></li>
 </ul>
 
 
@@ -3181,7 +3222,7 @@ GitHub sponsorship</a>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 14, 2024 11:27:50 UTC">November 14, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 21, 2025 23:35:55 UTC">November 21, 2025</span>
   </span>
 
     
