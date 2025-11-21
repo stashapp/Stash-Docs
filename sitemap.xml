@@ -57,10 +57,6 @@
          <lastmod>2025-11-21</lastmod>
     </url>
     <url>
-         <loc>https://docs.stashapp.cc/guides/run-cdp-on-truenas-scale/</loc>
-         <lastmod>2025-11-21</lastmod>
-    </url>
-    <url>
          <loc>https://docs.stashapp.cc/guides/scraping-metadata-behind-login/</loc>
          <lastmod>2025-11-21</lastmod>
     </url>
@@ -70,6 +66,10 @@
     </url>
     <url>
          <loc>https://docs.stashapp.cc/guides/troubleshooting-video-playback/</loc>
+         <lastmod>2025-11-21</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.stashapp.cc/guides/community-wiki/</loc>
          <lastmod>2025-11-21</lastmod>
     </url>
     <url>
