@@ -160,9 +160,8 @@ nav:
       - guides/community-wiki/index.md
   - Metadata sources: 
     - metadata-sources/index.md
-    - stash-box instances: metadata-sources/stash-box-instances.md
+    - Stash-box instances: metadata-sources/stash-box-instances.md
     - Scrapers: metadata-sources/scrapers.md
-    - Browse scrapers: metadata-sources/list.md
   - Plugins: 
     - plugins/index.md
     - Browse plugins: plugins/list.md

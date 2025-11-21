@@ -1,5 +1,5 @@
 ---
-title: stash-box instances
+title: Stash-box instances
 ---
 
 ### FansDB
