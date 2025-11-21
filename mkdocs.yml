@@ -72,6 +72,7 @@ plugins:
         'beginner-guides/exclude-file-configuration.md': 'in-app-manual/configuration.md'
         'add-ons.md': 'plugins/index.md'
         'faq/setup.md': 'https://discourse.stashapp.cc/t/-/1658'
+        'guides/community-wiki/index.md': 'https://discourse.stashapp.cc/tags/c/community-wiki/22/stash'
 
 watch:
   - includes
@@ -155,11 +156,12 @@ nav:
     - Backup and restore database: guides/backup-and-restore-database.md
     - Reverse proxy: guides/reverse-proxy.md
     - Troubleshooting video playback: guides/troubleshooting-video-playback.md
-    - Run CDP on TrueNAS Scale: guides/run-cdp-on-truenas-scale.md
     - Advanced configuration options: guides/advanced-configuration-options.md
     - Bulk importing via CSV using gql-iterate: guides/importing-via-csv-using-gql-iterate.md
     - Manually editing the Stash sqlite3 database: guides/manually-editing-the-stash-sqlite3-database.md
     - Scraping metadata behind login: guides/scraping-metadata-behind-login.md
+    - Community wiki:
+      - guides/community-wiki/index.md
   - Metadata sources: 
     - metadata-sources/index.md
     - stash-box instances: metadata-sources/stash-box-instances.md
