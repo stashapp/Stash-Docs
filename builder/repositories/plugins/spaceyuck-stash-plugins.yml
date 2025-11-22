@@ -1,9 +1,0 @@
-name: spaceyuck stashplugins
-collection:
-  index: https://spaceyuck.github.io/stash-plugins/index.yml
-  global_repo: spaceyuck/stash-plugins
-  base_path: master/plugins
-
-scripts:
-  - id: FastTagger
-    readme: "https://github.com/spaceyuck/stash-fasttagger/blob/master/README.md"
