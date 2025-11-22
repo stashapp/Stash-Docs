@@ -3742,88 +3742,88 @@ GitHub sponsorship</a>
 </ol>
 <h3 id="connect-to-your-nas">Connect to your NAS<a class="headerlink" href="#connect-to-your-nas" title="Permanent link">¶</a></h3>
 <p>In your terminal, connect to your NAS using the newly created account that is part of the <em>administrators</em> group.</p>
-<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>stash@your_nas_hostname
-</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ssh<span class="w"> </span>stash@your_nas_hostname
+</span></code></pre></div>
 <h3 id="link-ffprobe-ffmpeg">Link ffprobe &amp; ffmpeg<a class="headerlink" href="#link-ffprobe-ffmpeg" title="Permanent link">¶</a></h3>
 <p>ffmpeg has been installed earlier, but is missing a link to ffprobe (also installed) and the new version of ffmpeg. Run the following command.</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/var/packages/ffmpeg6/target/bin/ffprobe<span class="w"> </span>/usr/local/bin/ffprobe
-sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/var/packages/ffmpeg6/target/bin/ffmpeg<span class="w"> </span>/usr/local/bin/ffmpeg
-</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/var/packages/ffmpeg6/target/bin/ffprobe<span class="w"> </span>/usr/local/bin/ffprobe
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/var/packages/ffmpeg6/target/bin/ffmpeg<span class="w"> </span>/usr/local/bin/ffmpeg
+</span></code></pre></div>
 <h3 id="download-stash">Download Stash<a class="headerlink" href="#download-stash" title="Permanent link">¶</a></h3>
 <p>Download the lastest version of Stash and its checksum from GitHub</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># find what architecture your Synology is running on</span>
-uname<span class="w"> </span>-m
-
-<span class="c1"># depending on the architecture, you'll have to download the right version of stash</span>
-
-<span class="c1"># x86_64</span>
-wget<span class="w"> </span>https://github.com/stashapp/stash/releases/latest/download/stash-linux
-<span class="c1"># armv6l</span>
-wget<span class="w"> </span>https://github.com/stashapp/stash/releases/latest/download/stash-linux-arm32v6
-<span class="c1"># armv7l</span>
-wget<span class="w"> </span>https://github.com/stashapp/stash/releases/latest/download/stash-linux-arm32v7
-<span class="c1"># aarch64</span>
-wget<span class="w"> </span>https://github.com/stashapp/stash/releases/latest/download/stash-linux-arm64v8
-
-<span class="c1"># Download the CHECKSUM</span>
-wget<span class="w"> </span>https://github.com/stashapp/stash/releases/latest/download/CHECKSUMS_SHA1
-
-<span class="c1"># Perform the checksum validation</span>
-sha1sum<span class="w"> </span>-c<span class="w"> </span>--ignore-missing<span class="w"> </span>CHECKSUMS_SHA1
-
-<span class="c1"># you should see a line that says `stash-linux: OK`</span>
-<span class="c1"># if not, something went wrong during the download</span>
-
-<span class="c1"># Clean up the now unnecessary file</span>
-rm<span class="w"> </span>CHECKSUMS_SHA1
-</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># find what architecture your Synology is running on</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>uname<span class="w"> </span>-m
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># depending on the architecture, you'll have to download the right version of stash</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1"># x86_64</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>wget<span class="w"> </span>https://github.com/stashapp/stash/releases/latest/download/stash-linux
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1"># armv6l</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>wget<span class="w"> </span>https://github.com/stashapp/stash/releases/latest/download/stash-linux-arm32v6
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1"># armv7l</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>wget<span class="w"> </span>https://github.com/stashapp/stash/releases/latest/download/stash-linux-arm32v7
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="c1"># aarch64</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>wget<span class="w"> </span>https://github.com/stashapp/stash/releases/latest/download/stash-linux-arm64v8
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="c1"># Download the CHECKSUM</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>wget<span class="w"> </span>https://github.com/stashapp/stash/releases/latest/download/CHECKSUMS_SHA1
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="c1"># Perform the checksum validation</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>sha1sum<span class="w"> </span>-c<span class="w"> </span>--ignore-missing<span class="w"> </span>CHECKSUMS_SHA1
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="c1"># you should see a line that says `stash-linux: OK`</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="c1"># if not, something went wrong during the download</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="c1"># Clean up the now unnecessary file</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>rm<span class="w"> </span>CHECKSUMS_SHA1
+</span></code></pre></div>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <p>DO NOT run stash yet or it will generate a bunch of files/folders where we don't want them.</p>
 </div>
 <h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">¶</a></h3>
 <p>Prepare a Python environment (for scrapers and plugins)</p>
-<div class="highlight"><pre><span></span><code>python3.11<span class="w"> </span>-m<span class="w"> </span>ensurepip<span class="w"> </span>--Update
-python3.11<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>stash-env
-<span class="nb">source</span><span class="w"> </span>stash-env/bin/activate
-pip3<span class="w"> </span>install<span class="w"> </span>pipreqs
-</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>python3.11<span class="w"> </span>-m<span class="w"> </span>ensurepip<span class="w"> </span>--Update
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>python3.11<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>stash-env
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">source</span><span class="w"> </span>stash-env/bin/activate
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>pip3<span class="w"> </span>install<span class="w"> </span>pipreqs
+</span></code></pre></div>
 <h3 id="configure-your-nas-to-run-stash">Configure your NAS to run Stash<a class="headerlink" href="#configure-your-nas-to-run-stash" title="Permanent link">¶</a></h3>
 <p>Create a profile file</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">'PATH=/usr/local/bin:$PATH'</span><span class="w"> </span>&gt;<span class="w"> </span>.profile
-<span class="nb">echo</span><span class="w"> </span><span class="s1">'source stash-env/bin/activate'</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>.profile
-</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">'PATH=/usr/local/bin:$PATH'</span><span class="w"> </span>&gt;<span class="w"> </span>.profile
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">'source stash-env/bin/activate'</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>.profile
+</span></code></pre></div>
 <p>Create the service file by running <code>cat &gt; stash.service</code>, copy/pasting the following, and hitting CTRL+D when it's done to save the file (hit again if you are not back to the prompt):</p>
-<div class="highlight"><pre><span></span><code><span class="k">[Unit]</span>
-<span class="na">Description</span><span class="o">=</span><span class="s">Run Stash at startup</span>
-<span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
-
-<span class="k">[Service]</span>
-<span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/var/services/homes/stash</span>
-<span class="na">Type</span><span class="o">=</span><span class="s">simple</span>
-<span class="na">User</span><span class="o">=</span><span class="s">stash</span>
-<span class="na">ExecStart</span><span class="o">=</span><span class="s">/bin/bash -c -l '</span>\
-<span class="w">   </span><span class="s">exec ./stash-linux'</span>
-<span class="na">Restart</span><span class="o">=</span><span class="s">on-failure</span>
-
-<span class="k">[Install]</span>
-<span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
-</code></pre></div>
+<div class="language-ini highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">[Unit]</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">Run Stash at startup</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="k">[Service]</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/var/services/homes/stash</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="na">Type</span><span class="o">=</span><span class="s">simple</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="na">User</span><span class="o">=</span><span class="s">stash</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/bin/bash -c -l '</span>\
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">   </span><span class="s">exec ./stash-linux'</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="na">Restart</span><span class="o">=</span><span class="s">on-failure</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="k">[Install]</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+</span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Change the <code>ExecStart</code> line by providing the exact name of the stash executable that you downloaded previously.</p>
 </div>
 <p>Start and activate the service</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span><span class="s2">"</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s2">/stash.service"</span>
-sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>stash.service
-</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span><span class="s2">"</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s2">/stash.service"</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>stash.service
+</span></code></pre></div>
 <h3 id="verify-that-it-is-working">Verify that it is working<a class="headerlink" href="#verify-that-it-is-working" title="Permanent link">¶</a></h3>
 <p>You can now access to stash by navigating to your NAS url on port 9999: <code>http://nas-hostname:9999</code></p>
 <h3 id="installing-scrapers-and-plugins">Installing Scrapers and Plugins<a class="headerlink" href="#installing-scrapers-and-plugins" title="Permanent link">¶</a></h3>
 <p>Whenever you install a new Python scraper or plugin, do the following from the <em>stash</em> user home directory:</p>
-<div class="highlight"><pre><span></span><code>pipreqs<span class="w"> </span>.stash/.
-pip3<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>.stash/requirements.txt
-</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pipreqs<span class="w"> </span>.stash/.
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>pip3<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>.stash/requirements.txt
+</span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Using pipreqs allows to scan all scrapers and plugins installed and find dependencies that they require. You can do the same thing without <code>pipreqs</code> by going into each individual directory and run <code>pip3 install -r requirements.txt</code></p>

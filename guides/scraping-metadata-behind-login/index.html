@@ -3162,9 +3162,9 @@ GitHub sponsorship</a>
 <p>Normal CDP scraping will launch a headless chrome browser, which will not show up for any user interactions. "Visible CDP" turns the "headless chrome" into a "visible" instance.</p>
 <ol>
 <li>Prepare your scraper's .yml file and make sure it's valid and working. Your scraper should have the following setting inside:
-<div class="highlight"><pre><span></span><code><span class="nt">driver</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">useCDP</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-</code></pre></div></li>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">driver</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">useCDP</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span></code></pre></div></li>
 <li>Run a command console. Go to the Chrome's binary directory and run <code>chrome.exe --remote-debugging-port=9222</code>. This will launch a special Chrome instance that Stash Scrapers can control later on.</li>
 <li>In Stash, make sure that the <strong>Settings</strong> &gt; <strong>Metadata Providers</strong> &gt; <strong>Scraping</strong> &gt; <strong>Chrome CDP Path</strong> is set to <code>http://localhost:9222/json/version</code>.</li>
 <li>Use the special Chrome instance you launched earlier, go to the webpage you want to scrape, type in your user/pass or pass any other human tests, until you see the page with desired content.</li>

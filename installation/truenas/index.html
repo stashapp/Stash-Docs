@@ -3592,86 +3592,86 @@ When entering the folder that contains its contents, remember to search for the 
 </li>
 <li>Click submit.</li>
 <li>In a shell in your iocage jail, edit <code>/etc/rc.conf</code> to add:
-<div class="highlight"><pre><span></span><code>enable_linux="YES"
-</code></pre></div></li>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>enable_linux="YES"
+</span></code></pre></div></li>
 <li>Reboot the system.</li>
 </ol>
 <h3 id="install-ffmpegffprobe">Install ffmpeg/ffprobe<a class="headerlink" href="#install-ffmpegffprobe" title="Permanent link">¶</a></h3>
 <p>Go into your iocage jail and install <code>ffmpeg</code>
-</p><div class="highlight"><pre><span></span><code>pkg install ffmpeg
-</code></pre></div><p></p>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pkg install ffmpeg
+</span></code></pre></div><p></p>
 <h3 id="create-user-and-group">Create user and group<a class="headerlink" href="#create-user-and-group" title="Permanent link">¶</a></h3>
 <p>It is recommended to not run services as root. Adjust this step to your system. in this example the user <code>stash</code> will be created and set to run the service.</p>
-<div class="highlight"><pre><span></span><code>pw useradd -n stash -u 1069 -d /nonexistent -s /usr/sbin/nologin
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pw useradd -n stash -u 1069 -d /nonexistent -s /usr/sbin/nologin
+</span></code></pre></div>
 <h3 id="download-stash-linux">Download stash-linux<a class="headerlink" href="#download-stash-linux" title="Permanent link">¶</a></h3>
 <p>Choose where you would like to store the binary, in this example <code>/usr/local/bin</code> is selected as this is where the ffmpeg binaries also reside. Check github for latest release. Also remember to fix permissions and ownership
-</p><div class="highlight"><pre><span></span><code>cd /usr/local/bin
-fetch https://github.com/stashapp/stash/releases/download/v0.22.1/stash-linux
-chown stash:stash stash-linux
-chmod +x stash-linux
-</code></pre></div><p></p>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>cd /usr/local/bin
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>fetch https://github.com/stashapp/stash/releases/download/v0.22.1/stash-linux
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>chown stash:stash stash-linux
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>chmod +x stash-linux
+</span></code></pre></div><p></p>
 <h3 id="create-configuration-directory">Create configuration directory<a class="headerlink" href="#create-configuration-directory" title="Permanent link">¶</a></h3>
 <p>stash needs a directory for its config file, database and more. Remember to change ownership and permission for the folder you select. The script we will look at in the next step has this path as the default:
-</p><div class="highlight"><pre><span></span><code>mkdir /usr/local/etc/stash
-chown stash:stash /usr/local/etc/stash
-</code></pre></div><p></p>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mkdir /usr/local/etc/stash
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>chown stash:stash /usr/local/etc/stash
+</span></code></pre></div><p></p>
 <h3 id="rcd-startup-script">rc.d startup script<a class="headerlink" href="#rcd-startup-script" title="Permanent link">¶</a></h3>
 <p>In order for stash to run as a daemon in the background, and also start at boot, you need a rc.d script.<br>
-</p><div class="highlight"><pre><span></span><code>mkdir /usr/local/etc/rc.d
-ee /usr/local/etc/rc.d/stash
-</code></pre></div>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>mkdir /usr/local/etc/rc.d
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>ee /usr/local/etc/rc.d/stash
+</span></code></pre></div>
 Enter the following in the editor:
-<div class="highlight"><pre><span></span><code>#!/bin/sh
-
-# PROVIDE: stash
-# REQUIRE: DAEMON
-# KEYWORD: shutdown
-
-
-. /etc/rc.subr
-
-name=stash
-rcvar=stash_enable
-
-load_rc_config $name
-
-: ${stash_enable:="NO"}
-: ${stash_user:="stash"}
-: ${stash_group:="stash"}
-: ${stash_config_dir:="/usr/local/etc/stash/config.yml"}
-: ${stash_exec_bin:="/usr/local/bin/stash-linux"}
-
-#daemon
-pidfile="/var/run/${name}.pid"
-command="/usr/sbin/daemon"
-command_args="-f -P ${pidfile} ${stash_exec_bin} --config ${stash_config_dir}"
-start_precmd="stash_precmd"
-
-stash_precmd() {
-    install -o ${stash_user} -g ${stash_group} /dev/null ${pidfile}
-}
-
-run_rc_command $1
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>#!/bin/sh
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a># PROVIDE: stash
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a># REQUIRE: DAEMON
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a># KEYWORD: shutdown
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>. /etc/rc.subr
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>name=stash
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>rcvar=stash_enable
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>load_rc_config $name
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>: ${stash_enable:="NO"}
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>: ${stash_user:="stash"}
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>: ${stash_group:="stash"}
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>: ${stash_config_dir:="/usr/local/etc/stash/config.yml"}
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>: ${stash_exec_bin:="/usr/local/bin/stash-linux"}
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>#daemon
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>pidfile="/var/run/${name}.pid"
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>command="/usr/sbin/daemon"
+</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>command_args="-f -P ${pidfile} ${stash_exec_bin} --config ${stash_config_dir}"
+</span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a>start_precmd="stash_precmd"
+</span><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a>
+</span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a>stash_precmd() {
+</span><span id="__span-6-28"><a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a>    install -o ${stash_user} -g ${stash_group} /dev/null ${pidfile}
+</span><span id="__span-6-29"><a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a>}
+</span><span id="__span-6-30"><a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a>
+</span><span id="__span-6-31"><a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a>run_rc_command $1
+</span></code></pre></div>
 To save, press <code>ESC + Enter</code> and confirm with <code>a</code> and make it executable with <code>chmod +x /usr/local/etc/rc.d/stash</code><p></p>
 <h3 id="enable-the-service-at-boot">Enable the service at boot<a class="headerlink" href="#enable-the-service-at-boot" title="Permanent link">¶</a></h3>
 <p>If you want Stash to run when you start the jail, run the following command:
-</p><div class="highlight"><pre><span></span><code>sysrc "stash_enable=YES"
-</code></pre></div>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sysrc "stash_enable=YES"
+</span></code></pre></div>
 And to start the service, reboot the jail or run this command:
-<div class="highlight"><pre><span></span><code>service stash start
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>service stash start
+</span></code></pre></div>
 Stash is now available at http://jail-IP:9999/ <p></p>
 <p>During setup you can leave all the paths for config, database and etc empty to use the default. They will then be stored in the config-folder we created earlier so you can easily backup the folder. Only add your media content. </p>
 <h3 id="optional-steps">Optional steps<a class="headerlink" href="#optional-steps" title="Permanent link">¶</a></h3>
 <p>You can change the location where stash stores the configuration files and database. Please note that the path needs to end with <code>config.yml</code> even if it does not exist yet. Stash will create it for you. Remember to fix ownership and permissions of the location you choose.
-</p><div class="highlight"><pre><span></span><code>sysrc "stash_config_dir=path/to/location/config.yml"
-</code></pre></div><p></p>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sysrc "stash_config_dir=path/to/location/config.yml"
+</span></code></pre></div><p></p>
 <p>You can change the user and group that Stash runs as. Remember that the config_dir needs to be owned by the user that Stash runs as, aswell as the stash-linux binary
-</p><div class="highlight"><pre><span></span><code>sysrc "stash_user=usernamegoeshere"
-sysrc "stash_group=groupnamegoeshere"
-</code></pre></div><p></p>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sysrc "stash_user=usernamegoeshere"
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sysrc "stash_group=groupnamegoeshere"
+</span></code></pre></div><p></p>
 <p>Its also possible to change the location of the stash-linux binary
 ```
 sysrc "stash_exec_bin=/path/to/stash-linux"</p>

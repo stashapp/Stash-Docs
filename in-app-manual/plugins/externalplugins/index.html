@@ -3473,16 +3473,16 @@ GitHub sponsorship</a>
 </blockquote>
 <p>Arguments can include the plugin's directory with the special string <code>{pluginDir}</code>. </p>
 <p>For example, if the plugin executable <code>my_plugin</code> is placed in the <code>plugins</code> subdirectory and requires arguments <code>foo</code> and <code>bar</code>, then the <code>exec</code> part of the configuration would look like the following:</p>
-<div class="highlight"><pre><span></span><code>exec:
-  - my_plugin
-  - foo
-  - bar
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>exec:
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  - my_plugin
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  - foo
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  - bar
+</span></code></pre></div>
 <p>Another example might use a python script to execute the plugin. Assuming the python script <code>foo.py</code> is placed in the same directory as the plugin config file, the <code>exec</code> fragment would look like the following:</p>
-<div class="highlight"><pre><span></span><code>exec:
-  - python
-  - {pluginDir}/foo.py
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>exec:
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  - python
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  - {pluginDir}/foo.py
+</span></code></pre></div>
 <h3 id="interface">interface<a class="headerlink" href="#interface" title="Permanent link">¶</a></h3>
 <p>For external plugin tasks, the <code>interface</code> field must be set to one of the following values:
 * <code>rpc</code>
@@ -3494,12 +3494,12 @@ GitHub sponsorship</a>
 <h2 id="task-configuration">Task configuration<a class="headerlink" href="#task-configuration" title="Permanent link">¶</a></h2>
 <p>In addition to the standard task configuration, external tasks may be configured with an optional <code>execArgs</code> field to add extra parameters to the execution arguments for the task.</p>
 <p>For example:</p>
-<div class="highlight"><pre><span></span><code>tasks:
-  - name: &lt;operation name&gt;
-    description: &lt;optional description&gt;
-    execArgs:
-      - &lt;arg to add to the exec line&gt;
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>tasks:
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  - name: &lt;operation name&gt;
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    description: &lt;optional description&gt;
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    execArgs:
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>      - &lt;arg to add to the exec line&gt;
+</span></code></pre></div>
 
 
 

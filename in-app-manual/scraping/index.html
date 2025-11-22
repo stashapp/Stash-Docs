@@ -3444,19 +3444,19 @@ GitHub sponsorship</a>
 <p>Installed scrapers can be updated or uninstalled from the <code>Installed Scrapers</code> section.</p>
 <h3 id="source-urls">Source URLs<a class="headerlink" href="#source-urls" title="Permanent link">¶</a></h3>
 <p>The source URL must return a yaml file containing all the available packages for the source. An example source yaml file looks like the following:</p>
-<div class="highlight"><pre><span></span><code>- id: &lt;package id&gt;
-  name: &lt;package name&gt;
-  version: &lt;version&gt;
-  date: &lt;date&gt;
-  requires:
-  - &lt;ids of packages required by this package (optional)&gt;
-  - ...
-  path: &lt;path to package zip file&gt;
-  sha256: &lt;sha256 of zip&gt;
-  metadata:
-    &lt;optional key/value pairs for extra information&gt;
-- ...
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>- id: &lt;package id&gt;
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  name: &lt;package name&gt;
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  version: &lt;version&gt;
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  date: &lt;date&gt;
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  requires:
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  - &lt;ids of packages required by this package (optional)&gt;
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  - ...
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  path: &lt;path to package zip file&gt;
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  sha256: &lt;sha256 of zip&gt;
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  metadata:
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    &lt;optional key/value pairs for extra information&gt;
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>- ...
+</span></code></pre></div>
 <p>Path can be a relative path to the zip file or an external URL.</p>
 <h2 id="adding-scrapers-manually">Adding Scrapers manually<a class="headerlink" href="#adding-scrapers-manually" title="Permanent link">¶</a></h2>
 <p>By default, Stash looks for scraper configurations in the <code>scrapers</code> sub-directory of the directory where the stash <code>config.yml</code> is read. This will either be the <code>$HOME/.stash</code> directory or the current working directory.</p>

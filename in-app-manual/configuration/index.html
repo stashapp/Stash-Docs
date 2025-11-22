@@ -3880,10 +3880,10 @@ When added through the config file directly special care must be given to double
 </table>
 <h3 id="custom-served-folders">Custom served folders<a class="headerlink" href="#custom-served-folders" title="Permanent link">¶</a></h3>
 <p>Custom served folders are served when the server handles a request with the <code>/custom</code> URL prefix. The following is an example configuration:</p>
-<div class="highlight"><pre><span></span><code>custom_served_folders:
-  /: D:\stash\static
-  /foo: D:\bar
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>custom_served_folders:
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  /: D:\stash\static
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  /foo: D:\bar
+</span></code></pre></div>
 <p>With the above configuration, a request for <code>/custom/foo/bar.png</code> would serve <code>D:\bar\bar.png</code>. </p>
 <p>The <code>/</code> entry matches anything that is not otherwise mapped by the other entries. For example, <code>/custom/baz/xyz.png</code> would serve <code>D:\stash\static\baz\xyz.png</code>.</p>
 

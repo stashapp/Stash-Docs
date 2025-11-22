@@ -3303,15 +3303,15 @@ GitHub sponsorship</a>
 <p>Before making changes to the Stash sqlite3 database - <strong>please make a backup first!</strong></p>
 <p>You can use the <code>sqlite3</code> client to directly edit this file.</p>
 <h2 id="opening-the-database-file">Opening the database file<a class="headerlink" href="#opening-the-database-file" title="Permanent link">¶</a></h2>
-<div class="highlight"><pre><span></span><code>cd ~/.stash
-sqlite3 stash-go.sqlite
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cd ~/.stash
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sqlite3 stash-go.sqlite
+</span></code></pre></div>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">¶</a></h2>
 <h3 id="deleting-all-tags">Deleting all tags<a class="headerlink" href="#deleting-all-tags" title="Permanent link">¶</a></h3>
 <p>If you need to delete all tags, you can use the following commands:</p>
-<div class="highlight"><pre><span></span><code>sqlite&gt; DELETE FROM scenes_tags;
-sqlite&gt; DELETE FROM tags;
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sqlite&gt; DELETE FROM scenes_tags;
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sqlite&gt; DELETE FROM tags;
+</span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This will not work if you have Scene marker tags.</p>

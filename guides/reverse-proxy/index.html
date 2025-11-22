@@ -3578,149 +3578,149 @@ GitHub sponsorship</a>
 <p>Stash also supports running under a URL prefix, in which case the the <code>X-Forwarded-Prefix</code> header must also be set. The proxy also needs to remove the prefix from the requested URLs. For example, if you want your homepage to be accessible at <code>http://example.domain.com/stash</code>, then you need to set <code>X-Forwarded-Prefix: /stash</code>. </p>
 <h2 id="setting-external-url">Setting External URL<a class="headerlink" href="#setting-external-url" title="Permanent link">¶</a></h2>
 <p>You can also set the host that will be served by Stash manually by adding an <code>external_host:</code> setting in your Stash config.yml and assigning it the publicly accessible hostname, including the <code>http://</code> or <code>https://</code>. <code>X-Forwarded-Prefix</code> will still need to be set if using a prefix.
-</p><div class="highlight"><pre><span></span><code>external_host: http://example.domain.com
-</code></pre></div><p></p>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>external_host: http://example.domain.com
+</span></code></pre></div><p></p>
 <h2 id="server-configuration-examples">Server Configuration Examples<a class="headerlink" href="#server-configuration-examples" title="Permanent link">¶</a></h2>
 <h3 id="nginx">Nginx<a class="headerlink" href="#nginx" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code>location<span class="w"> </span>/<span class="w"> </span><span class="o">{</span>
-<span class="w">    </span>proxy_pass<span class="w"> </span>http://127.0.0.1:9999<span class="p">;</span>
-
-<span class="w">    </span>proxy_http_version<span class="w"> </span><span class="m">1</span>.1<span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>Upgrade<span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>Connection<span class="w"> </span><span class="s2">"upgrade"</span><span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>Host<span class="w"> </span><span class="nv">$http_host</span><span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>X-Real-IP<span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>X-Forwarded-For<span class="w"> </span><span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>X-Forwarded-Proto<span class="w"> </span><span class="nv">$scheme</span><span class="p">;</span>
-<span class="w">    </span>proxy_read_timeout<span class="w"> </span>60000s<span class="p">;</span>
-<span class="o">}</span>
-</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>location<span class="w"> </span>/<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span>proxy_pass<span class="w"> </span>http://127.0.0.1:9999<span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span>proxy_http_version<span class="w"> </span><span class="m">1</span>.1<span class="p">;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>Upgrade<span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>Connection<span class="w"> </span><span class="s2">"upgrade"</span><span class="p">;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>Host<span class="w"> </span><span class="nv">$http_host</span><span class="p">;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>X-Real-IP<span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>X-Forwarded-For<span class="w"> </span><span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>X-Forwarded-Proto<span class="w"> </span><span class="nv">$scheme</span><span class="p">;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span>proxy_read_timeout<span class="w"> </span>60000s<span class="p">;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="o">}</span>
+</span></code></pre></div>
 <h3 id="nginx-docker-linuxserver-letsencrypt">Nginx + Docker (Linuxserver Letsencrypt)<a class="headerlink" href="#nginx-docker-linuxserver-letsencrypt" title="Permanent link">¶</a></h3>
 <p>If you are using the linuxserver letencrypt docker you can use create a <code>stash.subdomain.conf</code> file in your <code>proxy-confs</code> folder and use this as the config:
-</p><div class="highlight"><pre><span></span><code><span class="c1"># make sure that your dns has a cname set for stash</span>
-
-server<span class="w"> </span><span class="o">{</span>
-<span class="w">    </span>listen<span class="w"> </span><span class="m">443</span><span class="w"> </span>ssl<span class="p">;</span>
-<span class="w">    </span>listen<span class="w"> </span><span class="o">[</span>::<span class="o">]</span>:443<span class="w"> </span>ssl<span class="p">;</span>
-
-<span class="w">    </span>server_name<span class="w"> </span>stash.*<span class="p">;</span>
-
-<span class="w">    </span>include<span class="w"> </span>/config/nginx/ssl.conf<span class="p">;</span>
-
-<span class="w">    </span>client_max_body_size<span class="w"> </span><span class="m">0</span><span class="p">;</span>
-
-<span class="w">    </span><span class="c1"># enable for ldap auth, fill in ldap details in ldap.conf</span>
-<span class="w">    </span><span class="c1">#include /config/nginx/ldap.conf;</span>
-
-<span class="w">    </span>location<span class="w"> </span>/<span class="w"> </span><span class="o">{</span>
-<span class="w">        </span><span class="c1"># enable the next two lines for http auth</span>
-<span class="w">        </span><span class="c1">#auth_basic "Restricted";</span>
-<span class="w">        </span><span class="c1">#auth_basic_user_file /config/nginx/.htpasswd;</span>
-
-<span class="w">        </span><span class="c1"># enable the next two lines for ldap auth</span>
-<span class="w">        </span><span class="c1">#auth_request /auth;</span>
-<span class="w">        </span><span class="c1">#error_page 401 =200 /login;</span>
-
-<span class="w">        </span>include<span class="w"> </span>/config/nginx/proxy.conf<span class="p">;</span>
-<span class="w">        </span>proxy_set_header<span class="w"> </span>Upgrade<span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
-<span class="w">        </span>proxy_set_header<span class="w"> </span>Connection<span class="w"> </span><span class="s2">"upgrade"</span><span class="p">;</span>
-<span class="w">        </span>resolver<span class="w"> </span><span class="m">127</span>.0.0.11<span class="w"> </span><span class="nv">valid</span><span class="o">=</span>30s<span class="p">;</span>
-<span class="w">        </span><span class="nb">set</span><span class="w"> </span><span class="nv">$upstream_app</span><span class="w"> </span>stash<span class="p">;</span>
-<span class="w">        </span><span class="nb">set</span><span class="w"> </span><span class="nv">$upstream_port</span><span class="w"> </span><span class="m">9999</span><span class="p">;</span>
-<span class="w">        </span><span class="nb">set</span><span class="w"> </span><span class="nv">$upstream_proto</span><span class="w"> </span>http<span class="p">;</span>
-<span class="w">        </span>proxy_pass<span class="w"> </span><span class="nv">$upstream_proto</span>://<span class="nv">$upstream_app</span>:<span class="nv">$upstream_port</span><span class="p">;</span>
-<span class="w">        </span>proxy_set_header<span class="w"> </span>Host<span class="w"> </span><span class="nv">$http_host</span><span class="p">;</span>
-<span class="w">        </span>proxy_read_timeout<span class="w"> </span>60000s<span class="p">;</span>
-<span class="w">    </span><span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div><p></p>
+</p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># make sure that your dns has a cname set for stash</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>server<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span>listen<span class="w"> </span><span class="m">443</span><span class="w"> </span>ssl<span class="p">;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span>listen<span class="w"> </span><span class="o">[</span>::<span class="o">]</span>:443<span class="w"> </span>ssl<span class="p">;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span>server_name<span class="w"> </span>stash.*<span class="p">;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span>include<span class="w"> </span>/config/nginx/ssl.conf<span class="p">;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span>client_max_body_size<span class="w"> </span><span class="m">0</span><span class="p">;</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="c1"># enable for ldap auth, fill in ldap details in ldap.conf</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="c1">#include /config/nginx/ldap.conf;</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span>location<span class="w"> </span>/<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">        </span><span class="c1"># enable the next two lines for http auth</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">        </span><span class="c1">#auth_basic "Restricted";</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">        </span><span class="c1">#auth_basic_user_file /config/nginx/.htpasswd;</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">        </span><span class="c1"># enable the next two lines for ldap auth</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">        </span><span class="c1">#auth_request /auth;</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">        </span><span class="c1">#error_page 401 =200 /login;</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">        </span>include<span class="w"> </span>/config/nginx/proxy.conf<span class="p">;</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">        </span>proxy_set_header<span class="w"> </span>Upgrade<span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">        </span>proxy_set_header<span class="w"> </span>Connection<span class="w"> </span><span class="s2">"upgrade"</span><span class="p">;</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">        </span>resolver<span class="w"> </span><span class="m">127</span>.0.0.11<span class="w"> </span><span class="nv">valid</span><span class="o">=</span>30s<span class="p">;</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">        </span><span class="nb">set</span><span class="w"> </span><span class="nv">$upstream_app</span><span class="w"> </span>stash<span class="p">;</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">        </span><span class="nb">set</span><span class="w"> </span><span class="nv">$upstream_port</span><span class="w"> </span><span class="m">9999</span><span class="p">;</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">        </span><span class="nb">set</span><span class="w"> </span><span class="nv">$upstream_proto</span><span class="w"> </span>http<span class="p">;</span>
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">        </span>proxy_pass<span class="w"> </span><span class="nv">$upstream_proto</span>://<span class="nv">$upstream_app</span>:<span class="nv">$upstream_port</span><span class="p">;</span>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">        </span>proxy_set_header<span class="w"> </span>Host<span class="w"> </span><span class="nv">$http_host</span><span class="p">;</span>
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">        </span>proxy_read_timeout<span class="w"> </span>60000s<span class="p">;</span>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="o">}</span>
+</span></code></pre></div><p></p>
 <h3 id="nginx-with-prefix">Nginx with prefix<a class="headerlink" href="#nginx-with-prefix" title="Permanent link">¶</a></h3>
 <p>An example for <code>nginx</code> using the prefix <code>/stash</code>:</p>
-<div class="highlight"><pre><span></span><code>location<span class="w"> </span>/stash/<span class="w"> </span><span class="o">{</span>
-<span class="w">    </span><span class="c1"># Notice the trailing slash - this causes nginx to remove the /stash prefix from requested URLs</span>
-<span class="w">    </span>proxy_pass<span class="w"> </span>http://192.168.0.1:9999/<span class="p">;</span>
-
-<span class="w">    </span>proxy_http_version<span class="w"> </span><span class="m">1</span>.1<span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>Upgrade<span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>Connection<span class="w"> </span><span class="s2">"Upgrade"</span><span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>Host<span class="w"> </span><span class="nv">$http_host</span><span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>X-Real-IP<span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>X-Forwarded-For<span class="w"> </span><span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>X-Forwarded-Port<span class="w"> </span><span class="nv">$server_port</span><span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>X-Forwarded-Proto<span class="w"> </span><span class="nv">$scheme</span><span class="p">;</span>
-<span class="w">    </span>proxy_set_header<span class="w"> </span>X-Forwarded-Prefix<span class="w"> </span>/stash<span class="p">;</span>
-<span class="w">    </span>proxy_read_timeout<span class="w"> </span>60000s<span class="p">;</span>
-<span class="o">}</span>
-</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>location<span class="w"> </span>/stash/<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="c1"># Notice the trailing slash - this causes nginx to remove the /stash prefix from requested URLs</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span>proxy_pass<span class="w"> </span>http://192.168.0.1:9999/<span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span>proxy_http_version<span class="w"> </span><span class="m">1</span>.1<span class="p">;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>Upgrade<span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>Connection<span class="w"> </span><span class="s2">"Upgrade"</span><span class="p">;</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>Host<span class="w"> </span><span class="nv">$http_host</span><span class="p">;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>X-Real-IP<span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>X-Forwarded-For<span class="w"> </span><span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>X-Forwarded-Port<span class="w"> </span><span class="nv">$server_port</span><span class="p">;</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>X-Forwarded-Proto<span class="w"> </span><span class="nv">$scheme</span><span class="p">;</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span>proxy_set_header<span class="w"> </span>X-Forwarded-Prefix<span class="w"> </span>/stash<span class="p">;</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span>proxy_read_timeout<span class="w"> </span>60000s<span class="p">;</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="o">}</span>
+</span></code></pre></div>
 <h3 id="nginx-with-external_host">Nginx with external_host<a class="headerlink" href="#nginx-with-external_host" title="Permanent link">¶</a></h3>
 <p>Another example for <code>nginx</code>:</p>
 <p>In this case we are using <code>stash.home</code> as our domain and <code>192.168.0.1</code> is stash's ip so edit acccordingly.</p>
 <p>The <code>external_host</code> configuration option should also be set, in this case <code>external_host: http://stash.home</code>. Refer to <a href="https://github.com/stashapp/stash/pull/369" target="_blank">external_host</a> for more details.</p>
-<div class="highlight"><pre><span></span><code>server<span class="w"> </span><span class="o">{</span>
-<span class="w">    </span>listen<span class="w"> </span><span class="m">80</span><span class="p">;</span>
-<span class="w">    </span>listen<span class="w"> </span><span class="o">[</span>::<span class="o">]</span>:80<span class="p">;</span>
-
-<span class="w">    </span>server_name<span class="w"> </span>stash.home<span class="p">;</span>
-<span class="w">    </span>client_max_body_size<span class="w"> </span><span class="m">0</span><span class="p">;</span>
-
-<span class="w">    </span>location<span class="w"> </span>/<span class="w"> </span><span class="o">{</span>
-<span class="w">        </span>proxy_pass<span class="w"> </span>http://192.168.0.1:9999<span class="p">;</span>
-
-<span class="w">        </span>proxy_http_version<span class="w"> </span><span class="m">1</span>.1<span class="p">;</span>
-<span class="w">        </span>proxy_set_header<span class="w"> </span>Upgrade<span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
-<span class="w">        </span>proxy_set_header<span class="w"> </span>Connection<span class="w"> </span><span class="s2">"Upgrade"</span><span class="p">;</span>
-<span class="w">        </span>proxy_set_header<span class="w"> </span>Host<span class="w"> </span><span class="nv">$http_host</span><span class="p">;</span>
-<span class="w">        </span>proxy_set_header<span class="w"> </span>X-Real-IP<span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
-<span class="w">        </span>proxy_set_header<span class="w"> </span>X-Forwarded-For<span class="w"> </span><span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
-<span class="w">        </span>proxy_set_header<span class="w"> </span>X-Forwarded-Port<span class="w"> </span><span class="nv">$server_port</span><span class="p">;</span>
-<span class="w">        </span>proxy_set_header<span class="w"> </span>X-Forwarded-Proto<span class="w"> </span><span class="nv">$scheme</span><span class="p">;</span>
-<span class="w">    </span><span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>server<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span>listen<span class="w"> </span><span class="m">80</span><span class="p">;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span>listen<span class="w"> </span><span class="o">[</span>::<span class="o">]</span>:80<span class="p">;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span>server_name<span class="w"> </span>stash.home<span class="p">;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span>client_max_body_size<span class="w"> </span><span class="m">0</span><span class="p">;</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span>location<span class="w"> </span>/<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">        </span>proxy_pass<span class="w"> </span>http://192.168.0.1:9999<span class="p">;</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">        </span>proxy_http_version<span class="w"> </span><span class="m">1</span>.1<span class="p">;</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">        </span>proxy_set_header<span class="w"> </span>Upgrade<span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">        </span>proxy_set_header<span class="w"> </span>Connection<span class="w"> </span><span class="s2">"Upgrade"</span><span class="p">;</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">        </span>proxy_set_header<span class="w"> </span>Host<span class="w"> </span><span class="nv">$http_host</span><span class="p">;</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">        </span>proxy_set_header<span class="w"> </span>X-Real-IP<span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">        </span>proxy_set_header<span class="w"> </span>X-Forwarded-For<span class="w"> </span><span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">        </span>proxy_set_header<span class="w"> </span>X-Forwarded-Port<span class="w"> </span><span class="nv">$server_port</span><span class="p">;</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">        </span>proxy_set_header<span class="w"> </span>X-Forwarded-Proto<span class="w"> </span><span class="nv">$scheme</span><span class="p">;</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="o">}</span>
+</span></code></pre></div>
 <h3 id="apache">Apache<a class="headerlink" href="#apache" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code># if using apache &lt; 2.4.47, remove upgrade=websocket
-ProxyPass "/stash" "http://127.0.0.1:9999" upgrade=websocket
-ProxyPassReverse "/stash" "http://127.0.0.1:9999"
-RequestHeader setIfEmpty X-Forwarded-Prefix "/stash"
-ProxyPreserveHost on
-
-# for name resolution
-ServerAdmin admin@example.com
-ServerName example.com
-ServerAlias stash.example.com
-
-# to enable websockets for apache &lt; 2.4.47
-#RewriteEngine on
-#RewriteCond %{HTTP:Upgrade} websocket [NC]
-#RewriteCond %{HTTP:Connection} upgrade [NC]
-#RewriteRule ^/?stash/(.*) "ws://127.0.0.1:9999/$1" [P,L]
-
-# to add SSL
-SSLEngine on
-SSLCertificateFile /path/to/cert.pem
-SSLCertificateKeyFile /path/to/cert.key
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a># if using apache &lt; 2.4.47, remove upgrade=websocket
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>ProxyPass "/stash" "http://127.0.0.1:9999" upgrade=websocket
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>ProxyPassReverse "/stash" "http://127.0.0.1:9999"
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>RequestHeader setIfEmpty X-Forwarded-Prefix "/stash"
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>ProxyPreserveHost on
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a># for name resolution
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>ServerAdmin admin@example.com
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>ServerName example.com
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>ServerAlias stash.example.com
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a># to enable websockets for apache &lt; 2.4.47
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>#RewriteEngine on
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>#RewriteCond %{HTTP:Upgrade} websocket [NC]
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>#RewriteCond %{HTTP:Connection} upgrade [NC]
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>#RewriteRule ^/?stash/(.*) "ws://127.0.0.1:9999/$1" [P,L]
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a># to add SSL
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>SSLEngine on
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>SSLCertificateFile /path/to/cert.pem
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>SSLCertificateKeyFile /path/to/cert.key
+</span></code></pre></div>
 <h4 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>sudo a2enmod proxy
-sudo a2enmod proxy_http
-sudo a2enmod proxy_balancer
-sudo a2enmod lbmethod_byrequests
-
-sudo a2enmod rewrite
-sudo a2enmod headers
-
-# for SSL
-sudo a2enmod ssl
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo a2enmod proxy
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo a2enmod proxy_http
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>sudo a2enmod proxy_balancer
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>sudo a2enmod lbmethod_byrequests
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>sudo a2enmod rewrite
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>sudo a2enmod headers
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a># for SSL
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>sudo a2enmod ssl
+</span></code></pre></div>
 <h3 id="caddy-v2">Caddy v2<a class="headerlink" href="#caddy-v2" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code>stash.example.com {
-    reverse_proxy 127.0.0.1:9999 {
-        header_up Host {host}
-        header_up X-Real-IP {remote_host}
-        header_up X-Forwarded-Port {server_port}
-    }
-}
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>stash.example.com {
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    reverse_proxy 127.0.0.1:9999 {
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>        header_up Host {host}
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>        header_up X-Real-IP {remote_host}
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>        header_up X-Forwarded-Port {server_port}
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    }
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>}
+</span></code></pre></div>
 <p>The <code>external_host</code> configuration option should also be set, in this case <code>external_host: http://stash.home</code>. Refer to <a href="https://github.com/stashapp/stash/pull/369" target="_blank">external_host</a> for more details.</p>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">¶</a></h2>
 <h3 id="504-errors">504 Errors<a class="headerlink" href="#504-errors" title="Permanent link">¶</a></h3>
@@ -3731,10 +3731,10 @@ sudo a2enmod ssl
 <ul>
 <li>In order for the websocket to work, you may need to also add these lines to your server block (<code>proxy.conf</code> file in the Letencrypt Unraid docker container for instance) as mentioned <a href="https://github.com/stashapp/stash/issues/532" target="_blank">here</a> should fix the issue.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>proxy_http_version<span class="w"> </span><span class="m">1</span>.1<span class="p">;</span>
-proxy_set_header<span class="w"> </span>Upgrade<span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
-proxy_set_header<span class="w"> </span>Connection<span class="w"> </span><span class="s2">"upgrade"</span><span class="p">;</span>
-</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>proxy_http_version<span class="w"> </span><span class="m">1</span>.1<span class="p">;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>proxy_set_header<span class="w"> </span>Upgrade<span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>proxy_set_header<span class="w"> </span>Connection<span class="w"> </span><span class="s2">"upgrade"</span><span class="p">;</span>
+</span></code></pre></div>
 <h2 id="cloudflare-tunnel">Cloudflare Tunnel<a class="headerlink" href="#cloudflare-tunnel" title="Permanent link">¶</a></h2>
 <p>Cloudflare Tunnels are not recommended since they throttle non-HTML traffic (which video falls under).</p>
 <p>See <a href="https://blog.cloudflare.com/updated-tos/" target="_blank">Cloudflare blog post</a> for more details.</p>

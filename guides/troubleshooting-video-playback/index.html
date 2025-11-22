@@ -3266,17 +3266,17 @@ GitHub sponsorship</a>
 
 <h2 id="inspecting-files">Inspecting files<a class="headerlink" href="#inspecting-files" title="Permanent link">¶</a></h2>
 <p>You can use the ffprobe command to gather useful information about a video file:</p>
-<div class="highlight"><pre><span></span><code>ffprobe<span class="w"> </span>-show_format<span class="w"> </span>-show_streams<span class="w"> </span>big_buck_bunny.mkv
-</code></pre></div>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ffprobe<span class="w"> </span>-show_format<span class="w"> </span>-show_streams<span class="w"> </span>big_buck_bunny.mkv
+</span></code></pre></div>
 <p>This can be useful for example, when filing bug reports, or discussing in chat.</p>
 <h2 id="remuxing-files">Remuxing files<a class="headerlink" href="#remuxing-files" title="Permanent link">¶</a></h2>
 <p>Another good test, is to see if remuxing the file into a new video file helps:</p>
-<div class="highlight"><pre><span></span><code>ffmpeg<span class="w"> </span>-i<span class="w"> </span>big_buck_bunny.mkv<span class="w"> </span>-c:v<span class="w"> </span>copy<span class="w"> </span>-c:a<span class="w"> </span>copy<span class="w"> </span>remuxed_file.mkv
-</code></pre></div>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ffmpeg<span class="w"> </span>-i<span class="w"> </span>big_buck_bunny.mkv<span class="w"> </span>-c:v<span class="w"> </span>copy<span class="w"> </span>-c:a<span class="w"> </span>copy<span class="w"> </span>remuxed_file.mkv
+</span></code></pre></div>
 <h2 id="extracting-a-sample-of-a-video">Extracting a sample of a video<a class="headerlink" href="#extracting-a-sample-of-a-video" title="Permanent link">¶</a></h2>
 <p>If you are asked for a sample of a video (e.g. for developers to analyse), you can use </p>
-<div class="highlight"><pre><span></span><code>ffmpeg<span class="w"> </span>-ss<span class="w"> </span><span class="m">120</span><span class="w"> </span>-i<span class="w"> </span>big_buck_bunny.mkv<span class="w">  </span>-t<span class="w"> </span><span class="m">30</span><span class="w"> </span>-c:v<span class="w"> </span>copy<span class="w"> </span>-c:a<span class="w"> </span>copy<span class="w"> </span>30_second_sample.mkv
-</code></pre></div>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ffmpeg<span class="w"> </span>-ss<span class="w"> </span><span class="m">120</span><span class="w"> </span>-i<span class="w"> </span>big_buck_bunny.mkv<span class="w">  </span>-t<span class="w"> </span><span class="m">30</span><span class="w"> </span>-c:v<span class="w"> </span>copy<span class="w"> </span>-c:a<span class="w"> </span>copy<span class="w"> </span>30_second_sample.mkv
+</span></code></pre></div>
 <p>The above command starts at the 120-second marker, and takes a 30-second sample of the video file.</p>
 
 

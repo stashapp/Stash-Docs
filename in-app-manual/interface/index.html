@@ -3471,25 +3471,25 @@ GitHub sponsorship</a>
 <h2 id="custom-locales">Custom Locales<a class="headerlink" href="#custom-locales" title="Permanent link">¶</a></h2>
 <p>The localisation strings can be customised. The master list of default (en-GB) locale strings can be found <a href="https://github.com/stashapp/stash/blob/develop/ui/v2.5/src/locales/en-GB.json">here</a>. The custom locale format is the same as this json file.</p>
 <p>For example, to override the <code>actions.add_directory</code> label (which is <code>Add Directory</code> by default), you would have the following in the custom locale:</p>
-<div class="highlight"><pre><span></span><code>{
-  "actions": {
-    "add_directory": "Some other description"
-  }
-}
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  "actions": {
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    "add_directory": "Some other description"
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  }
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>}
+</span></code></pre></div>
 <h2 id="custom-served-folders">Custom served folders<a class="headerlink" href="#custom-served-folders" title="Permanent link">¶</a></h2>
 <p>It is possible to expose specific folders to the UI. This configuration is performed manually in the <code>config.yml</code> file only.</p>
 <p>Custom served content is exposed via the <code>/custom</code> URL path prefix.</p>
 <p>For example, in the <code>config.yml</code> file:
-</p><div class="highlight"><pre><span></span><code>custom_served_folders:
-  /: D:\stash\static
-  /foo: D:\bar
-</code></pre></div><p></p>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>custom_served_folders:
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  /: D:\stash\static
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  /foo: D:\bar
+</span></code></pre></div><p></p>
 <p>With the above configuration, a request for <code>/custom/foo/bar.png</code> would return <code>D:\bar\bar.png</code>. The <code>/</code> entry matches anything that is not otherwise mapped by the other entries. For example, <code>/custom/baz/xyz.png</code> would return <code>D:\stash\static\baz\xyz.png</code>.</p>
 <p>Applications for this include using static images in custom css, like the Plex theme. For example, using the following config:
-</p><div class="highlight"><pre><span></span><code>custom_served_folders:
-  /: &lt;stash folder&gt;\custom
-</code></pre></div><p></p>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>custom_served_folders:
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  /: &lt;stash folder&gt;\custom
+</span></code></pre></div><p></p>
 <p>The <code>background.png</code> and <code>noise.png</code> files can be placed in the <code>custom</code> folder, then in the custom css, the <code>./background.png</code> and <code>./noise.png</code> strings can be replaced with <code>/custom/background.png</code> and <code>/custom/noise.png</code> respectively.</p>
 <p>Other applications are to add custom UIs to stash, accessible via <code>/custom</code>.</p>
 
