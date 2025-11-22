@@ -67,6 +67,7 @@ plugins:
       branch: main
       exclude_committers:
         - github-actions[bot]
+        - web-flow
   - glightbox
   - social:
       enabled: !ENV [CI, false]
