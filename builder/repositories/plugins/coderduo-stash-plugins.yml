@@ -1,9 +1,0 @@
-name: coderdudeo stash plugins
-collection:
-  index: https://coderdudeo.github.io/CoderDudeo-Stash-Plugins/index.yml
-  global_repo: coderdudeo/CoderDudeo-Stash-Plugins
-  global_author: "[coderdudeo](https://github.com/coderdudeo)"
-  global_readme: https://github.com/coderdudeo/CoderDudeo-Stash-Plugins/blob/main/README.md
-
-scripts:
-  - id: ColorCodedTags

@@ -1,7 +1,0 @@
-name: Lurking987 stash-plugins
-collection:
-  index: https://lurking987.github.io/stash-plugins/main/index.yml
-  global_repo: Lurking987/stash-plugins
-
-scripts:
-  - id: Find Marker For Tag Images
