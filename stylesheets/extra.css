@@ -19,3 +19,17 @@
     max-width: 81rem;
 }
 */
+a.md-nav__link[href*='discourse.stashapp.cc']::after,
+a.md-tabs__link[href*='discourse.stashapp.cc']::after,
+a.md-nav__link[href*='community-wiki']::after,
+a.md-tabs__link[href*='community-wiki']::after {
+  content: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.2 12.2' width='10' height='10'><path fill='rgb(198, 203, 233)' d='M5.7 0v1.5h4L4.5 6.7l1 1.1 5.3-5.2v3.9h1.4V0z'/><path fill='none' d='M3.4 6.7l3-2.9H1.5v7h7V5.9l-3 2.9z'/><path fill='rgb(198, 203, 233)' d='M8.5 5.9v4.9h-7v-7h4.9l1.5-1.6H0v10h10V4.4z'/></svg>");
+  margin-left: 0.25em;
+  margin-top: -0.2rem;
+}
+a.md-nav__link[href*='discourse.stashapp.cc'],
+a.md-tabs__link[href*='discourse.stashapp.cc'],
+a.md-nav__link[href*='community-wiki'],
+a.md-tabs__link[href*='community-wiki'] {
+  gap: 0;
+}
