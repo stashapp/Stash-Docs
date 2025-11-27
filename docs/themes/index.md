@@ -2,24 +2,36 @@
 title: Themes
 ---
 
-!!! info
-    Themes are created by third parties and not officially affiliated or supported by the core Stash team. If you have issues, please reach out to the original creators.
+!!! info "Disclaimer"
+    Plugins are created and maintained by the community and are not associated with the stashapp team.
 
-Stash supports CSS themes to adjust the look-and-feel of the interface. There are several that have been created by the maintainers and users.
+Stash supports CSS themes to adjust the look-and-feel of the interface.
 
 Themes can be installed either via plugin or as Custom CSS.
 
-## Installing via plugin
+## Managing themes
 
-Plugins can be installed and managed from the :fontawesome-solid-gear: **Settings** > **Plugins** page.
+Themes can be installed and managed from the :fontawesome-solid-gear: **Settings** > **Plugins** page.
 
-Plugins are installed using the **Available Plugins** section. The **Community (stable)** source is configured by default that has several themes.
+Themes are installed using the **Available Plugins** section. The **Community (stable)** source is configured by default.
 
-Installed plugins can be updated or uninstalled from the **Installed Plugins** section.
+Installed themes can be updated or uninstalled from the **Installed Plugins** section.
 
 ### Adding sources
 
-Anyone can create their own source index for plugins. To add a new source go to :fontawesome-solid-gear: **Settings** > **Plugins** page and under **Available Plugins** click **Add Source**.
+To add a new source go to :fontawesome-solid-gear: **Settings** > **Plugins** page and under **Available Plugins** click **Add Source**.
+
+## Installing themes manually
+
+By default Stash reads plugin configuration files from the `plugins` sub-directory located where the stash `config.yml` is read. Typical locations:
+
+- Windows: `%USERPROFILE%\.stash\plugins`
+- Unix: `/root/.stash/plugins`
+- Or: current working directory (cwd)
+
+Themes are added by adding configuration YAML files (format: `pluginName.yml`) to the `plugins` directory.
+
+Loaded themes can be viewed in the :fontawesome-solid-gear: **Settings** > **Plugins** page. After themes are added, removed or edited while Stash is running, they can be reloaded by clicking :fontawesome-solid-rotate: **Reload plugins** button.
 
 ## Installing via Custom CSS
 
@@ -28,3 +40,10 @@ Anyone can create their own source index for plugins. To add a new source go to 
 1. Make sure **Custom CSS enabled** is checked.
 1. Click on **Edit** under **Custom CSS** and then paste the CSS code into the text box.
 1. You will need to force-reload ++shift+f5++ in order to see the theme.
+
+## Theme sources
+
+Stash comes preconfigured with [stashapp/CommunityScripts](https://github.com/stashapp/CommunityScripts){:target="_blank"} source maintained by stashapp community. 
+
+- [List of known plugin sources](https://discourse.stashapp.cc/t/list-of-plugin-sources/122){:target="_blank"}  
+- [Community theme index](https://discourse.stashapp.cc/tags/c/plugins/18/none/theme){:target="_blank"}

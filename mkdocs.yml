@@ -162,7 +162,7 @@ nav:
     - Backup and restore database: guides/backup-and-restore-database.md
     - Reverse proxy: guides/reverse-proxy.md
     - Troubleshooting video playback: guides/troubleshooting-video-playback.md
-    - Advanced configuration options: guides/advanced-configuration-options.mdd
+    - Advanced configuration options: guides/advanced-configuration-options.md
     - Manually editing the Stash sqlite3 database: guides/manually-editing-the-stash-sqlite3-database.md
     - Scraping metadata behind login: guides/scraping-metadata-behind-login.md
     - Community wiki:
@@ -173,26 +173,17 @@ nav:
     - Scrapers: metadata-sources/scrapers.md
   - Plugins: 
     - plugins/index.md
-    - Browse plugins: plugins/list.md
+    - Browse plugins: https://discourse.stashapp.cc/c/plugins/18
     - Themes:
       - themes/index.md
-      - Browse themes: themes/list.md
-      - Custom CSS snippets: themes/custom-css-snippets.md
-    - Userscripts:
-      - userscripts/index.md
-      - Browse userscripts: userscripts/list.md
-    - Scripts:
-      - scripts/index.md
-      - Browse scripts: scripts/list.md
-    - Utilities:
-      - utilities/index.md
-      - Browse utilities: utilities/list.md
-    - Integrations:
-      - integrations/index.md
-      - Browse integrations: integrations/list.md
+      - Browse themes: https://discourse.stashapp.cc/tags/c/plugins/18/none/theme
+      - Custom CSS snippets: https://discourse.stashapp.cc/t/custom-css-snippets/4043
+    - Other projects:
+      - other-projects/index.md
+      - Browse other projects: https://discourse.stashapp.cc/c/plugins/other-projects/15
   - API: api.md
-  - Community forum: https://discourse.stashapp.cc
   - Code of conduct: code-of-conduct.md
+  - Forum: https://discourse.stashapp.cc
 
 extra:
   social:

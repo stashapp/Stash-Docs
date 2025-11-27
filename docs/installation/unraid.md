@@ -3,7 +3,7 @@ title: Unraid
 icon: simple/unraid
 ---
 
-!!! important "Disclaimer"
+!!! info "Disclaimer"
     None of the Unraid community apps are not managed by stashapp team.
 
 ## Stash by CorneliousJD

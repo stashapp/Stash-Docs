@@ -42,7 +42,7 @@ icon: fontawesome/brands/windows
 
 ## Install via Scoop
 
-!!! important "Disclaimer"
+!!! info "Disclaimer"
     The package is not managed by stashapp team. 
 
 [Scoop](https://scoop.sh/){:target="_blank"} is command-line package manager for Windows. 

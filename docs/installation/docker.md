@@ -25,7 +25,7 @@ The stash Docker container ships with everything you need to automatically run s
 
 ### Docker Compose
 
-[https://github.com/stashapp/stash/blob/master/docker/production/docker-compose.yml](https://github.com/stashapp/stash/blob/master/docker/production/docker-compose.yml)
+[https://github.com/stashapp/stash/blob/master/docker/production/docker-compose.yml](https://github.com/stashapp/stash/blob/master/docker/production/docker-compose.yml){:target="_blank"}
 
 ```yaml
 # APPNICENAME=Stash
@@ -75,7 +75,7 @@ services:
 
 ### Dockerfile (x86_64)
 
-[https://github.com/stashapp/stash/blob/master/docker/build/x86_64/Dockerfile](https://github.com/stashapp/stash/blob/master/docker/build/x86_64/Dockerfile)
+[https://github.com/stashapp/stash/blob/master/docker/build/x86_64/Dockerfile](https://github.com/stashapp/stash/blob/master/docker/build/x86_64/Dockerfile){:target="_blank"}
 
 ```dockerfile
 # This dockerfile should be built with `make docker-build` from the stash root.
@@ -124,7 +124,7 @@ ENTRYPOINT ["stash"]
 
 ### Dockerfile-CUDA (x86_64)
 
-[https://github.com/stashapp/stash/blob/master/docker/build/x86_64/Dockerfile-CUDA](https://github.com/stashapp/stash/blob/master/docker/build/x86_64/Dockerfile-CUDA)
+[https://github.com/stashapp/stash/blob/master/docker/build/x86_64/Dockerfile-CUDA](https://github.com/stashapp/stash/blob/master/docker/build/x86_64/Dockerfile-CUDA){:target="_blank"}
 
 #### Notable changes
 
@@ -199,7 +199,7 @@ ENTRYPOINT ["docker-entrypoint.sh", "stash"]
 
 ## Community images
 
-!!! important "Disclaimer"
+!!! info "Disclaimer"
     The images are not managed by stashapp team.
 
 ### feederbox826
