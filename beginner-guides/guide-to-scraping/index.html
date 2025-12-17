@@ -2854,18 +2854,22 @@ GitHub sponsorship</a>
 
   <h1>Guide to Scraping</h1>
 
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This is StashDB focused guide and is no longer actively maintained. For the most up-to-date information on scraping scenes via stash-box endpoints, please see <a href="/guides/scraping-scenes-via-stash-box/">Scraping scenes via stash-box</a>.</p>
+</div>
 <p>The following is our recommended procedure for new Stash users who want to get info for their scenes as quickly, easily, and as accurately as possible. Pulling info directly from StashDB is still the best option, but unfortunately this will not always be possible. Alternative methods are also covered for when StashDB doesn't have what you need. This is an expanded version of @Scruffy's <a href="https://discord.com/channels/559159668438728723/798641040029777980/997893396733640737" target="_blank">pinned post</a> in the <strong>#stashdb-general</strong> channel in our Discord. Go there if you'd like something more succinct and direct. Hopefully this guide will reduce the pain and frustration for those who are lost and don't know where to start.</p>
 <p><strong>The following sections are in this particular order for a reason, so please follow this guide from the beginning</strong>.</p>
 <h2 id="generate-phashes">Generate pHashes<a class="headerlink" href="#generate-phashes" title="Permanent link">¶</a></h2>
 <ol>
 <li>
 <p>Navigate to the Settings page (⚙ icon in top right), make sure you're on "Tasks" in the sidebar to the left, then find the first heading "Library" in the middle of the page. Make sure "Generate perceptual hashes" is turned on so pHashes will be created automatically each time you run a scan to add new scenes. This will slow down the scanning process, but for most users <a href="https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/whats-a-phash" target="_blank">it's worth it</a>. pHashes are the main way to match your scenes with our data on StashDB.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/assets/beginner-guides/gen-phashes-on-scan.jpg" data-desc-position="bottom"><img alt="How to generate pHashes on scan" src="/assets/beginner-guides/gen-phashes-on-scan.jpg"></a>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/assets/beginner-guides/gen-phashes-on-scan.jpg" data-desc-position="bottom"><img alt="How to generate pHashes on scan" loading="lazy" src="/assets/beginner-guides/gen-phashes-on-scan.jpg"></a>
 <br><br></p>
 </li>
 <li>
 <p>pHash generation is not turned on by default, so you'll need to generate them manually if you haven't already. This can be done on your entire library on the same Settings --&gt; Tasks page, scroll down to the "Generated Content" heading. Make sure "Perceptual hashes (for deduplication)" is turned on and click the "Generate" button at the top. As long as "Overwrite existing generated files" is turned off, this will only generate missing files and hashes.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/assets/beginner-guides/gen-phashes-manually.jpg" data-desc-position="bottom"><img alt="How to generate pHashes manually" src="/assets/beginner-guides/gen-phashes-manually.jpg"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/assets/beginner-guides/gen-phashes-manually.jpg" data-desc-position="bottom"><img alt="How to generate pHashes manually" loading="lazy" src="/assets/beginner-guides/gen-phashes-manually.jpg"></a></p>
 </li>
 </ol>
 <h2 id="join-stashdb">Join StashDB<a class="headerlink" href="#join-stashdb" title="Permanent link">¶</a></h2>
@@ -2874,7 +2878,7 @@ GitHub sponsorship</a>
 <ol>
 <li>
 <p>Go to your Scenes page on Stash and click the double 🔖 icon to the far right of the search bar. This is your Scene Tagger view and should be your first choice for pulling data, not Identify / Autotag / Filename Parser / URL Scrapers / etc. Always use the Scene Tagger first, the rest are for users with more specific needs who understand the strengths and weaknesses of each tool.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/assets/beginner-guides/find-scene-tagger.jpg" data-desc-position="bottom"><img alt="How to find the Scene Tagger" src="/assets/beginner-guides/find-scene-tagger.jpg"></a>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/assets/beginner-guides/find-scene-tagger.jpg" data-desc-position="bottom"><img alt="How to find the Scene Tagger" loading="lazy" src="/assets/beginner-guides/find-scene-tagger.jpg"></a>
 <br><br></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -2883,12 +2887,12 @@ GitHub sponsorship</a>
 </li>
 <li>
 <p>First, click the "Scrape All" button. This will use your pHashes to find matching scenes on StashDB for every scene on the current page. The "Scrape by fragment" buttons will do the same thing but just for one scene at a time. Also, you may want to change your Scene Tagger settings with the ⚙ icon next to "Scrape All." You can tell it to Merge (keep all) tags, Overwrite (keep only new) tags, or ignore StashDB's tags entirely (leave box unchecked). If you plan on <a href="https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/contributing-to-stashdb" target="_blank">contributing to StashDB</a>, you should have "Show male performers" turned on to better follow <a href="https://guidelines.stashdb.org/docs/scenes/edit/scene-performers/missing-performers" target="_blank">these guidelines</a>.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/assets/beginner-guides/scrape-all-and-search.jpg" data-desc-position="bottom"><img alt="Running &quot;Scrape All&quot; and &quot;Search&quot;" src="/assets/beginner-guides/scrape-all-and-search.jpg"></a>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/assets/beginner-guides/scrape-all-and-search.jpg" data-desc-position="bottom"><img alt="Running &quot;Scrape All&quot; and &quot;Search&quot;" loading="lazy" src="/assets/beginner-guides/scrape-all-and-search.jpg"></a>
 <br><br></p>
 </li>
 <li>
 <p>If your fingerprint search doesn't return a correct result for your scene, you can try searching with the "Query" field using title, performer, release date, or studio. Try to use as little text as possible to find your scene. Otherwise, unnecessary words that do not match StashDB's info may block correct results. If you can find the matching scene on StashDB.org but can't find it using the Scene Tagger, you can use the scene's <a href="https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/whats-a-stashid" target="_blank">StashID</a> as your Tagger query.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/assets/beginner-guides/find-stashid.jpg" data-desc-position="bottom"><img alt="How to find a StashID" src="/assets/beginner-guides/find-stashid.jpg"></a>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/assets/beginner-guides/find-stashid.jpg" data-desc-position="bottom"><img alt="How to find a StashID" loading="lazy" src="/assets/beginner-guides/find-stashid.jpg"></a>
 <br><br></p>
 </li>
 <li>
@@ -2897,20 +2901,21 @@ GitHub sponsorship</a>
 </ol>
 <h2 id="use-theporndb-endpoint">Use ThePornDB Endpoint<a class="headerlink" href="#use-theporndb-endpoint" title="Permanent link">¶</a></h2>
 <ol>
-<li>If you are absolutely sure a scene isn't on StashDB anywhere, the next easiest method is to try ThePornDB. They have significantly more scenes than StashDB thanks to their automated scrapers, but their info isn't always as complete or accurate compared to StashDB's manually curated approach. They also don't have as many pHashes so matching scenes can be trickier as well.  By using their Endpoint and submitting fingerprints to them when you have a good match via searching, you make life easier for everyone else scraping there.
-<br><br></li>
-</ol>
-<p>{:style="counter-reset:none"}
-1. First step is to make an account at <a href="https://theporndb.net/register" target="_blank">theporndb.net</a>. With your account created, navigate to your <a href="https://theporndb.net/user/api-tokens" target="_blank">API Tokens</a> page. Type "stash" as your token's name (or whatever you'd prefer), make sure the "read" permission is checked (you don't need the others), and click the "Create" button. A pop-up will display your newly created token. <strong>Save your API token somewhere so you can find it later!</strong>. It will not be visible on ThePornDB's website after you close the pop-up. If you lose it, you may need to create a new one and repeat this entire setup process. This can be done in a password manager, notes app, or a well-placed text file.</p>
-<div class="language-text highlight"><pre><span></span><code>![How to create an API token on ThePornDB](/assets/beginner-guides/create-tpdb-token.jpg)
-</code></pre></div>
-<p><br><br></p>
-<ol>
-<li>Go to the <strong>Settings</strong> page in Stash (<a href="http://localhost:9999/settings" target="_blank">http://localhost:9999/settings</a> by default), click <strong>Metadata Providers</strong> on the left side and find <strong>Stash-box Endpoints</strong> at the top.</li>
-</ol>
-<p>{:style="counter-reset:none"}
-1. Click <strong>Add</strong> and fill out the form that pops up: paste in your API key you created earlier amd enter <code>ThePornDB</code> (or anything else you'd like, like TPDB) for <strong>Name</strong>, and enter <code>https://theporndb.net/graphql</code> as the <strong>GraphQL endpoint</strong>.</p>
-<ol>
+<li>
+<p>If you are absolutely sure a scene isn't on StashDB anywhere, the next easiest method is to try ThePornDB. They have significantly more scenes than StashDB thanks to their automated scrapers, but their info isn't always as complete or accurate compared to StashDB's manually curated approach. They also don't have as many pHashes so matching scenes can be trickier as well.  By using their Endpoint and submitting fingerprints to them when you have a good match via searching, you make life easier for everyone else scraping there.
+<br><br></p>
+</li>
+<li>
+<p>First step is to make an account at <a href="https://theporndb.net/register" target="_blank">theporndb.net</a>. With your account created, navigate to your <a href="https://theporndb.net/user/api-tokens" target="_blank">API Tokens</a> page. Type "stash" as your token's name (or whatever you'd prefer), make sure the "read" permission is checked (you don't need the others), and click the "Create" button. A pop-up will display your newly created token. <strong>Save your API token somewhere so you can find it later!</strong>. It will not be visible on ThePornDB's website after you close the pop-up. If you lose it, you may need to create a new one and repeat this entire setup process. This can be done in a password manager, notes app, or a well-placed text file.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/assets/beginner-guides/create-tpdb-token.jpg" data-desc-position="bottom"><img alt="How to create an API token on ThePornDB" loading="lazy" src="/assets/beginner-guides/create-tpdb-token.jpg"></a>
+<br><br></p>
+</li>
+<li>
+<p>Go to the <strong>Settings</strong> page in Stash (<a href="http://localhost:9999/settings" target="_blank">http://localhost:9999/settings</a> by default), click <strong>Metadata Providers</strong> on the left side and find <strong>Stash-box Endpoints</strong> at the top.</p>
+</li>
+<li>
+<p>Click <strong>Add</strong> and fill out the form that pops up: paste in your API key you created earlier amd enter <code>ThePornDB</code> (or anything else you'd like, like TPDB) for <strong>Name</strong>, and enter <code>https://theporndb.net/graphql</code> as the <strong>GraphQL endpoint</strong>.</p>
+</li>
 <li>
 <p>Click <strong>Test Credentials</strong> to make sure you've entered everything correctly, then click <strong>Confirm</strong>.</p>
 </li>
@@ -2966,7 +2971,7 @@ GitHub sponsorship</a>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 11, 2024 05:35:10 UTC">March 11, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 17, 2025 04:08:08 UTC">December 17, 2025</span>
   </span>
 
     
