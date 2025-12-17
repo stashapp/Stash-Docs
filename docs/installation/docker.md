@@ -115,7 +115,7 @@ services:
 - [venv](https://docs.python.org/3/library/venv.html){:target="_blank"} Python manager
 
 
-## Using Docker Compose
+## Install using Docker Compose
 
 !!! note
     Condensed instructions are available [here](https://github.com/stashapp/stash/blob/master/docker/production/README.md){:target="_blank"}. 
@@ -134,8 +134,8 @@ services:
     Alternatively you can edit the `docker-compose.yml` to manually include new volume: `- ./blobs:/blobs`.
 
 1. Go to the directory where `docker-compose.yml` is saved.
-2. Run `docker-compose pull`. Pulls the new image.
-3. Run `docker-compose down`. Removes old container.
+2. Run `docker compose pull`. Pulls the new image.
+3. Run `docker compose down`. Removes old container.
 4. Run `docker compose up -d`. Creates and starts the new container. 
   - Make sure the mount points and settings are the same as in previous `docker-compose.yml` file. 
 
