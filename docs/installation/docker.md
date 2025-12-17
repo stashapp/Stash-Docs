@@ -73,129 +73,18 @@ services:
       - ./generated:/generated
 ```
 
-### Dockerfile (x86_64)
+### Build from Dockerfile
+
+#### Dockerfile (x86_64)
 
 [https://github.com/stashapp/stash/blob/master/docker/build/x86_64/Dockerfile](https://github.com/stashapp/stash/blob/master/docker/build/x86_64/Dockerfile){:target="_blank"}
 
-```dockerfile
-# This dockerfile should be built with `make docker-build` from the stash root.
-
-# Build Frontend
-FROM node:20-alpine AS frontend
-RUN apk add --no-cache make git
-## cache node_modules separately
-COPY ./ui/v2.5/package.json ./ui/v2.5/yarn.lock /stash/ui/v2.5/
-WORKDIR /stash
-COPY Makefile /stash/
-COPY ./graphql /stash/graphql/
-COPY ./ui /stash/ui/
-RUN make pre-ui
-RUN make generate-ui
-ARG GITHASH
-ARG STASH_VERSION
-RUN BUILD_DATE=$(date +"%Y-%m-%d %H:%M:%S") make ui-only
-
-# Build Backend
-FROM golang:1.24.3-alpine AS backend
-RUN apk add --no-cache make alpine-sdk
-WORKDIR /stash
-COPY ./go* ./*.go Makefile gqlgen.yml .gqlgenc.yml /stash/
-COPY ./graphql /stash/graphql/
-COPY ./scripts /stash/scripts/
-COPY ./pkg /stash/pkg/
-COPY ./cmd /stash/cmd/
-COPY ./internal /stash/internal/
-# needed for generate-login-locale
-COPY ./ui /stash/ui/
-RUN make generate-backend generate-login-locale
-COPY --from=frontend /stash /stash/
-ARG GITHASH
-ARG STASH_VERSION
-RUN make flags-release flags-pie stash
-
-# Final Runnable Image
-FROM alpine:latest
-RUN apk add --no-cache ca-certificates vips-tools ffmpeg
-COPY --from=backend /stash/stash /usr/bin/
-ENV STASH_CONFIG_FILE=/root/.stash/config.yml
-EXPOSE 9999
-ENTRYPOINT ["stash"]
-```
-
-### Dockerfile-CUDA (x86_64)
+#### Dockerfile-CUDA (x86_64)
 
 [https://github.com/stashapp/stash/blob/master/docker/build/x86_64/Dockerfile-CUDA](https://github.com/stashapp/stash/blob/master/docker/build/x86_64/Dockerfile-CUDA){:target="_blank"}
 
-#### Notable changes
-
 - Adds support for NVENC
 - Adds Intel QSV drivers
-
-```dockerfile
-# This dockerfile should be built with `make docker-cuda-build` from the stash root.
-ARG CUDA_VERSION=12.8.0
-
-# Build Frontend
-FROM node:20-alpine AS frontend
-RUN apk add --no-cache make git
-## cache node_modules separately
-COPY ./ui/v2.5/package.json ./ui/v2.5/yarn.lock /stash/ui/v2.5/
-WORKDIR /stash
-COPY Makefile /stash/
-COPY ./graphql /stash/graphql/
-COPY ./ui /stash/ui/
-RUN make pre-ui
-RUN make generate-ui
-ARG GITHASH
-ARG STASH_VERSION
-RUN BUILD_DATE=$(date +"%Y-%m-%d %H:%M:%S") make ui-only
-
-# Build Backend
-FROM golang:1.24.3-bullseye AS backend
-RUN apt update && apt install -y build-essential golang
-WORKDIR /stash
-COPY ./go* ./*.go Makefile gqlgen.yml .gqlgenc.yml /stash/
-COPY ./graphql /stash/graphql/
-COPY ./scripts /stash/scripts/
-COPY ./pkg /stash/pkg/
-COPY ./cmd /stash/cmd
-COPY ./internal /stash/internal
-# needed for generate-login-locale
-COPY ./ui /stash/ui/
-RUN make generate-backend generate-login-locale
-COPY --from=frontend /stash /stash/
-ARG GITHASH
-ARG STASH_VERSION
-RUN make flags-release flags-pie stash
-
-# Final Runnable Image
-FROM nvidia/cuda:${CUDA_VERSION}-base-ubuntu24.04
-RUN apt update && apt upgrade -y && apt install -y \
-    # stash dependencies
-    ca-certificates libvips-tools ffmpeg \
-    # intel dependencies
-    intel-media-va-driver-non-free vainfo \
-    # python tools
-    python3 python3-pip && \
-  # cleanup
-  apt autoremove -y && apt clean && \
-  rm -rf /var/lib/apt/lists/*
-COPY --from=backend --chmod=555 /stash/stash /usr/bin/
-
-# NVENC Patch
-RUN mkdir -p /usr/local/bin /patched-lib
-ADD --chmod=555 https://raw.githubusercontent.com/keylase/nvidia-patch/master/patch.sh /usr/local/bin/patch.sh
-ADD --chmod=555 https://raw.githubusercontent.com/keylase/nvidia-patch/master/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
-
-ENV LANG=C.UTF-8
-ENV NVIDIA_VISIBLE_DEVICES=all
-ENV NVIDIA_DRIVER_CAPABILITIES=video,utility
-ENV STASH_CONFIG_FILE=/root/.stash/config.yml
-EXPOSE 9999
-ENTRYPOINT ["docker-entrypoint.sh", "stash"]
-
-# vim: ft=dockerfile
-```
 
 ## Community images
 
