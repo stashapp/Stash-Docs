@@ -42,7 +42,7 @@ Recommended to people that value accuracy the most. It can automatically go thro
 1. Go to :fontawesome-solid-tags: **Tagger**, which is accessible from the toolbar.
 1. Under **Source** select a stash-box instance you want to use.
 1. Opposite the **Source** click on the :fontawesome-solid-gear: to open configuration.
-    1. You can confugure **Performer genders** if you want them to be scraped for you locally.
+    1. You can configure **Performer genders** if you want them to be scraped for you locally.
     1. You can disable **Set scene cover image** if you prefer to keep your existing cover.
     1. You can enable **Set tags** if you want to be shown all the crowdsourced tags the scene has on the stash-box instance.
     1. You can change the **Quury Mode** if you have specific needs on how scenes are matched.
