@@ -1256,10 +1256,77 @@ GitHub sponsorship</a>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organized-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organized flag
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#options" class="md-nav__link">
     <span class="md-ellipsis">
       
         Options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#field-specific-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Field specific options
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running task
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logs
       
     </span>
   </a>
@@ -2820,10 +2887,77 @@ GitHub sponsorship</a>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organized-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organized flag
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#options" class="md-nav__link">
     <span class="md-ellipsis">
       
         Options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#field-specific-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Field specific options
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running task
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logs
       
     </span>
   </a>
@@ -2930,11 +3064,18 @@ GitHub sponsorship</a>
 
 
 <h1 id="identify">Identify<a class="headerlink" href="#identify" title="Permanent link">¶</a></h1>
-<p>This task iterates through your Scenes and attempts to identify the scene using a selection of scraping sources.</p>
-<p>This task accepts one or more scraper sources. Valid scraper sources for the Identify task are stash-box instances, and scene scrapers which support scraping via Scene Fragment. The order of the sources may be rearranged.</p>
-<p>For each Scene, the Identify task iterates through the scraper sources, in the order provided, and tries to identify the scene using each source. If a result is found in a source, then the Scene is updated, and no further sources are checked for that scene.</p>
+<p>The Identify task iterates through your Scenes and attempts to identify them using a selection of scraping sources. If a result is found in a source, the Scene is updated, and no further sources are checked for that scene.</p>
+<p>This task is part of the advanced settings mode.</p>
+<h2 id="rules">Rules<a class="headerlink" href="#rules" title="Permanent link">¶</a></h2>
+<ul>
+<li>The task accepts one or more scraper sources, including stash-box instances and scene scrapers that support scraping via Scene Fragment. The order of the sources can be rearranged.</li>
+<li>The task iterates through the scraper sources in the provided order.</li>
+<li>If a result is found in a source, the Scene is updated, and further sources are not checked for that scene.</li>
+</ul>
+<h3 id="organized-flag">Organized flag<a class="headerlink" href="#organized-flag" title="Permanent link">¶</a></h3>
+<p>Scenes that have the Organized flag added to them will not be modified by Identify. You can also use Organized flag status as a filter.</p>
 <h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">¶</a></h2>
-<p>The following options can be set:</p>
+<p>The following options can be configured:</p>
 <table>
 <thead>
 <tr>
@@ -2945,15 +3086,15 @@ GitHub sponsorship</a>
 <tbody>
 <tr>
 <td>Include male performers</td>
-<td>If false, then male performers will not be created or set on scenes.</td>
+<td>If false, male performers will not be created or set on scenes.</td>
 </tr>
 <tr>
 <td>Set cover images</td>
-<td>If false, then scene cover images will not be modified.</td>
+<td>If false, scene cover images will not be modified.</td>
 </tr>
 <tr>
-<td>Set organised flag</td>
-<td>If true, the organised flag is set to true when a scene is organised.</td>
+<td>Set organized flag</td>
+<td>If true, the organized flag is set to true when a scene is organized.</td>
 </tr>
 <tr>
 <td>Skip matches that have more than one result</td>
@@ -2969,11 +3110,12 @@ GitHub sponsorship</a>
 </tr>
 <tr>
 <td>Tag skipped performers with</td>
-<td>If the above options is set and a performer is skipped, this will add the tag so that you can filter for in it the Scene Tagger view and choose how you want to handle those performers</td>
+<td>If the above option is set and a performer is skipped, this will add the tag so that you can filter for it in the Scene Tagger view and choose how you want to handle those performers</td>
 </tr>
 </tbody>
 </table>
-<p>Field specific options may be set as well. Each field may have a Strategy. The behaviour for each strategy value is as follows:</p>
+<h3 id="field-specific-options">Field specific options<a class="headerlink" href="#field-specific-options" title="Permanent link">¶</a></h3>
+<p>Each field may have a strategy. The behavior for each strategy is as follows:</p>
 <table>
 <thead>
 <tr>
@@ -2984,11 +3126,11 @@ GitHub sponsorship</a>
 <tbody>
 <tr>
 <td>Ignore</td>
-<td>Not set.</td>
+<td>The field is not set.</td>
 </tr>
 <tr>
 <td>Overwrite</td>
-<td>Overwrite existing value.</td>
+<td>Existing values are overwritten.</td>
 </tr>
 <tr>
 <td>Merge (<em>default</em>)</td>
@@ -2996,8 +3138,13 @@ GitHub sponsorship</a>
 </tr>
 </tbody>
 </table>
-<p>For Studio, Performers and Tags, an option is also available to Create Missing objects. This is enabled by default. When true, if a Studio/Performer/Tag is included during the identification process and does not exist in the system, then it will be created.</p>
-<p>Default Options are applied to all sources unless overridden in specific source options. </p>
+<p>For Studio, Performers, and Tags, an option is available to <strong>Create Missing Objects</strong>. This is enabled by default. When true, if a Studio/Performer/Tag is included during the identification process and does not exist in the system, it will be created.</p>
+<h2 id="running-task">Running task<a class="headerlink" href="#running-task" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>Identify...:</strong> Run the Identify task on your entire library from the Tasks page.</li>
+<li><strong>Selective Identify:</strong> Configure and run the Identify task on specific directories from Tasks &gt; Identify... page. At the top of the page click folder icon to select directories.</li>
+</ul>
+<h2 id="logs">Logs<a class="headerlink" href="#logs" title="Permanent link">¶</a></h2>
 <p>The result of the identification process for each scene is output to the log.</p>
 
 
