@@ -45,7 +45,7 @@ Recommended to people that value accuracy the most. It can automatically go thro
     1. You can configure **Performer genders** if you want them to be scraped for you locally.
     1. You can disable **Set scene cover image** if you prefer to keep your existing cover.
     1. You can enable **Set tags** if you want to be shown all the crowdsourced tags the scene has on the stash-box instance.
-    1. You can change the **Quury Mode** if you have specific needs on how scenes are matched.
+    1. You can change the **Query Mode** if you have specific needs on how scenes are matched.
     1. You can enable **Mark as Organized on save** which will apply :fontawesome-solid-box: Organized flag.
 
         ??? info "Organized flag"
