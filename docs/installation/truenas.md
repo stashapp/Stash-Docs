@@ -5,10 +5,16 @@ icon: simple/truenas
 
 ## TrueNAS Community Edition
 
-!!! info 
-    No dedicated installation guide is available at the moment. Sorry!
+### TrueNAS App
 
-Follow TrueNAS official documentation: [https://www.truenas.com/docs/](https://www.truenas.com/docs/){:target="_blank"}
+!!! info "Disclaimer" The app is not managed by stashapp team.
+
+There is a community app maintained by the TrueNAS community. 
+
+- [Stash](https://apps.truenas.com/catalog/stash/){:target="_blank"}
+- [truenas/apps-web listing](https://github.com/truenas/apps-web/blob/main/content/catalog/stash.md){:target="_blank"}
+
+Follow TrueNAS [official documentation for more details](https://apps.truenas.com/){:target="_blank"}.
 
 ## TrueNAS Scale (via TrueCharts)
 
