@@ -10,7 +10,7 @@ title: Stash-box instances
 
     ---
 
-    [:octicons-link-16: Website](https://fansdb.cc){:target="_blank"} ⋅ [:fontawesome-regular-file-lines: Guidelines](https://docs.fansdb.cc){:target="_blank"} ⋅ [:simple-discord: Discord](https://discord.gg/dhJaFAgYAj){:target="_blank"} ⋅ [:material-api: Endpoint `https://fansdb.cc/graphql`]() ⋅ [:fontawesome-solid-unlock-keyhole: Join](https://docs.fansdb.cc/#accessing-fansdb){:target="_blank"}
+    [:octicons-link-16: Website](https://fansdb.cc){:target="_blank"} ⋅ [:fontawesome-regular-file-lines: Guidelines](https://docs.fansdb.cc){:target="_blank"} ⋅ [:simple-discord: Discord](https://discord.gg/dhJaFAgYAj){:target="_blank"} ⋅ [:simple-revoltdotchat: Stoat](https://stt.gg/jN4SfGfj) ⋅ [:material-api: Endpoint `https://fansdb.cc/graphql`]() ⋅ [:fontawesome-solid-unlock-keyhole: Join](https://docs.fansdb.cc/#accessing-fansdb){:target="_blank"}
 
 </div>
 
@@ -46,7 +46,7 @@ title: Stash-box instances
 
     ---
 
-    [:octicons-link-16: Website](https://stashdb.org){:target="_blank"} ⋅ [:fontawesome-regular-file-lines: Guidelines](https://guidelines.stashdb.org){:target="_blank"} ⋅ [:fontawesome-brands-discourse: Community forum](https://discourse.stahapp.cc){:target="_blank"} ⋅ [:simple-discord: Discord](https://discord.com/invite/2TsNFKt){:target="_blank"} ⋅ [:material-api: Endpoint `https://stashdb.org/graphql`]() ⋅ [:fontawesome-solid-unlock-keyhole: Join](https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/accessing-stashdb){:target="_blank"}
+    [:octicons-link-16: Website](https://stashdb.org){:target="_blank"} ⋅ [:fontawesome-regular-file-lines: Guidelines](https://guidelines.stashdb.org){:target="_blank"} ⋅ [:fontawesome-brands-discourse: Forum](https://discourse.stahapp.cc){:target="_blank"} ⋅ [:simple-discord: Discord](https://discord.com/invite/2TsNFKt){:target="_blank"} ⋅ [:material-api: Endpoint `https://stashdb.org/graphql`]() ⋅ [:fontawesome-solid-unlock-keyhole: Join](https://guidelines.stashdb.org/docs/faq_getting-started/stashdb/accessing-stashdb){:target="_blank"}
 
 </div>
 
