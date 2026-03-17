@@ -10,7 +10,7 @@ title: Stash-box instances
 
     ---
 
-    [:octicons-link-16: Website](https://fansdb.cc){:target="_blank"} ⋅ [:fontawesome-regular-file-lines: Guidelines](https://docs.fansdb.cc){:target="_blank"} ⋅ [:simple-discord: Discord](https://discord.gg/dhJaFAgYAj){:target="_blank"} ⋅ [:simple-revoltdotchat: Stoat](https://stt.gg/jN4SfGfj) ⋅ [:material-api: Endpoint `https://fansdb.cc/graphql`]() ⋅ [:fontawesome-solid-unlock-keyhole: Join](https://docs.fansdb.cc/#accessing-fansdb){:target="_blank"}
+    [:octicons-link-16: Website](https://fansdb.cc){:target="_blank"} ⋅ [:fontawesome-regular-file-lines: Guidelines](https://docs.fansdb.cc){:target="_blank"} ⋅ [:simple-discord: Discord](https://discord.gg/dhJaFAgYAj){:target="_blank"} ⋅ [:simple-revoltdotchat: Stoat](https://stt.gg/jN4SfGfj){:target="_blank"} ⋅ [:material-api: Endpoint `https://fansdb.cc/graphql`]() ⋅ [:fontawesome-solid-unlock-keyhole: Join](https://docs.fansdb.cc/#accessing-fansdb){:target="_blank"}
 
 </div>
 
