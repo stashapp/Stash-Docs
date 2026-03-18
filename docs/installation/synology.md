@@ -66,7 +66,7 @@ In DSM, navigate to `Package Center > Settings`. In the `Package Sources` tab, c
 
 Go back to the Package Center and look for `Python 3.11` in the Community tab. Click on `Install` and agree to the _Third-Party Package_ warning.
 
-Then look for `Ffmpeg 6` in the Community tab. Click on `Install` and agree to the _Third-Party Package_ warning.
+Then look for `Ffmpeg 7` in the Community tab. Click on `Install` and agree to the _Third-Party Package_ warning.
 
 ### Enable SSH
 
@@ -98,8 +98,8 @@ ssh stash@your_nas_hostname
 ffmpeg has been installed earlier, but is missing a link to ffprobe (also installed) and the new version of ffmpeg. Run the following command.
 
 ```bash
-sudo ln -s /var/packages/ffmpeg6/target/bin/ffprobe /usr/local/bin/ffprobe
-sudo ln -s /var/packages/ffmpeg6/target/bin/ffmpeg /usr/local/bin/ffmpeg
+sudo ln -sf /var/packages/ffmpeg7/target/bin/ffprobe /usr/local/bin/ffprobe
+sudo ln -sf /var/packages/ffmpeg7/target/bin/ffmpeg /usr/local/bin/ffmpeg
 ```
 
 ### Download Stash
