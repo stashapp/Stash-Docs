@@ -3992,6 +3992,7 @@ GitHub sponsorship</a>
 <ul>
 <li><code>{checksum}</code> - the MD5 checksum of the scene</li>
 <li><code>{oshash}</code> - the oshash of the scene</li>
+<li><code>{phash}</code> - the phash of the scene</li>
 <li><code>{filename}</code> - the base filename of the scene</li>
 <li><code>{title}</code> - the title of the scene</li>
 <li><code>{url}</code> - the url of the scene</li>
@@ -4105,7 +4106,7 @@ GitHub sponsorship</a>
 </span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">    </span><span class="nt">selector</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">//div[@data-host="{inputHostname}"]//span[@class="site-name"]</span>
 </span></code></pre></div>
 <blockquote>
-<p><strong>Note:</strong> These placeholders represent the actual URL used to fetch the content, after any URL replacements have been applied.</p>
+<p><strong>⚠️ Note:</strong> These placeholders represent the actual URL used to fetch the content, after any URL replacements have been applied.</p>
 </blockquote>
 <h3 id="common-fragments">Common fragments<a class="headerlink" href="#common-fragments" title="Permanent link">¶</a></h3>
 <p>The <code>common</code> field is used to configure selector fragments that can be referenced in the selector strings. These are key-value pairs where the key is the string to reference the fragment, and the value is the string that the fragment will be replaced with. For example:</p>
@@ -4116,8 +4117,9 @@ GitHub sponsorship</a>
 </span></code></pre></div>
 <p>The <code>Measurements</code> xpath string will replace <code>$infoPiece</code> with <code>//div[@class="infoPiece"]/span</code>, resulting in: <code>//div[@class="infoPiece"]/span[text() = 'Measurements:']/../span[@class="smallInfo"]</code>.</p>
 <blockquote>
-<p><strong>⚠️ Note:</strong> Recursive common fragments are <strong>not</strong> supported.<br>
-Referencing a common fragment within another common fragment will cause an error. For example:
+<p><strong>⚠️ Note:</strong> Recursive common fragments are <strong>not</strong> supported.  </p>
+</blockquote>
+<p>Referencing a common fragment within another common fragment will cause an error. For example:
 </p><div class="language-yaml highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nt">common</span><span class="p">:</span>
 </span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="nt">$info</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">//div[@class="info"]</span>
 </span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span><span class="c1"># Referencing $info in $models will cause an error</span>
@@ -4128,7 +4130,6 @@ Referencing a common fragment within another common fragment will cause an error
 </span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">    </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$models</span>
 </span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">    </span><span class="nt">URL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$models/@href</span>
 </span></code></pre></div><p></p>
-</blockquote>
 <h3 id="post-processing-options">Post-processing options<a class="headerlink" href="#post-processing-options" title="Permanent link">¶</a></h3>
 <p>Post-processing operations are contained in the <code>postProcess</code> key. Post-processing operations are performed in the order they are specified. The following post-processing operations are available:</p>
 <ul>
@@ -4568,7 +4569,7 @@ This means setting a <code>User-Agent</code> header from the scraper overrides t
 </span><span id="__span-32-10"><a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a>URLs
 </span></code></pre></div>
 <blockquote>
-<p><strong>Important</strong>: <code>Title</code> field is required. </p>
+<p><strong>⚠️ Important:</strong> <code>Title</code> field is required. </p>
 </blockquote>
 <h3 id="group">Group<a class="headerlink" href="#group" title="Permanent link">¶</a></h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>Aliases
@@ -4585,7 +4586,7 @@ This means setting a <code>User-Agent</code> header from the scraper overrides t
 </span><span id="__span-33-12"><a id="__codelineno-33-12" name="__codelineno-33-12" href="#__codelineno-33-12"></a>URLs
 </span></code></pre></div>
 <blockquote>
-<p><strong>Important</strong>: <code>Name</code> field is required. </p>
+<p><strong>⚠️ Important:</strong> <code>Name</code> field is required. </p>
 </blockquote>
 <h3 id="image">Image<a class="headerlink" href="#image" title="Permanent link">¶</a></h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>Code
@@ -4624,8 +4625,8 @@ This means setting a <code>User-Agent</code> header from the scraper overrides t
 </span><span id="__span-35-22"><a id="__codelineno-35-22" name="__codelineno-35-22" href="#__codelineno-35-22"></a>Weight
 </span></code></pre></div>
 <blockquote>
-<p><strong>Important</strong>: <code>Name</code> field is required. </p>
-<p><strong>Note:</strong>  - <code>Gender</code> must be one of <code>male</code>, <code>female</code>, <code>transgender_male</code>, <code>transgender_female</code>, <code>intersex</code>, <code>non_binary</code> (case insensitive).</p>
+<p><strong>⚠️ Important:</strong> <code>Name</code> field is required. </p>
+<p><strong>⚠️ Note:</strong> <code>Gender</code> must be one of <code>male</code>, <code>female</code>, <code>transgender_male</code>, <code>transgender_female</code>, <code>intersex</code>, <code>non_binary</code> (case insensitive).</p>
 </blockquote>
 <h3 id="scene">Scene<a class="headerlink" href="#scene" title="Permanent link">¶</a></h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>Code
@@ -4641,7 +4642,7 @@ This means setting a <code>User-Agent</code> header from the scraper overrides t
 </span><span id="__span-36-11"><a id="__codelineno-36-11" name="__codelineno-36-11" href="#__codelineno-36-11"></a>URLs
 </span></code></pre></div>
 <blockquote>
-<p><strong>Important</strong>: <code>Title</code> field is required only if fileless.</p>
+<p><strong>⚠️ Important:</strong> <code>Title</code> field is required only if fileless.</p>
 </blockquote>
 <h3 id="studio">Studio<a class="headerlink" href="#studio" title="Permanent link">¶</a></h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>Aliases
@@ -4651,13 +4652,13 @@ This means setting a <code>User-Agent</code> header from the scraper overrides t
 </span><span id="__span-37-5"><a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>URL
 </span></code></pre></div>
 <blockquote>
-<p><strong>Important</strong>: <code>Name</code> field is required. </p>
+<p><strong>⚠️ Important:</strong> <code>Name</code> field is required. </p>
 </blockquote>
 <h3 id="tag">Tag<a class="headerlink" href="#tag" title="Permanent link">¶</a></h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>Name
 </span></code></pre></div>
 <blockquote>
-<p><strong>Important</strong>: <code>Name</code> field is required. </p>
+<p><strong>⚠️ Important:</strong> <code>Name</code> field is required. </p>
 </blockquote>
 
 

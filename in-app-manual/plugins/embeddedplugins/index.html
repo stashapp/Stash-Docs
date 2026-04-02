@@ -3355,7 +3355,10 @@ GitHub sponsorship</a>
 <p>Stash currently supports Javascript embedded plugin tasks using <a href="https://github.com/dop251/goja">goja</a>.</p>
 <h2 id="javascript-plugins">Javascript plugins<a class="headerlink" href="#javascript-plugins" title="Permanent link">¶</a></h2>
 <h3 id="plugin-input">Plugin input<a class="headerlink" href="#plugin-input" title="Permanent link">¶</a></h3>
-<p>The input is provided to Javascript plugin tasks using the <code>input</code> global variable, and is an object based on the structure provided in the <code>Plugin input</code> section of the <a href="/help/Plugins.md">Plugins</a> page. Note that the <code>server_connection</code> field should not be necessary in most embedded plugins.</p>
+<p>The input is provided to Javascript plugin tasks using the <code>input</code> global variable, and is an object based on the structure provided in the <code>Plugin input</code> section of the <a href="/help/Plugins.md">Plugins</a> page. </p>
+<blockquote>
+<p><strong>⚠️ Note:</strong> <code>server_connection</code> field should not be necessary in most embedded plugins.</p>
+</blockquote>
 <h3 id="plugin-output">Plugin output<a class="headerlink" href="#plugin-output" title="Permanent link">¶</a></h3>
 <p>The output of a Javascript plugin task is derived from the evaluated value of the script. The output should conform to the structure provided in the <code>Plugin output</code> section of the <a href="/help/Plugins.md">Plugins</a> page.</p>
 <p>There are a number of ways to return the plugin output:</p>

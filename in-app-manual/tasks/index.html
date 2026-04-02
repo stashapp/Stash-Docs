@@ -2800,6 +2800,23 @@ GitHub sponsorship</a>
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Scanning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ignoring-files-with-stashignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ignoring Files with .stashignore
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2879,6 +2896,28 @@ GitHub sponsorship</a>
     <span class="md-ellipsis">
       
         Exporting and Importing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backing-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backing up
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restoring-from-backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restoring from backup
       
     </span>
   </a>
@@ -2990,6 +3029,61 @@ GitHub sponsorship</a>
 <p>The scan function walks through the stash directories you have configured for new and moved files. </p>
 <p>Stash currently identifies files by performing a quick file hash. This means that if the file is renamed for moved elsewhere within your configured stash directories, then the scan will detect this and update its database accordingly.</p>
 <p>Stash currently ignores duplicate files. If two files contain identical content, only the first one it comes across is used.</p>
+<h3 id="ignoring-files-with-stashignore">Ignoring Files with .stashignore<a class="headerlink" href="#ignoring-files-with-stashignore" title="Permanent link">¶</a></h3>
+<p>You can create <code>.stashignore</code> files to exclude specific files or directories from being scanned. These files use gitignore-style pattern matching syntax.</p>
+<p>Place a <code>.stashignore</code> file in any directory within your library. The patterns in that file will apply to all files and subdirectories within that directory. You can have multiple <code>.stashignore</code> files at different levels of your directory hierarchy - patterns from parent directories cascade down to child directories.</p>
+<p><code>.stashignore</code> files are not read inside zip files.</p>
+<p><strong>Supported patterns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>filename.mp4</code></td>
+<td>Ignore a specific file.</td>
+</tr>
+<tr>
+<td><code>*.tmp</code></td>
+<td>Ignore all files with a specific extension.</td>
+</tr>
+<tr>
+<td><code>temp/</code></td>
+<td>Ignore a directory and all its contents.</td>
+</tr>
+<tr>
+<td><code>**/cache/</code></td>
+<td>Ignore directories named "cache" at any level.</td>
+</tr>
+<tr>
+<td><code>!important.mp4</code></td>
+<td>Negation - do not ignore this file even if it matches a previous pattern.</td>
+</tr>
+<tr>
+<td><code># comment</code></td>
+<td>Lines starting with # are comments.</td>
+</tr>
+<tr>
+<td><code>\#filename</code></td>
+<td>Use backslash to match a literal # character.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example .stashignore file:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># Ignore temporary files
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>*.tmp
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>*.log
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a># Ignore specific directories
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>temp/
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>.thumbnails/
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a># But keep this specific file
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>!important.tmp
+</span></code></pre></div>
 <p>The scan task accepts the following options:</p>
 <table>
 <thead>
@@ -3008,15 +3102,15 @@ GitHub sponsorship</a>
 <td>Generates video previews (mp4) which play when hovering over a scene.</td>
 </tr>
 <tr>
-<td>Generate animated image previews*</td>
-<td><em>Accessible in Advanced Mode</em> - Also generate animated (webp) previews, only required when Scene/Marker Wall Preview Type is set to Animated Image. When browsing they use less CPU than the video previews, but are generated in addition to them and are larger files.</td>
+<td>Generate animated image previews</td>
+<td><em>Accessible in Advanced mode</em> - Also generate animated (webp) previews, only required when Scene/Marker Wall Preview type is set to Animated image. When browsing they use less CPU than the video previews, but are generated in addition to them and are larger files.</td>
 </tr>
 <tr>
 <td>Generate scrubber sprites</td>
 <td>The set of images displayed below the video player for easy navigation.</td>
 </tr>
 <tr>
-<td>Generate perceptual hashes</td>
+<td>Generate video perceptual hashes</td>
 <td>Generates perceptual hashes for scene deduplication and identification.</td>
 </tr>
 <tr>
@@ -3024,12 +3118,16 @@ GitHub sponsorship</a>
 <td>Generates thumbnails for image files.</td>
 </tr>
 <tr>
+<td>Generate image perceptual hashes</td>
+<td>Generates perceptual hashes for image deduplication and identification.</td>
+</tr>
+<tr>
 <td>Generate previews for image clips</td>
 <td>Generates a gif/looping video as thumbnail for image clips/gifs.</td>
 </tr>
 <tr>
 <td>Rescan</td>
-<td>By default, Stash will only rescan existing files if the file's modified date has been updated since its previous scan. Stash will rescan files in the path when this option is enabled, regardless of the file modification time. Only required Stash needs to recalculate video/image metadata, or to rescan gallery zips.</td>
+<td>By default, Stash will only rescan existing files if the file's modified date has been updated since its previous scan. Stash will rescan files in the path when this option is enabled, regardless of the file modification time. Only required if Stash needs to recalculate video/image metadata, or to rescan gallery zips.</td>
 </tr>
 </tbody>
 </table>
@@ -3038,14 +3136,16 @@ GitHub sponsorship</a>
 <h2 id="scene-filename-parser">Scene Filename Parser<a class="headerlink" href="#scene-filename-parser" title="Permanent link">¶</a></h2>
 <p>See the <a href="/help/SceneFilenameParser.md">Scene Filename Parser</a> page.</p>
 <h2 id="generated-content">Generated Content<a class="headerlink" href="#generated-content" title="Permanent link">¶</a></h2>
-<p>The scanning function automatically generates a screenshot of each scene. The generated content provides the following:</p>
+<p>The generated content provides the following:</p>
 <ul>
+<li>Scene covers - screenshot of the scene used as the cover image</li>
 <li>Video or image previews that are played when mousing over the scene card</li>
-<li>Perceptual hashes - helps match against StashDB, and feeds the duplicate finder</li>
+<li>Video Perceptual hashes - helps match against StashDB, and feeds the duplicate finder</li>
 <li>Sprites (scene stills for parts of each scene) that are shown in the scene scrubber</li>
 <li>Marker video previews that are shown in the markers page</li>
 <li>Transcoded versions of scenes. See below</li>
 <li>Image thumbnails of galleries</li>
+<li>Image Perceptual hashes - can be used for identification and deduplication</li>
 </ul>
 <p>The generate task accepts the following options:</p>
 <table>
@@ -3066,30 +3166,30 @@ GitHub sponsorship</a>
 </tr>
 <tr>
 <td>Animated image previews</td>
-<td><em>Accessible in Advanced Mode</em> - Generates animated previews (webp). Only required if the Preview Type is set to Animated Image. Requires Generate previews to be enabled.</td>
+<td><em>Accessible in Advanced mode</em> - Generates animated previews (webp). Only required if the Preview type is set to Animated image. Requires Generate previews to be enabled.</td>
 </tr>
 <tr>
-<td>Scene Scrubber Sprites</td>
+<td>Scene scrubber sprites</td>
 <td>The set of images displayed below the video player for easy navigation.</td>
 </tr>
 <tr>
-<td>Markers Previews</td>
+<td>Marker previews</td>
 <td>Generates 20 second video previews (mp4) which begin at the marker timecode.</td>
 </tr>
 <tr>
-<td>Marker Animated Image Previews</td>
-<td><em>Accessible in Advanced Mode</em> - Also generate animated (webp) previews, only required when Scene/Marker Wall Preview Type is set to Animated Image. When browsing they use less CPU than the video previews, but are generated in addition to them and are larger files.</td>
+<td>Marker animated image previews</td>
+<td><em>Accessible in Advanced mode</em> - Also generate animated (webp) previews, only required when Scene/Marker Wall Preview type is set to Animated image. When browsing they use less CPU than the video previews, but are generated in addition to them and are larger files.</td>
 </tr>
 <tr>
-<td>Marker Screenshots</td>
-<td>Generates static JPG images for markers. Only required if Preview Type is set to Static Image. Requires Marker Previews to be enabled.</td>
+<td>Marker screenshots</td>
+<td>Generates static JPG images for markers. Only required if Preview type is set to Static image. Requires marker previews to be enabled.</td>
 </tr>
 <tr>
 <td>Transcodes</td>
-<td><em>Accessible in Advanced Mode</em> - MP4 conversions of unsupported video formats. Allows direct streaming instead of live transcoding.</td>
+<td><em>Accessible in Advanced mode</em> - MP4 conversions of unsupported video formats. Allows direct streaming instead of live transcoding.</td>
 </tr>
 <tr>
-<td>Perceptual hashes (for deduplication)</td>
+<td>Video Perceptual hashes (for deduplication)</td>
 <td>Generates perceptual hashes for scene deduplication and identification.</td>
 </tr>
 <tr>
@@ -3097,8 +3197,16 @@ GitHub sponsorship</a>
 <td>Generates heatmaps and speeds for interactive scenes.</td>
 </tr>
 <tr>
-<td>Image Clip Previews</td>
+<td>Image clip previews</td>
 <td>Generates a gif/looping video as thumbnail for image clips/gifs.</td>
+</tr>
+<tr>
+<td>Image thumbnails</td>
+<td>Generates thumbnails for image files.</td>
+</tr>
+<tr>
+<td>Image Perceptual hashes (for deduplication)</td>
+<td>Generates perceptual hashes for image deduplication and identification.</td>
 </tr>
 <tr>
 <td>Overwrite existing generated files</td>
@@ -3120,6 +3228,18 @@ GitHub sponsorship</a>
 <p><strong>⚠️ Note:</strong> The full import task wipes the current database completely before importing.</p>
 </blockquote>
 <p>See the <a href="/help/JSONSpec.md">JSON Specification</a> page for details on the exported JSON format.</p>
+<h2 id="backing-up">Backing up<a class="headerlink" href="#backing-up" title="Permanent link">¶</a></h2>
+<p>The backup task creates a backup of the stash database and (optionally) blob files. The backup can either be downloaded or output into the backup directory (under <code>Settings &gt; Paths</code>) or the database directory if the backup directory is not configured.</p>
+<p>For a full backup, the database file and all blob files must be copied. The backup is stored as a zip file, with the database file at the root of the zip and the blob files in a <code>blobs</code> directory.</p>
+<blockquote>
+<p><strong>⚠️ Note:</strong> generated files are not included in the backup, so these will need to be regenerated when restoring with an empty system from backup.</p>
+</blockquote>
+<p>For database-only backups, only the database file is copied into the destination. This is useful for quick backups before performing risky operations, or for users who do not use filesystem blob storage.</p>
+<h2 id="restoring-from-backup">Restoring from backup<a class="headerlink" href="#restoring-from-backup" title="Permanent link">¶</a></h2>
+<p>Restoring from backup is currently a manual process. The database backup zip file must be unzipped, and the database file and blob files (if applicable) copied into the database and blob directories respectively. Stash should then be restarted to load the restored database.</p>
+<blockquote>
+<p><strong>⚠️ Note:</strong> the filename for a database-only backup is not the same as the original database file, so the database file from the backup must be renamed to match the original database filename before copying it into the database directory. The original database filename can be found in <code>Settings &gt; Paths &gt; Database path</code>.</p>
+</blockquote>
 
 
 

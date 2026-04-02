@@ -3256,7 +3256,7 @@ ignored.</p>
 </span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    defaultArgs:
 </span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>      argKey: argValue
 </span></code></pre></div>
-<p><strong>Note:</strong> it is possible for hooks to trigger eachother or themselves if they perform mutations. For safety, hooks will not be triggered if they have already been triggered in the context of the operation. Stash uses cookies to track this context, so it's important for plugins to send cookies when performing operations.</p>
+<p><strong>⚠️ Note:</strong> It is possible for hooks to trigger eachother or themselves if they perform mutations. For safety, hooks will not be triggered if they have already been triggered in the context of the operation. Stash uses cookies to track this context, so it's important for plugins to send cookies when performing operations.</p>
 <h4 id="trigger-types">Trigger types<a class="headerlink" href="#trigger-types" title="Permanent link">¶</a></h4>
 <p>Trigger types use the following format: <code>&lt;object type&gt;.&lt;operation&gt;.&lt;hook type&gt;</code></p>
 <p>For example, a post-hook on a scene create operation will be <code>Scene.Create.Post</code>.</p>
