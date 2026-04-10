@@ -18,23 +18,16 @@ Read step-by-step guide on how to create a pull request [CONTRIBUTING.md](CONTRI
 
 ### Prerequisites
 
-- Python modules:
-  - `mkdocs-material=="9.*"`
-  - `mkdocs-git-revision-date-localized-plugin`
-  - `mkdocs-git-committers-plugin-2`
-  - `mkdocs-glightbox`
-  - `mkdocs-material[imaging]`
-  - `mkdocs-redirects`
-
-Install all dependencies with:
+- Python 3.10 or higher
+- Python modules from [`requirements.txt`](requirements.txt)
 
 ```bash
-pip install mkdocs-material=="9.*" mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin-2 mkdocs-glightbox "mkdocs-material[imaging]" mkdocs-redirects
+pip install -r requirements.txt
 ```
 
 ### Building the site
 
-1. Open command-line interface and go to your directory where you saved the copy of the repository
+1. Clone the repository and navigate to the project directory.
 2. Run `mkdocs serve`
 
 ## License
