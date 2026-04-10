@@ -1,16 +1,6 @@
 {
-	"dependencies": {
-		"@types/node": "^22.9.0",
-		"axios": "^1.7.7",
-		"ts-node": "^10.9.2",
-		"typescript": "^5.6.3",
-		"yaml": "^2.6.0"
-	},
 	"scripts": {
-		"serve": "mkdocs serve",
-		"generate": "cd builder && ts-node build.ts",
-		"copy": "copy builder\\dist\\* docs\\",
-		"update": "npm run generate && npm run copy"
+		"serve": "mkdocs serve"
 	},
 	"licence": "CC-BY-SA-4.0"
 }
