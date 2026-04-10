@@ -12,23 +12,19 @@ Stash uses an SQLite database in `WAL` (Write-Ahead Logging) mode. In addition t
 ??? info "WAL mode"
     Learn more about `WAL` mode in SQLite [here](https://sqlite.org/wal.html){:target="_blank"}.
 
-The **Backup** or **Download Backup** tasks are the proper way to create a backup file.
+The **Backup** task is the proper way to create a backup file.
 
 1. Go to :fontawesome-solid-gear: **Settings** > **System**.
 2. Under the Application Paths heading, scroll down to **Backup directory path**.
 3. Set the directory to store your backups.
 4. Go to :fontawesome-solid-gear: **Settings** > **Tasks**.
-5. Under the Backup heading, you will find two tasks.
-6. Select either the **Backup** or **Download backup** task.
-
-### Backing up blobs
-
-If you have binary data stored outside the database file, you need to back it up independently. This can be done by copying the relevant folder.
-
-1. Go to :fontawesome-solid-gear: **Settings** > **System**.
-2. Under the Database heading, look for **Binary data storage type**.
-3. If it's set to `Filesystem`, look below for **Binary data path**. This is the directory where your blobs are stored.
-4. Use your file browser to copy the entire directory to your backup location.
+5. Under the Backup heading, you will find the **Backup** task.
+6. Select the **Backup...** task.
+7. Select **Destination** and method:
+    - To your backup directory: This will save the backup file to the directory you set in step 3.
+    - Download backup file: This will prompt you to download the backup file directly to your computer.
+8. You can optionally include blobs in your backup by checking the **Include blobs in backup** option. This will include the binary data in the backup file, which can be useful if you want to have a single file for backup and restore. However, keep in mind that this will make the backup file larger and may take more time to create.
+9. Click **Backup** to start the backup process.
 
 ## Restore
 
@@ -40,15 +36,15 @@ Assuming you have properly created a backup file, you can use it to restore your
 The following steps are recommended when restoring a database file:
 
 1. Go to :fontawesome-solid-gear: **Settings** > **System**, scroll down to the Database heading, and check your **Database path** location.
-1. Check what your **Binary data storage type** is set to.
-2. If it's set to `Filesystem`, look below for **Binary data path** and move your backed up blobs to that location. If set to `Database`, skip this step.
-3. Create a backup of the current database (optional).
-4. Stop Stash.
-5. In your file browser, go to the location of your database path.
-6. Move or delete the `stash-go.sqlite` database file (along with the `-shm`, `-wal`, and `.journal` files if present).
-7. Copy the backup file that you want to restore to `stash-go.sqlite`.
-8. Make sure that you now have a `stash-go.sqlite` file and that no `-shm`, `-wal`, or `.journal` files are present.
-9. Start Stash.
+2. Check what your **Binary data storage type** is set to.
+3. If it's set to `Filesystem`, look below for **Binary data path** and move your backed up blobs to that location. If set to `Database` or you included blobs in the backup, skip this step.
+4. Create a backup of the current database (optional).
+5. Stop Stash.
+6. In your file browser, go to the location of your database path.
+7. Move or delete the `stash-go.sqlite` database file (along with the `-shm`, `-wal`, and `.journal` files if present).
+8. Copy the backup file that you want to restore to `stash-go.sqlite`.
+9. Make sure that you now have a `stash-go.sqlite` file and that no `-shm`, `-wal`, or `.journal` files are present.
+10. Start Stash.
 
 You should now have Stash running with a working and restored database.
 
