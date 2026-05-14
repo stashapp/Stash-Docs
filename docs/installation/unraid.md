@@ -28,7 +28,7 @@ icon: simple/unraid
 
     ---
 
-    Modification of the stashapp/stash porn organizer with Hardware Acceleration and python dependency intallation 
+    Modification of the stashapp/stash porn organizer with Hardware Acceleration and python dependency installation 
 
     [:octicons-link-16: Source](https://github.com/stashapp/stash){:target="_blank"} ⋅ [:octicons-container-16: GitHub](https://github.com/feederbox826/stash-s6/pkgs/container/stash-s6){:target="_blank"} ⋅ [:fontawesome-solid-file-code: Template](https://github.com/feederbox826/unraid-templates/blob/main/feederbox826/stash-s6.xml){:target="_blank"} ⋅ [:material-help-circle: Support](https://forums.unraid.net/topic/177317-s6){:target="_blank"}
 

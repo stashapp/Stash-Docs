@@ -21,7 +21,7 @@ The stash Docker container ships with everything you need to automatically run s
 
 - No hardware acceleration support
 - No Python manager included
-- Full ARM compatability
+- Full ARM compatibility
 
 ### Docker Compose
 

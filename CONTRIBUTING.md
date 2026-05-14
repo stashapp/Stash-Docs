@@ -1,6 +1,6 @@
 # Contributing
 
-Pull requests are welcome. If you are unfamilair with MkDocs/Material for MkDocs structure, look through [their documentation](https://squidfunk.github.io/mkdocs-material) for general idea for how it's structured and handy references.
+Pull requests are welcome. If you are unfamiliar with MkDocs/Material for MkDocs structure, look through [their documentation](https://squidfunk.github.io/mkdocs-material) for general idea for how it's structured and handy references.
 
 ## Contributing from the site via edit button
 

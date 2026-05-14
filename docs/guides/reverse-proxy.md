@@ -17,7 +17,7 @@ See [issue 134](https://github.com/stashapp/stash/pull/134){:target="_blank"} fo
 
 ## Using a URL prefix
 
-Stash also supports running under a URL prefix, in which case the the `X-Forwarded-Prefix` header must also be set. The proxy also needs to remove the prefix from the requested URLs. For example, if you want your homepage to be accessible at `http://example.domain.com/stash`, then you need to set `X-Forwarded-Prefix: /stash`. 
+Stash also supports running under a URL prefix, in which case the `X-Forwarded-Prefix` header must also be set. The proxy also needs to remove the prefix from the requested URLs. For example, if you want your homepage to be accessible at `http://example.domain.com/stash`, then you need to set `X-Forwarded-Prefix: /stash`. 
 
 ## Setting External URL
 
@@ -47,7 +47,7 @@ location / {
 
 ### Nginx + Docker (Linuxserver Letsencrypt)
 
-If you are using the linuxserver letencrypt docker you can use create a `stash.subdomain.conf` file in your `proxy-confs` folder and use this as the config:
+If you are using the linuxserver letsencrypt docker you can use create a `stash.subdomain.conf` file in your `proxy-confs` folder and use this as the config:
 ```bash
 # make sure that your dns has a cname set for stash
 
@@ -113,7 +113,7 @@ location /stash/ {
 
 Another example for `nginx`:
 
-In this case we are using `stash.home` as our domain and `192.168.0.1` is stash's ip so edit acccordingly.
+In this case we are using `stash.home` as our domain and `192.168.0.1` is stash's ip so edit accordingly.
 
 The `external_host` configuration option should also be set, in this case `external_host: http://stash.home`. Refer to [external_host](https://github.com/stashapp/stash/pull/369){:target="_blank"} for more details.
 
@@ -199,11 +199,11 @@ The `external_host` configuration option should also be set, in this case `exter
 
 ### 504 Errors
 
-- In some cases with big database files you might encounter `504` errors during stash db migration due to timeout. Adjusting the `proxy_read_timeout` value ( `proxy.conf` file in Letencrypt/Swag docker container)
+- In some cases with big database files you might encounter `504` errors during stash db migration due to timeout. Adjusting the `proxy_read_timeout` value ( `proxy.conf` file in Letsencrypt/Swag docker container)
 
 ### 422 Errors
 
-- In order for the websocket to work, you may need to also add these lines to your server block (`proxy.conf` file in the Letencrypt Unraid docker container for instance) as mentioned [here](https://github.com/stashapp/stash/issues/532){:target="_blank"} should fix the issue.
+- In order for the websocket to work, you may need to also add these lines to your server block (`proxy.conf` file in the Letsencrypt Unraid docker container for instance) as mentioned [here](https://github.com/stashapp/stash/issues/532){:target="_blank"} should fix the issue.
 
 ```bash
 proxy_http_version 1.1;

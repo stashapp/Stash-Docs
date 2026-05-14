@@ -3,7 +3,7 @@ title: Synology
 icon: simple/synology
 ---
 
-!!! info "Writen by [Muldec](https://github.com/Muldec){:target="_blank"}."
+!!! info "Written by [Muldec](https://github.com/Muldec){:target="_blank"}."
 
 ## Foreword
 
@@ -104,7 +104,7 @@ sudo ln -sf /var/packages/ffmpeg7/target/bin/ffmpeg /usr/local/bin/ffmpeg
 
 ### Download Stash
 
-Download the lastest version of Stash and its checksum from GitHub
+Download the latest version of Stash and its checksum from GitHub
 
 ```bash
 # find what architecture your Synology is running on
@@ -142,7 +142,7 @@ rm CHECKSUMS_SHA1
 Prepare a Python environment (for scrapers and plugins)
 
 ```bash
-python3.11 -m ensurepip --Update
+python3.11 -m ensurepip --upgrade
 python3.11 -m venv stash-env
 source stash-env/bin/activate
 pip3 install pipreqs
