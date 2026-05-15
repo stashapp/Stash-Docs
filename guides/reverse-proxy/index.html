@@ -3284,7 +3284,7 @@ GitHub sponsorship</a>
 </ul>
 <p>See <a href="https://github.com/stashapp/stash/pull/134" target="_blank">issue 134</a> for more information.</p>
 <h2 id="using-a-url-prefix">Using a URL prefix<a class="headerlink" href="#using-a-url-prefix" title="Permanent link">¶</a></h2>
-<p>Stash also supports running under a URL prefix, in which case the the <code>X-Forwarded-Prefix</code> header must also be set. The proxy also needs to remove the prefix from the requested URLs. For example, if you want your homepage to be accessible at <code>http://example.domain.com/stash</code>, then you need to set <code>X-Forwarded-Prefix: /stash</code>. </p>
+<p>Stash also supports running under a URL prefix, in which case the <code>X-Forwarded-Prefix</code> header must also be set. The proxy also needs to remove the prefix from the requested URLs. For example, if you want your homepage to be accessible at <code>http://example.domain.com/stash</code>, then you need to set <code>X-Forwarded-Prefix: /stash</code>. </p>
 <h2 id="setting-external-url">Setting External URL<a class="headerlink" href="#setting-external-url" title="Permanent link">¶</a></h2>
 <p>You can also set the host that will be served by Stash manually by adding an <code>external_host:</code> setting in your Stash config.yml and assigning it the publicly accessible hostname, including the <code>http://</code> or <code>https://</code>. <code>X-Forwarded-Prefix</code> will still need to be set if using a prefix.
 </p><div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>external_host: http://example.domain.com
@@ -3305,7 +3305,7 @@ GitHub sponsorship</a>
 </span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="o">}</span>
 </span></code></pre></div>
 <h3 id="nginx-docker-linuxserver-letsencrypt">Nginx + Docker (Linuxserver Letsencrypt)<a class="headerlink" href="#nginx-docker-linuxserver-letsencrypt" title="Permanent link">¶</a></h3>
-<p>If you are using the linuxserver letencrypt docker you can use create a <code>stash.subdomain.conf</code> file in your <code>proxy-confs</code> folder and use this as the config:
+<p>If you are using the linuxserver letsencrypt docker you can use create a <code>stash.subdomain.conf</code> file in your <code>proxy-confs</code> folder and use this as the config:
 </p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># make sure that your dns has a cname set for stash</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>server<span class="w"> </span><span class="o">{</span>
@@ -3363,7 +3363,7 @@ GitHub sponsorship</a>
 </span></code></pre></div>
 <h3 id="nginx-with-external_host">Nginx with external_host<a class="headerlink" href="#nginx-with-external_host" title="Permanent link">¶</a></h3>
 <p>Another example for <code>nginx</code>:</p>
-<p>In this case we are using <code>stash.home</code> as our domain and <code>192.168.0.1</code> is stash's ip so edit acccordingly.</p>
+<p>In this case we are using <code>stash.home</code> as our domain and <code>192.168.0.1</code> is stash's ip so edit accordingly.</p>
 <p>The <code>external_host</code> configuration option should also be set, in this case <code>external_host: http://stash.home</code>. Refer to <a href="https://github.com/stashapp/stash/pull/369" target="_blank">external_host</a> for more details.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>server<span class="w"> </span><span class="o">{</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span>listen<span class="w"> </span><span class="m">80</span><span class="p">;</span>
@@ -3434,11 +3434,11 @@ GitHub sponsorship</a>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">¶</a></h2>
 <h3 id="504-errors">504 Errors<a class="headerlink" href="#504-errors" title="Permanent link">¶</a></h3>
 <ul>
-<li>In some cases with big database files you might encounter <code>504</code> errors during stash db migration due to timeout. Adjusting the <code>proxy_read_timeout</code> value ( <code>proxy.conf</code> file in Letencrypt/Swag docker container)</li>
+<li>In some cases with big database files you might encounter <code>504</code> errors during stash db migration due to timeout. Adjusting the <code>proxy_read_timeout</code> value ( <code>proxy.conf</code> file in Letsencrypt/Swag docker container)</li>
 </ul>
 <h3 id="422-errors">422 Errors<a class="headerlink" href="#422-errors" title="Permanent link">¶</a></h3>
 <ul>
-<li>In order for the websocket to work, you may need to also add these lines to your server block (<code>proxy.conf</code> file in the Letencrypt Unraid docker container for instance) as mentioned <a href="https://github.com/stashapp/stash/issues/532" target="_blank">here</a> should fix the issue.</li>
+<li>In order for the websocket to work, you may need to also add these lines to your server block (<code>proxy.conf</code> file in the Letsencrypt Unraid docker container for instance) as mentioned <a href="https://github.com/stashapp/stash/issues/532" target="_blank">here</a> should fix the issue.</li>
 </ul>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>proxy_http_version<span class="w"> </span><span class="m">1</span>.1<span class="p">;</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>proxy_set_header<span class="w"> </span>Upgrade<span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
@@ -3469,7 +3469,7 @@ GitHub sponsorship</a>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 31, 2024 09:08:13 UTC">October 31, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 15, 2026 05:37:45 UTC">May 15, 2026</span>
   </span>
 
     
@@ -3496,6 +3496,11 @@ GitHub sponsorship</a>
 
     
     <nav>
+      
+        <a href="https://github.com/slick-daddy" class="md-author" title="@slick-daddy">
+          
+          <img src="https://avatars.githubusercontent.com/u/129640104?v=4&amp;size=72" alt="slick-daddy">
+        </a>
       
         <a href="https://github.com/DogmaDragon" class="md-author" title="@DogmaDragon">
           
