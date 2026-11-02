@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -28,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1708,6 +1708,17 @@ GitHub sponsorship</a>
 </li>
         
           <li class="md-nav__item">
+  <a href="#reactdomclient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ReactDOMClient
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#gql" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3151,6 +3162,17 @@ GitHub sponsorship</a>
 </li>
         
           <li class="md-nav__item">
+  <a href="#reactdomclient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ReactDOMClient
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#gql" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3493,15 +3515,17 @@ GitHub sponsorship</a>
   
 
 
-<h1 id="ui-plugin-api">UI Plugin API<a class="headerlink" href="#ui-plugin-api" title="Permanent link">¶</a></h1>
+<h1 id="ui-plugin-api">UI plugin API<a class="headerlink" href="#ui-plugin-api" title="Permanent link">¶</a></h1>
 <p>The <code>PluginApi</code> object is a global object in the <code>window</code> object.</p>
 <p><code>PluginApi</code> is considered experimental and is subject to change without notice. This documentation covers only the plugin-specific API. It does not necessarily cover the core UI API. Information on these methods should be referenced in the UI source code.</p>
 <p>An example using various aspects of <code>PluginApi</code> may be found in the source code under <code>pkg/plugin/examples/react-component</code>.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">¶</a></h2>
 <h3 id="react"><code>React</code><a class="headerlink" href="#react" title="Permanent link">¶</a></h3>
-<p>An instance of the React library.</p>
+<p>An instance of the React library. The UI uses React 18.</p>
 <h3 id="reactdom"><code>ReactDOM</code><a class="headerlink" href="#reactdom" title="Permanent link">¶</a></h3>
-<p>An instance of the ReactDOM library.</p>
+<p>An instance of the ReactDOM library. <code>ReactDOM.render</code> still works but is deprecated in React 18, and components mounted with it run in React 17 compatibility mode. Use <code>ReactDOMClient.createRoot</code> instead.</p>
+<h3 id="reactdomclient"><code>ReactDOMClient</code><a class="headerlink" href="#reactdomclient" title="Permanent link">¶</a></h3>
+<p>An instance of the <code>react-dom/client</code> library. Use <code>ReactDOMClient.createRoot(container).render(element)</code> to mount a component outside the main React tree.</p>
 <h3 id="gql"><code>GQL</code><a class="headerlink" href="#gql" title="Permanent link">¶</a></h3>
 <p>This namespace contains the generated graphql client interface. This is a low-level interface. In many cases, <code>StashService</code> should be used instead.</p>
 <h3 id="libraries"><code>libraries</code><a class="headerlink" href="#libraries" title="Permanent link">¶</a></h3>
@@ -3596,8 +3620,8 @@ GitHub sponsorship</a>
 <h4 id="pluginapiutilsinteractiveutils"><code>PluginApi.utils.InteractiveUtils</code><a class="headerlink" href="#pluginapiutilsinteractiveutils" title="Permanent link">¶</a></h4>
 <p>This namespace provides access to <code>interactiveClientProvider</code> and <code>getPlayer</code>
  - <code>getPlayer</code> returns the current <code>videojs</code> player object
- - <code>interactiveClientProvider</code> takes <code>IInteractiveClientProvider</code> which allows a developer to hook into the lifecycle of funscripts.
-</p><div class="language-ts highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">  </span><span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">IDeviceSettings</span><span class="w"> </span><span class="p">{</span>
+ - <code>interactiveClientProvider</code> takes <code>IInteractiveClientProvider</code> which allows a developer to hook into the lifecycle of funscripts.</p>
+<div class="language-ts highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">  </span><span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">IDeviceSettings</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nx">connectionKey</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nx">scriptOffset</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nx">estimatedServerTimeOffset?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
@@ -3631,7 +3655,7 @@ GitHub sponsorship</a>
 </span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">  </span><span class="k">readonly</span><span class="w"> </span><span class="nx">connected</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
 </span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">  </span><span class="k">readonly</span><span class="w"> </span><span class="nx">playing</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
 </span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="p">}</span>
-</span></code></pre></div><p></p>
+</span></code></pre></div>
 <h5 id="example">Example<a class="headerlink" href="#example" title="Permanent link">¶</a></h5>
 <p>For instance say I wanted to add extra logging when <code>IInteractiveClient.connect()</code> is called.
 In my plugin you would install your own client provider as seen below</p>
@@ -3782,6 +3806,7 @@ In my plugin you would install your own client provider as seen below</p>
 <li><code>FilteredSceneMarkerList</code></li>
 <li><code>FilteredStudioList</code></li>
 <li><code>FilteredTagList</code></li>
+<li><code>FilterTags.Extras</code></li>
 <li><code>FolderSelect</code></li>
 <li><code>FrontPage</code></li>
 <li><code>GalleryCard</code></li>
@@ -3800,6 +3825,7 @@ In my plugin you would install your own client provider as seen below</p>
 <li><code>GroupCardGrid</code></li>
 <li><code>GroupIDSelect</code></li>
 <li><code>GroupList</code></li>
+<li><code>GroupPage</code></li>
 <li><code>GroupRecommendationRow</code></li>
 <li><code>GroupSelect</code></li>
 <li><code>GroupSelect.sort</code></li>
@@ -3832,6 +3858,7 @@ In my plugin you would install your own client provider as seen below</p>
 <li><code>PerformerCard.Popovers</code></li>
 <li><code>PerformerCard.Title</code></li>
 <li><code>PerformerCardGrid</code></li>
+<li><code>PerformerCreate</code></li>
 <li><code>PerformerDetailsPanel</code></li>
 <li><code>PerformerDetailsPanel.DetailGroup</code></li>
 <li><code>PerformerGalleriesPanel</code></li>
@@ -3840,6 +3867,7 @@ In my plugin you would install your own client provider as seen below</p>
 <li><code>PerformerIDSelect</code></li>
 <li><code>PerformerImagesPanel</code></li>
 <li><code>PerformerList</code></li>
+<li><code>PerformerMergeModal</code></li>
 <li><code>PerformerPage</code></li>
 <li><code>PerformerRecommendationRow</code></li>
 <li><code>PerformerScenesPanel</code></li>
@@ -3851,6 +3879,7 @@ In my plugin you would install your own client provider as seen below</p>
 <li><code>RatingStars</code></li>
 <li><code>RatingSystem</code></li>
 <li><code>RecommendationRow</code></li>
+<li><code>SavedFilter.Loaded</code></li>
 <li><code>SceneCard</code></li>
 <li><code>SceneCard.Details</code></li>
 <li><code>SceneCard.Image</code></li>
@@ -3858,6 +3887,7 @@ In my plugin you would install your own client provider as seen below</p>
 <li><code>SceneCard.Popovers</code></li>
 <li><code>SceneCard.SceneSpecs</code></li>
 <li><code>SceneCardsGrid</code></li>
+<li><code>SceneCreate</code></li>
 <li><code>SceneFileInfoPanel</code></li>
 <li><code>SceneIDSelect</code></li>
 <li><code>SceneMarkerCard</code></li>
@@ -3867,12 +3897,14 @@ In my plugin you would install your own client provider as seen below</p>
 <li><code>SceneMarkerCardsGrid</code></li>
 <li><code>SceneMarkerList</code></li>
 <li><code>SceneMarkerRecommendationRow</code></li>
+<li><code>SceneMergeModal</code></li>
 <li><code>SceneList</code></li>
 <li><code>ScenePage</code></li>
 <li><code>ScenePage.TabContent</code></li>
 <li><code>ScenePage.Tabs</code></li>
 <li><code>ScenePlayer</code></li>
 <li><code>SceneRecommendationRow</code></li>
+<li><code>SceneScrapeDialog</code></li>
 <li><code>SceneSelect</code></li>
 <li><code>SceneSelect.sort</code></li>
 <li><code>SelectSetting</code></li>
@@ -3886,6 +3918,7 @@ In my plugin you would install your own client provider as seen below</p>
 <li><code>StudioDetailsPanel</code></li>
 <li><code>StudioIDSelect</code></li>
 <li><code>StudioList</code></li>
+<li><code>StudioPage</code></li>
 <li><code>StudioRecommendationRow</code></li>
 <li><code>StudioSelect</code></li>
 <li><code>StudioSelect.sort</code></li>
@@ -3901,6 +3934,8 @@ In my plugin you would install your own client provider as seen below</p>
 <li><code>TagIDSelect</code></li>
 <li><code>TagLink</code></li>
 <li><code>TagList</code></li>
+<li><code>TagMergeModal</code></li>
+<li><code>TagPage</code></li>
 <li><code>TagRecommendationRow</code></li>
 <li><code>TagSelect</code></li>
 <li><code>TagSelect.sort</code></li>
@@ -4097,10 +4132,10 @@ In my plugin you would install your own client provider as seen below</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["header.autohide", "announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.share", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top", "navigation.indexes", "content.tooltips", "content.code.copy", "navigation.path", "content.code.select", "content.footnote.tooltips"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["header.autohide", "announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.share", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top", "navigation.indexes", "content.tooltips", "content.code.copy", "navigation.path", "content.code.select", "content.footnote.tooltips"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -28,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1685,6 +1685,24 @@ GitHub sponsorship</a>
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dupe checker
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1701,6 +1719,36 @@ GitHub sponsorship</a>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#selecting-duplicates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selecting duplicates
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2793,6 +2841,25 @@ GitHub sponsorship</a>
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#selecting-duplicates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selecting duplicates
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2872,7 +2939,7 @@ GitHub sponsorship</a>
   
 
 
-<h1 id="dupe-checker">Dupe Checker<a class="headerlink" href="#dupe-checker" title="Permanent link">¶</a></h1>
+<h1 id="dupe-checker">Dupe checker<a class="headerlink" href="#dupe-checker" title="Permanent link">¶</a></h1>
 <p><a href="/sceneDuplicateChecker">The dupe checker</a> searches your collection for scenes that are perceptually similar. This means that the files don't need to be identical, and will be identified even with different bitrates, resolutions, and intros/outros.</p>
 <p>To achieve this stash needs to generate what's called a phash, or perceptual hash. Similar to sprite generation stash will generate a set of 25 images from fixed points in the scene. These images will be stitched together, and then hashed using the phash algorithm. The phash can then be used to find scenes that are the same or similar to others in the database. Phash generation can be run during scan, or as a separate task. </p>
 <blockquote>
@@ -2882,6 +2949,14 @@ GitHub sponsorship</a>
 <blockquote>
 <p><strong>⚠️ Note:</strong> To generate a pHash Stash requires an uncorrupted file. If any errors are encountered during sprite generation the pHash will not be generated. This is to prevent false positives.</p>
 </blockquote>
+<h2 id="selecting-duplicates">Selecting duplicates<a class="headerlink" href="#selecting-duplicates" title="Permanent link">¶</a></h2>
+<p>The <code>Select Options…</code> dropdown provides shortcuts for bulk-selecting files across every duplicate group on the current page. Each option selects every file in a group <em>except</em> the one to keep, so the selection can be reviewed and then deleted:</p>
+<ul>
+<li><strong>Largest file</strong> and <strong>highest resolution</strong> keep the largest file, or the file with the highest resolution.</li>
+<li><strong>Oldest / youngest</strong> keep the file with the oldest or youngest modification time.</li>
+<li><strong>Preferred codec</strong> keeps the file matching the codec chosen in the <code>Preferred Video Codec</code> dropdown, which lists the codecs detected among the current duplicate results. Groups that contain no file with the preferred codec are left untouched, so nothing is selected when there is no matching file to keep.</li>
+</ul>
+<p>The <code>Only select if all codecs match in the duplicate group</code> checkbox is a safety option for the size, resolution and age selections: when enabled, groups whose files use different codecs are skipped, so you don't accidentally select a file that was encoded with a different codec. It does not apply to the preferred-codec selection, which is codec-aware by design.</p>
 
 
 
@@ -3069,10 +3144,10 @@ GitHub sponsorship</a>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.share", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top", "navigation.indexes", "content.tooltips", "content.code.copy", "navigation.path", "content.code.select", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.share", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top", "navigation.indexes", "content.tooltips", "content.code.copy", "navigation.path", "content.code.select", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

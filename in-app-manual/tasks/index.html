@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -28,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -2807,7 +2807,7 @@ GitHub sponsorship</a>
   <a href="#ignoring-files-with-stashignore" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ignoring Files with .stashignore
+        Ignoring files with .stashignore
       
     </span>
   </a>
@@ -2823,7 +2823,7 @@ GitHub sponsorship</a>
   <a href="#auto-tagging" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Auto Tagging
+        Auto tagging
       
     </span>
   </a>
@@ -2834,7 +2834,7 @@ GitHub sponsorship</a>
   <a href="#scene-filename-parser" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Scene Filename Parser
+        Scene filename parser
       
     </span>
   </a>
@@ -2845,12 +2845,12 @@ GitHub sponsorship</a>
   <a href="#generated-content" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Generated Content
+        Generated content
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Generated Content">
+    <nav class="md-nav" aria-label="Generated content">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2895,7 +2895,7 @@ GitHub sponsorship</a>
   <a href="#exporting-and-importing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exporting and Importing
+        Exporting and importing
       
     </span>
   </a>
@@ -3029,7 +3029,7 @@ GitHub sponsorship</a>
 <p>The scan function walks through the stash directories you have configured for new and moved files. </p>
 <p>Stash currently identifies files by performing a quick file hash. This means that if the file is renamed for moved elsewhere within your configured stash directories, then the scan will detect this and update its database accordingly.</p>
 <p>Stash currently ignores duplicate files. If two files contain identical content, only the first one it comes across is used.</p>
-<h3 id="ignoring-files-with-stashignore">Ignoring Files with .stashignore<a class="headerlink" href="#ignoring-files-with-stashignore" title="Permanent link">¶</a></h3>
+<h3 id="ignoring-files-with-stashignore">Ignoring files with <code>.stashignore</code><a class="headerlink" href="#ignoring-files-with-stashignore" title="Permanent link">¶</a></h3>
 <p>You can create <code>.stashignore</code> files to exclude specific files or directories from being scanned. These files use gitignore-style pattern matching syntax.</p>
 <p>Place a <code>.stashignore</code> file in any directory within your library. The patterns in that file will apply to all files and subdirectories within that directory. You can have multiple <code>.stashignore</code> files at different levels of your directory hierarchy - patterns from parent directories cascade down to child directories.</p>
 <p><code>.stashignore</code> files are not read inside zip files.</p>
@@ -3072,7 +3072,7 @@ GitHub sponsorship</a>
 </tr>
 </tbody>
 </table>
-<p><strong>Example .stashignore file:</strong></p>
+<p><strong>Example <code>.stashignore</code> file:</strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># Ignore temporary files
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>*.tmp
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>*.log
@@ -3126,16 +3126,16 @@ GitHub sponsorship</a>
 <td>Generates a gif/looping video as thumbnail for image clips/gifs.</td>
 </tr>
 <tr>
-<td>Rescan</td>
+<td>Rescan files</td>
 <td>By default, Stash will only rescan existing files if the file's modified date has been updated since its previous scan. Stash will rescan files in the path when this option is enabled, regardless of the file modification time. Only required if Stash needs to recalculate video/image metadata, or to rescan gallery zips.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="auto-tagging">Auto Tagging<a class="headerlink" href="#auto-tagging" title="Permanent link">¶</a></h2>
-<p>See the <a href="/help/AutoTagging.md">Auto Tagging</a> page.</p>
-<h2 id="scene-filename-parser">Scene Filename Parser<a class="headerlink" href="#scene-filename-parser" title="Permanent link">¶</a></h2>
-<p>See the <a href="/help/SceneFilenameParser.md">Scene Filename Parser</a> page.</p>
-<h2 id="generated-content">Generated Content<a class="headerlink" href="#generated-content" title="Permanent link">¶</a></h2>
+<h2 id="auto-tagging">Auto tagging<a class="headerlink" href="#auto-tagging" title="Permanent link">¶</a></h2>
+<p>See the <a href="/help/AutoTagging.md">Auto tagging</a> page.</p>
+<h2 id="scene-filename-parser">Scene filename parser<a class="headerlink" href="#scene-filename-parser" title="Permanent link">¶</a></h2>
+<p>See the <a href="/help/SceneFilenameParser.md">Scene filename parser</a> page.</p>
+<h2 id="generated-content">Generated content<a class="headerlink" href="#generated-content" title="Permanent link">¶</a></h2>
 <p>The generated content provides the following:</p>
 <ul>
 <li>Scene covers - screenshot of the scene used as the cover image</li>
@@ -3174,7 +3174,7 @@ GitHub sponsorship</a>
 </tr>
 <tr>
 <td>Marker previews</td>
-<td>Generates 20 second video previews (mp4) which begin at the marker timecode.</td>
+<td>Generates video previews (mp4) which begin at the marker timecode. Markers with an explicit end time run for that interval (optionally capped by the <code>Max marker preview duration</code> setting); markers without one use the <code>Default marker preview duration</code> setting (20 seconds by default). Both are configurable under <code>Settings → System → Preview Generation</code>.</td>
 </tr>
 <tr>
 <td>Marker animated image previews</td>
@@ -3189,7 +3189,7 @@ GitHub sponsorship</a>
 <td><em>Accessible in Advanced mode</em> - MP4 conversions of unsupported video formats. Allows direct streaming instead of live transcoding.</td>
 </tr>
 <tr>
-<td>Video Perceptual hashes (for deduplication)</td>
+<td>Video perceptual hashes</td>
 <td>Generates perceptual hashes for scene deduplication and identification.</td>
 </tr>
 <tr>
@@ -3205,11 +3205,11 @@ GitHub sponsorship</a>
 <td>Generates thumbnails for image files.</td>
 </tr>
 <tr>
-<td>Image Perceptual hashes (for deduplication)</td>
+<td>Image perceptual hashes</td>
 <td>Generates perceptual hashes for image deduplication and identification.</td>
 </tr>
 <tr>
-<td>Overwrite existing generated files</td>
+<td>Overwrite existing files</td>
 <td>By default, where a generated file exists, it is not regenerated. When this flag is enabled, then the generated files are regenerated.</td>
 </tr>
 </tbody>
@@ -3222,7 +3222,7 @@ GitHub sponsorship</a>
 <h2 id="cleaning">Cleaning<a class="headerlink" href="#cleaning" title="Permanent link">¶</a></h2>
 <p>This task will walk through your configured media directories and remove any scene from the database that can no longer be found. It will also remove generated files for scenes that subsequently no longer exist.</p>
 <p>Care should be taken with this task, especially where the configured media directories may be inaccessible due to network issues.</p>
-<h2 id="exporting-and-importing">Exporting and Importing<a class="headerlink" href="#exporting-and-importing" title="Permanent link">¶</a></h2>
+<h2 id="exporting-and-importing">Exporting and importing<a class="headerlink" href="#exporting-and-importing" title="Permanent link">¶</a></h2>
 <p>The import and export tasks read and write JSON files to the configured metadata directory. Import from file will merge your database with a file.</p>
 <blockquote>
 <p><strong>⚠️ Note:</strong> The full import task wipes the current database completely before importing.</p>
@@ -3277,29 +3277,6 @@ GitHub sponsorship</a>
 
     
     
-    
-      
-  <span class="md-source-file__fact">
-    
-      
-  <span class="md-icon" title="Contributors">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path></svg>
-  </span>
-  <span>GitHub</span>
-
-    
-    <nav>
-      
-        <a href="https://github.com/DogmaDragon" class="md-author" title="@DogmaDragon">
-          
-          <img src="https://avatars.githubusercontent.com/u/103123951?v=4&amp;size=72" alt="DogmaDragon">
-        </a>
-      
-      
-      
-    </nav>
-  </span>
-
     
   </aside>
 
@@ -3427,10 +3404,10 @@ GitHub sponsorship</a>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.share", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top", "navigation.indexes", "content.tooltips", "content.code.copy", "navigation.path", "content.code.select", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.share", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top", "navigation.indexes", "content.tooltips", "content.code.copy", "navigation.path", "content.code.select", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

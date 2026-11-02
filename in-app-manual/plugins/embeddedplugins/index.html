@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -28,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1660,12 +1660,12 @@ GitHub sponsorship</a>
   <a href="#javascript-plugins" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Javascript plugins
+        JavaScript plugins
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Javascript plugins">
+    <nav class="md-nav" aria-label="JavaScript plugins">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1788,12 +1788,12 @@ GitHub sponsorship</a>
   <a href="#javascript-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Javascript API
+        JavaScript API
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Javascript API">
+    <nav class="md-nav" aria-label="JavaScript API">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3059,12 +3059,12 @@ GitHub sponsorship</a>
   <a href="#javascript-plugins" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Javascript plugins
+        JavaScript plugins
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Javascript plugins">
+    <nav class="md-nav" aria-label="JavaScript plugins">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3187,12 +3187,12 @@ GitHub sponsorship</a>
   <a href="#javascript-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Javascript API
+        JavaScript API
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Javascript API">
+    <nav class="md-nav" aria-label="JavaScript API">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3349,18 +3349,18 @@ GitHub sponsorship</a>
   
 
 
-<h1 id="embedded-plugin-tasks">Embedded Plugin Tasks<a class="headerlink" href="#embedded-plugin-tasks" title="Permanent link">¶</a></h1>
+<h1 id="embedded-plugin-tasks">Embedded plugin tasks<a class="headerlink" href="#embedded-plugin-tasks" title="Permanent link">¶</a></h1>
 <p>Embedded plugin tasks are executed within the stash process using a scripting system.</p>
 <h2 id="supported-script-languages">Supported script languages<a class="headerlink" href="#supported-script-languages" title="Permanent link">¶</a></h2>
-<p>Stash currently supports Javascript embedded plugin tasks using <a href="https://github.com/dop251/goja">goja</a>.</p>
-<h2 id="javascript-plugins">Javascript plugins<a class="headerlink" href="#javascript-plugins" title="Permanent link">¶</a></h2>
+<p>Stash currently supports JavaScript embedded plugin tasks using <a href="https://github.com/dop251/goja">goja</a>.</p>
+<h2 id="javascript-plugins">JavaScript plugins<a class="headerlink" href="#javascript-plugins" title="Permanent link">¶</a></h2>
 <h3 id="plugin-input">Plugin input<a class="headerlink" href="#plugin-input" title="Permanent link">¶</a></h3>
-<p>The input is provided to Javascript plugin tasks using the <code>input</code> global variable, and is an object based on the structure provided in the <code>Plugin input</code> section of the <a href="/help/Plugins.md">Plugins</a> page. </p>
+<p>The input is provided to JavaScript plugin tasks using the <code>input</code> global variable, and is an object based on the structure provided in the <code>Plugin input</code> section of the <a href="/help/Plugins.md">Plugins</a> page. </p>
 <blockquote>
 <p><strong>⚠️ Note:</strong> <code>server_connection</code> field should not be necessary in most embedded plugins.</p>
 </blockquote>
 <h3 id="plugin-output">Plugin output<a class="headerlink" href="#plugin-output" title="Permanent link">¶</a></h3>
-<p>The output of a Javascript plugin task is derived from the evaluated value of the script. The output should conform to the structure provided in the <code>Plugin output</code> section of the <a href="/help/Plugins.md">Plugins</a> page.</p>
+<p>The output of a JavaScript plugin task is derived from the evaluated value of the script. The output should conform to the structure provided in the <code>Plugin output</code> section of the <a href="/help/Plugins.md">Plugins</a> page.</p>
 <p>There are a number of ways to return the plugin output:</p>
 <h4 id="example-1">Example #1<a class="headerlink" href="#example-1" title="Permanent link">¶</a></h4>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>(function() {
@@ -3391,11 +3391,13 @@ GitHub sponsorship</a>
 <h3 id="exec">exec<a class="headerlink" href="#exec" title="Permanent link">¶</a></h3>
 <p>For embedded plugins, the <code>exec</code> field is a list with the first element being the path to the Javascript file that will be executed. It is expected that the path to the Javascript file is relative to the directory of the plugin configuration file.</p>
 <h3 id="interface">interface<a class="headerlink" href="#interface" title="Permanent link">¶</a></h3>
-<p>For embedded plugins, the <code>interface</code> field must be set to one of the following values:
-* <code>js</code></p>
-<h2 id="javascript-api">Javascript API<a class="headerlink" href="#javascript-api" title="Permanent link">¶</a></h2>
+<p>For embedded plugins, the <code>interface</code> field must be set to one of the following values:</p>
+<ul>
+<li><code>js</code></li>
+</ul>
+<h2 id="javascript-api">JavaScript API<a class="headerlink" href="#javascript-api" title="Permanent link">¶</a></h2>
 <h3 id="logging_1">Logging<a class="headerlink" href="#logging_1" title="Permanent link">¶</a></h3>
-<p>Stash provides the following API for logging in Javascript plugins:</p>
+<p>Stash provides the following API for logging in JavaScript plugins:</p>
 <table>
 <thead>
 <tr>
@@ -3667,10 +3669,10 @@ GitHub sponsorship</a>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["header.autohide", "announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.share", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top", "navigation.indexes", "content.tooltips", "content.code.copy", "navigation.path", "content.code.select", "content.footnote.tooltips"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["header.autohide", "announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.share", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top", "navigation.indexes", "content.tooltips", "content.code.copy", "navigation.path", "content.code.select", "content.footnote.tooltips"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

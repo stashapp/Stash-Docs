@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -28,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1379,12 +1379,12 @@ GitHub sponsorship</a>
   <a href="#querying-and-filtering" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Querying and Filtering
+        Querying and filtering
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Querying and Filtering">
+    <nav class="md-nav" aria-label="Querying and filtering">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1395,6 +1395,34 @@ GitHub sponsorship</a>
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2940,12 +2968,12 @@ GitHub sponsorship</a>
   <a href="#querying-and-filtering" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Querying and Filtering
+        Querying and filtering
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Querying and Filtering">
+    <nav class="md-nav" aria-label="Querying and filtering">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2956,6 +2984,34 @@ GitHub sponsorship</a>
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -3118,7 +3174,7 @@ GitHub sponsorship</a>
 
 
 <h1 id="browsing">Browsing<a class="headerlink" href="#browsing" title="Permanent link">¶</a></h1>
-<h2 id="querying-and-filtering">Querying and Filtering<a class="headerlink" href="#querying-and-filtering" title="Permanent link">¶</a></h2>
+<h2 id="querying-and-filtering">Querying and filtering<a class="headerlink" href="#querying-and-filtering" title="Permanent link">¶</a></h2>
 <h3 id="keyword-searching">Keyword searching<a class="headerlink" href="#keyword-searching" title="Permanent link">¶</a></h3>
 <p>The text field allows you to search using keywords. Keyword searching matches on different fields depending on the object type:</p>
 <table>
@@ -3135,7 +3191,7 @@ GitHub sponsorship</a>
 </tr>
 <tr>
 <td>Image</td>
-<td>Title, Path, Checksum</td>
+<td>Title, Details, Path, Checksum</td>
 </tr>
 <tr>
 <td>Group</td>
@@ -3163,16 +3219,81 @@ GitHub sponsorship</a>
 </tr>
 </tbody>
 </table>
+<h3 id="rules">Rules<a class="headerlink" href="#rules" title="Permanent link">¶</a></h3>
 <p>Keyword matching uses the following rules:</p>
 <ul>
-<li>all words are required in the matching field. For example, <code>foo bar</code> matches scenes with both <code>foo</code> and <code>bar</code> in the title.</li>
-<li>the <code>or</code> keyword or symbol (<code>|</code>) is used to match either fields. For example, <code>foo or bar</code> (or <code>foo | bar</code>) matches scenes with <code>foo</code> or <code>bar</code> in the title. Or sets can be combined. For example, <code>foo or bar or baz xyz or zyx</code> matches scenes with one of <code>foo</code>, <code>bar</code> and <code>baz</code>, <em>and</em> <code>xyz</code> or <code>zyx</code>.</li>
-<li>the not symbol (<code>-</code>) is used to exclude terms. For example, <code>foo -bar</code> matches scenes with <code>foo</code> and excludes those with <code>bar</code>. The not symbol cannot be combined with an or operand. That is, <code>-foo or bar</code> will be interpreted to match <code>-foo</code> or <code>bar</code>. On the other hand, <code>foo or bar -baz</code> will match <code>foo</code> or <code>bar</code> and exclude <code>baz</code>.</li>
-<li>surrounding a phrase in quotes (<code>"</code>) matches on that exact phrase. For example, <code>"foo bar"</code> matches scenes with <code>foo bar</code> in the title. Quotes may also be used to escape the keywords and symbols. For example, <code>foo "-bar"</code> will match scenes with <code>foo</code> and <code>-bar</code>.</li>
-<li>quoted phrases may be used with the or and not operators. For example, <code>"foo bar" or baz -"xyz zyx"</code> will match scenes with <code>foo bar</code> <em>or</em> <code>baz</code>, and exclude those with <code>xyz zyx</code>.</li>
-<li><code>or</code> keywords or symbols at the start or end of a line will be treated literally. That is, <code>or foo</code> will match scenes with <code>or</code> and <code>foo</code>.</li>
-<li>all keyword matching is case-insensitive</li>
+<li>By default, all terms are required in the same matching field.</li>
+<li>Use the <code>or</code> keyword or <code>|</code> symbol to match either term.</li>
+<li>You can combine <code>or</code> sets in one query.</li>
+<li>Use the <code>-</code> symbol to exclude terms.</li>
+<li>The <code>-</code> symbol cannot be combined with an <code>or</code> operand.</li>
+<li>Use quotes (<code>"</code>) to match an exact phrase.</li>
+<li>Quotes can also escape keywords and symbols.</li>
+<li><code>or</code> at the start or end of a query is treated literally.</li>
+<li>Keyword matching is case-insensitive.</li>
 </ul>
+<h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Query</th>
+<th>Behavior</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>foo bar</code></td>
+<td>Requires both <code>foo</code> and <code>bar</code>.</td>
+<td>Both terms must match in the same field.</td>
+</tr>
+<tr>
+<td><code>foo or bar</code> or <code>foo | bar</code></td>
+<td>Matches either <code>foo</code> or <code>bar</code>.</td>
+<td><code>or</code> and <code>|</code> are equivalent.</td>
+</tr>
+<tr>
+<td><code>foo or bar or baz xyz or zyx</code></td>
+<td>Matches one of <code>foo</code>, <code>bar</code>, or <code>baz</code>, and either <code>xyz</code> or <code>zyx</code>.</td>
+<td>Multiple <code>or</code> sets can be combined.</td>
+</tr>
+<tr>
+<td><code>foo -bar</code></td>
+<td>Matches <code>foo</code>, excludes <code>bar</code>.</td>
+<td><code>-</code> excludes terms.</td>
+</tr>
+<tr>
+<td><code>-foo or bar</code></td>
+<td>Interpreted as <code>-foo</code> or <code>bar</code>.</td>
+<td><code>-</code> cannot be combined with an <code>or</code> operand.</td>
+</tr>
+<tr>
+<td><code>foo or bar -baz</code></td>
+<td>Matches <code>foo</code> or <code>bar</code>, excludes <code>baz</code>.</td>
+<td>Exclusion is applied alongside the <code>or</code> set.</td>
+</tr>
+<tr>
+<td><code>"foo bar"</code></td>
+<td>Matches the exact phrase <code>foo bar</code>.</td>
+<td>Quotes perform exact phrase matching.</td>
+</tr>
+<tr>
+<td><code>foo "-bar"</code></td>
+<td>Matches <code>foo</code> and the literal text <code>-bar</code>.</td>
+<td>Quotes escape keyword/operator parsing.</td>
+</tr>
+<tr>
+<td><code>"foo bar" or baz -"xyz zyx"</code></td>
+<td>Matches <code>foo bar</code> or <code>baz</code>, excludes <code>xyz zyx</code>.</td>
+<td>Quoted phrases can be used with <code>or</code> and <code>-</code>.</td>
+</tr>
+<tr>
+<td><code>or foo</code></td>
+<td>Matches literal <code>or</code> and <code>foo</code>.</td>
+<td><code>or</code> is literal at the start or end of a query.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="filters">Filters<a class="headerlink" href="#filters" title="Permanent link">¶</a></h3>
 <p>Filters can be accessed by clicking the filter button on the right side of the query text field. </p>
 <p>Note that only one filter criterion per criterion type may be assigned.</p>
@@ -3181,10 +3302,17 @@ GitHub sponsorship</a>
 <h3 id="sorting-and-page-size">Sorting and page size<a class="headerlink" href="#sorting-and-page-size" title="Permanent link">¶</a></h3>
 <p>The current sorting field is shown next to the query text field, indicating the current sort field and order. The page size dropdown allows selecting from a standard set of objects per page, and allows setting a custom page size.</p>
 <h3 id="saved-filters">Saved filters<a class="headerlink" href="#saved-filters" title="Permanent link">¶</a></h3>
-<p>Saved filters can be accessed with the bookmark button on the left of the query text field. The current filter can be saved by entering a filter name and clicking on the save button. Existing saved filters may be overwritten with the current filter by clicking on the save button next to the filter name. Saved filters may also be deleted by pressing the delete button next to the filter name.</p>
+<p>Saved filters can be accessed with the bookmark button on the left of the query text field, and in the <code>Saved filters</code> section of the filter sidebar. The current filter can be saved by entering a filter name and clicking on the save button.</p>
+<p>Each saved filter has an operations menu, opened with the button next to the filter name. It provides the following operations:</p>
+<ul>
+<li><code>Overwrite</code> - replaces the saved filter with the current filter.</li>
+<li><code>Rename</code> - changes the name of the saved filter, editing it in place in the list. Press <code>Enter</code> to confirm or <code>Escape</code> to cancel. The filter's criteria are left unchanged.</li>
+<li><code>Set as default</code> - makes the saved filter the default filter for the page. See below.</li>
+<li><code>Delete</code> - deletes the saved filter.</li>
+</ul>
 <p>Saved filters are sorted alphabetically by title with capitalized titles sorted first.</p>
 <h3 id="default-filter">Default filter<a class="headerlink" href="#default-filter" title="Permanent link">¶</a></h3>
-<p>The default filter for the top-level pages may be set to the current filter by clicking the <code>Set as default</code> button in the saved filter menu.</p>
+<p>The default filter for the top-level pages may be set to the current filter by clicking the <code>Set as default</code> button in the <code>Saved filters</code> section of the filter sidebar. An existing saved filter may be made the default by selecting <code>Set as default</code> from its operations menu.</p>
 <h2 id="reveal-file-in-file-manager">Reveal file in file manager<a class="headerlink" href="#reveal-file-in-file-manager" title="Permanent link">¶</a></h2>
 <p>The <code>Reveal in file manager</code> action is available for file-based scenes, galleries and images in the <code>File Info</code> tab. This action will open the file manager to the location of the file on disk. The file will be selected if supported by the file manager.</p>
 <p>This button will only be available when accessing stash from a local loopback address (e.g. <code>localhost</code> or <code>127.0.0.1</code>), and will not be shown when accessing stash from a remote address.</p>
@@ -3375,10 +3503,10 @@ GitHub sponsorship</a>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.share", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top", "navigation.indexes", "content.tooltips", "content.code.copy", "navigation.path", "content.code.select", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.share", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top", "navigation.indexes", "content.tooltips", "content.code.copy", "navigation.path", "content.code.select", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

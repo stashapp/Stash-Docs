@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -28,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1408,6 +1408,17 @@ GitHub sponsorship</a>
     <span class="md-ellipsis">
       
         Image clips/gifs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sorting-by-performer-age" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sorting by performer age
       
     </span>
   </a>
@@ -2858,6 +2869,17 @@ GitHub sponsorship</a>
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sorting-by-performer-age" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sorting by performer age
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2939,7 +2961,7 @@ GitHub sponsorship</a>
   
 
 
-<h1 id="images-and-galleries">Images and Galleries<a class="headerlink" href="#images-and-galleries" title="Permanent link">¶</a></h1>
+<h1 id="images-and-galleries">Images and galleries<a class="headerlink" href="#images-and-galleries" title="Permanent link">¶</a></h1>
 <p>Images are the parts which make up galleries, but you can also have them be scanned independently. To declare an image part of a gallery, there are four ways:</p>
 <ol>
 <li>Group them in a folder together and activate the <strong>Create galleries from folders containing images</strong> option in the library section of your settings. The gallery will get the name of the folder.</li>
@@ -2951,6 +2973,7 @@ GitHub sponsorship</a>
 <p>For best results, images in zip file should be stored without compression (copy, store or no compression options depending on the software you use. Eg on linux: <code>zip -0 -r gallery.zip foldertozip/</code>). This impacts <strong>heavily</strong> on the zip read performance.</p>
 <blockquote>
 <p><strong>⚠️ Note:</strong> AVIF files in ZIP archives are currently unsupported.</p>
+<p><strong>ℹ️ Note:</strong> JPEG XL (<code>.jxl</code>) is supported, including inside ZIP archives, and requires an FFmpeg built with <code>libjxl</code> (or <a href="https://www.libvips.org/">libvips</a>). Perceptual hashes are not generated for JXL inside ZIP archives.</p>
 </blockquote>
 <p>If a filename of an image in the gallery zip file ends with <code>cover.jpg</code>, it will be treated like a cover and presented first in the gallery view page and as a gallery cover in the gallery list view. If more than one images match the name the first one found in natural sort order is selected.</p>
 <p>You can also manually select any image from a gallery as its cover. On the gallery details page, select the desired cover image, and then select <strong>Set as Cover</strong> in the ⋯ menu.</p>
@@ -2963,6 +2986,9 @@ GitHub sponsorship</a>
 <p>A clip/gif will be a stillframe in the wall and grid view by default. To view the loop, you can go into the Lightbox Carousel (e.g. by clicking on an image in the wall view) or the image detail page.</p>
 <p>If you want the loop to be used as a preview on the wall and grid view, you will have to generate them. 
 You can do this as you scan for the new clip file by activating <strong>Generate previews for image clips</strong> on the scan settings, or do it after by going to the <strong>Generated Content</strong> section in the task section of your settings, activating <strong>Image clip previews</strong> and clicking generate. This takes a while, as the files are transcoded.</p>
+<h2 id="sorting-by-performer-age">Sorting by performer age<a class="headerlink" href="#sorting-by-performer-age" title="Permanent link">¶</a></h2>
+<p>Images can be sorted by <strong>Performer Age</strong>. This sorts by how old the image's performer(s) were on the image's own date: ascending order uses the youngest performer, descending order uses the oldest.</p>
+<p>Because the age is calculated from the image's date, this sort only works for images that have a date set (and performers with a birthdate). Images with no date, or with no performers, have no age to compare and are always sorted last regardless of direction. If your images appear unsorted when using this option, check that they have a date set.</p>
 
 
 
@@ -3150,10 +3176,10 @@ You can do this as you scan for the new clip file by activating <strong>Generate
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.share", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top", "navigation.indexes", "content.tooltips", "content.code.copy", "navigation.path", "content.code.select", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.share", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top", "navigation.indexes", "content.tooltips", "content.code.copy", "navigation.path", "content.code.select", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   
