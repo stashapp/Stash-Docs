@@ -150,7 +150,7 @@ A list of trusted proxy IPs or CIDR ranges. If a request comes from a trusted pr
 
 ### public whitelist
 
-A list of public IP addresses or subnets (in CIDR range format eg: `192.168.1.0/24`) that are allowed to access the system when no credentials are configured.
+A list of public IP addresses or subnets (in CIDR range format eg: `192.168.1.0/24`) that are allowed to access the system when no credentials are configured. Use `- 192.168.0.0/24` format in the YAML file.
 
 | Key                        | Value         |
 |----------------------------|--------------|
