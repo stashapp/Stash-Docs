@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
     
     
       
@@ -3367,25 +3367,27 @@ GitHub sponsorship</a>
 </span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">STASH_CACHE=/cache/</span>
 </span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">      </span><span class="c1">## Adjust below to change default port (9999)</span>
 </span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">STASH_PORT=9999</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/localtime:/etc/localtime:ro</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">      </span><span class="c1">## Adjust below paths (the left part) to your liking.</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">      </span><span class="c1">## E.g. you can change ./config:/root/.stash to ./stash:/root/.stash</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">      </span><span class="c1">## The left part is the path on your host, the right part is the path in the stash container.</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">      </span><span class="c1">## Keep configs, scrapers, and plugins here.</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./config:/root/.stash</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">      </span><span class="c1">## Point this at your collection.</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">      </span><span class="c1">## The left side is where your collection is on your host, the right side is where it will be in stash.</span>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./data:/data</span>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">      </span><span class="c1">## This is where your stash's metadata lives</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./metadata:/metadata</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">      </span><span class="c1">## Any other cache content.</span>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./cache:/cache</span>
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">      </span><span class="c1">## Where to store binary blob data (scene covers, images)</span>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./blobs:/blobs</span>
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">      </span><span class="c1">## Where to store generated content (screenshots,previews,transcodes,sprites)</span>
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./generated:/generated</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">      </span><span class="c1">## Set your timezone, e.g. America/New_York or Europe/Berlin</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">      </span><span class="c1">## see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TZ=Etc/UTC</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">      </span><span class="c1">## Adjust below paths (the left part) to your liking.</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">      </span><span class="c1">## E.g. you can change ./config:/root/.stash to ./stash:/root/.stash</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">      </span><span class="c1">## The left part is the path on your host, the right part is the path in the stash container.</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">      </span><span class="c1">## Keep configs, scrapers, and plugins here.</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./config:/root/.stash</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">      </span><span class="c1">## Point this at your collection.</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">      </span><span class="c1">## The left side is where your collection is on your host, the right side is where it will be in stash.</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./data:/data</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">      </span><span class="c1">## This is where your stash's metadata lives</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./metadata:/metadata</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">      </span><span class="c1">## Any other cache content.</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./cache:/cache</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">      </span><span class="c1">## Where to store binary blob data (scene covers, images)</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./blobs:/blobs</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">      </span><span class="c1">## Where to store generated content (screenshots,previews,transcodes,sprites)</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./generated:/generated</span>
 </span></code></pre></div>
 <h3 id="build-from-dockerfile">Build from Dockerfile<a class="headerlink" href="#build-from-dockerfile" title="Permanent link">¶</a></h3>
 <h4 id="dockerfile-x86_64">Dockerfile (x86_64)<a class="headerlink" href="#dockerfile-x86_64" title="Permanent link">¶</a></h4>
@@ -3478,7 +3480,7 @@ Alternatively you can edit the <code>docker-compose.yml</code> to manually inclu
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 15, 2026 05:37:45 UTC">May 15, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 20, 2026 13:48:12 UTC">November 20, 2026</span>
   </span>
 
     
@@ -3506,14 +3508,14 @@ Alternatively you can edit the <code>docker-compose.yml</code> to manually inclu
     
     <nav>
       
-        <a href="https://github.com/slick-daddy" class="md-author" title="@slick-daddy">
-          
-          <img src="https://avatars.githubusercontent.com/u/129640104?v=4&amp;size=72" alt="slick-daddy">
-        </a>
-      
         <a href="https://github.com/DogmaDragon" class="md-author" title="@DogmaDragon">
           
           <img src="https://avatars.githubusercontent.com/u/103123951?v=4&amp;size=72" alt="DogmaDragon">
+        </a>
+      
+        <a href="https://github.com/slick-daddy" class="md-author" title="@slick-daddy">
+          
+          <img src="https://avatars.githubusercontent.com/u/129640104?v=4&amp;size=72" alt="slick-daddy">
         </a>
       
         <a href="https://github.com/reedy" class="md-author" title="@reedy">
@@ -3661,7 +3663,7 @@ Alternatively you can edit the <code>docker-compose.yml</code> to manually inclu
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.share", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "toc.follow", "navigation.top", "navigation.indexes", "content.tooltips", "content.code.copy", "navigation.path", "content.code.select", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   
